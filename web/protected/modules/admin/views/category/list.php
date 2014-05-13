@@ -23,6 +23,7 @@
 			<th>操作</th>
 		</tr>
 		<?php foreach($data as $key=>$item){ ?>
+    <?php if (!$item->parent_node) $item->parent_node = new stdClass()?>
 			<tr>
 				<td class="leftTd"><?php echo CHtml::checkBox('id[]',false,array('value'=>$item->id))?></td>
 				<td><?php echo $item->id;?></td>

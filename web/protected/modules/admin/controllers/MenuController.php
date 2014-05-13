@@ -52,8 +52,8 @@ class MenuController extends Controller
 			if($item->parent>0){
 				$item->parent_node = Menu::model()->findByPk($item->parent);
 			}
-			$item->last_brother = Menu::model()->find('parent =:parent order by rgt desc',array(':parent'=>$item->parent));
-        }
+        $item->last_brother = Menu::model()->find('parent =:parent order by rgt desc',array(':parent'=>$item->parent));
+      }
 
         $this->render('list',array('data'=>$data,'model'=>Menu::model())); 
 	}

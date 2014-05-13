@@ -23,6 +23,7 @@
 			<th>操作</th>
 		</tr>
 		<?php foreach($data as $key=>$item){ ?>
+    <?php if (!$item->parent_node) $item->parent_node = new stdClass()?>
 			<tr>
 				<td class="leftTd"><?php echo CHtml::checkBox('id[]',false,array('value'=>$item->id))?></td>
 				<td><?php echo $item->id;?></td>
@@ -30,8 +31,8 @@
 				<td><?php echo $item->component;?></td>
 				<td><?php echo date("Y-m-d",$item->update_time);?></td>
 				<td width="10">
-					<?php 
-						$item->parent_node->lft=isset($item->parent_node->lft)?$item->parent_node->lft:0;
+					<?php
+						$item->parent_node->lft=$item->parent_node && isset($item->parent_node->lft)?$item->parent_node->lft:0;
 						if($key>0&&($item->lft!=$item->parent_node->lft+1)){echo CHtml::link('<img src="'.yii::app()->baseUrl.'/style/admin/images/up.gif">',array('/admin/menu/moveUp/','id'=>$item->id));}
 					?>
 				</td>
