@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*
+ * Lily
+ * zx 2014 05 13
+ */
+
+/* Reset
+================================================================================================= */
+html{}
+body{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;color:#000;font-size:12px;line-height:1.666em;background: #fff;}
+h1,h2,h3{font-size:100%;}
+body,h1,h2,h3,h4,ul,li,p,img,div{margin:0;padding:0;border:0;}
+img{margin:0;line-height:normal;}
+em,i{font-style:normal;text-decoration:none}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/* Commonly Used
+================================================================================================= */
+a{text-decoration:none;color:#000;outline: none;}
+a:hover{color:#000}
+.cs-clear{+zoom:1;}
+.cs-clear:before,
+.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
+.fl{float: left}
+.column{width:960px;margin:0 auto;}
+
+
+/* header Used
+================================================================================================= */
+.header{position: fixed;width: 1370px;height: 99px;left:50%;margin-left:-685px;z-index: 10}
+	.logo{margin: 41px 0 0 8px}
+		.logo a{display: block;background: url('../images/logo.png') no-repeat;width: 103px;height: 28px;}
+	.search{background: url('../images/hdicon.png') no-repeat -84px 0;width:25px;height: 25px;position: absolute;right: 10px;top: 47px}
+	.language{position: absolute;top:47px; right:50px }
+		.language a{float: left;width:40px;height: 17px;background: url('../images/hdicon.png') no-repeat 10px 0 ;  }
+		.language .lang_cn{background-position: -30px 0}
+	.nav{font-size: 14px;text-transform: uppercase;font-weight: 600;position: absolute;top: 42px;left:50%;margin-left:-430px;}
+		.nav a{float: left;display: inline;margin: 0 20px;padding:0 10px;line-height: 28px}
+		.nav .on span{border-bottom:#000000 solid 3px;}
+
+.footer{background: #c7deeb ;}
+	.ft_logo{background: url('../images/ft_logo.png') no-repeat center;width: 132px;height: 86px;margin:0 auto;padding:90px;}
+
+
+/* PAGE Used
+================================================================================================= */
+.page_home{background: #fff1f4;width: 100%;}
