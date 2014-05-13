@@ -39,10 +39,70 @@ a:hover{color:#000}
 		.nav a{float: left;display: inline;margin: 0 20px;padding:0 10px;line-height: 28px}
 		.nav .on span{border-bottom:#000000 solid 3px;}
 
-.footer{background: #c7deeb ;}
+/* footer Used
+================================================================================================= */
+.footer{background: #c7deeb ;line-height: 30px;font-size:16px;text-transform: uppercase;color:#666}
 	.ft_logo{background: url('../images/ft_logo.png') no-repeat center;width: 132px;height: 86px;margin:0 auto;padding:90px;}
-
+	.ft_com{width: 980px;margin:0 auto;padding: 0 0 0 70px;}
+		.ft_list{float: left;width: 240px }
+			.ft_list a{display: block;color:#666}
+		.ft_touch{float: right;width: 200px;}
+			.ft_shareitem{float: left;width: 35px;height: 35px;background: url('../images/ft_shareicon.png') no-repeat;display: inline;margin-right: 8px}
+				.ft_share2{background-position: -41px 0}
+				.ft_share3{background-position: -88px 0}
+				.ft_share4{background-position: -131px 0}
+	.ft_copy{text-align: center;padding: 80px 0 100px;}
 
 /* PAGE Used
 ================================================================================================= */
-.page_home{background: #fff1f4;width: 100%;}
+.page_home{background: #fff1f4;width: 100%;padding-top:115px;}
+.btnlink{display: block;border:#000 solid 1px;padding:0 36px;height: 46px;line-height: 46px;text-align: center;font-size: 16px;float: left;}
+.page_home h2{font-size: 42px;line-height: 100px;font-family:arial}
+/* */
+	.home_new{width: 1200px;margin: 0 auto;text-align: right;}
+		.tit_time{font-size: 18px;font-weight: bold}
+		.home_new_cn{background: url('../images/home_newstit.png') no-repeat right;height: 140px;width: 1200px;padding: 30px 0}
+		.home_new_more{padding: 28px 88px 0 0}
+			.home_new_more a{float: right;}
+	/* */
+	.home_img1{margin: 50px 20px 64px;}
+	/* */
+	.home_brand{width: 1200px;margin: 0 auto ;padding: 440px 0 70px;position: relative;}
+		.home_brand_txt{font-size: 15px;line-height: 30px;width: 400px;}
+			.home_brand_txt p{padding: 15px 0}
+		.home_brand_link{margin:40px 0 0 100px;}
+		.home_img2{position: absolute;top: 0;right: 20px;}
+		.home_img3{position: absolute;top: 648px;left:50%;margin-left:-135px;}
+	/* */
+	.home_weibo{width: 1280px;margin:0 auto;position: relative;padding:20px 20px 50px}
+		.home_wbbg{background: #f9e1e4;width: 408px;height: 444px}
+		.home_wbbox{background: #fff;width: 408px;height: 444px;position: absolute;top: 0;left: 0}
+			.home_wblogo{background: url('../images/home_weiboicon.png') no-repeat center;height: 100px;margin-top: 40px;}
+			.home_wbtime{text-align: center;font-size: 14px;}
+			.home_wbcom{padding:20px 80px;font-size: 14px;line-height: 30px;}
+			.home_wb_btn{margin:20px 0 0 140px;}
+	/* */
+	.home_campaign{width: 1280px;margin: 0 auto;padding: 0 0 240px;position: relative;}
+		.home_cpbox{border:#000 solid 4px;width: 400px;height: 430px;text-transform: uppercase;text-align: center;font-size: 16px;overflow: hidden;}
+			.home_cpbox h2{line-height: 60px;font-size: 66px;padding:80px 0 60px;}
+			.home_cpbox p{padding:0 0 40px;font-weight: bold;}
+		.home_lookbook{width: 425px;position: absolute;right: 0;top: -518px}
+			.home_lb_item{width: 340px;margin: 0 auto 26px;border:#000 solid 4px;text-align: center;line-height: 80px;}
+				.home_lb_item h2{line-height: 60px;font-size: 66px;padding:60px 0 30px}
+	/* */
+	.home_store{text-align: center;}
+		.home_store h2{font-size: 80px;}
+		.home_sttxt{font-size: 16px;font-weight: bold;}
+		.home_st_select{position: relative;width: 160px;margin: 50px auto 0;padding:0 0 180px;}
+			.home_selectbg{border:#000 solid 1px;display:block;height: 46px;width: 160px;font-size: 16px;line-height: 46px;}
+			.home_select{position: absolute;height: 46px;line-height: 46px;left:0px;top:1px;width: 160px;font-size: 16px;border:0;background: none;padding:0 0 0 10px;cursor: pointer;}
+		.home_map{display: block;}
+
+
+.home_showy{}
+	.showyitem{background: url('../images/showy.png'); width: 50px;height: 50px;position: absolute;z-index: 20}
+		.showyitem1{left:265px;top: 680px;}
+		.showyitem2{background-position: 0 -50px;top:1890px;right: 470px;}
+		.showyitem3{background-position: -50px 0;top:2010px;right: 285px;}
+		.showyitem4{background-position: -50px -50px;top:2366px;left:50%;}
+		.showyitem5{left:auto;right: 55px;top: 4544px;}
