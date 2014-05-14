@@ -61,6 +61,7 @@ a:hover{color:#000}
 .page_campaign{background:#f1fffc ;padding:240px 0 0;}
 .page_heritage{background:#fff1f4;padding:200px 0 150px;}
 .page_store{background: #ddebf3;padding: 330px 0 250px}
+.page_event{background: #ddebf3;padding: 170px 0 }
 .btnlink{display: block;border:#000 solid 1px;padding:0 36px;height: 46px;line-height: 46px;text-align: center;font-size: 16px;float: left;}
 .page_home h2{font-size: 42px;line-height: 100px;font-family:arial}
 /* */
@@ -196,3 +197,10 @@ a:hover{color:#000}
 			.store_additem{float: left;width: 290px;padding: 60px 90px 0;}
 				.store_add p{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;line-height: 30px}
 				.store_view{width: 150px;height: 46px;line-height: 46px;border:#000 solid 1px;display: block;text-align: center;font-size: 15px;font-weight: bolder;margin: 20px 0}
+
+/* event Used
+================================================================================================= */
+.event{}
+
+
+
