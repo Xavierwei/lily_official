@@ -109,7 +109,9 @@ a:hover{color:#000}
 		.home_sttxt{font-size: 16px;font-weight: bold;}
 		.home_st_select{position: relative;width: 160px;margin: 50px auto 0;padding:0 0 180px;}
 			.home_selectbg{border:#000 solid 1px;display:block;height: 46px;width: 160px;font-size: 16px;line-height: 46px;}
-			.home_select{position: absolute;height: 46px;line-height: 46px;left:0px;top:1px;width: 160px;font-size: 16px;border:0;background: none;padding:0 0 0 10px;cursor: pointer;}
+			.home_sl_txt{float: left;width: 130px;}
+			.home_sl_icon{float: right;width: 0;height: 0;overflow: hidden;border:transparent solid 5px;border-top: #000 solid 5px;margin: 20px 10px 0 0}
+			.home_select{position: absolute;height: 46px;line-height: 46px;left:1px;top:1px;width: 162px;font-size: 16px;border:0;background: none;cursor: pointer;opacity: 0;filter:alpha(opacity=0);}
 		.home_map{display: block;}
 
 
