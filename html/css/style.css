@@ -62,6 +62,7 @@ a:hover{color:#000}
 .page_heritage{background:#fff1f4;padding:200px 0 150px;}
 .page_store{background: #ddebf3;padding: 330px 0 250px}
 .page_event{background: #ddebf3;padding: 170px 0 }
+.page_contact{background: #ddebf3 url('../images/contact_bg.jpg') no-repeat center top;padding: 290px 0}
 .btnlink{display: block;border:#000 solid 1px;padding:0 36px;height: 46px;line-height: 46px;text-align: center;font-size: 16px;float: left;}
 .page_home h2{font-size: 42px;line-height: 100px;font-family:arial}
 /* */
@@ -212,3 +213,15 @@ a:hover{color:#000}
 			.event_com h3{font-size: 20px;font-family:arial;padding: 26px 0}
 			.event_look{background: #000;color:#fff;width: 132px;height: 48px;font-size: 14px;line-height: 48px;padding: 0 0 0 20px;display: block;margin: 55px 0 0}
 			.event_look:hover{color:#fff}
+
+/* contact Used
+================================================================================================= */
+.contact{}
+	.contact_tit{font-size: 14px;line-height: 30px;font-family:arial;text-transform: uppercase;text-align: center;height: 220px;font-weight: bold;}
+		.contact_tit h2{font-size: 80px;line-height: 80px;}
+	.contact_con{font-size: 15px;line-height: 30px;width:700px;margin:0 auto;padding:100px;}
+		.contact_con h2{height: 40px;padding-left:110px;}
+		.contact_fi{}
+			.contact_fi span{float: left;width: 110px;}
+			.contact_fi p{float: left}
+		.contact_tips{padding: 125px 0 0 70px;}
