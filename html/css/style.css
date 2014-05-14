@@ -63,8 +63,8 @@ a:hover{color:#000}
 .page_store{background: #ddebf3;padding: 330px 0 250px}
 .page_event{background: #ddebf3;padding: 170px 0 }
 .page_contact{background: #ddebf3 url('../images/contact_bg.jpg') no-repeat center top;padding: 290px 0}
+.page_vip{background: #f3dedd;padding: 250px 0; }
 .btnlink{display: block;border:#000 solid 1px;padding:0 36px;height: 46px;line-height: 46px;text-align: center;font-size: 16px;float: left;}
-.page_home h2{font-size: 42px;line-height: 100px;font-family:arial}
 /* */
 .showy{}
 	.showyitem{background: url('../images/showy.png'); width: 50px;height: 50px;position: absolute;z-index: 20}
@@ -77,6 +77,7 @@ a:hover{color:#000}
 /* HOME Used
 ================================================================================================= */
 /* */
+.page_home h2{font-size: 42px;line-height: 100px;font-family:arial;}
 	.home_new{width: 1200px;margin: 0 auto;text-align: right;}
 		.tit_time{font-size: 18px;font-weight: bold}
 		.home_new_cn{background: url('../images/home_newstit.png') no-repeat right;height: 140px;width: 1200px;padding: 30px 0}
@@ -225,3 +226,28 @@ a:hover{color:#000}
 			.contact_fi span{float: left;width: 110px;}
 			.contact_fi p{float: left}
 		.contact_tips{padding: 125px 0 0 70px;}
+
+
+/* vip Used
+================================================================================================= */
+.vip h2{font-size: 80px;line-height: 80px;font-family:arial;text-align: center;height: 190px;}
+.vip_userbox{position: absolute;left:50%;margin-left:-614px;top: 270px}
+	.vip_welcome{font-weight: bold;font-size: 15px;}
+	.vip_logout{border:#000 solid 1px;width: 120px;height: 46px;line-height: 46px;display: block;text-align: center;font-size: 15px;margin: 30px 0 50px;font-weight: bold;}
+	.vip_usermenu{}
+		.vip_usermenu a{display: block;height: 36px;line-height: 36px;}
+		.vip_usermenu .on{text-decoration: underline;}
+.vip_form{font-size: 15px;line-height: 48px;width: 1280px;margin: 0 auto}
+	.vip_fi{padding: 0 0 10px 380px;width: 900px}
+		.vip_ftit{float: left;width: 130px;}
+		.vip_fill{float: left;width: 298px;}
+			.vip_fill input{width: 220px;height: 46px;padding: 0 5px;border:#000 solid 1px;background: #f3dedd;font-family:"Microsoft Yahei",arial,SimHei,sans-serif;}
+				.sl_gender{width: 220px;height: 46px;padding: 0 5px;border:#000 solid 1px;;position: relative;}
+					.sl_txt{float: left;width: 180px;text-align: center}
+					.sl_icon{float: right;width: 0;height: 0;overflow: hidden;border:transparent solid 5px;border-top: #000 solid 5px;margin: 22px 10px 0 0}
+					.sl_select{position: absolute;height: 46px;line-height: 46px;left:-1px;top:1px;width: 232px;font-size: 16px;border:0;background: none;cursor: pointer;opacity: 0;filter:alpha(opacity=0);}
+		.vip_finfo{float: left;width: 160px}
+		.vip_ftxt{float: left;font-weight: bold;}
+
+		.vip_btn{padding: 20px 0}
+			.vip_btn input{background: #000;color:#fff;border: 0;font-size: 16px;width: 134px;height: 48px;cursor: pointer;float: right;}
