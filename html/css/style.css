@@ -7,7 +7,7 @@
 /* Reset
 ================================================================================================= */
 html{}
-body{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;color:#000;font-size:14px;line-height:1.666em;background: #fff;}
+body{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;color:#000;font-size:14px;line-height:1.666em;background: #fff;overflow-x:hidden;}
 h1,h2,h3{font-size:100%;}
 body,h1,h2,h3,h4,ul,li,p,img,div{margin:0;padding:0;border:0;}
 img{margin:0;line-height:normal;}
@@ -59,6 +59,8 @@ a:hover{color:#000}
 .page_home{background: #fff1f4;padding-top:115px;}
 .page_lookbook{background: #fafaec;padding:242px 0 100px;}
 .page_campaign{background:#f1fffc ;padding:240px 0 0;}
+.page_heritage{background:#fff1f4;padding:200px 0 150px;}
+.page_store{background: #ddebf3;padding: 330px 0 250px}
 .btnlink{display: block;border:#000 solid 1px;padding:0 36px;height: 46px;line-height: 46px;text-align: center;font-size: 16px;float: left;}
 .page_home h2{font-size: 42px;line-height: 100px;font-family:arial}
 /* */
@@ -134,7 +136,7 @@ a:hover{color:#000}
 			.cp_tit p{padding:0 0 40px;font-weight: bold;}
 		.cp_season{font-size: 14px;height: 80px;line-height: 80px;text-align: center;width: 350px;font-weight:bold;border:#000 solid 4px;margin: 0 0 14px }
 .cp_mod{}
-	.cp_modimg1{padding:0 20px 24px;}
+	.cp_modimg1{padding:0 20px 24px;} 
 	.cp_modimg2{float: right;padding:0 0 28px }
 		.cp_modimg2 img{float: left;margin-right: 25px}
 	.cp_modimg3{padding:0 0 30px }
@@ -161,3 +163,36 @@ a:hover{color:#000}
 		.cp_blank2img3{top:1705px;left:50%;margin-left:-70px;}
 		.cp_blank2img4{top:662px;left:50%;margin-left:-532px;}
 		.cp_blank2img5{top:2132px;left:50%;margin-left:-605px;}
+
+/* heritage Used
+================================================================================================= */
+.heritage{}
+.ha_mod{width: 100%;position: relative;}
+	.ha_modtxt{font-size: 14px;line-height: 30px;height: 786px;width: 456px;}
+	.ha_modbt .ha_modtxt{height: 666px}
+		.ha_modtxt h2{font-size: 80px;font-family:arial ;line-height: 80px;padding-bottom: 50px}
+		.ha_modtxt h3{font-size: 24px;line-height: 28px;font-weight: normal;padding:0 0 30px;}
+		.ha_modtxt p{width: 320px}
+	.ha_modL .ha_modtxt{padding:0 200px 0 0;float: right;}
+	.ha_modL img{position: absolute;right:715px}
+	.ha_modR .ha_modtxt{padding:0 0 0 200px;float: left;}
+	.ha_modR img{position: absolute;left:715px}
+
+
+/* store Used
+================================================================================================= */
+	.store{text-align: center;font-family:arial ;}
+		.store h2{font-size: 80px;line-height: 80px;}
+		.store_txt{font-size: 16px;font-weight: bold;}
+		.store_selbox{width: 552px;margin: 60px auto 0}
+			.store_select{position: relative;width: 160px;padding:0 0 60px;float: left;margin: 0 12px;display: inline}
+				.store_selectbg{border:#000 solid 1px;display:block;height: 46px;width: 160px;font-size: 16px;line-height: 46px;}
+				.store_sl_txt{float: left;width: 130px;font-family:"Microsoft Yahei",arial,SimHei,sans-serif;}
+				.store_sl_icon{float: right;width: 0;height: 0;overflow: hidden;border:transparent solid 5px;border-top: #000 solid 5px;margin: 20px 10px 0 0}
+				.store_sl{position: absolute;height: 46px;line-height: 46px;left:1px;top:1px;width: 162px;font-size: 16px;border:0;background: none;cursor: pointer;opacity: 0;filter:alpha(opacity=0);}
+		.store_map{display: block;}
+		.store_add{text-align: left;width:1410px;margin: 0 auto }
+			.store_add h1{line-height: 80px;font-size: 42px;padding:50px 90px 0;}
+			.store_additem{float: left;width: 290px;padding: 60px 90px 0;}
+				.store_add p{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;line-height: 30px}
+				.store_view{width: 150px;height: 46px;line-height: 46px;border:#000 solid 1px;display: block;text-align: center;font-size: 15px;font-weight: bolder;margin: 20px 0}
