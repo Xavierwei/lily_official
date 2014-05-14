@@ -7,7 +7,7 @@
 /* Reset
 ================================================================================================= */
 html{}
-body{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;color:#000;font-size:12px;line-height:1.666em;background: #fff;}
+body{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;color:#000;font-size:14px;line-height:1.666em;background: #fff;}
 h1,h2,h3{font-size:100%;}
 body,h1,h2,h3,h4,ul,li,p,img,div{margin:0;padding:0;border:0;}
 img{margin:0;line-height:normal;}
@@ -35,7 +35,7 @@ a:hover{color:#000}
 	.language{position: absolute;top:47px; right:50px }
 		.language a{float: left;width:40px;height: 17px;background: url('../images/hdicon.png') no-repeat 10px 0 ;  }
 		.language .lang_cn{background-position: -30px 0}
-	.nav{font-size: 14px;text-transform: uppercase;font-weight: 600;position: absolute;top: 42px;left:50%;margin-left:-430px;}
+	.nav{text-transform: uppercase;font-weight: 600;position: absolute;top: 42px;left:50%;margin-left:-430px;}
 		.nav a{float: left;display: inline;margin: 0 20px;padding:0 10px;line-height: 28px}
 		.nav .on span{border-bottom:#000000 solid 3px;}
 
@@ -55,9 +55,23 @@ a:hover{color:#000}
 
 /* PAGE Used
 ================================================================================================= */
-.page_home{background: #fff1f4;width: 100%;padding-top:115px;}
+.page{width: 100%;}
+.page_home{background: #fff1f4;padding-top:115px;}
+.page_lookbook{background: #fafaec;padding:242px 0 100px;}
+{background:#f1fffc }
 .btnlink{display: block;border:#000 solid 1px;padding:0 36px;height: 46px;line-height: 46px;text-align: center;font-size: 16px;float: left;}
 .page_home h2{font-size: 42px;line-height: 100px;font-family:arial}
+/* */
+.showy{}
+	.showyitem{background: url('../images/showy.png'); width: 50px;height: 50px;position: absolute;z-index: 20}
+		.showyitem1{left:265px;top: 680px;}
+		.showyitem2{background-position: 0 -50px;top:1890px;right: 470px;}
+		.showyitem3{background-position: -50px 0;top:2010px;right: 285px;}
+		.showyitem4{background-position: -50px -50px;top:2366px;left:50%;}
+		.showyitem5{left:auto;right: 55px;top: 4544px;}
+
+/* HOME Used
+================================================================================================= */
 /* */
 	.home_new{width: 1200px;margin: 0 auto;text-align: right;}
 		.tit_time{font-size: 18px;font-weight: bold}
@@ -78,8 +92,8 @@ a:hover{color:#000}
 		.home_wbbg{background: #f9e1e4;width: 408px;height: 444px}
 		.home_wbbox{background: #fff;width: 408px;height: 444px;position: absolute;top: 0;left: 0}
 			.home_wblogo{background: url('../images/home_weiboicon.png') no-repeat center;height: 100px;margin-top: 40px;}
-			.home_wbtime{text-align: center;font-size: 14px;}
-			.home_wbcom{padding:20px 80px;font-size: 14px;line-height: 30px;}
+			.home_wbtime{text-align: center;}
+			.home_wbcom{padding:20px 80px;line-height: 30px;}
 			.home_wb_btn{margin:20px 0 0 140px;}
 	/* */
 	.home_campaign{width: 1280px;margin: 0 auto;padding: 0 0 240px;position: relative;}
@@ -87,7 +101,7 @@ a:hover{color:#000}
 			.home_cpbox h2{line-height: 60px;font-size: 66px;padding:80px 0 60px;}
 			.home_cpbox p{padding:0 0 40px;font-weight: bold;}
 		.home_lookbook{width: 425px;position: absolute;right: 0;top: -518px}
-			.home_lb_item{width: 340px;margin: 0 auto 26px;border:#000 solid 4px;text-align: center;line-height: 80px;}
+			.home_lb_item{width: 340px;margin: 0 auto 26px;border:#000 solid 4px;text-align: center;line-height: 80px;font-weight: bold;}
 				.home_lb_item h2{line-height: 60px;font-size: 66px;padding:60px 0 30px}
 	/* */
 	.home_store{text-align: center;}
@@ -99,10 +113,15 @@ a:hover{color:#000}
 		.home_map{display: block;}
 
 
-.home_showy{}
-	.showyitem{background: url('../images/showy.png'); width: 50px;height: 50px;position: absolute;z-index: 20}
-		.showyitem1{left:265px;top: 680px;}
-		.showyitem2{background-position: 0 -50px;top:1890px;right: 470px;}
-		.showyitem3{background-position: -50px 0;top:2010px;right: 285px;}
-		.showyitem4{background-position: -50px -50px;top:2366px;left:50%;}
-		.showyitem5{left:auto;right: 55px;top: 4544px;}
+
+/* LOOKBOOK Used
+================================================================================================= */
+.lb_tit{width: 340px;border:#000 solid 4px;text-align: center;line-height: 80px;font-weight: bold;position: absolute;left:50%;margin-left:-520px;top: 220px}
+	.lb_tit h2{line-height: 60px;font-size: 66px;padding:60px 0 30px}
+.lb_mod{position: relative;}
+	.lb_modtit{width: 340px;border:#000 solid 4px;text-align: center;line-height: 80px;font-weight: bold;position: absolute;left:50%;margin-left:-520px;top: 310px}
+	.lb_modimg1{padding:0 20px 30px 0;}
+		.lb_modimg1 img{float: right; }
+	.lb_modimg2{float: right;padding:0 0 30px;}
+		.lb_modimg2 img{float: left;display: inline;margin: 0 20px 0 0;}
+	.lb_modimg3{padding:0 20px 10px;}
