@@ -18,7 +18,7 @@ table{border-collapse:collapse;border-spacing:0;}
 /* Commonly Used
 ================================================================================================= */
 a{text-decoration:none;color:#000;outline: none;}
-a:hover{color:#000}
+a:hover{color:#fff}
 .cs-clear{+zoom:1;}
 .cs-clear:before,
 .cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
@@ -64,6 +64,8 @@ a:hover{color:#000}
 .page_event{background: #ddebf3;padding: 170px 0 }
 .page_contact{background: #ddebf3 url('../images/contact_bg.jpg') no-repeat center top;padding: 290px 0}
 .page_vip{background: #f3dedd;padding: 250px 0; }
+.page_job{background: #ded5ca url('../images/jobbg.jpg') no-repeat center top;padding: 190px 0}
+.page_privacy{background: #f3dedd;padding: 260px 0;}
 .btnlink{display: block;border:#000 solid 1px;padding:0 36px;height: 46px;line-height: 46px;text-align: center;font-size: 16px;float: left;}
 /* */
 .showy{}
@@ -251,3 +253,27 @@ a:hover{color:#000}
 
 		.vip_btn{padding: 20px 0}
 			.vip_btn input{background: #000;color:#fff;border: 0;font-size: 16px;width: 134px;height: 48px;cursor: pointer;float: right;}
+
+/* job Used
+================================================================================================= */
+.job{}
+	.job_tit{font-size: 14px;line-height: 30px;font-family:arial;text-transform: uppercase;text-align: center;}
+		.job_tit h2{font-size: 80px;line-height: 80px;}
+		.job_social{background: url('../images/job_cn1.png') center no-repeat;margin:40px 0 30px;height: 30px}
+		.job_socialbtn{background:#000 url('../images/job_cn3.png') center no-repeat;width: 308px;height: 48px;margin: 0 auto 170px;display: block;}
+		.job_campus{background: url('../images/job_cn2.png') center no-repeat;margin:0 0 80px;height: 30px}
+.job_list{width: 1300px;margin: 0 auto}
+	.job_item{width: 310px;float: left;display: inline;margin: 0 60px;height: 430px}
+		.job_itemtit{font-size: 36px;line-height: 55px;height: 125px}
+			.job_itemtit strong{display: block;font-family:arial;font-size: 48px}
+		.job_itemtxt{font-size: 12px;line-height:16px ;padding-bottom:40px;}
+		.job_itembtn{background: #000;color:#fff;font-size: 16px;font-family:arial;display: block;width: 308px;height: 48px;line-height: 48px;text-align: center;}
+
+
+/* privacy Used
+================================================================================================= */
+.privacy{font-family:arial;}
+	.privacy_tit{text-transform: uppercase;text-align: center;font-size: 80px;line-height: 88px;padding: 0 0 80px;}
+	.privacy_com{width: 800px;margin: 0 auto;text-align: center;font-size: 15px;line-height: 30px;font-weight: 600}
+		.privacy_com h3{font-weight: 600;text-transform: uppercase;padding: 60px 0 45px}
+		.privacy_com p{padding:0 0 40px;}
