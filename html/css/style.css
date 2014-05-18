@@ -282,3 +282,21 @@ a:hover{color:#fff}
 .page{
 	position: relative;
 }
+
+/* slideout-footer */
+.page{
+	z-index: 1;
+}
+
+.footer{
+	position: relative;
+	height: 630px;
+	z-index: -2;
+}
+
+.footer_wrap {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: -1;
+}

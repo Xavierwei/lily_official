@@ -12,6 +12,7 @@ define([
     var start = function () {
         var nTime = 1000,
             nWidth  = $(window).width(),
+            nHeight  = $(window).height(),
             dHeader = dBody.find('.header'),
             dShowy = dBody.find('.showy'),
             compelete = function () {
@@ -22,13 +23,13 @@ define([
         isAnimate = true;
 
         // limit the width
-        dBody.css('max-width', nWidth + 'px');
-        dBody.css('overflow', 'hidden');
-        dShowy.css('display', 'none');
+        dBody.css('position', 'relative');
+        dBody.css('height', nHeight + 'px');
 
         if (isNext) {
             dBody.animate({
                 'marginLeft' : '-' + nWidth / 2 + 'px',
+                'left' : '-' + nWidth / 2 + 'px',
                 'opacity' : 0
             },nTime, function () {
                 compelete()
@@ -43,6 +44,7 @@ define([
         } else {
             dBody.animate({
                 'marginLeft' : nWidth / 2 + 'px',
+                'left' : nWidth / 2 + 'px',
                 'opacity' : 0
             },nTime, function () {
                 compelete()
