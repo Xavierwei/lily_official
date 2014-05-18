@@ -1,9 +1,18 @@
-define([], function($) {
-    var helper = {};
+define([
+    // libs
+    'jquery'
+], function($) {
+    var getHash = function () {
+        var sVal = $.address.value();
 
-    helper.getHash = function (str) {
-        return str.replace('/', '');
+        if (sVal == '/') {
+            return 'index';
+        } else {
+            return sVal.replace('/', '');
+        }
     }
 
-    return helper;
+    return {
+        getHash : getHash
+    }
 })

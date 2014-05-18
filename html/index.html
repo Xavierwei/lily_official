@@ -8,13 +8,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>Lily</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!--  -->
+    <script type="text/javascript" src="js/lib/modernizr.min.js"></script>
+    <script data-main="js/config" src="js/lib/require.js"></script>
+    <!--  -->
+    <!--IE6透明判断-->
+    <!--[if IE 6]>
+    <script src="js/lib/DD_belatedPNG.js"></script>
+    <script>
+        DD_belatedPNG.fix('*');
+        document.execCommand("BackgroundImageCache", false, true);
+    </script>
+    <![endif]-->
 </head>
 <body>
 <!--  -->
     <div class="header">
-        <div class="logo"><a href="vip.html"></a></div>
+        <div class="logo"><a href="vip.html" title='vip'></a></div>
         <div class="nav">
-            <a href="index.html" title="index"><span>home</span></a>
+            <a class='on' href="index.html" title="index"><span>home</span></a>
             <a href="brand.html" title="brand"><span>brand</span></a>
             <a href="news.html" title="news"><span>news</span></a>
             <a href="campaign.html" title="campaign"><span>campaign</span></a>
@@ -109,7 +121,6 @@
             </div>
             <img class="home_map" src="images/home_map.jpg" width="100%" />
         </div>
-        </div>
         <!--  -->
     </div>
 <!--  -->
@@ -156,17 +167,5 @@
         <div class="showyitem showyitem4"></div>
         <div class="showyitem showyitem1 showyitem5"></div>
     </div>
-<!--  -->
-    <script type="text/javascript" src="js/lib/modernizr.min.js"></script>
-    <script data-main="js/config" src="js/lib/require.js"></script>
-<!--  -->
-    <!--IE6透明判断-->
-    <!--[if IE 6]>
-    <script src="js/lib/DD_belatedPNG.js"></script>
-    <script>
-        DD_belatedPNG.fix('*');
-        document.execCommand("BackgroundImageCache", false, true);
-    </script>
-    <![endif]-->
 </body>
 </html>

@@ -141,7 +141,7 @@ a:hover{color:#fff}
 			.cp_tit p{padding:0 0 40px;font-weight: bold;}
 		.cp_season{font-size: 14px;height: 80px;line-height: 80px;text-align: center;width: 350px;font-weight:bold;border:#000 solid 4px;margin: 0 0 14px }
 .cp_mod{}
-	.cp_modimg1{padding:0 20px 24px;} 
+	.cp_modimg1{padding:0 20px 24px;}
 	.cp_modimg2{float: right;padding:0 0 28px }
 		.cp_modimg2 img{float: left;margin-right: 25px}
 	.cp_modimg3{padding:0 0 30px }
@@ -277,3 +277,8 @@ a:hover{color:#fff}
 	.privacy_com{width: 800px;margin: 0 auto;text-align: center;font-size: 15px;line-height: 30px;font-weight: 600}
 		.privacy_com h3{font-weight: 600;text-transform: uppercase;padding: 60px 0 45px}
 		.privacy_com p{padding:0 0 40px;}
+
+/* page animation need */
+.page{
+	position: relative;
+}
