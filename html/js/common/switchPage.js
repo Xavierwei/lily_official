@@ -3,56 +3,47 @@ define([
     'jquery',
 
     // apps
-    'common/helper'
-], function($, helper) {
+    'common/helper',
+    'common/animate'
+], function($, helper, animate) {
     var isNext,
         isAnimate = false,
-        dBody = $('body');
+        dBody = $('body'),
+        dWrap = $('#wrap'),
+        dSquare = $('#square');
 
     var start = function () {
-        var nTime = 1000,
+        var nTime = 600,
+            sHash = helper.getHash(),
             nWidth  = $(window).width(),
             nHeight  = $(window).height(),
-            dHeader = dBody.find('.header'),
-            dShowy = dBody.find('.showy'),
             compelete = function () {
                 isAnimate = false;
-                dBody.removeAttr('style');
+                dWrap.removeAttr('style');
+
+                // update page class
+                dBody.attr('class', sHash);
             };
 
         isAnimate = true;
 
-        // limit the width
-        dBody.css('position', 'relative');
-        dBody.css('height', nHeight + 'px');
+        // reset loading animate need stuff
+        animate.reset();
 
         if (isNext) {
-            dBody.animate({
+            dWrap.animate({
                 'marginLeft' : '-' + nWidth / 2 + 'px',
                 'left' : '-' + nWidth / 2 + 'px',
                 'opacity' : 0
-            },nTime, function () {
-                compelete()
-            })
-
-            dHeader.animate({
-                'marginLeft' : '-' + nWidth + 'px',
-                'opacity' : 0
-            },nTime, function () {
+            }, nTime, function () {
                 compelete()
             })
         } else {
-            dBody.animate({
+            dWrap.animate({
                 'marginLeft' : nWidth / 2 + 'px',
                 'left' : nWidth / 2 + 'px',
                 'opacity' : 0
-            },nTime, function () {
-                compelete()
-            })
-
-            dHeader.animate({
-                'marginLeft' : nWidth + 'px',
-            },nTime, function () {
+            }, nTime, function () {
                 compelete()
             })
         }
@@ -62,8 +53,9 @@ define([
     var end = function (str) {
         var timer,
             setContent = function () {
-                dBody.html(str)
+                dWrap.html(str)
                 updateLink();
+                animate.start();
             };
 
         if (isAnimate) {
@@ -90,8 +82,8 @@ define([
                 start();
             },
             success: function(str) {
-                var startWith = '<body>',
-                    endWith = '</body>',
+                var startWith = "<section id='wrap'>",
+                    endWith = '</section>',
                     iStart = str.search(startWith),
                     iEnd = str.search(endWith);
 

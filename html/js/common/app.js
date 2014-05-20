@@ -6,11 +6,12 @@ define([
     'jquery.address',
 
     // apps
-    'common/switchPage'
-], function($, skrollr, Handlebars, jqueryAddress, switchPage) {
-    var s;
-
+    'common/switchPage',
+    'common/animate'
+], function($, skrollr, Handlebars, jqueryAddress, switchPage, animate) {
     var initialize = function() {
+        animate.start();
+
         // when page started, force to empty value
         $.address.history(false);
         $.address.history(true);
@@ -23,10 +24,6 @@ define([
         $.address.init().change(function() {
             // page update
             switchPage.updateContent()
-        })
-
-        s = skrollr.init({
-            forceHeight: false
         })
     }
 
