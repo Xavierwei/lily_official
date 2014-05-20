@@ -10,8 +10,7 @@ define([
         isFirst = true,
         isAnimate = false,
         dBody = $('body'),
-        dWrap = $('#wrap'),
-        dSquare = $('#square');
+        dWrap = $('#wrap');
 
     var start = function () {
         var nTime = 600,
@@ -31,12 +30,10 @@ define([
         // prevent duplicate animate
         isAnimate = true;
 
-        // reset loading animate need stuff
-        animate.reset();
+        dWrap.css('position', 'relative')
 
         if (isNext) {
             dWrap.animate({
-                'marginLeft' : '-' + nWidth / 2 + 'px',
                 'left' : '-' + nWidth / 2 + 'px',
                 'opacity' : 0
             }, nTime, function () {
@@ -44,7 +41,6 @@ define([
             })
         } else {
             dWrap.animate({
-                'marginLeft' : nWidth / 2 + 'px',
                 'left' : nWidth / 2 + 'px',
                 'opacity' : 0
             }, nTime, function () {

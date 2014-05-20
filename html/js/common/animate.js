@@ -19,7 +19,7 @@
             nTotal = dWrap.find('img').length,
             imgLoad = imagesLoaded(dWrap);
 
-        dSquare.fadeIn();
+        dSquare.show();
 
         imgLoad.on('always', function (instance) {
             dTop.queue(function () {
@@ -38,10 +38,8 @@
                     // show header
                     dHeader.fadeIn();
 
-                    // let elements skroll
-                    oRoll = skrollr.init({
-                        forceHeight: false
-                    })
+                    // reset loading animate need stuff
+                    reset();
                 })
             })
         })
@@ -98,7 +96,32 @@
     }
 
     var reset = function () {
+        var dPage = dWrap.find('.page'),
+            sHtml = dSquare.html();
+
+        // for button select clickable
+        dPage.find('a').css({
+            'position': 'relative',
+            'zIndex': '10'
+        })
+
+        dPage.find('select').css({
+            'zIndex': '10'
+        })
+
+        // as background
+        dPage.append('<div id="bgsquare">' + sHtml + '</div>');
+
+        // remove style perpare for next loading animate
         dSquare.find('span').removeAttr('style');
+
+        dSquare.css('display', 'none');
+
+        // let elements skroll
+        oSkrollr = skrollr.init({
+            edgeStrategy : 'set',
+            forceHeight : false
+        })
     }
 
     return {
