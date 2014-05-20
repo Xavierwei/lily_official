@@ -7,6 +7,7 @@ define([
     'common/animate'
 ], function($, helper, animate) {
     var isNext,
+        isFirst = true,
         isAnimate = false,
         dBody = $('body'),
         dWrap = $('#wrap'),
@@ -19,12 +20,15 @@ define([
             nHeight  = $(window).height(),
             compelete = function () {
                 isAnimate = false;
+
+                // reset wrap style
                 dWrap.removeAttr('style');
 
                 // update page class
                 dBody.attr('class', sHash);
             };
 
+        // prevent duplicate animate
         isAnimate = true;
 
         // reset loading animate need stuff
@@ -50,11 +54,11 @@ define([
 
     }
 
+    // when animate end html the wrap
     var end = function (str) {
         var timer,
             setContent = function () {
                 dWrap.html(str)
-                updateLink();
                 animate.start();
             };
 
@@ -73,28 +77,31 @@ define([
     }
 
     var updateContent = function () {
-        var sVal = helper.getHash();
+        // prevent sometime when first time page loaded also would fire the event
+        if (isFirst) {
+            isFirst = false;
+        } else {
+            $.ajax({
+                url : helper.getHash() + '.html',
+                method:'get',
+                beforeSend: function () {
+                    start();
+                },
+                success: function(str) {
+                    var startWith = "<section id='wrap'>",
+                        endWith = '</section>',
+                        iStart = str.search(startWith),
+                        iEnd = str.search(endWith);
 
-        $.ajax({
-            url : sVal + '.html',
-            method:'get',
-            beforeSend: function () {
-                start();
-            },
-            success: function(str) {
-                var startWith = "<section id='wrap'>",
-                    endWith = '</section>',
-                    iStart = str.search(startWith),
-                    iEnd = str.search(endWith);
+                    str= str.substring(iStart+startWith.length, iEnd);
 
-                str= str.substring(iStart+startWith.length, iEnd);
-
-                end(str)
-            },
-            error: function () {
-                // to do
-            }
-        })
+                    end(str)
+                },
+                error: function () {
+                    // to do
+                }
+            })
+        }
     }
 
     var updateLink = function () {
@@ -102,8 +109,7 @@ define([
             nCur,
             dMenu = $('.header .nav a[title]'),
             dVip = $('.logo a[title]'),
-            sVal = helper.getHash(),
-            updateStatus = function (evt, dTarget, nIndex) {
+            updateCache = function (evt, dTarget, nIndex) {
                 // prevent click the active effect
                 if (dTarget.hasClass('on')) {
                     evt.preventDefault();
@@ -124,7 +130,6 @@ define([
                 }
             }
 
-
         // switch menu url to hash mode
         dMenu.each(function(nIndex, dEl) {
             var dTmp = $(dEl),
@@ -139,27 +144,34 @@ define([
             }
         })
 
-        // vip url to hash mode
-        dVip.attr('href', '#' + dVip.attr('title'));
-
+        // update cached status, if page first time opened with vip page
         if (dVip.hasClass('on')) {
             dCur = dVip;
             nCur = 0;
         }
 
+        // vip url to hash mode
+        dVip.attr('href', '#' + dVip.attr('title'));
+
         // update active class
         dMenu.bind('click', function (evt) {
+            // update judge params
+            isFirst = false;
+
             var dTarget = $(this),
                 nIndex = dTarget.index() + 1; //for vip
 
-            updateStatus(evt, dTarget, nIndex);
+            updateCache(evt, dTarget, nIndex);
         })
 
         dVip.bind('click', function (evt) {
+            // update judge params
+            isFirst = false;
+
             var dTarget = $(this),
                 nIndex = 0;
 
-            updateStatus(evt, dTarget, nIndex);
+            updateCache(evt, dTarget, nIndex);
         })
     }
 

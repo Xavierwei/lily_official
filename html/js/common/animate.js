@@ -5,6 +5,7 @@
     'imagesLoaded'
 ], function($, skrollr, imagesLoaded) {
     var oRoll,
+        dHeader = $('.header'),
         dWrap = $('#wrap'),
         dSquare = $('#square'),
         dLeft = dSquare.find('.left'),
@@ -24,11 +25,20 @@
             dTop.queue(function () {
                 dTop.dequeue();
 
+                dRight.css('height', '100%');
+                dBottom.css('width', '100%');
+                dLeft.css('height', '100%');
+
                 dTop.animate({
                     'width' : '100%'
                 }, nTime, function () {
+                    // show the page content
                     dWrap.fadeIn();
 
+                    // show header
+                    dHeader.fadeIn();
+
+                    // let elements skroll
                     oRoll = skrollr.init({
                         forceHeight: false
                     })
@@ -88,7 +98,6 @@
     }
 
     var reset = function () {
-        dSquare.fadeOut();
         dSquare.find('span').removeAttr('style');
     }
 

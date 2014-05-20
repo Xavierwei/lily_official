@@ -276,7 +276,7 @@ body.news{background:#ddebf3;}
 body.campaign{background:#f1fffc;}
 body.look{background:#fafaec;}
 body.street{background:#ddebf3;}
-#wrap{display:none;}
+.header, #wrap{display:none;}
 #square{position:absolute;left:5%;right:5%;top:5%;bottom:5%;z-index:1;overflow:hidden;}
 #square span{position:absolute;background:#fff;}
 #square span.top,

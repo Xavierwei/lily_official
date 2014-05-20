@@ -10,11 +10,10 @@ define([
     'common/animate'
 ], function($, skrollr, Handlebars, jqueryAddress, switchPage, animate) {
     var initialize = function() {
+        // start loading animation
         animate.start();
 
         // when page started, force to empty value
-        $.address.history(false);
-        $.address.history(true);
         $.address.value('');
 
         // update the link to hash mode
