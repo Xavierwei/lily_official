@@ -100,6 +100,8 @@ define([
                 }
             })
         })
+
+        // $($('.video')).click();
     }
 
     return {
