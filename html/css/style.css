@@ -307,7 +307,7 @@ body.privacy{background-color:#f3dedd;}
 /* for page clickable */
 .page a,
 .page .album,
-.page .videos{
+.page .video{
     position: relative;
     z-index: 10;
 }

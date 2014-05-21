@@ -294,7 +294,7 @@
     box-sizing: border-box;
 }
 
-.jcarousel img {
+.jcarousel img, .jcarousel video{
     margin: 0 auto;
     display: block;
     max-width: 100%;

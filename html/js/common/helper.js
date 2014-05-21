@@ -4,13 +4,14 @@ define([
     'Handlebars',
     // tpls
     'lib/text!templates/album.html',
+    'lib/text!templates/video.html',
 
     // plugins
     'jquery.jcarousel',
     'jquery.fancybox',
     'jquery.fancybox-media'
-], function($, Handlebars, albumTpl) {
-    var getHash = function () {
+], function($, Handlebars, albumTpl, videoTpl) {
+    var getHash = function() {
         var sVal = $.address.value();
 
         if (sVal == '/') {
@@ -20,30 +21,30 @@ define([
         }
     }
 
-    var modals = function () {
+    var modals = function() {
         var dBody = $('body');
 
-        dBody.delegate('.album', 'click', function () {
+        dBody.delegate('.album', 'click', function() {
             var sHthml = Handlebars.compile(albumTpl)();
 
             $.fancybox({
-                content : sHthml,
-                closeClick  : false,
-                helpers : {
-                    overlay : {
-                        width : '100%',
-                        height : '100%',
-                        closeClick : false,
-                        css : {
-                            'background' : '#fff'
+                content: sHthml,
+                closeClick: false,
+                helpers: {
+                    overlay: {
+                        width: '100%',
+                        height: '100%',
+                        closeClick: false,
+                        css: {
+                            'background': '#fff'
                         }
                     }
                 },
-                beforeShow : function () {
-                    setTimeout(function () {
+                beforeShow: function() {
+                    setTimeout(function() {
                         var jcarousel = $('.fancybox-inner .jcarousel');
 
-                        jcarousel.on('jcarousel:reload jcarousel:create', function () {
+                        jcarousel.on('jcarousel:reload jcarousel:create', function() {
                             var width = jcarousel.innerWidth();
                             jcarousel.jcarousel('items').css('width', width + 'px');
                         }).jcarousel({
@@ -62,13 +63,47 @@ define([
             })
         })
 
-        dBody.delegate('.videos', 'click', function () {
-            // body...
+        dBody.delegate('.video', 'click', function() {
+            var sHthml = Handlebars.compile(videoTpl)();
+            $.fancybox({
+                content: sHthml,
+                closeClick: false,
+                helpers: {
+                    overlay: {
+                        width: '100%',
+                        height: '100%',
+                        closeClick: false,
+                        css: {
+                            'background': '#fff'
+                        }
+                    }
+                },
+                beforeShow: function() {
+                    setTimeout(function() {
+                        var jcarousel = $('.fancybox-inner .jcarousel');
+
+                        jcarousel.on('jcarousel:reload jcarousel:create', function() {
+                            var width = jcarousel.innerWidth();
+                            jcarousel.jcarousel('items').css('width', width + 'px');
+                        }).jcarousel({
+                            wrap: 'circular'
+                        });
+
+                        $('.jcarousel-control-prev').jcarouselControl({
+                            target: '-=1'
+                        });
+
+                        $('.jcarousel-control-next').jcarouselControl({
+                            target: '+=1'
+                        });
+                    }, 0)
+                }
+            })
         })
     }
 
     return {
-        getHash : getHash,
-        modals : modals
+        getHash: getHash,
+        modals: modals
     }
 })
