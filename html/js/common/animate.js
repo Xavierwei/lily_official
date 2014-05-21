@@ -99,16 +99,6 @@
         var dPage = dWrap.find('.page'),
             sHtml = dSquare.html();
 
-        // for button select clickable
-        dPage.find('a').css({
-            'position': 'relative',
-            'zIndex': '10'
-        })
-
-        dPage.find('select').css({
-            'zIndex': '10'
-        })
-
         // as background
         dPage.append('<div id="bgsquare">' + sHtml + '</div>');
 

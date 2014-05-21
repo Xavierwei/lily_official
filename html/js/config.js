@@ -5,7 +5,10 @@ require.config({
 		'skrollr' : 'lib/skrollr.min',
 		'Handlebars': 'lib/handlebars',
 		'jquery.address': 'lib/jquery-address',
-		'imagesLoaded' : 'lib/imagesloaded.pkgd.min'
+		'jquery.fancybox': 'lib/jquery.fancybox',
+		'jquery.fancybox-media': 'lib/jquery.fancybox-media',
+		'imagesLoaded' : 'lib/imagesloaded.pkgd.min',
+		'jquery.jcarousel' : 'lib/jquery.jcarousel.min'
 	},
 	shim: {
 	    'Handlebars': {
@@ -14,20 +17,19 @@ require.config({
 	    'imagesLoaded' : {
 	    	exports : 'imagesLoaded'
 	    },
-	    'jquery.queryloader': {
-	    	deps : ['jquery', 'imagesLoaded']
+	    'jquery.jcarousel': {
+	    	deps : ['jquery']
+	    },
+	    'jquery.fancybox': {
+	    	deps : ['jquery']
+	    },
+	    'jquery.fancybox-media': {
+	    	deps : ['jquery', 'jquery.fancybox']
 	    }
 	 }
 })
 
-require([
-	'require',
-	'jquery',
-	'skrollr',
-	'Handlebars',
-	'imagesLoaded',
-	'jquery.address'
-], function(require, $, skrollr, Handlebars, imagesLoaded, jqueryAddress) {
+require(['require'], function(require) {
 	require(['common/app'], function(app) {
 		app();
 	})

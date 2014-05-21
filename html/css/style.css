@@ -304,3 +304,13 @@ body.privacy{background-color:#f3dedd;}
 .page{position:relative;}
 /* slideout-footer */
 .page{z-index:2;}
+/* for page clickable */
+.page a,
+.page .album,
+.page .videos{
+    position: relative;
+    z-index: 10;
+}
+.page select{
+    z-index: 10;
+}

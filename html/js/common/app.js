@@ -7,11 +7,15 @@ define([
 
     // apps
     'common/switchPage',
-    'common/animate'
-], function($, skrollr, Handlebars, jqueryAddress, switchPage, animate) {
+    'common/animate',
+    'common/helper'
+], function($, skrollr, Handlebars, jqueryAddress, switchPage, animate, helper) {
     var initialize = function() {
         // start loading animation
         animate.start();
+
+        // start catch album and videos open event
+        helper.modals();
 
         // when page started, force to empty value
         $.address.value('');
