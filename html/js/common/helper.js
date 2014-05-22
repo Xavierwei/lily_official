@@ -101,6 +101,7 @@ define([
             })
         })
 
+        // for quick debug
         // $($('.video')).click();
     }
 

@@ -20,6 +20,9 @@ define([
         // when page started, force to empty value
         $.address.value('');
 
+        // for ie
+        // $.address.strict(false)
+
         // update the link to hash mode
         switchPage.updateLink()
 

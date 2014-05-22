@@ -307,10 +307,13 @@ body.privacy{background-color:#f3dedd;}
 /* for page clickable */
 .page a,
 .page .album,
-.page .video{
+.page .video,
+.footer a {
     position: relative;
     z-index: 10;
 }
 .page select{
     z-index: 10;
+}
+
 }
