@@ -279,8 +279,8 @@ body.vip{background-color:#f3dedd;}
 body.job{background-color:#ded5ca;}
 body.contact{background-color:#ddebf3;}
 body.privacy{background-color:#f3dedd;}
-
-.header, #wrap{display:none;}
+.header,
+#wrap{display:none;}
 #square{position:fixed;left:5%;right:5%;top:15%;bottom:15%;z-index:1;overflow:hidden;}
 #square span{position:absolute;background:#fff;}
 #square span.top,
@@ -290,7 +290,6 @@ body.privacy{background-color:#f3dedd;}
 #square span.bottom{right:0;bottom:0;}
 #square span.right{right:0;}
 #square span.left{bottom:0;}
-
 #bgsquare{position:fixed;left:5%;right:5%;top:15%;bottom:15%;z-index:1;overflow:hidden;}
 #bgsquare span{position:absolute;background:#fff;}
 #bgsquare span.top,
@@ -308,12 +307,9 @@ body.privacy{background-color:#f3dedd;}
 .page a,
 .page .album,
 .page .video,
-.footer a {
-    position: relative;
-    z-index: 10;
-}
-.page select{
-    z-index: 10;
-}
-
-}
+.footer a{position:relative;z-index:10;}
+.page select{z-index:10;}
+/* map */
+#map{width: 100%;z-index:10;}
+.index #map{height: 410px;}
+.street #map{height: 536px;}

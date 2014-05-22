@@ -9,7 +9,8 @@ define([
     // plugins
     'jquery.jcarousel',
     'jquery.fancybox',
-    'jquery.fancybox-media'
+    'jquery.fancybox-media',
+    'gmap3.min'
 ], function($, Handlebars, albumTpl, videoTpl) {
     var getHash = function() {
         var sVal = $.address.value();

@@ -8,7 +8,8 @@ require.config({
 		'jquery.fancybox': 'lib/jquery.fancybox',
 		'jquery.fancybox-media': 'lib/jquery.fancybox-media',
 		'imagesLoaded' : 'lib/imagesloaded.pkgd.min',
-		'jquery.jcarousel' : 'lib/jquery.jcarousel.min'
+		'jquery.jcarousel' : 'lib/jquery.jcarousel.min',
+		'gmap3.min' : 'lib/gmap3.min'
 	},
 	shim: {
 	    'Handlebars': {
@@ -16,6 +17,9 @@ require.config({
 	    },
 	    'imagesLoaded' : {
 	    	exports : 'imagesLoaded'
+	    },
+	    'gmap3.min' : {
+	    	deps : ['jquery']
 	    },
 	    'jquery.jcarousel': {
 	    	deps : ['jquery']

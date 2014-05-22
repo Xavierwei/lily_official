@@ -1,4 +1,4 @@
- define([
+define([
     // libs
     'jquery',
     'skrollr',
@@ -13,7 +13,7 @@
         dRight = dSquare.find('.right'),
         dTop = dSquare.find('.top');
 
-    var start = function () {
+    var start = function() {
         var nTime = 300,
             nLoad = 0,
             nTotal = dWrap.find('img').length,
@@ -21,8 +21,8 @@
 
         dSquare.show();
 
-        imgLoad.on('always', function (instance) {
-            dTop.queue(function () {
+        imgLoad.on('always', function(instance) {
+            dTop.queue(function() {
                 dTop.dequeue();
 
                 dRight.css('height', '100%');
@@ -30,8 +30,8 @@
                 dLeft.css('height', '100%');
 
                 dTop.animate({
-                    'width' : '100%'
-                }, nTime, function () {
+                    'width': '100%'
+                }, nTime, function() {
                     // show the page content
                     dWrap.fadeIn();
 
@@ -40,18 +40,20 @@
 
                     // reset loading animate need stuff
                     reset();
+
+                    initMap();
                 })
             })
         })
 
-        imgLoad.on('progress', function (instance, image) {
+        imgLoad.on('progress', function(instance, image) {
             nLoad += 1;
 
-            var nVal = parseInt((nLoad/nTotal) * 100);
+            var nVal = parseInt((nLoad / nTotal) * 100);
 
             if (0 < nVal && nVal < 25) {
                 dRight.css({
-                    'height' : parseInt((nVal/25) * 100 ) + '%'
+                    'height': parseInt((nVal / 25) * 100) + '%'
                 })
 
                 return;
@@ -59,11 +61,11 @@
 
             if (25 < nVal && nVal < 50) {
                 dRight.css({
-                    'height' : '100%'
+                    'height': '100%'
                 })
 
                 dBottom.css({
-                    'width' : parseInt((nVal/50) * 100) + '%'
+                    'width': parseInt((nVal / 50) * 100) + '%'
                 })
 
                 return;
@@ -71,11 +73,11 @@
 
             if (50 < nVal && nVal < 75) {
                 dBottom.css({
-                    'width' : '100%'
+                    'width': '100%'
                 })
 
                 dLeft.css({
-                    'height' : parseInt((nVal/75) * 100) + '%'
+                    'height': parseInt((nVal / 75) * 100) + '%'
                 })
 
                 return;
@@ -83,11 +85,11 @@
 
             if (75 < nVal && nVal < 100) {
                 dLeft.css({
-                    'height' : '100%'
+                    'height': '100%'
                 })
 
                 dTop.animate({
-                    'width' : parseInt((nVal/100) * 100) + '%'
+                    'width': parseInt((nVal / 100) * 100) + '%'
                 }, nTime)
 
                 return;
@@ -95,7 +97,7 @@
         })
     }
 
-    var reset = function () {
+    var reset = function() {
         var dPage = dWrap.find('.page'),
             sHtml = dSquare.html();
 
@@ -109,13 +111,27 @@
 
         // let elements skroll
         oSkrollr = skrollr.init({
-            edgeStrategy : 'set',
-            forceHeight : false
+            edgeStrategy: 'set',
+            forceHeight: false
         })
     }
 
+    var initMap = function() {
+        var dMap = $('#map');
+
+        if (dMap.length) {
+            dMap.gmap3({
+                map:{
+                    options:{
+                        zoom:10
+                    }
+                }
+            })
+        }
+    }
+
     return {
-        start : start,
-        reset : reset
+        start: start,
+        reset: reset
     }
 })
