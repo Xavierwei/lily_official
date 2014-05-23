@@ -5,12 +5,12 @@ define([
 
     // apps
     'common/switchPage',
-    'common/animate',
+    'common/loading',
     'common/helper'
-], function($, skrollr, switchPage, animate, helper) {
+], function($, skrollr, switchPage, loading, helper) {
     var initialize = function() {
-        // start loading animation
-        animate.start();
+        // start loading
+        loading.start();
 
         // start catch album and videos open event
         helper.modals();

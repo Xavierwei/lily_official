@@ -7,11 +7,10 @@ define([
     var oRoll,
         dHeader = $('.header'),
         dWrap = $('#wrap'),
-        dSquare = $('#square'),
-        dLeft = dSquare.find('.left'),
-        dBottom = dSquare.find('.bottom'),
-        dRight = dSquare.find('.right'),
-        dTop = dSquare.find('.top');
+        dLeft = $('.loading.left'),
+        dBottom = $('.loading.bottom'),
+        dRight = $('.loading.right'),
+        dTop = $('.loading.top');
 
     var start = function() {
         var nTime = 300,
@@ -19,18 +18,16 @@ define([
             nTotal = dWrap.find('img').length,
             imgLoad = imagesLoaded(dWrap);
 
-        dSquare.show();
-
         imgLoad.on('always', function(instance) {
             dTop.queue(function() {
                 dTop.dequeue();
 
-                dRight.css('height', '100%');
-                dBottom.css('width', '100%');
-                dLeft.css('height', '100%');
+                dRight.css('height', '75%');
+                dBottom.css('width', '90%');
+                dLeft.css('height', '75%');
 
                 dTop.animate({
-                    'width': '100%'
+                    'width': '90%'
                 }, nTime, function() {
                     // show the page content
                     dWrap.fadeIn();
@@ -38,8 +35,11 @@ define([
                     // show header
                     dHeader.fadeIn();
 
-                    // reset loading animate need stuff
-                    reset();
+                    // let elements skroll
+                    oSkrollr = skrollr.init({
+                        edgeStrategy: 'set',
+                        forceHeight: false
+                    })
                 })
             })
         })
@@ -59,7 +59,7 @@ define([
 
             if (25 < nVal && nVal < 50) {
                 dRight.css({
-                    'height': '100%'
+                    'height': '75%'
                 })
 
                 dBottom.css({
@@ -71,7 +71,7 @@ define([
 
             if (50 < nVal && nVal < 75) {
                 dBottom.css({
-                    'width': '100%'
+                    'width': '90%'
                 })
 
                 dLeft.css({
@@ -83,7 +83,7 @@ define([
 
             if (75 < nVal && nVal < 100) {
                 dLeft.css({
-                    'height': '100%'
+                    'height': '75%'
                 })
 
                 dTop.animate({
@@ -95,27 +95,7 @@ define([
         })
     }
 
-    var reset = function() {
-        var dPage = dWrap.find('.page'),
-            sHtml = dSquare.html();
-
-        // as background
-        dPage.append('<div id="bgsquare">' + sHtml + '</div>');
-
-        // remove style perpare for next loading animate
-        dSquare.find('span').removeAttr('style');
-
-        dSquare.css('display', 'none');
-
-        // let elements skroll
-        oSkrollr = skrollr.init({
-            edgeStrategy: 'set',
-            forceHeight: false
-        })
-    }
-
     return {
-        start: start,
-        reset: reset
+        start: start
     }
 })

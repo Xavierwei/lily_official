@@ -2,13 +2,14 @@ define([
     // libs
     'jQuery',
     // apps
-    'common/animate'
-], function($, animate) {
+    'common/loading'
+], function($, loading) {
     var sCur,
         isNext,
         isAnimate = false,
         dBody = $('body'),
-        dWrap = $('#wrap');
+        dWrap = $('#wrap'),
+        dLoading = $('.loading');
 
     // loading animation start
     var pageAnimate = function () {
@@ -27,6 +28,9 @@ define([
 
         // prevent duplicate animate
         isAnimate = true;
+
+        // remove style for next loading animate
+        dLoading.fadeOut().removeAttr('style').fadeIn();
 
         dWrap.css('position', 'relative')
 
@@ -50,22 +54,23 @@ define([
     // when animate end html the wrap
     var setContent = function (str) {
         var timer,
-            setInfo = function () {
-                $('#wrap').html(str);
-                animate.start();
+            setHtml = function () {
+                dWrap.html(str);
+                // loading
+                loading.start();
             };
 
         if (isAnimate) {
             timer = setInterval(function () {
                 if (!isAnimate) {
                     // update content
-                    setInfo();
+                    setHtml();
                     // clear interval
                     clearInterval(timer);
                 }
             }, 300)
         } else {
-            setInfo();
+            setHtml();
         }
     }
 
