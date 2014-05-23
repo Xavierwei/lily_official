@@ -5,7 +5,6 @@ define([
     'imagesLoaded'
 ], function($, skrollr, imagesLoaded) {
     var oRoll,
-        dHeader = $('.header'),
         dWrap = $('#wrap'),
         dLeft = $('.loading.left'),
         dBottom = $('.loading.bottom'),
@@ -31,9 +30,6 @@ define([
                 }, nTime, function() {
                     // show the page content
                     dWrap.fadeIn();
-
-                    // show header
-                    dHeader.fadeIn();
 
                     // let elements skroll
                     oSkrollr = skrollr.init({

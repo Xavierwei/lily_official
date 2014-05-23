@@ -32,6 +32,7 @@ define([
         // remove style for next loading animate
         dLoading.fadeOut().removeAttr('style').fadeIn();
 
+        // for page switch animation need
         dWrap.css('position', 'relative')
 
         if (isNext) {
@@ -92,7 +93,11 @@ define([
     var init = function () {
         var dCur,
             nCur,
-            dMenus = $('.header a[title]');
+            dHeader = $('.header'),
+            dMenus = dHeader.find('a[title]');
+
+        // show header
+        dHeader.fadeIn();
 
         // switch menu url to hash mode
         dMenus.each(function(nIndex, dEl) {
