@@ -1,6 +1,6 @@
 define([
     // libs
-    'jquery',
+    'jQuery',
     // apps
     'common/animate'
 ], function($, animate) {
@@ -50,8 +50,8 @@ define([
     // when animate end html the wrap
     var setContent = function (str) {
         var timer,
-            set = function () {
-                dWrap.html(str);
+            setInfo = function () {
+                $('#wrap').html(str);
                 animate.start();
             };
 
@@ -59,13 +59,13 @@ define([
             timer = setInterval(function () {
                 if (!isAnimate) {
                     // update content
-                    set();
+                    setInfo();
                     // clear interval
                     clearInterval(timer);
                 }
             }, 300)
         } else {
-            set();
+            setInfo();
         }
     }
 
@@ -77,14 +77,9 @@ define([
                 pageAnimate();
             },
             success: function(str) {
-                var startWith = "<section id='wrap'>",
-                    endWith = '</section>',
-                    iStart = str.search(startWith),
-                    iEnd = str.search(endWith);
+                var dHtml = $('<div>' + str + '</div>');
 
-                str= str.substring(iStart+startWith.length, iEnd);
-
-                setContent(str)
+                setContent(dHtml.find('#wrap').html())
             }
         })
     }

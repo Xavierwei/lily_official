@@ -1,37 +1,27 @@
 require.config({
-    'paths': {
+    paths: {
         // lib
-        'jquery': 'lib/jquery-1.8.3.min',
-        'skrollr' : 'lib/skrollr.min',
-        'Handlebars': 'lib/handlebars',
-        'jquery.fancybox': 'lib/jquery.fancybox',
-        'jquery.fancybox-media': 'lib/jquery.fancybox-media',
-        'imagesLoaded' : 'lib/imagesloaded.pkgd.min',
-        'jquery.jcarousel' : 'lib/jquery.jcarousel.min'
+        jQuery : 'lib/jquery/jquery',
+        Handlebars : 'lib/handlebars/handlebars',
+        imagesLoaded : 'lib/imagesLoaded/imagesLoaded.min',
+        skrollr : 'lib/skrollr/skrollr.min',
+        templates:  '../js/templates'
     },
-    shim: {
-        'Handlebars': {
-             exports: 'Handlebars'
-        },
-        'imagesLoaded' : {
-            exports : 'imagesLoaded'
-        },
-        'jquery.address': {
-            deps : ['jquery']
-        },
-        'jquery.jcarousel': {
-            deps : ['jquery']
-        },
-        'jquery.fancybox': {
-            deps : ['jquery']
-        },
-        'jquery.fancybox-media': {
-            deps : ['jquery', 'jquery.fancybox']
-        }
-    }
+    priority: [
+        'jQuery',
+        'Handlebars',
+        'imagesLoaded',
+        'skrollr'
+    ]
 })
 
-require(['require'], function(require) {
+require([
+    'require',
+    'jQuery',
+    'Handlebars',
+    'imagesLoaded',
+    'skrollr'
+], function(require, $, Handlebars, imagesLoaded, skrollr) {
     require(['common/app'], function(app) {
         app();
     })

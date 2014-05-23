@@ -1,6 +1,6 @@
 define([
     // libs
-    'jquery',
+    'jQuery',
     'skrollr',
     'imagesLoaded'
 ], function($, skrollr, imagesLoaded) {

@@ -1,14 +1,13 @@
 define([
     // libs
-    'jquery',
+    'jQuery',
     'skrollr',
-    'Handlebars',
 
     // apps
     'common/switchPage',
     'common/animate',
     'common/helper'
-], function($, skrollr, Handlebars, switchPage, animate, helper) {
+], function($, skrollr, switchPage, animate, helper) {
     var initialize = function() {
         // start loading animation
         animate.start();

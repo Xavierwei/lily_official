@@ -1,15 +1,9 @@
 define([
     // libs
-    'jquery',
+    'jQuery',
     'Handlebars',
-    // tpls
     'lib/text!templates/album.html',
-    'lib/text!templates/video.html',
-
-    // plugins
-    'jquery.jcarousel',
-    'jquery.fancybox',
-    'jquery.fancybox-media'
+    'lib/text!templates/video.html'
 ], function($, Handlebars, albumTpl, videoTpl) {
     var modals = function() {
         var dBody = $('body');
