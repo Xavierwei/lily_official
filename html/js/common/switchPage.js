@@ -1,20 +1,18 @@
 define([
     // libs
     'jquery',
-
     // apps
-    'common/helper',
     'common/animate'
-], function($, helper, animate) {
-    var isNext,
-        isFirst = true,
+], function($, animate) {
+    var sCur,
+        isNext,
         isAnimate = false,
         dBody = $('body'),
         dWrap = $('#wrap');
 
-    var start = function () {
+    // loading animation start
+    var pageAnimate = function () {
         var nTime = 600,
-            sHash = helper.getHash(),
             nWidth  = $(window).width(),
             nHeight  = $(window).height(),
             compelete = function () {
@@ -24,7 +22,7 @@ define([
                 dWrap.removeAttr('style');
 
                 // update page class
-                dBody.attr('class', sHash);
+                dBody.attr('class', sCur);
             };
 
         // prevent duplicate animate
@@ -47,14 +45,13 @@ define([
                 compelete()
             })
         }
-
     }
 
     // when animate end html the wrap
-    var end = function (str) {
+    var setContent = function (str) {
         var timer,
-            setContent = function () {
-                dWrap.html(str)
+            set = function () {
+                dWrap.html(str);
                 animate.start();
             };
 
@@ -62,119 +59,89 @@ define([
             timer = setInterval(function () {
                 if (!isAnimate) {
                     // update content
-                    setContent();
+                    set();
                     // clear interval
                     clearInterval(timer);
                 }
             }, 300)
         } else {
-            setContent();
+            set();
         }
     }
 
-    var updateContent = function () {
-        // prevent sometime when first time page loaded also would fire the event
-        if (isFirst) {
-            isFirst = false;
-        } else {
-            $.ajax({
-                url : helper.getHash() + '.html',
-                method:'get',
-                beforeSend: function () {
-                    start();
-                },
-                success: function(str) {
-                    var startWith = "<section id='wrap'>",
-                        endWith = '</section>',
-                        iStart = str.search(startWith),
-                        iEnd = str.search(endWith);
+    var updatePage = function () {
+        $.ajax({
+            url : sCur + '.html',
+            method:'get',
+            beforeSend: function () {
+                pageAnimate();
+            },
+            success: function(str) {
+                var startWith = "<section id='wrap'>",
+                    endWith = '</section>',
+                    iStart = str.search(startWith),
+                    iEnd = str.search(endWith);
 
-                    str= str.substring(iStart+startWith.length, iEnd);
+                str= str.substring(iStart+startWith.length, iEnd);
 
-                    end(str)
-                },
-                error: function () {
-                    // to do
-                }
-            })
-        }
+                setContent(str)
+            }
+        })
     }
 
-    var updateLink = function () {
+    var init = function () {
         var dCur,
             nCur,
-            dMenu = $('.header .nav a[title]'),
-            dVip = $('.logo a[title]'),
-            updateCache = function (evt, dTarget, nIndex) {
-                // prevent click the active effect
-                if (dTarget.hasClass('on')) {
-                    evt.preventDefault();
-                    return;
-                } else {
-                    dCur.removeClass('on');
-                    dTarget.addClass('on');
-
-                    if (nIndex > nCur) {
-                        isNext = true;
-                    } else {
-                        isNext = false;
-                    }
-
-                    // update cached status
-                    dCur = dTarget;
-                    nCur = nIndex;
-                }
-            }
+            dMenus = $('.header a[title]');
 
         // switch menu url to hash mode
-        dMenu.each(function(nIndex, dEl) {
+        dMenus.each(function(nIndex, dEl) {
             var dTmp = $(dEl),
                 sTitle = dTmp.attr('title');
 
+            // url to hash mode
             dTmp.attr('href', '#' + sTitle);
 
-            // update cached status
+            // update judge params
             if (dTmp.hasClass('on')) {
                 dCur = dTmp;
-                nCur = nIndex + 1;  //for vip
+                sCur = sTitle;
+                nCur = dTmp.index();
             }
         })
 
-        // update cached status, if page first time opened with vip page
-        if (dVip.hasClass('on')) {
-            dCur = dVip;
-            nCur = 0;
-        }
-
-        // vip url to hash mode
-        dVip.attr('href', '#' + dVip.attr('title'));
-
         // update active class
-        dMenu.bind('click', function (evt) {
-            // update judge params
-            isFirst = false;
-
+        dMenus.bind('click', function (e) {
             var dTarget = $(this),
-                nIndex = dTarget.index() + 1; //for vip
+                sTitle = dTarget.attr('title'),
+                nIndex = dTarget.index();
 
-            updateCache(evt, dTarget, nIndex);
-        })
+            // prevent click the active effect
+            if (dTarget.hasClass('on')) {
+                return e.preventDefault();
+            }
 
-        dVip.bind('click', function (evt) {
+            // update class
+            dCur.removeClass('on');
+            dTarget.addClass('on');
+
             // update judge params
-            isFirst = false;
+            if (nIndex > nCur) {
+                isNext = true;
+            } else {
+                isNext = false;
+            }
 
-            var dTarget = $(this),
-                nIndex = 0;
+            dCur = dTarget;
+            sCur = sTitle;
+            nCur = nIndex;
 
-            updateCache(evt, dTarget, nIndex);
+            // page update
+            updatePage()
         })
     }
 
     return {
-        start : start,
-        end : end,
-        updateContent : updateContent,
-        updateLink : updateLink
+        init : init
     }
 })

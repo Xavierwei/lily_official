@@ -40,8 +40,6 @@ define([
 
                     // reset loading animate need stuff
                     reset();
-
-                    initMap();
                 })
             })
         })
@@ -114,20 +112,6 @@ define([
             edgeStrategy: 'set',
             forceHeight: false
         })
-    }
-
-    var initMap = function() {
-        var dMap = $('#map');
-
-        if (dMap.length) {
-            dMap.gmap3({
-                map:{
-                    options:{
-                        zoom:10
-                    }
-                }
-            })
-        }
     }
 
     return {

@@ -9,19 +9,8 @@ define([
     // plugins
     'jquery.jcarousel',
     'jquery.fancybox',
-    'jquery.fancybox-media',
-    'gmap3.min'
+    'jquery.fancybox-media'
 ], function($, Handlebars, albumTpl, videoTpl) {
-    var getHash = function() {
-        var sVal = $.address.value();
-
-        if (sVal == '/') {
-            return 'index';
-        } else {
-            return sVal.replace('/', '');
-        }
-    }
-
     var modals = function() {
         var dBody = $('body');
 
@@ -107,7 +96,6 @@ define([
     }
 
     return {
-        getHash: getHash,
         modals: modals
     }
 })
