@@ -73,13 +73,13 @@ a:hover{color:#fff}
 .page_privacy{padding:260px 0;}
 .btnlink{display:block;border:#000 solid 1px;padding:0 36px;height:46px;line-height:46px;text-align:center;font-size:16px;float:left;}
 /* */
-.showy{}
-.showyitem{background:url('../images/showy.png');width:50px;height:50px;position:absolute;z-index:20}
-.showyitem1{left:265px;top:680px;}
-.showyitem2{background-position:0 -50px;top:1890px;right:470px;}
-.showyitem3{background-position:-50px 0;top:2010px;right:285px;}
-.showyitem4{background-position:-50px -50px;top:2366px;left:50%;}
-.showyitem5{left:auto;right:55px;top:4544px;}
+.showy{ display: none;}
+.showyitem{background:url('../images/showy.png');width:50px;height:50px;position:fixed;z-index:20;}
+.showyitem1{left:265px;}
+.showyitem2{background-position:0 -50px;right:470px;}
+.showyitem3{background-position:-50px 0;right:285px;}
+.showyitem4{background-position:-50px -50px;left:50%;}
+.showyitem5{left:auto;right:55px;}
 /* HOME Used
 ================================================================================================= */
 /* */

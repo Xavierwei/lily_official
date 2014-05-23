@@ -5,11 +5,13 @@ define([
     'imagesLoaded'
 ], function($, skrollr, imagesLoaded) {
     var oRoll,
+        oSkrollr = null,
         dWrap = $('#wrap'),
         dLeft = $('.loading.left'),
         dBottom = $('.loading.bottom'),
         dRight = $('.loading.right'),
-        dTop = $('.loading.top');
+        dTop = $('.loading.top'),
+        dTape = $('.showy');
 
     var start = function() {
         var nTime = 300,
@@ -31,11 +33,18 @@ define([
                     // show the page content
                     dWrap.fadeIn();
 
-                    // let elements skroll
-                    oSkrollr = skrollr.init({
-                        edgeStrategy: 'set',
-                        forceHeight: false
-                    })
+                    // show tapes
+                    dTape.fadeIn();
+
+                    if (oSkrollr) {
+                        oSkrollr.refresh();
+                    } else {
+                        // let elements skroll
+                        oSkrollr = skrollr.init({
+                            edgeStrategy: 'set',
+                            forceHeight: false
+                        })
+                    }
                 })
             })
         })

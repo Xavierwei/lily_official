@@ -9,7 +9,8 @@ define([
         isAnimate = false,
         dBody = $('body'),
         dWrap = $('#wrap'),
-        dLoading = $('.loading');
+        dLoading = $('.loading'),
+        dTape = $('.showy');
 
     // loading animation start
     var pageAnimate = function () {
@@ -31,6 +32,8 @@ define([
 
         // remove style for next loading animate
         dLoading.fadeOut().removeAttr('style').fadeIn();
+        // hide tapes
+        dTape.fadeOut();
 
         // for page switch animation need
         dWrap.css('position', 'relative')
