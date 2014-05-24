@@ -826,5 +826,8 @@
 	z-index: 100;
 	cursor: pointer;
 }
+.mejs-overlay-button{
+	margin-top: -50px !important;
+}
 
 /* End:Postroll */

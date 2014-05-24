@@ -40,7 +40,7 @@
 .fancybox-lock{overflow:visible!important;width:auto;}
 .fancybox-lock body{overflow:hidden!important;}
 .fancybox-lock-test{overflow-y:hidden!important;}
-.fancybox-overlay{position:absolute;top:0;left:0;overflow:hidden;display:none;z-index:8010;background:url(../images/fancybox/fancybox_overlay.png);}
+.fancybox-overlay{position:absolute;top:0;left:0;overflow:hidden;display:none;z-index:8010;background:#fff;}
 .fancybox-overlay-fixed{position:fixed;bottom:0;right:0;}
 .fancybox-lock .fancybox-overlay{overflow:auto;overflow-y:scroll;}
 /* Title helper */
@@ -75,3 +75,5 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 .fancybox-inner .actions{position:absolute;top:80%;bottom:0;left:0;right:0;overflow:hidden;text-align:center;}
 .fancybox-inner .actions li{display:inline-block;}
 .fancybox-inner .actions li a{display:inline-block;font-size:30px;font-weight:bolder;padding:30px;}
+.fancybox-inner .actions li a:hover{color:#000;}
+.fancybox-inner .actions li .desc{display:inline-block;font-size:30px;color:#999;}

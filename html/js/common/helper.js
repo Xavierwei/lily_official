@@ -29,11 +29,25 @@ define([
                     setTimeout(function() {
                         var jcarousel = $('.fancybox-inner .jcarousel'),
                             dPre = $('.jcarousel-control-prev'),
-                            dNext = $('.jcarousel-control-next');
+                            dNext = $('.jcarousel-control-next'),
+                            dWidth = $(window).width(),
+                            dDesc = $('.actions .desc'),
+                            nLength = $('.jcarousel .content li').length,
+                            nIndex = 1,
+                            updateDesc = function () {
+                                if (nIndex <= 0 ) {
+                                    nIndex = nLength;
+                                }
+
+                                if (nIndex > nLength){
+                                    nIndex = 1;
+                                }
+
+                                dDesc.html(nIndex)
+                            };
 
                         jcarousel.on('jcarousel:reload jcarousel:create', function() {
-                            var width = jcarousel.innerWidth();
-                            jcarousel.jcarousel('items').css('width', width + 'px');
+                            jcarousel.jcarousel('items').css('width', dWidth + 'px');
                         }).jcarousel({
                             wrap: 'circular'
                         });
@@ -45,6 +59,17 @@ define([
                         dNext.jcarouselControl({
                             target: '+=1'
                         });
+
+                        // for dynamic title
+                        dPre.bind('click', function () {
+                            nIndex -= 1;
+                            updateDesc()
+                        })
+
+                        dNext.bind('click', function () {
+                            nIndex += 1;
+                            updateDesc()
+                        })
                     }, 0)
                 }
             })
@@ -70,7 +95,21 @@ define([
                         var jcarousel = $('.fancybox-inner .jcarousel'),
                             dPre = $('.jcarousel-control-prev'),
                             dNext = $('.jcarousel-control-next'),
-                            dWidth = $(window).width();
+                            dWidth = $(window).width(),
+                            dDesc = $('.actions .desc'),
+                            nLength = $('.jcarousel .content li').length,
+                            nIndex = 1,
+                            updateDesc = function () {
+                                if (nIndex <= 0 ) {
+                                    nIndex = nLength;
+                                }
+
+                                if (nIndex > nLength){
+                                    nIndex = 1;
+                                }
+
+                                dDesc.html(nIndex)
+                            };
 
                         // jcarousel init
                         jcarousel.on('jcarousel:reload jcarousel:create', function() {
@@ -87,6 +126,7 @@ define([
                             target: '+=1'
                         });
 
+
                         // video stuff
                         var dVideo = jcarousel.find('video'),
                             stopPlay = function() {
@@ -97,8 +137,18 @@ define([
 
                         dVideo.mediaelementplayer()
 
-                        dPre.on('click', stopPlay);
-                        dNext.on('click', stopPlay);
+                        // for dynamic title
+                        dPre.bind('click', function () {
+                            nIndex -= 1;
+                            stopPlay();
+                            updateDesc();
+                        })
+
+                        dNext.bind('click', function () {
+                            nIndex += 1;
+                            stopPlay();
+                            updateDesc();
+                        })
                     }, 0)
                 }
             })
