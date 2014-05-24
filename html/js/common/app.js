@@ -12,8 +12,8 @@ define([
         // start loading
         loading.start();
 
-        // start catch album and videos open event
-        helper.modals();
+        // start catch album and videos , weibo events
+        helper.init();
 
         // update the link to hash mode
         switchPage.init()

@@ -73,7 +73,7 @@ a:hover{color:#fff}
 .page_privacy{padding:260px 0;}
 .btnlink{display:block;border:#000 solid 1px;padding:0 36px;height:46px;line-height:46px;text-align:center;font-size:16px;float:left;}
 /* */
-.showy{ display: none;}
+.showy{display:none;}
 .showyitem{background:url('../images/showy.png');width:50px;height:50px;position:fixed;z-index:20;}
 .showyitem1{left:265px;}
 .showyitem2{background-position:0 -50px;right:470px;}
@@ -99,13 +99,16 @@ a:hover{color:#fff}
 .home_img2{position:absolute;top:0;right:20px;}
 .home_img3{position:absolute;top:648px;left:50%;margin-left:-135px;}
 /* */
-.home_weibo{width:1280px;margin:0 auto;position:relative;padding:20px 20px 50px}
-.home_wbbg{background:#f9e1e4;width:408px;height:444px}
-.home_wbbox{background:#fff;width:408px;height:444px;position:absolute;top:0;left:0}
-.home_wblogo{background:url('../images/home_weiboicon.png') no-repeat center;height:100px;margin-top:40px;}
-.home_wbtime{text-align:center;}
-.home_wbcom{padding:20px 80px;line-height:30px;}
-.home_wb_btn{margin:20px 0 0 140px;}
+.weibo{width:1280px;margin:0 auto;position:relative;padding:20px 20px 50px}
+.weibo_wbbg{background:#f9e1e4;width:408px;height:444px}
+.weibo_wbbox{background:#fff;width:408px;height:444px;position:absolute;top:0;left:0}
+.weibo_wblogo{background:url('../images/home_weiboicon.png') no-repeat center;height:100px;margin-top:40px;}
+.weibo_wbtime{text-align:center;}
+.weibo_wbcom{padding:20px 80px;line-height:30px;}
+.weibo_wb_btn{margin:20px 0 0 140px;}
+.weibo_top{left:100%;margin-top:-470px;margin-left:-230px;}
+.weibo_bottom{left:100%;margin-top:60px;margin-left:-230px;}
+.showyitem5 .weibo{margin-left:-330px;}
 /* */
 .home_campaign{width:1280px;margin:0 auto;padding:0 0 240px;position:relative;}
 .home_cpbox{border:#000 solid 4px;width:400px;height:430px;text-transform:uppercase;text-align:center;font-size:16px;overflow:hidden;}

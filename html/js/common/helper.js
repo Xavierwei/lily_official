@@ -3,11 +3,12 @@ define([
     'jQuery',
     'Handlebars',
     'lib/text!templates/album.html',
-    'lib/text!templates/video.html'
-], function($, Handlebars, albumTpl, videoTpl) {
-    var modals = function() {
-        var dBody = $('body');
+    'lib/text!templates/video.html',
+    'lib/text!templates/weibo.html'
+], function($, Handlebars, albumTpl, videoTpl, weiboTpl) {
+    var dBody = $('body');
 
+    var modals = function() {
         dBody.delegate('.album', 'click', function() {
             var sHthml = Handlebars.compile(albumTpl)();
 
@@ -89,7 +90,42 @@ define([
         // $($('.video')).click();
     }
 
+    var weibo = function () {
+        dBody.delegate('.showyitem', 'mouseenter', function() {
+            var dTarget = $(this),
+                nTop = parseInt(this.style.bottom),
+                sHthml = Handlebars.compile(weiboTpl)();
+
+            // set weibo content
+            dTarget.html(sHthml);
+
+            // show weibo on bottom
+            if (nTop > 50) {
+                dTarget.find('.weibo').addClass('weibo_bottom');
+            } else {
+                // on top
+                dTarget.find('.weibo').addClass('weibo_top');
+            }
+
+            // empty weibo content
+            $(window).on('load resize scroll',function(){
+                dTarget.empty();
+            })
+
+            dTarget.bind('mouseleave', function () {
+                dTarget.empty();
+            })
+        })
+    }
+
+    var init = function () {
+        // for album/photo list modals
+        modals();
+        // for weibo mouse event
+        weibo()
+    }
+
     return {
-        modals: modals
+        init: init
     }
 })
