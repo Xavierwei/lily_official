@@ -27,7 +27,9 @@ define([
                 },
                 beforeShow: function() {
                     setTimeout(function() {
-                        var jcarousel = $('.fancybox-inner .jcarousel');
+                        var jcarousel = $('.fancybox-inner .jcarousel'),
+                            dPre = $('.jcarousel-control-prev'),
+                            dNext = $('.jcarousel-control-next');
 
                         jcarousel.on('jcarousel:reload jcarousel:create', function() {
                             var width = jcarousel.innerWidth();
@@ -36,11 +38,11 @@ define([
                             wrap: 'circular'
                         });
 
-                        $('.jcarousel-control-prev').jcarouselControl({
+                        dPre.jcarouselControl({
                             target: '-=1'
                         });
 
-                        $('.jcarousel-control-next').jcarouselControl({
+                        dNext.jcarouselControl({
                             target: '+=1'
                         });
                     }, 0)
@@ -65,32 +67,48 @@ define([
                 },
                 beforeShow: function() {
                     setTimeout(function() {
-                        var jcarousel = $('.fancybox-inner .jcarousel');
+                        var jcarousel = $('.fancybox-inner .jcarousel'),
+                            dPre = $('.jcarousel-control-prev'),
+                            dNext = $('.jcarousel-control-next'),
+                            dWidth = $(window).width();
 
+                        // jcarousel init
                         jcarousel.on('jcarousel:reload jcarousel:create', function() {
-                            var width = jcarousel.innerWidth();
-                            jcarousel.jcarousel('items').css('width', width + 'px');
+                            jcarousel.jcarousel('items').css('width', dWidth + 'px');
                         }).jcarousel({
                             wrap: 'circular'
                         });
 
-                        $('.jcarousel-control-prev').jcarouselControl({
+                        dPre.jcarouselControl({
                             target: '-=1'
                         });
 
-                        $('.jcarousel-control-next').jcarouselControl({
+                        dNext.jcarouselControl({
                             target: '+=1'
                         });
+
+                        // video stuff
+                        var dVideo = jcarousel.find('video'),
+                            stopPlay = function() {
+                                dVideo.each(function() {
+                                    $(this)[0].player.pause();
+                                })
+                            }
+
+                        dVideo.mediaelementplayer()
+
+                        dPre.on('click', stopPlay);
+                        dNext.on('click', stopPlay);
                     }, 0)
                 }
             })
         })
 
         // for quick debug
-        // $($('.video')).click();
+        // $($('.album')).click();
     }
 
-    var weibo = function () {
+    var weibo = function() {
         dBody.delegate('.showyitem', 'mouseenter', function() {
             var dTarget = $(this),
                 nTop = parseInt(this.style.bottom),
@@ -108,17 +126,17 @@ define([
             }
 
             // empty weibo content
-            $(window).on('load resize scroll',function(){
+            $(window).on('load resize scroll', function() {
                 dTarget.empty();
             })
 
-            dTarget.bind('mouseleave', function () {
+            dTarget.bind('mouseleave', function() {
                 dTarget.empty();
             })
         })
     }
 
-    var init = function () {
+    var init = function() {
         // for album/photo list modals
         modals();
         // for weibo mouse event

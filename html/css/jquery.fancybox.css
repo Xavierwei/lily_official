@@ -10,6 +10,7 @@
 .fancybox-nav span,
 .fancybox-tmp{padding:0;margin:0;border:0;outline:none;vertical-align:top;}
 .fancybox-wrap{position:absolute;top:0;left:0;z-index:8020;}
+.fancybox-skin{position:relative;background:#f9f9f9;color:#444;text-shadow:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
 .fancybox-opened{z-index:8030;}
 .fancybox-outer,
 .fancybox-inner{position:relative;}
@@ -25,7 +26,7 @@
 .fancybox-next span{background-image:url(../images/fancybox/fancybox_sprite.png);}
 #fancybox-loading{position:fixed;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-position:0 -108px;opacity:0.8;cursor:pointer;z-index:8060;}
 #fancybox-loading div{width:44px;height:44px;background:url(../images/fancybox/fancybox_loading.gif) center center no-repeat;}
-.fancybox-close{position:fixed;top:1%;width:36px;height:36px;cursor:pointer;z-index:8040;left:50%;margin-left:-18px;}
+.fancybox-close{position:absolute;top:-18px;right:-18px;width:36px;height:36px;cursor:pointer;z-index:8040;}
 .fancybox-nav{position:absolute;top:0;width:40%;height:100%;cursor:pointer;text-decoration:none;background:transparent url(../images/fancybox/blank.gif); /* helps IE */
 -webkit-tap-highlight-color:rgba(0,0,0,0);z-index:8040;}
 .fancybox-prev{left:0;}
@@ -59,20 +60,18 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
     .fancybox-next span{background-image:url(../images/fancybox/fancybox_sprite@2x.png);background-size:44px 152px; /* The size of the normal image,half the size of the hi-res image */}
     #fancybox-loading div{background-image:url(../images/fancybox/fancybox_loading@2x.gif);background-size:24px 24px;/* The size of the normal image,half the size of the hi-res image */}
 }
-.fancybox-skin{padding:0!important;width:100%!important;}
-.fancybox-wrap{left:0!important;width:100%!important;}
-.fancybox-outer,
-.fancybox-inner{width:100%!important;}
-.fancybox-inner{overflow:hidden!important;}
-/* * Carousel * */
-.jcarousel{position:relative;top:5%;height:90%;overflow:hidden;}
-.jcarousel ul{width:20000em;position:relative;list-style:none;margin:0;padding:0;height:100%;}
-.jcarousel li{position:relative;float:left;height:100%;text-align:center;padding-bottom:56.25%;} /* padding-bottom is special for video tag*/
-.jcarousel li span{width:0;height:100%;display:inline-block;vertical-align:middle;}
-.jcarousel img,
-.jcarousel video{margin:0 auto;vertical-align:middle;}
+/* custom fancybox */
+.fancybox-wrap{left:0!important;right:0!important;top:0!important;bottom:0!important;width:100%!important;}
+.fancybox-skin{height:100%!important;padding:0!important;}
+.fancybox-outer{top:20%;bottom:0;left:0;right:0;position:absolute;}
+.fancybox-inner{position:relative;width:100%!important;height:100%!important;}
+.fancybox-close{top:10%;margin-top:-18px;left:50%;margin-left:-18px;}
+/* Carousel */
+.jcarousel{position:absolute;top:0;bottom:20%;left:0;right:0;overflow:hidden;}
+.jcarousel ul{position:relative;width:20000em;height:100%;}
+.jcarousel li{position:relative;float:left;height:100%;text-align:center;}
+.jcarousel img{width:100%;}
 /* * Carousel Controls * */
-.jcarousel-control-prev,
-.jcarousel-control-next{position:fixed;bottom:1%;width:30px;height:30px;text-align:center;background:#4E443C;color:#fff;text-decoration:none;text-shadow:0 0 1px #000;font:24px/27px Arial,sans-serif;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;-webkit-box-shadow:0 0 4px #F0EFE7;-moz-box-shadow:0 0 4px #F0EFE7;box-shadow:0 0 4px #F0EFE7;}
-.jcarousel-control-prev{left:46%;}
-.jcarousel-control-next{right:46%;}
+.fancybox-inner .actions{position:absolute;top:80%;bottom:0;left:0;right:0;overflow:hidden;text-align:center;}
+.fancybox-inner .actions li{display:inline-block;}
+.fancybox-inner .actions li a{display:inline-block;font-size:30px;font-weight:bolder;padding:30px;}
