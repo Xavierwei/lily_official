@@ -132,6 +132,7 @@ define([
                     zoomControlOptions: {
                         style: google.maps.ZoomControlStyle.SMALL
                     },
+                    scrollwheel: false,
                     disableDefaultUI: true
                 };
 
