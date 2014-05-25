@@ -155,7 +155,7 @@ define([
         })
 
         // for quick debug
-        // $($('.album')).click();
+        // $($('.video')).click();
     }
 
     var weibo = function() {
