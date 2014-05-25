@@ -30,7 +30,6 @@ define([
                         var jcarousel = $('.fancybox-inner .jcarousel'),
                             dPre = $('.jcarousel-control-prev'),
                             dNext = $('.jcarousel-control-next'),
-                            dWidth = $(window).width(),
                             dDesc = $('.actions .desc'),
                             nLength = $('.jcarousel .content li').length,
                             nIndex = 1,
@@ -44,10 +43,14 @@ define([
                                 }
 
                                 dDesc.html(nIndex)
+                            },
+                            updateSize = function () {
+                                var dWidth = $(window).width();
+                                jcarousel.jcarousel('items').css('width', dWidth + 'px');
                             };
 
                         jcarousel.on('jcarousel:reload jcarousel:create', function() {
-                            jcarousel.jcarousel('items').css('width', dWidth + 'px');
+                            updateSize();
                         }).jcarousel({
                             wrap: 'circular'
                         });
@@ -69,6 +72,11 @@ define([
                         dNext.bind('click', function () {
                             nIndex += 1;
                             updateDesc()
+                        })
+
+                        // auto resize
+                        $('window').on('resize', function () {
+                            updateSize();
                         })
                     }, 0)
                 }
@@ -95,7 +103,6 @@ define([
                         var jcarousel = $('.fancybox-inner .jcarousel'),
                             dPre = $('.jcarousel-control-prev'),
                             dNext = $('.jcarousel-control-next'),
-                            dWidth = $(window).width(),
                             dDesc = $('.actions .desc'),
                             nLength = $('.jcarousel .content li').length,
                             nIndex = 1,
@@ -109,11 +116,15 @@ define([
                                 }
 
                                 dDesc.html(nIndex)
+                            },
+                            updateSize = function () {
+                                var dWidth = $(window).width();
+                                jcarousel.jcarousel('items').css('width', dWidth + 'px');
                             };
 
                         // jcarousel init
                         jcarousel.on('jcarousel:reload jcarousel:create', function() {
-                            jcarousel.jcarousel('items').css('width', dWidth + 'px');
+                            updateSize();
                         }).jcarousel({
                             wrap: 'circular'
                         });
@@ -130,6 +141,12 @@ define([
                         // video stuff
                         var dVideo = jcarousel.find('video'),
                             stopPlay = function() {
+                                var dLoading = jcarousel.find('.mejs-overlay-loading').parent();
+
+                                // stop loading
+                                dLoading.hide();
+
+                                // stop play
                                 dVideo.each(function() {
                                     $(this)[0].player.pause();
                                 })
@@ -149,13 +166,18 @@ define([
                             stopPlay();
                             updateDesc();
                         })
+
+                        // auto resize
+                        $('window').on('resize', function () {
+                            updateSize();
+                        })
                     }, 0)
                 }
             })
         })
 
         // for quick debug
-        // $($('.video')).click();
+        $($('.album')).click();
     }
 
     var weibo = function() {
