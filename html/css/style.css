@@ -126,7 +126,6 @@ a:hover { color: #fff }
 .home_sl_txt { float: left; width: 130px; }
 .home_sl_icon { float: right; width: 0; height: 0; overflow: hidden; border: transparent solid 5px; border-top: #000 solid 5px; margin: 20px 10px 0 0 }
 .home_select { position: absolute; height: 46px; line-height: 46px; left: 1px; top: 1px; width: 162px; font-size: 16px; border: 0; background: none; cursor: pointer; opacity: 0; filter: alpha(opacity=0); }
-.home_map { display: block; }
 /* LOOKBOOK Used
 ================================================================================================= */
 .lb_tit { width: 340px; border: #000 solid 4px; text-align: center; line-height: 80px; font-weight: bold; position: absolute; left: 50%; margin-left: -520px; top: 220px }
@@ -191,13 +190,12 @@ a:hover { color: #fff }
 .store { text-align: center; font-family: arial; }
 .store h2 { font-size: 80px; line-height: 80px; }
 .store_txt { font-size: 16px; font-weight: bold; }
-.store_selbox { width: 552px; margin: 60px auto 0 }
-.store_select { position: relative; width: 160px; padding: 0 0 60px; float: left; margin: 0 12px; display: inline }
+.store_selbox { margin: 60px auto 0 }
+.store_select { position: relative; width: 160px; padding: 0 0 60px; margin: 0 12px; display: inline-block; }
 .store_selectbg { border: #000 solid 1px; display: block; height: 46px; width: 160px; font-size: 16px; line-height: 46px; }
 .store_sl_txt { float: left; width: 130px; font-family: "Microsoft Yahei", arial, SimHei, sans-serif; }
 .store_sl_icon { float: right; width: 0; height: 0; overflow: hidden; border: transparent solid 5px; border-top: #000 solid 5px; margin: 20px 10px 0 0 }
 .store_sl { position: absolute; height: 46px; line-height: 46px; left: 1px; top: 1px; width: 162px; font-size: 16px; border: 0; background: none; cursor: pointer; opacity: 0; filter: alpha(opacity=0); }
-.store_map { display: block; }
 .store_add { text-align: left; width: 1410px; margin: 0 auto }
 .store_add h1 { line-height: 80px; font-size: 42px; padding: 50px 90px 0; }
 .store_additem { float: left; width: 290px; padding: 60px 90px 0; }

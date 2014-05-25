@@ -51,40 +51,53 @@
             <div class="store">
                 <h2>STORE</h2>
                 <div class="store_txt">CLOSE TO YOU</div>
-                <div class="store_selbox">
-                    <div class="store_select cs-clear" >
+                <div class="store_selbox" id='store-selectbox'>
+                    <div class="store_select cs-clear" id='country'>
                         <a href="#" class="store_selectbg cs-clear" >
-                            <span class="store_sl_txt">请选择</span>
+                            <span class="store_sl_txt">Country</span>
                             <span class="store_sl_icon"></span>
                         </a>
                         <select class="store_sl">
+                            <option></option>
+                            <option>China</option>
+                        </select>
+                    </div>
+                    <div class="store_select cs-clear" id='province'>
+                        <a href="#" class="store_selectbg cs-clear" >
+                            <span class="store_sl_txt">Province</span>
+                            <span class="store_sl_icon"></span>
+                        </a>
+                        <select class="store_sl">
+                            <option></option>
                             <option>Shanghai</option>
                             <option>Beijing</option>
                         </select>
                     </div>
-                    <div class="store_select cs-clear" >
+                    <div class="store_select cs-clear" id='city'>
                         <a href="#" class="store_selectbg cs-clear" >
-                            <span class="store_sl_txt">请选择</span>
+                            <span class="store_sl_txt">City</span>
                             <span class="store_sl_icon"></span>
                         </a>
                         <select class="store_sl">
+                            <option></option>
                             <option>Shanghai</option>
                             <option>Beijing</option>
                         </select>
                     </div>
-                    <div class="store_select cs-clear" >
+                    <div class="store_select cs-clear" id='district'>
                         <a href="#" class="store_selectbg cs-clear" >
-                            <span class="store_sl_txt">请选择</span>
+                            <span class="store_sl_txt">District</span>
                             <span class="store_sl_icon"></span>
                         </a>
                         <select class="store_sl">
-                            <option>Shanghai</option>
-                            <option>Beijing</option>
+                            <option></option>
+                            <option>Jingan</option>
+                            <option>Pudong</option>
                         </select>
                     </div>
                 </div>
                 <div id='map'>
-                    <img class="store_map" src="images/store_map.jpg" width="100%" />
+                    <img class="map" src="images/store_map.jpg" width="100%" />
                 </div>
                 <!--  -->
                 <div class="store_add">
