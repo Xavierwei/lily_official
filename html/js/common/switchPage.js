@@ -120,6 +120,8 @@ define([
             sHthml = Handlebars.compile(linksTpl)(),
             showLinksModal = function () {
                 $.fancybox({
+                    openSpeed : 1000,
+                    closeSpeed : 1000,
                     content: sHthml,
                     closeClick: false,
                     helpers: {
