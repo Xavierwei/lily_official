@@ -80,7 +80,7 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 .fancybox-inner .actions li a:hover{color:#000;}
 .fancybox-inner .actions li .desc{width:auto;height:auto;padding:0 10px;font-size:30px;color:#999;}
 /* for links modal */
-#links.fancybox-overlay{opacity:0.9;}
+#links{background:rgba(255,255,255,0.8);}
 #links .fancybox-skin{background:none;}
 #links .fancybox-close{top:26px;left:26px;width:48px;height:48px;background-image:url(../images/menclose.png);}
 #links #nav{width:80%;height:80%;margin:auto;text-align:center;}
@@ -89,3 +89,13 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 #links #nav li.item h2{font-size:18px;font-weight:bolder;}
 #links #nav ol li a.on,
 #links #nav ol li a:hover{color:#000;border-bottom:#000000 solid 3px;}
+/* for news modal */
+#news{background:rgba(255,255,255,0.8);}
+#news .fancybox-skin{background:none;}
+#news .fancybox-close{top:16%;left:32%;width:48px;height:48px;background-image:url(../images/menclose.png);}
+#news .fancybox-outer{top:10%;bottom:10%;width:40%;margin:0 auto;background:#fff;}
+#news .newswrap{padding:10%;}
+#news .newswrap img{width:100%;max-width:100%;display:inline-block;}
+#news .newswrap h3{font-size:26px;font-weight:bolder;}
+#news .newswrap h5{font-weight:bolder;}
+#news .newswrap  p{line-height:2em;font-weight:500;}

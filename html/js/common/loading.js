@@ -2,8 +2,10 @@ define([
     // libs
     'jQuery',
     'skrollr',
-    'imagesLoaded'
-], function($, skrollr, imagesLoaded) {
+    'imagesLoaded',
+    'Handlebars',
+    'lib/text!templates/news.html'
+], function($, skrollr, imagesLoaded, Handlebars, newsTpl) {
     var oRoll,
         oSkrollr = null,
         oPos = null,
@@ -53,6 +55,36 @@ define([
             })
         }
     };
+
+    // new overlay init
+    var newsInit = function () {
+        var dEvent = $('.event_list'),
+            sHthml = Handlebars.compile(newsTpl)();
+
+        if (dEvent.length) {
+            dEvent.delegate('a.event_look', 'click', function() {
+                $.fancybox({
+                    content: sHthml,
+                    closeClick: false,
+                    helpers: {
+                        overlay: {
+                            width: '100%',
+                            height: '100%',
+                            closeClick: false
+                        }
+                    },
+                    beforeShow: function() {
+                        setTimeout(function() {
+                            var dOverlay = $.fancybox.wrap.parent();
+
+                            // for custom style
+                            dOverlay.attr('id', 'news');
+                        }, 0)
+                    }
+                })
+            })
+        }
+    }
 
     // enable the select
     var selectInit = function () {
@@ -137,6 +169,9 @@ define([
 
         // enable selects
         selectInit()
+
+        // enable news page overlay
+        newsInit()
 
         // need rebuild map
         isMapCreate = false;

@@ -112,7 +112,7 @@ define([
                     },
                     beforeShow: function() {
                         setTimeout(function() {
-                            var dOverlay = $('.fancybox-overlay');
+                            var dOverlay = $.fancybox.wrap.parent();
 
                             // for custom style
                             dOverlay.attr('id', 'links');
