@@ -16,7 +16,7 @@ define([
         dTape = $('.showy');
 
     // loading animation start
-    var pageAnimate = function () {
+    var pageSwitchAnimate = function () {
         var nTime = 600,
             nWidth  = $(window).width(),
             nHeight  = $(window).height(),
@@ -58,11 +58,30 @@ define([
         }
     }
 
+    // for whole page hash link click catch
+    var linkCatch = function () {
+        var dLinks = dWrap.find('a[href^="#"]');
+
+        dLinks.bind('click', function () {
+            var dTarget = $(this);
+
+            sCur = dTarget.attr('href').replace('#', '');
+
+            // as its hard to judge next or pre, default it would be next
+            isNext = true;
+
+            // page update
+            updatePage()
+        })
+    }
+
     // when animate end html the wrap
     var setContent = function (str) {
         var timer,
             setHtml = function () {
                 dWrap.html(str);
+                // update catch targets
+                linkCatch()
                 // loading
                 loading.start();
             };
@@ -86,7 +105,7 @@ define([
             url : sCur + '.html',
             method:'get',
             beforeSend: function () {
-                pageAnimate();
+                pageSwitchAnimate();
             },
             success: function(str) {
                 var dHtml = $('<div>' + str + '</div>');
@@ -163,8 +182,8 @@ define([
             showLinksModal();
         })
 
-        // for quick debug
-        // dMenu.click();
+        // update catch targets
+        linkCatch();
     }
 
     return {

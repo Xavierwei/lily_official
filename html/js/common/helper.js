@@ -177,7 +177,7 @@ define([
         })
 
         // for quick debug
-        $($('.album')).click();
+        // $($('.album')).click();
     }
 
     var weibo = function() {

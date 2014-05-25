@@ -114,9 +114,10 @@ define([
     // init map
     var mapInit = function() {
         var dMap = $('#map'),
-            dImg = dMap.find('img.map');
+            dImg = dMap.find('img.map'),
+            isGoogleReady = window.google && window.google.maps && google.maps.LatLng;
 
-        if (!isMapCreate && dImg.length && window.google) {
+        if (!isMapCreate && dImg.length && isGoogleReady) {
             isMapCreate = true;
 
             var oLatlng = oPos ? oPos : new google.maps.LatLng(31.230416, 121.473701),

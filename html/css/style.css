@@ -6,31 +6,17 @@
 ================================================================================================= */
 html{}
 body{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;color:#000;font-size:14px;line-height:1.666em;background:#fff;overflow-x:hidden;}
-h1,
-h2,
-h3{font-size:100%;}
-body,
-h1,
-h2,
-h3,
-h4,
-ul,
-li,
-p,
-img,
-div{margin:0;padding:0;border:0;}
+h1,h2,h3{font-size:100%;}
+body,h1,h2,h3,h4,ul,li,p,img,div{margin:0;padding:0;border:0;}
 img{margin:0;line-height:normal;}
-em,
-i{font-style:normal;text-decoration:none}
+em,i{font-style:normal;text-decoration:none}
 ul{list-style:none;}
 table{border-collapse:collapse;border-spacing:0;}
 /* Commonly Used
 ================================================================================================= */
 a{text-decoration:none;color:#000;outline:none;}
-a:hover{color:#fff}
 .cs-clear{+zoom:1;}
-.cs-clear:before,
-.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
+.cs-clear:before,.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
 .fl{float:left}
 .column{width:960px;margin:0 auto;}
 /* header Used
@@ -112,7 +98,8 @@ a:hover{color:#fff}
 .home_cpbox h2{line-height:60px;font-size:66px;padding:80px 0 60px;}
 .home_cpbox p{padding:0 0 40px;font-weight:bold;}
 .home_lookbook{width:425px;position:absolute;right:0;top:-518px}
-.home_lb_item{width:340px;margin:0 auto 26px;border:#000 solid 4px;text-align:center;line-height:80px;font-weight:bold;}
+.home_lookbook .border{border:#000 solid 4px;}
+.home_lb_item{width:340px;margin:0 auto 26px;text-align:center;line-height:80px;font-weight:bold;}
 .home_lb_item h2{line-height:60px;font-size:66px;padding:60px 0 30px}
 /* */
 .home_store{text-align:center;}
@@ -282,10 +269,8 @@ body.privacy{background-color:#f3dedd;}
 /* for page switch animation */
 #wrap{display:none;}
 .loading{background:#fff;position:fixed;z-index:1;}
-.loading.top,
-.loading.bottom{height:10px;max-width:90%;}
-.loading.left,
-.loading.right{width:10px;max-height:75%;}
+.loading.top,.loading.bottom{height:10px;max-width:90%;}
+.loading.left,.loading.right{width:10px;max-height:75%;}
 .loading.top{top:15%;left:5%;}
 .loading.bottom{right:5%;bottom:10%;}
 .loading.right{right:5%;top:15%;}
@@ -294,3 +279,31 @@ body.privacy{background-color:#f3dedd;}
 #map{width:100%;}
 .index #map{height:410px;}
 .storelocator #map{height:536px;}
+/* album / video */
+.album.fadeout,
+.video.fadeout{
+    cursor: pointer;
+}
+/* link animation */
+@keyframes fadeout{
+    from{opacity:1;}
+    to{opacity:0.5;}
+}
+@-moz-keyframes fadeout{
+    /* Firefox */
+    from{opacity:1;}
+    to{opacity:0.5;}
+}
+@-webkit-keyframes fadeout{
+    /* Safari and Chrome */
+    from{opacity:1;}
+    to{opacity:0.5;}
+}
+@-o-keyframes fadeout{
+    /* Opera */
+    from{opacity:1;}
+    to{opacity:0.5;}
+}
+.fadeout:hover{opacity:0.5;animation:fadeout 0.4s;-moz-animation:fadeout 0.4s; /* Firefox */
+    -webkit-animation:fadeout 0.4s; /* Safari and Chrome */
+-o-animation:fadeout 0.4s; /* Opera */}
