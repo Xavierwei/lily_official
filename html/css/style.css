@@ -89,6 +89,7 @@ a{text-decoration:none;color:#000;outline:none;}
 .weibo_wbtime{text-align:center;}
 .weibo_wbcom{padding:20px 80px;line-height:30px;}
 .weibo_wb_btn{margin:20px 0 0 140px;}
+.showyitem .weibo{width: 400px;display: none;}
 .weibo_top{left:100%;margin-top:-470px;margin-left:-230px;}
 .weibo_bottom{left:100%;margin-top:60px;margin-left:-230px;}
 .showyitem5 .weibo{margin-left:-330px;}

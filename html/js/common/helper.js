@@ -181,29 +181,35 @@ define([
     }
 
     var weibo = function() {
-        dBody.delegate('.showyitem', 'mouseenter', function() {
-            var dTarget = $(this),
+        dBody.delegate('.showy .showyitem', 'mouseenter', function() {
+            var dWeibo,
+                dTarget = $(this),
                 nTop = parseInt(this.style.bottom),
                 sHthml = Handlebars.compile(weiboTpl)();
 
             // set weibo content
             dTarget.html(sHthml);
 
+            dWeibo = dTarget.find('.weibo');
+
+            // fadein
+            dWeibo.fadeIn();
+
             // show weibo on bottom
             if (nTop > 50) {
-                dTarget.find('.weibo').addClass('weibo_bottom');
+                dWeibo.addClass('weibo_bottom');
             } else {
                 // on top
-                dTarget.find('.weibo').addClass('weibo_top');
+                dWeibo.addClass('weibo_top');
             }
 
             // empty weibo content
             $(window).on('load resize scroll', function() {
-                dTarget.empty();
+                dWeibo.fadeOut();
             })
 
             dTarget.bind('mouseleave', function() {
-                dTarget.empty();
+                dWeibo.fadeOut();
             })
         })
     }
