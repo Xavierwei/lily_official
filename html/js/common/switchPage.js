@@ -1,10 +1,13 @@
 define([
     // libs
     'jQuery',
+    'Handlebars',
     // apps
-    'common/loading'
-], function($, loading) {
-    var sCur,
+    'common/loading',
+    'lib/text!templates/links.html'
+], function($, Handlebars, loading, linksTpl) {
+    var sPath = location.pathname,
+        sCur = sPath.replace(sPath.match(/^.*\html\//), ''),
         isNext,
         isAnimate = false,
         dBody = $('body'),
@@ -94,59 +97,74 @@ define([
     }
 
     var init = function () {
-        var dCur,
-            nCur,
-            dHeader = $('.header'),
-            dMenus = dHeader.find('a[title]');
+        var dMenu = $('.header .menu'),
+            sHthml = Handlebars.compile(linksTpl)(),
+            showLinksModal = function () {
+                $.fancybox({
+                    content: sHthml,
+                    closeClick: false,
+                    helpers: {
+                        overlay: {
+                            width: '100%',
+                            height: '100%',
+                            closeClick: false
+                        }
+                    },
+                    beforeShow: function() {
+                        setTimeout(function() {
+                            var dOverlay = $('.fancybox-overlay');
 
-        // show header
-        dHeader.fadeIn();
+                            // for custom style
+                            dOverlay.attr('id', 'links');
 
-        // switch menu url to hash mode
-        dMenus.each(function(nIndex, dEl) {
-            var dTmp = $(dEl),
-                sTitle = dTmp.attr('title');
+                            // for special method
+                            dOverlay.delegate('.item a', 'click', function(e) {
+                                var dTarget = $(this),
+                                    dCur = dOverlay.find('a.on'),
+                                    sTitle = dTarget.attr('title'),
+                                    nCur = dCur.attr('index') ? dCur.attr('index') : 0,
+                                    nTarget = dTarget.attr('index');
 
-            // url to hash mode
-            dTmp.attr('href', '#' + sTitle);
+                                // click self
+                                if (dTarget.hasClass('on')) {
+                                    return e.preventDefault();
+                                }
 
-            // update judge params
-            if (dTmp.hasClass('on')) {
-                dCur = dTmp;
-                sCur = sTitle;
-                nCur = dTmp.index();
-            }
+                                // click others clickable link
+                                if (sTitle) {
+                                    dCur.removeClass('on');
+                                    dTarget.addClass('on');
+                                    sCur = sTitle;
+
+                                    // update animation judge params
+                                    if (nTarget > nCur) {
+                                        isNext = true;
+                                    } else {
+                                        isNext = false;
+                                    }
+
+                                    // remove
+                                    $.fancybox.close(true);
+
+                                    // page update
+                                    updatePage()
+                                }
+                            })
+
+                            // active the related link
+                            dOverlay.find('a[href$="' + sCur + '"]').addClass('on');
+                        }, 0)
+                    }
+                })
+            };
+
+        // show
+        dMenu.bind('click', function () {
+            showLinksModal();
         })
 
-        // update active class
-        dMenus.bind('click', function (e) {
-            var dTarget = $(this),
-                sTitle = dTarget.attr('title'),
-                nIndex = dTarget.index();
-
-            // prevent click the active effect
-            if (dTarget.hasClass('on')) {
-                return e.preventDefault();
-            }
-
-            // update class
-            dCur.removeClass('on');
-            dTarget.addClass('on');
-
-            // update judge params
-            if (nIndex > nCur) {
-                isNext = true;
-            } else {
-                isNext = false;
-            }
-
-            dCur = dTarget;
-            sCur = sTitle;
-            nCur = nIndex;
-
-            // page update
-            updatePage()
-        })
+        // for quick debug
+        // dMenu.click();
     }
 
     return {
