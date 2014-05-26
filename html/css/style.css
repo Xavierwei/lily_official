@@ -284,12 +284,12 @@ body.privacy{background-color:#f3dedd;}
 .album.fadeout,.video.fadeout{cursor:pointer;}
 /* star shop */
 .starshop{margin:50px auto;max-width:90%;}
-.starshop .desc{display:inline-block;vertical-align:top;}
-.starshop .desc h2{font-size:30px;margin-bottom:30px;}
-.starshop .desc .store_view{display:inline-block;cursor:pointer;}
-.starshop img{height:540px;width:480px;}
-.starshop .left{float:left;text-align:left;}
-.starshop .right{float:right;text-align:right;}
+.starshop .page .desc{display:inline-block;vertical-align:top;}
+.starshop .page .desc h2{font-size:30px;margin-bottom:30px;}
+.starshop .page .desc .store_view{display:inline-block;cursor:pointer;}
+.starshop .page img{height:540px;width:480px;}
+.starshop .page .left{float:left;text-align:left;}
+.starshop .page .right{float:right;text-align:right;}
 /* link animation */
 @keyframes fadeout{
     from{opacity:1;}

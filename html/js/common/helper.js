@@ -6,26 +6,32 @@ define([
     'lib/text!templates/video.html',
     'lib/text!templates/weibo.html'
 ], function($, Handlebars, albumTpl, videoTpl, weiboTpl) {
-    var dBody = $('body');
+    var dBody = $('body'),
+        sAlbum = Handlebars.compile(albumTpl)(),
+        sVideo = Handlebars.compile(videoTpl)(),
+        sWeibo = Handlebars.compile(weiboTpl)();
 
-    var modals = function() {
+    var overlay = function (sHthml, func) {
+        $.fancybox({
+            openSpeed : 1000,
+            closeSpeed : 1000,
+            content: sHthml,
+            closeClick: false,
+            helpers: {
+                overlay: {
+                    width: '100%',
+                    height: '100%',
+                    closeClick: false
+                }
+            },
+            beforeShow: func
+        })
+    }
+
+    var enableList = function() {
+        // album list
         dBody.delegate('.album', 'click', function() {
-            var sHthml = Handlebars.compile(albumTpl)();
-
-            $.fancybox({
-                content: sHthml,
-                closeClick: false,
-                helpers: {
-                    overlay: {
-                        width: '100%',
-                        height: '100%',
-                        closeClick: false,
-                        css: {
-                            'background': '#fff'
-                        }
-                    }
-                },
-                beforeShow: function() {
+            var bFunc = function() {
                     setTimeout(function() {
                         var jcarousel = $('.fancybox-inner .jcarousel'),
                             dPre = $('.jcarousel-control-prev'),
@@ -79,26 +85,14 @@ define([
                             updateSize();
                         })
                     }, 0)
-                }
-            })
+                };
+
+            overlay(sAlbum, bFunc);
         })
 
+        // video list
         dBody.delegate('.video', 'click', function() {
-            var sHthml = Handlebars.compile(videoTpl)();
-            $.fancybox({
-                content: sHthml,
-                closeClick: false,
-                helpers: {
-                    overlay: {
-                        width: '100%',
-                        height: '100%',
-                        closeClick: false,
-                        css: {
-                            'background': '#fff'
-                        }
-                    }
-                },
-                beforeShow: function() {
+            var bFunc = function() {
                     setTimeout(function() {
                         var jcarousel = $('.fancybox-inner .jcarousel'),
                             dPre = $('.jcarousel-control-prev'),
@@ -137,7 +131,6 @@ define([
                             target: '+=1'
                         });
 
-
                         // video stuff
                         var dVideo = jcarousel.find('video'),
                             stopPlay = function() {
@@ -172,23 +165,20 @@ define([
                             updateSize();
                         })
                     }, 0)
-                }
-            })
-        })
+                };
 
-        // for quick debug
-        // $($('.album')).click();
+            overlay(sVideo, bFunc);
+        })
     }
 
     var weibo = function() {
         dBody.delegate('.showy .showyitem', 'mouseenter', function() {
             var dWeibo,
                 dTarget = $(this),
-                nTop = parseInt(this.style.bottom),
-                sHthml = Handlebars.compile(weiboTpl)();
+                nTop = parseInt(this.style.bottom);
 
             // set weibo content
-            dTarget.html(sHthml);
+            dTarget.html(sWeibo);
 
             dWeibo = dTarget.find('.weibo');
 
@@ -216,12 +206,13 @@ define([
 
     var init = function() {
         // for album/photo list modals
-        modals();
+        enableList();
         // for weibo mouse event
         weibo()
     }
 
     return {
-        init: init
+        init: init,
+        overlay : overlay
     }
 })

@@ -4,8 +4,10 @@ define([
     'skrollr',
     'imagesLoaded',
     'Handlebars',
+    // apps
+    'common/helper',
     'lib/text!templates/news.html'
-], function($, skrollr, imagesLoaded, Handlebars, newsTpl) {
+], function($, skrollr, imagesLoaded, Handlebars, helper, newsTpl) {
     var oRoll,
         oSkrollr = null,
         oPos = null,
@@ -18,6 +20,7 @@ define([
         dRight = $('.loading.right'),
         dTop = $('.loading.top'),
         dTape = $('.showy'),
+        sNews = Handlebars.compile(newsTpl)(),
         oShop = {
             'shanghai': [
                 {
@@ -58,29 +61,17 @@ define([
 
     // new overlay init
     var newsInit = function () {
-        var dEvent = $('.event_list'),
-            sHthml = Handlebars.compile(newsTpl)();
+        var dEvent = $('.event_list');
 
         if (dEvent.length) {
             dEvent.delegate('a.event_look', 'click', function() {
-                $.fancybox({
-                    content: sHthml,
-                    closeClick: false,
-                    helpers: {
-                        overlay: {
-                            width: '100%',
-                            height: '100%',
-                            closeClick: false
-                        }
-                    },
-                    beforeShow: function() {
-                        setTimeout(function() {
-                            var dOverlay = $.fancybox.wrap.parent();
+                helper.overlay(sNews, function() {
+                    setTimeout(function() {
+                        var dOverlay = $.fancybox.wrap.parent();
 
-                            // for custom style
-                            dOverlay.attr('id', 'news');
-                        }, 0)
-                    }
+                        // for custom style
+                        dOverlay.attr('id', 'news');
+                    }, 0)
                 })
             })
         }

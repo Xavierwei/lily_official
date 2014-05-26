@@ -4,8 +4,10 @@ define([
     'Handlebars',
     // apps
     'common/loading',
-    'lib/text!templates/links.html'
-], function($, Handlebars, loading, linksTpl) {
+    'common/helper',
+    'lib/text!templates/links.html',
+    'lib/text!templates/weixin.html'
+], function($, Handlebars, loading, helper, linksTpl, weixinTpl) {
     var sPath = location.pathname,
         sCur = sPath.replace(sPath.match(/^.*\html\//), ''),
         isNext,
@@ -13,7 +15,9 @@ define([
         dBody = $('body'),
         dWrap = $('#wrap'),
         dLoading = $('.loading'),
-        dTape = $('.showy');
+        dTape = $('.showy'),
+        sLinks = Handlebars.compile(linksTpl)(),
+        sWeixin = Handlebars.compile(weixinTpl)();
 
     // loading animation start
     var pageSwitchAnimate = function () {
@@ -60,7 +64,8 @@ define([
 
     // for whole page hash link click catch
     var linkCatch = function () {
-        var dLinks = dWrap.find('a[href^="#"]');
+        var dLinks = dWrap.find('a[href^="#"]'),
+            dWeixin = dWrap.find('.ft_share3');
 
         dLinks.bind('click', function () {
             var dTarget = $(this);
@@ -72,6 +77,17 @@ define([
 
             // page update
             updatePage()
+        })
+
+        dWeixin.bind('click', function () {
+            helper.overlay(sWeixin, function () {
+                setTimeout(function() {
+                    var dOverlay = $.fancybox.wrap.parent();
+
+                    // for custom style
+                    dOverlay.attr('id', 'weixin');
+                }, 0)
+            });
         })
     }
 
@@ -115,68 +131,57 @@ define([
         })
     }
 
+    // for enable links catch and modal etc.
     var init = function () {
         var dMenu = $('.header .menu'),
-            sHthml = Handlebars.compile(linksTpl)(),
             showLinksModal = function () {
-                $.fancybox({
-                    openSpeed : 1000,
-                    closeSpeed : 1000,
-                    content: sHthml,
-                    closeClick: false,
-                    helpers: {
-                        overlay: {
-                            width: '100%',
-                            height: '100%',
-                            closeClick: false
-                        }
-                    },
-                    beforeShow: function() {
-                        setTimeout(function() {
-                            var dOverlay = $.fancybox.wrap.parent();
+                var bFunc = function () {
+                    setTimeout(function() {
+                        var dOverlay = $.fancybox.wrap.parent();
 
-                            // for custom style
-                            dOverlay.attr('id', 'links');
+                        // for custom style
+                        dOverlay.attr('id', 'links');
 
-                            // for special method
-                            dOverlay.delegate('.item a', 'click', function(e) {
-                                var dTarget = $(this),
-                                    dCur = dOverlay.find('a.on'),
-                                    sTitle = dTarget.attr('title'),
-                                    nCur = dCur.attr('index') ? dCur.attr('index') : 0,
-                                    nTarget = dTarget.attr('index');
+                        // for special method
+                        dOverlay.delegate('.item a', 'click', function(e) {
+                            var dTarget = $(this),
+                                dCur = dOverlay.find('a.on'),
+                                sTitle = dTarget.attr('title'),
+                                nCur = dCur.attr('index') ? dCur.attr('index') : 0,
+                                nTarget = dTarget.attr('index');
 
-                                // click self
-                                if (dTarget.hasClass('on')) {
-                                    return e.preventDefault();
+                            // click self
+                            if (dTarget.hasClass('on')) {
+                                return e.preventDefault();
+                            }
+
+                            // click others clickable link
+                            if (sTitle) {
+                                dCur.removeClass('on');
+                                dTarget.addClass('on');
+                                sCur = sTitle;
+
+                                // update animation judge params
+                                if (nTarget > nCur) {
+                                    isNext = true;
+                                } else {
+                                    isNext = false;
                                 }
 
-                                // click others clickable link
-                                if (sTitle) {
-                                    dCur.removeClass('on');
-                                    dTarget.addClass('on');
-                                    sCur = sTitle;
+                                // remove
+                                $.fancybox.close(true);
 
-                                    // update animation judge params
-                                    if (nTarget > nCur) {
-                                        isNext = true;
-                                    } else {
-                                        isNext = false;
-                                    }
+                                // page update
+                                updatePage()
+                            }
+                        })
 
-                                    // remove
-                                    $.fancybox.close(true);
+                        // active the related link
+                        dOverlay.find('a[href$="' + sCur + '"]').addClass('on');
+                    }, 0)
+                }
 
-                                    // page update
-                                    updatePage()
-                                }
-                            })
-
-                            // active the related link
-                            dOverlay.find('a[href$="' + sCur + '"]').addClass('on');
-                        }, 0)
-                    }
-                })
+                helper.overlay(sLinks, bFunc);
             };
 
         // show
