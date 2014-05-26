@@ -106,11 +106,7 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 /* weixin overlay */
 #weixin .fancybox-close{left:37%;}
 #weixin .fancybox-outer{width:30%;}
-#weixin .weixinwrap{position: absolute;
-top: 50%;
-margin-top: -160px;
-margin-left: 130px;
-text-align: center;}
+#weixin .weixinwrap{position:absolute;top:50%;margin-top:-160px;margin-left:130px;text-align:center;}
 #weixin .weixinwrap img{margin:5% auto;}
 #weixin .weixinwrap p{font-weight:bolder;line-height:2em;}
 #weixin .weixinwrap p span{padding-left:14px;}

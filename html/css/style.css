@@ -6,17 +6,30 @@
 ================================================================================================= */
 html{}
 body{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;color:#000;font-size:14px;line-height:1.666em;background:#fff;overflow-x:hidden;}
-h1,h2,h3{font-size:100%;}
-body,h1,h2,h3,h4,ul,li,p,img,div{margin:0;padding:0;border:0;}
+h1,
+h2,
+h3{font-size:100%;}
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p,
+img,
+div{margin:0;padding:0;border:0;}
 img{margin:0;line-height:normal;}
-em,i{font-style:normal;text-decoration:none}
+em,
+i{font-style:normal;text-decoration:none}
 ul{list-style:none;}
 table{border-collapse:collapse;border-spacing:0;}
 /* Commonly Used
 ================================================================================================= */
 a{text-decoration:none;color:#000;outline:none;}
 .cs-clear{+zoom:1;}
-.cs-clear:before,.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
+.cs-clear:before,
+.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
 .fl{float:left}
 .column{width:960px;margin:0 auto;}
 /* header Used
@@ -270,8 +283,10 @@ body.privacy{background-color:#f3dedd;}
 /* for page switch animation */
 #wrap{display:none;}
 .loading{background:#fff;position:fixed;z-index:1;}
-.loading.top,.loading.bottom{height:10px;max-width:90%;}
-.loading.left,.loading.right{width:10px;max-height:75%;}
+.loading.top,
+.loading.bottom{height:10px;max-width:90%;}
+.loading.left,
+.loading.right{width:10px;max-height:75%;}
 .loading.top{top:15%;left:5%;}
 .loading.bottom{right:5%;bottom:10%;}
 .loading.right{right:5%;top:15%;}
@@ -281,7 +296,8 @@ body.privacy{background-color:#f3dedd;}
 .index #map{height:410px;}
 .storelocator #map{height:536px;}
 /* album / video */
-.album.fadeout,.video.fadeout{cursor:pointer;}
+.album.fadeout,
+.video.fadeout{cursor:pointer;}
 /* star shop */
 .starshop{margin:50px auto;max-width:90%;}
 .starshop .page .desc{display:inline-block;vertical-align:top;}
