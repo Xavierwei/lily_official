@@ -89,7 +89,7 @@ a{text-decoration:none;color:#000;outline:none;}
 .weibo_wbtime{text-align:center;}
 .weibo_wbcom{padding:20px 80px;line-height:30px;}
 .weibo_wb_btn{margin:20px 0 0 140px;}
-.showyitem .weibo{width: 400px;display: none;}
+.showyitem .weibo{width:400px;display:none;}
 .weibo_top{left:100%;margin-top:-470px;margin-left:-230px;}
 .weibo_bottom{left:100%;margin-top:60px;margin-left:-230px;}
 .showyitem5 .weibo{margin-left:-330px;}
@@ -261,7 +261,7 @@ body.news{background-color:#ddebf3;}
 body.campaign{background-color:#f1fffc;}
 body.lookbook{background-color:#fafaec;}
 body.streetshot{background-color:#fafaec;}
-body.starshop{background-color:#fafaec;}
+body.starshop{background-color:#ddebf3;}
 body.storelocator{background-color:#ddebf3;}
 body.vip{background-color:#f3dedd;}
 body.job{background-color:#ded5ca;}
@@ -281,10 +281,15 @@ body.privacy{background-color:#f3dedd;}
 .index #map{height:410px;}
 .storelocator #map{height:536px;}
 /* album / video */
-.album.fadeout,
-.video.fadeout{
-    cursor: pointer;
-}
+.album.fadeout,.video.fadeout{cursor:pointer;}
+/* star shop */
+.starshop{margin:50px auto;max-width:90%;}
+.starshop .desc{display:inline-block;vertical-align:top;}
+.starshop .desc h2{font-size:30px;margin-bottom:30px;}
+.starshop .desc .store_view{display:inline-block;cursor:pointer;}
+.starshop img{height:540px;width:480px;}
+.starshop .left{float:left;text-align:left;}
+.starshop .right{float:right;text-align:right;}
 /* link animation */
 @keyframes fadeout{
     from{opacity:1;}
