@@ -84,17 +84,20 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 #weixin{background:rgba(255,255,255,0.8);}
 #news .fancybox-skin,
 #weixin .fancybox-skin{background:none;}
-#news .fancybox-close{top:16%;left:32%;width:48px;height:48px;background-image:url(../images/menclose.png);}
-#news .fancybox-outer,
-#weixin .fancybox-outer{top:10%;bottom:10%;width:40%;margin:0 auto;background:#fff;}
-#news .newswrap{padding:10%;}
+#news .fancybox-close,
+#weixin .fancybox-close{display:none;}
+}
 #news .newswrap img{width:100%;max-width:100%;display:inline-block;}
 #news .newswrap h3{font-size:26px;font-weight:bolder;}
 #news .newswrap h5{font-weight:bolder;}
 #news .newswrap  p{line-height:2em;font-weight:500;}
+#news .newswrap .close,
+#weixin .weixinwrap .close{position:absolute;top:5%;left:5%;width:48px;height:48px;background-image:url(../images/menclose.png);cursor:pointer;}
+#news .fancybox-outer,
+#weixin .fancybox-outer{top:10%;bottom:10%;width:40%;min-width:360px;margin:0 auto;background:#fff;position:relative;}
+#news .newswrap{padding:10%;}
+#news .newswrap img{width:100%;margin-top:60px;}
 /* weixin overlay */
-#weixin .fancybox-close{display:none;}
-#weixin .close{position:absolute;top:5%;left:5%;width:48px;height:48px;background-image:url(../images/menclose.png);cursor:pointer;}
 #weixin .fancybox-outer{width:60%;max-width:360px;}
 #weixin .weixinwrap{margin-top:40px;text-align:center;}
 #weixin .weixinwrap img{margin:5% auto;}
