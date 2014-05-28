@@ -14,3 +14,58 @@
     .footer .ft_list,
     .footer .ft_touch{display:block;text-align:center;margin:5% auto;float:none;}
 }
+@media screen and (max-width:640px) {
+    /*milestone page*/
+    .page_heritage .limit{
+       width: 600px;
+    }
+    .page_heritage .ha_modtxt h2{
+        font-size: 40px;
+        padding-bottom:0;
+    }
+    .page_heritage .ha_modtxt h3{
+        font-size: 18px;
+        padding: 0 0 10px;
+    }
+    /*news page*/
+    .page_event .event_list{
+        width: auto;
+    }
+    .page_event .event_look{
+        width: auto;
+        text-align: center;
+    }
+    /* campaign page*/
+    .page_campaign{
+        margin-top: 12%;
+    }
+    .page_campaign .limit{
+        text-align: center;
+    }
+    .page_campaign .cp_modtxt,
+    .page_campaign .cp_season,
+    .page_campaign .cp_tit{
+        width: auto;
+    }
+    .page_campaign .wrap img{
+        width: 100%;
+    }
+    /* lookbook / streetshot*/
+    .streetshot .limit,
+    .page_lookbook .limit{
+        text-align: center;
+    }
+    .streetshot .limit .lb_tit,
+    .streetshot .limit.lb_modtit,
+    .streetshot .limit img,
+    .page_lookbook .limit .lb_tit,
+    .page_lookbook .limit.lb_modtit,
+    .page_lookbook .limit img{
+        width: 100%;
+    }
+    .streetshot .limit.list img,
+    .page_lookbook .limit.list img{
+        max-width: 100%;
+        margin: 5% auto;
+    }
+}
