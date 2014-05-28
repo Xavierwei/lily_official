@@ -155,11 +155,6 @@ define([
 
     // the loading animation start
     var start = function() {
-        var nTime = 300,
-            nLoad = 0,
-            nTotal = dWrap.find('img').length,
-            imgLoad = imagesLoaded(dWrap);
-
         // enable selects
         selectInit()
 
@@ -168,6 +163,22 @@ define([
 
         // need rebuild map
         isMapCreate = false;
+
+        // if using mobile or ugly ie, stop the animation
+        if (!helper.canAnimate()) {
+            // show the page content
+            dWrap.fadeIn();
+
+            // init map
+            mapInit();
+
+            return;
+        }
+
+        var nTime = 300,
+            nLoad = 0,
+            nTotal = dWrap.find('img').length,
+            imgLoad = imagesLoaded(dWrap);
 
         imgLoad.on('always', function(instance) {
             dTop.queue(function() {
@@ -187,7 +198,7 @@ define([
                     dTape.fadeIn();
 
                     // init map
-                    mapInit()
+                    mapInit();
 
                     if (oSkrollr) {
                         oSkrollr.refresh();

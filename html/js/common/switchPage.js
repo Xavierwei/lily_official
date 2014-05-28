@@ -21,6 +21,9 @@ define([
 
     // loading animation start
     var pageSwitchAnimate = function () {
+        // if using mobile or ugly ie, stop the animation
+        if (!helper.canAnimate()) return;
+
         var nTime = 600,
             nWidth  = $(window).width(),
             nHeight  = $(window).height(),
@@ -82,7 +85,7 @@ define([
         dWeixin.bind('click', function () {
             helper.overlay(sWeixin, function () {
                 setTimeout(function() {
-                    var dOverlay = $.fancybox.wrap.parent();
+                    var dOverlay = $('.fancybox-mobile').length ?  $('.fancybox-mobile') : $.fancybox.wrap.parent();
 
                     // for custom style
                     dOverlay.attr('id', 'weixin');
@@ -137,7 +140,7 @@ define([
             showLinksModal = function () {
                 var bFunc = function () {
                     setTimeout(function() {
-                        var dOverlay = $.fancybox.wrap.parent();
+                        var dOverlay = $('.fancybox-mobile').length ?  $('.fancybox-mobile') : $.fancybox.wrap.parent();
 
                         // for custom style
                         dOverlay.attr('id', 'links');

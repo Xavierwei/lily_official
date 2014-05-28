@@ -1,0 +1,16 @@
+/* Mobile */
+@media only screen and (max-width:767px),@media only screen and (min-width:480px) and (max-width:767px),@media only screen and (min-width:768px) and (max-width:959px){
+    .page .left,
+    .page .right{float:none;}
+    .home_lookbook{margin-top:5%;}
+    #links #nav li.item{display:block;text-align:center;margin:5% auto;height:auto;}
+    #wrap .page .limit{margin-left:auto;margin-right:auto;padding-left:7%;padding-right:7%;}
+    .home_new_cn{background-size:contain;}
+    .weibo_wbbox,
+    .weibo_wbbg{width:260px;height:500px;}
+    .weibo_wb_btn{margin:0 auto;text-align:center;}
+    .videowrap{text-align:center;}
+    .videowrap img{max-width:100%;}
+    .footer .ft_list,
+    .footer .ft_touch{display:block;text-align:center;margin:5% auto;float:none;}
+}

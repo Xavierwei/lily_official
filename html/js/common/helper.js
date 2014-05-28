@@ -7,25 +7,67 @@ define([
     'lib/text!templates/weibo.html'
 ], function($, Handlebars, albumTpl, videoTpl, weiboTpl) {
     var dBody = $('body'),
+        isUglyIe = $.browser.msie && $.browser.version <= 8,
+        isIphone = navigator.userAgent.toLowerCase().indexOf('iphone') > 0,
+        isIpad = navigator.userAgent.toLowerCase().indexOf('ipad') > 0,
+        isAndroid = navigator.userAgent.indexOf('Android') >= 0,
+        isMobile = isIphone || isIpad || isAndroid,
         sAlbum = Handlebars.compile(albumTpl)(),
         sVideo = Handlebars.compile(videoTpl)(),
         sWeibo = Handlebars.compile(weiboTpl)();
 
+    var canAnimate = function () {
+        if (isUglyIe || isMobile) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     var overlay = function (sHthml, func) {
-        $.fancybox({
-            openSpeed : 1000,
-            closeSpeed : 1000,
-            content: sHthml,
-            closeClick: false,
-            helpers: {
-                overlay: {
-                    width: '100%',
-                    height: '100%',
-                    closeClick: false
+        if (canAnimate()) {
+            $.fancybox({
+                openSpeed : 1000,
+                closeSpeed : 1000,
+                content: sHthml,
+                closeClick: false,
+                helpers: {
+                    overlay: {
+                        width: '100%',
+                        height: '100%',
+                        closeClick: false
+                    }
+                },
+                beforeShow: function () {
+                    // custom close function
+                    dBody.delegate('.close', 'click', function() {
+                        $.fancybox.close(true);
+                    })
+
+                    func();
                 }
-            },
-            beforeShow: func
-        })
+            })
+        } else {
+            $.fancybox({
+                openSpeed : 0,
+                closeSpeed : 0,
+                content: sHthml,
+                helpers: {
+                    overlay: {
+                        width: '100%',
+                        height: '100%'
+                    }
+                },
+                beforeShow: function () {
+                    // custom close function
+                    dBody.delegate('.close', 'click', function() {
+                        $.fancybox.close(true);
+                    })
+
+                    func();
+                }
+            })
+        }
     }
 
     var enableList = function() {
@@ -213,6 +255,7 @@ define([
 
     return {
         init: init,
-        overlay : overlay
+        overlay : overlay,
+        canAnimate : canAnimate
     }
 })
