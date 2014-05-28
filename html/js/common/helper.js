@@ -214,10 +214,15 @@ define([
     }
 
     var weibo = function() {
+        var dShowyitem = $('.showy .showyitem');
+
         dBody.delegate('.showy .showyitem', 'mouseenter', function() {
             var dWeibo,
                 dTarget = $(this),
                 nTop = parseInt(this.style.bottom);
+
+            // clear old weibos
+            dShowyitem.html();
 
             // set weibo content
             dTarget.html(sWeibo);

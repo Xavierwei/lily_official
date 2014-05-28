@@ -22,7 +22,7 @@
 .fancybox-image{max-width:100%;max-height:100%;}
 .fancybox-prev span,
 .fancybox-next span{background-image:url(../images/fancybox/fancybox_sprite.png);}
-#fancybox-loading{position:fixed;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-position:0 -108px;opacity:0.8;cursor:pointer;z-index:8060;}
+#fancybox-loading{position:fixed;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-position:0 -108px;opacity:0.8;filter:alpha(opacity=0.8);cursor:pointer;z-index:8060;}
 #fancybox-loading div{width:44px;height:44px;background:url(../images/fancybox/fancybox_loading.gif) center center no-repeat;}
 .fancybox-close{position:fixed;top:-18px;right:-18px;width:36px;height:36px;cursor:pointer;z-index:8040;}
 .fancybox-nav{position:absolute;top:0;width:40%;height:100%;cursor:pointer;text-decoration:none;background:transparent url(../images/fancybox/blank.gif); /* helps IE */
