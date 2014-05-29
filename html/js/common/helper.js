@@ -16,6 +16,14 @@ define([
         sVideo = Handlebars.compile(videoTpl)(),
         sWeibo = Handlebars.compile(weiboTpl)();
 
+    var isPC = function () {
+        if (isMobile) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     var canAnimate = function () {
         if (isUglyIe || isMobile) {
             return false;
@@ -261,6 +269,7 @@ define([
     return {
         init: init,
         overlay : overlay,
-        canAnimate : canAnimate
+        canAnimate : canAnimate,
+        isPC : isPC
     }
 })

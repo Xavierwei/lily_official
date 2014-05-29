@@ -36,7 +36,7 @@ a{text-decoration:none;color:#000;outline:none;}
 /* header Used
 ================================================================================================= */
 .header{position:fixed;height:99px;top:0;left:5%;right:5%;z-index:10;}
-.menu{cursor:pointer;position:fixed;top:10px;left:10px;background:url('../images/menu.png') no-repeat;width:48px;height:48px;}
+.menu{cursor:pointer;position:absolute;top:10px;left:-4%;background:url('../images/menu.png') no-repeat;width:48px;height:48px;}
 .menu.active{background:url('../images/menclose.png') no-repeat;}
 .search{background:url('../images/hdicon.png') no-repeat -84px 0;width:25px;height:25px;position:absolute;right:10px;top:30px;}
 .language{position:absolute;top:30px;right:50px}

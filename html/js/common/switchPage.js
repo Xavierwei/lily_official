@@ -21,8 +21,25 @@ define([
 
     // loading animation start
     var pageSwitchAnimate = function () {
+        var updateBodyClass = function () {
+            var str = sCur;
+
+            // update page class
+            if (!helper.isPC()) {
+                str = str + ' ' + 'mobile';
+
+                if (dBody.hasClass('open')) {
+                    str = str + ' ' + 'open';
+                }
+            }
+
+            dBody.attr('class', str);
+        }
+
         // if using mobile or ugly ie, stop the animation
-        if (!helper.canAnimate()) return;
+        if (!helper.canAnimate()) {
+            return updateBodyClass();
+        }
 
         var nTime = 600,
             nWidth  = $(window).width(),
@@ -34,7 +51,7 @@ define([
                 dWrap.removeAttr('style');
 
                 // update page class
-                dBody.attr('class', sCur);
+                updateBodyClass()
             };
 
         // prevent duplicate animate
@@ -137,6 +154,7 @@ define([
     // for enable links catch and modal etc.
     var init = function () {
         var dMenu = $('.header .menu'),
+            dMbmenu = $('.mbmenu'),
             showLinksModal = function () {
                 var bFunc = function () {
                     setTimeout(function() {
@@ -185,11 +203,69 @@ define([
                 }
 
                 helper.overlay(sLinks, bFunc);
+            },
+            sliderMenu = function () {
+                var dCurList = dMbmenu.find('.item ol.active'),
+                    dCurLink = dMbmenu.find('a[href$="' + sCur + '"]');
+
+                // shrik or expand the list
+                dMbmenu.delegate('.item h2', 'click', function () {
+                    var dList = $(this).next();
+
+                    if (dCurList.length) {
+                        dCurList.removeClass('active');
+                    }
+
+                    dList.addClass('active');
+
+                    dCurList = dList;
+                })
+
+                // links
+                dMbmenu.delegate('.item a', 'click', function () {
+                    var dLink = $(this),
+                        sHref = dLink.attr('href');
+
+                    // if click self
+                    if (dLink.hasClass('active')) {
+                        return;
+                    }
+
+                    if (dCurLink.length) {
+                        dCurLink.removeClass('active');
+                    }
+
+                    dLink.addClass('active');
+
+                    dCurLink = dLink;
+
+                    // update judge info
+                    if (sHref.indexOf('#') >= 0) {
+                        sCur = dLink.attr('href').replace('#', '');
+
+                        // page update
+                        updatePage()
+                    }
+                })
+
+                dBody.toggleClass('open');
+                dMbmenu.toggleClass('open');
             };
+
+        // mobile menu need
+        if (!helper.isPC()) {
+            dBody.addClass('mobile');
+        }
 
         // show
         dMenu.bind('click', function () {
-            showLinksModal();
+            if (helper.isPC()) {
+                // pc
+                showLinksModal();
+            } else {
+                // mobile
+                sliderMenu();
+            }
         })
 
         // update catch targets

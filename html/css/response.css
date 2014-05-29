@@ -55,3 +55,23 @@
     .page_privacy .privacy_tit.mobile h2{margin:5% auto;font-size:20px;}
     .page_privacy .privacy_com{width:auto;}
 }
+/* mobile menu part */
+body.mobile,
+body.mobile .mbmenu,
+body.mobile.open #wrap,
+body.mobile.open .header{-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;transition:all 0.3s ease;}
+body.mobile .menu{left:5px;}
+body .mbmenu{color:#000;background:#fff;left:-190px;width:190px;height:100%;top:0;z-index:1000;position:fixed;display:none;-webkit-box-shadow:inset -12px 0px 12px -14px rgba(0,0,0,0.38);-moz-box-shadow:inset -12px 0px 12px -14px rgba(0,0,0,0.38);box-shadow:inset -12px 0px 12px -14px rgba(0,0,0,0.38);}
+body .mbmenu h2{font-size:22px;font-weight:200;margin:30px 20px;cursor:pointer;}
+body .mbmenu ol{list-style:none;display:none;padding:0;}
+body .mbmenu ol.active{display:block;}
+body .mbmenu ol a{display:block;padding:4px 20px;color:#777;}
+body .mbmenu ol a.active{color:#fff;background:#000;}
+body.mobile{overflow-x:hidden;position:relative;left:0;}
+body.mobile.open,
+body.mobile.open #wrap{left:190px;}
+body.mobile.open .header{left:200px;right:0;}
+body.mobile.open .header .language,
+body.mobile.open .header .search{display:none;}
+body.mobile .mbmenu{display:block;}
+body.mobile .mbmenu.open{left:0px;}
