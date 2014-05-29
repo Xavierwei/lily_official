@@ -274,7 +274,7 @@ body.contact{background-color:#ddebf3;}
 body.privacy{background-color:#f3dedd;}
 /* for page switch animation */
 #wrap{display:none;}
-.loading{background:#fff;position:fixed;z-index:-10;}
+.loading{background:#fff;position:fixed;z-index:10;}
 .loading.top,
 .loading.bottom{height:10px;max-width:90%;}
 .loading.left,
