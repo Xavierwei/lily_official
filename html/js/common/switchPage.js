@@ -250,11 +250,57 @@ define([
 
                 dBody.toggleClass('open');
                 dMbmenu.toggleClass('open');
+            },
+            swipe = function () {
+                // var nWidth = parseInt($(window).width(), 10),
+                //     closeMenu = function () {
+                //         dBody.removeClass('open');
+                //         dMbmenu.removeClass('open');
+                //     },
+                //     openMenu = function () {
+                //         dBody.addClass('open');
+                //         dMbmenu.addClass('open');
+                //     };
+
+                // dBody.bind('touchstart', function (e){
+                //     var startTouches = e.originalEvent.touches,
+                //         nStart = 0,
+                //         nStartTime = Date.now();
+
+                //     if (startTouches && startTouches.length == 1) {
+                //         nStart = startTouches[0].pageX;
+
+                //         dBody.bind('touchend', function (e){
+                //             var endTouches = e.originalEvent.changedTouches,
+                //                 nEnd = 0,
+                //                 distance = 0;
+
+                //             if (endTouches && endTouches.length == 1) {
+                //                 nEnd = endTouches[0].pageX;
+                //                 distance = Math.abs(nEnd - nStart);
+
+                //                 if (distance < nWidth/3) return;
+
+                //                 if (nEnd - nStart) {
+                //                     // swipe left
+                //                     openMenu()
+                //                 } else {
+                //                     // swipe right
+                //                     closeMenu();
+                //                 }
+                //             }
+
+                //             dBody.unbind('touchend');
+                //         })
+                //     }
+                // })
             };
 
         // mobile menu need
         if (!helper.isPC()) {
             dBody.addClass('mobile');
+
+            swipe();
         }
 
         // show

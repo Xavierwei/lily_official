@@ -60,7 +60,8 @@ body.mobile,
 body.mobile .mbmenu,
 body.mobile.open #wrap,
 body.mobile.open .header{-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;transition:all 0.3s ease;}
-body.mobile .menu{left:5px;}
+body.mobile .header {left : 10px;}
+body.mobile .header .menu{left:5px;}
 body .mbmenu{color:#000;background:#fff;left:-190px;width:190px;height:100%;top:0;z-index:1000;position:fixed;display:none;-webkit-box-shadow:inset -12px 0px 12px -14px rgba(0,0,0,0.38);-moz-box-shadow:inset -12px 0px 12px -14px rgba(0,0,0,0.38);box-shadow:inset -12px 0px 12px -14px rgba(0,0,0,0.38);}
 body .mbmenu h2{font-size:22px;font-weight:200;margin:30px 20px;cursor:pointer;}
 body .mbmenu ol{list-style:none;display:none;padding:0;}
