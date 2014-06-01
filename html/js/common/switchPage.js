@@ -153,7 +153,8 @@ define([
 
     // for enable links catch and modal etc.
     var init = function () {
-        var dMenu = $('.header .menu'),
+        var inAnimate = false,
+            dMenu = $('.header .menu'),
             dMbmenu = $('.mbmenu'),
             showLinksModal = function () {
                 var bFunc = function () {
@@ -212,11 +213,27 @@ define([
                 dMbmenu.delegate('.item h2', 'click', function () {
                     var dList = $(this).next();
 
+                    if (inAnimate) return;
+
+                    inAnimate = true;
+
                     if (dCurList.length) {
-                        dCurList.removeClass('active');
+                        dCurList.animate({
+                            'height': '0px'
+                        }, 600, function () {
+                            dCurList.removeClass('active');
+                            dList.removeAttr('style');
+                        })
                     }
 
-                    dList.addClass('active');
+                    dList.animate({
+                        'height': dList.children().length * 30 + 'px',
+                    }, 600, function () {
+                        dList.addClass('active');
+                        dList.removeAttr('style');
+
+                        inAnimate = false;
+                    })
 
                     dCurList = dList;
                 })
@@ -250,57 +267,11 @@ define([
 
                 dBody.toggleClass('open');
                 dMbmenu.toggleClass('open');
-            },
-            swipe = function () {
-                // var nWidth = parseInt($(window).width(), 10),
-                //     closeMenu = function () {
-                //         dBody.removeClass('open');
-                //         dMbmenu.removeClass('open');
-                //     },
-                //     openMenu = function () {
-                //         dBody.addClass('open');
-                //         dMbmenu.addClass('open');
-                //     };
-
-                // dBody.bind('touchstart', function (e){
-                //     var startTouches = e.originalEvent.touches,
-                //         nStart = 0,
-                //         nStartTime = Date.now();
-
-                //     if (startTouches && startTouches.length == 1) {
-                //         nStart = startTouches[0].pageX;
-
-                //         dBody.bind('touchend', function (e){
-                //             var endTouches = e.originalEvent.changedTouches,
-                //                 nEnd = 0,
-                //                 distance = 0;
-
-                //             if (endTouches && endTouches.length == 1) {
-                //                 nEnd = endTouches[0].pageX;
-                //                 distance = Math.abs(nEnd - nStart);
-
-                //                 if (distance < nWidth/3) return;
-
-                //                 if (nEnd - nStart) {
-                //                     // swipe left
-                //                     openMenu()
-                //                 } else {
-                //                     // swipe right
-                //                     closeMenu();
-                //                 }
-                //             }
-
-                //             dBody.unbind('touchend');
-                //         })
-                //     }
-                // })
             };
 
         // mobile menu need
         if (!helper.isPC()) {
             dBody.addClass('mobile');
-
-            swipe();
         }
 
         // show
