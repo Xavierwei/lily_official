@@ -181,9 +181,10 @@ a{text-decoration:none;color:#000;outline:none;}
 .stores p{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;line-height:30px}
 .store_txt{font-size:16px;font-weight:bold;}
 .store_selbox{margin:60px auto 0}
-.store_select{position:relative;width:160px;padding:0 0 60px;margin:0 12px;display:inline-block;}
-.store_selectbg{border:#000 solid 1px;display:block;height:46px;width:160px;font-size:16px;line-height:46px;}
-.store_sl_txt{float:left;width:130px;font-family:"Microsoft Yahei",arial,SimHei,sans-serif;}
+button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;cursor:pointer;outline:none;}
+.store_select{position:relative;width:auto;padding:0 0 60px;margin:0 12px;display:inline-block;}
+.store_selectbg{border:#000 solid 1px;display:block;height:46px;width:auto;font-size:16px;line-height:46px;}
+.store_sl_txt{float:left;width:auto;min-width:130px;padding:0 14px;font-family:"Microsoft Yahei",arial,SimHei,sans-serif;}
 .store_sl_icon{float:right;width:0;height:0;overflow:hidden;border:transparent solid 5px;border-top:#000 solid 5px;margin:20px 10px 0 0}
 .store_sl{position:absolute;height:46px;line-height:46px;left:1px;top:1px;width:162px;font-size:16px;border:0;background:none;cursor:pointer;opacity:0;filter:alpha(opacity=0);}
 .store_additem{float:left;width:20%;padding:0 15%;}
@@ -283,6 +284,10 @@ body.privacy{background-color:#f3dedd;}
 .loading.bottom{right:5%;bottom:10%;}
 .loading.right{right:5%;top:15%;}
 .loading.left{bottom:10%;left:5%;}
+/* map */
+#map{width:100%;}
+.index #map{height:410px;}
+.storelocator #map{height:536px;}
 /* album / video */
 .album.fadeout,
 .video.fadeout{cursor:pointer;}

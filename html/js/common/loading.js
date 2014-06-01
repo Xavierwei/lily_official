@@ -80,7 +80,8 @@ define([
     // enable the select
     var selectInit = function () {
         var dHome = $('#home-selectbox'),
-            dStore = $('#store-selectbox'),
+            dStarshop = $('.starshop #store-selectbox'),
+            dStorelocator = $('.storelocator #store-selectbox'),
             init = function (dWrap) {
                 dWrap.find('select').change(function () {
                     var sVal = $(this).val(),
@@ -97,8 +98,101 @@ define([
             init(dHome)
         }
 
-        if (dStore.length) {
-            init(dStore)
+        if (dStarshop.length) {
+            var dCountry = $('#country'),
+                dProvince = $('#province'),
+                dCity = $('#city'),
+                dDistrict = $('#district'),
+                dCountrySelect = dCountry.find('select'),
+                dProvinceSelect = dProvince.find('select'),
+                dCitySelect = dCity.find('select'),
+                dDistrictSelect = dDistrict.find('select'),
+                dProvinceText = dProvince.find('.store_sl_txt'),
+                dCityText = dCity.find('.store_sl_txt'),
+                updateText = function () {
+                    setTimeout(function () {
+                        var sProvince = dProvinceSelect.find('option:selected').text(),
+                            sCity = dCitySelect.find('option:selected').text();
+
+                        dProvinceText.html(sProvince);
+                        dCityText.html(sCity);
+                    }, 100)
+                };
+
+            dStarshop.ChinaCitySelect({
+                'prov' : dProvinceSelect,
+                'city' : dCitySelect,
+                'url' : 'data/city.json'
+            })
+
+            dProvinceSelect.change(function () {
+                updateText();
+            })
+
+            dCitySelect.change(function () {
+                updateText();
+            })
+
+            setTimeout(function () {
+                // default is shanghai
+                dProvinceSelect.val('p_31');
+
+                dProvinceSelect.change();
+                dCitySelect.change();
+            }, 100)
+        }
+
+        if (dStorelocator.length) {
+            var dCountry = $('#country'),
+                dProvince = $('#province'),
+                dCity = $('#city'),
+                dDistrict = $('#district'),
+                dCountrySelect = dCountry.find('select'),
+                dProvinceSelect = dProvince.find('select'),
+                dCitySelect = dCity.find('select'),
+                dDistrictSelect = dDistrict.find('select'),
+                dProvinceText = dProvince.find('.store_sl_txt'),
+                dCityText = dCity.find('.store_sl_txt'),
+                dDistrictText = dDistrict.find('.store_sl_txt'),
+                updateText = function () {
+                    setTimeout(function () {
+                        var sProvince = dProvinceSelect.find('option:selected').text(),
+                            sCity = dCitySelect.find('option:selected').text(),
+                            sDistrict = dDistrictSelect.find('option:selected').text();
+
+                        dProvinceText.html(sProvince);
+                        dCityText.html(sCity);
+                        dDistrictText.html(sDistrict);
+                    }, 100)
+                };
+
+            dStorelocator.ChinaCitySelect({
+                'prov' : dProvinceSelect,
+                'city' : dCitySelect,
+                'dist' : dDistrictSelect,
+                'url' : 'data/city.json'
+            })
+
+            dProvinceSelect.change(function () {
+                updateText();
+            })
+
+            dCitySelect.change(function () {
+                updateText();
+            })
+
+            dDistrictSelect.change(function () {
+                updateText();
+            })
+
+            setTimeout(function () {
+                // default is shanghai
+                dProvinceSelect.val('p_31');
+
+                dProvinceSelect.change();
+                dCitySelect.change();
+                dDistrictSelect.change();
+            }, 100)
         }
     }
 
