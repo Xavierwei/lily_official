@@ -1,0 +1,13 @@
+{{#each data}}
+<div class="limit cs-clear">
+    <div class="desc {{contentClass}}">
+        <h2>{{title}}</h2>
+        <p>{{city}}</p>
+        <p>{{name}}</p>
+        <p>{{address}}</p>
+        <p>{{phone}}</p>
+        <a href="javascript:;" class="store_view fadeout" latitude="{{geo.latitude}}" longitude="{{geo.longitude}}">View map</a>
+    </div>
+    <img class='{{imageClass}}' alt="" src="{{image}}">
+</div>
+{{/each}}

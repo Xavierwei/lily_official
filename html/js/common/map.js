@@ -7,26 +7,41 @@ define([
             latitude : 31.230416,
             longitude : 121.473701
         },
-        sAddress = '上海市',
+        oAddress = {
+            province : '上海市',
+            city : '上海市',
+            district : '徐汇区'
+        },
         oGeocoder = null,
         oMap = null,
         aMarkers = [];
 
     // update map center
-    var updateMapCenter = function () {
+    var updateMapCenter = function (oLatLng) {
         if (oMap) {
-            var latlng = new google.maps.LatLng(oPos.latitude, oPos.longitude);
+            var latlng;
+
+            if (oLatLng) {
+                latlng = new google.maps.LatLng(oLatLng.latitude, oLatLng.longitude);
+            } else {
+                latlng = new google.maps.LatLng(oPos.latitude, oPos.longitude);
+            }
 
             oMap.setCenter(latlng);
         }
     };
 
     // using address to get latlng info
-    var getLatLng = function (address) {
+    var getLatLng = function (address, callback) {
         if (oGeocoder) {
             oGeocoder.geocode( { 'address': address }, function(results, status) {
                 if (status == google.maps.GeocoderStatus.OK) {
-                    oPos = results[0].geometry.location;
+                    var oLatlng = results[0].geometry.location;
+
+                    callback({
+                        latitude : oLatlng.k,
+                        longitude : oLatlng.A
+                    });
                 }
             })
         }
@@ -39,10 +54,20 @@ define([
 
             oGeocoder.geocode({ 'latLng' : latLng }, function(results, status) {
                 if (status == google.maps.GeocoderStatus.OK) {
-                    var sCity = results[0].address_components[5].long_name;
+                    var sProvince = results[0].address_components[5].short_name,
+                        sCity = results[0].address_components[4].short_name,
+                        sDistrict = results[0].address_components[3].short_name;
 
-                    if (sCity) {
-                        sAddress = sCity;
+                    if (sProvince) {
+                        oAddress.province = sProvince;
+                    }
+
+                    if (sProvince) {
+                        oAddress.city = sCity;
+                    }
+
+                    if (sProvince) {
+                        oAddress.district = sDistrict;
                     }
                 }
             })
@@ -58,7 +83,7 @@ define([
     }
 
     // update markers
-    var updateMarkers = function () {
+    var updateMarkers = function (oLatLng, callback) {
         // add markers
         if (oMap) {
             // clear old markers
@@ -67,8 +92,13 @@ define([
             api.getStorelocator({
                 path : 'xxx',
                 method : 'get',
-                data : oPos,
+                data : oLatLng ? oLatLng : oPos,
                 success : function (aData) {
+                    // for render tpl
+                    if (callback) {
+                        callback(aData)
+                    }
+
                     for (var i = 0; i < aData.length; i++) {
                         var oTmp = new google.maps.LatLng(
                                 aData[i]['geo']['latitude'],
@@ -96,7 +126,7 @@ define([
         // reset all status
         oGeocoder = null;
         oMap = null;
-        aMarkers = [];
+        clearMarkers();
 
         if (dImg.length && isGoogleReady) {
             // default is shanghai
@@ -146,7 +176,7 @@ define([
     }
 
     var getAddress = function () {
-        return sAddress;
+        return oAddress;
     }
 
     return {
