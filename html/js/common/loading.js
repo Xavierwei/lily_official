@@ -6,58 +6,19 @@ define([
     'Handlebars',
     // apps
     'common/helper',
+    'common/map',
+    'common/select',
     'lib/text!templates/news.html'
-], function($, skrollr, imagesLoaded, Handlebars, helper, newsTpl) {
+], function($, skrollr, imagesLoaded, Handlebars, helper, map, select, newsTpl) {
     var oRoll,
         oSkrollr = null,
-        oPos = null,
-        oMap = null,
-        aMarkers = [],
-        isMapCreate = false,
         dWrap = $('#wrap'),
         dLeft = $('.loading.left'),
         dBottom = $('.loading.bottom'),
         dRight = $('.loading.right'),
         dTop = $('.loading.top'),
         dTape = $('.showy'),
-        sNews = Handlebars.compile(newsTpl)(),
-        oShop = {
-            'shanghai': [
-                {
-                    latitude : 31.440416,
-                    longitude : 121.433701
-                },
-                {
-                    latitude : 31.460416,
-                    longitude : 121.473701
-                },
-                {
-                    latitude : 31.230416,
-                    longitude : 121.373701
-                },
-                {
-                    latitude : 31.270416,
-                    longitude : 121.423701
-                },
-                {
-                    latitude : 31.290416,
-                    longitude : 121.393701
-                }
-            ]
-        };
-
-    // update map center
-    var updateMapCenter = function (address) {
-        if (isMapCreate) {
-            var geocoder = new google.maps.Geocoder();
-
-            geocoder.geocode( { 'address': address}, function(results, status) {
-                if (status == google.maps.GeocoderStatus.OK) {
-                    oMap.setCenter(results[0].geometry.location);
-                }
-            })
-        }
-    };
+        sNews = Handlebars.compile(newsTpl)();
 
     // new overlay init
     var newsInit = function () {
@@ -77,194 +38,21 @@ define([
         }
     }
 
-    // enable the select
-    var selectInit = function () {
-        var dHome = $('#home-selectbox'),
-            dStarshop = $('.starshop #store-selectbox'),
-            dStorelocator = $('.storelocator #store-selectbox'),
-            init = function (dWrap) {
-                dWrap.find('select').change(function () {
-                    var sVal = $(this).val(),
-                        dTarget = $(this).prev().find(':first-child');
-
-                    dTarget.html(sVal);
-
-                    // update map center
-                    updateMapCenter(sVal);
-                })
-            }
-
-        if (dHome.length) {
-            init(dHome)
-        }
-
-        if (dStarshop.length) {
-            var dCountry = $('#country'),
-                dProvince = $('#province'),
-                dCity = $('#city'),
-                dDistrict = $('#district'),
-                dCountrySelect = dCountry.find('select'),
-                dProvinceSelect = dProvince.find('select'),
-                dCitySelect = dCity.find('select'),
-                dDistrictSelect = dDistrict.find('select'),
-                dProvinceText = dProvince.find('.store_sl_txt'),
-                dCityText = dCity.find('.store_sl_txt'),
-                updateText = function () {
-                    setTimeout(function () {
-                        var sProvince = dProvinceSelect.find('option:selected').text(),
-                            sCity = dCitySelect.find('option:selected').text();
-
-                        dProvinceText.html(sProvince);
-                        dCityText.html(sCity);
-                    }, 100)
-                };
-
-            dStarshop.ChinaCitySelect({
-                'prov' : dProvinceSelect,
-                'city' : dCitySelect,
-                'url' : 'data/city.json'
-            })
-
-            dProvinceSelect.change(function () {
-                updateText();
-            })
-
-            dCitySelect.change(function () {
-                updateText();
-            })
-
-            setTimeout(function () {
-                // default is shanghai
-                dProvinceSelect.val('p_31');
-
-                dProvinceSelect.change();
-                dCitySelect.change();
-            }, 100)
-        }
-
-        if (dStorelocator.length) {
-            var dCountry = $('#country'),
-                dProvince = $('#province'),
-                dCity = $('#city'),
-                dDistrict = $('#district'),
-                dCountrySelect = dCountry.find('select'),
-                dProvinceSelect = dProvince.find('select'),
-                dCitySelect = dCity.find('select'),
-                dDistrictSelect = dDistrict.find('select'),
-                dProvinceText = dProvince.find('.store_sl_txt'),
-                dCityText = dCity.find('.store_sl_txt'),
-                dDistrictText = dDistrict.find('.store_sl_txt'),
-                updateText = function () {
-                    setTimeout(function () {
-                        var sProvince = dProvinceSelect.find('option:selected').text(),
-                            sCity = dCitySelect.find('option:selected').text(),
-                            sDistrict = dDistrictSelect.find('option:selected').text();
-
-                        dProvinceText.html(sProvince);
-                        dCityText.html(sCity);
-                        dDistrictText.html(sDistrict);
-                    }, 100)
-                };
-
-            dStorelocator.ChinaCitySelect({
-                'prov' : dProvinceSelect,
-                'city' : dCitySelect,
-                'dist' : dDistrictSelect,
-                'url' : 'data/city.json'
-            })
-
-            dProvinceSelect.change(function () {
-                updateText();
-            })
-
-            dCitySelect.change(function () {
-                updateText();
-            })
-
-            dDistrictSelect.change(function () {
-                updateText();
-            })
-
-            setTimeout(function () {
-                // default is shanghai
-                dProvinceSelect.val('p_31');
-
-                dProvinceSelect.change();
-                dCitySelect.change();
-                dDistrictSelect.change();
-            }, 100)
-        }
-    }
-
-    // init map
-    var mapInit = function() {
-        var dMap = $('#map'),
-            dImg = dMap.find('img.map'),
-            isGoogleReady = window.google && window.google.maps && google.maps.LatLng;
-
-        if (!isMapCreate && dImg.length && isGoogleReady) {
-            isMapCreate = true;
-
-            var oLatlng = oPos ? oPos : new google.maps.LatLng(31.230416, 121.473701),
-                mapOptions = {
-                    zoom: 12,
-                    center: oLatlng,
-                    mapTypeControl: true,
-                    mapTypeControlOptions: {
-                        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-                    },
-                    zoomControl: true,
-                    zoomControlOptions: {
-                        style: google.maps.ZoomControlStyle.SMALL
-                    },
-                    scrollwheel: false,
-                    disableDefaultUI: true
-                };
-
-            oMap = new google.maps.Map(dMap.get(0), mapOptions);
-
-            // add markers
-            for (var i = 0; i < oShop['shanghai'].length; i++) {
-                var oLocation = oShop['shanghai'][i],
-                    oTmp = new google.maps.LatLng(oLocation['latitude'], oLocation['longitude']),
-                    oMarker = new google.maps.Marker({
-                        position: oTmp,
-                        map: oMap,
-                        animation: google.maps.Animation.DROP
-                    });
-
-                aMarkers.push(oMarker);
-            }
-
-            // Try HTML5 geolocation
-            if (!oPos && navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function(data) {
-                    oPos = new google.maps.LatLng(data.coords.latitude, data.coords.longitude);
-
-                    oMap.setCenter(oPos);
-                });
-            }
-        }
-    }
-
     // the loading animation start
     var start = function() {
         // enable selects
-        selectInit()
+        select.init();
 
         // enable news page overlay
-        newsInit()
+        newsInit();
 
-        // need rebuild map
-        isMapCreate = false;
+        // try to init the map
+        map.init();
 
         // if using mobile or ugly ie, stop the animation
         if (!helper.canAnimate()) {
             // show the page content
             dWrap.fadeIn();
-
-            // init map
-            mapInit();
 
             return;
         }
@@ -290,9 +78,6 @@ define([
 
                     // show tapes
                     dTape.fadeIn();
-
-                    // init map
-                    mapInit();
 
                     if (oSkrollr) {
                         oSkrollr.refresh();
@@ -359,7 +144,6 @@ define([
     }
 
     return {
-        start: start,
-        mapInit: mapInit
+        start: start
     }
 })

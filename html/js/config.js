@@ -31,8 +31,8 @@ require([
 
 // google map need those functions under global
 var mapReady = function () {
-    require(['common/loading'], function(loading) {
-        loading.mapInit();
+    require(['common/map'], function(map) {
+        map.init();
     })
 }
 
@@ -41,7 +41,7 @@ var loadMapScript = function() {
 
     script.type = 'text/javascript';
 
-    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=mapReady';
+    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=zh-CN&callback=mapReady';
 
     document.body.appendChild(script);
 }

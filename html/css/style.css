@@ -113,7 +113,7 @@ a{text-decoration:none;color:#000;outline:none;}
 /* */
 .home_store{text-align:center;margin-top:10%;}
 .home_store h2{font-size:80px;}
-.home_sttxt{font-size:16px;font-weight:bold;}
+.home_sttxt{font-size:16px;font-weight:bold;margin: 20px auto;}
 .home_st_select{position:relative;width:160px;margin:50px auto;}
 .home_selectbg{border:#000 solid 1px;display:block;height:46px;width:160px;font-size:16px;line-height:46px;}
 .home_sl_txt{float:left;width:130px;}
@@ -182,7 +182,8 @@ a{text-decoration:none;color:#000;outline:none;}
 .store_txt{font-size:16px;font-weight:bold;}
 .store_selbox{margin:60px auto 0}
 button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;cursor:pointer;outline:none;}
-.store_select{position:relative;width:auto;padding:0 0 60px;margin:0 12px;display:inline-block;}
+.store_select{position:relative;width:auto;margin: 0 auto 20px;display:inline-block;}
+#home-selectbox #city.store_select{display: none;}
 .store_selectbg{border:#000 solid 1px;display:block;height:46px;width:auto;font-size:16px;line-height:46px;}
 .store_sl_txt{float:left;width:auto;min-width:130px;padding:0 14px;font-family:"Microsoft Yahei",arial,SimHei,sans-serif;}
 .store_sl_icon{float:right;width:0;height:0;overflow:hidden;border:transparent solid 5px;border-top:#000 solid 5px;margin:20px 10px 0 0}
