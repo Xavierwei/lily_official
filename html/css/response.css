@@ -1,4 +1,10 @@
 /* Mobile */
+@media only screen and (max-width:767px),
+@media only screen and (min-width:480px) and (max-width:767px),
+@media only screen and (min-width:768px) and (max-width:959px){
+    .event_item{
+    }
+}
 @media screen and (max-width:640px){
     .page .left,
     .page .right{float:none;}

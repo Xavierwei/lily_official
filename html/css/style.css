@@ -205,7 +205,7 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .event_tit p{font-size:20px;}
 .event_item{display:inline-block;width:33%;min-width:380px;margin-left:-3px;text-align:center;}
 .event_img{display:inline-block;width:360px;height:280px;position:relative;margin:0 10px;}
-.event_img img{position:absolute;border:#000 solid 3px;height:266px;left:-12px;right:0;}
+.event_img img{position:absolute;height:266px;left:-12px;right:0;max-width:100%;}
 .event_img p{position:absolute;background:#000;top:12px;left:0;right:0;height:272px;}
 .event_com{padding:15px;font-size:15px;text-align:left;}
 .event_com h3{font-size:20px;font-family:arial;padding:26px 0}
