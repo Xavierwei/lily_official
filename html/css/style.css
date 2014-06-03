@@ -44,12 +44,19 @@ a{text-decoration:none;color:#000;outline:none;}
 .language .lang_cn{background-position:-30px 0}
 /* footer Used
 ================================================================================================= */
-.footer{background:#c7deeb;line-height:30px;font-size:16px;text-transform:uppercase;color:#666}
+.footer{background:#c7deeb;line-height:30px;font-size:16px;text-transform:uppercase;color:#77858d}
 .ft_logo{background:url('../images/ft_logo.png') no-repeat center;width:132px;height:86px;margin:0 auto;padding:5%;}
-.ft_com{margin:0 10%;}
-.ft_list{display:inline-block;vertical-align:top;margin:0 20px;}
-.ft_list a{display:block;color:#666}
-.ft_touch{float:right;}
+.ft_com{margin:0 auto;width:947px;}
+.ft_list{display:inline-block;vertical-align:top;margin:0 50px;}
+.ft_list h2 {font-size:20px;}
+.ft_list a{display:block;color:#77858d}
+.ft_list ol {list-style: none;margin:0;padding:0;}
+.ft_list li {margin:0;padding:0;}
+.ft_links ol {list-style: none;margin:0;padding:0;}
+.ft_links ol li {margin:20px 0;}
+.ft_links ol li a {color:#77858d;font-weight:bold;}
+.ft_links {font-size:25px;float:left;margin-left:48px;margin-top:40px;width:150px;}
+.ft_touch {float:left;margin:52px 0 0 80px;font-size:14px;}
 .ft_shareitem{display:inline-block;width:35px;height:35px;background:url('../images/ft_shareicon.png') no-repeat;margin-right:8px}
 .ft_share2{background-position:-41px 0}
 .ft_share3{background-position:-88px 0}
@@ -164,7 +171,8 @@ a{text-decoration:none;color:#000;outline:none;}
 ================================================================================================= */
 .page_heritage .ha_modtxt{font-size:14px;line-height:30px;width:456px;}
 .page_heritage .limit{margin:7% auto;}
-.ha_modtxt h2{font-size:80px;font-family:arial;line-height:80px;padding-bottom:50px}
+.page_heritage .ha_modR {margin-top:-100px;}
+.ha_modtxt h2{font-size:47px;text-align:center;font-family:arial;width:164px;line-height:80px;padding-bottom:50px;background: url('../images/ha_mod_bg.gif') no-repeat;}
 .ha_modtxt h3{font-size:24px;line-height:28px;font-weight:normal;padding:0 0 30px;}
 .ha_modtxt p{width:320px}
 .page_heritage img{max-width:60%;}

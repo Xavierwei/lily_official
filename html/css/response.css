@@ -1,5 +1,21 @@
 /* Mobile */
-@media only screen and (max-width:767px),@media only screen and (min-width:480px) and (max-width:767px),@media only screen and (min-width:768px) and (max-width:959px){
+/*@media only screen and (max-width:767px),@media only screen and (min-width:480px) and (max-width:767px),@media only screen and (min-width:768px) and (max-width:959px){*/
+    /*.page .left,*/
+    /*.page .right{float:none;}*/
+    /*.home_lookbook{margin-top:5%;}*/
+    /*#links #nav li.item{display:block;text-align:center;margin:5% auto;height:auto;}*/
+    /*#wrap .page .limit{margin-left:auto;margin-right:auto;padding-left:7%;padding-right:7%;}*/
+    /*.home_new_cn{background-size:contain;}*/
+    /*.weibo_wbbox,*/
+    /*.weibo_wbbg{width:260px;height:500px;}*/
+    /*.weibo_wb_btn{margin:0 auto;text-align:center;}*/
+    /*.videowrap{text-align:center;}*/
+    /*.videowrap img{max-width:100%;}*/
+    /*.footer .ft_list,*/
+    /*.footer .ft_touch{display:block;text-align:center;margin:5% auto;float:none;}*/
+    /*.menu{background-image:url('../images/mobilemenu.png');background-size:contain;}*/
+/*}*/
+@media screen and (max-width:640px){
     .page .left,
     .page .right{float:none;}
     .home_lookbook{margin-top:5%;}
@@ -14,12 +30,12 @@
     .footer .ft_list,
     .footer .ft_touch{display:block;text-align:center;margin:5% auto;float:none;}
     .menu{background-image:url('../images/mobilemenu.png');background-size:contain;}
-}
-@media screen and (max-width:640px){
+
     /* milestone page */
     .page_heritage .limit{width:600px;}
     .page_heritage .ha_modtxt h2{font-size:40px;padding-bottom:0;}
     .page_heritage .ha_modtxt h3{font-size:18px;padding:0 0 10px;}
+    .page_heritage .ha_modR {margin:0;}
     /* news page */
     .page_event .event_list{width:auto;}
     .page_event .event_look{width:auto;text-align:center;}
@@ -54,6 +70,9 @@
     .page_privacy .privacy_tit.mobile{display:block;font-size:40px;line-height:1em;}
     .page_privacy .privacy_tit.mobile h2{margin:5% auto;font-size:20px;}
     .page_privacy .privacy_com{width:auto;}
+
+    .ft_com {width:auto;}
+    .ft_links {float:none;width:auto;text-align:center;margin:0;}
 }
 /* mobile menu part */
 body.mobile,
