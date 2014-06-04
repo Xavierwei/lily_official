@@ -211,6 +211,7 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .event_com h3{font-size:20px;font-family:arial;padding:26px 0}
 .event_look{background:#000;color:#fff;width:132px;height:48px;font-size:14px;line-height:48px;padding:0 0 0 20px;display:block;margin:55px 0 0}
 .event_look:hover{color:#fff}
+.newscontent {margin:20px 0 0;}
 /* contact Used
 ================================================================================================= */
 .contact{}

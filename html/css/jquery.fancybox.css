@@ -88,7 +88,7 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 #weixin .fancybox-close{display:none;}
 }
 #news .newswrap img{width:100%;max-width:100%;display:inline-block;}
-#news .newswrap h3{font-size:26px;font-weight:bolder;}
+#news .newswrap h3{font-size:25px;font-weight:bolder;}
 #news .newswrap h5{font-weight:bolder;}
 #news .newswrap  p{line-height:2em;font-weight:500;}
 #news .newswrap .close,
