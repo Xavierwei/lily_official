@@ -208,10 +208,11 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .event_img img{position:absolute;height:266px;left:-12px;right:0;max-width:100%;}
 .event_img p{position:absolute;background:#000;top:12px;left:0;right:0;height:272px;}
 .event_com{padding:15px;font-size:15px;text-align:left;}
-.event_com h3{font-size:20px;font-family:arial;padding:26px 0}
+.event_com h3{font-size:20px;font-family:arial;padding:26px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.event_com p{height:90px;overflow:hidden;}
 .event_look{background:#000;color:#fff;width:132px;height:48px;font-size:14px;line-height:48px;padding:0 0 0 20px;display:block;margin:55px 0 0}
 .event_look:hover{color:#fff}
-.newscontent {margin:20px 0 0;}
+.newscontent{margin:20px 0 0;}
 /* contact Used
 ================================================================================================= */
 .contact{}
@@ -254,9 +255,9 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .job_socialbtn{background:#000 url('../images/job_cn3.png') center no-repeat;width:308px;height:48px;margin:0 auto 170px;display:block;}
 .job_campus{background:url('../images/job_cn2.png') center no-repeat;margin:0 0 80px;height:30px}
 .job_item{display:inline-block;width:33%;text-align:center;margin:10px 0 10px -3px;min-width:360px;}
-.job_itemtit{font-size:36px;line-height:55px;height:125px;text-align:left;margin-left:10%;}
+.job_itemtit{font-size:36px;line-height:55px;height:125px;text-align:left;margin-left:10%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .job_itemtit strong{display:block;font-family:arial;font-size:48px}
-.job_itemtxt{font-size:12px;line-height:16px;padding-bottom:40px;text-align:left;margin-left:10%;}
+.job_itemtxt{font-size:12px;line-height:16px;text-align:left;margin-left:10%;height:100px;overflow:hidden;}
 .job_itembtn{background:#000;color:#fff;font-size:16px;font-family:arial;display:inline-block;width:80%;height:48px;line-height:48px;text-align:center;}
 /* privacy Used
 ================================================================================================= */
