@@ -25,7 +25,7 @@ define([
         var dEvent = $('.event_list');
 
         if (dEvent.length) {
-            dEvent.delegate('a.event_look', 'click', function() {
+            dEvent.delegate('a.event_open', 'click', function() {
                 api.getNews({
                     data : { id : '1231313' },
                     success : function (oData) {

@@ -27,6 +27,7 @@ table{border-collapse:collapse;border-spacing:0;}
 /* Commonly Used
 ================================================================================================= */
 a{text-decoration:none;color:#000;outline:none;}
+a:hover {opacity:0.8;}
 .cs-clear{+zoom:1;}
 .cs-clear:before,
 .cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
@@ -203,7 +204,7 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .event_tit{font-size:14px;line-height:30px;font-family:arial;text-transform:uppercase;text-align:center;height:220px;}
 .event_tit h2{font-size:80px;line-height:80px;}
 .event_tit p{font-size:20px;}
-.event_item{display:inline-block;width:33%;min-width:380px;margin-left:-3px;text-align:center;}
+.event_item{display:inline-block;width:380px;margin:0 30px;margin-bottom:80px;text-align:center;}
 .event_img{display:inline-block;width:360px;height:280px;position:relative;margin:0 10px;}
 .event_img img{position:absolute;height:266px;left:-12px;right:0;max-width:100%;}
 .event_img p{position:absolute;background:#000;top:12px;left:0;right:0;height:272px;}
@@ -213,6 +214,7 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .event_look{background:#000;color:#fff;width:132px;height:48px;font-size:14px;line-height:48px;padding:0 0 0 20px;display:block;margin:55px 0 0}
 .event_look:hover{color:#fff}
 .newscontent{margin:20px 0 0;}
+#wrap .page .limit.event_list {width:1774px;margin:0 auto;}
 /* contact Used
 ================================================================================================= */
 .contact{}
@@ -254,11 +256,14 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .job_social{background:url('../images/job_cn1.png') center no-repeat;margin:40px 0 30px;height:30px}
 .job_socialbtn{background:#000 url('../images/job_cn3.png') center no-repeat;width:308px;height:48px;margin:0 auto 170px;display:block;}
 .job_campus{background:url('../images/job_cn2.png') center no-repeat;margin:0 0 80px;height:30px}
-.job_item{display:inline-block;width:33%;text-align:center;margin:10px 0 10px -3px;min-width:360px;}
+.job_item{display:inline-block;width:360px;text-align:center;margin:10px 30px 40px 30px;}
 .job_itemtit{font-size:36px;line-height:55px;height:125px;text-align:left;margin-left:10%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .job_itemtit strong{display:block;font-family:arial;font-size:48px}
 .job_itemtxt{font-size:12px;line-height:16px;text-align:left;margin-left:10%;height:100px;overflow:hidden;}
 .job_itembtn{background:#000;color:#fff;font-size:16px;font-family:arial;display:inline-block;width:80%;height:48px;line-height:48px;text-align:center;}
+
+#wrap .page .limit.job_list {width:1693px;margin:0 auto;}
+
 /* privacy Used
 ================================================================================================= */
 .page_privacy{padding:260px 0;}
@@ -331,3 +336,5 @@ body.privacy{background-color:#f3dedd;}
 .fadeout:hover{opacity:0.5;filter:alpha(opacity=0.5);animation:fadeout 0.4s;-moz-animation:fadeout 0.4s; /* Firefox */
     -webkit-animation:fadeout 0.4s; /* Safari and Chrome */
 -o-animation:fadeout 0.4s; /* Opera */}
+
+a, .btn {-webkit-transition:   all 0.2s ease-out;-moz-transition:  all 0.2s ease-out;-o-transition:  all 0.2s ease-out;-ms-transition:  all 0.2s ease-out;transition:  all 0.2s ease-out;}

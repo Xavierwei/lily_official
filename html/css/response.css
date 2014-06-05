@@ -1,9 +1,24 @@
 /* Mobile */
-@media only screen and (max-width:1300px){
-    .job_item,
-    .event_item{display:block;margin:0 auto;}
+@media only screen and (max-width:1920px){
+    #wrap .page .limit.event_list {width:1328px;}
+    #wrap .page .limit.job_list {width:1270px;margin:0 auto;}
 }
+@media only screen and (max-width:1350px){
+    .event_item {margin:0 80px;}
+    #wrap .page .limit.event_list {width:1084px;}
+    .job_item {margin:10px 71px 40px 71px;}
+    #wrap .page .limit.job_list {width:1010px;margin:0 auto;}
+}
+
+@media only screen and (max-width:1050px){
+    .job_item {margin:10px 43px 40px 43px;}
+    #wrap .page .limit.event_list {width:924px;}
+    #wrap .page .limit.job_list {width:910px;margin:0 auto;}
+}
+
 @media screen and (max-width:640px){
+    .job_item{display:block;margin:0 auto;}
+    .event_item{display:block;margin:0 auto;}
     .page .left,
     .page .right{float:none;}
     .home_lookbook{margin-top:5%;}
