@@ -1,9 +1,14 @@
 /* Mobile */
+@media only screen and (max-width:3000px){
+    .ha_modtxt p {font-size:24px;line-height:28px;}
+}
 @media only screen and (max-width:1920px){
     #wrap .page .limit.event_list {width:1328px;}
     #wrap .page .limit.job_list {width:1270px;margin:0 auto;}
 }
 @media only screen and (max-width:1350px){
+    #nav li.item {width:180px;}
+    .ha_modtxt p {font-size:16px;line-height:18px;}
     .event_item {margin:0 80px;}
     #wrap .page .limit.event_list {width:1084px;}
     .job_item {margin:10px 71px 40px 71px;}
@@ -11,12 +16,26 @@
 }
 
 @media only screen and (max-width:1050px){
+    #nav li.item {width:150px;font-size:12px;}
+    #nav li.item h2 {padding:25px 0 25px 20px;}
+    #nav li ol {padding:0 0 20px 20px;}
+    .job_item {margin:10px 43px 40px 43px;}
+    #wrap .page .limit.event_list {width:924px;}
+    #wrap .page .limit.job_list {width:910px;margin:0 auto;}
+}
+
+@media only screen and (max-width:900px){
+    #nav li.item {width:130px;font-size:12px;}
+    #nav li.item h2 {padding:25px 0 25px 15px;}
+    #nav li ol {padding:0 0 20px 15px;}
     .job_item {margin:10px 43px 40px 43px;}
     #wrap .page .limit.event_list {width:924px;}
     #wrap .page .limit.job_list {width:910px;margin:0 auto;}
 }
 
 @media screen and (max-width:640px){
+    #nav {display: none;}
+    .menu {display:block;}
     .job_item{display:block;margin:0 auto;}
     .event_item{display:block;margin:0 auto;}
     .page .left,

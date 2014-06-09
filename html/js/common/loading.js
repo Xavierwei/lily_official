@@ -72,10 +72,10 @@ define([
         imgLoad.on('always', function(instance) {
             dTop.queue(function() {
                 dTop.dequeue();
-
-                dRight.css('height', '75%');
+                var dHeight = $(window).height() - 70*2;
+                dRight.css('height', dHeight);
                 dBottom.css('width', '90%');
-                dLeft.css('height', '75%');
+                dLeft.css('height', dHeight);
 
                 dTop.animate({
                     'width': '90%'
@@ -98,6 +98,12 @@ define([
                 })
             })
         })
+
+        $(window).resize(function(){
+            var dHeight = $(window).height() - 70*2;
+            dRight.css('height', dHeight);
+            dLeft.css('height', dHeight);
+        });
 
         imgLoad.on('progress', function(instance, image) {
             nLoad += 1;

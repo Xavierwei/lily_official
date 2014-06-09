@@ -155,55 +155,45 @@ define([
     var init = function () {
         var inAnimate = false,
             dMenu = $('.header .menu'),
-            dMbmenu = $('.mbmenu'),
+            dNav = $('#nav'),
+            dMbmenu = $('#nav'),
             showLinksModal = function () {
-                var bFunc = function () {
-                    setTimeout(function() {
-                        var dOverlay = $('.fancybox-mobile').length ?  $('.fancybox-mobile') : $.fancybox.wrap.parent();
+                // for special method
+                dMbmenu.delegate('.item a', 'click', function(e) {
+                    var dTarget = $(this),
+                        dCur = dMbmenu.find('a.on'),
+                        sTitle = dTarget.attr('title'),
+                        nCur = dCur.attr('index') ? dCur.attr('index') : 0,
+                        nTarget = dTarget.attr('index');
 
-                        // for custom style
-                        dOverlay.attr('id', 'links');
+                    // click self
+                    if (dTarget.hasClass('on')) {
+                        return e.preventDefault();
+                    }
 
-                        // for special method
-                        dOverlay.delegate('.item a', 'click', function(e) {
-                            var dTarget = $(this),
-                                dCur = dOverlay.find('a.on'),
-                                sTitle = dTarget.attr('title'),
-                                nCur = dCur.attr('index') ? dCur.attr('index') : 0,
-                                nTarget = dTarget.attr('index');
+                    // click others clickable link
+                    if (sTitle) {
+                        dCur.removeClass('on');
+                        dTarget.addClass('on');
+                        sCur = sTitle;
 
-                            // click self
-                            if (dTarget.hasClass('on')) {
-                                return e.preventDefault();
-                            }
+                        // update animation judge params
+                        if (nTarget > nCur) {
+                            isNext = true;
+                        } else {
+                            isNext = false;
+                        }
 
-                            // click others clickable link
-                            if (sTitle) {
-                                dCur.removeClass('on');
-                                dTarget.addClass('on');
-                                sCur = sTitle;
+                        // remove
+                        $.fancybox.close(true);
 
-                                // update animation judge params
-                                if (nTarget > nCur) {
-                                    isNext = true;
-                                } else {
-                                    isNext = false;
-                                }
+                        // page update
+                        updatePage()
+                    }
+                })
 
-                                // remove
-                                $.fancybox.close(true);
-
-                                // page update
-                                updatePage()
-                            }
-                        })
-
-                        // active the related link
-                        dOverlay.find('a[href$="' + sCur + '"]').addClass('on');
-                    }, 0)
-                }
-
-                helper.overlay(sLinks, bFunc);
+                // active the related link
+                dMbmenu.find('a[href$="' + sCur + '"]').addClass('on');
             },
             sliderMenu = function () {
                 var dCurList = dMbmenu.find('.item ol.active'),
@@ -273,17 +263,30 @@ define([
         if (!helper.isPC()) {
             dBody.addClass('mobile');
         }
+        else
+        {
+            showLinksModal();
+        }
+
+
 
         // show
         dMenu.bind('click', function () {
             if (helper.isPC()) {
                 // pc
-                showLinksModal();
+                //showLinksModal();
             } else {
                 // mobile
                 sliderMenu();
             }
         })
+
+        dNav.find('.item').hover(function(){
+            $(this).find('ol').delay(200).fadeIn();
+        }, function(){
+            $(this).find('ol').fadeOut();
+        });
+
 
         // update catch targets
         linkCatch();

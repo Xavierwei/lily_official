@@ -149,18 +149,279 @@ define([
         //     }
         // })
 
-        var fakeData = [
+        var lookbook1 = [
             {
-                url : 'images/home_img4.jpg',
-                title : 'Pic1'
+                url : 'pic/lookbook/garden/850_850/1.jpg',
+                title : 'Garden'
             },
             {
-                url : 'images/cp_blankimg5.jpg',
-                title : 'Pic2'
+                url : 'pic/lookbook/garden/850_850/2.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/3.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/4.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/5.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/6.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/7.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/8.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/16.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/18.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/19.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/20.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/21.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/22.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/23.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/35.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/36.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/37.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/38.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/39.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/41.jpg',
+                title : 'Garden'
+            },
+            {
+                url : 'pic/lookbook/garden/850_850/42.jpg',
+                title : 'Garden'
             }
         ]
 
-        oConfig.success(fakeData);
+        var lookbook2 = [
+            {
+                url : 'pic/lookbook/modernart/850_850/28.jpg',
+                title : 'Modernart'
+            },
+            {
+                url : 'pic/lookbook/modernart/850_850/29.jpg',
+                title : 'Modernart'
+            },
+            {
+                url : 'pic/lookbook/modernart/850_850/30.jpg',
+                title : 'Modernart'
+            },
+            {
+                url : 'pic/lookbook/modernart/850_850/31.jpg',
+                title : 'Modernart'
+            },
+            {
+                url : 'pic/lookbook/modernart/850_850/32.jpg',
+                title : 'Modernart'
+            },
+            {
+                url : 'pic/lookbook/modernart/850_850/33.jpg',
+                title : 'Modernart'
+            },
+            {
+                url : 'pic/lookbook/modernart/850_850/34.jpg',
+                title : 'Modernart'
+            },
+            {
+                url : 'pic/lookbook/modernart/850_850/40.jpg',
+                title : 'Modernart'
+            }
+        ]
+
+        var lookbook3 = [
+            {
+                url : 'pic/lookbook/ocean/850_850/9.jpg',
+                title : 'Ocean'
+            },
+            {
+                url : 'pic/lookbook/ocean/850_850/10.jpg',
+                title : 'Ocean'
+            },
+            {
+                url : 'pic/lookbook/ocean/850_850/11.jpg',
+                title : 'Ocean'
+            },
+            {
+                url : 'pic/lookbook/ocean/850_850/12.jpg',
+                title : 'Ocean'
+            },
+            {
+                url : 'pic/lookbook/ocean/850_850/13.jpg',
+                title : 'Ocean'
+            },
+            {
+                url : 'pic/lookbook/ocean/850_850/14.jpg',
+                title : 'Ocean'
+            },
+            {
+                url : 'pic/lookbook/ocean/850_850/15.jpg',
+                title : 'Ocean'
+            },
+            {
+                url : 'pic/lookbook/ocean/850_850/24.jpg',
+                title : 'Ocean'
+            },
+            {
+                url : 'pic/lookbook/ocean/850_850/25.jpg',
+                title : 'Ocean'
+            },
+            {
+                url : 'pic/lookbook/ocean/850_850/26.jpg',
+                title : 'Ocean'
+            },
+            {
+                url : 'pic/lookbook/ocean/850_850/27.jpg',
+                title : 'Ocean'
+            }
+        ]
+
+        var streetshot = [
+            {
+                url : 'pic/streetshot/850_850/1.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/2.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/3.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/4.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/5.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/6.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/7.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/8.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/9.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/10.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/11.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/12.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/13.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/6.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/7.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/8.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/9.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/10.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/11.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/12.jpg',
+                title : 'Streetshot'
+            },
+            {
+                url : 'pic/streetshot/850_850/13.jpg',
+                title : 'Streetshot'
+            }
+        ]
+
+        if(oConfig.data.id==5) {
+            oConfig.success(streetshot);
+        }
+        if(oConfig.data.id==1) {
+            oConfig.success(lookbook1);
+        }
+        if(oConfig.data.id==2) {
+            oConfig.success(lookbook2);
+        }
+        if(oConfig.data.id==3) {
+            oConfig.success(lookbook3);
+        }
+
     }
 
     // data format: { id : xxxx }, the series id

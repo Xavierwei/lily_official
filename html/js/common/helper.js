@@ -146,8 +146,9 @@ define([
                     }, 0)
                 };
 
+            var albumId = $(this).data('album');
             api.getAlbumList({
-                data : { id : '1231313' },
+                data : { id : albumId },
                 success : function (aData) {
                     var sAlbum = Handlebars.compile(albumTpl)({ data : aData });
 
@@ -286,11 +287,20 @@ define([
         })
     }
 
+    var campaignEvent = function() {
+        dBody.delegate('.go_play_ground', 'click', function() {
+            var top = $('#play_ground').position().top;
+            $('html, body').animate({scrollTop : top});
+        });
+    }
+
     var init = function() {
         // for album/photo list modals
         enableList();
         // for weibo mouse event
-        weibo()
+        //weibo();
+        // campaign event
+        campaignEvent();
     }
 
     return {

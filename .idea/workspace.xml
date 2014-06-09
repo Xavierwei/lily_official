@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/images/contact_bg.jpg" afterPath="$PROJECT_DIR$/html/images/contact_bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/images/ft_logo.png" afterPath="$PROJECT_DIR$/html/images/ft_logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/api.js" afterPath="$PROJECT_DIR$/html/js/common/api.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/campaign.html" afterPath="$PROJECT_DIR$/html/campaign.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/contact.html" afterPath="$PROJECT_DIR$/html/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/helper.js" afterPath="$PROJECT_DIR$/html/js/common/helper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/job.html" afterPath="$PROJECT_DIR$/html/job.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/jquery.fancybox.css" afterPath="$PROJECT_DIR$/html/css/jquery.fancybox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/loading.js" afterPath="$PROJECT_DIR$/html/js/common/loading.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lookbook.html" afterPath="$PROJECT_DIR$/html/lookbook.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/milestone.html" afterPath="$PROJECT_DIR$/html/milestone.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/news.html" afterPath="$PROJECT_DIR$/html/news.html" />
@@ -15,14 +21,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/storelocator.html" afterPath="$PROJECT_DIR$/html/storelocator.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/streetshot.html" afterPath="$PROJECT_DIR$/html/streetshot.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/switchPage.js" afterPath="$PROJECT_DIR$/html/js/common/switchPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/vip.html" afterPath="$PROJECT_DIR$/html/vip.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401773678123" ignored="false" />
-    <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401774778305" ignored="false" />
-    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401776834465" ignored="false" />
-    <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401339374099" ignored="false" />
+    <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402279897337" ignored="false" />
+    <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402295907851" ignored="false" />
+    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402295797517" ignored="false" />
+    <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402282149800" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/countdown.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401352610756" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401444447256" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/index.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401344702698" ignored="false" />
@@ -79,8 +87,17 @@
     <file path="$PROJECT_DIR$/../ave_1000/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401490627058" ignored="false" />
     <file path="$PROJECT_DIR$/../ave_1000/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401490627058" ignored="false" />
     <file path="/*.regexp" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401775485223" ignored="false" />
-    <file path="/milestone.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401776617102" ignored="false" />
-    <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401777401481" ignored="false" />
+    <file path="/milestone.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402283386255" ignored="false" />
+    <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402292302513" ignored="false" />
+    <file path="/campaign.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402280321114" ignored="false" />
+    <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402300339042" ignored="false" />
+    <file path="/lookbook.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402300746148" ignored="false" />
+    <file path="/starshop.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402288836718" ignored="false" />
+    <file path="/streetshot.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402299298439" ignored="false" />
+    <file path="/contact.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402289144979" ignored="false" />
+    <file path="/switchPage.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402291146258" ignored="false" />
+    <file path="/jquery.fancybox.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402293128265" ignored="false" />
+    <file path="/api.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402300796464" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,42 +117,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="milestone.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/milestone.html">
+      <file leaf-file-name="streetshot.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/streetshot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="28" selection-start="4337" selection-end="4337" vertical-scroll-proportion="-79.39286">
+            <state line="75" column="57" selection-start="3336" selection-end="3350" vertical-scroll-proportion="-8.142858">
               <folding>
-                <marker date="1401776622000" expanded="true" signature="8801:8902" placeholder="..." />
+                <marker date="1402300648000" expanded="true" signature="9077:9178" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="18" selection-start="6343" selection-end="6343" vertical-scroll-proportion="-20.678572">
-              <folding>
-                <marker date="1401779983000" expanded="true" signature="11360:11461" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="31" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.37959865">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="response.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/css/response.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="38" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -143,7 +131,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/js/common/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+            <state line="10" column="26" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,35 +140,37 @@
       <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/js/common/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="23" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
+            <state line="146" column="18" selection-start="4842" selection-end="4842" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loading.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/common/loading.js">
+      <file leaf-file-name="api.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/common/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="8" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.0">
+            <state line="216" column="13" selection-start="6351" selection-end="6351" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/config.js">
+      <file leaf-file-name="jquery.fancybox.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/css/jquery.fancybox.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="28" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0">
+            <state line="70" column="84" selection-start="4813" selection-end="4813" vertical-scroll-proportion="0.54858">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="switchPage.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
+      <file leaf-file-name="lookbook.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/lookbook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="32" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="110" column="0" selection-start="4972" selection-end="4972" vertical-scroll-proportion="-8.714286">
+              <folding>
+                <marker date="1402300746000" expanded="true" signature="10338:10439" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -203,31 +193,31 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/html/js/common/loading.js" />
+        <option value="$PROJECT_DIR$/html/campaign.html" />
         <option value="$PROJECT_DIR$/html/contact.html" />
         <option value="$PROJECT_DIR$/html/job.html" />
-        <option value="$PROJECT_DIR$/html/lookbook.html" />
+        <option value="$PROJECT_DIR$/html/milestone.html" />
         <option value="$PROJECT_DIR$/html/news.html" />
         <option value="$PROJECT_DIR$/html/privacy.html" />
         <option value="$PROJECT_DIR$/html/starshop.html" />
         <option value="$PROJECT_DIR$/html/storelocator.html" />
-        <option value="$PROJECT_DIR$/html/streetshot.html" />
         <option value="$PROJECT_DIR$/html/vip.html" />
-        <option value="$PROJECT_DIR$/html/campaign.html" />
-        <option value="$PROJECT_DIR$/html/milestone.html" />
         <option value="$PROJECT_DIR$/html/css/style.css" />
         <option value="$PROJECT_DIR$/html/index.html" />
-        <option value="$PROJECT_DIR$/html/css/response.css" />
-        <option value="$PROJECT_DIR$/html/js/config.js" />
+        <option value="$PROJECT_DIR$/html/js/common/helper.js" />
+        <option value="$PROJECT_DIR$/html/streetshot.html" />
+        <option value="$PROJECT_DIR$/html/lookbook.html" />
+        <option value="$PROJECT_DIR$/html/js/common/api.js" />
+        <option value="$PROJECT_DIR$/html/css/jquery.fancybox.css" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="22" />
-    <option name="width" value="2540" />
-    <option name="height" value="1357" />
+    <option name="x" value="24" />
+    <option name="y" value="37" />
+    <option name="width" value="1364" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -285,6 +275,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,15 +436,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="22" width="2540" height="1357" extended-state="0" />
+    <frame x="24" y="37" width="1364" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983023" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25380915" sideWeight="0.6701698" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25417298" sideWeight="0.6701698" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -445,6 +452,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32983023" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -511,132 +519,136 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/lookbook.html">
+    <entry file="file://$PROJECT_DIR$/html/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="14" selection-start="5276" selection-end="5276" vertical-scroll-proportion="0.9356478">
+        <state line="55" column="13" selection-start="2635" selection-end="2635" vertical-scroll-proportion="-20.714285">
           <folding>
-            <marker date="1401775555000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402292538000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/job.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="14" selection-start="7216" selection-end="7216" vertical-scroll-proportion="0.96782386">
+        <state line="55" column="13" selection-start="2631" selection-end="2631" vertical-scroll-proportion="-20.714285">
           <folding>
-            <marker date="1401775555000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="14" selection-start="5525" selection-end="5525" vertical-scroll-proportion="0.96782386">
-          <folding>
-            <marker date="1401775555000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/storelocator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="26" selection-start="7526" selection-end="7526" vertical-scroll-proportion="0.61388654">
-          <folding>
-            <marker date="1401775555000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1402292574000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/milestone.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="28" selection-start="4337" selection-end="4337" vertical-scroll-proportion="-79.39286">
+        <state line="55" column="13" selection-start="2637" selection-end="2637" vertical-scroll-proportion="-20.714285">
           <folding>
-            <marker date="1401776622000" expanded="true" signature="8801:8902" placeholder="..." />
+            <marker date="1402292583000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/lib/order.js">
+    <entry file="file://$PROJECT_DIR$/html/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="1444" selection-end="1444" vertical-scroll-proportion="0.015886288">
+        <state line="55" column="13" selection-start="2632" selection-end="2632" vertical-scroll-proportion="-20.714285">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1402292586000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/lib/require.js">
+    <entry file="file://$PROJECT_DIR$/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/lib/text.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="773" selection-end="773" vertical-scroll-proportion="0.2828784">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/response.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="38" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
+        <state line="90" column="29" selection-start="4135" selection-end="4135" vertical-scroll-proportion="0.64705884">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="18" selection-start="6343" selection-end="6343" vertical-scroll-proportion="-20.678572">
+        <state line="151" column="50" selection-start="6705" selection-end="6705" vertical-scroll-proportion="0.122977346">
           <folding>
-            <marker date="1401779983000" expanded="true" signature="11360:11461" placeholder="..." />
+            <marker date="1402295919000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/privacy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="13" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.9048362">
+          <folding>
+            <marker date="1402292608000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/starshop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="13" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.9048362">
+          <folding>
+            <marker date="1402292613000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/storelocator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="13" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.9048362">
+          <folding>
+            <marker date="1402292617000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/vip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="20" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.28237128">
+          <folding>
+            <marker date="1402292623000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="18" selection-start="4842" selection-end="4842" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/streetshot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="57" selection-start="3336" selection-end="3350" vertical-scroll-proportion="-8.142858">
+          <folding>
+            <marker date="1402300648000" expanded="true" signature="9077:9178" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/lookbook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="0" selection-start="4972" selection-end="4972" vertical-scroll-proportion="-8.714286">
+          <folding>
+            <marker date="1402300746000" expanded="true" signature="10338:10439" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+        <state line="10" column="26" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
+    <entry file="file://$PROJECT_DIR$/html/js/common/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="32" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
+        <state line="216" column="13" selection-start="6351" selection-end="6351" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/helper.js">
+    <entry file="file://$PROJECT_DIR$/html/css/jquery.fancybox.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="23" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/loading.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="8" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="28" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="31" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.37959865">
+        <state line="70" column="84" selection-start="4813" selection-end="4813" vertical-scroll-proportion="0.54858">
           <folding />
         </state>
       </provider>
