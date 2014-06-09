@@ -3,10 +3,10 @@
 * zx 2014 06 09 */
 
 /**/
-.club{background: #f3dedd}
+.club{background: #f3dedd;}
 .page_club{padding: 220px 0}
-.club_tit{font-size: 80px;line-height:88px;text-transform:uppercase;text-align: center;padding:0 0 50px;}
-.club_login{font-family:arial;}
+.club_tit{font-size: 80px;line-height:88px;text-transform:uppercase;text-align: center;padding:0 0 50px;font-family:arial;}
+.club_login{}
 .club_login_tit{}
 .club_login_txt{margin: 0 auto;width: 685px;text-align: center;}
 .club_login_txt p{font-size: 24px;text-transform:uppercase;line-height: 50px}
@@ -37,5 +37,20 @@
 .club_member_rule h4{text-transform:uppercase;margin: 80px 0 40px}
 .club_member_table th{text-transform:uppercase;}
 /**/
-.club_QA_txt{width: 830px;margin: 0 auto;text-align: center;line-height: 36px}
+.club_QA_txt{width: 830px;margin: 0 auto;text-align: center;line-height: 36px;font-family:"Microsoft Yahei",arial,SimHei,sans-serif}
 .club_QA_txt p{margin: 0 0 50px;}
+/**/
+
+.club_ecoupon_txt{text-align: center;}
+.club_ecoupon_center{padding: 0 0 0 150px;}
+.club_ecoupon_nav{width:240px;float: left;}
+.club_welcome{font-weight: bold;}
+.club_logout{width: 122px;height: 48px;border:#000 solid 1px;display: block;line-height: 48px;text-align: center;font-weight: bold;margin: 14px 0 50px}
+.club_navlist a{height: 35px;display: block;}
+.club_navlist .on{text-decoration: underline;}
+.club_ecoupon_com{float: left;width: 800px;}
+.club_ecoupontable{width: 100%;margin-top: 150px;}
+.club_ecoupontable th{border-bottom: #000 solid 1px;}
+.club_ecoupontable th,.club_ecoupontable td{text-align: center;line-height: 48px;}
+.club_giftcards{padding-top:150px;text-align: center;width: 600px}
+.club_giftcardsbtn{margin: 50px auto;display: block;color:#fff;background: #000;width: 308px;height: 48px;line-height: 48px}
