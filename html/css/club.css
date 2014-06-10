@@ -35,7 +35,13 @@
 /**/
 .club_member_rule{text-align: center;margin: 0 auto;width: 860px}
 .club_member_rule h4{text-transform:uppercase;margin: 80px 0 40px}
-.club_member_table th{text-transform:uppercase;}
+.club_member_table{width: 100%;margin:0 0 80px;}
+.club_member_table th{text-transform:uppercase;text-align: center;}
+.club_member_tableline{border-bottom:#000 solid 1px;}
+.club_member_table td,
+.club_member_table th{padding: 18px}
+.club_member_table2{width:430px;display: block;margin: 0 auto;}
+.club_member_rulelink{display: block;width: 320px;height: 48px;background: #000;text-align: center;line-height: 48px;color:#fff;margin: 80px auto 20px}
 /**/
 .club_QA_txt{width: 830px;margin: 0 auto;text-align: center;line-height: 36px;font-family:"Microsoft Yahei",arial,SimHei,sans-serif}
 .club_QA_txt p{margin: 0 0 50px;}
