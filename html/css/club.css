@@ -97,9 +97,12 @@
 .club_pointexselbox select{width: 100px;position: absolute;top: 0;left:24px;opacity: 0;filter:alpha(opacity=0);cursor: pointer;}
 .club_pointimglist{padding-left:4px;}
 .club_pointimglist li{float: left;display:inline;margin: 18px 0 0 24px}
+.club_club_pointproimg{float: left;width: 545px;}
+.club_club_pointproinfo{float: left;width: 325px}
 
 
 
 
 .club_img{display: block;background: url('../images/club_phobg.gif') no-repeat;width: 140px;height: 106px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
 .club_imgtxt{text-align: center;;width: 140px;top:30px;left:0;position: absolute;}
+.club_img2{display: block;background: url('../images/club_phobg2.gif') no-repeat;width: 469px;height: 340px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
