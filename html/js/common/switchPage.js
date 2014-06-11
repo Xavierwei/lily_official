@@ -36,6 +36,66 @@ define([
             dBody.attr('class', str);
         }
 
+        var updateBgColor = function () {
+            var bgColor;
+            switch(sCur) {
+                case 'index':
+                    bgColor = '255, 241, 244';
+                    break;
+                case 'news':
+                    bgColor = '221, 235, 243';
+                    break;
+                case 'campaign':
+                    bgColor = '241, 255, 252';
+                    break;
+                case 'lookbook':
+                    bgColor = '250, 250, 236';
+                    break;
+                case 'streetshot':
+                    bgColor = '250, 250, 236';
+                    break;
+                case 'starshop':
+                    bgColor = '221, 235, 243';
+                    break;
+                case 'storelocator':
+                    bgColor = '221, 235, 243';
+                    break;
+                case 'job':
+                    bgColor = '222, 213, 202';
+                    break;
+                case 'contact':
+                    bgColor = '221, 235, 243';
+                    break;
+                case 'privacy':
+                    bgColor = '243, 222, 221';
+                    break;
+                default:
+                    bgColor = '255, 241, 244';
+            }
+            dBody.attr('data-0', 'background-color:rgb(255,255,255);');
+            dBody.attr('data-500', 'background-color:rgb('+bgColor+');');
+        }
+
+
+        var getQueryString = function(name) {
+            var reg = new RegExp("(.*?)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.hash.match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+
+
+        var localHash = function () {
+            var hashtag = getQueryString('hash');
+            if($('#'+hashtag).length > 0) {
+                setTimeout(function(){
+                    $('html,body').animate({scrollTop:1500});
+                },1000);
+
+            }
+
+        }
+
+
         // if using mobile or ugly ie, stop the animation
         if (!helper.canAnimate()) {
             return updateBodyClass();
@@ -51,7 +111,13 @@ define([
                 dWrap.removeAttr('style');
 
                 // update page class
-                updateBodyClass()
+                updateBodyClass();
+
+                // update background animation
+                //updateBgColor();
+
+                // local hash
+                localHash();
             };
 
         // prevent duplicate animate
@@ -217,7 +283,7 @@ define([
                     }
 
                     dList.animate({
-                        'height': dList.children().length * 30 + 'px',
+                        'height': dList.children().length * 30 + 'px'
                     }, 600, function () {
                         dList.addClass('active');
                         dList.removeAttr('style');
@@ -290,6 +356,7 @@ define([
 
         // update catch targets
         linkCatch();
+
     }
 
     return {

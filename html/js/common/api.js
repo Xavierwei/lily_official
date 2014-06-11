@@ -409,6 +409,81 @@ define([
             }
         ]
 
+        var campaign = [
+            {
+                url : 'pic/campaign/1.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/2.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/3.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/4.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/5.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/6.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/7.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/8.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/9.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/10.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/11.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/12.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/13.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/14.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/15.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/16.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/17.jpg',
+                title : 'Campaign'
+            },
+            {
+                url : 'pic/campaign/18.jpg',
+                title : 'Campaign'
+            }
+        ]
+
         if(oConfig.data.id==5) {
             oConfig.success(streetshot);
         }
@@ -420,6 +495,9 @@ define([
         }
         if(oConfig.data.id==3) {
             oConfig.success(lookbook3);
+        }
+        if(oConfig.data.id==4) {
+            oConfig.success(campaign);
         }
 
     }

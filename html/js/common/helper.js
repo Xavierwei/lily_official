@@ -41,6 +41,7 @@ define([
         }
     }
 
+
     var overlay = function (sHthml, func) {
         if (canAnimate()) {
             $.fancybox({
@@ -147,6 +148,7 @@ define([
                 };
 
             var albumId = $(this).data('album');
+            if(albumId == undefined) albumId = 1;
             api.getAlbumList({
                 data : { id : albumId },
                 success : function (aData) {
@@ -289,8 +291,14 @@ define([
 
     var campaignEvent = function() {
         dBody.delegate('.go_play_ground', 'click', function() {
-            var top = $('#play_ground').position().top;
+            var top = $('#play_ground').position().top - 140;
             $('html, body').animate({scrollTop : top});
+        });
+    }
+
+    var mapEvent = function() {
+        dBody.delegate('.store_view', 'click', function() {
+            $(this).parent().next().html('<a href="http://api.map.baidu.com/geocoder?address=上海虹桥机场&output=html" target="_blank"> <img src="http://api.map.baidu.com/staticimage? width=400&height=300&zoom=11¢er=上海虹桥机场" />');
         });
     }
 
@@ -301,6 +309,9 @@ define([
         //weibo();
         // campaign event
         campaignEvent();
+
+        // for map
+        mapEvent();
     }
 
     return {
