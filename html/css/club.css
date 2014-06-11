@@ -4,7 +4,7 @@
 
 /**/
 .club{background: #f3dedd;}
-.page_club{padding: 220px 0}
+.page_club{padding: 120px 0}
 .club_tit{font-size: 80px;line-height:88px;text-transform:uppercase;text-align: center;padding:0 0 50px;font-family:arial;}
 .club_login{}
 .club_login_tit{}
@@ -58,5 +58,48 @@
 .club_ecoupontable{width: 100%;margin-top: 150px;}
 .club_ecoupontable th{border-bottom: #000 solid 1px;}
 .club_ecoupontable th,.club_ecoupontable td{text-align: center;line-height: 48px;}
-.club_giftcards{padding-top:150px;text-align: center;width: 600px}
+/**/
+.club_giftcards{padding:150px 0 0 55px;text-align: center;width: 600px}
 .club_giftcardsbtn{margin: 50px auto;display: block;color:#fff;background: #000;width: 308px;height: 48px;line-height: 48px}
+.club_giftcard{width: 860px;padding: 60px 0 0}
+.club_giftcardtable{width: 100%;}
+.club_giftcardtable th{border-bottom: #000 solid 1px;padding: 0 20px 20px;font-weight: normal;text-transform:uppercase;}
+.club_giftcardtable td{text-align: center;padding: 20px 20px 0}
+.club_giftcardtable a{text-decoration: underline;}
+.club_giftcardcheckout{width: 152px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;float: right;margin: 80px 40px}
+.club_giftcardimg2{padding-right: 200px}
+/**/
+.club_giftcardtable .club_memtr1{padding-right: 180px}
+/**/
+.club_meminfo{width: 950px;}
+.club_meminfolist{padding-left:150px;}
+.club_meminfolist ul{float: left;width: 420px}
+.club_meminfolist .club_meminfolist2{width: 300px}
+.club_meminfolist1 li{width: 420px;overflow: hidden;float: left;padding-bottom: 30px}
+.club_meminfolist2 li{width: 300px;overflow: hidden;float: left;padding-bottom: 30px}
+.club_meminfolist li span{float: left;width: 150px;}
+.club_meminfolist li strong{float: left;width: 210px;}
+.club_meminfolist2 li strong{float: left;width: 130px;}
+.club_meminpw{padding:20px 0 0 150px;}
+.club_meminpwform{margin: 30px 0;}
+.club_meminpwform input{width: 200px;padding: 0 15px;border:#000 solid 1px;line-height: 48px;height: 48px;float: left;display: inline;margin-right:30px; }
+.club_meminpwform .club_meminpwsub{width: 134px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;display: block;margin: 30px 0;cursor: pointer;font-size: 14px}
+/**/
+.club_navlist_gogift{width: 185px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;display: block;margin: 50px 0}
+/**/
+.club_point{width: 860px;}
+.club_pointexnav{border-bottom: #000 solid 1px;padding:12px 10px 12px 28px;}
+.club_pointexnavtit{float: left;}
+.club_pointexfilter{float: right;}
+.club_pointexfiltertit{float: left}
+.club_pointexselbox{float: left;padding:0 0 0 20px;position: relative;}
+.club_pointexselbox span{background: url('../images/club_memberreg_sel.png') no-repeat 80% 50%;display: block;width: 100px;padding:0 0 0 10px;}
+.club_pointexselbox select{width: 100px;position: absolute;top: 0;left:24px;opacity: 0;filter:alpha(opacity=0);cursor: pointer;}
+.club_pointimglist{padding-left:4px;}
+.club_pointimglist li{float: left;display:inline;margin: 18px 0 0 24px}
+
+
+
+
+.club_img{display: block;background: url('../images/club_phobg.gif') no-repeat;width: 140px;height: 106px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
+.club_imgtxt{text-align: center;;width: 140px;top:30px;left:0;position: absolute;}
