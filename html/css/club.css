@@ -97,12 +97,24 @@
 .club_pointexselbox select{width: 100px;position: absolute;top: 0;left:24px;opacity: 0;filter:alpha(opacity=0);cursor: pointer;}
 .club_pointimglist{padding-left:4px;}
 .club_pointimglist li{float: left;display:inline;margin: 18px 0 0 24px}
-.club_club_pointproimg{float: left;width: 545px;}
-.club_club_pointproinfo{float: left;width: 325px}
-
-
+.club_club_pointproimg{float: left;width: 540px;}
+.club_club_pointproinfo{float: left;width: 320px}
+.club_club_pointprolist{padding:20px 0 0;}
+.club_club_pointprolist .club_img{float: left;display: inline;margin: 0 20px 0 0}
+.club_club_pointproinfo{}
+.club_club_pointproinfo li{width: 320px;float: left;padding:0 0 30px;}
+.club_club_pointproinfo span{float: left;width: 160px;}
+.club_club_pointproinfo div{float: left;width: 160px}
+.club_club_pointselbox{position: relative;}
+.club_club_pointselbox strong{width: 100px;background:url('../images/club_memberreg_sel.png') no-repeat 80% 50%;display: block;}
+.club_club_pointselbox select{position:absolute;top: 0;left:0px;opacity: 0;display: block;width:90px}
+.club_club_pointprobtn{background: #000;color:#fff;line-height: 48px;height: 48px;width: 192px;display: block;text-align: center;}
+.club_pointintro{font-size: 14px;padding:20px 0 0;line-height: 30px}
+.club_pointintro h3{font-size: 18px;padding:50px 0 0;height: 42px;text-transform:uppercase;}
 
 
 .club_img{display: block;background: url('../images/club_phobg.gif') no-repeat;width: 140px;height: 106px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
 .club_imgtxt{text-align: center;;width: 140px;top:30px;left:0;position: absolute;}
-.club_img2{display: block;background: url('../images/club_phobg2.gif') no-repeat;width: 469px;height: 340px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
+.club_img2{display: block;background: url('../images/club_phobg2.gif') no-repeat;width: 469px;height: 340px;padding:3px 0 0 3px;position: relative;margin: 0}
+.club_img2 img{width:446px;height: 319px }
+.club_img2 .club_imgtxt{display: none}
