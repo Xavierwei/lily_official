@@ -60,7 +60,7 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 .jcarousel{position:absolute;top:0;bottom:20%;left:0;right:0;overflow:hidden;}
 .jcarousel ul{position:relative;width:20000em;height:100%;}
 .jcarousel li{position:relative;float:left;height:100%;text-align:center;}
-.jcarousel img{width:100%;}
+.jcarousel img{height:100%;}
 /* * Carousel Controls * */
 .fancybox-inner .actions{position:absolute;top:80%;bottom:0;left:0;right:0;overflow:hidden;text-align:center;}
 .fancybox-inner .actions li{display:inline-block;height:100%;}
@@ -68,7 +68,7 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 .fancybox-inner .actions li span{width:0;height:100%;display:inline-block;vertical-align:middle;}
 .fancybox-inner .actions li a{cursor:pointer;}
 .fancybox-inner .actions li a:hover{color:#000;}
-.fancybox-inner .actions li .desc{width:auto;height:auto;padding:0 10px;font-size:30px;color:#999;}
+.fancybox-inner .actions li .desc{width:auto;height:auto;padding:0 20px;font-size:20px;color:#999;}
 /* for links modal */
 #links{background:rgba(255,255,255,0.8);}
 #links .fancybox-skin{background:none;}
@@ -88,7 +88,7 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 #weixin .fancybox-close{display:none;}
 }
 #news .newswrap img{width:100%;max-width:100%;display:inline-block;}
-#news .newswrap h3{font-size:26px;font-weight:bolder;}
+#news .newswrap h3{font-size:25px;font-weight:bolder;}
 #news .newswrap h5{font-weight:bolder;}
 #news .newswrap  p{line-height:2em;font-weight:500;}
 #news .newswrap .close,

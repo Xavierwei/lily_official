@@ -2,19 +2,28 @@ define([
     // libs
     'jQuery',
     'Handlebars',
+    'common/api',
     'lib/text!templates/album.html',
     'lib/text!templates/video.html',
     'lib/text!templates/weibo.html'
-], function($, Handlebars, albumTpl, videoTpl, weiboTpl) {
+], function($, Handlebars, api, albumTpl, videoTpl, weiboTpl) {
     var dBody = $('body'),
         isUglyIe = $.browser.msie && $.browser.version <= 8,
         isIphone = navigator.userAgent.toLowerCase().indexOf('iphone') > 0,
         isIpad = navigator.userAgent.toLowerCase().indexOf('ipad') > 0,
         isAndroid = navigator.userAgent.indexOf('Android') >= 0,
         isMobile = isIphone || isIpad || isAndroid,
-        sAlbum = Handlebars.compile(albumTpl)(),
-        sVideo = Handlebars.compile(videoTpl)(),
-        sWeibo = Handlebars.compile(weiboTpl)();
+        sWeibo = (function () {
+            var str = '';
+
+            api.getWeibo({
+                success : function (oData) {
+                    str = Handlebars.compile(weiboTpl)(oData);
+                }
+            })
+
+            return str;
+        })();
 
     var isPC = function () {
         if (isMobile) {
@@ -31,6 +40,7 @@ define([
             return true;
         }
     }
+
 
     var overlay = function (sHthml, func) {
         if (canAnimate()) {
@@ -81,7 +91,7 @@ define([
     var enableList = function() {
         // album list
         dBody.delegate('.album', 'click', function() {
-            var bFunc = function() {
+            var bFunc = function(aData) {
                     setTimeout(function() {
                         var jcarousel = $('.fancybox-inner .jcarousel'),
                             dPre = $('.jcarousel-control-prev'),
@@ -98,7 +108,7 @@ define([
                                     nIndex = 1;
                                 }
 
-                                dDesc.html(nIndex)
+                                dDesc.html(aData[nIndex - 1].title);
                             },
                             updateSize = function () {
                                 var dWidth = $(window).width();
@@ -137,12 +147,23 @@ define([
                     }, 0)
                 };
 
-            overlay(sAlbum, bFunc);
+            var albumId = $(this).data('album');
+            if(albumId == undefined) albumId = 1;
+            api.getAlbumList({
+                data : { id : albumId },
+                success : function (aData) {
+                    var sAlbum = Handlebars.compile(albumTpl)({ data : aData });
+
+                    overlay(sAlbum, function () {
+                        bFunc(aData);
+                    });
+                }
+            })
         })
 
         // video list
         dBody.delegate('.video', 'click', function() {
-            var bFunc = function() {
+            var bFunc = function(aData) {
                     setTimeout(function() {
                         var jcarousel = $('.fancybox-inner .jcarousel'),
                             dPre = $('.jcarousel-control-prev'),
@@ -159,7 +180,7 @@ define([
                                     nIndex = 1;
                                 }
 
-                                dDesc.html(nIndex)
+                                dDesc.html(aData[nIndex - 1].title);
                             },
                             updateSize = function () {
                                 var dWidth = $(window).width();
@@ -217,7 +238,16 @@ define([
                     }, 0)
                 };
 
-            overlay(sVideo, bFunc);
+            api.getVideoList({
+                data : { id : '1231313' },
+                success : function (aData) {
+                    var sVideo = Handlebars.compile(videoTpl)({ data : aData });
+
+                    overlay(sVideo, function () {
+                        bFunc(aData);
+                    });
+                }
+            })
         })
     }
 
@@ -259,11 +289,29 @@ define([
         })
     }
 
+    var campaignEvent = function() {
+        dBody.delegate('.go_play_ground', 'click', function() {
+            var top = $('#play_ground').position().top - 140;
+            $('html, body').animate({scrollTop : top});
+        });
+    }
+
+    var mapEvent = function() {
+        dBody.delegate('.store_view', 'click', function() {
+            $(this).parent().next().html('<a href="http://api.map.baidu.com/geocoder?address=上海虹桥机场&output=html" target="_blank"> <img src="http://api.map.baidu.com/staticimage? width=400&height=300&zoom=11¢er=上海虹桥机场" />');
+        });
+    }
+
     var init = function() {
         // for album/photo list modals
         enableList();
         // for weibo mouse event
-        weibo()
+        //weibo();
+        // campaign event
+        campaignEvent();
+
+        // for map
+        mapEvent();
     }
 
     return {

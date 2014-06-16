@@ -1,11 +1,10 @@
 <div class="jcarousel">
     <ul class='content'>
+        {{#each data}}
         <li>
-            <img src="images/home_img4.jpg" />
+            <img src="{{url}}" />
         </li>
-        <li>
-            <img src="images/cp_blankimg5.jpg" />
-        </li>
+        {{/each}}
     </ul>
 </div>
 <ul class='actions'>
@@ -16,7 +15,9 @@
         </a>
     </li>
     <li>
-        <span class="desc">1</span>
+        {{#with data.[0]}}
+        <span class="desc">{{title}}</span>
+        {{/with}}
     </li>
     <li>
         <a class="jcarousel-control-next">

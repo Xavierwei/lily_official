@@ -1,0 +1,17 @@
+后端api需求格式请参考文件：
+
+[api.js](https://github.com/tonysh518/lily_official/blob/master/html/js/common/api.js)
+
+可能额外需要的api：
+
+1. `getPageContent`:
+
+    用于页面切换，获取切换至的页面的内容（部分页面还需做权限判断）
+
+2. `jobApply` :
+
+    用于用户上传简历，email等资料填写
+
+3. `getCityList` :
+
+    目前select部分，是我用一个纯前端插件做的，城市名等均为中文，而且只有中国的城市，不确定，客户是否需要这样的

@@ -36,6 +36,66 @@ define([
             dBody.attr('class', str);
         }
 
+        var updateBgColor = function () {
+            var bgColor;
+            switch(sCur) {
+                case 'index':
+                    bgColor = '255, 241, 244';
+                    break;
+                case 'news':
+                    bgColor = '221, 235, 243';
+                    break;
+                case 'campaign':
+                    bgColor = '241, 255, 252';
+                    break;
+                case 'lookbook':
+                    bgColor = '250, 250, 236';
+                    break;
+                case 'streetshot':
+                    bgColor = '250, 250, 236';
+                    break;
+                case 'starshop':
+                    bgColor = '221, 235, 243';
+                    break;
+                case 'storelocator':
+                    bgColor = '221, 235, 243';
+                    break;
+                case 'job':
+                    bgColor = '222, 213, 202';
+                    break;
+                case 'contact':
+                    bgColor = '221, 235, 243';
+                    break;
+                case 'privacy':
+                    bgColor = '243, 222, 221';
+                    break;
+                default:
+                    bgColor = '255, 241, 244';
+            }
+            dBody.attr('data-0', 'background-color:rgb(255,255,255);');
+            dBody.attr('data-500', 'background-color:rgb('+bgColor+');');
+        }
+
+
+        var getQueryString = function(name) {
+            var reg = new RegExp("(.*?)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.hash.match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+
+
+        var localHash = function () {
+            var hashtag = getQueryString('hash');
+            if($('#'+hashtag).length > 0) {
+                setTimeout(function(){
+                    $('html,body').animate({scrollTop:1500});
+                },1000);
+
+            }
+
+        }
+
+
         // if using mobile or ugly ie, stop the animation
         if (!helper.canAnimate()) {
             return updateBodyClass();
@@ -51,7 +111,13 @@ define([
                 dWrap.removeAttr('style');
 
                 // update page class
-                updateBodyClass()
+                updateBodyClass();
+
+                // update background animation
+                //updateBgColor();
+
+                // local hash
+                localHash();
             };
 
         // prevent duplicate animate
@@ -155,55 +221,45 @@ define([
     var init = function () {
         var inAnimate = false,
             dMenu = $('.header .menu'),
-            dMbmenu = $('.mbmenu'),
+            dNav = $('#nav'),
+            dMbmenu = $('#nav'),
             showLinksModal = function () {
-                var bFunc = function () {
-                    setTimeout(function() {
-                        var dOverlay = $('.fancybox-mobile').length ?  $('.fancybox-mobile') : $.fancybox.wrap.parent();
+                // for special method
+                dMbmenu.delegate('.item a', 'click', function(e) {
+                    var dTarget = $(this),
+                        dCur = dMbmenu.find('a.on'),
+                        sTitle = dTarget.attr('title'),
+                        nCur = dCur.attr('index') ? dCur.attr('index') : 0,
+                        nTarget = dTarget.attr('index');
 
-                        // for custom style
-                        dOverlay.attr('id', 'links');
+                    // click self
+                    if (dTarget.hasClass('on')) {
+                        return e.preventDefault();
+                    }
 
-                        // for special method
-                        dOverlay.delegate('.item a', 'click', function(e) {
-                            var dTarget = $(this),
-                                dCur = dOverlay.find('a.on'),
-                                sTitle = dTarget.attr('title'),
-                                nCur = dCur.attr('index') ? dCur.attr('index') : 0,
-                                nTarget = dTarget.attr('index');
+                    // click others clickable link
+                    if (sTitle) {
+                        dCur.removeClass('on');
+                        dTarget.addClass('on');
+                        sCur = sTitle;
 
-                            // click self
-                            if (dTarget.hasClass('on')) {
-                                return e.preventDefault();
-                            }
+                        // update animation judge params
+                        if (nTarget > nCur) {
+                            isNext = true;
+                        } else {
+                            isNext = false;
+                        }
 
-                            // click others clickable link
-                            if (sTitle) {
-                                dCur.removeClass('on');
-                                dTarget.addClass('on');
-                                sCur = sTitle;
+                        // remove
+                        $.fancybox.close(true);
 
-                                // update animation judge params
-                                if (nTarget > nCur) {
-                                    isNext = true;
-                                } else {
-                                    isNext = false;
-                                }
+                        // page update
+                        updatePage()
+                    }
+                })
 
-                                // remove
-                                $.fancybox.close(true);
-
-                                // page update
-                                updatePage()
-                            }
-                        })
-
-                        // active the related link
-                        dOverlay.find('a[href$="' + sCur + '"]').addClass('on');
-                    }, 0)
-                }
-
-                helper.overlay(sLinks, bFunc);
+                // active the related link
+                dMbmenu.find('a[href$="' + sCur + '"]').addClass('on');
             },
             sliderMenu = function () {
                 var dCurList = dMbmenu.find('.item ol.active'),
@@ -227,7 +283,7 @@ define([
                     }
 
                     dList.animate({
-                        'height': dList.children().length * 30 + 'px',
+                        'height': dList.children().length * 30 + 'px'
                     }, 600, function () {
                         dList.addClass('active');
                         dList.removeAttr('style');
@@ -273,20 +329,34 @@ define([
         if (!helper.isPC()) {
             dBody.addClass('mobile');
         }
+        else
+        {
+            showLinksModal();
+        }
+
+
 
         // show
         dMenu.bind('click', function () {
             if (helper.isPC()) {
                 // pc
-                showLinksModal();
+                //showLinksModal();
             } else {
                 // mobile
                 sliderMenu();
             }
         })
 
+        dNav.find('.item').hover(function(){
+            $(this).find('ol').delay(200).fadeIn();
+        }, function(){
+            $(this).find('ol').fadeOut();
+        });
+
+
         // update catch targets
         linkCatch();
+
     }
 
     return {

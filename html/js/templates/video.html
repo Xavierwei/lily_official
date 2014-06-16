@@ -1,41 +1,25 @@
 <div class="jcarousel">
     <ul class='content'>
+        {{#each data}}
         <li>
-            <video controls="controls" poster="media/demo.jpg">
+            <video controls="controls" poster="{{poster}}">
                 <!-- MP4 source must come first for iOS -->
-                <source src="media/demo.mp4" type="video/mp4" title="mp4">
+                <source src="{{mp4}}" type="video/mp4" title="mp4">
                 <!-- WebM for Firefox 4 and Opera -->
-                <source src="media/demo.webm" type="video/webm" title="webm">
+                <source src="{{webm}}" type="video/webm" title="webm">
                 <!-- OGG for Firefox 3 -->
-                <source src="media/demo.ogv" type="video/ogg" title="ogg">
+                <source src="{{ogv}}" type="video/ogg" title="ogg">
                 <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
                 <object  type="application/x-shockwave-flash" data="flashmediaelement.swf">
                     <param name="movie" value="flashmediaelement.swf" />
-                    <param name="flashvars" value="controls=true&amp;poster=media/demo.jpg&amp;file=media/demo.mp4" />
+                    <param name="flashvars" value="controls=true&amp;poster={{poster}}&amp;file={{mp4}}" />
                     <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-                    <img src="media/demo.jpg" width="100%" height="100%"
+                    <img src="{{poster}}" width="100%" height="100%"
                         title="No video playback capabilities" />
                 </object>
             </video>
         </li>
-        <li>
-            <video controls="controls" poster="media/demo.jpg">
-                <!-- MP4 source must come first for iOS -->
-                <source src="media/demo.mp4" type="video/mp4" title="mp4">
-                <!-- WebM for Firefox 4 and Opera -->
-                <source src="media/demo.webm" type="video/webm" title="webm">
-                <!-- OGG for Firefox 3 -->
-                <source src="media/demo.ogv" type="video/ogg" title="ogg">
-                <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
-                <object  type="application/x-shockwave-flash" data="flashmediaelement.swf">
-                    <param name="movie" value="flashmediaelement.swf" />
-                    <param name="flashvars" value="controls=true&amp;poster=media/demo.jpg&amp;file=media/demo.mp4" />
-                    <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-                    <img src="media/demo.jpg" width="100%" height="100%"
-                        title="No video playback capabilities" />
-                </object>
-            </video>
-        </li>
+        {{/each}}
     </ul>
 </div>
 <ul class='actions'>
@@ -46,7 +30,9 @@
         </a>
     </li>
     <li>
-        <span class="desc">1</span>
+        {{#with data.[0]}}
+        <span class="desc">{{title}}</span>
+        {{/with}}
     </li>
     <li>
         <a class="jcarousel-control-next">

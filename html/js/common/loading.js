@@ -5,11 +5,12 @@ define([
     'imagesLoaded',
     'Handlebars',
     // apps
+    'common/api',
     'common/helper',
     'common/map',
     'common/select',
     'lib/text!templates/news.html'
-], function($, skrollr, imagesLoaded, Handlebars, helper, map, select, newsTpl) {
+], function($, skrollr, imagesLoaded, Handlebars, api, helper, map, select, newsTpl) {
     var oRoll,
         oSkrollr = null,
         dWrap = $('#wrap'),
@@ -17,22 +18,28 @@ define([
         dBottom = $('.loading.bottom'),
         dRight = $('.loading.right'),
         dTop = $('.loading.top'),
-        dTape = $('.showy'),
-        sNews = Handlebars.compile(newsTpl)();
+        dTape = $('.showy');
 
     // new overlay init
     var newsInit = function () {
         var dEvent = $('.event_list');
 
         if (dEvent.length) {
-            dEvent.delegate('a.event_look', 'click', function() {
-                helper.overlay(sNews, function() {
-                    setTimeout(function() {
-                        var dOverlay = $.fancybox.wrap.parent();
+            dEvent.delegate('a.event_open', 'click', function() {
+                api.getNews({
+                    data : { id : '1231313' },
+                    success : function (oData) {
+                        var sNews = Handlebars.compile(newsTpl)(oData);
 
-                        // for custom style
-                        dOverlay.attr('id', 'news');
-                    }, 0)
+                        helper.overlay(sNews, function() {
+                            setTimeout(function() {
+                                var dOverlay = $.fancybox.wrap.parent();
+
+                                // for custom style
+                                dOverlay.attr('id', 'news');
+                            }, 0)
+                        })
+                    }
                 })
             })
         }
@@ -65,10 +72,10 @@ define([
         imgLoad.on('always', function(instance) {
             dTop.queue(function() {
                 dTop.dequeue();
-
-                dRight.css('height', '75%');
+                var dHeight = $(window).height() - 70*2;
+                dRight.css('height', dHeight);
                 dBottom.css('width', '90%');
-                dLeft.css('height', '75%');
+                dLeft.css('height', dHeight);
 
                 dTop.animate({
                     'width': '90%'
@@ -91,6 +98,12 @@ define([
                 })
             })
         })
+
+        $(window).resize(function(){
+            var dHeight = $(window).height() - 70*2;
+            dRight.css('height', dHeight);
+            dLeft.css('height', dHeight);
+        });
 
         imgLoad.on('progress', function(instance, image) {
             nLoad += 1;
