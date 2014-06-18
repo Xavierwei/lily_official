@@ -109,14 +109,15 @@ define([
                                 }
 
                                 dDesc.html(aData[nIndex - 1].title);
-                            },
-                            updateSize = function () {
-                                var dWidth = $(window).width();
-                                jcarousel.jcarousel('items').css('width', dWidth + 'px');
                             };
+//                            ,
+//                            updateSize = function () {
+//                                var dWidth = $(window).width();
+//                                jcarousel.jcarousel('items').css('width', dWidth + 'px');
+//                            };
 
                         jcarousel.on('jcarousel:reload jcarousel:create', function() {
-                            updateSize();
+                            //updateSize();
                         }).jcarousel({
                             wrap: 'circular'
                         });

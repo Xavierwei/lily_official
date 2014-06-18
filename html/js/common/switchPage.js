@@ -23,6 +23,15 @@ define([
     var pageSwitchAnimate = function () {
         var updateBodyClass = function () {
             var str = sCur;
+            var pos_cn = str.indexOf('_cn');
+            if(pos_cn > 0) {
+                str = str.substring(0, pos_cn);
+            }
+
+            var pos_param = str.indexOf('?');
+            if(pos_param > 0) {
+                str = str.substring(0, pos_param);
+            }
 
             // update page class
             if (!helper.isPC()) {
@@ -118,6 +127,7 @@ define([
 
                 // local hash
                 localHash();
+
             };
 
         // prevent duplicate animate
@@ -229,8 +239,9 @@ define([
                     var dTarget = $(this),
                         dCur = dMbmenu.find('a.on'),
                         sTitle = dTarget.attr('title'),
-                        nCur = dCur.attr('index') ? dCur.attr('index') : 0,
-                        nTarget = dTarget.attr('index');
+                        nCur = dCur.attr('href').replace('#', '') ? dCur.attr('href').replace('#', '') : 0,
+                        nTarget = dTarget.attr('href').replace('#', '');
+
 
                     // click self
                     if (dTarget.hasClass('on')) {
@@ -241,7 +252,7 @@ define([
                     if (sTitle) {
                         dCur.removeClass('on');
                         dTarget.addClass('on');
-                        sCur = sTitle;
+                        sCur = nTarget;
 
                         // update animation judge params
                         if (nTarget > nCur) {

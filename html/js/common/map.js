@@ -119,44 +119,53 @@ define([
 
     // init map
     var init = function() {
-        var dMap = $('#map'),
-            dImg = dMap.find('img.map'),
-            isGoogleReady = window.google && window.google.maps && google.maps.LatLng;
+//        var dMap = $('#map'),
+//            dImg = dMap.find('img.map'),
+//            isGoogleReady = window.google && window.google.maps && google.maps.LatLng;
+//
+//        // reset all status
+//        oGeocoder = null;
+//        oMap = null;
+//        clearMarkers();
+//
+//        if (dImg.length && isGoogleReady) {
+//            // default is shanghai
+//            var oLatlng = new google.maps.LatLng(oPos.latitude, oPos.longitude),
+//                mapOptions = {
+//                    zoom: 12,
+//                    center: oLatlng,
+//                    mapTypeControl: true,
+//                    mapTypeControlOptions: {
+//                        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+//                    },
+//                    zoomControl: true,
+//                    zoomControlOptions: {
+//                        style: google.maps.ZoomControlStyle.SMALL
+//                    },
+//                    scrollwheel: false,
+//                    disableDefaultUI: true
+//                };
+//
+//            // geocoder instance
+//            oGeocoder = new google.maps.Geocoder();
+//
+//            // map instance
+//            oMap = new google.maps.Map(dMap.get(0), mapOptions);
+//
+//            // try to update map center
+//            updateMapCenter();
+//
+//            // update markers
+//            updateMarkers();
+//        }
 
-        // reset all status
-        oGeocoder = null;
-        oMap = null;
-        clearMarkers();
-
-        if (dImg.length && isGoogleReady) {
-            // default is shanghai
-            var oLatlng = new google.maps.LatLng(oPos.latitude, oPos.longitude),
-                mapOptions = {
-                    zoom: 12,
-                    center: oLatlng,
-                    mapTypeControl: true,
-                    mapTypeControlOptions: {
-                        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-                    },
-                    zoomControl: true,
-                    zoomControlOptions: {
-                        style: google.maps.ZoomControlStyle.SMALL
-                    },
-                    scrollwheel: false,
-                    disableDefaultUI: true
-                };
-
-            // geocoder instance
-            oGeocoder = new google.maps.Geocoder();
-
-            // map instance
-            oMap = new google.maps.Map(dMap.get(0), mapOptions);
-
-            // try to update map center
-            updateMapCenter();
-
-            // update markers
-            updateMarkers();
+        var dMap = $('#map');
+        if(dMap.length > 0)  {
+            setTimeout(function(){
+                var map = new BMap.Map("map");
+                var point = new BMap.Point(121.478988,31.227919);
+                map.centerAndZoom(point, 15);
+            }, 1000);
         }
     }
 
