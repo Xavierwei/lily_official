@@ -157,7 +157,8 @@
 .search,
 .language{display: none}
 .mobile_nav{position:fixed;top: 30px;left:102px;font-size: 18px;color:#fff;height: 70px;line-height: 70px;width: 436px;padding:0 25px;background:#000 url('../images/mobile_nav.gif') no-repeat 450px 50%;cursor: pointer;z-index: 300}
-.mobile_navbox{position: absolute;width: 486px;background: #fff;left:0;top: 70px;line-height: 60px;}
+.mobile_nav:hover .mobile_navbox{display: block;}
+.mobile_navbox{position: absolute;width: 486px;background: #fff;left:0;top: 70px;line-height: 60px;display: none}
 .mobile_navbox a{display: block;padding:0 25px;}
 .mobile_navbox strong{padding-top:20px;display: block;}
 
