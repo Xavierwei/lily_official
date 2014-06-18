@@ -152,4 +152,33 @@
 .club_ecoupon_center,
 .club_giftcards{padding-left:0;}
 .club_ecoupon_com{float: none;margin: 0 auto}
+.menu{left:0;top:30px;width: 70px;height: 70px}
+.loading,
+.search,
+.language{display: none}
+.mobile_nav{position:fixed;top: 30px;left:102px;font-size: 18px;color:#fff;height: 70px;line-height: 70px;width: 436px;padding:0 25px;background:#000 url('../images/mobile_nav.gif') no-repeat 450px 50%;cursor: pointer;z-index: 300}
+.mobile_navbox{position: absolute;width: 486px;background: #fff;left:0;top: 70px;line-height: 60px;}
+.mobile_navbox a{display: block;padding:0 25px;}
+.mobile_navbox strong{padding-top:20px;display: block;}
+
+.club_giftcardtable{display: none}
+.club_mobilecardimg{float: left;margin-top:10px;}
+.club_img,
+.club_mobilecardimg .club_img{background: url('../images/club_phobgmobile.gif') no-repeat;width: 253px;height: 188px;margin: 0}
+.club_img img,
+.club_mobilecardimg img{width:238px;height: 175px}
+.club_imgtxt{width: 250px;top:75px;}
+.mobile_proinfor{float: right;width: 238px;line-height: 30px}
+.mobile_proitem {width: 520px;margin-top:50px;}
+.mobile_proinfortit{padding-top:5px;text-transform: uppercase;}
+.mobile_proinfor a{text-decoration: underline;}
+.club_giftcardcheckout{float: none;display: block;margin: 80px auto 0}
+.club_giftcard{width: 600px;}
+.club_ecoupon_center,
+.club_point{width: 580px}
+.club_pointexnav{display: none;}
+.club_ecoupon_center{padding: 0}
+
+.club_meminfolist ul{float: none}
+.club_meminpwform input{float: none;display: block;margin-bottom:20px;}
 }
