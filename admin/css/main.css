@@ -1,0 +1,33 @@
+#header {
+  height: 150px;
+  border: 1px solid #eee;
+}
+
+#bar {
+  height: 40px;
+  border: 1px solid #eee;
+}
+
+#footer {
+  height: 80px;
+  border: 1px solid #eee;
+}
+
+.show-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.fieldset-section {
+  position: relative;
+}
+
+.hideme {
+  display: none;
+}
+
+#shop-map {
+  height: 500px;
+}

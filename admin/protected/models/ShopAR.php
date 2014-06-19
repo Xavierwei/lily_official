@@ -14,6 +14,12 @@ class ShopAR extends CActiveRecord {
   // 明星店铺
   const SHOP_STAR = 1;
   
+  public $type = "shop";
+  
+  const SHOP_STAR_IMAGE = "shop_star_image";
+  
+  public $shop_star_image;
+  
   public function tableName() {
     return "shop";
   }
@@ -51,6 +57,16 @@ class ShopAR extends CActiveRecord {
     }
     $this->mdate = date("Y-m-d H:i:s");
     return TRUE;
+  }
+  
+  public function afterSave() {
+    $mediaAr = new MediaAR();
+    $mediaAr->saveMediaToObject($this, self::SHOP_STAR_IMAGE);
+  }
+  
+  public function afterFind() {
+    $mediaAr = new MediaAR();
+    $mediaAr->attachMediaToObject($this, self::SHOP_STAR_IMAGE);
   }
   
   /**
@@ -133,5 +149,12 @@ class ShopAR extends CActiveRecord {
     
     // 最后返回结果
     return $rows;
+  }
+  
+  // 返回Media
+  public function getAttributes($names = null) {
+    $attributes = parent::getAttributes($names);
+    $attributes[self::SHOP_STAR_IMAGE] = $this->{self::SHOP_STAR_IMAGE};
+    return $attributes;
   }
 }

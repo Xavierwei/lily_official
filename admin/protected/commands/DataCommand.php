@@ -26,6 +26,7 @@ class DataCommand extends CConsoleCommand {
           "phone" => trim($coles[6]),
           "lat" => str_replace('"', "", isset($coles[7]) ? $coles[7]: ""),
           "lng" => str_replace('"', "", isset($coles[8]) ? $coles[8]: ""),
+          "star" => isset($coles[9]) ? $coles[9] : 0,
       );
       
       $shop->setAttributes($attr, FALSE);

@@ -35,6 +35,8 @@ class IndexController extends Controller
 	 */
 	public function actionError()
 	{
-		$this->render("error");
+    $error = Yii::app()->errorHandler->error;
+    print_r($error);
+		//$this->render("error");
 	}
 }

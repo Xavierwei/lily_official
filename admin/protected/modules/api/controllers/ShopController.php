@@ -126,9 +126,6 @@ class ShopController extends Controller {
       // 店铺状态
       $status = $request->getParam("status", FALSE);
       
-      // IP 地址查询
-      //TODO::
-      
       $shop = new ShopAR();
       $rows = $shop->getList($status, $limit, $offset);
       

@@ -3,17 +3,18 @@
   
   // Shop controller 
   AdminModule.controller("ShopForm", ["$scope", "$http", function ($scope, $http) {
-    $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
-    $http.defaults.transformRequest = function(data){
-        if (data === undefined) {
-            return data;
-        }
-        return $.param(data);
-    };
-    
     $scope.addShop = function () {
       
     };
+    $scope.showToggle = function (event) {
+      var el = angular.element(event.target);
+      el.siblings(".control-group").toggleClass("hideme");
+    };
   }]);
+
+  angular.element(document).ready(function () {
+    var map = new BMap.Map("shop-map");
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 14);  
+  });
   
 })(jQuery);
