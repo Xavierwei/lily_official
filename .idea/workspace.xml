@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/select.js" afterPath="$PROJECT_DIR$/html/js/common/select.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/starshop.html" afterPath="$PROJECT_DIR$/html/starshop.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,7 +72,7 @@
     <file path="/campaign.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402363349987" ignored="false" />
     <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403102649675" ignored="false" />
     <file path="/lookbook.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402300746148" ignored="false" />
-    <file path="/starshop.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403144869631" ignored="false" />
+    <file path="/starshop.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403147514024" ignored="false" />
     <file path="/streetshot.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402299298439" ignored="false" />
     <file path="/contact.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402289144979" ignored="false" />
     <file path="/switchPage.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402671608994" ignored="false" />
@@ -182,9 +182,9 @@
       <file leaf-file-name="starshop.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/starshop.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="66" selection-start="4740" selection-end="4740" vertical-scroll-proportion="0.35569423">
+            <state line="105" column="125" selection-start="4799" selection-end="4799" vertical-scroll-proportion="0.35569423">
               <folding>
-                <marker date="1403146897000" expanded="true" signature="10265:10366" placeholder="..." />
+                <marker date="1403147513000" expanded="true" signature="10263:10364" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -193,7 +193,7 @@
       <file leaf-file-name="select.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="40" selection-start="7125" selection-end="7125" vertical-scroll-proportion="-16.807692">
+            <state line="198" column="26" selection-start="7204" selection-end="7205" vertical-scroll-proportion="-19.0">
               <folding />
             </state>
           </provider>
@@ -249,8 +249,8 @@
         <option value="$PROJECT_DIR$/html/js/common/helper.js" />
         <option value="$PROJECT_DIR$/html/js/common/map.js" />
         <option value="$PROJECT_DIR$/html/css/style.css" />
-        <option value="$PROJECT_DIR$/html/starshop.html" />
         <option value="$PROJECT_DIR$/html/js/common/select.js" />
+        <option value="$PROJECT_DIR$/html/starshop.html" />
       </list>
     </option>
   </component>
@@ -658,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/templates/storelocator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="85" selection-start="247" selection-end="255" vertical-scroll-proportion="-4.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="346" column="66" selection-start="20082" selection-end="20082" vertical-scroll-proportion="0.0">
@@ -674,16 +667,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="40" selection-start="7125" selection-end="7125" vertical-scroll-proportion="-16.807692">
+        <state line="198" column="26" selection-start="7204" selection-end="7205" vertical-scroll-proportion="-19.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/templates/storelocator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="85" selection-start="247" selection-end="255" vertical-scroll-proportion="-4.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/starshop.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="66" selection-start="4740" selection-end="4740" vertical-scroll-proportion="0.35569423">
+        <state line="105" column="125" selection-start="4799" selection-end="4799" vertical-scroll-proportion="0.35569423">
           <folding>
-            <marker date="1403146897000" expanded="true" signature="10265:10366" placeholder="..." />
+            <marker date="1403147513000" expanded="true" signature="10263:10364" placeholder="..." />
           </folding>
         </state>
       </provider>
