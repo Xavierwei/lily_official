@@ -13,6 +13,9 @@ class ShopController extends Controller {
     $city = $request->getParam("city", 0);
     $distinct = $request->getParam("distinct", 0);
     
+    // 是否明星店铺
+    $is_star_shop = $request->getParam("star", 0);
+    
     // 构造查询
     $shopAr = new ShopAR();
     
@@ -24,6 +27,9 @@ class ShopController extends Controller {
     }
     if ($distinct) {
       $shopAr->andSearch("distinct", $distinct);
+    }
+    if ($is_star_shop) {
+      $shopAr->andSearch("type", ShopAR::TYPE_START);
     }
     
     $this->responseJSON($shopAr->locateShop(), "success");
@@ -77,5 +83,58 @@ class ShopController extends Controller {
     $ret["distinct"] = $ret_distinct;
     $this->responseJSON($ret, "success");
   }
+  
+  /**
+   * 添加店
+   */
+  public function actionAdd() {
+    $request = Yii::app()->getRequest();
+    
+    if ($request->isPostRequest) {
+      $data = $_POST;
+      $shop = new ShopAR();
+      $shop->setAttributes($data);
+      
+      if ($shop->save()) {
+        $this->responseJSON($shop, "success");
+      }
+      else {
+        $this->responseError("validate failed", ErrorAR::ERROR_VALIDATE_FAILED, $shop->getErrors());
+      }
+    }
+    else {
+      $this->responseError("http verb error", ErrorAR::ERROR_HTTP_VERB_ERROR);
+    }
+  }
+  
+  /**
+   * 店铺列表
+   */
+  public function actionIndex() {
+    $request = Yii::app()->getRequest();
+    
+    if ($request->getRequestType() == "GET") {
+      // 首先看分页查询
+      $limit = $request->getParam("limit", FALSE);
+      $offset = $request->getParam("offset", FALSE);
+      
+      // 店铺状态
+      $status = $request->getParam("status", FALSE);
+      
+      $shop = new ShopAR();
+      $rows = $shop->getList($status, $limit, $offset);
+      
+      $this->responseJSON($rows, "success");
+    }
+    else {
+      $this->responseError("http verb error", ErrorAR::ERROR_HTTP_VERB_ERROR);
+    }
+  }
+  
+  /**
+   * 根据IP 地址查询周围店铺
+   */
+  public function actionAround() {
+    //TODO::
+  }
 }
-

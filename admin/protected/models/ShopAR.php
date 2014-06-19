@@ -1,6 +1,19 @@
 <?php
 
 class ShopAR extends CActiveRecord {
+  
+  // 开张营业中
+  const STATUS_OPEN = 1;
+  // 店铺已关闭
+  const STATUS_CLOSED = 0;
+  // 店铺正在开张中但没有正式营业
+  const STATUS_OPENING = 2;
+  
+  // 普通店铺
+  const TYPE_NORMAL = 0;
+  // 明星店铺
+  const TYPE_START = 1;
+  
   public function tableName() {
     return "shop";
   }
@@ -11,6 +24,25 @@ class ShopAR extends CActiveRecord {
   
   public static function model($class = __CLASS__) {
     return parent::model($class);
+  }
+  
+  public function rules() {
+    return array(
+        array("title, address, lat, lng", "required"),
+        array("lat, lng", "isfloat"),
+        array("shop_id, country, city, distinct, phone, cdate, mdate, status", "safe"),
+    );
+  }
+  
+  public function isfloat($attr) {
+    $value = $this->{$attr};
+    if (!$value) {
+      return TRUE;
+    }
+    if (is_float($value)) {
+      return TRUE;
+    }
+    return FALSE;
   }
   
   public function beforeSave() {
@@ -39,6 +71,28 @@ class ShopAR extends CActiveRecord {
     $search_values[$key] = $val;
     
     return $search_values;
+  }
+  
+  /**
+   * 获取店铺列表
+   * @param type $status 店铺状态
+   * @param type $limit 分页的每页数目
+   * @param type $offset  分页的offset
+   */
+  public function getList($status = FALSE, $limit = FALSE, $offset = FALSE) {
+    $query = new CDbCriteria();
+    if ($status !== FALSE) {
+      $query->addCondition("status=:status");
+      $query->params[":status"] = $status;
+    }
+    if ($limit !== FALSE) {
+      $query->limit = $limit;
+    }
+    if ($offset !== FALSE) {
+      $query->offset = $offset;
+    }
+    
+    return $this->findAll($query);
   }
   
   /**
