@@ -48,7 +48,11 @@ class IPToLatlng extends CApplicationComponent {
    */
   public function toLatlng($ip = NULL) {
     $parse = $this->parseIP($ip);
-    return $parse["content"]["point"];
+    if ($parse) {
+      return $parse["content"]["point"];
+    }
+    // 默认是0
+    return array("x"=> 0, "y" => 0);
   }
   
   /**
@@ -58,6 +62,23 @@ class IPToLatlng extends CApplicationComponent {
    */
   public function toCity($ip = NULL) {
     $parse = $this->parseIP($ip);
-    return $parse["content"]["address_detail"]["city"];
+    if ($parse) {
+      return $parse["content"]["address_detail"]["city"];
+    }
+    // 默认是上海市
+    else {
+      return "上海市";
+    }
   }
+  
+function distance($lat1, $lon1, $lat2, $lon2) {
+    $theta = $lon1 - $lon2;
+    $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) + cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
+    $dist = acos($dist);
+    $dist = rad2deg($dist);
+    $miles = $dist * 60 * 1.1515;
+    
+    return ($miles * 1.609344);
+  }
+
 }

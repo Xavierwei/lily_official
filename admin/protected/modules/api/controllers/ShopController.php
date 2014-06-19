@@ -83,7 +83,7 @@ class ShopController extends Controller {
     $ret["distinct"] = $ret_distinct;
     
     // 获取当前用户的省份
-    $city = Yii::app()->ip->toCity("180.173.143.62");
+    $city = Yii::app()->ip->toCity();
     $ret["user_city"] = $city;
     
     $this->responseJSON($ret, "success");
@@ -144,6 +144,40 @@ class ShopController extends Controller {
    * TODO:: 并且标出离自己最近的店铺
    */
   public function actionAround() {
+    $request = Yii::app()->getRequest();
+    
+    // 测试IP
+    $city = Yii::app()->ip->toCity("180.173.143.62");
+    // city 要转换下， 比如 上海市 也可能是上海
+    // 包含了市 则不需要处理，如果没有则需要加上市
+    if (strpos($city, "市") === FALSE) {
+      $city .= "市";
+    }
+    // 测试IP
+    $latlng = Yii::app()->ip->toLatlng("180.173.143.62");
+    $lat = $latlng["x"];
+    $lng = $latlng["y"];
+    
+    // 当前用户所属城市的店铺
+    $shop = new ShopAR();
+    $shop->andSearch("city", $city);
+    $city_shopes= $shop->locateShop();
+    
+    // 当前用户最近的店铺
+    $min_distance_shop = FALSE;
+    $min_distance = 0;
+    foreach ($city_shopes as $shop_obj) {
+      $distance = Yii::app()->ip->distance($shop_obj->lat, $shop_obj->lng, $lat, $lng);
+      if ($min_distance == 0) {
+        $min_distance = $distance;
+      }
+      if ($distance < $min_distance) {
+        $min_distance = $distance;
+        $min_distance_shop = $shop_obj;
+      }
+    }
+    
+    return $this->responseJSON(array("around" => $city_shopes, "min_distance_shop" => $min_distance_shop), "success");
     
   }
 }
