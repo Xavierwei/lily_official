@@ -2,33 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/campaign_cn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/contact_cn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/job_cn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/lookbook_cn.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/campaign.html" afterPath="$PROJECT_DIR$/html/campaign.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/config.js" afterPath="$PROJECT_DIR$/html/js/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/contact.html" afterPath="$PROJECT_DIR$/html/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/api.js" afterPath="$PROJECT_DIR$/html/js/common/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/helper.js" afterPath="$PROJECT_DIR$/html/js/common/helper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/job.html" afterPath="$PROJECT_DIR$/html/job.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lookbook.html" afterPath="$PROJECT_DIR$/html/lookbook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/lib/jquery/jquery.ChinaCitySelect.js" afterPath="$PROJECT_DIR$/html/js/lib/jquery/jquery.ChinaCitySelect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/config/main.php" afterPath="$PROJECT_DIR$/admin/protected/config/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/map.js" afterPath="$PROJECT_DIR$/html/js/common/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/milestone.html" afterPath="$PROJECT_DIR$/html/milestone.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/news.html" afterPath="$PROJECT_DIR$/html/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/privacy.html" afterPath="$PROJECT_DIR$/html/privacy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/select.js" afterPath="$PROJECT_DIR$/html/js/common/select.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/starshop.html" afterPath="$PROJECT_DIR$/html/starshop.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/storelocator.html" afterPath="$PROJECT_DIR$/html/storelocator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/streetshot.html" afterPath="$PROJECT_DIR$/html/streetshot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/templates/storelocator.html" afterPath="$PROJECT_DIR$/html/js/templates/storelocator.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/switchPage.js" afterPath="$PROJECT_DIR$/html/js/common/switchPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402703091902" ignored="false" />
+    <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403144391685" ignored="false" />
     <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402671083102" ignored="false" />
-    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402666949378" ignored="false" />
+    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403093263985" ignored="false" />
     <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402282149800" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/countdown.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401352610756" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402703079365" ignored="false" />
@@ -89,14 +80,14 @@
     <file path="/milestone.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402283386255" ignored="false" />
     <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402292302513" ignored="false" />
     <file path="/campaign.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402363349987" ignored="false" />
-    <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402451269524" ignored="false" />
+    <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403102649675" ignored="false" />
     <file path="/lookbook.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402300746148" ignored="false" />
-    <file path="/starshop.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402451157488" ignored="false" />
+    <file path="/starshop.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403144869631" ignored="false" />
     <file path="/streetshot.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402299298439" ignored="false" />
     <file path="/contact.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402289144979" ignored="false" />
     <file path="/switchPage.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402671608994" ignored="false" />
     <file path="/jquery.fancybox.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402293128265" ignored="false" />
-    <file path="/api.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402449844917" ignored="false" />
+    <file path="/api.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403096350003" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/modules/api/controllers/SnsController.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402321170998" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/messages/en_us/lemans.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402321170998" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/models/UserAR.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402321170998" ignored="false" />
@@ -137,8 +128,8 @@
     <file path="/lemans.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402491379182" ignored="false" />
     <file path="$PROJECT_DIR$/../ave_1000/yii/protected/views/record/myinfo.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402493041538" ignored="false" />
     <file path="/myinfo.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402493041538" ignored="false" />
-    <file path="/map.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402671365110" ignored="false" />
-    <file path="$PROJECT_DIR$/../malibu/protected/views/activities/video.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402552833486" ignored="false" />
+    <file path="/map.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403104729668" ignored="false" />
+    <file path="$PROJECT_DIR$/../malibu/protected/views/activities/video.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403083070776" ignored="false" />
     <file path="$PROJECT_DIR$/../malibu/web/waiting.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402552582393" ignored="false" />
     <file path="/video.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402543230857" ignored="false" />
     <file path="$PROJECT_DIR$/../malibu/protected/views/activities/index.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402552582393" ignored="false" />
@@ -166,6 +157,10 @@
     <file path="/milestone_cn.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402661380895" ignored="false" />
     <file path="/news_cn.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402672038462" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/stand_p2.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402669693512" ignored="false" />
+    <file path="$PROJECT_DIR$/../malibu/protected/views/activities/winner.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403083311916" ignored="false" />
+    <file path="/jquery.ChinaCitySelect.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403101145767" ignored="false" />
+    <file path="/select.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403145562256" ignored="false" />
+    <file path="/storelocator.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403102200204" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,10 +180,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/css/style.css">
+      <file leaf-file-name="starshop.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/templates/starshop.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="238" column="28" selection-start="13406" selection-end="13406" vertical-scroll-proportion="0.3019432">
+            <state line="2" column="39" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.3571428">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="starshop.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/starshop.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="129" column="22" selection-start="5735" selection-end="5735" vertical-scroll-proportion="-15.607142">
+              <folding>
+                <marker date="1403144870000" expanded="true" signature="10337:10438" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="188" column="30" selection-start="6838" selection-end="6838" vertical-scroll-proportion="0.46341464">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="storelocator.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/templates/storelocator.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="85" selection-start="247" selection-end="255" vertical-scroll-proportion="-4.75">
               <folding />
             </state>
           </provider>
@@ -212,30 +236,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/html/privacy.html" />
-        <option value="$PROJECT_DIR$/html/privacy_cn.html" />
-        <option value="$PROJECT_DIR$/html/starshop.html" />
-        <option value="$PROJECT_DIR$/html/starshop_cn.html" />
-        <option value="$PROJECT_DIR$/html/streetshot.html" />
-        <option value="$PROJECT_DIR$/html/streetshot_cn.html" />
-        <option value="$PROJECT_DIR$/html/campaign_cn.html" />
         <option value="$PROJECT_DIR$/html/campaign.html" />
         <option value="$PROJECT_DIR$/html/js/config.js" />
         <option value="$PROJECT_DIR$/html/index.html" />
-        <option value="$PROJECT_DIR$/html/js/common/map.js" />
-        <option value="$PROJECT_DIR$/html/storelocator.html" />
         <option value="$PROJECT_DIR$/html/storelocator_cn.html" />
         <option value="$PROJECT_DIR$/html/js/common/switchPage.js" />
         <option value="$PROJECT_DIR$/html/news_cn.html" />
+        <option value="$PROJECT_DIR$/admin/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/html/js/common/api.js" />
+        <option value="$PROJECT_DIR$/html/storelocator.html" />
         <option value="$PROJECT_DIR$/html/css/style.css" />
+        <option value="$PROJECT_DIR$/html/js/lib/jquery/jquery.ChinaCitySelect.js" />
+        <option value="$PROJECT_DIR$/html/js/templates/storelocator.html" />
+        <option value="$PROJECT_DIR$/html/js/common/helper.js" />
+        <option value="$PROJECT_DIR$/html/js/common/map.js" />
+        <option value="$PROJECT_DIR$/html/starshop.html" />
+        <option value="$PROJECT_DIR$/html/js/common/select.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
     <option name="y" value="22" />
-    <option name="width" value="1398" />
+    <option name="width" value="1440" />
     <option name="height" value="830" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -264,7 +287,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -333,7 +355,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -379,6 +449,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,9 +463,13 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -428,14 +503,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="22" width="1398" height="830" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1440" height="830" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21967456" sideWeight="0.6701698" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22812052" sideWeight="0.6701698" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -511,130 +586,110 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/starshop_cn.html">
+    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="51" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.6723869">
-          <folding>
-            <marker date="1402661797000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state line="22" column="32" selection-start="670" selection-end="670" vertical-scroll-proportion="0.30645162" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/news_cn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="85" selection-start="6973" selection-end="6973" vertical-scroll-proportion="2.3980582" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="17" selection-start="447" selection-end="447" vertical-scroll-proportion="0.11360239" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/storelocator_cn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="0" selection-start="4686" selection-end="4686" vertical-scroll-proportion="0.27145085">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/starshop.html">
+    <entry file="file://$PROJECT_DIR$/admin/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="51" selection-start="2797" selection-end="2797" vertical-scroll-proportion="0.5928237">
-          <folding>
-            <marker date="1402661791000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="44" column="28" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.17431192" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/privacy_cn.html">
+    <entry file="file://$PROJECT_DIR$/html/js/common/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="51" selection-start="2759" selection-end="2759" vertical-scroll-proportion="0.5039002">
+        <state line="128" column="24" selection-start="4098" selection-end="4098" vertical-scroll-proportion="0.20087977">
           <folding>
-            <marker date="1402661784000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/lib/require.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="67" selection-start="1672" selection-end="1672" vertical-scroll-proportion="-12.214286">
-          <folding>
-            <marker date="1402671082000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1403104730000" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="302" selection-end="302" vertical-scroll-proportion="0.3900293">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/streetshot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="51" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.7425897">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/helper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="284" column="14" selection-start="9611" selection-end="9611" vertical-scroll-proportion="0.14200298">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="32" selection-start="670" selection-end="670" vertical-scroll-proportion="0.30645162">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/news_cn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="85" selection-start="6973" selection-end="6973" vertical-scroll-proportion="2.3980582">
-          <folding>
-            <marker date="1402672114000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="17" selection-start="447" selection-end="447" vertical-scroll-proportion="0.11360239">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/storelocator_cn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="0" selection-start="4686" selection-end="4686" vertical-scroll-proportion="0.27145085">
-          <folding>
-            <marker date="1402671452000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/storelocator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="26" selection-start="4853" selection-end="4853" vertical-scroll-proportion="0.65678626">
-          <folding>
-            <marker date="1402671442000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="16" selection-start="5316" selection-end="5316" vertical-scroll-proportion="0.5542522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="28" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.27653214">
+        <state line="10" column="32" selection-start="181" selection-end="181" vertical-scroll-proportion="0.27859238">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="238" column="28" selection-start="13406" selection-end="13406" vertical-scroll-proportion="0.3019432">
+        <state line="215" column="58" selection-start="11471" selection-end="11471" vertical-scroll-proportion="0.028400598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/lib/jquery/jquery.ChinaCitySelect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="40" selection-start="921" selection-end="921" vertical-scroll-proportion="0.028400598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="31" selection-start="671" selection-end="671" vertical-scroll-proportion="0.028400598">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="305" column="0" selection-start="10332" selection-end="10332" vertical-scroll-proportion="0.20478326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/storelocator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="32" selection-start="4865" selection-end="4865" vertical-scroll-proportion="0.029641185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/templates/starshop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="39" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.3571428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/templates/storelocator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="85" selection-start="247" selection-end="255" vertical-scroll-proportion="-4.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/starshop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="22" selection-start="5735" selection-end="5735" vertical-scroll-proportion="-15.607142">
+          <folding>
+            <marker date="1403144870000" expanded="true" signature="10337:10438" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="188" column="30" selection-start="6838" selection-end="6838" vertical-scroll-proportion="0.46341464">
           <folding />
         </state>
       </provider>

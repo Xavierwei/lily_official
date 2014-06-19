@@ -18,7 +18,7 @@ define([
 
     // update map center
     var updateMapCenter = function (oLatLng) {
-        if (oMap) {
+        if (dMap) {
             var latlng;
 
             if (oLatLng) {
@@ -82,89 +82,41 @@ define([
         }
     }
 
+    // clear old markers
+    var zoomMap = function (level) {
+        oMap.setZoom(level);
+    }
+
     // update markers
-    var updateMarkers = function (oLatLng, callback) {
-        // add markers
-        if (oMap) {
-            // clear old markers
-            clearMarkers();
-
-            api.getStorelocator({
-                path : 'xxx',
-                method : 'get',
-                data : oLatLng ? oLatLng : oPos,
-                success : function (aData) {
-                    // for render tpl
-                    if (callback) {
-                        callback(aData)
-                    }
-
-                    for (var i = 0; i < aData.length; i++) {
-                        var oTmp = new google.maps.LatLng(
-                                aData[i]['geo']['latitude'],
-                                aData[i]['geo']['longitude']
-                            ),
-                            oMarker = new google.maps.Marker({
-                                position: oTmp,
-                                map: oMap,
-                                animation: google.maps.Animation.DROP
-                            });
-
-                        aMarkers.push(oMarker);
-                    }
-                }
-            })
-        }
+    var updateMarkers = function (data) {
+        oMap.clearOverlays();
+        $.each(data,function(i,obj){
+            console.log(obj);
+            var point = new BMap.Point(obj.lat,obj.lng);
+            var marker = new BMap.Marker(point, {title:obj.title});
+            oMap.addOverlay(marker);
+            var sContent =
+                "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>"+obj.title+"</h4>" +
+                "<p>地址:"+obj.address+"</p>" +
+                "<p>电话:"+obj.phone+"</p>";
+            var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+            marker.addEventListener("click", function(){
+                this.openInfoWindow(infoWindow);
+            });
+        });
+        var point = new BMap.Point(data[0].lat,data[0].lng);
+        oMap.centerAndZoom(point, 14);
     }
 
     // init map
     var init = function() {
-//        var dMap = $('#map'),
-//            dImg = dMap.find('img.map'),
-//            isGoogleReady = window.google && window.google.maps && google.maps.LatLng;
-//
-//        // reset all status
-//        oGeocoder = null;
-//        oMap = null;
-//        clearMarkers();
-//
-//        if (dImg.length && isGoogleReady) {
-//            // default is shanghai
-//            var oLatlng = new google.maps.LatLng(oPos.latitude, oPos.longitude),
-//                mapOptions = {
-//                    zoom: 12,
-//                    center: oLatlng,
-//                    mapTypeControl: true,
-//                    mapTypeControlOptions: {
-//                        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-//                    },
-//                    zoomControl: true,
-//                    zoomControlOptions: {
-//                        style: google.maps.ZoomControlStyle.SMALL
-//                    },
-//                    scrollwheel: false,
-//                    disableDefaultUI: true
-//                };
-//
-//            // geocoder instance
-//            oGeocoder = new google.maps.Geocoder();
-//
-//            // map instance
-//            oMap = new google.maps.Map(dMap.get(0), mapOptions);
-//
-//            // try to update map center
-//            updateMapCenter();
-//
-//            // update markers
-//            updateMarkers();
-//        }
-
-        var dMap = $('#map');
+        dMap = $('#map');
         if(dMap.length > 0)  {
             setTimeout(function(){
-                var map = new BMap.Map("map");
+                oMap = new BMap.Map("map");
+                oMap.addControl(new BMap.NavigationControl());
                 var point = new BMap.Point(121.478988,31.227919);
-                map.centerAndZoom(point, 15);
+                oMap.centerAndZoom(point, 15);
             }, 1000);
         }
     }
@@ -194,6 +146,7 @@ define([
         getPosition : getPosition,
         getAddress : getAddress,
         updateMarkers : updateMarkers,
-        updateMapCenter : updateMapCenter
+        updateMapCenter : updateMapCenter,
+        zoomMap : zoomMap
     }
 })

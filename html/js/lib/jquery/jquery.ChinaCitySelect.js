@@ -35,8 +35,9 @@ var ChinaCitySelect = function(node,opts) {
     function __init__(){
         if(typeof(opts.url)=="string"){
             $.getJSON(opts.url,function(json){
-                city_json=json;
+                city_json=json.data;
                 __initwrapper__();
+                opts.success(city_json);
             });
         }else{
             city_json=opts.url;
@@ -67,63 +68,70 @@ var ChinaCitySelect = function(node,opts) {
             });
         }
 
-        $.each(city_json,function(i,prov){
-            $("<option value='"+prov.id+"'>"+prov.name+"</option>").appendTo(prov_obj);
-        });
+
+//        $("<option value=''></option>").appendTo(city_obj);
+//        $.each(city_json.city.CN,function(i,prov){
+//            //$("<option value='"+prov+"'>"+prov+"</option>").appendTo(prov_obj);
+//            $("<option value='"+prov+"'>"+prov+"</option>").appendTo(city_obj);
+//        });
 
         setTimeout(function(){
-            if(opts.prov!=null){
-                prov_obj.val(opts.prov);
-                initCity();
-                setTimeout(function(){
-                    if(opts.city!=null){
-                        city_obj.val(opts.city);
-                        initDist();
-                        setTimeout(function(){
-                            if(opts.dist!=null){
-                                dist_obj.val(opts.dist);
-                            };
-                        },1);
-                    };
-                },1);
-            };
+            initCity();
+//            if(opts.prov!=null){
+//                prov_obj.val(opts.prov);
+//                initCity();
+//                setTimeout(function(){
+//                    if(opts.city!=null){
+//                        city_obj.val(opts.city);
+//                        initDist();
+//                        setTimeout(function(){
+//                            if(opts.dist!=null){
+//                                dist_obj.val(opts.dist);
+//                            };
+//                        },1);
+//                    };
+//                },1);
+//            };
         },1);
     }
     function initCity(){
-        var curr_prov_arr = prov_obj.val().split('_');
-        var prov_id = curr_prov_arr[1];
+//        var curr_prov_arr = prov_obj.val().split('_');
+//        var prov_id = curr_prov_arr[1];
+//
+//        city_obj.empty().attr("disabled",true);
+//        dist_obj.empty().attr("disabled",true);
+//
+//        if(typeof(city_json['p_'+prov_id].data) == "undefined"){
+//            if(opts.nodata=="none"){
+//                city_obj.css("display","none");
+//                dist_obj.css("display","none");
+//            }else if(opts.nodata=="hidden"){
+//                city_obj.css("visibility","hidden");
+//                dist_obj.css("visibility","hidden");
+//            }
+//            return;
+//        }
+//        $.each(city_json['p_'+prov_id].data,function(i,city){
+//            $("<option value='"+city.id+"'>"+city.name+"</option>").appendTo(city_obj);
+//        });
 
-        city_obj.empty().attr("disabled",true);
-        dist_obj.empty().attr("disabled",true);
-
-        if(typeof(city_json['p_'+prov_id].data) == "undefined"){
-            if(opts.nodata=="none"){
-                city_obj.css("display","none");
-                dist_obj.css("display","none");
-            }else if(opts.nodata=="hidden"){
-                city_obj.css("visibility","hidden");
-                dist_obj.css("visibility","hidden");
-            }
-            return;
-        }
-        $.each(city_json['p_'+prov_id].data,function(i,city){
-            $("<option value='"+city.id+"'>"+city.name+"</option>").appendTo(city_obj);
+        $.each(city_json.city.CN,function(i,prov){
+            //$("<option value='"+prov+"'>"+prov+"</option>").appendTo(prov_obj);
+            $("<option value='"+prov+"'>"+prov+"</option>").appendTo(city_obj);
         });
-
-        city_obj.attr("disabled",false).css({"display":"","visibility":""});
         initDist();
     }
 
     function initDist(){
-            var curr_prov_arr = prov_obj.val().split('_');
-            var prov_id = curr_prov_arr[1];
+            //var curr_prov_arr = prov_obj.val().split('_');
+            //var prov_id = curr_prov_arr[1];
 
-            var curr_prov_arr = city_obj.val().split('_');
-            var city_id=curr_prov_arr[1];
+            var curr_city_arr = city_obj.val();
+            //var city_id=curr_prov_arr[1];
 
             dist_obj.empty().attr("disabled",true);
 
-            if(typeof(city_json['p_'+prov_id].data['c_'+city_id].data)=="undefined"){
+            if(typeof(city_json['distinct'][curr_city_arr])=="undefined"){
                 if(opts.nodata=="none"){
                     dist_obj.css("display","none");
                 }else if(opts.nodata=="hidden"){
@@ -132,8 +140,8 @@ var ChinaCitySelect = function(node,opts) {
                 return;
             };
 
-            $.each(city_json['p_'+prov_id].data['c_'+city_id].data,function(i,dist){
-                $("<option value='"+dist.id+"'>"+dist.name+"</option>").appendTo(dist_obj);
+            $.each(city_json['distinct'][curr_city_arr],function(i,dist){
+                $("<option value='"+dist+"'>"+dist+"</option>").appendTo(dist_obj);
             });
             dist_obj.attr("disabled",false).css({"display":"","visibility":""});
         }
@@ -145,7 +153,6 @@ var ChinaCitySelect = function(node,opts) {
             return [prov_obj.find("option:selected").text(),city_obj.find("option:selected").text(),dist_obj.find("option:selected").text()].join(',');
         }
         function __doParseLoc__(code){
-            console.log(code);
             var prov_id = code.substr(0,2);
             var city_id = code.substr(2,2);
             var dist_id = code.substr(4,2);

@@ -1,14 +1,11 @@
-<div class="limit stores">
-    <h1>{{title}}</h1>
-    <div class="cs-clear">
-        {{#each data}}
-        <div class="store_additem">
-            <p>{{city}}</p>
-            <p>{{name}}</p>
-            <p>{{address}}</p>
-            <p>{{phone}}</p>
-            <a href="javascript:;" class="store_view fadeout" latitude="{{geo.latitude}}" longitude="{{geo.longitude}}">View map</a>
-        </div>
-        {{/each}}
+<h1>{{title}}</h1>
+<div class="cs-clear">
+    {{#each data}}
+    <div class="store_additem">
+        <p>{{title}}</p>
+        <p>{{address}}</p>
+        <p>{{phone}}</p>
+        <a href="javascript:;" class="store_view fadeout" data-lat="{{lat}}" data-lng="{{lng}}">View map</a>
     </div>
+    {{/each}}
 </div>
