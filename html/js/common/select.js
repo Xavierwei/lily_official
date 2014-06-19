@@ -187,20 +187,18 @@ define([
         dStores.delegate('.store_view', 'click', function () {
             var mapWrap = $(this).parents('.limit').find('.starshop_map');
 
+            
+            var data = [{
+                title: $(this).parent().find('h2').eq(0).html(),
+                address: $(this).parent().find('p').eq(1).html(),
+                phone: $(this).parent().find('p').eq(2).html(),
+                lat: $(this).data('lat'),
+                lng: $(this).data('lng')
+            }];
+            map.updateMarkers(data);
+            map.zoomMap(18);
             mapWrap.append(oMap);
             oMap.hide().fadeIn();
-            
-//            var data = [{
-//                title: $(this).parent().find('p').eq(0).html(),
-//                address: $(this).parent().find('p').eq(1).html(),
-//                phone: $(this).parent().find('p').eq(2).html(),
-//                lat: $(this).data('lat'),
-//                lng: $(this).data('lng')
-//            }];
-//            map.updateMarkers(data);
-//            map.zoomMap(18);
-//            var height = $('#map').position().top;
-//            $('html,body').animate({scrollTop:height});
         })
     }
 
