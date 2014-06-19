@@ -81,6 +81,11 @@ class ShopController extends Controller {
     }
     
     $ret["distinct"] = $ret_distinct;
+    
+    // 获取当前用户的省份
+    $city = Yii::app()->ip->toCity("180.173.143.62");
+    $ret["user_city"] = $city;
+    
     $this->responseJSON($ret, "success");
   }
   
@@ -135,9 +140,10 @@ class ShopController extends Controller {
   }
   
   /**
-   * 根据IP 地址查询周围店铺
+   * 根据IP 地址查询所再省份店铺 
+   * TODO:: 并且标出离自己最近的店铺
    */
   public function actionAround() {
-    //TODO::
+    
   }
 }
