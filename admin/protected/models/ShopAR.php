@@ -10,9 +10,9 @@ class ShopAR extends CActiveRecord {
   const STATUS_OPENING = 2;
   
   // 普通店铺
-  const TYPE_NORMAL = 0;
+  const SHOP_NORMAL = 0;
   // 明星店铺
-  const TYPE_START = 1;
+  const SHOP_STAR = 1;
   
   public function tableName() {
     return "shop";
@@ -117,6 +117,11 @@ class ShopAR extends CActiveRecord {
     if (isset($search["distinct"])) {
       $query->addCondition("`distinct`=:distinct");
       $query->params[":distinct"] = $search["distinct"];
+    }
+    
+    if (isset($search["star"])) {
+      $query->addCondition("`star`=:star");
+      $query->params[":star"] = $search["star"];
     }
     
     $rows = $this->findAll($query);

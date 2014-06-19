@@ -29,7 +29,7 @@ class ShopController extends Controller {
       $shopAr->andSearch("distinct", $distinct);
     }
     if ($is_star_shop) {
-      $shopAr->andSearch("type", ShopAR::TYPE_START);
+      $shopAr->andSearch("star", ShopAR::SHOP_STAR);
     }
     
     $this->responseJSON($shopAr->locateShop(), "success");
@@ -120,6 +120,9 @@ class ShopController extends Controller {
       
       // 店铺状态
       $status = $request->getParam("status", FALSE);
+      
+      // IP 地址查询
+      //TODO::
       
       $shop = new ShopAR();
       $rows = $shop->getList($status, $limit, $offset);
