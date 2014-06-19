@@ -115,7 +115,7 @@ class ShopAR extends CActiveRecord {
       $query->params[":city"] = $search["city"];
     }
     if (isset($search["distinct"])) {
-      $query->addCondition("distinct=:distinct");
+      $query->addCondition("`distinct`=:distinct");
       $query->params[":distinct"] = $search["distinct"];
     }
     
