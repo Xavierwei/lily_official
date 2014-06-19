@@ -107,7 +107,12 @@ define([
             //'prov' : dProvinceSelect,
             'city' : dCitySelect,
             'url' : 'admin/index.php/api/shop/location',
-            'success': function(){}
+            'success': function(aData){
+                setTimeout(function(){
+                    dCityText.html(aData.city.CN[0]);
+                    dCitySelect.trigger('change');
+                },2000);
+            }
         })
 
 //        dProvinceSelect.change(function () {
@@ -116,6 +121,25 @@ define([
 
         dCitySelect.change(function () {
             updateText();
+            setTimeout(function(){
+                var data = {country:'CN', city:dCityText.html(), star:1};
+                api.getStorelocator({
+                    data:data,
+                    success:function(aData){
+                        Handlebars.registerHelper('if_even', function(conditional, options) {
+                            if((conditional % 2) == 0) {
+                                return options.fn(this);
+                            } else {
+                                return options.inverse(this);
+                            }
+                        });
+                        var str = Handlebars.compile(starshopTpl)({
+                            data : aData
+                        });
+                        dStores.html(str);
+                    }
+                });
+            },200);
         })
 
         // when click the search button, should the tpl
@@ -182,6 +206,7 @@ define([
 //                }
 //            })
 //        }, 300)
+
 
         // view map feature
         dStores.delegate('.store_view', 'click', function () {
@@ -269,7 +294,7 @@ define([
 
         // when click the search button, should update the map center and markers
         dBtn.bind('click', function () {
-            var data = {country:'CN', city:dCityText.html(), distinct:dDistrictText.html()};
+            var data = {country:'CN', city:dCityText.html(), distinct:dDistrictText.html(), star:0};
             api.getStorelocator({
                 data:data,
                 success:function(aData){

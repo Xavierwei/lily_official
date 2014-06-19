@@ -11,7 +11,7 @@ define([
 ], function($, skrollr, switchPage, loading, helper, map) {
     var initialize = function() {
         // get current location
-        map.getPosition();
+        //map.getPosition();
 
         // start loading
         loading.start();

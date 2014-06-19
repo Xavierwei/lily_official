@@ -2,15 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/api.js" afterPath="$PROJECT_DIR$/html/js/common/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/app.js" afterPath="$PROJECT_DIR$/html/js/common/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/helper.js" afterPath="$PROJECT_DIR$/html/js/common/helper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index_cn.html" afterPath="$PROJECT_DIR$/html/index_cn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/loading.js" afterPath="$PROJECT_DIR$/html/js/common/loading.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lookbook.html" afterPath="$PROJECT_DIR$/html/lookbook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lookbook_cn.html" afterPath="$PROJECT_DIR$/html/lookbook_cn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/milestone.html" afterPath="$PROJECT_DIR$/html/milestone.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/news.html" afterPath="$PROJECT_DIR$/html/news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/news_cn.html" afterPath="$PROJECT_DIR$/html/news_cn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/response.css" afterPath="$PROJECT_DIR$/html/css/response.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/select.js" afterPath="$PROJECT_DIR$/html/js/common/select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/starshop.html" afterPath="$PROJECT_DIR$/html/starshop.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/templates/starshop.html" afterPath="$PROJECT_DIR$/html/js/templates/starshop.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/starshop_cn.html" afterPath="$PROJECT_DIR$/html/starshop_cn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/switchPage.js" afterPath="$PROJECT_DIR$/html/js/common/switchPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403144391685" ignored="false" />
-    <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402671083102" ignored="false" />
-    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403146230240" ignored="false" />
-    <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402282149800" ignored="false" />
+    <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403153792222" ignored="false" />
+    <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155165058" ignored="false" />
+    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403153496822" ignored="false" />
+    <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155476968" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/countdown.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401352610756" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402703079365" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/index.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401344702698" ignored="false" />
@@ -70,14 +88,14 @@
     <file path="/milestone.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402283386255" ignored="false" />
     <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402292302513" ignored="false" />
     <file path="/campaign.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402363349987" ignored="false" />
-    <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403102649675" ignored="false" />
-    <file path="/lookbook.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402300746148" ignored="false" />
-    <file path="/starshop.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403147514024" ignored="false" />
+    <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155902800" ignored="false" />
+    <file path="/lookbook.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155937361" ignored="false" />
+    <file path="/starshop.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403157381134" ignored="false" />
     <file path="/streetshot.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402299298439" ignored="false" />
     <file path="/contact.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402289144979" ignored="false" />
-    <file path="/switchPage.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402671608994" ignored="false" />
+    <file path="/switchPage.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155273490" ignored="false" />
     <file path="/jquery.fancybox.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402293128265" ignored="false" />
-    <file path="/api.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403096350003" ignored="false" />
+    <file path="/api.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155781017" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/modules/api/controllers/SnsController.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402321170998" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/messages/en_us/lemans.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402321170998" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/models/UserAR.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402321170998" ignored="false" />
@@ -137,8 +155,8 @@
     <file path="$PROJECT_DIR$/../rf/js/main_ie8.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402567100617" ignored="false" />
     <file path="$PROJECT_DIR$/../malibu/protected/views/product/drink.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402578057106" ignored="false" />
     <file path="$PROJECT_DIR$/../malibu/protected/views/product/index.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402577732143" ignored="false" />
-    <file path="/index_cn.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402660814023" ignored="false" />
-    <file path="/lookbook_cn.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402653186544" ignored="false" />
+    <file path="/index_cn.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403153378614" ignored="false" />
+    <file path="/lookbook_cn.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403156065806" ignored="false" />
     <file path="/starshop_cn.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402653474252" ignored="false" />
     <file path="/storelocator_cn.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402653821927" ignored="false" />
     <file path="/streetshot_cn.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402653973174" ignored="false" />
@@ -149,7 +167,7 @@
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/stand_p2.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402669693512" ignored="false" />
     <file path="$PROJECT_DIR$/../malibu/protected/views/activities/winner.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403083311916" ignored="false" />
     <file path="/jquery.ChinaCitySelect.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403101145767" ignored="false" />
-    <file path="/select.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403148476350" ignored="false" />
+    <file path="/select.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403152255285" ignored="false" />
     <file path="/storelocator.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403102200204" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -170,11 +188,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="starshop.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/templates/starshop.html">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/common/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="39" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.3571428">
+            <state line="7" column="21" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/common/helper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="307" column="31" selection-start="10403" selection-end="10403" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/common/api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="544" column="6" selection-start="15727" selection-end="15727" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lookbook.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/lookbook.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="63" selection-start="3263" selection-end="3438" vertical-scroll-proportion="-9.178572">
+              <folding>
+                <marker date="1403155942000" expanded="true" signature="10649:10750" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lookbook_cn.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/lookbook_cn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="97" column="37" selection-start="4377" selection-end="4377" vertical-scroll-proportion="-2.7142856">
+              <folding>
+                <marker date="1403156065000" expanded="true" signature="11136:11237" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,47 +240,49 @@
       <file leaf-file-name="starshop.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/starshop.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="0" selection-start="4988" selection-end="4988" vertical-scroll-proportion="-11.535714">
+            <state line="99" column="0" selection-start="4417" selection-end="4417" vertical-scroll-proportion="-17.642857">
               <folding>
-                <marker date="1403147513000" expanded="true" signature="10263:10364" placeholder="..." />
+                <marker date="1403157161000" expanded="true" signature="9076:9177" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/admin/protected/config/main.php">
+      <file leaf-file-name="starshop.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/js/templates/starshop.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="76" selection-start="1984" selection-end="1984" vertical-scroll-proportion="-8.821428">
+            <state line="11" column="78" selection-start="504" selection-end="504" vertical-scroll-proportion="0.3381877">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="starshop_cn.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/starshop_cn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="99" column="0" selection-start="4359" selection-end="4359" vertical-scroll-proportion="-6.107143">
               <folding>
-                <element signature="e#7#56#0" expanded="true" />
+                <marker date="1403157257000" expanded="true" signature="9549:9650" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="map.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/common/map.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1403145653000" expanded="false" signature="2941:2973" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="286" column="23" selection-start="10401" selection-end="10401" vertical-scroll-proportion="0.95579267">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="346" column="66" selection-start="20082" selection-end="20082" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="storelocator.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/templates/storelocator.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="85" selection-start="247" selection-end="255" vertical-scroll-proportion="-4.75">
+            <state line="134" column="27" selection-start="4943" selection-end="4943" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -246,22 +306,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/html/js/config.js" />
-        <option value="$PROJECT_DIR$/html/index.html" />
-        <option value="$PROJECT_DIR$/html/storelocator_cn.html" />
-        <option value="$PROJECT_DIR$/html/js/common/switchPage.js" />
-        <option value="$PROJECT_DIR$/html/news_cn.html" />
-        <option value="$PROJECT_DIR$/admin/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/html/js/common/api.js" />
-        <option value="$PROJECT_DIR$/html/storelocator.html" />
-        <option value="$PROJECT_DIR$/html/js/lib/jquery/jquery.ChinaCitySelect.js" />
-        <option value="$PROJECT_DIR$/html/js/templates/storelocator.html" />
-        <option value="$PROJECT_DIR$/html/js/common/helper.js" />
-        <option value="$PROJECT_DIR$/html/js/common/map.js" />
+        <option value="$PROJECT_DIR$/html/js/common/app.js" />
+        <option value="$PROJECT_DIR$/html/index_cn.html" />
         <option value="$PROJECT_DIR$/html/css/style.css" />
+        <option value="$PROJECT_DIR$/html/milestone.html" />
+        <option value="$PROJECT_DIR$/html/news.html" />
+        <option value="$PROJECT_DIR$/html/index.html" />
+        <option value="$PROJECT_DIR$/html/js/common/switchPage.js" />
+        <option value="$PROJECT_DIR$/html/js/common/loading.js" />
+        <option value="$PROJECT_DIR$/html/js/common/api.js" />
+        <option value="$PROJECT_DIR$/html/js/common/helper.js" />
+        <option value="$PROJECT_DIR$/html/lookbook.html" />
+        <option value="$PROJECT_DIR$/html/lookbook_cn.html" />
         <option value="$PROJECT_DIR$/html/starshop.html" />
-        <option value="$PROJECT_DIR$/html/admin/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/html/starshop_cn.html" />
         <option value="$PROJECT_DIR$/html/js/common/select.js" />
+        <option value="$PROJECT_DIR$/html/js/templates/starshop.html" />
       </list>
     </option>
   </component>
@@ -369,6 +429,68 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -387,55 +509,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily_official" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily_official" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily_official" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily_official" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -578,114 +652,132 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
+    <entry file="file://$PROJECT_DIR$/html/milestone.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="32" selection-start="670" selection-end="670" vertical-scroll-proportion="0.30645162" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/news_cn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="85" selection-start="6973" selection-end="6973" vertical-scroll-proportion="2.3980582" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="17" selection-start="447" selection-end="447" vertical-scroll-proportion="0.11360239" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/storelocator_cn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="0" selection-start="4686" selection-end="4686" vertical-scroll-proportion="0.27145085">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="24" selection-start="4098" selection-end="4098" vertical-scroll-proportion="0.20087977">
+        <state line="35" column="56" selection-start="1673" selection-end="1673" vertical-scroll-proportion="-10.178572">
           <folding>
-            <marker date="1403145653000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1403155012000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/app.js">
+    <entry file="file://$PROJECT_DIR$/html/news_cn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="181" selection-end="181" vertical-scroll-proportion="0.27859238">
+        <state line="134" column="92" selection-start="6508" selection-end="6508" vertical-scroll-proportion="-28.5">
+          <folding>
+            <marker date="1403152785000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="30" selection-start="4058" selection-end="4058" vertical-scroll-proportion="-3.392857">
+          <folding>
+            <marker date="1403155018000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="155" column="54" selection-start="6928" selection-end="6928" vertical-scroll-proportion="-10.5">
+          <folding>
+            <marker date="1403155164000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="26" selection-start="4038" selection-end="4038" vertical-scroll-proportion="-8.653846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/lib/jquery/jquery.ChinaCitySelect.js">
+    <entry file="file://$PROJECT_DIR$/html/js/common/loading.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="40" selection-start="921" selection-end="921" vertical-scroll-proportion="0.028400598">
+        <state line="77" column="37" selection-start="2205" selection-end="2205" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="31" selection-start="671" selection-end="671" vertical-scroll-proportion="0.028400598">
+        <state line="544" column="6" selection-start="15727" selection-end="15727" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="305" column="0" selection-start="10332" selection-end="10332" vertical-scroll-proportion="0.20478326">
+        <state line="307" column="31" selection-start="10403" selection-end="10403" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/storelocator.html">
+    <entry file="file://$PROJECT_DIR$/html/lookbook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="32" selection-start="4865" selection-end="4865" vertical-scroll-proportion="0.029641185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/templates/starshop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="39" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.3571428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="346" column="66" selection-start="20082" selection-end="20082" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/templates/storelocator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="85" selection-start="247" selection-end="255" vertical-scroll-proportion="-4.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/admin/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="76" selection-start="1984" selection-end="1984" vertical-scroll-proportion="-8.821428">
+        <state line="73" column="63" selection-start="3263" selection-end="3438" vertical-scroll-proportion="-9.178572">
           <folding>
-            <element signature="e#7#56#0" expanded="true" />
+            <marker date="1403155942000" expanded="true" signature="10649:10750" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/starshop.html">
+    <entry file="file://$PROJECT_DIR$/html/lookbook_cn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="4988" selection-end="4988" vertical-scroll-proportion="-11.535714">
+        <state line="97" column="37" selection-start="4377" selection-end="4377" vertical-scroll-proportion="-2.7142856">
           <folding>
-            <marker date="1403147513000" expanded="true" signature="10263:10364" placeholder="..." />
+            <marker date="1403156065000" expanded="true" signature="11136:11237" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/starshop_cn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="0" selection-start="4359" selection-end="4359" vertical-scroll-proportion="-6.107143">
+          <folding>
+            <marker date="1403157257000" expanded="true" signature="9549:9650" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1403145653000" expanded="false" signature="2941:2973" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="286" column="23" selection-start="10401" selection-end="10401" vertical-scroll-proportion="0.95579267">
+        <state line="134" column="27" selection-start="4943" selection-end="4943" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/starshop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="0" selection-start="4417" selection-end="4417" vertical-scroll-proportion="-17.642857">
+          <folding>
+            <marker date="1403157161000" expanded="true" signature="9076:9177" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/templates/starshop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="78" selection-start="504" selection-end="504" vertical-scroll-proportion="0.3381877">
           <folding />
         </state>
       </provider>

@@ -96,9 +96,11 @@ define([
         var localHash = function () {
             var hashtag = getQueryString('hash');
             if($('#'+hashtag).length > 0) {
+                var top = $('#'+hashtag).offset().top - 100;
+                console.log(top);
                 setTimeout(function(){
-                    $('html,body').animate({scrollTop:1500});
-                },1000);
+                    $('html,body').animate({scrollTop:top});
+                },10);
 
             }
 
@@ -126,7 +128,9 @@ define([
                 //updateBgColor();
 
                 // local hash
-                localHash();
+//                setTimeout(function(){
+//                    localHash();
+//                },1000);
 
             };
 
@@ -244,9 +248,9 @@ define([
 
 
                     // click self
-                    if (dTarget.hasClass('on')) {
-                        return e.preventDefault();
-                    }
+//                    if (dTarget.hasClass('on')) {
+//                        return e.preventDefault();
+//                    }
 
                     // click others clickable link
                     if (sTitle) {
