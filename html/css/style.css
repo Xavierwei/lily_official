@@ -343,6 +343,9 @@ body.privacy,body.privacy .page,body.privacy .header{background-color:#f3dedd;}
 .page_starshop .limit .right{text-align:right;}
 .page_starshop .limit .starshop_img_right {margin-left:40%;}
 .page_starshop .limit .starshop_img_left {margin-right:40%;}
+.page_starshop .starshop_map {position:relative;width:605px;height:448px;overflow: hidden;}
+.page_starshop .starshop_map img {position: absolute;top:0;left:0;}
+.page_starshop #map {position: absolute;top:0;left:0;width:605px;height:448px;}
 /* link animation */
 @keyframes fadeout{
     from{opacity:1;}

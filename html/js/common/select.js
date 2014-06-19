@@ -186,8 +186,10 @@ define([
         // view map feature
         dStores.delegate('.store_view', 'click', function () {
             var mapWrap = $(this).parents('.limit').find('.starshop_map');
-            console.log(oMap);
-            console.log(mapWrap);
+
+            mapWrap.append(oMap);
+            oMap.hide().fadeIn();
+            
 //            var data = [{
 //                title: $(this).parent().find('p').eq(0).html(),
 //                address: $(this).parent().find('p').eq(1).html(),
