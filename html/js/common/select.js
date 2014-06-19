@@ -186,19 +186,27 @@ define([
         // view map feature
         dStores.delegate('.store_view', 'click', function () {
             var mapWrap = $(this).parents('.limit').find('.starshop_map');
+            if(mapWrap.find('#map').length > 0) {
+                $(this).html('View Map');
+                oMap.fadeOut(function(){
+                    $('#wrap').append(oMap);
+                });
+            }
+            else {
+                $(this).html('View Shop');
+                var data = [{
+                    title: $(this).parent().find('h2').eq(0).html(),
+                    address: $(this).parent().find('p').eq(1).html(),
+                    phone: $(this).parent().find('p').eq(2).html(),
+                    lat: $(this).data('lat'),
+                    lng: $(this).data('lng')
+                }];
+                map.updateMarkers(data);
+                map.zoomMap(18);
+                mapWrap.append(oMap);
+                oMap.hide().fadeIn();
+            }
 
-            
-            var data = [{
-                title: $(this).parent().find('h2').eq(0).html(),
-                address: $(this).parent().find('p').eq(1).html(),
-                phone: $(this).parent().find('p').eq(2).html(),
-                lat: $(this).data('lat'),
-                lng: $(this).data('lng')
-            }];
-            map.updateMarkers(data);
-            map.zoomMap(18);
-            mapWrap.append(oMap);
-            oMap.hide().fadeIn();
         })
     }
 
@@ -261,7 +269,7 @@ define([
 
         // when click the search button, should update the map center and markers
         dBtn.bind('click', function () {
-            var data = {country:'CN', city:dCityText.html()};
+            var data = {country:'CN', city:dCityText.html(), distinct:dDistrictText.html()};
             api.getStorelocator({
                 data:data,
                 success:function(aData){
