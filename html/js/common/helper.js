@@ -2,11 +2,12 @@ define([
     // libs
     'jQuery',
     'Handlebars',
+    'common/map',
     'common/api',
     'lib/text!templates/album.html',
     'lib/text!templates/video.html',
     'lib/text!templates/weibo.html'
-], function($, Handlebars, api, albumTpl, videoTpl, weiboTpl) {
+], function($, Handlebars, map, api, albumTpl, videoTpl, weiboTpl) {
     var dBody = $('body'),
         isUglyIe = $.browser.msie && $.browser.version <= 8,
         isIphone = navigator.userAgent.toLowerCase().indexOf('iphone') > 0,
@@ -109,14 +110,15 @@ define([
                                 }
 
                                 dDesc.html(aData[nIndex - 1].title);
-                            },
-                            updateSize = function () {
-                                var dWidth = $(window).width();
-                                jcarousel.jcarousel('items').css('width', dWidth + 'px');
                             };
+//                            ,
+//                            updateSize = function () {
+//                                var dWidth = $(window).width();
+//                                jcarousel.jcarousel('items').css('width', dWidth + 'px');
+//                            };
 
                         jcarousel.on('jcarousel:reload jcarousel:create', function() {
-                            updateSize();
+                            //updateSize();
                         }).jcarousel({
                             wrap: 'circular'
                         });
@@ -297,9 +299,11 @@ define([
     }
 
     var mapEvent = function() {
-        dBody.delegate('.store_view', 'click', function() {
+        dBody.delegate('.starshop .store_view', 'click', function() {
             $(this).parent().next().html('<a href="http://api.map.baidu.com/geocoder?address=上海虹桥机场&output=html" target="_blank"> <img src="http://api.map.baidu.com/staticimage? width=400&height=300&zoom=11¢er=上海虹桥机场" />');
         });
+
+
     }
 
     var init = function() {
