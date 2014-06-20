@@ -2,7 +2,7 @@
   <div class="">
     <form name="shopform" class="form-horizontal" action="<?php echo Yii::app()->baseUrl ?>/shop/add" method="POST" enctype="multipart/form-data">
       <fieldset>
-        <legend><?php echo Yii::t("strings", "Shop") ?></legend>
+        <legend><?php echo isset($shop) ? Yii::t("strings", "Edit Shop").' <span class="divider"> - </span> '.$shop->title : Yii::t("strings", "Shop") ?></legend>
         
         <div class="control-group">
           <label class="control-label" for=""><?php echo Yii::t("strings", "Location") ?></label>
@@ -47,14 +47,12 @@
           </div>
         </div>
       </fieldset>
-      </fieldset>
       
       <fieldset class="fieldset-section form-inline">
         <legend>Media</legend>
         <span class="show-toggle" ng-click="showToggle($event)">Show</span>
         <div class="control-group hideme">
           <label for="">Image</label>
-          <input type="file" name="shop_image[]" />
           <input type="file" name="shop_image[]" />
         </div>
       </fieldset>

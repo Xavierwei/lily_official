@@ -12,6 +12,15 @@
     };
   }]);
 
+  // Shop Table 控制器
+  AdminModule.controller("ShopTable", ["$scope", "$http", function ($scope, $http) {
+      angular.element(".shop-table .table").DataTable({
+        info: false,
+        pageLength: 5,
+        lengthChange: false
+      });
+  }]);
+
   angular.element(document).ready(function () {
     var map = new BMap.Map("shop-map");
     map.centerAndZoom(new BMap.Point(116.404, 39.915), 14);  

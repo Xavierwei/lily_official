@@ -31,3 +31,13 @@
 #shop-map {
   height: 500px;
 }
+
+.shop-table {
+  position: relative;
+}
+
+.shop-table .dataTables_filter {
+  position: absolute;
+  top: -39px;
+  right: 10px;
+}
