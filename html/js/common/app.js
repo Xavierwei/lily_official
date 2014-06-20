@@ -21,6 +21,8 @@ define([
 
         // update the link to hash mode
         switchPage.init();
+
+        // fix gallery
     }
 
     return initialize;
