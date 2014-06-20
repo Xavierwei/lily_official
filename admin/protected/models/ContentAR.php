@@ -1,6 +1,12 @@
 <?php
 
 class ContentAR extends CActiveRecord {
+  
+  const STATUS_ENABLE = 1;
+  const STATUS_DISABLE = 0;
+  
+  public $status = 1;
+  
   public $meta;
   public function tableName() {
     return "content";

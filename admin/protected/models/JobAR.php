@@ -22,5 +22,9 @@ class JobAR extends ContentAR {
     return array("job_people_number", "job_type");
   }
   
+  public static function model($class = __CLASS__) {
+    return parent::model($class);
+  }
+  
 }
 

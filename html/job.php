@@ -1,3 +1,4 @@
+<?php require_once 'functions.php';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -74,90 +75,22 @@
                     <a href="javascript:;" class="job_socialbtn"></a>
                     <h3 class="job_campus"></h3>
                 </div>
+                <?php $school_jobes = loadJob();?>
                 <div class="job_list limit cs-clear">
                     <!--  -->
+                    <?php foreach ($school_jobes as $school_job): ?>
                     <div class="job_item">
                         <div class="job_itemtit"> <strong>01</strong>
-                            销售管培生 / 若干
+                            <?php echo $school_job->title?> / <?php echo $school_job->job_people_number == 0 ? Yii::t("strings", "Limited"): $school_job->job_people_number?>
                         </div>
                         <div class="job_itemtxt">
-                            职位要求：
+                            <?php echo Yii::t("strings", "Requirements")?>：
                             <br />
-                            大专及以上学历，专业不限
-                            <br />
-                            时尚敏感度强，追求完美
-                            <br />
-                            具有良好的沟通和独立思考能力
+                            <?php echo $school_job->body?>
                         </div>
                         <a href="javascript:;" class="job_itembtn">APPLY</a>
                     </div>
-                    <!--  -->
-                    <div class="job_item">
-                        <div class="job_itemtit"> <strong>02</strong>
-                            销售管培生 / 若干
-                        </div>
-                        <div class="job_itemtxt">
-                            职位要求：
-                            <br />
-                            大专及以上学历，专业不限
-                            <br />
-                            时尚敏感度强，追求完美
-                            <br />
-                            具有良好的沟通和独立思考能力
-                        </div>
-                        <a href="javascript:;" class="job_itembtn">APPLY</a>
-                    </div>
-                    <!--  -->
-                    <div class="job_item">
-                        <div class="job_itemtit">
-                            <strong>03</strong>
-                            销售管培生 / 若干
-                        </div>
-                        <div class="job_itemtxt">
-                            职位要求：
-                            <br />
-                            大专及以上学历，专业不限
-                            <br />
-                            时尚敏感度强，追求完美
-                            <br />
-                            具有良好的沟通和独立思考能力
-                        </div>
-                        <a href="javascript:;" class="job_itembtn">APPLY</a>
-                    </div>
-                    <!--  -->
-                    <div class="job_item">
-                        <div class="job_itemtit">
-                            <strong>04</strong>
-                            销售管培生 / 若干
-                        </div>
-                        <div class="job_itemtxt">
-                            职位要求：
-                            <br />
-                            大专及以上学历，专业不限
-                            <br />
-                            时尚敏感度强，追求完美
-                            <br />
-                            具有良好的沟通和独立思考能力
-                        </div>
-                        <a href="javascript:;" class="job_itembtn">APPLY</a>
-                    </div>
-                    <!--  -->
-                    <div class="job_item">
-                        <div class="job_itemtit">
-                            <strong>05</strong>
-                            销售管培生 / 若干
-                        </div>
-                        <div class="job_itemtxt">
-                            职位要求：
-                            <br />
-                            大专及以上学历，专业不限
-                            <br />
-                            时尚敏感度强，追求完美
-                            <br />
-                            具有良好的沟通和独立思考能力
-                        </div>
-                        <a href="javascript:;" class="job_itembtn">APPLY</a>
-                    </div>
+                    <?php endforeach;?>
                     <!--  --> </div>
             </div>
             <!--  --> </div>

@@ -22,12 +22,22 @@ class NewsAR extends ContentAR {
     return array();
   }
   
+  public static function model($class = __CLASS__) {
+    return parent::model($class);
+  }
+  
   public function afterSave() {
     $mediaAr = new MediaAR();
     $mediaAr->saveMediaToObject($this, "thumbnail");
     return TRUE;
   }
   
+  public function afterFind() {
+    $mediaAr = new MediaAR();
+    $mediaAr->attachMediaToObject($this, "thumbnail");
+  }
+
+
   public function getAttributes($names = null) {
     $attributes = parent::getAttributes($names);
     $attributes["thumbnail"] = $this->thumbnail;
