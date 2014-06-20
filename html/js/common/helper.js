@@ -302,8 +302,14 @@ define([
         dBody.delegate('.starshop .store_view', 'click', function() {
             $(this).parent().next().html('<a href="http://api.map.baidu.com/geocoder?address=上海虹桥机场&output=html" target="_blank"> <img src="http://api.map.baidu.com/staticimage? width=400&height=300&zoom=11¢er=上海虹桥机场" />');
         });
+    }
 
-
+    var globalEvent = function(){
+        dBody.delegate('.gohash', 'click', function() {
+            var hash = $(this).data('hash');
+            var top = $('#'+hash).position().top - 140;
+            $('html, body').animate({scrollTop : top});
+        });
     }
 
     var init = function() {
@@ -316,6 +322,8 @@ define([
 
         // for map
         mapEvent();
+
+        globalEvent();
     }
 
     return {

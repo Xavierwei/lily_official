@@ -69,6 +69,25 @@ define([
             nTotal = dWrap.find('img').length,
             imgLoad = imagesLoaded(dWrap);
 
+        var getQueryString = function(name) {
+            var reg = new RegExp("(.*?)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.hash.match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+
+        var localHash = function () {
+            var hashtag = getQueryString('hash');
+            if($('#'+hashtag).length > 0) {
+                var top = $('#'+hashtag).offset().top - 100;
+                console.log(top);
+                setTimeout(function(){
+                    $('html,body').animate({scrollTop:top});
+                },10);
+
+            }
+
+        }
+
         imgLoad.on('always', function(instance) {
             dTop.queue(function() {
                 dTop.dequeue();
@@ -85,6 +104,8 @@ define([
 
                     // show tapes
                     dTape.fadeIn();
+
+                    localHash();
 
                     if (oSkrollr) {
                         oSkrollr.refresh();

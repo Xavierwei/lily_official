@@ -520,12 +520,38 @@ define([
         oConfig.success(fakeData);
     }
 
+    var setCookie = function(name, value, expire, path, domain, s){
+        if ( document.cookie === undefined ){
+            return false;
+        }
+
+        expire = ! LP.isNumber( expire ) ? 0 : parseInt(expire);
+        if (expire < 0){
+            value = '';
+        }
+
+        var dt = new Date();
+        dt.setTime(dt.getTime() + 1000 * expire);
+
+        document.cookie = name + "=" + encodeURIComponent(value) +
+            ((expire) ? "; expires=" + dt.toGMTString() : "") +
+            ((s) ? "; secure" : "");
+
+        return true;
+    };
+
+    var removeCookie = function(name, path, domain){
+        return LP.setCookie(name, '', -1, path, domain);
+    };
+
     return {
         getStorelocator : getStorelocator,
         getStarshop : getStarshop,
         getAlbumList : getAlbumList,
         getVideoList : getVideoList,
         getWeibo : getWeibo,
-        getNews : getNews
+        getNews : getNews,
+        setCookie : setCookie,
+        removeCookie : removeCookie
     }
 })

@@ -1,6 +1,5 @@
 /* Mobile */
 @media only screen and (max-width:3000px){
-    .ha_modtxt p {font-size:24px;line-height:28px;}
 }
 @media only screen and (max-width:1920px){
     #wrap .page .limit.event_list {width:1328px;}
@@ -8,7 +7,6 @@
 }
 @media only screen and (max-width:1350px){
     #nav li.item {width:180px;}
-    .ha_modtxt p {font-size:16px;line-height:18px;}
     .event_item {margin:0 80px;}
     #wrap .page .limit.event_list {width:1084px;}
     .job_item {margin:10px 71px 40px 71px;}

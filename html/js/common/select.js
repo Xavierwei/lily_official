@@ -11,32 +11,60 @@ define([
 
     var homeSelect = function (dHome) {
         var oAddress = map.getAddress(),
+            dMap = $('#map'),
+            dStores = $('.page_storelocator .stores'),
+            dCountry = $('#country'),
             dProvince = $('#province'),
             dCity = $('#city'),
+            dDistrict = $('#district'),
+            dCountrySelect = dCountry.find('select'),
+            dCountryText = dCountry.find('.store_sl_txt'),
             dProvinceSelect = dProvince.find('select'),
             dCitySelect = dCity.find('select'),
+            dDistrictSelect = dDistrict.find('select'),
             dProvinceText = dProvince.find('.store_sl_txt'),
             dCityText = dCity.find('.store_sl_txt'),
+            dDistrictText = dDistrict.find('.store_sl_txt'),
+            dBtn = $('.page_storelocator .searchbtn'),
+            sProvince,
+            sCity,
+            sDistrict,
             updateText = function () {
                 setTimeout(function () {
-                    var sProvince = dProvinceSelect.find('option:selected').text(),
-                        sCity = dCitySelect.find('option:selected').text();
+                    sProvince = dProvinceSelect.find('option:selected').text();
+                    sCity = dCitySelect.find('option:selected').text();
+                    sDistrict = dDistrictSelect.find('option:selected').text();
 
                     dProvinceText.html(sProvince);
                     dCityText.html(sCity);
+                    dDistrictText.html(sDistrict);
 
-                    // when province changed, should update the map center and markers
-                    map.getLatLng(sCity, function (oLatLng) {
-                        map.updateMapCenter(oLatLng);
-                        map.updateMarkers(oLatLng);
-                    })
+                    dProvinceText.data('val',sProvince);
+                    dCityText.data('val',sCity);
+                    dDistrictText.data('val',sDistrict);
+
+                    var data = {country:'CN', city:dCityText.data('val'), star:0};
+                    api.getStorelocator({
+                        data:data,
+                        success:function(aData){
+                            map.updateMarkers(aData);
+                        }
+                    });
                 }, 100)
             };
 
-        dHome.ChinaCitySelect({
-            'prov' : dProvinceSelect,
+        oHandler = dHome.ChinaCitySelect({
+            //'prov' : dProvinceSelect,
             'city' : dCitySelect,
-            'url' : 'data/city.json'
+            'dist' : dDistrictSelect,
+            'url' : 'admin/index.php/api/shop/location',
+            'success' : function(aData){
+                setTimeout(function(){
+                    dCityText.html(aData.city.CN[0]);
+                    dCityText.data('val',aData.city.CN[0]);
+                    updateText();
+                },2000);
+            }
         })
 
         dProvinceSelect.change(function () {
@@ -47,35 +75,40 @@ define([
             updateText();
         })
 
-        // the callback hell is caused with browse need sometime to render those options
-        setTimeout(function () {
-            var dProvinceOptions = dProvinceSelect.find('option'),
-                nProvince = dProvinceOptions.length;
+        dDistrictSelect.change(function () {
+            updateText();
+        })
 
-             // update choosed option
-            dProvinceOptions.each(function(index, item){
-                if ($(this).text().indexOf(oAddress.province) >= 0) {
-                    $(this).prop('selected', true);
-                }
+        // when click the search button, should update the map center and markers
+//        dBtn.bind('click', function () {
+//            var data = {country:'CN', city:dCityText.data('val'), star:0};
+//            api.getStorelocator({
+//                data:data,
+//                success:function(aData){
+//                    var str = Handlebars.compile(storelocatorTpl)({
+//                        title : aData[0].city,
+//                        data : aData
+//                    });
+//                    dStores.html(str);
+//                    map.updateMarkers(aData);
+//                }
+//            });
+//        })
 
-                if (index == nProvince - 1) {
-                    setTimeout(function () {
-                        var dCityOptions = dCitySelect.find('option'),
-                            nCity = dCityOptions.length;
-
-                        dCityOptions.each(function(){
-                            if ($(this).text().indexOf(oAddress.city) >= 0) {
-                                $(this).prop('selected', true);
-                            }
-                        })
-
-                        // update the ui
-                        dProvinceSelect.change();
-                        dCitySelect.change();
-                    }, 30)
-                }
-            })
-        }, 300)
+        // view map feature
+        dStores.delegate('.store_additem .store_view', 'click', function () {
+            var data = [{
+                title: $(this).parent().find('p').eq(0).html(),
+                address: $(this).parent().find('p').eq(1).html(),
+                phone: $(this).parent().find('p').eq(2).html(),
+                lat: $(this).data('lat'),
+                lng: $(this).data('lng')
+            }];
+            map.updateMarkers(data);
+            map.zoomMap(18);
+            var height = $('#map').position().top;
+            $('html,body').animate({scrollTop:height});
+        })
     }
 
     var starshopSelect = function (dStarshop) {
@@ -92,7 +125,7 @@ define([
             dCityText = dCity.find('.store_sl_txt'),
             sProvince,
             sCity,
-            oMap = $('#map'),
+            bMap,
             updateText = function () {
                 setTimeout(function () {
                     //sProvince = dProvinceSelect.find('option:selected').text();
@@ -103,20 +136,51 @@ define([
                 }, 100)
             };
 
-        dStarshop.ChinaCitySelect({
-            //'prov' : dProvinceSelect,
-            'city' : dCitySelect,
-            'url' : 'admin/index.php/api/shop/location',
-            'success': function(){}
-        })
+//        dStarshop.ChinaCitySelect({
+//            //'prov' : dProvinceSelect,
+//            'city' : dCitySelect,
+//            'url' : 'admin/index.php/api/shop/location',
+//            'success': function(aData){
+////                setTimeout(function(){
+////                    dCityText.html(aData.city.CN[0]);
+////                    dCitySelect.trigger('change');
+////                },2000);
+//            }
+//        })
 
 //        dProvinceSelect.change(function () {
 //            updateText();
 //        })
 
+//        dCitySelect.change(function () {
+//            updateText();
+//            setTimeout(function(){
+//                var data = {country:'CN', city:dCityText.html(), star:1};
+//                api.getStorelocator({
+//                    data:data,
+//                    success:function(aData){
+//                        Handlebars.registerHelper('if_even', function(conditional, options) {
+//                            if((conditional % 2) == 0) {
+//                                return options.fn(this);
+//                            } else {
+//                                return options.inverse(this);
+//                            }
+//                        });
+//                        var str = Handlebars.compile(starshopTpl)({
+//                            data : aData
+//                        });
+//                        dStores.html(str);
+//                    }
+//                });
+//            },200);
+//        })
+
         dCitySelect.change(function () {
             updateText();
-        })
+            var hash = dCitySelect.val();
+            var top = $('#'+hash).position().top - 100;
+            $('html, body').animate({scrollTop : top});
+        });
 
         // when click the search button, should the tpl
         dBtn.bind('click', function () {
@@ -183,16 +247,18 @@ define([
 //            })
 //        }, 300)
 
+
         // view map feature
         dStores.delegate('.store_view', 'click', function () {
             var mapWrap = $(this).parents('.limit').find('.starshop_map');
             if(mapWrap.find('#map').length > 0) {
                 $(this).html('View Map');
-                oMap.fadeOut(function(){
-                    $('#wrap').append(oMap);
+                $("#map").fadeOut(function(){
+                    $(this).remove();
                 });
             }
             else {
+                $("#map").remove();
                 $(this).html('View Shop');
                 var data = [{
                     title: $(this).parent().find('h2').eq(0).html(),
@@ -201,12 +267,17 @@ define([
                     lat: $(this).data('lat'),
                     lng: $(this).data('lng')
                 }];
-                map.updateMarkers(data);
-                map.zoomMap(18);
-                mapWrap.append(oMap);
-                oMap.hide().fadeIn();
+                mapWrap.append('<div id="map"></div>');
+                $('#map').css({width:mapWrap.width(),height:mapWrap.height()});
+                setTimeout(function(){
+                    bMap = new BMap.Map("map");
+                    bMap.addControl(new BMap.NavigationControl());
+                    var point = new BMap.Point(data[0].lat,data[0].lng);
+                    var marker = new BMap.Marker(point, {title:data[0].title});
+                    bMap.centerAndZoom(point, 15);
+                    bMap.addOverlay(marker);
+                },1000);
             }
-
         })
     }
 
@@ -239,6 +310,10 @@ define([
                     dProvinceText.html(sProvince);
                     dCityText.html(sCity);
                     dDistrictText.html(sDistrict);
+
+                    dProvinceText.data('val',sProvince);
+                    dCityText.data('val',sCity);
+                    dDistrictText.data('val',sDistrict);
                 }, 100)
             };
 
@@ -250,6 +325,7 @@ define([
             'success' : function(aData){
                 setTimeout(function(){
                     dCityText.html(aData.city.CN[0]);
+                    dCityText.data('val',aData.city.CN[0]);
                     $('.page_storelocator .searchbtn').click();
                 },2000);
             }
@@ -269,7 +345,7 @@ define([
 
         // when click the search button, should update the map center and markers
         dBtn.bind('click', function () {
-            var data = {country:'CN', city:dCityText.html(), distinct:dDistrictText.html()};
+            var data = {country:'CN', city:dCityText.data('val'), distinct:dDistrictText.data('val'), star:0};
             api.getStorelocator({
                 data:data,
                 success:function(aData){
@@ -297,50 +373,6 @@ define([
             var height = $('#map').position().top;
             $('html,body').animate({scrollTop:height});
         })
-
-        // the callback hell is caused with browse need sometime to render those options
-//        setTimeout(function () {
-//            var dProvinceOptions = dProvinceSelect.find('option'),
-//                nProvince = dProvinceOptions.length;
-//
-//            // update choosed option
-//            dProvinceOptions.each(function(index, item){
-//                if ($(this).text().indexOf(oAddress.province) >= 0) {
-//                    $(this).prop('selected', true);
-//                }
-//
-//                if (index == nProvince - 1) {
-//                    setTimeout(function () {
-//                        var dCityOptions = dCitySelect.find('option'),
-//                            nCity = dCityOptions.length;
-//
-//                        dCityOptions.each(function(index){
-//                            if ($(this).text().indexOf(oAddress.city) >= 0) {
-//                                $(this).prop('selected', true);
-//                            }
-//
-//                            if (index == nCity - 1) {
-//                                setTimeout(function () {
-//                                    var dDistrictOptions=dDistrictSelect.find('option'),
-//                                        nDistict = dDistrictOptions.length;
-//
-//                                    dDistrictOptions.each(function(index){
-//                                        if ($(this).text().indexOf(oAddress.district) >= 0) {
-//                                            $(this).prop('selected', true);
-//                                        }
-//                                    })
-//
-//                                    // update the ui
-//                                    dProvinceSelect.change();
-//                                    dCitySelect.change();
-//                                    dDistrictSelect.change();
-//                                }, 30)
-//                            }
-//                        })
-//                    }, 30)
-//                }
-//            })
-//        }, 300)
     }
 
     // enable the select

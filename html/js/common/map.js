@@ -91,7 +91,6 @@ define([
     var updateMarkers = function (data) {
         oMap.clearOverlays();
         $.each(data,function(i,obj){
-            console.log(obj);
             var point = new BMap.Point(obj.lat,obj.lng);
             var marker = new BMap.Marker(point, {title:obj.title});
             oMap.addOverlay(marker);
