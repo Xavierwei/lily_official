@@ -48,7 +48,8 @@ class IPToLatlng extends CApplicationComponent {
    */
   public function toLatlng($ip = NULL) {
     $parse = $this->parseIP($ip);
-    if ($parse) {
+    
+    if ($parse && $parse["status"] != 0) {
       return $parse["content"]["point"];
     }
     // 默认是0
@@ -62,7 +63,7 @@ class IPToLatlng extends CApplicationComponent {
    */
   public function toCity($ip = NULL) {
     $parse = $this->parseIP($ip);
-    if ($parse) {
+    if ($parse && $parse["status"] != 0) {
       return $parse["content"]["address_detail"]["city"];
     }
     // 默认是上海市
