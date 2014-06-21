@@ -116,6 +116,13 @@ class ContentAR extends CActiveRecord {
       $query->offset = $offset;
     }
     
+    $type = $this->type;
+    
+    if ($type) {
+      $query->addCondition("type=:type", $type);
+      $query->params[":type"] = $type;
+    }
+    
     $rows = $this->findAll($query);
     
     return $rows;

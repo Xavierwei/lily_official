@@ -39,7 +39,9 @@
         <li><a href="<?php echo Yii::app()->createUrl("job/add")?>">Add Job</a></li>
         <li class="nav-header">Page Management</li>
         <li><a href="<?php echo Yii::app()->createUrl("page/milestone")?>">MileStone</a></li>
+        <li class="nav-header">Lookbook Management</li>
         <li><a href="<?php echo Yii::app()->createUrl("page/lookbook")?>">Lookbook</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl("page/addlookbook")?>">Add Lookbook</a></li>
       </ul>
     </div>
     <div id="content" class="span9"><?php echo $content; ?></div>

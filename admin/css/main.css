@@ -36,7 +36,7 @@
   position: relative;
 }
 
-.shop-table .dataTables_filter {
+.shop-table .dataTables_filter, .table-content .dataTables_filter {
   position: absolute;
   top: -39px;
   right: 10px;

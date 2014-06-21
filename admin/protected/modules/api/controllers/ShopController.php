@@ -28,6 +28,7 @@ class ShopController extends Controller {
     if ($distinct) {
       $shopAr->andSearch("distinct", $distinct);
     }
+    
     if ($is_star_shop) {
       $shopAr->andSearch("star", ShopAR::SHOP_STAR);
     }
