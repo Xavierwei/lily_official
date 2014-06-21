@@ -5,7 +5,7 @@ if (defined("LOADED_FUNCTION")) {
 else {
   define("LOADED_FUNCTION", 1);
 }
-require_once("yii/yii.php");
+require_once("admin/yii/yii.php");
 
 define("ROOT_PATH", dirname(__FILE__));
 

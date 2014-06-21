@@ -42,7 +42,7 @@ a:hover {opacity:0.8;}
 .header{position:fixed;height:70px;top:0;left:0;right:0;padding-left:7%;z-index:100;}
 .menu{display:none;cursor:pointer;position:absolute;top:10px;left:-4%;background:url('../images/menu.png') no-repeat;width:48px;height:48px;}
 .menu.active{background:url('../images/menclose.png') no-repeat;}
-.search{background:url('../images/hdicon.png') no-repeat -84px 0;width:25px;height:25px;position:absolute;right:90px;top:30px;}
+.search{cursor:pointer;background:url('../images/hdicon.png') no-repeat -84px 0;width:25px;height:25px;position:absolute;right:90px;top:30px;}
 .language{position:absolute;top:30px;right:130px}
 .language a{float:left;width:40px;height:17px;background:url('../images/hdicon.png') no-repeat 10px 0;}
 .language .lang_cn{background-position:-30px 0}
@@ -148,6 +148,7 @@ a:hover {opacity:0.8;}
 .home_sl_txt{float:left;width:130px;}
 .home_sl_icon{float:right;width:0;height:0;overflow:hidden;border:transparent solid 5px;border-top:#000 solid 5px;margin:20px 10px 0 0}
 .home_select{position:absolute;height:46px;line-height:46px;left:1px;top:1px;width:162px;font-size:16px;border:0;background:none;cursor:pointer;opacity:0;filter:alpha(opacity=0);}
+
 /* LOOKBOOK/STREETSHOT Used
 ================================================================================================= */
 .streetshot .limit,
@@ -316,6 +317,9 @@ body.vip,body.vip .page,body.vip .header{background-color:#f3dedd;}
 body.job,body.job .page,body.job .header{background-color:#ded5ca;}
 body.contact,body.contact .page,body.contact .header{background-color:#ddebf3;}
 body.privacy,body.privacy .page,body.privacy .header{background-color:#f3dedd;}
+
+body.club,body.club .page,body.club .header{background-color:#fff1f4;}
+
 /* for page switch animation */
 #wrap{display:none;}
 .loading{background:#fff;position:fixed;z-index:10;}
@@ -347,6 +351,16 @@ body.privacy,body.privacy .page,body.privacy .header{background-color:#f3dedd;}
 .page_starshop .starshop_map {position:relative;}
 .page_starshop .starshop_map img {}
 .page_starshop #map {position: absolute;top:0;left:0;width:605px;height:448px;}
+
+
+.popup {display:none;position: fixed;top:50%;left:50%;z-index:101;background: #fff;-webkit-box-shadow: 20px 20px 0 0 rgba(207,220,228,0.8);box-shadow: 20px 20px 0 0 rgba(207,220,228,0.8);}
+.popup_overlay {display:none;position: fixed;z-index:100;width:100%;height:100%;top:0;left:0;background:#fff;background:rgba(255,255,255,0.8);}
+.popup_close {cursor:pointer;position: absolute;background:url("../images/menclose.png") no-repeat;width:48px;height:48px;right:10px;top:10px;}
+.search_popup {width:700px;height:260px;margin:-130px 0 0 -350px}
+.search_popup .search_form {margin:140px 0 0 30px;}
+.search_popup .search_input {float:left;border:1px solid #000;width:450px;height:48px;line-height:48px;padding:0 20px;font-size:16px;}
+.search_popup .search_btn {float:left;width:145px;height:50px;line-height:50px;text-align:center;font-size:16px;background:#000;color:#fff;border:none;}
+
 /* link animation */
 @keyframes fadeout{
     from{opacity:1;}
