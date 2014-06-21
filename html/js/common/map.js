@@ -88,7 +88,7 @@ define([
     }
 
     // update markers
-    var updateMarkers = function (data) {
+    var updateMarkers = function (data, isCenter) {
         oMap.clearOverlays();
         $.each(data,function(i,obj){
             var point = new BMap.Point(obj.lat,obj.lng);
@@ -103,8 +103,16 @@ define([
                 this.openInfoWindow(infoWindow);
             });
         });
-        var point = new BMap.Point(data[0].lat,data[0].lng);
-        oMap.centerAndZoom(point, 14);
+        if(isCenter) {
+            var point = new BMap.Point(data[0].lat,data[0].lng);
+            oMap.centerAndZoom(point, 14);
+        }
+    }
+
+    // center and zoom map
+    var centerZoom = function(lat,lng,zoom) {
+        var point = new BMap.Point(lat,lng);
+        oMap.centerAndZoom(point, zoom);
     }
 
     // init map
@@ -146,6 +154,7 @@ define([
         getAddress : getAddress,
         updateMarkers : updateMarkers,
         updateMapCenter : updateMapCenter,
-        zoomMap : zoomMap
+        zoomMap : zoomMap,
+        centerZoom: centerZoom
     }
 })
