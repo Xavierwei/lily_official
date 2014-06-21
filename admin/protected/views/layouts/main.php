@@ -11,6 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 
 	<title>Lily Office Admin Office</title>
+  <script type="text/javascript">
+    window.baseurl = "<?php echo Yii::app()->baseUrl?>";
+  </script>
 </head>
 
 <body>
@@ -56,7 +59,7 @@
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/jquery.form.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/jquery_ui/js/jquery-ui-1.10.4.min.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/angular.js"></script>
-<script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=ZuVRDtLTr1PXxz7g028BUPYL&v=1.0"></script>  
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=ZuVRDtLTr1PXxz7g028BUPYL"></script>  
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/script.js"></script>
 </body>
 </html>

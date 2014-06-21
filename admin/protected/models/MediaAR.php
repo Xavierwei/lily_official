@@ -81,17 +81,19 @@ class MediaAR extends CActiveRecord {
         "type" => $obj->type, 
         "field_name" => $field_name,
     );
-        
-    $this->setAttributes($attr);
     
-    return $this->save();
+    // 先查询是否已经存在一份
+    $row = $this->loadMediaWithObject($obj, $field_name);
+    if ($row) {
+      return $row->setAttributes($attr);
+    }
+    else {
+      $this->setAttributes($attr);
+      return $this->save();
+    }
   }
   
-  /**
-   * 给一个对象附件图片数据
-   * @param CActiveRecord $obj 需要有图片的对象
-   */
-  public function attachMediaToObject(&$obj, $field_name) {
+  public function loadMediaWithObject($obj, $field_name) {
     $cid = $obj->getPrimaryKey();
     $type = $obj->type;
     $query = new CDbCriteria();
@@ -104,6 +106,16 @@ class MediaAR extends CActiveRecord {
     $query->params[":cid"] = $cid;
     
     $row = $this->find($query);
+    
+    return $row;
+  }
+  
+  /**
+   * 给一个对象附件图片数据
+   * @param CActiveRecord $obj 需要有图片的对象
+   */
+  public function attachMediaToObject(&$obj, $field_name) {
+    $row = $this->loadMediaWithObject($obj, $field_name);
     if ($row) {
       $obj->{$field_name} = Yii::app()->getBaseUrl(TRUE). $row->uri;
     }

@@ -41,3 +41,20 @@
   top: -39px;
   right: 10px;
 }
+
+input.ng-invalid,select.ng-invalid {
+  border: 1px solid #f00;
+}
+
+.upload-image-item {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.upload-image-item img {
+  max-width: 200px;
+}
+
+legend {
+  cursor: pointer;
+}

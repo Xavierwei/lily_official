@@ -97,15 +97,22 @@ class ShopController extends Controller {
     
     if ($request->isPostRequest) {
       $data = $_POST;
-      $shop = new ShopAR();
-      $shop->setAttributes($data);
-      
-      if ($shop->save()) {
-        $this->responseJSON($shop, "success");
+      if (isset($data["shop_id"]) && $data["shop_id"]) {
+        $shop = ShopAR::model()->findByPk($data["shop_id"]);
       }
       else {
-        $this->responseError("validate failed", ErrorAR::ERROR_VALIDATE_FAILED, $shop->getErrors());
+        $shop = new ShopAR();
       }
+      $shop->setAttributes($data);
+      
+      if ($shop->shop_id) {
+        $ret = $shop->update();
+      }
+      else {
+        $ret = $shop->save();
+      }
+      
+      $this->responseJSON($shop, "success");
     }
     else {
       $this->responseError("http verb error", ErrorAR::ERROR_HTTP_VERB_ERROR);
@@ -119,17 +126,24 @@ class ShopController extends Controller {
     $request = Yii::app()->getRequest();
     
     if ($request->getRequestType() == "GET") {
-      // 首先看分页查询
-      $limit = $request->getParam("limit", FALSE);
-      $offset = $request->getParam("offset", FALSE);
-      
-      // 店铺状态
-      $status = $request->getParam("status", FALSE);
-      
-      $shop = new ShopAR();
-      $rows = $shop->getList($status, $limit, $offset);
-      
-      $this->responseJSON($rows, "success");
+      $shop_id = $request->getParam("shop_id");
+      if ($shop_id) {
+        $shop = ShopAR::model()->findByPk($shop_id);
+        $this->responseJSON($shop, "success");
+      }
+      else {
+        // 首先看分页查询
+        $limit = $request->getParam("limit", FALSE);
+        $offset = $request->getParam("offset", FALSE);
+
+        // 店铺状态
+        $status = $request->getParam("status", FALSE);
+
+        $shop = new ShopAR();
+        $rows = $shop->getList($status, $limit, $offset);
+
+        $this->responseJSON($rows, "success");
+      }
     }
     else {
       $this->responseError("http verb error", ErrorAR::ERROR_HTTP_VERB_ERROR);

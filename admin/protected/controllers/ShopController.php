@@ -17,6 +17,9 @@ class ShopController extends Controller {
     $request = Yii::app()->getRequest();
     $shop_id = $request->getParam("shop_id");
     $shop = ShopAR::model()->findByPk($shop_id);
+    if (!$shop) {
+      return $this->redirect(array("index"));
+    }
     $this->render("add", array("shop" => $shop));
   }
 }
