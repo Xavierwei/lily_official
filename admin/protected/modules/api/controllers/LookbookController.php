@@ -8,7 +8,7 @@ class LookbookController extends Controller {
     if ($request->isPostRequest) {
       $data = $_POST;
       if (isset($data["cid"])) {
-        // TODO:: 更新
+        // 更新
         $lookbookAr = LookBookAR::model()->findByPk($data["cid"]);
         if ($lookbookAr) {
           $lookbookAr->setAttributes($data);
