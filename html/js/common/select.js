@@ -315,7 +315,27 @@ define([
                     dCityText.data('val',sCity);
                     dDistrictText.data('val',sDistrict);
                 }, 100)
-            };
+            },
+            searchShop = function (findNear) {
+                var data = {country:'CN', city:dCityText.data('val'), distinct:dDistrictText.data('val'), star:0};
+                api.getStorelocator({
+                    data:data,
+                    success:function(aData){
+                        var str = Handlebars.compile(storelocatorTpl)({
+                            title : aData.shopes[0].city,
+                            data : aData.shopes
+                        });
+                        dStores.html(str);
+                        if(findNear && aData.min_distance_shop) {
+                            map.updateMarkers(aData.shopes, false);
+                            map.centerZoom(aData.min_distance_shop.lat, aData.min_distance_shop.lng, 20);
+                        }
+                        else {
+                            map.updateMarkers(aData.shopes, true);
+                        }
+                    }
+                });
+            }
 
         oHandler = dStorelocator.ChinaCitySelect({
             //'prov' : dProvinceSelect,
@@ -324,9 +344,9 @@ define([
             'url' : 'admin/index.php/api/shop/location',
             'success' : function(aData){
                 setTimeout(function(){
-                    dCityText.html(aData.city.CN[0]);
-                    dCityText.data('val',aData.city.CN[0]);
-                    $('.page_storelocator .searchbtn').click();
+                    dCityText.html(aData.user_city);
+                    dCityText.data('val',aData.user_city);
+                    searchShop(true);
                 },2000);
             }
         })
@@ -345,18 +365,7 @@ define([
 
         // when click the search button, should update the map center and markers
         dBtn.bind('click', function () {
-            var data = {country:'CN', city:dCityText.data('val'), distinct:dDistrictText.data('val'), star:0};
-            api.getStorelocator({
-                data:data,
-                success:function(aData){
-                    var str = Handlebars.compile(storelocatorTpl)({
-                        title : aData[0].city,
-                        data : aData
-                    });
-                    dStores.html(str);
-                    map.updateMarkers(aData);
-                }
-            });
+            searchShop(false);
         })
 
         // view map feature
