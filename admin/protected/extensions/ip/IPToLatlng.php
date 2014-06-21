@@ -11,7 +11,8 @@ class IPToLatlng extends CApplicationComponent {
    */
   public function parseIP($ip = NULL){
     if (!$ip) {
-      $ip =CHttpRequest::getUserHostAddress();
+      $request = Yii::app()->getRequest();
+      $ip =$request->getUserHostAddress();
     }
     
     if (isset(self::$_ips[$ip])) {
@@ -87,7 +88,7 @@ class IPToLatlng extends CApplicationComponent {
        {
            $s /= 1000;
        }
-        return round($s, $decimal);
+       return round($s, $decimal);
     }
 
 }
