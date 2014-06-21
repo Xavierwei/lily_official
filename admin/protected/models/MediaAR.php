@@ -151,5 +151,53 @@ class MediaAR extends CActiveRecord {
       $obj->{$field_name} = "";
     }
   }
+  
+	public function makeImageThumbnail($path, $save_to, $w, $h, $isOutput = FALSE) {
+		$abspath = $path;
+		$abssaveto = $save_to;
+		$thumb = new EasyImage($abspath);
+
+		$size = getimagesize($abspath);
+		$s_w = $size[0];
+		$s_h = $size[1];
+
+		$r1 = $w / $s_w;
+		$r2 = $h / $s_h;
+		$widthSamller = TRUE;
+		if ($r1 > $r2) {
+			$r = $r1;
+		}
+		else {
+			$widthSamller = FALSE;
+			$r = $r2;
+		}
+		$t_w = $r * $s_w;
+		$t_h = $r * $s_h;
+
+		$thumb->resize($t_w, $t_h);
+		if (!$widthSamller) {
+			$start_x = ($t_w - $w)/2;
+			$start_y = 0;
+			$thumb->crop($w, $h, $start_x, $start_y);
+		}
+		else {
+			$start_x = 0;
+			$start_y = ($t_h - $h);
+			$thumb->crop($w, $h, $start_x, $start_y);
+		}
+
+		$thumb->save($abssaveto);
+
+		if($isOutput) {
+			$fp = fopen($abssaveto, "rb");
+			if ($size && $fp) {
+				header("Content-type: {$size['mime']}");
+				fpassthru($fp);
+				exit;
+			} else {
+				// error
+			}
+		}
+	}
 }
 

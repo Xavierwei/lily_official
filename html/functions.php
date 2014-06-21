@@ -48,3 +48,41 @@ function loadJob($type = FALSE) {
   return JobAR::model()->findAll($query);
 }
 
+/**
+ * 
+ * @return typeLookbook 列表
+ */
+function loadLookbook() {
+  $lookbook = new LookBookAR();
+  return $lookbook->getList();
+}
+
+/**
+ * 生成一个缩略图路径
+ * @param type $uri 文件路径
+ * @param array $size 尺寸大小 , 第一个元素是 width, 第二个元素是height
+ */
+function thumbnail($uri, $size) {
+  if (strpos($uri, "http://") !== FALSE) {
+    $uri = str_replace(Yii::app()->getBaseUrl(TRUE), "", $uri);
+  }
+  
+  $root = dirname(Yii::app()->basePath);
+  $absPath = $root.$uri;
+  
+  $dir = pathinfo($absPath, PATHINFO_DIRNAME);
+  $filename = pathinfo($absPath, PATHINFO_FILENAME);
+  $ext = pathinfo($absPath, PATHINFO_EXTENSION);
+  
+  $newFilename = $filename."_".$size[0]. "_". $size[1]."_".$ext;
+  
+  $newAbspath = $dir.'/'. $newFilename;
+  
+  
+  $uri = str_replace($root, "" ,$newAbspath);
+  
+  return Yii::app()->getBaseUrl(TRUE). $uri;
+}
+
+
+print thumbnail("http://lily.local/admin/upload/517f4c9082d81a0a9aae5da8c9aa3aa5.jpg", array(500, 500));
