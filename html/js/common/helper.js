@@ -310,6 +310,27 @@ define([
             var top = $('#'+hash).position().top - 140;
             $('html, body').animate({scrollTop : top});
         });
+
+        dBody.delegate('.header .search', 'click', function() {
+            $('.popup_overlay').fadeIn();
+            $('.search_popup').fadeIn();
+        });
+
+        dBody.delegate('.popup_close,.popup_overlay', 'click', function() {
+            $('.popup_overlay').fadeOut();
+            $('.popup').fadeOut();
+        });
+
+        dBody.delegate('.search_popup .search_input', 'keyup', function(e) {
+            if(e.keyCode == 13) {
+                $('.search_popup .search_btn').trigger('click');
+            }
+        });
+
+        dBody.delegate('.search_popup .search_btn', 'click', function() {
+            var keyword = $('.search_popup .search_input').val();
+            window.location.href = "news.php?keyword=" + keyword;
+        });
     }
 
     var init = function() {

@@ -1,3 +1,4 @@
+<?php require_once 'functions.php';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,19 +74,22 @@
                 </div>
                 <div class="limit event_list cs-clear">
                     <!--  -->
+                    <?php $newsList = loadNews();?>
+                    <?php foreach ($newsList as $news):?>
                     <div class="event_item">
                         <div class="event_img">
                             <p></p>
 	                        <a href="javascript:;" class="event_open"><img src="images/news2.jpg" /></a>
                         </div>
                         <div class="event_com">
-                            <h3><a href="javascript:;" class="event_open">中国零售业可持续发展创新模式高峰论坛</a></h3>
+                            <h3><a href="javascript:;" class="event_open"><?php echo $news->title;?></a></h3>
                             <p>
-	                            "中国零售业可持续发展创新模式高峰论坛" 是由上海丝绸集团旗品牌发展有限公司(Lily品牌)主办，中国商业地产协会、第一财经频道/第一地产、搜狐网财经频道、零点研究咨询集团（上海）协办的一场零售业高峰论坛。
+                                <?php echo $news->body;?>
                             </p>
                             <a href="javascript:;" class="event_open event_look">LOOK</a>
                         </div>
                     </div>
+                    <?php endforeach;?>
                     <!--  -->
                 </div>
             </div>
@@ -205,6 +209,16 @@
             </li>
         </ul>
     </div>
+
+    <div class="popup_overlay"></div>
+    <div class="search_popup popup">
+        <div class="popup_close"></div>
+        <div class="search_form">
+            <input class="search_input" type="text" placeholder="请输入信息" />
+            <input class="search_btn" type="submit" value="搜索" />
+        </div>
+    </div>
+
     <!--  -->
     <script type="text/javascript" src="js/lib/modernizr.min.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=AwxxvHue9bTdFietVWM4PLtk"></script>
