@@ -108,6 +108,8 @@ class ShopAR extends CActiveRecord {
       $query->offset = $offset;
     }
     
+    $query->order = "shop_id DESC";
+    
     return $this->findAll($query);
   }
   

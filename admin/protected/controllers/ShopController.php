@@ -5,12 +5,12 @@ class ShopController extends Controller {
   public $layout = "/layouts/main";
   
   public function actionIndex() {
-    $shopes = ShopAR::model()->findAll();
+    $shopes = ShopAR::model()->getList();
     $this->render("index", array("shopes" => $shopes));
   }
   
   public function actionAdd() {
-    $this->render("add");
+    $this->render("add",  array("shop" => FALSE));
   }
   
   public function actionEdit() {

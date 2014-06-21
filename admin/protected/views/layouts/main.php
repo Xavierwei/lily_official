@@ -34,8 +34,6 @@
         <li class="nav-header">Shop Management</li>
         <li><a href="<?php echo Yii::app()->createUrl("shop/index")?>">Shop Table</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("shop/add")?>">Add Shop</a></li>
-        <li><a href="<?php echo Yii::app()->createUrl("shop/star")?>">Star Shop</a></li>
-        <li><a href="<?php echo Yii::app()->createUrl("shop/delete")?>">Offline Shop</a></li>
         <li class="nav-header">Job Management</li>
         <li><a href="<?php echo Yii::app()->createUrl("job/index")?>">Job Table</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("job/add")?>">Add Job</a></li>

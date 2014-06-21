@@ -71,6 +71,10 @@ class MediaAR extends CActiveRecord {
   public function saveMediaToObject($obj, $field_name) {
     $request = Yii::app()->getRequest();
     $uri = $request->getPost($field_name);
+    print ($uri);
+    if (strpos($uri, "http://") !== FALSE) {
+      $uri = str_replace(Yii::app()->getBaseUrl(TRUE), "", $uri);
+    }
     $filePath = dirname(Yii::app()->basePath)."/". $uri;
     $name = pathinfo($filePath, PATHINFO_FILENAME);
     $ext = pathinfo($filePath, PATHINFO_EXTENSION);
@@ -85,7 +89,8 @@ class MediaAR extends CActiveRecord {
     // 先查询是否已经存在一份
     $row = $this->loadMediaWithObject($obj, $field_name);
     if ($row) {
-      return $row->setAttributes($attr);
+      $row->setAttributes($attr);
+      return $row->update();
     }
     else {
       $this->setAttributes($attr);
@@ -117,7 +122,7 @@ class MediaAR extends CActiveRecord {
   public function attachMediaToObject(&$obj, $field_name) {
     $row = $this->loadMediaWithObject($obj, $field_name);
     if ($row) {
-      $obj->{$field_name} = Yii::app()->getBaseUrl(TRUE). $row->uri;
+      $obj->{$field_name} = Yii::app()->getBaseUrl(TRUE) .$row->uri;
     }
     else {
       $obj->{$field_name} = "";

@@ -32,7 +32,27 @@ class ShopController extends Controller {
       $shopAr->andSearch("star", ShopAR::SHOP_STAR);
     }
     
-    $this->responseJSON($shopAr->locateShop(), "success");
+    $shopes = $shopAr->locateShop();
+    // 测试IP
+    $latlng = Yii::app()->ip->toLatlng("180.173.143.62");
+    $lat = $latlng["x"];
+    $lng = $latlng["y"];
+    
+    // 当前用户最近的店铺
+    $min_distance_shop = FALSE;
+    $min_distance = 0;
+    foreach ($shopes as $shop_obj) {
+      $distance = Yii::app()->ip->distance($shop_obj->lat, $shop_obj->lng, $lat, $lng);
+      if ($min_distance == 0) {
+        $min_distance = $distance;
+      }
+      if ($distance < $min_distance) {
+        $min_distance = $distance;
+        $min_distance_shop = $shop_obj;
+      }
+    }
+    
+    $this->responseJSON(array("shopes" => $shopAr->locateShop(), "min_distance_shop" => $min_distance_shop), "success");
   }
   
   /**
@@ -188,7 +208,7 @@ class ShopController extends Controller {
       }
     }
     
-    return $this->responseJSON(array("around" => $city_shopes, "min_distance_shop" => $min_distance_shop), "success");
+    return $this->responseJSON(array("shopes" => $city_shopes, "min_distance_shop" => $min_distance_shop), "success");
     
   }
 }

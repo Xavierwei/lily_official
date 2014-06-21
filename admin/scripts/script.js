@@ -2,7 +2,7 @@
   var AdminModule = angular.module("adminModule", []);
   
   // Shop controller 
-  AdminModule.controller("ShopForm", ["$scope", "$http", function ($scope, $http) {
+  AdminModule.controller("ShopForm", ["$scope", "$http", "$location", function ($scope, $http, $location) {
     $scope.image = {};
     $scope.image.items = [];
     $scope.image.uris = [];
@@ -17,12 +17,11 @@
           headers: {"Content-Type": "application/x-www-form-urlencoded"}
         })
         .success(function (data) {
-          console.log(data);
+          window.location = (window.baseurl + "/shop/index");
         });
       }
       else {
         alert("表单验证失败");
-        console.log($scope.shopform);
       }
     };
     
@@ -117,7 +116,7 @@
       angular.element(".shop-table .table").DataTable({
         info: false,
         pageLength: 5,
-        lengthChange: false
+        lengthChange: false,
       });
   }]);
 
