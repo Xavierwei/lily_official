@@ -30,12 +30,12 @@ CREATE TABLE `content` (
   `language` varchar(45) DEFAULT 'zh',
   `cdate` datetime DEFAULT NULL,
   `mdate` datetime DEFAULT NULL,
-  `uid` int(10) unsigned DEFAULT NULL,
+  `uid` varchar(20) DEFAULT '',
   `status` tinyint(4) DEFAULT NULL,
   `type` varchar(50) DEFAULT NULL,
   `weight` int(11) DEFAULT '0',
   PRIMARY KEY (`cid`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +44,7 @@ CREATE TABLE `content` (
 
 LOCK TABLES `content` WRITE;
 /*!40000 ALTER TABLE `content` DISABLE KEYS */;
-INSERT INTO `content` VALUES (1,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:19:12','2014-06-19 02:19:12',NULL,NULL,'job',0),(2,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:20:05','2014-06-19 02:20:05',NULL,1,'job',0),(3,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:21:01','2014-06-19 02:21:01',NULL,1,'job',0),(4,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:21:18','2014-06-19 02:21:18',NULL,1,'job',0),(5,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:21:50','2014-06-19 02:21:50',NULL,1,'job',0),(6,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:22:49','2014-06-19 02:22:49',NULL,1,'job',0),(7,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:25:09','2014-06-19 02:25:09',NULL,1,'job',0),(8,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:33:57','2014-06-19 02:33:57',NULL,1,'job',0),(9,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:34:26','2014-06-19 02:34:26',NULL,1,'job',0),(10,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:35:51','2014-06-19 02:35:51',NULL,1,'job',0),(11,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:36:26','2014-06-19 02:36:26',NULL,1,'job',0),(12,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:38:09','2014-06-19 02:38:09',NULL,1,'job',0),(13,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:38:35','2014-06-19 02:38:35',NULL,1,'job',0),(14,'News title','News body',NULL,'zh','2014-06-20 07:51:35','2014-06-20 07:51:35',NULL,1,'news',0),(15,'News title','News body',NULL,'zh','2014-06-20 07:53:56','2014-06-20 07:53:56',NULL,1,'news',0),(16,'News title','News body',NULL,'zh','2014-06-20 07:54:55','2014-06-20 07:54:55',NULL,1,'news',0),(17,'News title','News body',NULL,'zh','2014-06-20 07:56:01','2014-06-20 07:56:01',NULL,1,'news',0);
+INSERT INTO `content` VALUES (1,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:19:12','2014-06-19 02:19:12',NULL,NULL,'job',0),(2,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:20:05','2014-06-19 02:20:05',NULL,1,'job',0),(3,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:21:01','2014-06-19 02:21:01',NULL,1,'job',0),(4,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:21:18','2014-06-19 02:21:18',NULL,1,'job',0),(5,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:21:50','2014-06-19 02:21:50',NULL,1,'job',0),(6,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:22:49','2014-06-19 02:22:49',NULL,1,'job',0),(7,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:25:09','2014-06-19 02:25:09',NULL,1,'job',0),(8,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:33:57','2014-06-19 02:33:57',NULL,1,'job',0),(9,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:34:26','2014-06-19 02:34:26',NULL,1,'job',0),(10,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:35:51','2014-06-19 02:35:51',NULL,1,'job',0),(11,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:36:26','2014-06-19 02:36:26',NULL,1,'job',0),(12,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:38:09','2014-06-19 02:38:09',NULL,1,'job',0),(13,'上海大宁店','上海闸北区大宁国际',NULL,'zh','2014-06-19 02:38:35','2014-06-19 02:38:35',NULL,1,'job',0),(14,'News title','News body',NULL,'zh','2014-06-20 07:51:35','2014-06-20 07:51:35',NULL,1,'news',0),(15,'News title','News body',NULL,'zh','2014-06-20 07:53:56','2014-06-20 07:53:56',NULL,1,'news',0),(16,'News title','News body',NULL,'zh','2014-06-20 07:54:55','2014-06-20 07:54:55',NULL,1,'news',0),(17,'News title','News body',NULL,'zh','2014-06-20 07:56:01','2014-06-20 07:56:01',NULL,1,'news',0),(18,'Hsld',NULL,NULL,'zh','2014-06-21 15:35:00','2014-06-21 15:35:00',NULL,1,'lookbook',0),(19,'Hskd',NULL,NULL,'zh','2014-06-21 15:37:57','2014-06-21 15:37:57',NULL,1,'lookbook',0),(20,'Hskd',NULL,NULL,'zh','2014-06-21 15:39:18','2014-06-21 15:39:18',NULL,1,'lookbook',0),(21,'Hskd','','','zh','2014-06-21 15:39:59','2014-06-21 16:47:36','',1,'lookbook',0),(22,'测试 Lookbook',NULL,NULL,'zh','2014-06-21 16:16:00','2014-06-21 16:16:00',NULL,1,'lookbook',0);
 /*!40000 ALTER TABLE `content` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -86,14 +86,14 @@ DROP TABLE IF EXISTS `media`;
 CREATE TABLE `media` (
   `mid` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) DEFAULT NULL,
-  `uri` varchar(255) DEFAULT NULL,
+  `uri` text,
   `cdate` datetime DEFAULT NULL,
   `mdate` datetime DEFAULT NULL,
   `type` varchar(45) DEFAULT '',
   `cid` int(11) DEFAULT NULL,
   `field_name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`mid`)
-) ENGINE=InnoDB AUTO_INCREMENT=518 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=520 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,7 +102,7 @@ CREATE TABLE `media` (
 
 LOCK TABLES `media` WRITE;
 /*!40000 ALTER TABLE `media` DISABLE KEYS */;
-INSERT INTO `media` VALUES (517,'c74f116a5489989b9498e175c708d671','/upload/c74f116a5489989b9498e175c708d671.png','2014-06-21 13:36:32','2014-06-21 13:51:30','shop',8178,'shop_star_image');
+INSERT INTO `media` VALUES (517,'c74f116a5489989b9498e175c708d671','/upload/c74f116a5489989b9498e175c708d671.png','2014-06-21 13:36:32','2014-06-21 13:51:30','shop',8178,'shop_star_image'),(518,'432ecabeeed7acf890a53b98cbdad685','a:3:{i:0;s:44:\"/upload/a380cd82311d7715327dd452e0eb2ec0.png\";i:1;s:44:\"/upload/517f4c9082d81a0a9aae5da8c9aa3aa5.jpg\";i:2;s:44:\"/upload/432ecabeeed7acf890a53b98cbdad685.jpg\";}','2014-06-21 15:39:59','2014-06-21 16:47:36','lookbook',21,'look_book_image'),(519,'b6973ba9c27a7fd435f90b1246dd31c7','a:2:{i:0;s:44:\"/upload/96acde1f314d97c896a4e83193561f3a.png\";i:1;s:44:\"/upload/b6973ba9c27a7fd435f90b1246dd31c7.jpg\";}','2014-06-21 16:16:00','2014-06-21 16:16:00','lookbook',22,'look_book_image');
 /*!40000 ALTER TABLE `media` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -127,7 +127,7 @@ CREATE TABLE `session` (
 
 LOCK TABLES `session` WRITE;
 /*!40000 ALTER TABLE `session` DISABLE KEYS */;
-INSERT INTO `session` VALUES ('8bsoggn1k85a3u3960rlbkh915',1403374398,''),('8te3300jq28h4phqiosjgsjfs5',1403416441,'');
+INSERT INTO `session` VALUES ('8bsoggn1k85a3u3960rlbkh915',1403374398,''),('8te3300jq28h4phqiosjgsjfs5',1403446525,'');
 /*!40000 ALTER TABLE `session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -176,4 +176,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-06-21 14:11:39
+-- Dump completed on 2014-06-21 22:15:56
