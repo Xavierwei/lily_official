@@ -141,7 +141,7 @@ class MediaAR extends CActiveRecord {
         $uri = $row->uri;
       }
       if (is_string($uri) ) {
-        $obj->{$field_name} = Yii::app()->getBaseUrl(TRUE) .$row->uri;
+        $obj->{$field_name} = Yii::app()->getBaseUrl(TRUE) .$uri;
       }
       else {
         foreach ($uri as &$i) {
