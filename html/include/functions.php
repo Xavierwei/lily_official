@@ -6,7 +6,7 @@ else {
   define("LOADED_FUNCTION", 1);
 }
 
-define("ROOT_PATH", dirname('../'.__FILE__));
+define("ROOT_PATH", dirname(__FILE__));
 
 require_once(ROOT_PATH."/../admin/yii/yii.php");
 
