@@ -384,6 +384,10 @@
       };
       
       $scope.submitNews = function (event) {
+        var body = CKEDITOR.instances.body;
+        var bodyhtml = body.getData();
+        $scope.news.body = bodyhtml;
+        
         if ($scope.newsform.$valid) {
           $http({
             method: "POST",
@@ -392,7 +396,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            console.log(data);
+            //console.log(data);
           });
         }
         else {

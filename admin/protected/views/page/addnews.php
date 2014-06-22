@@ -14,8 +14,7 @@
         <label for=""><?php echo Yii::t("strings", "Body")?></label>
       </div>
       <div class="controls">
-        <textarea class="row-fluid" name="title" ng-model="news.body"  required cols="50" rows="10"></textarea>
-        <p class="text-error" ng-show="news.body.$error.required">This field is required</p>
+        <textarea class="row-fluid ckeditor" name="body" ng-model="news.body"  cols="50" rows="10"></textarea>
       </div>
     </div>
     
