@@ -33,7 +33,7 @@
         <label for=""><?php echo Yii::t("strings", "Type")?></label>
       </div>
       <div class="controls">
-        <select name="job_type" ng-model="job.job_type" required>
+        <select name="job_type" ng-model="job.job_type" required ng-options="job_type_label for job_type in job.job_types">
           <option value="<?php echo JobAR::JOB_TYPE_SOCIAL?>"><?php echo Yii::t("strings", "Social")?></option>
           <option value="<?php echo JobAR::JOB_TYPE_SCHOOL?>"><?php echo Yii::t("strings", "School")?></option>
         </select>

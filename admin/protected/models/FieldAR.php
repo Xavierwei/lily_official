@@ -64,7 +64,7 @@ class FieldAR extends CActiveRecord {
     $query->addCondition("field_name=:field_name");
     $query->params[":field_name"] = $field;
     $query->addCondition("cid=:cid");
-    $query->params[":cid"] = $this->cid;
+    $query->params[":cid"] = $content->cid;
     
     return FieldAR::model()->find($query);
   }

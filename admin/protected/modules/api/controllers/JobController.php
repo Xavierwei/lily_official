@@ -8,14 +8,17 @@ class JobController extends Controller {
     $job = new JobAR();
     
     if ($request->isPostRequest) {
-      $job->setAttributes($_POST);
-      
-      if ($job->save()) {
-        return $this->responseJSON($job, 'success');
+      $cid = $_POST["cid"];
+      if ($cid > 0) {
+        $job = JobAR::model()->findByPk($cid);
+        $job->setAttributes($_POST);
+        $job->update();
       }
       else {
-        $this->responseError("validate failed", ErrorAR::ERROR_VALIDATE_FAILED, $job->getErrors());
+        $job->setAttributes($_POST);
+        $job->save();
       }
+      return $this->responseJSON($job, 'success');
     }
     else {
       $this->responseError("http verb error", ErrorAR::ERROR_HTTP_VERB_ERROR);
@@ -24,11 +27,17 @@ class JobController extends Controller {
   
   public function actionIndex() {
     $request = Yii::app()->getRequest();
-    
-    $job = new JobAR();
-    $jobs = $job->getList();
-    
-    $this->responseJSON($jobs, "success");
+    $id = $request->getParam("id", FALSE);
+    if ($id) {
+      $job = JobAR::model()->findByPk($id);
+      $this->responseJSON($job, "success");
+    }
+    else {
+      $job = new JobAR();
+      $jobs = $job->getList();
+
+      $this->responseJSON($jobs, "success");
+    }
   }
 }
 

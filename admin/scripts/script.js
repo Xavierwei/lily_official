@@ -434,6 +434,27 @@
           alert("表单验证失败");
         }
       };
+      
+      // 初始化
+      $scope.init = function () {
+        console.log("INIT");
+        // 加载 Job 对象
+        var cid = angular.element("input[name='cid']").val();
+        $http({
+          method: "get",
+          params: {id: cid},
+          url: window.baseurl + "/api/job/index"
+        })
+        .success(function (res) {
+          if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
+            var data = res["data"];
+            $scope.job = data;
+          }
+          else {
+            alert("未知错误");
+          }
+        });
+      };
   }]);
 
   angular.element("a[data-cid]").click(function (event) {
