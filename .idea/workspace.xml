@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/streetshot.php" afterPath="$PROJECT_DIR$/html/streetsnap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/campaign.php" afterPath="$PROJECT_DIR$/html/campaign.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/flagshipstore.php" afterPath="$PROJECT_DIR$/html/flagshipstore.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/footer.php" afterPath="$PROJECT_DIR$/html/include/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/job.php" afterPath="$PROJECT_DIR$/html/job.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lookbook.php" afterPath="$PROJECT_DIR$/html/lookbook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/storelocator.php" afterPath="$PROJECT_DIR$/html/storelocator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" afterPath="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403435784587" ignored="false" />
     <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155165058" ignored="false" />
-    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403442278620" ignored="false" />
+    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403447153948" ignored="false" />
     <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403355376335" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/countdown.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401352610756" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402703079365" ignored="false" />
@@ -114,7 +121,7 @@
     <file path="$PROJECT_DIR$/../lemans_p1/protected/views/index/index.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402478791080" ignored="false" />
     <file path="$PROJECT_DIR$/../lemans_p1/protected/views/index/countdown.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402479289373" ignored="false" />
     <file path="$PROJECT_DIR$/../malibu/style/fontend/js/main.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402576887864" ignored="false" />
-    <file path="/footer.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403446302902" ignored="false" />
+    <file path="/footer.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403446865126" ignored="false" />
     <file path="$PROJECT_DIR$/../lemans_p1/protected/messages/zh_cn/lemans.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402491395181" ignored="false" />
     <file path="/lemans.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402491379182" ignored="false" />
     <file path="$PROJECT_DIR$/../ave_1000/yii/protected/views/record/myinfo.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402493041538" ignored="false" />
@@ -156,7 +163,7 @@
     <file path="/news.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403404709421" ignored="false" />
     <file path="/.htaccess" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403353966032" ignored="false" />
     <file path="/news.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403441025917" ignored="false" />
-    <file path="/lookbook.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403356898048" ignored="false" />
+    <file path="/lookbook.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403449037499" ignored="false" />
     <file path="/functions.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403404529841" ignored="false" />
     <file path="/nav.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403443728605" ignored="false" />
     <file path="/history.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403439726382" ignored="false" />
@@ -165,6 +172,11 @@
     <file path="/club_memberinfo.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403444107180" ignored="false" />
     <file path="/club_pointex.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403444137116" ignored="false" />
     <file path="/club_pointexdetail.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403444172711" ignored="false" />
+    <file path="/job.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403447403451" ignored="false" />
+    <file path="/flagshipstore.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403448696356" ignored="false" />
+    <file path="/storelocator.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403448797950" ignored="false" />
+    <file path="/campaign.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403449029792" ignored="false" />
+    <file path="/streetsnap.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403449135398" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,94 +196,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="club_pointexdetail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/club_pointexdetail.html">
+      <file leaf-file-name="job.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/job.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-              <folding>
-                <marker date="1403444640000" expanded="true" signature="13386:13487" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="club_pointinfo.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/club_pointinfo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-              <folding>
-                <marker date="1403444640000" expanded="true" signature="11172:11273" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="club_q&amp;a.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/club_q&amp;a.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-              <folding>
-                <marker date="1403444640000" expanded="true" signature="9710:9811" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="club_WISHLIST.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/club_WISHLIST.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="29" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-14.25">
-              <folding>
-                <marker date="1403444640000" expanded="true" signature="15011:15112" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="9" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+            <state line="20" column="41" selection-start="693" selection-end="693" vertical-scroll-proportion="-13.571428">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="events.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/events.php">
+      <file leaf-file-name="history.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/history.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="29" selection-start="1311" selection-end="1311" vertical-scroll-proportion="-20.357143">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news_cn.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/news_cn.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.464286">
-              <folding>
-                <marker date="1403434381000" expanded="true" signature="9184:9285" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/include/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="37" selection-start="4264" selection-end="4264" vertical-scroll-proportion="0.5656223">
-              <folding>
-                <marker date="1403446380000" expanded="true" signature="5011:5112" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/admin/protected/messages/zh_cn/strings.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="25" selection-start="1158" selection-end="1178" vertical-scroll-proportion="-21.714285">
+            <state line="31" column="0" selection-start="866" selection-end="914" vertical-scroll-proportion="-21.035715">
               <folding />
             </state>
           </provider>
@@ -280,7 +217,72 @@
       <file leaf-file-name="nav.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/include/nav.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="64" selection-start="1246" selection-end="1286" vertical-scroll-proportion="-12.892858">
+            <state line="33" column="122" selection-start="2046" selection-end="2060" vertical-scroll-proportion="-22.392857">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/admin/protected/messages/zh_cn/strings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="23" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.65068495">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lookbook_cn.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/lookbook_cn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="55" selection-start="3192" selection-end="3196" vertical-scroll-proportion="-4.75">
+              <folding>
+                <marker date="1403434381000" expanded="true" signature="11136:11237" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flagshipstore.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/flagshipstore.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="0" selection-start="3379" selection-end="3424" vertical-scroll-proportion="-35.392857">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lookbook.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/lookbook.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="108" selection-start="856" selection-end="861" vertical-scroll-proportion="-12.214286">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="streetsnap.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/streetsnap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="26" selection-start="568" selection-end="568" vertical-scroll-proportion="-10.857142">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="campaign.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/campaign.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="28" selection-start="757" selection-end="757" vertical-scroll-proportion="-13.571428">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="storelocator.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/storelocator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="20" selection-start="313" selection-end="352" vertical-scroll-proportion="-7.464286">
               <folding />
             </state>
           </provider>
@@ -304,13 +306,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/html/club_giftcards2.html" />
-        <option value="$PROJECT_DIR$/html/club_gifthis.html" />
-        <option value="$PROJECT_DIR$/html/club_login.html" />
-        <option value="$PROJECT_DIR$/html/club_member.html" />
-        <option value="$PROJECT_DIR$/html/club_member_reg.html" />
-        <option value="$PROJECT_DIR$/html/club_memberactivity.html" />
-        <option value="$PROJECT_DIR$/html/club_memberinfo.html" />
         <option value="$PROJECT_DIR$/html/club_memberrules.html" />
         <option value="$PROJECT_DIR$/html/club_pointex.html" />
         <option value="$PROJECT_DIR$/html/club_pointexdetail.html" />
@@ -318,8 +313,15 @@
         <option value="$PROJECT_DIR$/html/club_q&amp;a.html" />
         <option value="$PROJECT_DIR$/html/club_WISHLIST.html" />
         <option value="$PROJECT_DIR$/admin/css/main.css" />
-        <option value="$PROJECT_DIR$/html/admin/protected/messages/zh_cn/strings.php" />
         <option value="$PROJECT_DIR$/html/include/footer.php" />
+        <option value="$PROJECT_DIR$/html/job.php" />
+        <option value="$PROJECT_DIR$/html/css/style.css" />
+        <option value="$PROJECT_DIR$/html/storelocator.php" />
+        <option value="$PROJECT_DIR$/html/flagshipstore.php" />
+        <option value="$PROJECT_DIR$/html/streetsnap.php" />
+        <option value="$PROJECT_DIR$/html/campaign.php" />
+        <option value="$PROJECT_DIR$/html/lookbook.php" />
+        <option value="$PROJECT_DIR$/html/admin/protected/messages/zh_cn/strings.php" />
       </list>
     </option>
   </component>
@@ -537,66 +539,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="messages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zh_cn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily_official" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily_official" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="messages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="en_us" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily_official" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lily_official" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -778,106 +720,11 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/club_member_reg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-          <folding>
-            <marker date="1403444640000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/club_memberactivity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-          <folding>
-            <marker date="1403444640000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/club_memberinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-          <folding>
-            <marker date="1403444640000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/club_memberrules.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-          <folding>
-            <marker date="1403444640000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/club_pointex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-          <folding>
-            <marker date="1403444640000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/club_pointexdetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-          <folding>
-            <marker date="1403444640000" expanded="true" signature="13386:13487" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/club_pointinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-          <folding>
-            <marker date="1403444640000" expanded="true" signature="11172:11273" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/club_q&amp;a.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-          <folding>
-            <marker date="1403444640000" expanded="true" signature="9710:9811" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/club_WISHLIST.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="29" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-14.25">
-          <folding>
-            <marker date="1403444640000" expanded="true" signature="15011:15112" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="9" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/events.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="29" selection-start="1311" selection-end="1311" vertical-scroll-proportion="-20.357143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/news_cn.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.464286">
           <folding>
-            <marker date="1403434381000" expanded="true" signature="9184:9285" placeholder="..." />
+            <marker date="1403434381000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -889,26 +736,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/include/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="58" selection-start="1289" selection-end="1289" vertical-scroll-proportion="-16.285715">
+          <folding>
+            <marker date="1403447055000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="16" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/include/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="35" selection-start="479" selection-end="479" vertical-scroll-proportion="-14.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="313" column="45" selection-start="18469" selection-end="18469" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/history.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="866" selection-end="914" vertical-scroll-proportion="-21.035715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/job.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="41" selection-start="693" selection-end="693" vertical-scroll-proportion="-13.571428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/include/nav.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="64" selection-start="1246" selection-end="1286" vertical-scroll-proportion="-12.892858">
+        <state line="33" column="122" selection-start="2046" selection-end="2060" vertical-scroll-proportion="-22.392857">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/storelocator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="20" selection-start="313" selection-end="352" vertical-scroll-proportion="-7.464286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/streetsnap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="568" selection-end="568" vertical-scroll-proportion="-10.857142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/campaign.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="28" selection-start="757" selection-end="757" vertical-scroll-proportion="-13.571428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/lookbook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="108" selection-start="856" selection-end="861" vertical-scroll-proportion="-12.214286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/flagshipstore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="0" selection-start="3379" selection-end="3424" vertical-scroll-proportion="-35.392857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/lookbook_cn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="55" selection-start="3192" selection-end="3196" vertical-scroll-proportion="-4.75">
+          <folding>
+            <marker date="1403434381000" expanded="true" signature="11136:11237" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/admin/protected/messages/zh_cn/strings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="25" selection-start="1158" selection-end="1178" vertical-scroll-proportion="-21.714285">
+        <state line="40" column="23" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.65068495">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/include/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="37" selection-start="4264" selection-end="4264" vertical-scroll-proportion="0.5656223">
-          <folding>
-            <marker date="1403446380000" expanded="true" signature="5011:5112" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>

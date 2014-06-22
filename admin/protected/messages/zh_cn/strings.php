@@ -3,6 +3,7 @@
 return array(
     "LILY CLUB" => "Lily 会员",
     "VIP CLUB" => "会员",
+	"CLUB" => "会员",
     "Home" => "首页",
 	"BRAND" => "品牌",
 	"BRAND STORY" => "品牌故事",
@@ -25,11 +26,20 @@ return array(
 
     "LOOK<br />BOOK" => "产品目录",
 	"CAM-<br />PAIGN" => "大片",
+	"STREET<br />SNAP" => "街拍",
     "NEAR YOU" => "您的附近",
 	"City" => "城市",
 	"LOOK" => "查看",
 	"BUILDING EVERY DAY HISTORY" => "BUILDING EVERY DAY HISTORY",
 	"Search" => "搜索",
-	"Please Enter Keyword" => "请输入信息"
+	"Please Enter Keyword" => "请输入信息",
+	"HOTLINE" => "客服热线",
+	"JOB" => "招聘",
+	"CONTACT" => "联系我们",
+	"PRIVACY" => "法律法规",
+
+	"GARDEN" => "浪漫花园",
+	"MODERN ART" => "摩登艺术馆",
+	"OCEAN" => "奇幻海洋"
 
 );
