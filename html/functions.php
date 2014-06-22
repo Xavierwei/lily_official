@@ -30,6 +30,17 @@ function loadNews() {
 }
 
 /**
+ * 载入新闻
+ */
+function loadFirstNews() {
+    $query = new CDbCriteria();
+    $query->addCondition("status=:status");
+    $query->params[":status"] = NewsAR::STATUS_ENABLE;
+    $news = NewsAR::model()->find($query);
+    return $news;
+}
+
+/**
  * 载入职位
  */
 function loadJob($type = FALSE) {
@@ -93,7 +104,6 @@ function loadMilestone() {
   $milestone = new MilestoneAR();
   return $milestone->getList();
 }
-
 function searchNews() {
   $keyword = Yii::app()->getRequest()->getParam("keyword");
   $newsAr = new NewsAR();

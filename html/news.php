@@ -76,7 +76,7 @@
                     <!--  -->
                     <?php $newsList = loadNews();?>
                     <?php foreach ($newsList as $news):?>
-                    <div class="event_item">
+                    <div class="event_item" data-nid="<?php echo $news->cid;?>">
                         <div class="event_img">
                             <p></p>
 	                        <a href="javascript:;" class="event_open"><img src="images/news2.jpg" /></a>

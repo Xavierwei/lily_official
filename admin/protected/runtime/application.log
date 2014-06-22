@@ -1893,3 +1893,178 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/lily_official/html/admin/index.php/api/shop/location
 ---
+2014/06/21 14:52:22 [error] [exception.CException] exception 'CException' with message 'Property "NewsAR.id" is not defined.' in /Applications/MAMP/htdocs/lily_official/admin/yii/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(145): CComponent->__get('id')
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/models/ContentAR.php(88): CActiveRecord->__get('id')
+#2 /Applications/MAMP/htdocs/lily_official/html/news.php(79): ContentAR->__get('id')
+#3 {main}
+REQUEST_URI=/lily_official/html/news
+---
+2014/06/21 14:53:31 [error] [exception.CException] exception 'CException' with message 'Property "NewsAR.mid" is not defined.' in /Applications/MAMP/htdocs/lily_official/admin/yii/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(145): CComponent->__get('mid')
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/models/ContentAR.php(88): CActiveRecord->__get('mid')
+#2 /Applications/MAMP/htdocs/lily_official/html/news.php(79): ContentAR->__get('mid')
+#3 {main}
+REQUEST_URI=/lily_official/html/news
+---
+2014/06/21 14:53:33 [error] [exception.CException] exception 'CException' with message 'Property "NewsAR.mid" is not defined.' in /Applications/MAMP/htdocs/lily_official/admin/yii/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(145): CComponent->__get('mid')
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/models/ContentAR.php(88): CActiveRecord->__get('mid')
+#2 /Applications/MAMP/htdocs/lily_official/html/news.php(79): ContentAR->__get('mid')
+#3 {main}
+REQUEST_URI=/lily_official/html/news
+---
+2014/06/21 14:53:47 [error] [exception.CException] exception 'CException' with message 'Property "NewsAR.mid" is not defined.' in /Applications/MAMP/htdocs/lily_official/admin/yii/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(145): CComponent->__get('mid')
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/models/ContentAR.php(88): CActiveRecord->__get('mid')
+#2 /Applications/MAMP/htdocs/lily_official/html/news.php(81): ContentAR->__get('mid')
+#3 {main}
+REQUEST_URI=/lily_official/html/news
+---
+2014/06/21 15:21:43 [error] [php] Undefined variable: print_r (/Applications/MAMP/htdocs/lily_official/html/lookbook.php:4)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/lookbook.php(4): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/lookbook
+2014/06/21 15:31:16 [error] [php] date() expects parameter 2 to be long, string given (/Applications/MAMP/htdocs/lily_official/html/index.php:74)
+Stack trace:
+#0 unknown(0): CWebApplication->handleError()
+#1 /Applications/MAMP/htdocs/lily_official/html/index.php(74): date()
+REQUEST_URI=/lily_official/html/index
+2014/06/21 15:31:59 [error] [php] A non well formed numeric value encountered (/Applications/MAMP/htdocs/lily_official/html/index.php:74)
+Stack trace:
+#0 unknown(0): CWebApplication->handleError()
+#1 /Applications/MAMP/htdocs/lily_official/html/index.php(74): date()
+REQUEST_URI=/lily_official/html/index
+2014/06/21 16:18:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/21 16:18:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/21 16:18:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{item.src}}".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): CController->missingAction('{{item.src}}')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): CController->run('{{item.src}}')
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('shop/{{item.src...')
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/lily_official/html/admin/index.php/shop/%7B%7Bitem.src%7D%7D
+HTTP_REFERER=http://localhost/lily_official/html/admin/index.php/shop/add.html
+---
+2014/06/21 16:18:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "job/index".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('job/index')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/index.php/job/index.html
+HTTP_REFERER=http://localhost/lily_official/html/admin/index.php/shop/add.html
+---
+2014/06/21 16:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{item.src}}".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): CController->missingAction('{{item.src}}')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): CController->run('{{item.src}}')
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('shop/{{item.src...')
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/lily_official/html/admin/index.php/shop/%7B%7Bitem.src%7D%7D
+HTTP_REFERER=http://localhost/lily_official/html/admin/index.php/shop/add.html
+---
+2014/06/21 16:18:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "job/index".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('job/index')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/index.php/job/index.html
+HTTP_REFERER=http://localhost/lily_official/html/admin/index.php/shop/add.html
+---
+2014/06/21 16:18:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{item.src}}".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): CController->missingAction('{{item.src}}')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): CController->run('{{item.src}}')
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('shop/{{item.src...')
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/lily_official/html/admin/index.php/shop/%7B%7Bitem.src%7D%7D
+HTTP_REFERER=http://localhost/lily_official/html/admin/index.php/shop/add.html
+---
+2014/06/21 16:18:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "job/add".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('job/add')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/index.php/job/add.html
+HTTP_REFERER=http://localhost/lily_official/html/admin/index.php/shop/add.html
+---
+2014/06/21 16:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{item.src}}".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): CController->missingAction('{{item.src}}')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): CController->run('{{item.src}}')
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('shop/{{item.src...')
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/lily_official/html/admin/index.php/shop/%7B%7Bitem.src%7D%7D
+HTTP_REFERER=http://localhost/lily_official/html/admin/index.php/shop/add.html
+---
+2014/06/21 16:18:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "milestone".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): CController->missingAction('milestone')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): CController->run('milestone')
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('page/milestone')
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/lily_official/html/admin/index.php/page/milestone.html
+HTTP_REFERER=http://localhost/lily_official/html/admin/index.php/shop/add.html
+---
+2014/06/21 16:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{media}}".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): CController->missingAction('{{media}}')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): CController->run('{{media}}')
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('page/{{media}}')
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/lily_official/html/admin/index.php/page/%7B%7Bmedia%7D%7D
+HTTP_REFERER=http://localhost/lily_official/html/admin/index.php/page/addlookbook.html
+---
+2014/06/21 16:18:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/21 16:18:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---

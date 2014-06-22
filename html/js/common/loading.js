@@ -26,8 +26,9 @@ define([
 
         if (dEvent.length) {
             dEvent.delegate('a.event_open', 'click', function() {
+                var news_id = $(this).parents('.event_item').data('nid');
                 api.getNews({
-                    data : { id : '1231313' },
+                    data : { news_id : news_id },
                     success : function (oData) {
                         var sNews = Handlebars.compile(newsTpl)(oData);
 
