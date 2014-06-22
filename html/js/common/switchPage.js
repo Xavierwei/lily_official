@@ -22,91 +22,89 @@ define([
 
 
     // loading animation start
+    var updateBodyClass = function () {
+        var str = sCur;
+        var pos_cn = str.indexOf('_cn');
+        if(pos_cn > 0) {
+            str = str.substring(0, pos_cn);
+        }
+
+        var pos_param = str.indexOf('?');
+        if(pos_param > 0) {
+            str = str.substring(0, pos_param);
+        }
+
+        // update page class
+        if (!helper.isPC()) {
+            str = str + ' ' + 'mobile';
+
+            if (dBody.hasClass('open')) {
+                str = str + ' ' + 'open';
+            }
+        }
+
+        dBody.attr('class', str);
+    }
+
+    var updateBgColor = function () {
+        var bgColor;
+        switch(sCur) {
+            case 'index':
+                bgColor = '255, 241, 244';
+                break;
+            case 'news':
+                bgColor = '221, 235, 243';
+                break;
+            case 'campaign':
+                bgColor = '241, 255, 252';
+                break;
+            case 'lookbook':
+                bgColor = '250, 250, 236';
+                break;
+            case 'streetshot':
+                bgColor = '250, 250, 236';
+                break;
+            case 'starshop':
+                bgColor = '221, 235, 243';
+                break;
+            case 'storelocator':
+                bgColor = '221, 235, 243';
+                break;
+            case 'job':
+                bgColor = '222, 213, 202';
+                break;
+            case 'contact':
+                bgColor = '221, 235, 243';
+                break;
+            case 'privacy':
+                bgColor = '243, 222, 221';
+                break;
+            default:
+                bgColor = '255, 241, 244';
+        }
+        dBody.attr('data-0', 'background-color:rgb(255,255,255);');
+        dBody.attr('data-500', 'background-color:rgb('+bgColor+');');
+    }
+
+
+    var getQueryString = function(name) {
+        var reg = new RegExp("(.*?)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.href.match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+
+
+    var localHash = function () {
+        var hashtag = getQueryString('hash');
+        if($('#'+hashtag).length > 0) {
+            var top = $('#'+hashtag).offset().top - 100;
+            setTimeout(function(){
+                $('html,body').animate({scrollTop:top});
+            },10);
+        }
+    }
     var pageSwitchAnimate = function () {
-        var updateBodyClass = function () {
-            var str = sCur;
-            var pos_cn = str.indexOf('_cn');
-            if(pos_cn > 0) {
-                str = str.substring(0, pos_cn);
-            }
-
-            var pos_param = str.indexOf('?');
-            if(pos_param > 0) {
-                str = str.substring(0, pos_param);
-            }
-
-            // update page class
-            if (!helper.isPC()) {
-                str = str + ' ' + 'mobile';
-
-                if (dBody.hasClass('open')) {
-                    str = str + ' ' + 'open';
-                }
-            }
-
-            dBody.attr('class', str);
-        }
-
-        var updateBgColor = function () {
-            var bgColor;
-            switch(sCur) {
-                case 'index':
-                    bgColor = '255, 241, 244';
-                    break;
-                case 'news':
-                    bgColor = '221, 235, 243';
-                    break;
-                case 'campaign':
-                    bgColor = '241, 255, 252';
-                    break;
-                case 'lookbook':
-                    bgColor = '250, 250, 236';
-                    break;
-                case 'streetshot':
-                    bgColor = '250, 250, 236';
-                    break;
-                case 'starshop':
-                    bgColor = '221, 235, 243';
-                    break;
-                case 'storelocator':
-                    bgColor = '221, 235, 243';
-                    break;
-                case 'job':
-                    bgColor = '222, 213, 202';
-                    break;
-                case 'contact':
-                    bgColor = '221, 235, 243';
-                    break;
-                case 'privacy':
-                    bgColor = '243, 222, 221';
-                    break;
-                default:
-                    bgColor = '255, 241, 244';
-            }
-            dBody.attr('data-0', 'background-color:rgb(255,255,255);');
-            dBody.attr('data-500', 'background-color:rgb('+bgColor+');');
-        }
-
-
-        var getQueryString = function(name) {
-            var reg = new RegExp("(.*?)" + name + "=([^&]*)(&|$)", "i");
-            var r = window.location.hash.match(reg);
-            if (r != null) return unescape(r[2]); return null;
-        }
-
-
-        var localHash = function () {
-            var hashtag = getQueryString('hash');
-            if($('#'+hashtag).length > 0) {
-                var top = $('#'+hashtag).offset().top - 100;
-                console.log(top);
-                setTimeout(function(){
-                    $('html,body').animate({scrollTop:top});
-                },10);
-            }
-        }
-
-
+        
         // if using mobile or ugly ie, stop the animation
         if (!helper.canAnimate()) {
             return updateBodyClass();
@@ -128,9 +126,9 @@ define([
                 //updateBgColor();
 
                 // local hash
-//                setTimeout(function(){
-//                    localHash();
-//                },1000);
+                   setTimeout(function(){
+                       localHash();
+                   },1000);
 
             };
 
