@@ -74,7 +74,8 @@
                 </div>
                 <div class="limit event_list cs-clear">
                     <!--  -->
-                    <?php $newsList = loadNews();?>
+
+                    <?php $newsList = searchNews();?>
                     <?php foreach ($newsList as $news):?>
                     <div class="event_item" data-nid="<?php echo $news->cid;?>">
                         <div class="event_img">
