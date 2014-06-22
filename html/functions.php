@@ -93,3 +93,9 @@ function loadMilestone() {
   $milestone = new MilestoneAR();
   return $milestone->getList();
 }
+
+function searchNews() {
+  $keyword = Yii::app()->getRequest()->getParam("keyword");
+  $newsAr = new NewsAR();
+  return $newsAr->searchWithKeyword($keyword);
+}
