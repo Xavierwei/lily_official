@@ -113,6 +113,16 @@
             </li>
         </ul>
     </div>
+
+    <div class="popup_overlay"></div>
+    <div class="search_popup popup">
+        <div class="popup_close"></div>
+        <div class="search_form">
+	        <input class="search_input" type="text" placeholder="<?php echo Yii::t("strings", "Please Enter Keyword")?>" />
+	        <input class="search_btn" type="submit" value="<?php echo Yii::t("strings", "Search")?>" />
+        </div>
+    </div>
+
     <!--  -->
     <script type="text/javascript" src="js/lib/modernizr.min.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=AwxxvHue9bTdFietVWM4PLtk"></script>

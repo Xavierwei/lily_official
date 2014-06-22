@@ -28,6 +28,8 @@ return array(
     "NEAR YOU" => "您的附近",
 	"City" => "城市",
 	"LOOK" => "查看",
-	"BUILDING EVERY DAY HISTORY" => "BUILDING EVERY DAY HISTORY"
+	"BUILDING EVERY DAY HISTORY" => "BUILDING EVERY DAY HISTORY",
+	"Search" => "搜索",
+	"Please Enter Keyword" => "请输入信息"
 
 );
