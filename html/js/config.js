@@ -5,6 +5,7 @@ require.config({
         Handlebars : 'lib/handlebars/handlebars',
         imagesLoaded : 'lib/imagesLoaded/imagesLoaded.min',
         skrollr : 'lib/skrollr/skrollr.min',
+        History: 'lib/history.require',
         templates:  '../js/templates'
     },
     priority: [

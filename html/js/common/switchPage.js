@@ -2,12 +2,13 @@ define([
     // libs
     'jQuery',
     'Handlebars',
+    'History',
     // apps
     'common/loading',
     'common/helper',
     'lib/text!templates/links.html',
     'lib/text!templates/weixin.html'
-], function($, Handlebars, loading, helper, linksTpl, weixinTpl) {
+], function($, Handlebars, History , loading, helper, linksTpl, weixinTpl) {
     var sPath = location.pathname,
         sCur = sPath.replace(sPath.match(/^.*\php\//), ''),
         isNext,
@@ -18,6 +19,7 @@ define([
         dTape = $('.showy'),
         sLinks = Handlebars.compile(linksTpl)(),
         sWeixin = Handlebars.compile(weixinTpl)();
+
 
     // loading animation start
     var pageSwitchAnimate = function () {
@@ -101,9 +103,7 @@ define([
                 setTimeout(function(){
                     $('html,body').animate({scrollTop:top});
                 },10);
-
             }
-
         }
 
 
@@ -237,14 +237,37 @@ define([
             dMenu = $('.header .menu'),
             dNav = $('#nav'),
             dMbmenu = $('#nav'),
+            autoClick = false,
             showLinksModal = function () {
+                var href = location.href;
+                var match = href.match( /\/(\w+)(\?[.*])?$/ );
+                var page = match ? match[1] : 'index';
+                History.replaceState( { url: page } , 'page' , href  );
+                // Bind to StateChange Event
+                History.Adapter.bind(window,'statechange',function(){ // Note: We are using statechange instead of popstate
+                    var State = History.getState(); // Note: We are using History.getState() instead of event.state
+
+                    if( autoClick ){
+                        isNext = State.data.isNext;
+                    } else {
+                        isNext = !State.data.isNext;
+                        sCur = State.data.url;
+                    }
+
+                    autoClick = false;
+                    // remove
+                    $.fancybox.close(true);
+                    // page update
+                    updatePage();
+                });
+
                 // for special method
                 dMbmenu.delegate('.item a', 'click', function(e) {
                     var dTarget = $(this),
                         dCur = dMbmenu.find('a.on'),
                         sTitle = dTarget.attr('title'),
-                        nCur = dCur.attr('href').replace('#', '') ? dCur.attr('href').replace('#', '') : 0,
-                        nTarget = dTarget.attr('href').replace('#', '');
+                        nCur = dCur.attr('index') || 0,
+                        nTarget = dTarget.attr('index') || 0;
 
 
                     // click self
@@ -256,20 +279,15 @@ define([
                     if (sTitle) {
                         dCur.removeClass('on');
                         dTarget.addClass('on');
-                        sCur = nTarget;
-
+                        sCur = dTarget.attr('href').replace(/[./]+(\w+)/g, '$1');
                         // update animation judge params
-                        if (nTarget > nCur) {
-                            isNext = true;
-                        } else {
-                            isNext = false;
-                        }
-
-                        // remove
-                        $.fancybox.close(true);
-
-                        // page update
-                        updatePage()
+                        isNext = nTarget > nCur;
+                        autoClick = true;
+                        History.pushState({
+                            isNext: isNext,
+                            url: sCur
+                        }, sTitle , "./" + sCur);
+                        return false;
                     }
                 })
 

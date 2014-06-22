@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/lookbook.html" afterPath="$PROJECT_DIR$/html/lookbook.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/milestone.html" afterPath="$PROJECT_DIR$/html/milestone.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/starshop.html" afterPath="$PROJECT_DIR$/html/starshop.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/storelocator.html" afterPath="$PROJECT_DIR$/html/storelocator.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/streetshot.html" afterPath="$PROJECT_DIR$/html/streetshot.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/.htaccess" afterPath="$PROJECT_DIR$/html/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/api.js" afterPath="$PROJECT_DIR$/html/js/common/api.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/campaign.html" afterPath="$PROJECT_DIR$/html/campaign.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/functions.php" afterPath="$PROJECT_DIR$/html/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/loading.js" afterPath="$PROJECT_DIR$/html/js/common/loading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/templates/news.html" afterPath="$PROJECT_DIR$/html/js/templates/news.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/news.php" afterPath="$PROJECT_DIR$/html/news.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/select.js" afterPath="$PROJECT_DIR$/html/js/common/select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/switchPage.js" afterPath="$PROJECT_DIR$/html/js/common/switchPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
@@ -168,11 +154,11 @@
     <file path="/select.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403353359852" ignored="false" />
     <file path="/storelocator.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403102200204" ignored="false" />
     <file path="/winner.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403170265217" ignored="false" />
-    <file path="/news.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403355238661" ignored="false" />
+    <file path="/news.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403404709421" ignored="false" />
     <file path="/.htaccess" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403353966032" ignored="false" />
     <file path="/news.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403355517034" ignored="false" />
     <file path="/lookbook.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403356898048" ignored="false" />
-    <file path="/functions.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403357128694" ignored="false" />
+    <file path="/functions.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403404529841" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,12 +196,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="news.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/news.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="35" selection-start="3313" selection-end="3313" vertical-scroll-proportion="-7.464286">
+            <state line="78" column="51" selection-start="3384" selection-end="3384" vertical-scroll-proportion="0.44461778">
               <folding>
-                <marker date="1403355238000" expanded="true" signature="9194:9295" placeholder="..." />
+                <marker date="1403415708000" expanded="true" signature="9197:9298" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -233,18 +219,18 @@
       <file leaf-file-name="lookbook.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/lookbook.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="-2.0357144">
+            <state line="17" column="18" selection-start="689" selection-end="689" vertical-scroll-proportion="-11.535714">
               <folding>
-                <marker date="1403356920000" expanded="true" signature="10736:10837" placeholder="..." />
+                <marker date="1403402015000" expanded="true" signature="10736:10837" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="2" selection-start="2192" selection-end="2192" vertical-scroll-proportion="0.8221529">
+            <state line="106" column="19" selection-start="2385" selection-end="2395" vertical-scroll-proportion="-15.428572">
               <folding />
             </state>
           </provider>
@@ -255,7 +241,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="73" column="104" selection-start="3243" selection-end="3243" vertical-scroll-proportion="-5.428571">
               <folding>
-                <marker date="1403357594000" expanded="true" signature="13497:13598" placeholder="..." />
+                <marker date="1403402015000" expanded="true" signature="13497:13598" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -314,7 +300,6 @@
         <option value="$PROJECT_DIR$/html/js/common/switchPage.js" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/html/.htaccess" />
-        <option value="$PROJECT_DIR$/html/news.php" />
         <option value="$PROJECT_DIR$/html/js/common/loading.js" />
         <option value="$PROJECT_DIR$/html/js/templates/news.html" />
         <option value="$PROJECT_DIR$/html/js/common/api.js" />
@@ -322,6 +307,7 @@
         <option value="$PROJECT_DIR$/html/css/style.css" />
         <option value="$PROJECT_DIR$/html/index.php" />
         <option value="$PROJECT_DIR$/html/functions.php" />
+        <option value="$PROJECT_DIR$/html/news.php" />
       </list>
     </option>
   </component>
@@ -496,13 +482,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="830" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21377331" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21377331" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -657,24 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/lookbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="-2.0357144">
-          <folding>
-            <marker date="1403356920000" expanded="true" signature="10736:10837" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="35" selection-start="3313" selection-end="3313" vertical-scroll-proportion="-7.464286">
-          <folding>
-            <marker date="1403355238000" expanded="true" signature="9194:9295" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="106" column="28" selection-start="4963" selection-end="4963" vertical-scroll-proportion="0.0">
@@ -686,15 +654,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="104" selection-start="3243" selection-end="3243" vertical-scroll-proportion="-5.428571">
           <folding>
-            <marker date="1403357594000" expanded="true" signature="13497:13598" placeholder="..." />
+            <marker date="1403402015000" expanded="true" signature="13497:13598" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/lookbook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="689" selection-end="689" vertical-scroll-proportion="-11.535714">
+          <folding>
+            <marker date="1403402015000" expanded="true" signature="10736:10837" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="2" selection-start="2192" selection-end="2192" vertical-scroll-proportion="0.8221529">
+        <state line="106" column="19" selection-start="2385" selection-end="2395" vertical-scroll-proportion="-15.428572">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="51" selection-start="3384" selection-end="3384" vertical-scroll-proportion="0.44461778">
+          <folding>
+            <marker date="1403415708000" expanded="true" signature="9197:9298" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
