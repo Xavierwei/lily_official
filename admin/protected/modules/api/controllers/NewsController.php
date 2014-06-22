@@ -7,14 +7,17 @@ class NewsController extends Controller {
     $news = new NewsAR();
     
     if ($request->isPostRequest) {
-      $news->setAttributes($_POST);
-      
-      if ($news->save()) {
-        return $this->responseJSON($news, 'success');
+      $cid = $_POST["cid"];
+      if ($cid > 0) {
+        $news = NewsAR::model()->findByPk($cid);
+        $news->setAttributes($_POST);
+        $news->update();
       }
       else {
-        $this->responseError("validate failed", ErrorAR::ERROR_VALIDATE_FAILED, $news->getErrors());
+        $news->setAttributes($_POST);
+        $news->save();
       }
+      return $this->responseJSON($news, 'success');
     }
     else {
       $this->responseError("http verb error", ErrorAR::ERROR_HTTP_VERB_ERROR);

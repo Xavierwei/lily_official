@@ -228,23 +228,25 @@
       $scope.init = function () {
         // 加载lookbook 对象
         var cid = angular.element("input[name='cid']").val();
-        $http({
-          method: "get",
-          params: {id: cid},
-          url: window.baseurl + "/api/streehot/index"
-        })
-        .success(function (res) {
-          if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
-            var data = res["data"];
-            $scope.streehot = data;
-            $.each( $scope.streehot.streehot_image, function (i, val) {
-              $scope.media.image.push(val);
-            });
-          }
-          else {
-            alert("未知错误");
-          }
-        });
+        if (cid > 0 )  {
+          $http({
+            method: "get",
+            params: {id: cid},
+            url: window.baseurl + "/api/streehot/index"
+          })
+          .success(function (res) {
+            if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
+              var data = res["data"];
+              $scope.streehot = data;
+              $.each( $scope.streehot.streehot_image, function (i, val) {
+                $scope.media.image.push(val);
+              });
+            }
+            else {
+              alert("未知错误");
+            }
+          });
+        }
       };
       
       // 绑定图片上传事件
@@ -320,6 +322,9 @@
   AdminModule.controller("MilestoneForm", ["$scope", "$http", function ($scope, $http) {
       $scope.submitMilestone = function (event) {
         if ($scope.milestoneform.$valid) {
+          var body = CKEDITOR.instances.body;
+          var bodyhtml = body.getData();
+          $scope.milestone.body = bodyhtml;
           $http({
             method: "POST",
             url: window.baseurl + "/api/milestone/add",
@@ -332,6 +337,27 @@
         }
         else {
           alert("验证失败");
+        }
+      };
+      
+      $scope.init = function () {
+        // 加载lookbook 对象
+        var cid = angular.element("input[name='cid']").val();
+        if (cid > 0 )  {
+          $http({
+            method: "get",
+            params: {id: cid},
+            url: window.baseurl + "/api/milestone/index"
+          })
+          .success(function (res) {
+            if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
+              var data = res["data"];
+              $scope.milestone = data;
+            }
+            else {
+              alert("未知错误");
+            }
+          });
         }
       };
   }]);
@@ -351,6 +377,27 @@
       $scope.news.thumbnail = "";
       
       $scope.init = function () {
+        
+        // 加载 news 对象
+        var cid = angular.element("input[name='cid']").val();
+        if (cid > 0 )  {
+          $http({
+            method: "get",
+            params: {news_id: cid},
+            url: window.baseurl + "/api/news/index"
+          })
+          .success(function (res) {
+            if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
+              var data = res["data"];
+              $scope.news = data;
+              $scope.media.image = data.thumbnail;
+            }
+            else {
+              alert("未知错误");
+            }
+          });
+        }
+        
         // 绑定图片上传事件
         angular.element("input[type='file']").live("change", function(event) {
           var el = angular.element(event.target);
