@@ -5,7 +5,7 @@ class ShopController extends Controller {
   public $layout = "/layouts/main";
   
   public function actionIndex() {
-    $shopes = ShopAR::model()->getList();
+    $shopes = ShopAR::model()->getList(ShopAR::STATUS_OPEN);
     $this->render("index", array("shopes" => $shopes));
   }
   

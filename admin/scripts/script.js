@@ -455,7 +455,7 @@
     }
   });
   
-  angular.element("a[data-cid]").click(function (event) {
+  angular.element("a[data-sid]").click(function (event) {
     var el = angular.element(this);
     var sid = el.attr("data-sid");
     if (sid > 0) {

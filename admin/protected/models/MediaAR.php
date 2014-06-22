@@ -70,6 +70,9 @@ class MediaAR extends CActiveRecord {
    */
   public function saveMediaToObject($obj, $field_name) {
     $request = Yii::app()->getRequest();
+    if (!$request->isPostRequest) {
+      return;
+    }
     $uri = $request->getPost($field_name);
     if (is_string($uri)) {
       if (strpos($uri, "http://") !== FALSE) {

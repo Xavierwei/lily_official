@@ -167,7 +167,7 @@ class ShopAR extends CActiveRecord {
   }
   
   public function closeShop() {
-    if ($this->sid) {
+    if ($this->shop_id) {
       $this->status = self::STATUS_CLOSED;
     }
     $this->update();
