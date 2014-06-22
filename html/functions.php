@@ -30,6 +30,17 @@ function loadNews() {
 }
 
 /**
+ * 载入新闻
+ */
+function loadFirstNews() {
+    $query = new CDbCriteria();
+    $query->addCondition("status=:status");
+    $query->params[":status"] = NewsAR::STATUS_ENABLE;
+    $news = NewsAR::model()->find($query);
+    return $news;
+}
+
+/**
  * 载入职位
  */
 function loadJob($type = FALSE) {
@@ -85,4 +96,4 @@ function thumbnail($uri, $size) {
 }
 
 
-print thumbnail("http://lily.local/admin/upload/517f4c9082d81a0a9aae5da8c9aa3aa5.jpg", array(500, 500));
+//print thumbnail("http://lily.local/admin/upload/517f4c9082d81a0a9aae5da8c9aa3aa5.jpg", array(500, 500));

@@ -1,0 +1,320 @@
+<?php require_once 'functions.php';?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="zh-CN" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=640, minimum-scale=0.5, maximum-scale=1, target-densityDpi=290,user-scalable = no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>Lily</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaelementplayer.css">
+    <link rel="stylesheet" type="text/css" href="css/response.css">
+</head>
+<body class='index'>
+    <div class="header">
+        <ul id='nav'>
+            <li class='item'>
+                <h2><span class="club">VIP CLUB</span></h2>
+                <ol>
+                    <li><a href='javascript:;' index='9'>LILY CLUB</a></li>
+                    <li><a href='javascript:;' index='10'>TERMS</a></li>
+                    <li><a href='javascript:;' index='11'>POINT CHECKING</a></li>
+                    <li><a href='javascript:;' index='12'>REDEMPTION</a></li>
+                </ol>
+            </li>
+            <li class='item'>
+                <h2><a href='#index' title='index' index='1'>Home</a></h2>
+            </li>
+            <li class='item'>
+                <h2>BRAND</h2>
+                <ol>
+                    <li><a href='#index?hash=brand_story' class="on" title='index' index='1'>BRAND STORY</a></li>
+                    <li><a href='#milestone' title='milestone' index='2'>MILESTONE</a></li>
+                    <li><a href='#news' title='news' index='3'>NEWS</a></li>
+                </ol>
+            </li>
+            <li class='item'>
+                <h2>PRODUCT</h2>
+                <ol>
+                    <li><a href='#campaign' title='campaign' index='4'>CAMPAIGN</a></li>
+                    <li><a href='#lookbook' title="lookbook" index='5'>LOOKBOOK</a></li>
+                    <li><a href='#streetshot' title="streetshot" index='6'>STREET SHOTS</a></li>
+                </ol>
+            </li>
+            <li class='item'>
+                <h2>SHOP</h2>
+                <ol>
+                    <li><a href='#starshop' title="starshop" index='7'>STAR SHOP</a></li>
+                    <li><a href='#storelocator' title="storelocator" index='8'>STORE LOCATOR</a></li>
+                </ol>
+            </li>
+        </ul>
+
+        <a class='menu'></a>
+        <div class="language">
+            <a href="index" class="lang_en"></a>
+            <a href="index_cn" class="lang_cn"></a>
+        </div>
+        <div class="search"></div>
+    </div>
+
+    <div id='wrap'>
+        <!--  -->
+        <div class="page page_home">
+            <!--  -->
+            <div class="limit home_new">
+                <?php $firstNews = loadFirstNews(); ?>
+                <h2>NEWS</h2>
+                <div class="tit_time"><?php echo date('d/m/Y',strtotime($firstNews->attributes['cdate']));?></div>
+                <div class="home_new_cn">
+                    <?php echo $firstNews->attributes['body'];?>
+                </div>
+                <div class="home_new_more cs-clear" >
+                    <a href="#news" class="btn btnlink" ><span>More news</span><span>More news</span></a>
+                </div>
+            </div>
+            <!--  -->
+            <div class="limit home_img1">
+                <img src="images/home_img1.jpg" />
+            </div>
+            <!--  -->
+            <div class="limit home_brand cs-clear" id="brand_story">
+                <div class='left'>
+                    <h2>BRAND</h2>
+                    <div class="home_brand_txt">
+                        <p>
+                            年轻OL的商务着装，可能太严肃，可能太时髦，或者像Lily这样正合适。 作为年轻OL商务时装的开创者，Lily秉承时尚与商务完美融合的理念，以清新明快、现代简约的风格，为都市年轻职业女性设计商务场合＂正合适＂的商务时装。
+                        </p>
+                        <p>
+                            “力度、女性化、现代、明快”是Lily品牌核心的产品风格。设计师以“现代艺术范”为创作灵感，与超现实主义、摩登时代、拜占庭艺术等时尚潮流元素相结合，以简洁利落的廓形、独具创意的色彩和印花创造出独特的商务时装美学。
+                        </p>
+                        <p>
+                            Lily商务时装已在中国开设700余家品牌店铺，入驻上海、北京、广州、深圳、武汉等250个城市，并在俄罗斯、沙特、泰国、新加坡、科威特等国际市场开设零售店铺近60家。
+                        </p>
+                        <p>
+                            Lily品牌成功登陆国际米兰时装周、德国CPD等多个国际性时尚盛会，并在米兰时装周上荣膺“新锐设计师”大奖，成为国际时尚圈倍受关注的新锐时装品牌。
+                        </p>
+                    </div>
+                </div>
+                <div class='right'>
+                    <div class="home_img2">
+                        <img src="images/home_img2.jpg" />
+                    </div>
+                    <div class="home_img3">
+                        <img src="images/home_img3.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class='limit cs-clear'>
+                <div class="left">
+                    <!--  -->
+                    <div class="weibo">
+                        <div class="weibo_wbbg"></div>
+                        <div class="weibo_wbbox">
+                            <div class="weibo_wblogo"></div>
+                            <div class="weibo_wbtime">Monday 23 may</div>
+                            <div class="weibo_wbcom">年轻OL的商务着装，可能太严肃，可能太时髦，或者像Lily这样正合适 作为年轻OL商务时装的开创者，</div>
+                            <div class="weibo_wb_btn">
+                                <a href="http://weibo.com/lilyofficial" target="_blank" class="btnlink"><span>Follow</span><span>Follow</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#campaign" class="home_cpbox">
+                        <h2>
+                            cam-
+                            <br />
+                            paign
+                        </h2>
+                        <p>FW/14</p>
+                        <p>
+                            featuring
+                            <br />
+                            barbara palvin
+                        </p>
+                    </a>
+                </div>
+                <!--  -->
+                <div class="right">
+                    <div class="home_lookbook">
+                        <a href="#lookbook" class="home_lb_item border">
+                            <h2>
+                                LOOK
+                                <br />
+                                BOOK
+                            </h2>
+                            <p>FW/14</p>
+                        </a>
+                        <div class="home_lb_item">
+                            <a href="#lookbook" class='border'>GARDEN</a>
+                        </div>
+                        <div class="home_lb_item">
+                            <a href="#lookbook?hash=s2" class='border'>MODERN ART</a>
+                        </div>
+                        <div class="home_lb_item">
+                            <a href="#lookbook?hash=s3" class='border'>OCEAN</a>
+                        </div>
+                        <div class='videowrap'>
+                            <img class='video fadeout' src="images/home_img4.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div id='home-selectbox' class="home_store">
+                <h2>STORE</h2>
+                <div class="home_sttxt">CLOSE TO YOU</div>
+                <div class="store_select cs-clear" id='province'>
+                    <a class="store_selectbg cs-clear" >
+                        <span class="store_sl_txt">Province</span>
+                        <span class="store_sl_icon"></span>
+                    </a>
+                    <select class="store_sl"></select>
+                </div>
+                <div class="store_select cs-clear" id='city'>
+                    <a class="store_selectbg cs-clear" >
+                        <span class="store_sl_txt">City</span>
+                        <span class="store_sl_icon"></span>
+                    </a>
+                    <select class="store_sl"></select>
+                </div>
+            </div>
+
+            <div id='map'>
+            </div>
+        </div>
+        <!--  -->
+        <div class="footer">
+            <div class="ft_logo"></div>
+
+            <div class="ft_com">
+                <div class="ft_list">
+	                <h2>BRAND</h2>
+	                <ol>
+		                <li><a class='fadeout' href="#index">BRANDS STORY</a></li>
+		                <li><a class='fadeout' href='#milestone'>MILESTONE</a></li>
+		                <li><a class='fadeout' href='#news'>NEWS</a></li>
+	                </ol>
+                </div>
+                <div class="ft_list">
+	                <h2>PRODUCT</h2>
+	                <ol>
+		                <li><a class='fadeout' href="#campaign">CAMPAIGN</a></li>
+		                <li><a class='fadeout' href="#lookbook">LOOKBOOK</a></li>
+		                <li><a class='fadeout' href="#streetshot">STREET SHOTS</a></li>
+	                </ol>
+                </div>
+	            <div class="ft_list">
+		            <h2>SHOP</h2>
+		            <ol>
+			            <li><a class='fadeout' href='#starshop'>STAR SHOP</a></li>
+			            <li><a class='fadeout' href='#storelocator'>STORE LOCATOR</a></li>
+		            </ol>
+	            </div>
+	            <div class="ft_list">
+		            <h2>CLUB</h2>
+		            <ol>
+			            <li><a class='fadeout' href="javascript:;">LILY CLUB</a></li>
+			            <li><a class='fadeout' href="javascript:;">TERMS</a></li>
+			            <li><a class='fadeout' href="javascript:;">POINT CHECKING</a></li>
+			            <li><a class='fadeout' href="javascript:;">REDEMPTION</a></li>
+		            </ol>
+	            </div>
+	            <div class="ft_links">
+		            <ol>
+			            <li><a class='fadeout' href="#job">JOB</a></li>
+			            <li><a class='fadeout' href="#contact">CONTACT</a></li>
+			            <li><a class='fadeout' href="#privacy">PRIVACY</a></li>
+		            </ol>
+	            </div>
+                <div class="ft_touch">
+                    <p>lets stay in touch</p>
+	                <br />
+                    <div class="ft_share cs-clear">
+                        <a href="http://weibo.com/lilyofficial" target='_blank' class="ft_shareitem ft_share1"></a>
+                        <a href="javascript:;" class="ft_shareitem ft_share3"></a>
+                    </div>
+                    <p>
+                        HOTLINE
+                        <br />
+                        134-654-987
+                    </p>
+                </div>
+	            <div class="cs-clear"></div>
+            </div>
+
+            <div class="ft_copy">© 2013 LILY OFFICAIL WEBSITE 沪ICP备10202509号-2</div>
+        </div>
+    </div>
+
+    <!-- showy -->
+    <div class="showy">
+        <div class="showyitem showyitem1" data-0='bottom: 20%;' data-1200="bottom:120%;"></div>
+        <div class="showyitem showyitem2" data-0='bottom: -20%;' data-3200="bottom:120%;"></div>
+        <div class="showyitem showyitem3" data-0='bottom: -20%;' data-5000="bottom:120%;"></div>
+        <div class="showyitem showyitem4" data-0='bottom: -20%;' data-900-end="bottom:60%;"></div>
+        <div class="showyitem showyitem5" data-0='bottom: -20%;' data-1300-end="bottom:5%;" data-900-end="bottom:20%;" data-500-end="bottom:35%;"></div>
+    </div>
+
+    <span class='loading top'></span>
+    <span class='loading left'></span>
+    <span class='loading bottom'></span>
+    <span class='loading right'></span>
+
+        <!-- mobile menu -->
+    <div class='mbmenu'>
+        <ul>
+            <li class='item'>
+                <h2>BRAND</h2>
+                <ol>
+                    <li><a href='#index'>BRAND STORY</a></li>
+                    <li><a href='#milestone'>MILESTONE</a></li>
+                    <li><a href='#news'>NEWS</a></li>
+                </ol>
+            </li>
+            <li class='item'>
+                <h2>PRODUCT</h2>
+                <ol>
+                    <li><a href='#campaign'>CAMPAIGN</a></li>
+                    <li><a href='#lookbook'>LOOKBOOK</a></li>
+                    <li><a href='#streetshot'>STREET SHOTS</a></li>
+                </ol>
+            </li>
+            <li class='item'>
+                <h2>SHOP</h2>
+                <ol>
+                    <li><a href='#starshop'>STAR SHOP</a></li>
+                    <li><a href='#storelocator'>STORE LOCATOR</a></li>
+                </ol>
+            </li>
+            <li class='item'>
+                <h2>CLUB</h2>
+                <ol>
+                    <li><a href='javascript:;'>LILY CLUB</a></li>
+                    <li><a href='javascript:;'>TERMS</a></li>
+                    <li><a href='javascript:;'>POINT CHECKING</a></li>
+                    <li><a href='javascript:;'>REDEMPTION</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <!--  -->
+    <script type="text/javascript" src="js/lib/modernizr.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=AwxxvHue9bTdFietVWM4PLtk"></script>
+    <script data-main="js/config" src="js/lib/require.js"></script>
+    <!--  -->
+    <!--IE6透明判断-->
+    <!--[if IE 6]>
+    <script src="js/lib/DD_belatedPNG.js"></script>
+    <script>
+    DD_belatedPNG.fix('*');
+    document.execCommand("BackgroundImageCache", false, true);
+</script>
+    <![endif]-->
+</body>
+</html>
