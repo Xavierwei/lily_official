@@ -8,9 +8,7 @@ else {
 
 define("ROOT_PATH", dirname('../'.__FILE__));
 
-print ROOT_PATH."/../admin/yii/yii.php";
-
-require_once(ROOT_PATH."/admin/yii/yii.php");
+require_once(ROOT_PATH."/../admin/yii/yii.php");
 
 $config = ROOT_PATH.'/../admin/protected/config/main.php';
 
