@@ -58,8 +58,8 @@ a:hover {opacity:0.8;}
 ================================================================================================= */
 .footer{position:fixed;bottom:0;width:100%;background:#c7deeb;line-height:30px;font-size:16px;text-transform:uppercase;color:#77858d}
 .ft_logo{background:url('../images/ft_logo.png') no-repeat center;width:132px;height:86px;margin:0 auto;padding:5%;}
-.ft_com{margin:0 auto;width:947px;}
-.ft_list{display:inline-block;vertical-align:top;margin:0 50px;width:100px;}
+.ft_com{margin:0 auto;width:947px;font-size:14px;}
+.ft_list{display:inline-block;vertical-align:top;margin:0 50px;width:130px;}
 .ft_list h2{font-size:20px;}
 .ft_list a{display:block;color:#77858d}
 .ft_list ol{list-style:none;margin:0;padding:0;}
@@ -312,7 +312,7 @@ body.events,body.events .page,body.events .header{background-color:#ddebf3;}
 body.campaign,body.campaign .page,body.campaign .header{background-color:#f1fffc;}
 body.lookbook,body.lookbook .page,body.lookbook .header{background-color:#fafaec;}
 body.streetshot,body.streetshot .page,body.streetshot .header{background-color:#fafaec;}
-body.starshop,body.starshop .page,body.starshop .header{background-color:#ddebf3;}
+body.flagshipstore,body.flagshipstore .page,body.flagshipstore .header{background-color:#ddebf3;}
 body.storelocator,body.storelocator .page,body.storelocator .header{background-color:#ddebf3;}
 body.vip,body.vip .page,body.vip .header{background-color:#f3dedd;}
 body.job,body.job .page,body.job .header{background-color:#ded5ca;}

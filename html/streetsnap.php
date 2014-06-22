@@ -12,7 +12,7 @@
             <div class='limit cs-clear'>
                 <div class="left">
                     <div class="lb_tit">
-                        <h2>STREET<br />SHOT</h2>
+                        <h2><?php echo Yii::t("strings", "STREET<br />SNAP")?></h2>
                         <div class="fw">FW/14</div>
                     </div>
                 </div>

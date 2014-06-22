@@ -4,53 +4,53 @@
 
 		    <div class="ft_com">
 			    <div class="ft_list">
-				    <h2>BRAND</h2>
+				    <h2><?php echo Yii::t("strings", "BRAND")?></h2>
 				    <ol>
-					    <li><a class='fadeout' href="#index">BRANDS STORY</a></li>
-					    <li><a class='fadeout' href='#milestone'>MILESTONE</a></li>
-					    <li><a class='fadeout' href='#news'>NEWS</a></li>
+					    <li><a href='./index?hash=brand_story'><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
+					    <li><a href='./history'><?php echo Yii::t("strings", "HISTORY")?></a></li>
+					    <li><a href='./events'><?php echo Yii::t("strings", "EVENTS")?></a></li>
 				    </ol>
 			    </div>
 			    <div class="ft_list">
-				    <h2>PRODUCT</h2>
+				    <h2><?php echo Yii::t("strings", "PRODUCT")?></h2>
 				    <ol>
-					    <li><a class='fadeout' href="#campaign">CAMPAIGN</a></li>
-					    <li><a class='fadeout' href="#lookbook">LOOKBOOK</a></li>
-					    <li><a class='fadeout' href="#streetshot">STREET SHOTS</a></li>
+					    <li><a href='./campaign'><?php echo Yii::t("strings", "CAMPAIGN")?></a></li>
+					    <li><a href='./lookbook'><?php echo Yii::t("strings", "LOOK BOOK")?></a></li>
+					    <li><a href='./streetsnap'><?php echo Yii::t("strings", "STREET SNAP")?></a></li>
 				    </ol>
 			    </div>
 			    <div class="ft_list">
-				    <h2>SHOP</h2>
+				    <h2><?php echo Yii::t("strings", "STORE")?></h2>
 				    <ol>
-					    <li><a class='fadeout' href='#starshop'>STAR SHOP</a></li>
-					    <li><a class='fadeout' href='#storelocator'>STORE LOCATOR</a></li>
+					    <li><a href='./flagshipstore'><?php echo Yii::t("strings", "FLAGSHIP STORE")?></a></li>
+					    <li><a href='./storelocator'><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>
 				    </ol>
 			    </div>
 			    <div class="ft_list">
-				    <h2>CLUB</h2>
+				    <h2><?php echo Yii::t("strings", "CLUB")?></h2>
 				    <ol>
-					    <li><a class='fadeout' href="javascript:;">LILY CLUB</a></li>
-					    <li><a class='fadeout' href="javascript:;">TERMS</a></li>
-					    <li><a class='fadeout' href="javascript:;">POINT CHECKING</a></li>
-					    <li><a class='fadeout' href="javascript:;">REDEMPTION</a></li>
+					    <li><a href='./club_memberinfo.html' index='9'><?php echo Yii::t("strings", "LILY CLUB")?></a></li>
+					    <li><a href='./club_memberrules.html' index='10'><?php echo Yii::t("strings", "TERMS")?></a></li>
+					    <li><a href='./club_pointinfo.html' index='11'><?php echo Yii::t("strings", "POINT CHECKING")?></a></li>
+					    <li><a href='./club_gifthis.html' index='12'><?php echo Yii::t("strings", "REDEMPTION")?></a></li>
 				    </ol>
 			    </div>
 			    <div class="ft_links">
 				    <ol>
-					    <li><a class='fadeout' href="#job">JOB</a></li>
-					    <li><a class='fadeout' href="#contact">CONTACT</a></li>
-					    <li><a class='fadeout' href="#privacy">PRIVACY</a></li>
+					    <li><a class='fadeout' href="./job"><?php echo Yii::t("strings", "JOB")?></a></li>
+					    <li><a class='fadeout' href="./contact"><?php echo Yii::t("strings", "CONTACT")?></a></li>
+					    <li><a class='fadeout' href="./privacy"><?php echo Yii::t("strings", "PRIVACY")?></a></li>
 				    </ol>
 			    </div>
 			    <div class="ft_touch">
-				    <p>lets stay in touch</p>
+				    <p><?php echo Yii::t("strings", "lets stay in touch")?></p>
 				    <br />
 				    <div class="ft_share cs-clear">
 					    <a href="http://weibo.com/lilyofficial" target='_blank' class="ft_shareitem ft_share1"></a>
 					    <a href="javascript:;" class="ft_shareitem ft_share3"></a>
 				    </div>
 				    <p>
-					    HOTLINE
+					    <?php echo Yii::t("strings", "HOTLINE")?>
 					    <br />
 					    134-654-987
 				    </p>
@@ -80,39 +80,49 @@
     <div class='mbmenu'>
         <ul>
             <li class='item'>
-                <h2>BRAND</h2>
+                <h2><?php echo Yii::t("strings", "BRAND")?></h2>
                 <ol>
-                    <li><a href='#index'>BRAND STORY</a></li>
-                    <li><a href='#milestone'>MILESTONE</a></li>
-                    <li><a href='#news'>NEWS</a></li>
+                    <li><a href='./index?hash=brand_story'><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
+                    <li><a href='./history'><?php echo Yii::t("strings", "HISTORY")?></a></li>
+                    <li><a href='./events'><?php echo Yii::t("strings", "EVENTS")?></a></li>
                 </ol>
             </li>
             <li class='item'>
-                <h2>PRODUCT</h2>
+                <h2><?php echo Yii::t("strings", "PRODUCT")?></h2>
                 <ol>
-                    <li><a href='#campaign'>CAMPAIGN</a></li>
-                    <li><a href='#lookbook'>LOOKBOOK</a></li>
-                    <li><a href='#streetshot'>STREET SHOTS</a></li>
+                    <li><a href='./campaign'><?php echo Yii::t("strings", "CAMPAIGN")?></a></li>
+                    <li><a href='./lookbook'><?php echo Yii::t("strings", "LOOK BOOK")?></a></li>
+                    <li><a href='./streetsnap'><?php echo Yii::t("strings", "STREET SNAP")?></a></li>
                 </ol>
             </li>
             <li class='item'>
-                <h2>SHOP</h2>
+                <h2><?php echo Yii::t("strings", "STORE")?></h2>
                 <ol>
-                    <li><a href='#starshop'>STAR SHOP</a></li>
-                    <li><a href='#storelocator'>STORE LOCATOR</a></li>
+                    <li><a href='./flagshipstore'><?php echo Yii::t("strings", "FLAGSHIP STORE")?></a></li>
+                    <li><a href='./storelocator'><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>
                 </ol>
             </li>
             <li class='item'>
-                <h2>CLUB</h2>
+                <h2><?php echo Yii::t("strings", "CLUB")?></h2>
                 <ol>
-                    <li><a href='javascript:;'>LILY CLUB</a></li>
-                    <li><a href='javascript:;'>TERMS</a></li>
-                    <li><a href='javascript:;'>POINT CHECKING</a></li>
-                    <li><a href='javascript:;'>REDEMPTION</a></li>
+	                <li><a href='./club_memberinfo.html' index='9'><?php echo Yii::t("strings", "LILY CLUB")?></a></li>
+	                <li><a href='./club_memberrules.html' index='10'><?php echo Yii::t("strings", "TERMS")?></a></li>
+	                <li><a href='./club_pointinfo.html' index='11'><?php echo Yii::t("strings", "POINT CHECKING")?></a></li>
+	                <li><a href='./club_gifthis.html' index='12'><?php echo Yii::t("strings", "REDEMPTION")?></a></li>
                 </ol>
             </li>
         </ul>
     </div>
+
+    <div class="popup_overlay"></div>
+    <div class="search_popup popup">
+        <div class="popup_close"></div>
+        <div class="search_form">
+	        <input class="search_input" type="text" placeholder="<?php echo Yii::t("strings", "Please Enter Keyword")?>" />
+	        <input class="search_btn" type="submit" value="<?php echo Yii::t("strings", "Search")?>" />
+        </div>
+    </div>
+
     <!--  -->
     <script type="text/javascript" src="js/lib/modernizr.min.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=AwxxvHue9bTdFietVWM4PLtk"></script>
