@@ -498,26 +498,30 @@ define([
 
     // data format: { id : xxxx }, the news id
     var getNews = function (oConfig) {
-        // requset({
-        //     path : 'xxx',
-        //     method : 'get',
-        //     data : oConfig.data,
-        //     success : function (data) {
-        //         oConfig.success(data);
-        //     },
-        //     failure : function (err) {
-        //         oConfig.failure(err);
-        //     }
-        // })
+        requset({
+             path : 'admin/index.php/api/news/index',
+             method : 'get',
+             data : oConfig.data,
+             success : function (data) {
+                 var news_data = data.data;
+                 var date = news_data.cdate.split(' ');
+                 news_data.image = 'images/event_img.jpg';
+                 news_data.cdate = date[0];
+                 oConfig.success(news_data);
+             },
+             failure : function (err) {
+                 oConfig.failure(err);
+             }
+        })
 
-        var fakeData = {
-            image : 'images/event_img.jpg',
-            title : '中国零售业可持续发展创新模式高峰论坛',
-            date : '2013年5月30日',
-            content : '"中国零售业可持续发展创新模式高峰论坛" 是由上海丝绸集团旗品牌发展有限公司(Lily品牌)主办，中国商业地产协会、第一财经频道/第一地产、搜狐网财经频道、零点研究咨询集团（上海）协办的一场零售业高峰论坛。论坛以“店商vs电商: 商机再造，谁主未来？" 为主题，汇聚了来自全国的近400名企业领袖、行业专家、电商精英及各界媒体，针对当下中国零售业面临的全新商业格局进行探讨辨析，为实体零售业的未来发展出谋献策。'
-        }
-
-        oConfig.success(fakeData);
+//        var fakeData = {
+//            image : 'images/event_img.jpg',
+//            title : '中国零售业可持续发展创新模式高峰论坛',
+//            date : '2013年5月30日',
+//            content : '"中国零售业可持续发展创新模式高峰论坛" 是由上海丝绸集团旗品牌发展有限公司(Lily品牌)主办，中国商业地产协会、第一财经频道/第一地产、搜狐网财经频道、零点研究咨询集团（上海）协办的一场零售业高峰论坛。论坛以“店商vs电商: 商机再造，谁主未来？" 为主题，汇聚了来自全国的近400名企业领袖、行业专家、电商精英及各界媒体，针对当下中国零售业面临的全新商业格局进行探讨辨析，为实体零售业的未来发展出谋献策。'
+//        }
+//
+//        oConfig.success(fakeData);
     }
 
     var setCookie = function(name, value, expire, path, domain, s){

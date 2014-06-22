@@ -104,7 +104,7 @@ a:hover {opacity:0.8;}
 .page_home h2{font-size:42px;line-height:100px;font-family:arial;}
 .home_new{text-align:right;margin:70px 7%;}
 .tit_time{font-size:18px;font-weight:bold}
-.home_new_cn{background:url('../images/home_newstit.png') no-repeat right;padding:6% 0;margin:2% 0;min-height:140px;}
+.home_new_cn{font-size:18px;padding:6% 0;margin:2% 0;min-height:140px;}
 /* */
 .home_img1{margin:50px 7% 64px;}
 .home_img1 img{max-width:80%;margin-left:-7%;}

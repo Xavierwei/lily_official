@@ -110,6 +110,12 @@ class ShopAR extends CActiveRecord {
     
     $query->order = "shop_id DESC";
     
+    global $language;
+    if ($language) {
+      $query->addCondition("language=:language");
+      $query->params[":language"] = $language;
+    }
+    
     return $this->findAll($query);
   }
   

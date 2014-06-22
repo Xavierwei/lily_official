@@ -10,7 +10,7 @@ define([
     'lib/text!templates/weixin.html'
 ], function($, Handlebars, History , loading, helper, linksTpl, weixinTpl) {
     var sPath = location.pathname,
-        sCur = sPath.replace(sPath.match(/^.*\html\//), ''),
+        sCur = sPath.replace(sPath.match(/^.*\php\//), ''),
         isNext,
         isAnimate = false,
         dBody = $('body'),
@@ -218,7 +218,7 @@ define([
 
     var updatePage = function () {
         $.ajax({
-            url : sCur + '.html',
+            url : sCur + '.php',
             method:'get',
             beforeSend: function () {
                 pageSwitchAnimate();

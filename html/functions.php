@@ -20,13 +20,22 @@ $app = Yii::createWebApplication($config);
  * 载入新闻
  */
 function loadNews() {
-  $query = new CDbCriteria();
-  $query->addCondition("status=:status");
-  $query->params[":status"] = NewsAR::STATUS_ENABLE;
-  
-  $news = NewsAR::model()->findAll($query);
+  $news = NewsAR::model()->getList();
   
   return $news;
+}
+
+/**
+ * 载入新闻
+ */
+function loadFirstNews() {
+    $query = new CDbCriteria();
+    $query->addCondition("status=:status");
+    $query->params[":status"] = NewsAR::STATUS_ENABLE;
+    $query->addCondition("type=:type");
+    $query->params[":type"] = NewsAR::model()->type;
+    $news = NewsAR::model()->find($query);
+    return $news;
 }
 
 /**
@@ -36,6 +45,8 @@ function loadJob($type = FALSE) {
   $query = new CDbCriteria();
   $query->addCondition("status=:status");
   $query->params[":status"] = JobAR::STATUS_ENABLE;
+  $query->addCondition("type=:type");
+  $query->params[":type"] = NewsAR::model()->type;
   
   if ($type) {
     $jobAr = new JobAR();
@@ -84,5 +95,17 @@ function thumbnail($uri, $size) {
   return Yii::app()->getBaseUrl(TRUE). $uri;
 }
 
+function loadStreehot() {
+  $streehot = new StreehotAR();
+  return $streehot->getList();
+}
 
-print thumbnail("http://lily.local/admin/upload/517f4c9082d81a0a9aae5da8c9aa3aa5.jpg", array(500, 500));
+function loadMilestone() {
+  $milestone = new MilestoneAR();
+  return $milestone->getList();
+}
+function searchNews() {
+  $keyword = Yii::app()->getRequest()->getParam("keyword");
+  $newsAr = new NewsAR();
+  return $newsAr->searchWithKeyword($keyword);
+}

@@ -69,4 +69,32 @@ class Controller extends CController
     die();
   }
   
+  public function init() {
+    parent::init();
+    global $language;
+    // 获取语言
+    $cookies = Yii::app()->request->cookies;
+    $lang = $cookies["lang"];
+    if ($lang) {
+      Yii::app()->language = (string)$lang;
+    }
+    else {
+        if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+          $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+          if ($lang == "zh") {
+            Yii::app()->language = "zh_cn";
+          }
+          else {
+            Yii::app()->language = "en_us";
+          }
+        }
+    }
+    if (Yii::app()->language == "zh_cn") {
+      $language = "cn";
+    }
+    else {
+      $language = "en";
+    }
+  }
+  
 }

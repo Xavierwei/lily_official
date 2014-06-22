@@ -1,3 +1,8 @@
+<?php require_once 'functions.php';?>
+<?php
+$look = loadLookbook();
+print_r($look);
+?>
 <!DOCTYPE html>
 <html>
 <head>
