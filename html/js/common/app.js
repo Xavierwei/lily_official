@@ -13,10 +13,11 @@ define([
     // fix lang
     window._e = function( text ){
         return lang[ text ] || text;
-    }
+    };
 
-    $('[data-lang]').click(function(){
-        api.setCookie('lang' , $(this).data('lang') , 60 * 60 * 24 * 30);
+    $('a[data-lang]').click(function(){
+        api.setCookie('lang' , $(this).attr('lang') , 60 * 60 * 24 * 30);
+        window.location.reload();
     });
 
 
@@ -32,7 +33,7 @@ define([
 
         // update the link to hash mode
         switchPage.init();
-    }
+    };
 
     return initialize;
 })
