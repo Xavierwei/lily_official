@@ -16,8 +16,7 @@ define([
     };
 
     $('a[data-lang]').click(function(){
-        api.setCookie('lang' , $(this).attr('lang') , 60 * 60 * 24 * 30);
-        window.location.reload();
+        api.setCookie('lang' , $(this).data('lang') , 60 * 60 * 24 * 30);
     });
 
 
