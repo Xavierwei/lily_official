@@ -15,9 +15,11 @@
                 <?php $firstNews = loadFirstNews(); ?>
                 <h2><?php echo Yii::t("strings", "NEWS")?></h2>
                 <div class="tit_time">23/03/14</div>
-                <div class="home_new_cn"></div>
+                <div class="home_new_cn">
+	                <?php echo Yii::t("strings", "news_text")?>
+                </div>
                 <div class="home_new_more cs-clear" >
-                    <a href="#news" class="btn btnlink" ><span><?php echo Yii::t("strings", "More news")?></span><span><?php echo Yii::t("strings", "More news")?></span></a>
+                    <a href="./events" class="btn btnlink" ><span><?php echo Yii::t("strings", "More news")?></span><span><?php echo Yii::t("strings", "More news")?></span></a>
                 </div>
             </div>
             <!--  -->
