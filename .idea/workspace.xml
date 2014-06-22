@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_DELIVERY.html" afterPath="$PROJECT_DIR$/html/club_DELIVERY.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_Ecoupon_information.html" afterPath="$PROJECT_DIR$/html/club_Ecoupon_information.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_WISHLIST.html" afterPath="$PROJECT_DIR$/html/club_WISHLIST.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_exchange.html" afterPath="$PROJECT_DIR$/html/club_exchange.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_giftcard.html" afterPath="$PROJECT_DIR$/html/club_giftcard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_giftcards1.html" afterPath="$PROJECT_DIR$/html/club_giftcards1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_giftcards2.html" afterPath="$PROJECT_DIR$/html/club_giftcards2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_gifthis.html" afterPath="$PROJECT_DIR$/html/club_gifthis.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_login.html" afterPath="$PROJECT_DIR$/html/club_login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_member.html" afterPath="$PROJECT_DIR$/html/club_member.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_member_reg.html" afterPath="$PROJECT_DIR$/html/club_member_reg.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_memberactivity.html" afterPath="$PROJECT_DIR$/html/club_memberactivity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_memberinfo.html" afterPath="$PROJECT_DIR$/html/club_memberinfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_memberrules.html" afterPath="$PROJECT_DIR$/html/club_memberrules.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_pointex.html" afterPath="$PROJECT_DIR$/html/club_pointex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_pointexdetail.html" afterPath="$PROJECT_DIR$/html/club_pointexdetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_pointinfo.html" afterPath="$PROJECT_DIR$/html/club_pointinfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/club_q&amp;a.html" afterPath="$PROJECT_DIR$/html/club_q&amp;a.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/events.php" afterPath="$PROJECT_DIR$/html/events.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.php" afterPath="$PROJECT_DIR$/html/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/nav.php" afterPath="$PROJECT_DIR$/html/include/nav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/messages/en_us/strings.php" afterPath="$PROJECT_DIR$/admin/protected/messages/en_us/strings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" afterPath="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/main.css" afterPath="$PROJECT_DIR$/admin/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
@@ -86,7 +64,7 @@
     <file path="/mobile.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401450519806" ignored="false" />
     <file path="$PROJECT_DIR$/../rf/css/main.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402568146420" ignored="false" />
     <file path="$PROJECT_DIR$/../rf/flash/player/web/player6.htm" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401452914811" ignored="false" />
-    <file path="/main.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401455054436" ignored="false" />
+    <file path="/main.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403445863108" ignored="false" />
     <file path="$PROJECT_DIR$/../ave_1000/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401490627058" ignored="false" />
     <file path="$PROJECT_DIR$/../ave_1000/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401490627058" ignored="false" />
     <file path="/*.regexp" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401775485223" ignored="false" />
@@ -206,23 +184,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="club_member.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/club_member.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-              <folding>
-                <marker date="1403444273000" expanded="true" signature="9522:9623" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="club_member_reg.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/club_member_reg.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
               <folding>
-                <marker date="1403444277000" expanded="true" signature="11058:11159" placeholder="..." />
+                <marker date="1403444640000" expanded="true" signature="11058:11159" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -233,7 +200,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
               <folding>
-                <marker date="1403444280000" expanded="true" signature="14399:14500" placeholder="..." />
+                <marker date="1403444640000" expanded="true" signature="14399:14500" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -244,7 +211,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
               <folding>
-                <marker date="1403444285000" expanded="true" signature="11918:12019" placeholder="..." />
+                <marker date="1403444640000" expanded="true" signature="11918:12019" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -255,7 +222,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
               <folding>
-                <marker date="1403444288000" expanded="true" signature="16794:16895" placeholder="..." />
+                <marker date="1403444640000" expanded="true" signature="16794:16895" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -266,7 +233,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
               <folding>
-                <marker date="1403444292000" expanded="true" signature="13307:13408" placeholder="..." />
+                <marker date="1403444640000" expanded="true" signature="13307:13408" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -277,7 +244,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
               <folding>
-                <marker date="1403444295000" expanded="true" signature="13386:13487" placeholder="..." />
+                <marker date="1403444640000" expanded="true" signature="13386:13487" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -288,7 +255,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
               <folding>
-                <marker date="1403444298000" expanded="true" signature="11172:11273" placeholder="..." />
+                <marker date="1403444640000" expanded="true" signature="11172:11273" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -299,19 +266,28 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
               <folding>
-                <marker date="1403444301000" expanded="true" signature="9710:9811" placeholder="..." />
+                <marker date="1403444640000" expanded="true" signature="9710:9811" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="club_WISHLIST.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="club_WISHLIST.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/club_WISHLIST.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="0.9009314">
+            <state line="21" column="29" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-14.25">
               <folding>
-                <marker date="1403444304000" expanded="true" signature="15011:15112" placeholder="..." />
+                <marker date="1403444640000" expanded="true" signature="15011:15112" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="12" selection-start="351" selection-end="351" vertical-scroll-proportion="0.26716295">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -334,7 +310,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/html/club_exchange.html" />
         <option value="$PROJECT_DIR$/html/club_giftcard.html" />
         <option value="$PROJECT_DIR$/html/club_giftcards1.html" />
         <option value="$PROJECT_DIR$/html/club_giftcards2.html" />
@@ -350,6 +325,7 @@
         <option value="$PROJECT_DIR$/html/club_pointinfo.html" />
         <option value="$PROJECT_DIR$/html/club_q&amp;a.html" />
         <option value="$PROJECT_DIR$/html/club_WISHLIST.html" />
+        <option value="$PROJECT_DIR$/admin/css/main.css" />
       </list>
     </option>
   </component>
@@ -649,6 +625,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -714,7 +708,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2158371" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2158371" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -790,20 +784,11 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/club_exchange.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
-          <folding>
-            <marker date="1403444248000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/club_giftcard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444251000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -812,7 +797,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444255000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -821,7 +806,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444257000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -830,7 +815,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444261000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -839,7 +824,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-23.75">
           <folding>
-            <marker date="1403444265000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -848,7 +833,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444273000" expanded="true" signature="9522:9623" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -857,7 +842,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444277000" expanded="true" signature="11058:11159" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="11058:11159" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -866,7 +851,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444280000" expanded="true" signature="14399:14500" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="14399:14500" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -875,7 +860,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444285000" expanded="true" signature="11918:12019" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="11918:12019" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -884,7 +869,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444288000" expanded="true" signature="16794:16895" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="16794:16895" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -893,7 +878,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444292000" expanded="true" signature="13307:13408" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="13307:13408" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -902,7 +887,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444295000" expanded="true" signature="13386:13487" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="13386:13487" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -911,7 +896,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444298000" expanded="true" signature="11172:11273" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="11172:11273" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -920,17 +905,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="-38.0">
           <folding>
-            <marker date="1403444301000" expanded="true" signature="9710:9811" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="9710:9811" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/club_WISHLIST.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="13" selection-start="2462" selection-end="2462" vertical-scroll-proportion="0.9009314">
+        <state line="21" column="29" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-14.25">
           <folding>
-            <marker date="1403444304000" expanded="true" signature="15011:15112" placeholder="..." />
+            <marker date="1403444640000" expanded="true" signature="15011:15112" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="12" selection-start="351" selection-end="351" vertical-scroll-proportion="0.26716295">
+          <folding />
         </state>
       </provider>
     </entry>
