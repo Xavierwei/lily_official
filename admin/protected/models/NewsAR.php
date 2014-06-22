@@ -45,5 +45,16 @@ class NewsAR extends ContentAR {
     return $attributes;
   }
   
+  public function searchWithKeyword($keyword) {
+    $query = new CDbCriteria();
+    $query->addSearchCondition("title", $keyword);
+    $query->addSearchCondition("body", $keyword);
+    $query->addCondition("type=:type");
+    $query->params[":type"] = $this->type;
+    
+    return $this->findAll($query);
+    
+  }
+  
 }
 
