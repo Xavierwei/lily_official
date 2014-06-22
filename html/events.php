@@ -3,7 +3,7 @@
 <html>
 <?php include_once 'include/header.php';?>
   
-<body class='news'>
+<body class='events'>
   <?php include_once "include/nav.php";?>
 
     <div id='wrap'>
@@ -27,10 +27,10 @@
                         </div>
                         <div class="event_com">
                             <h3><a href="javascript:;" class="event_open"><?php echo $news->title;?></a></h3>
-                            <p>
+                            <div class="news_body">
                                 <?php echo $news->body;?>
-                            </p>
-                            <a href="javascript:;" class="event_open event_look">LOOK</a>
+                            </div>
+                            <a href="javascript:;" class="event_open event_look"><?php echo Yii::t("strings", "LOOK")?></a>
                         </div>
                     </div>
                     <?php endforeach;?>

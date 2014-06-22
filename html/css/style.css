@@ -308,7 +308,7 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 /* for loading part */
 body.index,body.index .page,body.index .header{background-color:#fff1f4;}
 body.history,body.history .page,body.history .header{background-color:#fff1f4;}
-body.news,body.news .page,body.news .header{background-color:#ddebf3;}
+body.events,body.events .page,body.events .header{background-color:#ddebf3;}
 body.campaign,body.campaign .page,body.campaign .header{background-color:#f1fffc;}
 body.lookbook,body.lookbook .page,body.lookbook .header{background-color:#fafaec;}
 body.streetshot,body.streetshot .page,body.streetshot .header{background-color:#fafaec;}
