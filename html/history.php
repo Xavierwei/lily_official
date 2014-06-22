@@ -1,4 +1,4 @@
-<?php require_once 'functions.php';?>
+<?php require_once 'include/functions.php';?>
 <!DOCTYPE html>
 <html>
 <?php include_once 'include/header.php';?>

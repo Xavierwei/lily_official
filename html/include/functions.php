@@ -39,7 +39,6 @@ else {
  */
 function loadNews() {
   $news = NewsAR::model()->getList();
-  
   return $news;
 }
 
@@ -47,24 +46,42 @@ function loadNews() {
  * 载入新闻
  */
 function loadFirstNews() {
-    $query = new CDbCriteria();
-    $query->addCondition("status=:status");
-    $query->params[":status"] = NewsAR::STATUS_ENABLE;
-    $query->addCondition("type=:type");
-    $query->params[":type"] = NewsAR::model()->type;
-    $news = NewsAR::model()->find($query);
-    return $news;
+  global $language;
+  $query = new CDbCriteria();
+  
+  // 状态
+  $query->addCondition("status=:status");
+  $query->params[":status"] = NewsAR::STATUS_ENABLE;
+  // 内容类型
+  $query->addCondition("type=:type");
+  $query->params[":type"] = NewsAR::model()->type;
+  //多语言
+  $query->addCondition("language=:language");
+  $query->params[":language"] = $language;
+  
+  // 排序
+  $query->order = "cdate DESC";
+  
+  $news = NewsAR::model()->find($query);
+  return $news;
 }
 
 /**
  * 载入职位
  */
 function loadJob($type = FALSE) {
+  
+  global $language;
   $query = new CDbCriteria();
   $query->addCondition("status=:status");
   $query->params[":status"] = JobAR::STATUS_ENABLE;
   $query->addCondition("type=:type");
   $query->params[":type"] = NewsAR::model()->type;
+    //多语言
+  $query->addCondition("language=:language");
+  $query->params[":language"] = $language;
+  
+  
   
   if ($type) {
     $jobAr = new JobAR();
