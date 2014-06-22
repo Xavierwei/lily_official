@@ -18,7 +18,9 @@ defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 $app = Yii::createWebApplication($config);
 
 $scriptUrl = Yii::app()->getRequest()->getScriptUrl();
-Yii::app()->getRequest()->setBaseUrl("/admin");
+
+$ret = Yii::app()->getRequest()->getBaseUrl(TRUE);
+Yii::app()->getRequest()->setBaseUrl($ret . "/admin");
 
 // 获取语言
 $cookies = Yii::app()->request->cookies;
