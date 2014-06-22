@@ -19,7 +19,7 @@ $app = Yii::createWebApplication($config);
 
 $scriptUrl = Yii::app()->getRequest()->getScriptUrl();
 
-$ret = Yii::app()->getRequest()->getBaseUrl(TRUE);
+$ret = Yii::app()->getRequest()->getBaseUrl();
 Yii::app()->getRequest()->setBaseUrl($ret . "/admin");
 
 // 获取语言
