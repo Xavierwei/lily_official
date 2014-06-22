@@ -10,7 +10,6 @@ class JobController extends Controller {
     if ($request->isPostRequest) {
       $job->setAttributes($_POST);
       
-      
       if ($job->save()) {
         return $this->responseJSON($job, 'success');
       }

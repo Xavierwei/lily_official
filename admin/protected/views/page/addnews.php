@@ -17,7 +17,18 @@
         <textarea class="row-fluid ckeditor" name="body" ng-model="news.body"  cols="50" rows="10"></textarea>
       </div>
     </div>
-    
+    <div class="control-group">
+      <div class="control-label">
+        <label for=""><?php echo Yii::t("strings", "Language")?></label>
+        <div class="controls">
+          <select name="language" id="" ng-model="shop.language" required>
+            <option value="cn"><?php echo Yii::t("strings", "Chinese")?></option>
+            <option value="en"><?php echo Yii::t("strings", "English")?></option>
+          </select>
+          <p class="text-error" ng-show="shopform.language.$error.required">This field is required</p>
+        </div>
+      </div>
+    </div>
     <div class="control-group">
       <div class="control-label">
         <label for=""><?php echo Yii::t("strings", "Master Image")?></label>

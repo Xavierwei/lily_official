@@ -404,5 +404,34 @@
         }
       };
   }]);
+
+  AdminModule.controller("JobTable", function () {
+      angular.element(".table-content .table").DataTable({
+        info: false,
+        pageLength: 5,
+        lengthChange: false
+      });
+  });
+  
+  AdminModule.controller("JobForm", ["$scope", "$http", function ($scope, $http) {
+      
+      // 提交表单
+      $scope.submitJob = function () {
+        if ($scope.jobform.$valid) {
+          $http({
+            method: "POST",
+            url: window.baseurl + "/api/job/add",
+            data: $.param($scope.job),
+            headers: {"Content-Type": "application/x-www-form-urlencoded"}
+          })
+          .success(function (data) {
+            //console.log(data);
+          });
+        }
+        else {
+          alert("表单验证失败");
+        }
+      };
+  }]);
   
 })(jQuery);

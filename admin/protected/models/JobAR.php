@@ -14,6 +14,9 @@ class JobAR extends ContentAR {
   const JOB_TYPE_SOCIAL = 1;
   const JOB_TYPE_SCHOOL = 2;
   
+  public $job_people_number;
+  public $job_type;
+  
   /**
    * 返回Job 对应的Field
    */

@@ -123,6 +123,8 @@ class ContentAR extends CActiveRecord {
       $query->params[":type"] = $type;
     }
     
+    $query->order = "cdate DESC";
+    
     $rows = $this->findAll($query);
     
     return $rows;

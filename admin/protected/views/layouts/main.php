@@ -35,8 +35,8 @@
         <li><a href="<?php echo Yii::app()->createUrl("shop/index")?>">Shop Table</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("shop/add")?>">Add Shop</a></li>
         <li class="nav-header">Job Management</li>
-        <li><a href="<?php echo Yii::app()->createUrl("job/index")?>">Job Table</a></li>
-        <li><a href="<?php echo Yii::app()->createUrl("job/add")?>">Add Job</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl("page/job")?>">Job Table</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl("page/addjob")?>">Add Job</a></li>
         <li class="nav-header">Lookbook Management</li>
         <li><a href="<?php echo Yii::app()->createUrl("page/lookbook")?>">Lookbook</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/addlookbook")?>">Add Lookbook</a></li>
@@ -57,7 +57,10 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-    
+    <div class="lang-bar">
+        <a href="javascript:void(0)" lang="en_us" class="lang_en">English</a>
+        <a href="javascript:void(0)" lang="zh_cn" class="lang_cn">中文</a>
+    </div>
 	</div>
 </div>
 

@@ -66,5 +66,20 @@ class PageController extends Controller {
     }
     $this->render("addnews", array("news" => $news));
   }
+  
+  public function actionjob() {
+    $jobes = JobAR::model()->getList();
+    $this->render("job", array("jobes" => $jobes));
+  }
+  
+  public function actionAddjob() {
+    $request = Yii::app()->getRequest();
+    $id = $request->getParam("id", FALSE);
+    $job = JobAR::model()->findByPk($id);
+    if ($id && !$job) {
+      $this->redirect(array("job"));
+    }
+    $this->render("addjob", array("job" => $job));
+  }
 }
 
