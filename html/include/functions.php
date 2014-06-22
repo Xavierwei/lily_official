@@ -5,6 +5,7 @@ if (defined("LOADED_FUNCTION")) {
 else {
   define("LOADED_FUNCTION", 1);
 }
+
 require_once("../admin/yii/yii.php");
 
 define("ROOT_PATH", dirname(__FILE__));
@@ -15,6 +16,9 @@ defined('YII_DEBUG') or define('YII_DEBUG',true);
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
 $app = Yii::createWebApplication($config);
+
+$scriptUrl = Yii::app()->getRequest()->getScriptUrl();
+Yii::app()->getRequest()->setBaseUrl("/admin");
 
 // 获取语言
 $cookies = Yii::app()->request->cookies;
