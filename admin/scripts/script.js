@@ -305,7 +305,100 @@
           lengthChange: false
         });
       };
+  }]);
 
+  AdminModule.controller("MilestoneTable", ["$scope", "$http", function ($scope, $http) {
+        angular.element(".table-content .table").DataTable({
+          info: false,
+          pageLength: 5,
+          lengthChange: false
+        });
+  }]);
+
+  AdminModule.controller("MilestoneForm", ["$scope", "$http", function ($scope, $http) {
+      $scope.submitMilestone = function (event) {
+        if ($scope.milestoneform.$valid) {
+          $http({
+            method: "POST",
+            url: window.baseurl + "/api/milestone/add",
+            data: $.param($scope.milestone),
+            headers: {"Content-Type": "application/x-www-form-urlencoded"}
+          })
+          .success(function (data) {
+            console.log(data);
+          });
+        }
+        else {
+          alert("验证失败");
+        }
+      };
+  }]);
+
+  AdminModule.controller("NewsTable", [function () {
+      angular.element(".table-content .table").DataTable({
+        info: false,
+        pageLength: 5,
+        lengthChange: false
+      });
+  }]);
+
+  AdminModule.controller("NewsForm", ["$scope", "$http", function ($scope, $http) {
+      $scope.media = {};
+      $scope.media.image = "";
+      $scope.news = {};
+      $scope.news.thumbnail = "";
+      
+      $scope.init = function () {
+        // 绑定图片上传事件
+        angular.element("input[type='file']").live("change", function(event) {
+          var el = angular.element(event.target);
+          var file = el[0].files[0];
+          var fileReader = new FileReader();
+          fileReader.onloadend = function (e) {
+            $scope.media.image = (e.target.result);
+            $scope.$digest();
+          };
+          fileReader.readAsDataURL(file);
+
+          // 上传
+          var formdata = new FormData();
+          formdata.append("media", file);
+          $.ajax({
+            url: window.baseurl + "/api/media/temp",
+            type: "post",
+            data: formdata,
+            processData: false,
+            contentType: false,
+            success: function (res) {
+              if (typeof res["status"] != "undefined") {
+                var uri = res["data"]["uri"];
+                $scope.news.thumbnail = (uri);
+                $scope.$digest();
+              }
+              else {
+                alert("未知错误");
+              }
+            }
+          });
+        });
+      };
+      
+      $scope.submitNews = function (event) {
+        if ($scope.newsform.$valid) {
+          $http({
+            method: "POST",
+            url: window.baseurl + "/api/news/add",
+            data: $.param($scope.news),
+            headers: {"Content-Type": "application/x-www-form-urlencoded"}
+          })
+          .success(function (data) {
+            console.log(data);
+          });
+        }
+        else {
+          alert("验证失败");
+        }
+      };
   }]);
   
 })(jQuery);

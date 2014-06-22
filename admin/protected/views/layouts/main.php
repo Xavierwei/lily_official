@@ -46,6 +46,9 @@
         <li class="nav-header">Milestone Management</li>
         <li><a href="<?php echo Yii::app()->createUrl("page/milestone")?>">Milestone</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/addmilestone")?>">Add Milestone</a></li>
+        <li class="nav-header">News Management</li>
+        <li><a href="<?php echo Yii::app()->createUrl("page/news")?>">News</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl("page/addnews")?>">Add News</a></li>
       </ul>
     </div>
     <div id="content" class="span9"><?php echo $content; ?></div>

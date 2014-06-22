@@ -32,7 +32,7 @@ class PageController extends Controller {
     $id = $request->getParam("id", FALSE);
     $streehot = StreehotAR::model()->findByPk($id);
     if ($id && !$streehot) {
-      $this->redirect(array("addlookbook"));
+      $this->redirect(array("streehot"));
     }
     $this->render("addstreehot", array("streehot" => $streehot));
   }
@@ -50,6 +50,21 @@ class PageController extends Controller {
       $this->redirect(array("milestone"));
     }
     $this->render("addmilestone", array("milestone" => $milestone));
+  }
+  
+  public function actionNews() {
+    $list = NewsAR::model()->getList();
+    $this->render("news", array("news_list" => $list));
+  }
+  
+  public function actionAddnews() {
+    $request = Yii::app()->getRequest();
+    $id = $request->getParam("id", FALSE);
+    $news = NewsAR::model()->findByPk($id);
+    if ($id && !$streehot) {
+      $this->redirect(array("news"));
+    }
+    $this->render("addnews", array("news" => $news));
   }
 }
 
