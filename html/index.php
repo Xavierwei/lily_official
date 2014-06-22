@@ -75,13 +75,13 @@
                             <p>FW/14</p>
                         </a>
                         <div class="home_lb_item">
-                            <a href="#lookbook" class='border'>GARDEN</a>
+                            <a href="#lookbook" class='border'><?php echo Yii::t("strings", "GARDEN")?></a>
                         </div>
                         <div class="home_lb_item">
-                            <a href="#lookbook?hash=s2" class='border'>MODERN ART</a>
+                            <a href="#lookbook?hash=s2" class='border'><?php echo Yii::t("strings", "MODERN ART")?></a>
                         </div>
                         <div class="home_lb_item">
-                            <a href="#lookbook?hash=s3" class='border'>OCEAN</a>
+                            <a href="#lookbook?hash=s3" class='border'><?php echo Yii::t("strings", "OCEAN")?></a>
                         </div>
                         <div class='videowrap'>
                             <img class='video fadeout' src="images/home_img4.jpg" />
