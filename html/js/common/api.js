@@ -525,7 +525,6 @@ define([
             return false;
         }
 
-        expire = ! LP.isNumber( expire ) ? 0 : parseInt(expire);
         if (expire < 0){
             value = '';
         }
@@ -541,7 +540,7 @@ define([
     };
 
     var removeCookie = function(name, path, domain){
-        return LP.setCookie(name, '', -1, path, domain);
+        return setCookie(name, '', -1, path, domain);
     };
 
     return {

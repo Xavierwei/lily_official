@@ -50,6 +50,7 @@ define([
                 closeSpeed : 1000,
                 content: sHthml,
                 closeClick: false,
+                cyclic: true,
                 helpers: {
                     overlay: {
                         width: '100%',
@@ -71,6 +72,7 @@ define([
                 openSpeed : 0,
                 closeSpeed : 0,
                 content: sHthml,
+                cyclic: true,
                 helpers: {
                     overlay: {
                         width: '100%',
@@ -92,61 +94,66 @@ define([
     var enableList = function() {
         // album list
         dBody.delegate('.album', 'click', function() {
+            var imgIndex = $('.album').index( this );
             var bFunc = function(aData) {
-                    setTimeout(function() {
-                        var jcarousel = $('.fancybox-inner .jcarousel'),
-                            dPre = $('.jcarousel-control-prev'),
-                            dNext = $('.jcarousel-control-next'),
-                            dDesc = $('.actions .desc'),
-                            nLength = $('.jcarousel .content li').length,
-                            nIndex = 1,
-                            updateDesc = function () {
-                                if (nIndex <= 0 ) {
-                                    nIndex = nLength;
-                                }
+                    var jcarousel = $('.fancybox-inner .jcarousel'),
+                        dPre = $('.jcarousel-control-prev'),
+                        dNext = $('.jcarousel-control-next'),
+                        dDesc = $('.actions .desc'),
+                        nLength = $('.jcarousel .content li').length,
+                        nIndex = 0,
+                        updateDesc = function () {
+                            if (nIndex <= 0 ) {
+                                nIndex = nLength;
+                            }
 
-                                if (nIndex > nLength){
-                                    nIndex = 1;
-                                }
+                            if (nIndex > nLength){
+                                nIndex = 1;
+                            }
 
-                                dDesc.html(aData[nIndex - 1].title);
-                            };
-//                            ,
-//                            updateSize = function () {
-//                                var dWidth = $(window).width();
-//                                jcarousel.jcarousel('items').css('width', dWidth + 'px');
-//                            };
+                            dDesc.html(aData[nIndex - 1].title);
+                        };
+                       // ,
+                       // updateSize = function () {
+                       //     jcarousel.jcarousel('items').css('height', '100%');
+                       // };
 
-                        jcarousel.on('jcarousel:reload jcarousel:create', function() {
-                            //updateSize();
-                        }).jcarousel({
-                            wrap: 'circular'
-                        });
+                    jcarousel.on('jcarousel:create', function() {
+                        // but i don't know why
+                        jcarousel.jcarousel('items')
+                            .find('img')
+                            .css('width', '0');
+                        setTimeout(function(){
+                            jcarousel.jcarousel('items')
+                                .find('img')
+                                .css('width', 'auto');
 
-                        dPre.jcarouselControl({
-                            target: '-=1'
-                        });
+                            jcarousel.jcarousel('scroll',  imgIndex , false );
 
-                        dNext.jcarouselControl({
-                            target: '+=1'
-                        });
+                        } , 0 );
+                    }).jcarousel({
+                        wrap: 'circular'
+                    });
 
-                        // for dynamic title
-                        dPre.bind('click', function () {
-                            nIndex -= 1;
-                            updateDesc()
-                        })
+                    dPre.jcarouselControl({
+                        target: '-=1'
+                    });
 
-                        dNext.bind('click', function () {
-                            nIndex += 1;
-                            updateDesc()
-                        })
+                    dNext.jcarouselControl({
+                        target: '+=1'
+                    });
 
-                        // auto resize
-                        $('window').on('resize', function () {
-                            updateSize();
-                        })
-                    }, 0)
+                    // // for dynamic title
+                    dPre.bind('click', function () {
+                        nIndex -= 1;
+                        updateDesc()
+                    })
+
+                    dNext.bind('click', function () {
+                        nIndex += 1;
+                        updateDesc()
+                    })
+
                 };
 
             var albumId = $(this).data('album');
@@ -166,79 +173,90 @@ define([
         // video list
         dBody.delegate('.video', 'click', function() {
             var bFunc = function(aData) {
-                    setTimeout(function() {
-                        var jcarousel = $('.fancybox-inner .jcarousel'),
-                            dPre = $('.jcarousel-control-prev'),
-                            dNext = $('.jcarousel-control-next'),
-                            dDesc = $('.actions .desc'),
-                            nLength = $('.jcarousel .content li').length,
-                            nIndex = 1,
-                            updateDesc = function () {
-                                if (nIndex <= 0 ) {
-                                    nIndex = nLength;
-                                }
+                var imgIndex = $('.video').index( this );
+                var jcarousel = $('.fancybox-inner .jcarousel'),
+                    dPre = $('.jcarousel-control-prev'),
+                    dNext = $('.jcarousel-control-next'),
+                    dDesc = $('.actions .desc'),
+                    nLength = $('.jcarousel .content li').length,
+                    nIndex = 1,
+                    updateDesc = function () {
+                        // if (nIndex <= 0 ) {
+                        //     nIndex = nLength;
+                        // }
 
-                                if (nIndex > nLength){
-                                    nIndex = 1;
-                                }
+                        // if (nIndex >= nLength){
+                        //     nIndex = 1;
+                        // }
 
-                                dDesc.html(aData[nIndex - 1].title);
-                            },
-                            updateSize = function () {
-                                var dWidth = $(window).width();
-                                jcarousel.jcarousel('items').css('width', dWidth + 'px');
-                            };
+                        // dDesc.html(aData[nIndex - 1].title);
+                    }
+                    // ,
+                    // updateSize = function () {
+                    //     var dWidth = $(window).width();
+                    //     jcarousel.jcarousel('items').css('width', dWidth + 'px');
+                    // };
 
-                        // jcarousel init
-                        jcarousel.on('jcarousel:reload jcarousel:create', function() {
-                            updateSize();
-                        }).jcarousel({
-                            wrap: 'circular'
-                        });
+                // jcarousel init
+                jcarousel.on('jcarousel:create', function() {
+                    //updateSize();
+                    jcarousel.jcarousel('items')
+                        .find('img')
+                        .css('width', '0');
+                    setTimeout(function(){
+                        jcarousel.jcarousel('items')
+                            .find('img')
+                            .css('width', 'auto');
 
-                        dPre.jcarouselControl({
-                            target: '-=1'
-                        });
+                        jcarousel.jcarousel('scroll',  imgIndex , false );
 
-                        dNext.jcarouselControl({
-                            target: '+=1'
-                        });
+                    } , 0 );
+                }).jcarousel({
+                    wrap: 'circular'
+                });
 
-                        // video stuff
-                        var dVideo = jcarousel.find('video'),
-                            stopPlay = function() {
-                                var dLoading = jcarousel.find('.mejs-overlay-loading').parent();
+                dPre.jcarouselControl({
+                    target: '-=1'
+                });
 
-                                // stop loading
-                                dLoading.hide();
+                dNext.jcarouselControl({
+                    target: '+=1'
+                });
 
-                                // stop play
-                                dVideo.each(function() {
-                                    $(this)[0].player.pause();
-                                })
-                            }
+                // video stuff
+                var dVideo = jcarousel.find('video'),
+                    stopPlay = function() {
+                        var dLoading = jcarousel.find('.mejs-overlay-loading').parent();
 
-                        dVideo.mediaelementplayer()
+                        // stop loading
+                        dLoading.hide();
 
-                        // for dynamic title
-                        dPre.bind('click', function () {
-                            nIndex -= 1;
-                            stopPlay();
-                            updateDesc();
+                        // stop play
+                        dVideo.each(function() {
+                            $(this)[0].player.pause();
                         })
+                    }
 
-                        dNext.bind('click', function () {
-                            nIndex += 1;
-                            stopPlay();
-                            updateDesc();
-                        })
+                dVideo.mediaelementplayer()
 
-                        // auto resize
-                        $('window').on('resize', function () {
-                            updateSize();
-                        })
-                    }, 0)
-                };
+                // for dynamic title
+                dPre.bind('click', function () {
+                    nIndex -= 1;
+                    stopPlay();
+                    updateDesc();
+                })
+
+                dNext.bind('click', function () {
+                    nIndex += 1;
+                    stopPlay();
+                    updateDesc();
+                })
+
+                // auto resize
+                // $('window').on('resize', function () {
+                //     updateSize();
+                // })
+            };
 
             api.getVideoList({
                 data : { id : '1231313' },

@@ -2,13 +2,24 @@ define([
     // libs
     'jQuery',
     'skrollr',
-
     // apps
     'common/switchPage',
     'common/loading',
     'common/helper',
     'common/map',
-], function($, skrollr, switchPage, loading, helper, map) {
+    'common/api',
+    'common/properties-' + ( window.lang || 'en' )
+], function($, skrollr, switchPage, loading, helper, map , api , lang ) {
+    // fix lang
+    window._e = function( text ){
+        return lang[ text ] || text;
+    }
+
+    $('[data-lang]').click(function(){
+        api.setCookie('lang' , $(this).data('lang') , 60 * 60 * 24 * 30);
+    });
+
+
     var initialize = function() {
         // get current location
         //map.getPosition();
@@ -21,8 +32,6 @@ define([
 
         // update the link to hash mode
         switchPage.init();
-
-        // fix gallery
     }
 
     return initialize;
