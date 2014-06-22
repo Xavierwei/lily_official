@@ -45,6 +45,32 @@
         </div>
         
         <div class="control-group">
+          <div class="control-label">
+            <label for=""><?php echo Yii::t("strings", "Language")?></label>
+            <div class="controls">
+              <select name="language" id="" ng-model="shop.language" required>
+                <option value="cn"><?php echo Yii::t("strings", "Chinese")?></option>
+                <option value="en"><?php echo Yii::t("strings", "English")?></option>
+              </select>
+              <p class="text-error" ng-show="shopform.language.$error.required">This field is required</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <div class="control-label">
+            <label for=""><?php echo Yii::t("strings", "Star")?></label>
+            <div class="controls">
+              <select name="language" id="" ng-model="shop.star">
+                <option value="0"><?php echo Yii::t("strings", "No")?></option>
+                <option value="1"><?php echo Yii::t("strings", "Yes")?></option>
+              </select>
+              <p class="text-error" ng-show="shopform.language.$error.required">This field is required</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="control-group">
           <label for="" class="control-label">Lat/ Lng</label>
           <div class="controls">
             <input type="text" name="lat" ng-model="shop.lat" required/>

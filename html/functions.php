@@ -95,5 +95,16 @@ function thumbnail($uri, $size) {
   return Yii::app()->getBaseUrl(TRUE). $uri;
 }
 
+function loadStreehot() {
+  $streehot = new StreehotAR();
+  return $streehot->getList();
+}
 
+<<<<<<< HEAD
 //print thumbnail("http://lily.local/admin/upload/517f4c9082d81a0a9aae5da8c9aa3aa5.jpg", array(500, 500));
+=======
+function loadMilestone() {
+  $milestone = new MilestoneAR();
+  return $milestone->getList();
+}
+>>>>>>> FETCH_HEAD
