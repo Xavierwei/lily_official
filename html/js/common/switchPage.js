@@ -259,6 +259,10 @@ define([
                     updatePage();
                 });
 
+                $('.footer').delegate('a:not([href^=http]):not([href^=javascript])', 'click', function(e) {
+                    dMbmenu.find('.item a[href="' + $(this).attr('href') + '"]').trigger('click');
+                    return false;
+                });
                 // for special method
                 dMbmenu.delegate('.item a', 'click', function(e) {
                     var dTarget = $(this),
@@ -379,9 +383,9 @@ define([
         })
 
         dNav.find('.item').hover(function(){
-            $(this).find('ol').delay(200).fadeIn();
+            $(this).find('ol').stop(true,true).delay(200).fadeIn();
         }, function(){
-            $(this).find('ol').fadeOut();
+            $(this).find('ol').stop(true,true).fadeOut();
         });
 
 

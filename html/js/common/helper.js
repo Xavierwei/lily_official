@@ -42,6 +42,17 @@ define([
         }
     }
 
+    var loadedAllImages = function( $imgs , fn ){
+        var index = 0;
+        $imgs.each(function(){
+            $('<img/>').load(function(){
+                index ++;
+                if( index == $imgs.length )
+                    fn();
+            })
+            .attr( 'src' , this.getAttribute('src') );
+        });
+    }
 
     var overlay = function (sHthml, func) {
         if (canAnimate()) {
@@ -63,8 +74,8 @@ define([
                     dBody.delegate('.close', 'click', function() {
                         $.fancybox.close(true);
                     })
-
-                    func();
+                    // after all image loaded, run the func
+                    loadedAllImages( this.wrap.find('img') , func );
                 }
             })
         } else {

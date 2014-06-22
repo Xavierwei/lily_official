@@ -6,24 +6,24 @@
 			    <div class="ft_list">
 				    <h2>BRAND</h2>
 				    <ol>
-					    <li><a class='fadeout' href="#index">BRANDS STORY</a></li>
-					    <li><a class='fadeout' href='#milestone'>MILESTONE</a></li>
-					    <li><a class='fadeout' href='#news'>NEWS</a></li>
+					    <li><a class='fadeout' href="./index">BRANDS STORY</a></li>
+					    <li><a class='fadeout' href='./milestone'>MILESTONE</a></li>
+					    <li><a class='fadeout' href='./news'>NEWS</a></li>
 				    </ol>
 			    </div>
 			    <div class="ft_list">
 				    <h2>PRODUCT</h2>
 				    <ol>
-					    <li><a class='fadeout' href="#campaign">CAMPAIGN</a></li>
-					    <li><a class='fadeout' href="#lookbook">LOOKBOOK</a></li>
-					    <li><a class='fadeout' href="#streetshot">STREET SHOTS</a></li>
+					    <li><a class='fadeout' href="./campaign">CAMPAIGN</a></li>
+					    <li><a class='fadeout' href="./lookbook">LOOKBOOK</a></li>
+					    <li><a class='fadeout' href="./streetshot">STREET SHOTS</a></li>
 				    </ol>
 			    </div>
 			    <div class="ft_list">
 				    <h2>SHOP</h2>
 				    <ol>
-					    <li><a class='fadeout' href='#starshop'>STAR SHOP</a></li>
-					    <li><a class='fadeout' href='#storelocator'>STORE LOCATOR</a></li>
+					    <li><a class='fadeout' href='./starshop'>STAR SHOP</a></li>
+					    <li><a class='fadeout' href='./storelocator'>STORE LOCATOR</a></li>
 				    </ol>
 			    </div>
 			    <div class="ft_list">
@@ -37,9 +37,9 @@
 			    </div>
 			    <div class="ft_links">
 				    <ol>
-					    <li><a class='fadeout' href="#job">JOB</a></li>
-					    <li><a class='fadeout' href="#contact">CONTACT</a></li>
-					    <li><a class='fadeout' href="#privacy">PRIVACY</a></li>
+					    <li><a class='fadeout' href="./job">JOB</a></li>
+					    <li><a class='fadeout' href="./contact">CONTACT</a></li>
+					    <li><a class='fadeout' href="./privacy">PRIVACY</a></li>
 				    </ol>
 			    </div>
 			    <div class="ft_touch">
@@ -82,24 +82,24 @@
             <li class='item'>
                 <h2>BRAND</h2>
                 <ol>
-                    <li><a href='#index'>BRAND STORY</a></li>
-                    <li><a href='#milestone'>MILESTONE</a></li>
-                    <li><a href='#news'>NEWS</a></li>
+                    <li><a href='./index'>BRAND STORY</a></li>
+                    <li><a href='./milestone'>MILESTONE</a></li>
+                    <li><a href='./news'>NEWS</a></li>
                 </ol>
             </li>
             <li class='item'>
                 <h2>PRODUCT</h2>
                 <ol>
-                    <li><a href='#campaign'>CAMPAIGN</a></li>
-                    <li><a href='#lookbook'>LOOKBOOK</a></li>
-                    <li><a href='#streetshot'>STREET SHOTS</a></li>
+                    <li><a href='./campaign'>CAMPAIGN</a></li>
+                    <li><a href='./lookbook'>LOOKBOOK</a></li>
+                    <li><a href='./streetshot'>STREET SHOTS</a></li>
                 </ol>
             </li>
             <li class='item'>
                 <h2>SHOP</h2>
                 <ol>
-                    <li><a href='#starshop'>STAR SHOP</a></li>
-                    <li><a href='#storelocator'>STORE LOCATOR</a></li>
+                    <li><a href='./starshop'>STAR SHOP</a></li>
+                    <li><a href='./storelocator'>STORE LOCATOR</a></li>
                 </ol>
             </li>
             <li class='item'>

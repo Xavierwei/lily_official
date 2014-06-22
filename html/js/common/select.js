@@ -195,15 +195,12 @@ define([
         // view map feature
         dStores.delegate('.store_view', 'click', function () {
             var mapWrap = $(this).parents('.limit').find('.starshop_map');
-            if(mapWrap.find('#map').length > 0) {
-                $(this).html('View Map');
-                $("#map").fadeOut(function(){
-                    $(this).remove();
-                });
-            }
-            else {
-                $("#map").remove();
-                $(this).html('View Shop');
+            if( !mapWrap.find('.map').length ) {
+                var tmpid = 'map-' + ( + new Date() );
+                $('<div class="map"></div>')
+                    .appendTo( mapWrap )
+                    .attr('id' , tmpid)
+                    .css({width:mapWrap.width(),height:mapWrap.height() , 'position': 'absolute' , top: 0});
                 var data = [{
                     title: $(this).parent().find('h2').eq(0).html(),
                     address: $(this).parent().find('p').eq(1).html(),
@@ -211,16 +208,21 @@ define([
                     lat: $(this).data('lat'),
                     lng: $(this).data('lng')
                 }];
-                mapWrap.append('<div id="map"></div>');
-                $('#map').css({width:mapWrap.width(),height:mapWrap.height()});
-                setTimeout(function(){
-                    bMap = new BMap.Map("map");
-                    bMap.addControl(new BMap.NavigationControl());
-                    var point = new BMap.Point(data[0].lat,data[0].lng);
-                    var marker = new BMap.Marker(point, {title:data[0].title});
-                    bMap.centerAndZoom(point, 15);
-                    bMap.addOverlay(marker);
-                },1000);
+                var bMap = new BMap.Map( tmpid );
+                bMap.addControl(new BMap.NavigationControl());
+                var point = new BMap.Point(data[0].lat,data[0].lng);
+                var marker = new BMap.Marker(point, {title:data[0].title});
+                bMap.centerAndZoom(point, 15);
+                bMap.addOverlay(marker);
+
+                $(this).html('View Shop')
+            } else {
+                mapWrap.find('.map').toggle();
+                if( mapWrap.find('.map').is(':visible') ){
+                    $(this).html('View Shop');
+                } else {
+                    $(this).html('View Map');
+                }
             }
         })
     }
