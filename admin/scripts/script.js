@@ -197,7 +197,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            console.log(data);
+            window.location.reload();
           });
         }
         else {
@@ -292,7 +292,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            console.log(data);
+            window.location.reload();
           });
         }
         else {
@@ -332,7 +332,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            console.log(data);
+            window.location.reload();
           });
         }
         else {
@@ -446,6 +446,7 @@
           })
           .success(function (data) {
             //console.log(data);
+            window.location.reload();
           });
         }
         else {
@@ -475,6 +476,7 @@
           })
           .success(function (data) {
             //console.log(data);
+            window.location.reload();
           });
         }
         else {
@@ -504,6 +506,7 @@
       };
   }]);
 
+  // 内容删除
   angular.element("a[data-cid]").click(function (event) {
     var el = angular.element(this);
     var cid = el.attr("data-cid");
@@ -523,6 +526,7 @@
     }
   });
   
+  // Shop 删除
   angular.element("a[data-sid]").click(function (event) {
     var el = angular.element(this);
     var sid = el.attr("data-sid");
@@ -540,6 +544,28 @@
         });
       }
     }
+  });
+  
+  // 多语言切换
+  angular.element("a[lang]").click(function (event) {
+    function setCookie (name, value, expire, path, domain, s){
+        if ( document.cookie === undefined ){
+            return false;
+        }
+        if (expire < 0){
+            value = '';
+        }
+        var dt = new Date();
+        dt.setTime(dt.getTime() + 1000 * expire);
+
+        document.cookie = name + "=" + encodeURIComponent(value) +
+            ((expire) ? "; expires=" + dt.toGMTString() : "") +
+            ((s) ? "; secure" : "");
+
+        return true;
+    }
+    setCookie('lang' , $(this).attr('lang') , 60 * 60 * 24 * 30, "/");
+    window.location.href = window.baseurl;
   });
   
 })(jQuery);
