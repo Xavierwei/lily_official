@@ -45,7 +45,7 @@
                 <img class="btn album" data-album="5" src="images/streetshot3.png" />
             </div>
         </div>
-        
+    </div>
         
         <?php include_once "include/footer.php";?>
         
