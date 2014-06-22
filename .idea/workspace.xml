@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/streetshot.php" afterPath="$PROJECT_DIR$/html/streetsnap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/campaign.php" afterPath="$PROJECT_DIR$/html/campaign.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/flagshipstore.php" afterPath="$PROJECT_DIR$/html/flagshipstore.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/footer.php" afterPath="$PROJECT_DIR$/html/include/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/job.php" afterPath="$PROJECT_DIR$/html/job.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lookbook.php" afterPath="$PROJECT_DIR$/html/lookbook.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/storelocator.php" afterPath="$PROJECT_DIR$/html/storelocator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" afterPath="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/contact.html" afterPath="$PROJECT_DIR$/html/contact.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/html/privacy.html" afterPath="$PROJECT_DIR$/html/privacy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/streetsnap.php" afterPath="$PROJECT_DIR$/html/streetsnap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
@@ -176,7 +170,8 @@
     <file path="/flagshipstore.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403448696356" ignored="false" />
     <file path="/storelocator.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403448797950" ignored="false" />
     <file path="/campaign.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403449029792" ignored="false" />
-    <file path="/streetsnap.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403449135398" ignored="false" />
+    <file path="/streetsnap.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403449967212" ignored="false" />
+    <file path="/contact.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403449718608" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,37 +191,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="job.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/job.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="41" selection-start="693" selection-end="693" vertical-scroll-proportion="-13.571428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/history.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="866" selection-end="914" vertical-scroll-proportion="-21.035715">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="nav.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/include/nav.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="122" selection-start="2046" selection-end="2060" vertical-scroll-proportion="-22.392857">
+            <state line="25" column="110" selection-start="1502" selection-end="1544" vertical-scroll-proportion="-16.964285">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="strings.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/admin/protected/messages/zh_cn/strings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="23" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.65068495">
+            <state line="40" column="23" selection-start="1341" selection-end="1341" vertical-scroll-proportion="-27.142857">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="41" selection-start="374" selection-end="374" vertical-scroll-proportion="-8.821428">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="privacy.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/privacy.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="49" selection-start="794" selection-end="794" vertical-scroll-proportion="-16.964285">
               <folding />
             </state>
           </provider>
@@ -261,10 +256,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="streetsnap.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="streetsnap.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/streetsnap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="26" selection-start="568" selection-end="568" vertical-scroll-proportion="-10.857142">
+            <state line="47" column="10" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.75613886">
               <folding />
             </state>
           </provider>
@@ -306,8 +301,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/html/club_memberrules.html" />
-        <option value="$PROJECT_DIR$/html/club_pointex.html" />
         <option value="$PROJECT_DIR$/html/club_pointexdetail.html" />
         <option value="$PROJECT_DIR$/html/club_pointinfo.html" />
         <option value="$PROJECT_DIR$/html/club_q&amp;a.html" />
@@ -318,10 +311,12 @@
         <option value="$PROJECT_DIR$/html/css/style.css" />
         <option value="$PROJECT_DIR$/html/storelocator.php" />
         <option value="$PROJECT_DIR$/html/flagshipstore.php" />
-        <option value="$PROJECT_DIR$/html/streetsnap.php" />
         <option value="$PROJECT_DIR$/html/campaign.php" />
         <option value="$PROJECT_DIR$/html/lookbook.php" />
         <option value="$PROJECT_DIR$/html/admin/protected/messages/zh_cn/strings.php" />
+        <option value="$PROJECT_DIR$/html/privacy.php" />
+        <option value="$PROJECT_DIR$/html/contact.php" />
+        <option value="$PROJECT_DIR$/html/streetsnap.php" />
       </list>
     </option>
   </component>
@@ -720,22 +715,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/news_cn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.464286">
-          <folding>
-            <marker date="1403434381000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/include/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/include/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="58" selection-start="1289" selection-end="1289" vertical-scroll-proportion="-16.285715">
@@ -780,23 +759,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/include/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="122" selection-start="2046" selection-end="2060" vertical-scroll-proportion="-22.392857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/storelocator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="20" selection-start="313" selection-end="352" vertical-scroll-proportion="-7.464286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/streetsnap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="26" selection-start="568" selection-end="568" vertical-scroll-proportion="-10.857142">
           <folding />
         </state>
       </provider>
@@ -815,13 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/flagshipstore.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="3379" selection-end="3424" vertical-scroll-proportion="-35.392857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/lookbook_cn.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="55" selection-start="3192" selection-end="3196" vertical-scroll-proportion="-4.75">
@@ -831,9 +789,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/flagshipstore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="0" selection-start="3379" selection-end="3424" vertical-scroll-proportion="-35.392857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/privacy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="49" selection-start="794" selection-end="794" vertical-scroll-proportion="-16.964285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/admin/protected/messages/zh_cn/strings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="23" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.65068495">
+        <state line="40" column="23" selection-start="1341" selection-end="1341" vertical-scroll-proportion="-27.142857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/include/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="110" selection-start="1502" selection-end="1544" vertical-scroll-proportion="-16.964285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="41" selection-start="374" selection-end="374" vertical-scroll-proportion="-8.821428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/streetsnap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="10" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.75613886">
           <folding />
         </state>
       </provider>
