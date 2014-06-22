@@ -199,7 +199,7 @@ a:hover {opacity:0.8;}
 .cp_blacktit{font-size:14px;text-align:center;height:88px;line-height:88px;background:#000;color:#fff;width:410px;}
 /* heritage Used
 ================================================================================================= */
-.page_heritage {padding-top:100px;}
+.page_heritage {padding-top:100px;padding-bottom:100px;}
 .page_heritage .ha_modtxt{font-size:14px;line-height:150%;width:45%;}
 #wrap .page_heritage .limit{margin:0 11% 0 11%;}
 #wrap .page_heritage .ha_modR{}
@@ -307,7 +307,7 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 /* padding */
 /* for loading part */
 body.index,body.index .page,body.index .header{background-color:#fff1f4;}
-body.milestone,body.milestone .page,body.milestone .header{background-color:#fff1f4;}
+body.history,body.history .page,body.history .header{background-color:#fff1f4;}
 body.news,body.news .page,body.news .header{background-color:#ddebf3;}
 body.campaign,body.campaign .page,body.campaign .header{background-color:#f1fffc;}
 body.lookbook,body.lookbook .page,body.lookbook .header{background-color:#fafaec;}
