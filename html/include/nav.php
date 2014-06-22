@@ -3,10 +3,10 @@
         <li class='item'>
             <h2><span class="club"><?php echo Yii::t("strings", "VIP CLUB")?></span></h2>
             <ol>
-                <li><a href='javascript:;' index='9'><?php echo Yii::t("strings", "LILY CLUB")?></a></li>
-                <li><a href='javascript:;' index='10'><?php echo Yii::t("strings", "TERMS")?></a></li>
-                <li><a href='javascript:;' index='11'><?php echo Yii::t("strings", "POINT CHECKING")?></a></li>
-                <li><a href='javascript:;' index='12'><?php echo Yii::t("strings", "REDEMPTION")?></a></li>
+                <li><a href='./club_memberinfo.html' index='9'><?php echo Yii::t("strings", "LILY CLUB")?></a></li>
+                <li><a href='./club_memberrules.html' index='10'><?php echo Yii::t("strings", "TERMS")?></a></li>
+                <li><a href='./club_pointinfo.html' index='11'><?php echo Yii::t("strings", "POINT CHECKING")?></a></li>
+                <li><a href='./club_gifthis.html' index='12'><?php echo Yii::t("strings", "REDEMPTION")?></a></li>
             </ol>
         </li>
         <li class='item'>
