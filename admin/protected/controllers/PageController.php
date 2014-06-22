@@ -61,7 +61,7 @@ class PageController extends Controller {
     $request = Yii::app()->getRequest();
     $id = $request->getParam("id", FALSE);
     $news = NewsAR::model()->findByPk($id);
-    if ($id && !$streehot) {
+    if ($id && !$news) {
       $this->redirect(array("news"));
     }
     $this->render("addnews", array("news" => $news));

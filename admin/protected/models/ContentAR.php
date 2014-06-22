@@ -61,7 +61,6 @@ class ContentAR extends CActiveRecord {
     // 添加 Field 数据
     foreach ($fields as $field) {
       $model = new FieldAR();
-      
       $model->afterContentSave($this, $field);
     }
     
@@ -99,11 +98,28 @@ class ContentAR extends CActiveRecord {
             
           }
           else {
-            
+            //
           }
         }
       }
       return parent::beforeFind();
+  }
+  
+  /**
+   * 
+   */
+  public function afterFind() {
+    $fields = $this->getFields();
+    if ($fields) {
+        foreach ($fields as $field_name) {
+          $fieldAr = new FieldAR();
+          $field_instance = $fieldAr->getFieldInstance($this, $field_name);
+          if ($field_instance) {
+            $this->{$field_name} = $field_instance->field_content;
+          }
+        }
+    }
+    return parent::afterFind();
   }
   
   public function getList($limit = FALSE, $offset = FALSE) {

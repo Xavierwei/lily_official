@@ -358,7 +358,7 @@ define([
 
         dBody.delegate('.search_popup .search_btn', 'click', function() {
             var keyword = $('.search_popup .search_input').val();
-            window.location.href = "news.php?keyword=" + keyword;
+            window.location.href = "events.php?keyword=" + keyword;
         });
     }
 

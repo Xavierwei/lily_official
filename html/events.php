@@ -12,8 +12,8 @@
             <!--  -->
             <div class="event">
                 <div class="event_tit">
-                    <h2>NEWS</h2>
-                    <p>BUILDING EVERY DAY HISTORY</p>
+                    <h2><?php echo Yii::t("strings", "NEWS")?></h2>
+                    <p><?php echo Yii::t("strings", "BUILDING EVERY DAY HISTORY")?></p>
                 </div>
                 <div class="limit event_list cs-clear">
                     <!--  -->
@@ -23,7 +23,7 @@
                     <div class="event_item" data-nid="<?php echo $news->cid;?>">
                         <div class="event_img">
                             <p></p>
-	                        <a href="javascript:;" class="event_open"><img src="images/news2.jpg" /></a>
+	                        <a href="javascript:;" class="event_open"><img src="<?php echo thumbnail($news->thumbnail, array('360', '266'));?>" /></a>
                         </div>
                         <div class="event_com">
                             <h3><a href="javascript:;" class="event_open"><?php echo $news->title;?></a></h3>

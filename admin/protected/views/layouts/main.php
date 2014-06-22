@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl;?>/css/bootstrap-responsive.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 
-	<title>Lily Office Admin Office</title>
+	<title><?php echo Yii::t("strings", "Lily Office Admin Office")?></title>
   <script type="text/javascript">
     window.baseurl = "<?php echo Yii::app()->baseUrl?>";
   </script>
@@ -21,7 +21,7 @@
 <div class="container-fluid" id="page">
 
 	<div id="header">
-		<div id="logo">Lily Office Admin Office</div>
+		<div id="logo"><?php echo Yii::t("strings", "Lily Office Admin Office")?></div>
 	</div>
   
   <div id="bar">
@@ -31,22 +31,22 @@
   <div id="body" class="row-fluid">
     <div id="sidebar" class="span3">
       <ul class="nav nav-list">
-        <li class="nav-header">Shop Management</li>
+        <li class="nav-header"><?php echo Yii::t("strings", "Shop Management")?></li>
         <li><a href="<?php echo Yii::app()->createUrl("shop/index")?>">Shop Table</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("shop/add")?>">Add Shop</a></li>
-        <li class="nav-header">Job Management</li>
+        <li class="nav-header"><?php echo Yii::t("strings", "Job Management")?></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/job")?>">Job Table</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/addjob")?>">Add Job</a></li>
-        <li class="nav-header">Lookbook Management</li>
+        <li class="nav-header"><?php echo Yii::t("strings", "Lookbook Management")?></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/lookbook")?>">Lookbook</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/addlookbook")?>">Add Lookbook</a></li>
-        <li class="nav-header">Streehot Management</li>
-        <li><a href="<?php echo Yii::app()->createUrl("page/streehot")?>">Streehoot</a></li>
+        <li class="nav-header"><?php echo Yii::t("strings", "Streethot Management")?></li>
+        <li><a href="<?php echo Yii::app()->createUrl("page/streehot")?>">Streethot</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/addstreehot")?>">Add Streehoot</a></li>
-        <li class="nav-header">Milestone Management</li>
+        <li class="nav-header"><?php echo Yii::t("strings", "Milestone Management")?></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/milestone")?>">Milestone</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/addmilestone")?>">Add Milestone</a></li>
-        <li class="nav-header">News Management</li>
+        <li class="nav-header"><?php echo Yii::t("strings", "News Management")?></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/news")?>">News</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/addnews")?>">Add News</a></li>
       </ul>

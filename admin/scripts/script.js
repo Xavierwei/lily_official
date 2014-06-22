@@ -197,7 +197,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            console.log(data);
+            window.location.reload();
           });
         }
         else {
@@ -228,23 +228,25 @@
       $scope.init = function () {
         // 加载lookbook 对象
         var cid = angular.element("input[name='cid']").val();
-        $http({
-          method: "get",
-          params: {id: cid},
-          url: window.baseurl + "/api/streehot/index"
-        })
-        .success(function (res) {
-          if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
-            var data = res["data"];
-            $scope.streehot = data;
-            $.each( $scope.streehot.streehot_image, function (i, val) {
-              $scope.media.image.push(val);
-            });
-          }
-          else {
-            alert("未知错误");
-          }
-        });
+        if (cid > 0 )  {
+          $http({
+            method: "get",
+            params: {id: cid},
+            url: window.baseurl + "/api/streehot/index"
+          })
+          .success(function (res) {
+            if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
+              var data = res["data"];
+              $scope.streehot = data;
+              $.each( $scope.streehot.streehot_image, function (i, val) {
+                $scope.media.image.push(val);
+              });
+            }
+            else {
+              alert("未知错误");
+            }
+          });
+        }
       };
       
       // 绑定图片上传事件
@@ -290,7 +292,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            console.log(data);
+            window.location.reload();
           });
         }
         else {
@@ -320,6 +322,9 @@
   AdminModule.controller("MilestoneForm", ["$scope", "$http", function ($scope, $http) {
       $scope.submitMilestone = function (event) {
         if ($scope.milestoneform.$valid) {
+          var body = CKEDITOR.instances.body;
+          var bodyhtml = body.getData();
+          $scope.milestone.body = bodyhtml;
           $http({
             method: "POST",
             url: window.baseurl + "/api/milestone/add",
@@ -327,11 +332,32 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            console.log(data);
+            window.location.reload();
           });
         }
         else {
           alert("验证失败");
+        }
+      };
+      
+      $scope.init = function () {
+        // 加载lookbook 对象
+        var cid = angular.element("input[name='cid']").val();
+        if (cid > 0 )  {
+          $http({
+            method: "get",
+            params: {id: cid},
+            url: window.baseurl + "/api/milestone/index"
+          })
+          .success(function (res) {
+            if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
+              var data = res["data"];
+              $scope.milestone = data;
+            }
+            else {
+              alert("未知错误");
+            }
+          });
         }
       };
   }]);
@@ -351,6 +377,27 @@
       $scope.news.thumbnail = "";
       
       $scope.init = function () {
+        
+        // 加载 news 对象
+        var cid = angular.element("input[name='cid']").val();
+        if (cid > 0 )  {
+          $http({
+            method: "get",
+            params: {news_id: cid},
+            url: window.baseurl + "/api/news/index"
+          })
+          .success(function (res) {
+            if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
+              var data = res["data"];
+              $scope.news = data;
+              $scope.media.image = data.thumbnail;
+            }
+            else {
+              alert("未知错误");
+            }
+          });
+        }
+        
         // 绑定图片上传事件
         angular.element("input[type='file']").live("change", function(event) {
           var el = angular.element(event.target);
@@ -399,6 +446,7 @@
           })
           .success(function (data) {
             //console.log(data);
+            window.location.reload();
           });
         }
         else {
@@ -428,14 +476,37 @@
           })
           .success(function (data) {
             //console.log(data);
+            window.location.reload();
           });
         }
         else {
           alert("表单验证失败");
         }
       };
+      
+      // 初始化
+      $scope.init = function () {
+        console.log("INIT");
+        // 加载 Job 对象
+        var cid = angular.element("input[name='cid']").val();
+        $http({
+          method: "get",
+          params: {id: cid},
+          url: window.baseurl + "/api/job/index"
+        })
+        .success(function (res) {
+          if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
+            var data = res["data"];
+            $scope.job = data;
+          }
+          else {
+            alert("未知错误");
+          }
+        });
+      };
   }]);
 
+  // 内容删除
   angular.element("a[data-cid]").click(function (event) {
     var el = angular.element(this);
     var cid = el.attr("data-cid");
@@ -455,6 +526,7 @@
     }
   });
   
+  // Shop 删除
   angular.element("a[data-sid]").click(function (event) {
     var el = angular.element(this);
     var sid = el.attr("data-sid");
@@ -472,6 +544,28 @@
         });
       }
     }
+  });
+  
+  // 多语言切换
+  angular.element("a[lang]").click(function (event) {
+    function setCookie (name, value, expire, path, domain, s){
+        if ( document.cookie === undefined ){
+            return false;
+        }
+        if (expire < 0){
+            value = '';
+        }
+        var dt = new Date();
+        dt.setTime(dt.getTime() + 1000 * expire);
+
+        document.cookie = name + "=" + encodeURIComponent(value) +
+            ((expire) ? "; expires=" + dt.toGMTString() : "") +
+            ((s) ? "; secure" : "");
+
+        return true;
+    }
+    setCookie('lang' , $(this).attr('lang') , 60 * 60 * 24 * 30, "/");
+    window.location.href = window.baseurl;
   });
   
 })(jQuery);
