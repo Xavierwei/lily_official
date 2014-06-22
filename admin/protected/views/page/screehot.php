@@ -12,7 +12,7 @@
         <td><?php echo $streehot->cdate?></td>
         <td>
           <a href="<?php echo Yii::app()->baseUrl."/page/addstreehot?id=". $streehot->cid?>">Edit</a>
-          <a href="<?php echo Yii::app()->baseUrl."/page/addstreehot"?>">Delete</a>
+          <a href="javascript:void(0)" data-cid="<?php echo $streehot->cid?>" ng-click="deleteContent()">Delete</a>
         </td>
       </tr>
       <?php endforeach;?>

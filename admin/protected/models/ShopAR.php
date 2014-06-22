@@ -165,4 +165,13 @@ class ShopAR extends CActiveRecord {
     $attributes[self::SHOP_STAR_IMAGE] = $this->{self::SHOP_STAR_IMAGE};
     return $attributes;
   }
+  
+  public function closeShop() {
+    if ($this->sid) {
+      $this->status = self::STATUS_CLOSED;
+    }
+    $this->update();
+    
+    return TRUE;
+  }
 }

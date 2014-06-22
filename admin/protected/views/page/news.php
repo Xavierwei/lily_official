@@ -12,7 +12,7 @@
         <td><?php echo $news->cdate?></td>
         <td>
           <a href="<?php echo Yii::app()->baseUrl."/page/addnews?id=". $news->cid?>">Edit</a>
-          <a href="<?php echo Yii::app()->baseUrl."/page/addnews"?>">Delete</a>
+          <a href="javascript:void(0)" data-cid="<?php echo $news->cid?>" ng-click="deleteContent()">Delete</a>
         </td>
       </tr>
       <?php endforeach;?>

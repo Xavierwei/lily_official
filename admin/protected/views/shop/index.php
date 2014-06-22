@@ -24,7 +24,7 @@
         <td><?php echo $shop->star == 1 ? "Star" : "No"?></td>
         <td>
           <a href="<?php echo Yii::app()->baseUrl."/shop/edit?shop_id=". $shop->shop_id?>"><?php echo Yii::t("strings", "Edit")?></a>
-          <a href="<?php echo Yii::app()->baseUrl."/shop/close?shop_id=". $shop->shop_id?>"><?php echo Yii::t("strings", "Close Shop")?></a>
+          <a href="javascript:void(0)" data-sid="<?php echo $shop->shop_id?>"><?php echo Yii::t("strings", "Close Shop")?></a>
         </td>
       </tr>
       <?php endforeach;?>

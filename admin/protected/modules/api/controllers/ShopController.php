@@ -212,4 +212,20 @@ class ShopController extends Controller {
     return $this->responseJSON(array("shopes" => $city_shopes, "min_distance_shop" => $min_distance_shop), "success");
     
   }
+  
+  public function actionDisable() {
+    $request = Yii::app()->getRequest();
+    
+    $sid = $request->getParam("sid");
+    if (!$sid) {
+      return $this->responseError("http param error", ErrorAR::ERROR_MISSED_REQUIRED_PARAMS);
+    }
+    $shop = ShopAR::model()->findByPk($sid);
+    
+    if ($shop) {
+      $shop->closeShop();
+    }
+    
+    return $this->responseJSON("success", "success");
+  }
 }

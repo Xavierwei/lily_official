@@ -14,7 +14,7 @@
         <td><?php echo $milestone->cdate?></td>
         <td>
           <a href="<?php echo Yii::app()->baseUrl."/page/addmilestone?id=". $milestone->cid?>">Edit</a>
-          <a href="<?php echo Yii::app()->baseUrl."/page/addstreehot"?>">Delete</a>
+          <a href="javascript:void(0)" data-cid="<?php echo $milestone->cid?>" ng-click="deleteContent()">Delete</a>
         </td>
       </tr>
       <?php endforeach;?>

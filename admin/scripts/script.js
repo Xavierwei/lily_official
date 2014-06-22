@@ -215,6 +215,8 @@
           lengthChange: false
         });
       };
+      
+
   }]);
 
   AdminModule.controller("StreehotForm", ["$scope", "$http", function ($scope, $http) {
@@ -433,5 +435,43 @@
         }
       };
   }]);
+
+  angular.element("a[data-cid]").click(function (event) {
+    var el = angular.element(this);
+    var cid = el.attr("data-cid");
+    if (cid > 0) {
+      if (confirm("Delete this content ?")) {
+        $http({
+          method: "GET",
+          params: ({cid: cid}),
+          url: window.baseurl + "/api/content/delete",
+          headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        })
+        .success(function () {
+          alert("Delete Success");
+          window.location.reload();
+        });
+      }
+    }
+  });
+  
+  angular.element("a[data-cid]").click(function (event) {
+    var el = angular.element(this);
+    var sid = el.attr("data-sid");
+    if (sid > 0) {
+      if (confirm("Delete this content ?")) {
+        $http({
+          method: "GET",
+          params: ({sid: sid}),
+          url: window.baseurl + "/api/shop/disable",
+          headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        })
+        .success(function () {
+          alert("Disable Success");
+          //window.location.reload();
+        });
+      }
+    }
+  });
   
 })(jQuery);
