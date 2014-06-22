@@ -132,23 +132,26 @@
       $scope.init = function () {
         // 加载lookbook 对象
         var cid = angular.element("input[name='cid']").val();
-        $http({
-          method: "get",
-          params: {id: cid},
-          url: window.baseurl + "/api/lookbook/index"
-        })
-        .success(function (res) {
-          if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
-            var data = res["data"];
-            $scope.lookbook = data;
-            $.each( $scope.lookbook.look_book_image, function (i, val) {
-              $scope.media.look_book_image.push(val);
-            });
-          }
-          else {
-            alert("未知错误");
-          }
-        });
+        console.log(cid);
+        if (parseInt(cid) > 0) {
+          $http({
+            method: "get",
+            params: {id: cid},
+            url: window.baseurl + "/api/lookbook/index"
+          })
+          .success(function (res) {
+            if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
+              var data = res["data"];
+              $scope.lookbook = data;
+              $.each( $scope.lookbook.look_book_image, function (i, val) {
+                $scope.media.look_book_image.push(val);
+              });
+            }
+            else {
+              alert("未知错误");
+            }
+          });
+        }
         
         // 绑定图片上传事件
         angular.element("input[type='file']").live("change", function(event) {

@@ -53,7 +53,6 @@ class NewsAR extends ContentAR {
     $query->params[":type"] = $this->type;
     
     return $this->findAll($query);
-    
   }
   
 }

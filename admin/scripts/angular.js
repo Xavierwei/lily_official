@@ -5986,7 +5986,9 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
               nodeLinkFn(childLinkFn, childScope, node, $rootElement, boundTranscludeFn);
             }
           } else if (childLinkFn) {
-            childLinkFn(scope, node.childNodes, undefined, boundTranscludeFn);
+            if (typeof node != "undefined") {
+              childLinkFn(scope, node.childNodes, undefined, boundTranscludeFn);
+            }
           }
         }
       }
