@@ -5,7 +5,7 @@
 <?php include_once "include/header.php"; ?>
 <body class='index'>
     
-    <?php include_once 'include/nav.php';?>
+    <?php include_once 'include/nav.php';?>111
 
     <div id='wrap'>
         <!--  -->
@@ -13,11 +13,9 @@
             <!--  -->
             <div class="limit home_new">
                 <?php $firstNews = loadFirstNews(); ?>
-                <h2<?php echo $firstNews->title?></h2>
-                <div class="tit_time"><?php echo date('d/m/Y',strtotime($firstNews->attributes['cdate']));?></div>
-                <div class="home_new_cn">
-                    <?php echo $firstNews->body;?>
-                </div>
+                <h2><?php echo Yii::t("strings", "NEWS")?></h2>
+                <div class="tit_time">23/03/14</div>
+                <div class="home_new_cn"></div>
                 <div class="home_new_more cs-clear" >
                     <a href="#news" class="btn btnlink" ><span><?php echo Yii::t("strings", "More news")?></span><span><?php echo Yii::t("strings", "More news")?></span></a>
                 </div>
@@ -31,18 +29,7 @@
                 <div class='left'>
                     <h2><?php echo Yii::t("strings", "BRAND")?></h2>
                     <div class="home_brand_txt">
-                        <p>
-                            年轻OL的商务着装，可能太严肃，可能太时髦，或者像Lily这样正合适。 作为年轻OL商务时装的开创者，Lily秉承时尚与商务完美融合的理念，以清新明快、现代简约的风格，为都市年轻职业女性设计商务场合＂正合适＂的商务时装。
-                        </p>
-                        <p>
-                            “力度、女性化、现代、明快”是Lily品牌核心的产品风格。设计师以“现代艺术范”为创作灵感，与超现实主义、摩登时代、拜占庭艺术等时尚潮流元素相结合，以简洁利落的廓形、独具创意的色彩和印花创造出独特的商务时装美学。
-                        </p>
-                        <p>
-                            Lily商务时装已在中国开设700余家品牌店铺，入驻上海、北京、广州、深圳、武汉等250个城市，并在俄罗斯、沙特、泰国、新加坡、科威特等国际市场开设零售店铺近60家。
-                        </p>
-                        <p>
-                            Lily品牌成功登陆国际米兰时装周、德国CPD等多个国际性时尚盛会，并在米兰时装周上荣膺“新锐设计师”大奖，成为国际时尚圈倍受关注的新锐时装品牌。
-                        </p>
+	                    <?php echo Yii::t("strings", "brand_story_text")?>
                     </div>
                 </div>
                 <div class='right'>
@@ -69,11 +56,7 @@
                         </div>
                     </div>
                     <a href="#campaign" class="home_cpbox">
-                        <h2>
-                            cam-
-                            <br />
-                            paign
-                        </h2>
+                        <h2><?php echo Yii::t("strings", "CAM-<br />PAIGN")?></h2>
                         <p>FW/14</p>
                         <p>
                             featuring
@@ -86,11 +69,7 @@
                 <div class="right">
                     <div class="home_lookbook">
                         <a href="#lookbook" class="home_lb_item border">
-                            <h2>
-                                LOOK
-                                <br />
-                                BOOK
-                            </h2>
+                            <h2><?php echo Yii::t("strings", "LOOK<br />BOOK")?></h2>
                             <p>FW/14</p>
                         </a>
                         <div class="home_lb_item">
@@ -110,8 +89,8 @@
             </div>
             <!--  -->
             <div id='home-selectbox' class="home_store">
-                <h2>STORE</h2>
-                <div class="home_sttxt">CLOSE TO YOU</div>
+                <h2><?php echo Yii::t("strings", "STORE")?></h2>
+                <div class="home_sttxt"><?php echo Yii::t("strings", "NEAR YOU")?></div>
                 <div class="store_select cs-clear" id='province'>
                     <a class="store_selectbg cs-clear" >
                         <span class="store_sl_txt">Province</span>
@@ -121,7 +100,7 @@
                 </div>
                 <div class="store_select cs-clear" id='city'>
                     <a class="store_selectbg cs-clear" >
-                        <span class="store_sl_txt">City</span>
+                        <span class="store_sl_txt"><?php echo Yii::t("strings", "City")?></span>
                         <span class="store_sl_icon"></span>
                     </a>
                     <select class="store_sl"></select>

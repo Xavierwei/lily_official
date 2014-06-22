@@ -2650,3 +2650,88 @@ Stack trace:
 REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
 HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
 ---
+2014/06/22 13:27:10 [error] [exception.CDbException] SQLSTATE[42000] [1049] Unknown database 'lily_official'
+2014/06/22 13:27:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php:388
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CModule.php(387): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(450): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(1455): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/lily_official/html/include/functions.php(55): CActiveRecord->find(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/lily_official/html/index.php(15): loadFirstNews()
+#9 {main}
+REQUEST_URI=/lily_official/html/
+HTTP_REFERER=http://localhost/lily_official/html/
+---
+2014/06/22 13:27:10 [error] [exception.CDbException] SQLSTATE[42000] [1049] Unknown database 'lily_official'
+2014/06/22 13:27:13 [error] [exception.CDbException] SQLSTATE[42000] [1049] Unknown database 'lily_official'
+2014/06/22 13:27:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php:388
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CModule.php(387): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(450): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(1455): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/lily_official/html/include/functions.php(55): CActiveRecord->find(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/lily_official/html/index.php(15): loadFirstNews()
+#9 {main}
+REQUEST_URI=/lily_official/html/
+HTTP_REFERER=http://localhost/lily_official/html/
+---
+2014/06/22 13:27:13 [error] [exception.CDbException] SQLSTATE[42000] [1049] Unknown database 'lily_official'
+2014/06/22 13:27:16 [error] [exception.CDbException] SQLSTATE[42000] [1049] Unknown database 'lily_official'
+2014/06/22 13:27:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php:388
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CModule.php(387): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(450): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(1455): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/lily_official/html/include/functions.php(55): CActiveRecord->find(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/lily_official/html/index.php(15): loadFirstNews()
+#9 {main}
+REQUEST_URI=/lily_official/html/
+HTTP_REFERER=http://localhost/lily_official/html/
+---
+2014/06/22 13:27:16 [error] [exception.CDbException] SQLSTATE[42000] [1049] Unknown database 'lily_official'
+2014/06/22 13:27:30 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2014/06/22 13:27:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php:388
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CModule.php(387): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(450): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(1455): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/lily_official/html/include/functions.php(55): CActiveRecord->find(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/lily_official/html/index.php(15): loadFirstNews()
+#9 {main}
+REQUEST_URI=/lily_official/html/
+HTTP_REFERER=http://localhost/lily_official/html/
+---
+2014/06/22 13:27:30 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2014/06/22 13:29:00 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2014/06/22 13:29:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php:388
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CModule.php(387): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(450): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php(1455): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/lily_official/html/include/functions.php(55): CActiveRecord->find(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/lily_official/html/index.php(15): loadFirstNews()
+#9 {main}
+REQUEST_URI=/lily_official/html/
+HTTP_REFERER=http://localhost/lily_official/html/
+---
+2014/06/22 13:29:00 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)

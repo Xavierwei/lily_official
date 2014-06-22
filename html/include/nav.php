@@ -10,37 +10,37 @@
             </ol>
         </li>
         <li class='item'>
-            <h2><a href='#index' title='index' index='1'><?php echo Yii::t("strings", "Home")?></a></h2>
+            <h2><a href='./index' title='index' index='1'><?php echo Yii::t("strings", "Home")?></a></h2>
         </li>
         <li class='item'>
             <h2><?php echo Yii::t("strings", "BRAND")?></h2>
             <ol>
-                <li><a href='#index?hash=brand_story' class="on" title='index' index='1'><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
-                <li><a href='#milestone' title='milestone' index='2'><?php echo Yii::t("strings", "MILESTONE")?></a></li>
-                <li><a href='#news' title='news' index='3'><?php echo Yii::t("strings", "NEWS")?></a></li>
+                <li><a href='./index?hash=brand_story' class="on" title='index' index='1'><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
+                <li><a href='./history' title='history' index='2'><?php echo Yii::t("strings", "HISTORY")?></a></li>
+                <li><a href='./events' title='events' index='3'><?php echo Yii::t("strings", "EVENTS")?></a></li>
             </ol>
         </li>
         <li class='item'>
             <h2><?php echo Yii::t("strings", "PRODUCT")?></h2>
             <ol>
-                <li><a href='#campaign' title='campaign' index='4'><?php echo Yii::t("strings", "CAMPAIGN")?></a></li>
-                <li><a href='#lookbook' title="lookbook" index='5'><?php echo Yii::t("strings", "LOOKBOOK")?></a></li>
-                <li><a href='#streetshot' title="streetshot" index='6'><?php echo Yii::t("strings", "STREET SHOTS")?></a></li>
+                <li><a href='./campaign' title='campaign' index='4'><?php echo Yii::t("strings", "CAMPAIGN")?></a></li>
+                <li><a href='./lookbook' title="lookbook" index='5'><?php echo Yii::t("strings", "LOOK BOOK")?></a></li>
+                <li><a href='./streetsnap' title="streetsnap" index='6'><?php echo Yii::t("strings", "STREET SNAP")?></a></li>
             </ol>
         </li>
         <li class='item'>
-            <h2><?php echo Yii::t("strings", "SHOP")?></h2>
+            <h2><?php echo Yii::t("strings", "STORE")?></h2>
             <ol>
-                <li><a href='#starshop' title="starshop" index='7'><?php echo Yii::t("strings", "STAR SHOP")?></a></li>
-                <li><a href='#storelocator' title="storelocator" index='8'><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>
+                <li><a href='./flagshipstore' title="flagshipstore" index='7'><?php echo Yii::t("strings", "FLAGSHIP STORE")?></a></li>
+                <li><a href='./storelocator' title="storelocator" index='8'><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>
             </ol>
         </li>
     </ul>
 
     <a class='menu'></a>
-    <div class="language">
-        <a href="javascript:void(0)" lang="en_us" data-lang class="lang_en"></a>
-        <a href="javascript:void(0)" lang="zh_cn" data-lang class="lang_cn"></a>
-    </div>
+	<div class="language">
+		<a href="" data-lang="en_us" class="lang_en"></a>
+		<a href="" data-lang="zh_cn" class="lang_cn"></a>
+	</div>
     <div class="search"></div>
 </div>
