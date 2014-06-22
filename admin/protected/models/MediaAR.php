@@ -74,11 +74,11 @@ class MediaAR extends CActiveRecord {
     if (is_string($uri)) {
       if (strpos($uri, "http://") !== FALSE) {
         $uri = str_replace(Yii::app()->getBaseUrl(TRUE), "", $uri);
-
-        $filePath = dirname(Yii::app()->basePath)."/". $uri;
-        $name = pathinfo($filePath, PATHINFO_FILENAME);
-        $ext = pathinfo($filePath, PATHINFO_EXTENSION);
       }
+
+      $filePath = dirname(Yii::app()->basePath)."/". $uri;
+      $name = pathinfo($filePath, PATHINFO_FILENAME);
+      $ext = pathinfo($filePath, PATHINFO_EXTENSION);
     }
     else {
       foreach ($uri as &$i) {

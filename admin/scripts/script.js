@@ -17,7 +17,7 @@
           headers: {"Content-Type": "application/x-www-form-urlencoded"}
         })
         .success(function (data) {
-          window.location = (window.baseurl + "/shop/index");
+          //window.location = (window.baseurl + "/shop/index");
         });
       }
       else {
@@ -181,7 +181,6 @@
               }
             }
           });
-          
         });
       };
       
@@ -213,6 +212,97 @@
           lengthChange: false
         });
       };
+  }]);
+
+  AdminModule.controller("StreehotForm", ["$scope", "$http", function ($scope, $http) {
+      $scope.media = {};
+      $scope.media.image = [];
+      $scope.streehot = {};
+      $scope.streehot.streehot_image = [];
+      
+      $scope.init = function () {
+        // 加载lookbook 对象
+        var cid = angular.element("input[name='cid']").val();
+        $http({
+          method: "get",
+          params: {id: cid},
+          url: window.baseurl + "/api/streehot/index"
+        })
+        .success(function (res) {
+          if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
+            var data = res["data"];
+            $scope.streehot = data;
+            $.each( $scope.streehot.streehot_image, function (i, val) {
+              $scope.media.image.push(val);
+            });
+          }
+          else {
+            alert("未知错误");
+          }
+        });
+      };
+      
+      // 绑定图片上传事件
+      angular.element("input[type='file']").live("change", function(event) {
+        var el = angular.element(event.target);
+        var file = el[0].files[0];
+        var fileReader = new FileReader();
+        fileReader.onloadend = function (e) {
+          $scope.media.image.push(e.target.result);
+          $scope.$digest();
+        };
+        fileReader.readAsDataURL(file);
+
+        // 上传
+        var formdata = new FormData();
+        formdata.append("media", file);
+        $.ajax({
+          url: window.baseurl + "/api/media/temp",
+          type: "post",
+          data: formdata,
+          processData: false,
+          contentType: false,
+          success: function (res) {
+            if (typeof res["status"] != "undefined") {
+              var uri = res["data"]["uri"];
+              $scope.streehot.streehot_image.push(uri);
+              $scope.$digest();
+            }
+            else {
+              alert("未知错误");
+            }
+          }
+        });
+      });
+      
+      // 提交表单
+      $scope.submitStreehot = function (event) {
+        if ($scope.streehotform.$valid) {
+          $http({
+            method: "POST",
+            url: window.baseurl + "/api/streehot/add",
+            data: $.param($scope.streehot),
+            headers: {"Content-Type": "application/x-www-form-urlencoded"}
+          })
+          .success(function (data) {
+            console.log(data);
+          });
+        }
+        else {
+          alert("验证失败");
+        }
+      };
+  }]);
+
+  AdminModule.controller("StreehotTable", ["$scope", "$http", function ($scope, $http) {
+      $scope.init = function () {
+        angular.element(".table-content .table").DataTable({
+          info: false,
+          pageLength: 5,
+          lengthChange: false
+        });
+      };
+
   }]);
   
 })(jQuery);
