@@ -61,7 +61,6 @@ class ContentAR extends CActiveRecord {
     // 添加 Field 数据
     foreach ($fields as $field) {
       $model = new FieldAR();
-      
       $model->afterContentSave($this, $field);
     }
     

@@ -39,9 +39,15 @@ class FieldAR extends CActiveRecord {
         "cid" => $content->cid,
         "field_content" => $content->{$field_name},
     );
+        
+    $fieldInstance = $this->getFieldInstance($content, $field_name);
+    if ($fieldInstance) {
+      $fieldInstance->setAttributes($field_data);
+      $fieldInstance->update();
+      return TRUE;
+    }
     
     $this->setAttributes($field_data);
-    
     if($this->save()) {
       return TRUE;
     }
@@ -50,7 +56,6 @@ class FieldAR extends CActiveRecord {
       if ($errors["field_content"]) {
         $errors[$field_name] = $errors["field_content"];
       }
-      
       return $errors;
     }
   }
