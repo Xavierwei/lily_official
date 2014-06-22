@@ -24,6 +24,7 @@ return array(
     "LOOK<br />BOOK" => "产品目录",
 	"CAM-<br />PAIGN" => "大片",
     "NEAR YOU" => "您的附近",
-	"City" => "城市"
+	"City" => "城市",
+	"LOOK" => "查看"
 
 );
