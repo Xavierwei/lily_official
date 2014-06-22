@@ -20,11 +20,7 @@ $app = Yii::createWebApplication($config);
  * 载入新闻
  */
 function loadNews() {
-  $query = new CDbCriteria();
-  $query->addCondition("status=:status");
-  $query->params[":status"] = NewsAR::STATUS_ENABLE;
-  
-  $news = NewsAR::model()->findAll($query);
+  $news = NewsAR::model()->getList();
   
   return $news;
 }
@@ -36,6 +32,8 @@ function loadFirstNews() {
     $query = new CDbCriteria();
     $query->addCondition("status=:status");
     $query->params[":status"] = NewsAR::STATUS_ENABLE;
+    $query->addCondition("type=:type");
+    $query->params[":type"] = NewsAR::model()->type;
     $news = NewsAR::model()->find($query);
     return $news;
 }
@@ -47,6 +45,8 @@ function loadJob($type = FALSE) {
   $query = new CDbCriteria();
   $query->addCondition("status=:status");
   $query->params[":status"] = JobAR::STATUS_ENABLE;
+  $query->addCondition("type=:type");
+  $query->params[":type"] = NewsAR::model()->type;
   
   if ($type) {
     $jobAr = new JobAR();
