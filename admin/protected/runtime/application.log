@@ -2735,3 +2735,229 @@ REQUEST_URI=/lily_official/html/
 HTTP_REFERER=http://localhost/lily_official/html/
 ---
 2014/06/22 13:29:00 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2014/06/22 14:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:08:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{item.src}}".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): CController->missingAction('{{item.src}}')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): CController->run('{{item.src}}')
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('shop/{{item.src...')
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/lily_official/html/admin/index.php/shop/%7B%7Bitem.src%7D%7D
+HTTP_REFERER=http://localhost/lily_official/html/admin/index.php/shop/add
+---
+2014/06/22 14:08:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:08:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:08:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{media}}".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): CController->missingAction('{{media}}')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): CController->run('{{media}}')
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('page/{{media}}')
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/lily_official/html/admin/index.php/page/%7B%7Bmedia%7D%7D
+HTTP_REFERER=http://localhost/lily_official/html/admin/index.php/page/addlookbook
+---
+2014/06/22 14:08:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:08:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "{{media.image}}".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): CController->missingAction('{{media.image}}')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): CController->run('{{media.image}}')
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('page/{{media.im...')
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/lily_official/html/admin/index.php/page/%7B%7Bmedia.image%7D%7D
+HTTP_REFERER=http://localhost/lily_official/html/admin/index.php/page/addnews
+---
+2014/06/22 14:09:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:09:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:09:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:09:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:12:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:12:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:12:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:12:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/html/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/html/admin/css/jquery.dataTables.min.css
+---
+2014/06/22 14:19:02 [error] [php] Undefined variable: news (/Applications/MAMP/htdocs/lily_official/html/history.php:27)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/history.php(27): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/history
+2014/06/22 14:19:46 [error] [php] Missing argument 1 for CActiveRecord::getAttribute(), called in /Applications/MAMP/htdocs/lily_official/admin/yii/base/CComponent.php on line 111 and defined (/Applications/MAMP/htdocs/lily_official/admin/yii/db/ar/CActiveRecord.php:691)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/protected/models/ContentAR.php(88): MilestoneAR->__get()
+#1 /Applications/MAMP/htdocs/lily_official/html/history.php(16): MilestoneAR->__get()
+REQUEST_URI=/lily_official/html/history
+2014/06/22 14:19:53 [error] [php] Undefined variable: news (/Applications/MAMP/htdocs/lily_official/html/history.php:27)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/history.php(27): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/history
