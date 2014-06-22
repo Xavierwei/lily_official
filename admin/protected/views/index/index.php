@@ -10,4 +10,7 @@
       <a href="<?php echo Yii::app()->createUrl("page/addlookbook")?>"><?php echo Yii::t("strings", "Create Lookbook")?></a>
     </div>
   </div>
+  
+  <a href="<?php echo Yii::app()->weibo->getAuth()->getAuthorizeURL(WB_CALLBACK_URL)?>">Weibo Login</a>
+  
 </div>
