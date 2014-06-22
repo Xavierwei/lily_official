@@ -44,7 +44,7 @@
       <div class="control-label">
         <label for=""><?php echo Yii::t("strings", "Language")?></label>
         <div class="controls">
-          <select name="language" id="" ng-model="shop.language" required>
+          <select name="language" id="" ng-model="job.language" required>
             <option value="cn"><?php echo Yii::t("strings", "Chinese")?></option>
             <option value="en"><?php echo Yii::t("strings", "English")?></option>
           </select>

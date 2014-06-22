@@ -441,9 +441,9 @@
     var cid = el.attr("data-cid");
     if (cid > 0) {
       if (confirm("Delete this content ?")) {
-        $http({
-          method: "GET",
-          params: ({cid: cid}),
+        $.ajax({
+          type: "GET",
+          data: ({cid: cid}),
           url: window.baseurl + "/api/content/delete",
           headers: {"Content-Type": "application/x-www-form-urlencoded"},
         })
@@ -460,7 +460,7 @@
     var sid = el.attr("data-sid");
     if (sid > 0) {
       if (confirm("Delete this content ?")) {
-        $http({
+        $.ajax({
           method: "GET",
           params: ({sid: sid}),
           url: window.baseurl + "/api/shop/disable",
@@ -468,7 +468,7 @@
         })
         .success(function () {
           alert("Disable Success");
-          //window.location.reload();
+          window.location.reload();
         });
       }
     }
