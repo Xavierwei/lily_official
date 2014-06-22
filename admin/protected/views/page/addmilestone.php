@@ -14,7 +14,7 @@
         <label for=""><?php echo Yii::t("strings", "Body")?></label>
       </div>
       <div class="controls">
-        <textarea name="body" ng-model="milestone.body"  required ></textarea>
+        <textarea name="body" class="ckeditor" ng-model="milestone.body"  required ></textarea>
         <p class="text-error" ng-show="milestoneform.body.$error.required">This field is required</p>
       </div>
     </div>

@@ -125,6 +125,12 @@ class ContentAR extends CActiveRecord {
     
     $query->order = "cdate DESC";
     
+    global $language;
+    if ($language) {
+      $query->addCondition("language=:language");
+      $query->params[":language"] = $language;
+    }
+    
     $rows = $this->findAll($query);
     
     return $rows;
