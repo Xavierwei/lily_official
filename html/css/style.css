@@ -34,7 +34,7 @@ a:hover {opacity:0.8;}
 .fl{float:left}
 .column{width:960px;margin:0 auto;}
 #wrap .page .limit{margin-left:7%;margin-right:7%;}
-#wrap {margin-top:0px;}
+#wrap {margin-top:0px;min-height:1000px;}
 .btn {cursor: pointer}
 .btn:hover {opacity:0.7;}
 /* header Used
@@ -302,7 +302,7 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .page_privacy .privacy_tit{text-transform:uppercase;text-align:center;font-size:80px;line-height:88px;padding:0 0 80px;}
 .page_privacy .privacy_tit.mobile{display:none;}
 .page_privacy .privacy_com{width:800px;margin:0 auto;text-align:center;font-size:15px;line-height:30px;font-weight:600}
-.page_privacy .privacy_com h3{font-weight:600;text-transform:uppercase;padding:60px 0 45px}
+.page_privacy .privacy_com h3{font-weight:600;text-transform:uppercase;padding:20px 0 10px 45px}
 .page_privacy .privacy_com p{padding:0 0 40px;}
 /* padding */
 /* for loading part */
