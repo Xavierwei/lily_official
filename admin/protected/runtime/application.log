@@ -4029,3 +4029,170 @@ Stack trace:
 REQUEST_URI=/lily_official/admin/images/sort_asc.png
 HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/milestone.html
 ---
+2014/06/23 08:10:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 08:10:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 08:10:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/job.html
+---
+2014/06/23 08:10:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/job.html
+---
+2014/06/23 08:11:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 08:11:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 08:11:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 08:11:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 08:31:22 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/events.php:23)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/events.php(23): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/events
+2014/06/23 08:31:31 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/events.php:23)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/events.php(23): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/events
+2014/06/23 08:31:38 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/events.php:23)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/events.php(23): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/events
+2014/06/23 08:33:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/news.html
+---
+2014/06/23 08:33:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/news.html
+---
+2014/06/23 08:33:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "{{media.image}}" 动作.' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): CController->missingAction('{{media.image}}')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): CController->run('{{media.image}}')
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('page/{{media.im...')
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/lily_official/admin/index.php/page/%7B%7Bmedia.image%7D%7D
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/addnews.html
+---
+2014/06/23 08:33:54 [error] [php] Undefined index: cid (/Applications/MAMP/htdocs/lily_official/admin/protected/modules/api/controllers/NewsController.php:10)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(286): NewsController->runAction()
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(265): NewsController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): NewsController->run()
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
+REQUEST_URI=/lily_official/admin/api/news/add
+2014/06/23 08:34:29 [error] [php] Undefined index: cid (/Applications/MAMP/htdocs/lily_official/admin/protected/modules/api/controllers/NewsController.php:10)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(286): NewsController->runAction()
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(265): NewsController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): NewsController->run()
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
+REQUEST_URI=/lily_official/admin/api/news/add
+2014/06/23 08:37:56 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/events.php:30)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/events.php(30): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/events?keyword=ily
+2014/06/23 08:37:58 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/events.php:30)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/events.php(30): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/events?keyword=ily
+2014/06/23 08:42:03 [error] [php] Undefined index: thumbnail (/Applications/MAMP/htdocs/lily_official/html/search.php:26)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/search.php(26): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/search?keyword=ily
+2014/06/23 08:42:05 [error] [php] Undefined index: thumbnail (/Applications/MAMP/htdocs/lily_official/html/search.php:26)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/search.php(26): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/search?keyword=ily
+2014/06/23 08:42:10 [error] [php] Undefined index: thumbnail (/Applications/MAMP/htdocs/lily_official/html/search.php:26)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/search.php(26): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/search?keyword=ily
+2014/06/23 08:42:37 [error] [php] Undefined index: thumbnail (/Applications/MAMP/htdocs/lily_official/html/search.php:28)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/search.php(28): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/search?keyword=ily
+2014/06/23 08:42:51 [error] [php] Undefined index: thumbnail (/Applications/MAMP/htdocs/lily_official/html/search.php:28)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/search.php(28): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/search?keyword=ily
+2014/06/23 08:43:13 [error] [php] Undefined index: thumbnail (/Applications/MAMP/htdocs/lily_official/html/search.php:27)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/search.php(27): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/search?keyword=ily
+2014/06/23 08:43:29 [error] [php] Undefined index: thumbnail (/Applications/MAMP/htdocs/lily_official/html/search.php:28)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/search.php(28): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/search?keyword=ily
