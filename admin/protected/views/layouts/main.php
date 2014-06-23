@@ -22,13 +22,16 @@
 
 	<div id="header">
 		<div id="logo"><?php echo Yii::t("strings", "Lily Office Admin Office")?></div>
+
+    <div class="lang-bar">
+        <a href="javascript:void(0)" lang="en_us" class="lang_en">English</a>
+        <a href="javascript:void(0)" lang="zh_cn" class="lang_cn">中文</a>
+    </div>
+    
 	</div>
   
 
   <?php if (UserAR::isLogin()) :?>
-  <div id="bar">
-    <?php  $this->widget("Breadcrumb", array("links" => array("<a href='#'>Shop</a>", "<a href='#'>Add Shop</a>")))?>
-  </div>
   <div id="body" class="row-fluid">
     <div id="sidebar" class="span3">
       <ul class="nav nav-list">
@@ -61,10 +64,6 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-    <div class="lang-bar">
-        <a href="javascript:void(0)" lang="en_us" class="lang_en">English</a>
-        <a href="javascript:void(0)" lang="zh_cn" class="lang_cn">中文</a>
-    </div>
 	</div>
 </div>
 

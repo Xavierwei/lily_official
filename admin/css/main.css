@@ -6,6 +6,7 @@ body,label, input, button, select, textarea {font-size:12px;color:#444;}
 #header {
   height: 100px;
   border: 1px solid #eee;
+  position: relative;
 }
 
 #header #logo {background:url('../images/logo.png') no-repeat;width:70px;height:58px;text-indent:-999em;margin:20px auto;}
@@ -74,3 +75,9 @@ legend {
 .nav-list .nav-header {background:#aaa;color:#fff;text-shadow:none;}
 
 #content {padding:50px 0 0;}
+
+.lang-bar {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

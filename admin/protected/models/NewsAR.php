@@ -46,17 +46,13 @@ class NewsAR extends ContentAR {
   }
   
   public function searchWithKeyword($keyword) {
-//    $query = new CDbCriteria();
-//    $query->addSearchCondition("title", "%".$keyword.'%', TRUE, "OR");
-//    $query->addSearchCondition("body", "%".$keyword.'%', TRUE, "OR");
-//    $query->addCondition("type=:type");
-//    $query->params[":type"] = $this->type;
-    
+    global $language;
     $command = Yii::app()->db->createCommand();
     $command->select("*")
             ->from("content")
-            ->where("type=:type AND ( title like binary :keyword OR body like binary :keyword )", 
-                    array(":type" => $this->type, ":keyword" => "%".$keyword."%"));
+            ->where("language=:language AND type=:type AND ( title like binary :keyword OR body like binary :keyword )", 
+                    array(":type" => $this->type,":language" => $language, ":keyword" => "%".$keyword."%"));
+    
     
     $rows = $command->queryAll();
     $cids = array();
