@@ -5,7 +5,7 @@ class IndexController extends Controller
   
   public function beforeAction($action) {
     if (!UserAR::isLogin() && $action->id != "login" && $action->id != "error") {
-      //return $this->redirect(array("login"));
+      return $this->redirect(array("login"));
     }
     return parent::beforeAction($action);
   }

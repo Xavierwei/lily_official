@@ -24,10 +24,11 @@
 		<div id="logo"><?php echo Yii::t("strings", "Lily Office Admin Office")?></div>
 	</div>
   
+
+  <?php if (UserAR::isLogin()) :?>
   <div id="bar">
     <?php  $this->widget("Breadcrumb", array("links" => array("<a href='#'>Shop</a>", "<a href='#'>Add Shop</a>")))?>
   </div>
-  
   <div id="body" class="row-fluid">
     <div id="sidebar" class="span3">
       <ul class="nav nav-list">
@@ -53,6 +54,9 @@
     </div>
     <div id="content" class="span9"><?php echo $content; ?></div>
   </div>
+  <?php else: ?>
+    <div id="content" class="span9 offset3"><?php echo $content; ?></div>
+  <?php endif;?>
 
 	<div class="clear"></div>
 

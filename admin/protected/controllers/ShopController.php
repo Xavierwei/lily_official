@@ -3,7 +3,12 @@
 class ShopController extends Controller {
   
   public $layout = "/layouts/main";
-  
+  public function beforeAction($action) {
+    if (!UserAR::isLogin() && $action->id != "login" && $action->id != "error") {
+      return $this->redirect(array("login"));
+    }
+    return parent::beforeAction($action);
+  }
   public function actionIndex() {
     $shopes = ShopAR::model()->getList(ShopAR::STATUS_OPEN);
     $this->render("index", array("shopes" => $shopes));
