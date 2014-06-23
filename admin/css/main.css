@@ -17,6 +17,7 @@ body,label, input, button, select, textarea {font-size:12px;color:#444;}
 #bar {
   height: 36px;
   border: 1px solid #eee;
+ display: none;
 }
 
 #footer {

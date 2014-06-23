@@ -152,8 +152,6 @@ function loadStreehot() {
 function loadMilestone() {
   $milestone = new MilestoneAR();
   $list =  $milestone->getList();
-  print_r($list);
-  die();
   return $list;
 }
 

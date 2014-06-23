@@ -323,7 +323,7 @@ define([
                 lat: $(this).data('lat'),
                 lng: $(this).data('lng')
             }];
-            map.updateMarkers(data);
+            map.updateMarkers(data,true);
             map.zoomMap(18);
             var height = $('#map').position().top;
             $('html,body').animate({scrollTop:height});
