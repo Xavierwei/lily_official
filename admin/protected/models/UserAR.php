@@ -2,7 +2,7 @@
 
 class UserAR extends CActiveRecord {
   public static function login($username, $password) {
-    if ($username == "admin" && $password == "pas_w#ord20o4") {
+    if ($username == "admin" && $password == "admin") {
       Yii::app()->session["login"] = TRUE;
       return TRUE;
     }
