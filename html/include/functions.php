@@ -40,6 +40,14 @@ else {
     }
 }
 
+global $language;
+if (Yii::app()->language == "zh_cn") {
+  $language = "cn";
+}
+else {
+  $language = "en";
+}
+
 /**
  * 载入新闻
  */
@@ -143,8 +151,12 @@ function loadStreehot() {
 
 function loadMilestone() {
   $milestone = new MilestoneAR();
-  return $milestone->getList();
+  $list =  $milestone->getList();
+  print_r($list);
+  die();
+  return $list;
 }
+
 function searchNews() {
   $keyword = Yii::app()->getRequest()->getParam("keyword");
   $newsAr = new NewsAR();
