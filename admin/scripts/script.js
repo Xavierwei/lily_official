@@ -17,7 +17,7 @@
           headers: {"Content-Type": "application/x-www-form-urlencoded"}
         })
         .success(function (data) {
-          //window.location = (window.baseurl + "/shop/index");
+          window.location.href = (window.baseurl + "/shop/index");
         });
       }
       else {
@@ -132,7 +132,6 @@
       $scope.init = function () {
         // 加载lookbook 对象
         var cid = angular.element("input[name='cid']").val();
-        console.log(cid);
         if (parseInt(cid) > 0) {
           $http({
             method: "get",
@@ -197,7 +196,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            window.location.reload();
+            window.location.href = window.baseurl + "/page/lookbook";
           });
         }
         else {
@@ -292,7 +291,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            window.location.reload();
+            window.location.href = window.baseurl + "/page/streehot";
           });
         }
         else {
@@ -332,7 +331,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            window.location.reload();
+            window.location.href = window.baseurl + "/page/milestone";
           });
         }
         else {
@@ -445,8 +444,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            //console.log(data);
-            window.location.reload();
+            window.location.href = window.baseurl + "/page/news";
           });
         }
         else {
@@ -475,8 +473,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            //console.log(data);
-            window.location.reload();
+            window.location.href = window.baseurl + "/page/job";
           });
         }
         else {
@@ -565,7 +562,7 @@
         return true;
     }
     setCookie('lang' , $(this).attr('lang') , 60 * 60 * 24 * 30, "/");
-    window.location.href = window.baseurl;
+    window.location.reload();
   });
   
 })(jQuery);
