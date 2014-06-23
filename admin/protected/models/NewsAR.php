@@ -59,8 +59,13 @@ class NewsAR extends ContentAR {
                     array(":type" => $this->type, ":keyword" => "%".$keyword."%"));
     
     $rows = $command->queryAll();
-    
-    return $rows;
+    $cids = array();
+    foreach ($rows as $row) {
+      $cids[] = $row["cid"];
+    }
+    $query = new CDbCriteria();
+    $query->addInCondition("cid", $cids);
+    return $this->findAll($query);
   }
   
 }
