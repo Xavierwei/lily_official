@@ -20,7 +20,7 @@ class PageController extends Controller {
   public function actionAddlookbook() {
     $request = Yii::app()->getRequest();
     $id = $request->getParam("id", FALSE);
-    $lookbook = LookBookAR::model()->findByPk($id);
+    $lookbook = LookbookAR::model()->findByPk($id);
     if ($id && !$lookbook) {
       $this->redirect(array("addlookbook"));
     }
