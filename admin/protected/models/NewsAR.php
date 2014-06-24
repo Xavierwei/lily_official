@@ -50,8 +50,8 @@ class NewsAR extends ContentAR {
     $command = Yii::app()->db->createCommand();
     $command->select("*")
             ->from("content")
-            ->where("language=:language AND type=:type AND ( title like binary :keyword OR body like binary :keyword )", 
-                    array(":type" => $this->type,":language" => $language, ":keyword" => "%".$keyword."%"));
+            ->where("language=:language AND type=:type AND ( lower(title) like binary :keyword OR lower(body) like binary :keyword )", 
+                    array(":type" => $this->type,":language" => $language, ":keyword" => "%".strtolower($keyword)."%"));
     
     
     $rows = $command->queryAll();
