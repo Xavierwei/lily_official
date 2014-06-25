@@ -143,7 +143,8 @@ define([
 
                         } , 0 );
                     }).jcarousel({
-                        wrap: 'circular'
+                        wrap: 'circular',
+                        center: true
                     });
 
                     dPre.jcarouselControl({

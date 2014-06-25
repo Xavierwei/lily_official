@@ -210,11 +210,14 @@ define([
                     lng: $(this).data('lng')
                 }];
                 var bMap = new BMap.Map( tmpid );
+                
                 bMap.addControl(new BMap.NavigationControl());
                 var point = new BMap.Point(data[0].lat,data[0].lng);
                 var marker = new BMap.Marker(point, {title:data[0].title});
                 bMap.centerAndZoom(point, 15);
                 bMap.addOverlay(marker);
+                bMap.setMapStyle({style:'light'});
+                
 
                 $(this).html('View Shop')
             } else {
