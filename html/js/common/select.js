@@ -110,6 +110,7 @@ define([
                 }, 100)
             };
 
+
 //        dStarshop.ChinaCitySelect({
 //            //'prov' : dProvinceSelect,
 //            'city' : dCitySelect,
@@ -333,7 +334,7 @@ define([
     // enable the select
     var init = function () {
         var dHome = $('.index #home-selectbox'),
-            dStarshop = $('.starshop #store-selectbox'),
+            dStarshop = $('.flagshipstore #store-selectbox'),
             dStorelocator = $('.storelocator #store-selectbox');
 
         // home page, the city select is display none, we need it
