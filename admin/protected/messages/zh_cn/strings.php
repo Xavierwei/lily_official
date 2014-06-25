@@ -49,5 +49,6 @@ return array(
     "News Management" => "新闻管理",
     "Add News" => "添加新闻",
     "Create New Job" => "新建招聘",
-    "Create Lookbook" => "新建lookbook"
+    "Create Lookbook" => "新建lookbook",
+    "no result found" => "没有找到结果",
 );

@@ -35,6 +35,9 @@
                         </div>
                     </div>
                     <?php endforeach;?>
+                    <?php if (!count($newsList)): ?>
+                        <h2><?php echo Yii::t("strings", "no result found")?></h2>
+                    <?php endif;?>
                     <!--  -->
                 </div>
             </div>
