@@ -124,6 +124,7 @@ define([
                 oMap.addControl(new BMap.NavigationControl());
                 var point = new BMap.Point(121.478988,31.227919);
                 oMap.centerAndZoom(point, 15);
+				oMap.setMapStyle({style:'light'});
             }, 1000);
         }
     }

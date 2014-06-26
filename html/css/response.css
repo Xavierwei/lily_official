@@ -34,6 +34,8 @@
 @media screen and (max-width:640px){
     #nav {display: none;}
     .menu {display:block;}
+    .search {right:30px;}
+    .language {right:80px;}
     .job_item{display:block;margin:0 auto;}
     .event_item{display:block;margin:0 auto;}
     .page .left,

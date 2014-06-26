@@ -5,7 +5,7 @@
 <?php include_once "include/header.php"; ?>
 <body class='index'>
     
-    <?php include_once 'include/nav.php';?>111
+    <?php include_once 'include/nav.php';?>
 
     <div id='wrap'>
         <!--  -->
@@ -59,12 +59,13 @@
                     </div>
                     <a href="#campaign" class="home_cpbox">
                         <h2><?php echo Yii::t("strings", "CAM-<br />PAIGN")?></h2>
-                        <p>FW/14</p>
-                        <p>
-                            featuring
-                            <br />
-                            barbara palvin
-                        </p>
+	                    <?php if(Yii::app()->language == 'en_us'):?>
+		                    <p>FW/14</p>
+		                    <p>featuring<br />Tilda Lindstam</p>
+	                    <?php else:?>
+		                    <p>14秋冬</p>
+		                    <p>蒂尔达·林斯丹姆</p>
+	                    <?php endif;?>
                     </a>
                 </div>
                 <!--  -->

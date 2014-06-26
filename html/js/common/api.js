@@ -395,10 +395,6 @@ define([
                 title : 'Campaign'
             },
             {
-                url : 'pic/campaign/12.jpg',
-                title : 'Campaign'
-            },
-            {
                 url : 'pic/campaign/13.jpg',
                 title : 'Campaign'
             },
@@ -418,10 +414,30 @@ define([
                 url : 'pic/campaign/17.jpg',
                 title : 'Campaign'
             },
-            {
-                url : 'pic/campaign/18.jpg',
-                title : 'Campaign'
-            }
+			{
+				url : 'pic/campaign/18.jpg',
+				title : 'Campaign'
+			},
+			{
+				url : 'pic/campaign/19.jpg',
+				title : 'Campaign'
+			},
+			{
+				url : 'pic/campaign/20.jpg',
+				title : 'Campaign'
+			},
+			{
+				url : 'pic/campaign/21.jpg',
+				title : 'Campaign'
+			},
+			{
+				url : 'pic/campaign/22.jpg',
+				title : 'Campaign'
+			},
+			{
+				url : 'pic/campaign/23.jpg',
+				title : 'Campaign'
+			}
         ]
 
         if(oConfig.data.id==5) {

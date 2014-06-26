@@ -223,9 +223,9 @@ define([
             } else {
                 mapWrap.find('.map').toggle();
                 if( mapWrap.find('.map').is(':visible') ){
-                    $(this).html('View Shop');
+                    $(this).html(_e('view_shop'));
                 } else {
-                    $(this).html('View Map');
+                    $(this).html(_e('view_map'));
                 }
             }
         })
@@ -274,7 +274,7 @@ define([
                         var str = Handlebars.compile(storelocatorTpl)({
                             title : aData.shopes[0].city,
                             data : aData.shopes,
-							_eView: _e("view")
+							_eView: _e("view_map")
                         });
                         dStores.html(str);
                         if(findNear && aData.min_distance_shop) {

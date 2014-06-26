@@ -49,7 +49,7 @@
                         <h2>上海南京路店</h2>
                         <p>上海黄浦区南京东路588号世纪广场对面</p>
                         <p>021-5302 8596</p>
-                        <a href="javascript:;" class="store_view fadeout" data-lat="121.485919" data-lng="31.241687">View Map</a>
+                        <a href="javascript:;" class="store_view fadeout" data-lat="121.485919" data-lng="31.241687"><?php echo Yii::t("strings", "View Map")?></a>
                     </div>
                     <div class="starshop_map starshop_img_right">
                         <img alt="" src="images/starshop1.jpg">
@@ -62,7 +62,7 @@
                         <h2>广州正佳</h2>
                         <p>广州市天河区天河路228号正佳广场1F-1A032L.1A032M号LILY专卖店</p>
                         <p>020-3835 0621</p>
-                        <a href="javascript:;" class="store_view fadeout" data-lat="113.333869" data-lng="23.138652">View Map</a>
+                        <a href="javascript:;" class="store_view fadeout" data-lat="113.333869" data-lng="23.138652"><?php echo Yii::t("strings", "View Map")?></a>
                     </div>
                     <div class="starshop_map starshop_img_left">
                         <img alt="" src="images/starshop2.jpg">

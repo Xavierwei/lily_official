@@ -58,7 +58,7 @@
 			    <div class="cs-clear"></div>
 		    </div>
 
-		    <div class="ft_copy">© 2013 LILY OFFICAIL WEBSITE 沪ICP备10202509号-2</div>
+		    <div class="ft_copy">© 2013 LILY <?php echo Yii::t("strings", "OFFICIAL WEBSITE")?> 沪ICP备10202509号-2</div>
 	    </div>
     </div>
 

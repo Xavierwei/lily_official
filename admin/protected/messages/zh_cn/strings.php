@@ -3,6 +3,9 @@
 return array(
     "LILY CLUB" => "Lily 会员",
     "VIP CLUB" => "会员",
+	"TERMS" => "条款",
+	"POINT CHECKING" => "积分查看",
+	"REDEMPTION" => "积分兑换",
 	"CLUB" => "会员",
     "Home" => "首页",
 	"BRAND" => "品牌",
@@ -10,6 +13,7 @@ return array(
 	"HISTORY" => "大事记",
 	"EVENTS" => "活动",
 	"NEWS" => "新闻",
+	"no result found" => "找不到结果",
 	"PRODUCT" => "产品",
 	"CAMPAIGN" => "大片",
 	"LOOK BOOK" => "产品目录",
@@ -40,6 +44,12 @@ return array(
 	"GARDEN" => "浪漫花园",
 	"MODERN ART" => "摩登艺术馆",
 	"OCEAN" => "奇幻海洋",
-	"Follow" => "关注"
+	"Follow" => "关注",
+	"View Map" => "查看地图",
+	"MAKING OF" => "幕后花絮",
+	"MAKING OF SPRING" => "春季幕后花絮",
+	"MAKING OF SUMMER" => "夏季幕后花絮",
+	"lets stay in touch" => "联系我们",
+	"OFFICIAL WEBSITE" => "官方网站"
 
 );

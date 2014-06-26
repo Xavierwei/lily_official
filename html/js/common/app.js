@@ -8,7 +8,7 @@ define([
     'common/helper',
     'common/map',
     'common/api',
-    'common/properties-' + ( window.lang || 'en_us' )
+    'common/properties-' + ( window.lang || 'en' )
 ], function($, skrollr, switchPage, loading, helper, map , api , lang ) {
     // fix lang
     window._e = function( text ){
