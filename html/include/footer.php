@@ -125,7 +125,7 @@
 
     <!--  -->
     <script type="text/javascript" src="js/lib/modernizr.min.js"></script>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=AwxxvHue9bTdFietVWM4PLtk"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=AwxxvHue9bTdFietVWM4PLtk"></script>
     <script data-main="js/config" src="js/lib/require.js"></script>
 
     <!-- AG -->

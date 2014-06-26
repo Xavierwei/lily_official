@@ -4196,3 +4196,295 @@ REQUEST_URI=/lily_official/html/search?keyword=ily
 Stack trace:
 #0 /Applications/MAMP/htdocs/lily_official/html/search.php(28): CWebApplication->handleError()
 REQUEST_URI=/lily_official/html/search?keyword=ily
+2014/06/23 09:17:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): CController->missingAction('login')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): CController->run('login')
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('shop/login')
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/lily_official/admin/index.php/shop/login.html
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/addnews.html
+---
+2014/06/23 09:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): CController->missingAction('login')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): CController->run('login')
+#2 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('shop/login')
+#3 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/lily_official/admin/index.php/shop/login.html
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/addnews.html
+---
+2014/06/23 09:18:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 09:18:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 09:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/lookbook.html
+---
+2014/06/23 09:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/lookbook.html
+---
+2014/06/23 09:18:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/milestone.html
+---
+2014/06/23 09:18:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/milestone.html
+---
+2014/06/23 09:18:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/news.html
+---
+2014/06/23 09:18:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/news.html
+---
+2014/06/23 09:18:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 09:18:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 09:18:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/news.html
+---
+2014/06/23 09:18:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/news.html
+---
+2014/06/23 09:18:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 09:18:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 09:18:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/job.html
+---
+2014/06/23 09:18:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/page/job.html
+---
+2014/06/23 09:18:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_both.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_bot...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_both.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 09:18:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/sort_asc.png".' in /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController('images/sort_asc...')
+#1 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/lily_official/admin/images/sort_asc.png
+HTTP_REFERER=http://localhost/lily_official/admin/index.php/shop/index.html
+---
+2014/06/23 09:23:40 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/lily_official/admin/protected/models/MediaAR.php(161): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/lily_official/admin/protected/controllers/UploadController.php(25): MediaAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): UploadController->missingAction()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): UploadController->run()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
+REQUEST_URI=/lily_official/html/admin/upload/69f294e8295fdda597899c152a4c70c2_360_266_jpg
+2014/06/23 09:24:04 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/lily_official/admin/protected/models/MediaAR.php(161): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/lily_official/admin/protected/controllers/UploadController.php(25): MediaAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): UploadController->missingAction()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): UploadController->run()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
+REQUEST_URI=/lily_official/html/admin/upload/69f294e8295fdda597899c152a4c70c2_360_266_jpg
+2014/06/23 09:24:11 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/lily_official/admin/protected/models/MediaAR.php(161): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/lily_official/admin/protected/controllers/UploadController.php(25): MediaAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): UploadController->missingAction()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): UploadController->run()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
+REQUEST_URI=/lily_official/html/admin/upload/69f294e8295fdda597899c152a4c70c2_360_266_jpg
+2014/06/23 09:24:27 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/lily_official/admin/protected/models/MediaAR.php(161): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/lily_official/admin/protected/controllers/UploadController.php(25): MediaAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): UploadController->missingAction()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): UploadController->run()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
+REQUEST_URI=/lily_official/html/admin/upload/69f294e8295fdda597899c152a4c70c2_360_266_jpg
+2014/06/23 09:25:21 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/lily_official/admin/protected/models/MediaAR.php(161): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/lily_official/admin/protected/controllers/UploadController.php(25): MediaAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): UploadController->missingAction()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): UploadController->run()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
+REQUEST_URI=/lily_official/html/admin/upload/69f294e8295fdda597899c152a4c70c2_360_266_jpg
+2014/06/23 09:27:15 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/lily_official/admin/protected/models/MediaAR.php(161): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/lily_official/admin/protected/controllers/UploadController.php(25): MediaAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): UploadController->missingAction()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): UploadController->run()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
+REQUEST_URI=/lily_official/html/admin/upload/69f294e8295fdda597899c152a4c70c2_360_266_jpg
+2014/06/23 09:42:31 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/lily_official/admin/protected/models/MediaAR.php(161): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/lily_official/admin/protected/controllers/UploadController.php(25): MediaAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): UploadController->missingAction()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): UploadController->run()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
+REQUEST_URI=/lily_official/html/admin/upload/69f294e8295fdda597899c152a4c70c2_360_266_jpg
+2014/06/23 09:42:31 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/lily_official/admin/protected/models/MediaAR.php(161): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/lily_official/admin/protected/controllers/UploadController.php(25): MediaAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): UploadController->missingAction()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): UploadController->run()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
+REQUEST_URI=/lily_official/html/admin/upload/69f294e8295fdda597899c152a4c70c2_360_266_jpg
+2014/06/23 09:55:24 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/lily_official/admin/protected/models/MediaAR.php(161): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/lily_official/admin/protected/controllers/UploadController.php(25): MediaAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): UploadController->missingAction()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): UploadController->run()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
+REQUEST_URI=/lily_official/html/admin/upload/69f294e8295fdda597899c152a4c70c2_360_266_jpg

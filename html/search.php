@@ -24,7 +24,7 @@
                     <div class="event_item" data-nid="<?php echo $news['cid'];?>">
                         <div class="event_img">
                             <p></p>
-<!--	                        <a href="javascript:;" class="event_open"><img src="--><?php //echo thumbnail($news['thumbnail'], array('360', '266'));?><!--" /></a>-->
+	                        <a href="javascript:;" class="event_open"><img src="<?php echo thumbnail($news['thumbnail'], array('360', '266'));?>" /></a>
                         </div>
                         <div class="event_com">
                             <h3><a href="javascript:;" class="event_open"><?php echo $news['title'];?></a></h3>

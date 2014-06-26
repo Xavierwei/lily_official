@@ -110,6 +110,7 @@ define([
                 }, 100)
             };
 
+
 //        dStarshop.ChinaCitySelect({
 //            //'prov' : dProvinceSelect,
 //            'city' : dCitySelect,
@@ -209,11 +210,14 @@ define([
                     lng: $(this).data('lng')
                 }];
                 var bMap = new BMap.Map( tmpid );
+                
                 bMap.addControl(new BMap.NavigationControl());
                 var point = new BMap.Point(data[0].lat,data[0].lng);
                 var marker = new BMap.Marker(point, {title:data[0].title});
                 bMap.centerAndZoom(point, 15);
                 bMap.addOverlay(marker);
+                bMap.setMapStyle({style:'light'});
+                
 
                 $(this).html('View Shop')
             } else {
@@ -333,7 +337,7 @@ define([
     // enable the select
     var init = function () {
         var dHome = $('.index #home-selectbox'),
-            dStarshop = $('.starshop #store-selectbox'),
+            dStarshop = $('.flagshipstore #store-selectbox'),
             dStorelocator = $('.storelocator #store-selectbox');
 
         // home page, the city select is display none, we need it
