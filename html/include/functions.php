@@ -114,7 +114,7 @@ function loadJob($type = FALSE) {
  * @return typeLookbook 列表
  */
 function loadLookbook() {
-  $lookbook = new LookBookAR();
+  $lookbook = new LookbookAR();
   return $lookbook->getList();
 }
 
