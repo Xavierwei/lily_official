@@ -167,3 +167,16 @@ function searchNews() {
   $newsAr = new NewsAR();
   return $newsAr->searchWithKeyword($keyword);
 }
+
+function loadWeibo() {
+  $api = Yii::app()->weibo->getApi();
+  if (!$api) {
+    $this->responseError("weibo not login", ErrorAR::ERROR_UNKNOWN);
+  }
+
+  $token = Yii::app()->cache->get("token");
+
+  $timeline = $api->user_timeline_by_id($token["uid"]);
+  
+  return $timeline;
+}
