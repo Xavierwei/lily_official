@@ -35,6 +35,8 @@
         </div>
       </div>
     </div>
+    
+    <input type="hidden" name="lookbook_gallery" value="<?php echo $gallery->cid?>" ng-model="lookbook.lookbook_gallery"/>
     <input type="hidden" name="cid" value="<?php echo $lookbook ? $lookbook->cid: 0?>" ng-model="lookbook.cid"/>
     <div class="control-group">
       <div class="controls">

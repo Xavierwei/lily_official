@@ -148,12 +148,21 @@
               $.each( $scope.lookbook.look_book_image, function (i, val) {
                 $scope.media.look_book_image.push(val);
               });
+              
+              var lookbook_gallery = angular.element("input[name='lookbook_gallery']").val();
+              if ($scope.lookbook.lookbook_gallery == "") {
+                $scope.lookbook.lookbook_gallery = lookbook_gallery;
+              }
             }
             else {
               alert("未知错误");
             }
           });
         }
+
+        var lookbook_gallery = angular.element("input[name='lookbook_gallery']").val();
+
+          $scope.lookbook.lookbook_gallery = lookbook_gallery;
         
         // 绑定图片上传事件
         angular.element("input[type='file']").live("change", function(event) {
@@ -206,7 +215,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
-            window.location.href = window.baseurl + "/page/lookbook";
+            window.location.href = window.baseurl + "/page/lookbook?gallery=" + $scope.lookbook.lookbook_gallery;
           });
         }
         else {
@@ -470,6 +479,56 @@
       };
   }]);
 
+  AdminModule.controller("CententTable", ["$scope", "$http", function ($scope, $http) {
+      angular.element(".table-content .table").DataTable({
+        info: false,
+        pageLength: 5,
+        lengthChange: false
+      });
+  }]);
+
+  AdminModule.controller("ContentForm", ["$scope", "$http" ,function ($scope, $http) {
+    
+    $scope.content = {};
+    
+    //初始化
+    $scope.init = function () {
+        // 加载 Job 对象
+        var cid = angular.element("input[name='cid']").val();
+        $http({
+          method: "get",
+          params: {id: cid},
+          url: window.baseurl + "/api/lookbookgallery/index"
+        })
+        .success(function (res) {
+          if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
+            var data = res["data"];
+            $scope.content = data;
+          }
+          else {
+            alert("未知错误");
+          }
+        });
+    };
+    
+    $scope.submitForm = function () {
+      if ($scope.contentForm.$valid) {
+          $http({
+            method: "POST",
+            url: window.baseurl + "/api/lookbookgallery/add",
+            data: $.param($scope.content),
+            headers: {"Content-Type": "application/x-www-form-urlencoded"}
+          })
+          .success(function (data) {
+            window.location.href = window.baseurl + "/page/lookbookgallery";
+          });
+      }
+      else {
+        alert("表单验证失败");
+      }
+    };
+  }]);
+
   AdminModule.controller("JobTable", function () {
       angular.element(".table-content .table").DataTable({
         info: false,
@@ -500,7 +559,6 @@
       
       // 初始化
       $scope.init = function () {
-        console.log("INIT");
         // 加载 Job 对象
         var cid = angular.element("input[name='cid']").val();
         $http({

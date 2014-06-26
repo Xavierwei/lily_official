@@ -39,5 +39,29 @@ class JobController extends Controller {
       $this->responseJSON($jobs, "success");
     }
   }
+  
+  // 申请工作
+  public function actionApply() {
+    $request = Yii::app()->getRequest();
+    
+    $id = $request->getParam("id", FALSE);
+    if (!$id) {
+      return $this->responseError("param error", ErrorAR::ERROR_MISSED_REQUIRED_PARAMS);
+    }
+    
+    $job = JobAR::model()->findByPk($id);
+    if (!$job) {
+      return $this->responseError("param error", ErrorAR::ERROR_MISSED_REQUIRED_PARAMS);
+    }
+    
+    if (Yii::app()->session["job_apply_". $job->cid]) {
+      return $this->responseJSON("success", $job);
+    }
+    Yii::app()->session["job_apply_". $job->cid] = TRUE;
+    $mailto = Yii::app()->params["job_mail"];
+    if ($mailto) {
+      // TODO:: send mail to admin
+    }
+  }
 }
 

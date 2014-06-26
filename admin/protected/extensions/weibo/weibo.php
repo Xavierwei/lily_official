@@ -6,6 +6,10 @@ class Weibo extends CApplicationComponent{
   public $app_key;
   public $app_secret;
   
+  public function init() {
+    //TODO::
+  }
+  
   public function getAuth() {
     return new SaeTOAuthV2(WB_AKEY, WB_SKEY);
   }

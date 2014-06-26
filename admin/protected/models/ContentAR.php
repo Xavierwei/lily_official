@@ -39,6 +39,9 @@ class ContentAR extends CActiveRecord {
   }
   
   public function beforeSave() {
+    if ($this->cid <= 0) {
+      $cid = NULL;
+    }
     if ($this->isNewRecord) {
       $this->cdate = date("Y-m-d H:i:s");
     }
@@ -146,6 +149,9 @@ class ContentAR extends CActiveRecord {
       $query->addCondition("language=:language");
       $query->params[":language"] = $language;
     }
+    
+    $query->addCondition("status=:status");
+    $query->params[":status"] = self::STATUS_ENABLE;
     
     $rows = $this->findAll($query);
     

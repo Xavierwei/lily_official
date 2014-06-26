@@ -42,8 +42,8 @@
         <li><a href="<?php echo Yii::app()->createUrl("page/job")?>">Job Table</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/addjob")?>">Add Job</a></li>
         <li class="nav-header"><?php echo Yii::t("strings", "Lookbook Management")?></li>
-        <li><a href="<?php echo Yii::app()->createUrl("page/lookbook")?>">Lookbook</a></li>
-        <li><a href="<?php echo Yii::app()->createUrl("page/addlookbook")?>">Add Lookbook</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl("page/lookbookgallery")?>">Lookbook</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl("page/addlookbookgallery")?>">Add Lookbook</a></li>
         <li class="nav-header"><?php echo Yii::t("strings", "Streethot Management")?></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/streehot")?>">Streethot</a></li>
         <li><a href="<?php echo Yii::app()->createUrl("page/addstreehot")?>">Add Streehoot</a></li>

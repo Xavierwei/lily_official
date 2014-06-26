@@ -5,8 +5,10 @@ class LookBookAR extends ContentAR {
   
   public $look_book_image;
   
+  public $lookbook_gallery;
+  
   public function getFields() {
-    return array("look_book_image");
+    return array("lookbook_gallery");
   }
   
   public static function model($class = __CLASS__) {
@@ -14,12 +16,14 @@ class LookBookAR extends ContentAR {
   }
   
   public function afterSave() {
+    parent::afterSave();
     $mediaAr = new MediaAR();
     $mediaAr->saveMediaToObject($this, "look_book_image");
     return TRUE;
   }
   
   public function afterFind() {
+    parent::afterFind();
     $mediaAr = new MediaAR();
     $mediaAr->attachMediaToObject($this, "look_book_image");
   }

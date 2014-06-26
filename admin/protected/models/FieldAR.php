@@ -40,6 +40,8 @@ class FieldAR extends CActiveRecord {
         "field_content" => $content->{$field_name},
     );
         
+    
+        
     $fieldInstance = $this->getFieldInstance($content, $field_name);
     if ($fieldInstance) {
       $fieldInstance->setAttributes($field_data);

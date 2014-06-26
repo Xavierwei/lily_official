@@ -4,7 +4,7 @@ class PageController extends Controller {
   
   public function beforeAction($action) {
     if (!UserAR::isLogin() && $action->id != "login" && $action->id != "error") {
-      return $this->redirect(array("login"));
+      return $this->redirect(Yii::app()->getBaseUrl()."/index/login");
     }
     return parent::beforeAction($action);
   }
@@ -12,9 +12,16 @@ class PageController extends Controller {
    * 
    */
   public function actionLookbook() {
+    $request = Yii::app()->getRequest();
     $lookbookAr = new LookbookAR();
     $list = $lookbookAr->getList();
-    $this->render("lookbook", array("lookbookes" => $list));
+
+    $gallery = LookbookGalleryAR::model()->findByPk($request->getParam("gallery"));
+    $list = $gallery->loadLookbookItem();
+    if (!$gallery) {
+      return $this->redirect(Yii::app()->getBaseUrl()."/page/lookbookgallery");
+    }
+    $this->render("lookbook", array("lookbookes" => $list, "gallery" => $gallery));
   }
   
   public function actionAddlookbook() {
@@ -25,7 +32,9 @@ class PageController extends Controller {
       $this->redirect(array("addlookbook"));
     }
     
-    $this->render("addlookbook", array("lookbook" => $lookbook));
+    $gallery = LookbookGalleryAR::model()->findByPk($request->getParam("gallery"));
+    
+    $this->render("addlookbook", array("lookbook" => $lookbook, "gallery" => $gallery));
   }
   
   public function actionStreehot() {
@@ -86,6 +95,22 @@ class PageController extends Controller {
       $this->redirect(array("job"));
     }
     $this->render("addjob", array("job" => $job));
+  }
+  
+  public function actionAddlookbookgallery() {
+    $request = Yii::app()->getRequest();
+    $id = $request->getParam("id", FALSE);
+    $lookbookGallery = LookbookGalleryAR::model()->findByPk($id);
+    if ($id && !$lookbookGallery) {
+      $this->redirect(array("lookbookgallery"));
+    }
+    $this->render("addlookbookgallery", array("lookbookGallery" => $lookbookGallery));
+  }
+  
+  public function actionLookbookgallery() {
+    $lookbookGallery = new LookbookGalleryAR();
+    $list = $lookbookGallery->getList();
+    $this->render("lookbookgallery", array("lookbookGalleries" => $list));
   }
 }
 
