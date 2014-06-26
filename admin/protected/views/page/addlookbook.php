@@ -11,10 +11,10 @@
       <div class="control-label">Media</div>
       <div class="controls">
         <input type="file" name="media" accept="image/*" />
-        <ul class="list"  ng-repeat="media in media.look_book_image">
-          <li class="upload-image-item">
+        <ul class="list clearfix">
+          <li class="upload-image-item"   ng-repeat="media in media.look_book_image">
             <img src="{{media}}" alt="" />
-            <a href="javascript:void(0)" ng-click="removeSelectedMedia($index)"><?php echo Yii::t("strings" ,"cancel")?></a>
+            <a href="javascript:void(0)" ng-click="removeSelectedMedia($index)"><em class="glyphicon glyphicon-remove"></em><?php echo Yii::t("strings" ,"cancel")?></a>
           </li>
         </ul>
         

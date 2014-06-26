@@ -33,7 +33,7 @@
       <div class="control-label">
         <label for=""><?php echo Yii::t("strings", "Master Image")?></label>
       </div>
-      <div class="conroles">
+      <div class="conroles clearfix">
         <input type="file" name="media" accept="image/*"/>
         <li class="upload-image-item"><img src="{{media.image}}" alt="" /></li>
           <input type="hidden" name="master_image[]" value="{{news.thumbnail}}" ng-model="news.thumbnail"/>
