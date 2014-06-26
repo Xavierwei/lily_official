@@ -47,6 +47,6 @@ class LookbookController extends Controller {
       $list = $lookbookAr->getList();
       $this->responseJSON($list, "success");
     }
-  }
+  } 
 }
 

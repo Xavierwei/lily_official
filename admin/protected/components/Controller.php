@@ -97,4 +97,12 @@ class Controller extends CController
     }
   }
   
+  public function getActiveClass($uri) {
+    $parts = explode("/", $uri);
+    $route = $this->getRoute();
+    if ($uri == $route) {
+      return "active";
+    }
+    return "";
+  }
 }

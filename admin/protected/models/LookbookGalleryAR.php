@@ -21,7 +21,7 @@ class LookbookGalleryAR extends ContentAR {
       $cid = $this->cid;
     }
     
-    $lookbookAr = new LookBookAR();
+    $lookbookAr = new LookbookAR();
     $sql = "SELECT * FROM field WHERE field_name='lookbook_gallery' AND field_content=:field_content";
     $command = Yii::app()->db->createCommand($sql);
     $command->params[":field_content"] = $cid;
