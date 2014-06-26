@@ -11,9 +11,13 @@
       <div class="control-label">Media</div>
       <div class="controls">
         <input type="file" name="media" accept="image/*" />
-        <ul class="list" ng-repeat="media in media.look_book_image">
-          <li class="upload-image-item"><img src="{{media}}" alt="" /></li>
+        <ul class="list"  ng-repeat="media in media.look_book_image">
+          <li class="upload-image-item">
+            <img src="{{media}}" alt="" />
+            <a href="javascript:void(0)" ng-click="removeSelectedMedia($index)"><?php echo Yii::t("strings" ,"cancel")?></a>
+          </li>
         </ul>
+        
         <div class="hidden" ng-repeat="uri in lookbook.look_book_image">
           <input type="hidden"  name="look_book_image[]" value="{{uri}}" ng-model="lookbook.look_book_image"/>
         </div>

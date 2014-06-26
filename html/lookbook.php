@@ -2,6 +2,10 @@
 <!DOCTYPE html>
 <html>
 <?php include_once 'include/header.php';?>
+ 
+<?php 
+  $lookbookes = loadLookbook();
+?>
 
 <body class='lookbook'>
 <?php include_once "include/nav.php";?>
@@ -14,64 +18,53 @@
                         <h2><?php echo Yii::t("strings", "LOOK<br />BOOK")?></h2>
                         <div class="fw">FW/14</div>
                     </div>
-                    <div class="lb_modtit fadeout"><?php echo Yii::t("strings", "GARDEN")?></div>
-                    <div class="gohash lb_modtit fadeout" data-hash="s2"><?php echo Yii::t("strings", "MODERN ART")?></div>
-                    <div class="gohash lb_modtit fadeout" data-hash="s3"><?php echo Yii::t("strings", "OCEAN")?></div>
+                    <?php foreach ($lookbookes as $index => $lookbook):?>
+                    <div class="gohash lb_modtit fadeout" data-hash="s<?php echo $index?>"><?php echo $lookbook->title?></div>
+                    <?php endforeach;?>
                 </div>
+                <?php $first_lookbook = array_shift($lookbookes); ?>
+                <?php if ($first_lookbook):?>
                 <div class="lookbook_right">
-                    <img class="btn album" data-album="1" src="pic/lookbook/garden/850_850/1.jpg" />
+                    <img class="btn album" data-album="1" src="<?php echo array_shift($first_lookbook->look_book_image)?>" />
                 </div>
+                <?php endif;?>
             </div>
 
             <div class="list limit cs-clear">
-                <img class="btn album" data-album="1" src="pic/lookbook/garden/425_610/2.jpg" />
-                <img class="btn album" data-album="1" src="pic/lookbook/garden/425_610/3.jpg" />
-                <img class="btn album" data-album="1" src="pic/lookbook/garden/425_610/4.jpg" />
+                <?php foreach ($first_lookbook->look_book_image as $index => $look_image):?>
+                <img class="btn album" data-album="1" src="<?php echo $look_image?>" />
+                <?php endforeach;?>
             </div>
-
+            
+            <?php foreach ($lookbookes as $index => $lookbook):?>
+            <?php $look_images = $lookbook->look_book_image;?>
+          
             <div class="lb_modimg3 cs-clear">
                 <div class="lookbook_left">
-                    <img class="btn album" data-album="2" src="pic/lookbook/garden/850_850/5.jpg" />
+                    <img class="btn album" data-album="<?php echo $index + 2?>" src="<?php echo array_shift($look_images)?>" />
                 </div>
             </div>
 
             <div class='limit cs-clear' id="s2">
-                <div class="left middle lb_modtit fadeout"><?php echo Yii::t("strings", "MODERN ART")?></div>
+                <div class="left middle lb_modtit fadeout"><?php echo $lookbook->title?></div>
                 <div class="lookbook_right">
-                    <img class="btn album" data-album="2" src="pic/lookbook/modernart/850_850/28.jpg" />
+                    <img class="btn album" data-album="<?php echo $index + 2?>" src="<?php echo array_shift($look_images)?>" />
                 </div>
             </div>
-
+            <?php $last_image = array_pop($look_images);?>
+          
+            <?php foreach ($look_images as $look_image):?>
             <div class="list limit cs-clear">
-                <img class="btn album" data-album="2" src="pic/lookbook/modernart/425_610/29.jpg" />
-                <img class="btn album" data-album="2" src="pic/lookbook/modernart/425_610/30.jpg" />
-                <img class="btn album" data-album="2" src="pic/lookbook/modernart/425_610/31.jpg" />
+                <img class="btn album" data-album="<?php echo $index + 2?>" src="<?php echo $look_image?>" />
             </div>
+            <?php endforeach;?>
 
             <div class="limit cs-clear">
                 <div class="lookbook_left">
-                    <img class="btn album" data-album="2" src="pic/lookbook/modernart/850_850/32.jpg" />
+                    <img class="btn album" data-album="<?php echo $index + 2?>" src="<?php echo $last_image?>" />
                 </div>
             </div>
-
-            <div class='limit cs-clear' id="s3">
-                <div class="left middle lb_modtit fadeout"><?php echo Yii::t("strings", "OCEAN")?></div>
-                <div class="lookbook_right">
-                    <img class="btn album" data-album="3" src="pic/lookbook/ocean/850_850/9.jpg" />
-                </div>
-            </div>
-
-            <div class="list limit cs-clear">
-                <img class="btn album" data-album="3" src="pic/lookbook/ocean/425_610/10.jpg" />
-                <img class="btn album" data-album="3" src="pic/lookbook/ocean/425_610/11.jpg" />
-                <img class="btn album" data-album="3" src="pic/lookbook/ocean/425_610/12.jpg" />
-            </div>
-
-            <div class="limit cs-clear">
-                <div class="lookbook_left">
-                    <img src="pic/lookbook/ocean/850_850/13.jpg" />
-                </div>
-            </div>
+            <?php endforeach;?>
         </div>
         <!--  -->
 

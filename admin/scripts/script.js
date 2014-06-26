@@ -142,6 +142,9 @@
             if (typeof res["status"] != 'undefined' && res["status"] == 0 ){ 
               var data = res["data"];
               $scope.lookbook = data;
+              if ($scope.lookbook.look_book_image == "") {
+                $scope.lookbook.look_book_image = [];
+              }
               $.each( $scope.lookbook.look_book_image, function (i, val) {
                 $scope.media.look_book_image.push(val);
               });
@@ -184,6 +187,13 @@
             }
           });
         });
+      };
+      
+      $scope.removeSelectedMedia = function (index) {
+        if (confirm("Are you sure delete it ?")) {
+          $scope.lookbook.look_book_image.splice(index, 1);
+          $scope.media.look_book_image.splice(index, 1);
+        }
       };
       
       // 提交按钮
@@ -245,6 +255,13 @@
               alert("未知错误");
             }
           });
+        }
+      };
+      
+      $scope.removeSelectedMedia = function (index) {
+        if (confirm("Are you sure delete it ?")) {
+          $scope.streehot.streehot_image.splice(index, 1);
+          $scope.media.image.splice(index, 1);
         }
       };
       

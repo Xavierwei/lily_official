@@ -2,6 +2,7 @@
   <table class="table table-striped">
     <thead>
       <td><?php echo Yii::t("strings", "Title")?></td>
+      <td><?php echo Yii::t("strings", "Season")?></td>
       <td><?php echo Yii::t("strings", "Date")?></td>
       <td><?php echo Yii::t("strings", "Actions")?></td>
     </thead>
@@ -9,6 +10,7 @@
       <?php foreach($streehotes as $streehot) :?>
       <tr>
         <td><?php echo $streehot->title?></td>
+        <td><?php echo $streehot->season?></td>
         <td><?php echo $streehot->cdate?></td>
         <td>
           <a href="<?php echo Yii::app()->baseUrl."/page/addstreehot?id=". $streehot->cid?>">Edit</a>

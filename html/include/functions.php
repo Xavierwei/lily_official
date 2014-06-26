@@ -147,7 +147,9 @@ function thumbnail($uri, $size) {
 
 function loadStreehot() {
   $streehot = new StreehotAR();
-  return $streehot->getList();
+  $list = $streehot->getList();
+  
+  return array_shift($list);
 }
 
 function loadMilestone() {

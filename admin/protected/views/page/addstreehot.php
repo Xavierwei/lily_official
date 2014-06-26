@@ -11,12 +11,22 @@
     </div>
     <div class="control-group">
       <div class="control-label">
+        <label for=""><?php echo Yii::t("strings", "Season")?></label>
+      </div>
+      <div class="controls">
+        <input type="text" name="season" ng-model="streehot.season"  required />
+        <p class="text-error" ng-show="streehotform.season.$error.required">This field is required</p>
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="control-label">
         <label for=""><?php echo Yii::t("strings", "Media")?></label>
       </div>
       <div class="conroles">
         <input type="file" name="media" accept="image/*"/>
         <ul class="list" ng-repeat="image in media.image">
-         <li class="upload-image-item"><img src="{{image}}" alt="" /></li>
+         <li class="upload-image-item"><img src="{{image}}" alt="" /></li>            
+         <a href="javascript:void(0)" ng-click="removeSelectedMedia($index)"><?php echo Yii::t("strings" ,"cancel")?></a>
         </ul>
         <div ng-repeat="media in streehot.streehot_image">
           <input type="hidden" name="streehot_image[]" value="{{media}}" ng-model="streehot.streehot_image"/>

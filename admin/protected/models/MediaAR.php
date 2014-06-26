@@ -136,18 +136,20 @@ class MediaAR extends CActiveRecord {
   public function attachMediaToObject(&$obj, $field_name) {
     $row = $this->loadMediaWithObject($obj, $field_name);
     if ($row) {
+      unserialize($row->uri);
       $uri = @unserialize($row->uri);
-      if (!$uri) {
-        $uri = $row->uri;
-      }
-      if (is_string($uri) ) {
+      
+      if (is_string($uri) && $uri != "" ) {
         $obj->{$field_name} = Yii::app()->getBaseUrl(TRUE) .$uri;
       }
-      else {
+      elseif (is_array($uri)) {
         foreach ($uri as &$i) {
           $i = Yii::app()->getBaseUrl(TRUE) .$i;
         }
         $obj->{$field_name} = $uri;
+      }
+      else {
+        $obj->{$field_name} = "";
       }
     }
     else {
