@@ -13,4 +13,8 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
     <link rel="stylesheet" type="text/css" href="css/mediaelementplayer.css">
     <link rel="stylesheet" type="text/css" href="css/response.css">
+    
+    <script type="text/javascript">
+      window.lang = "<?php global $language; echo $language;?>";
+    </script>
 </head>
