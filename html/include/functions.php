@@ -73,7 +73,7 @@ function loadFirstNews() {
   //多语言
   $query->addCondition("language=:language");
   $query->params[":language"] = $language;
-  
+
   // 排序
   $query->order = "cdate DESC";
   

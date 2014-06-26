@@ -81,7 +81,7 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 #links #nav ol li a:hover{color:#000;border-bottom:#000000 solid 3px;}
 /* for news modal */
 #news,
-#weixin{background:rgba(255,255,255,0.8);}
+#weixin{background:rgba(255,255,255,0.9);}
 #news .fancybox-skin,
 #weixin .fancybox-skin{background:none;}
 #news .fancybox-close,

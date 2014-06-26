@@ -14,7 +14,7 @@
             <div class="limit home_new">
                 <?php $firstNews = loadFirstNews(); ?>
                 <h2><?php echo Yii::t("strings", "NEWS")?></h2>
-                <div class="tit_time">23/03/14</div>
+                <div class="tit_time"><?php echo date('d/m/y',strtotime($firstNews->cdate));?></div>
                 <div class="home_new_cn">
 	                <?php echo Yii::t("strings", "news_text")?>
                 </div>
@@ -53,7 +53,7 @@
                             <div class="weibo_wbtime">Monday 23 may</div>
                             <div class="weibo_wbcom">年轻OL的商务着装，可能太严肃，可能太时髦，或者像Lily这样正合适 作为年轻OL商务时装的开创者，</div>
                             <div class="weibo_wb_btn">
-                                <a href="http://weibo.com/lilyofficial" target="_blank" class="btnlink"><span>Follow</span><span>Follow</span></a>
+                                <a href="http://weibo.com/lilyofficial" target="_blank" class="btnlink"><span><?php echo Yii::t("strings", "Follow")?></span><span><?php echo Yii::t("strings", "Follow")?></span></a>
                             </div>
                         </div>
                     </div>

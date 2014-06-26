@@ -40,15 +40,6 @@ return array(
 	"GARDEN" => "浪漫花园",
 	"MODERN ART" => "摩登艺术馆",
 	"OCEAN" => "奇幻海洋",
-   "Lily Office Admin Office" => "Lily 官方后台管理",
-    "Shop Management" => "店铺管理",
-    "Job Management" => "招聘管理",
-    "Lookbook Management" => "Lookbook 管理",
-    "Streethot Management" => "街拍管理",
-    "Milestone Management" => "大事件管理",
-    "News Management" => "新闻管理",
-    "Add News" => "添加新闻",
-    "Create New Job" => "新建招聘",
-    "Create Lookbook" => "新建lookbook",
-    "no result found" => "没有找到结果",
+	"Follow" => "关注"
+
 );
