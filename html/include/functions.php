@@ -114,8 +114,12 @@ function loadJob($type = FALSE) {
  * @return typeLookbook 列表
  */
 function loadLookbook() {
-  $lookbook = new LookbookAR();
-  return $lookbook->getList();
+  $lookbook = new LookbookGalleryAR();
+  $gallery_list = $lookbook->getList();
+  if (count($gallery_list)) {
+    $gallery = array_shift($gallery_list);
+    return $gallery->loadLookbookItem();
+  }
 }
 
 /**
