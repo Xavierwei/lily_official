@@ -4488,3 +4488,83 @@ Stack trace:
 #7 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
 #8 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
 REQUEST_URI=/lily_official/html/admin/upload/69f294e8295fdda597899c152a4c70c2_360_266_jpg
+2014/06/26 15:57:06 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 15:57:08 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 15:57:10 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 15:59:12 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 15:59:14 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 16:01:27 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/lily_official/html/lookbook.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/lookbook.php(21): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/lookbook
+2014/06/26 16:01:29 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/lily_official/html/lookbook.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/lookbook.php(21): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/lookbook
+2014/06/26 16:03:54 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/lily_official/html/lookbook.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/lookbook.php(21): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/lookbook
+2014/06/26 16:04:03 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 16:04:04 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 16:04:05 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 16:04:05 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 16:04:06 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 16:04:53 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:11)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(11): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 16:08:03 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 16:08:03 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 16:08:05 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 16:08:08 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 16:08:09 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
+2014/06/26 16:08:09 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/lily_official/html/streetsnap.php:9)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/html/streetsnap.php(9): CWebApplication->handleError()
+REQUEST_URI=/lily_official/html/streetsnap
