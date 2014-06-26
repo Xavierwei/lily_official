@@ -193,6 +193,8 @@ define([
                     nLength = $('.jcarousel .content li').length,
                     nIndex = 1,
                     updateDesc = function () {
+
+
                         // if (nIndex <= 0 ) {
                         //     nIndex = nLength;
                         // }
@@ -212,19 +214,22 @@ define([
                 // jcarousel init
                 jcarousel.on('jcarousel:create', function() {
                     //updateSize();
-                    jcarousel.jcarousel('items')
-                        .find('img')
-                        .css('width', '0');
-                    setTimeout(function(){
-                        jcarousel.jcarousel('items')
-                            .find('img')
-                            .css('width', 'auto');
-
+                    // jcarousel.jcarousel('items')
+                    //     .find('img')
+                    //     .css('width', '0');
+                    // setTimeout(function(){
+                    //     jcarousel.jcarousel('items')
+                    //         .find('img')
+                    //         .css('width', 'auto');
+                    jcarousel.jcarousel('items').css('width' , $(window).width());
                         jcarousel.jcarousel('scroll',  imgIndex , false );
-
-                    } , 0 );
+                    $(window).resize(function(){
+                        jcarousel.jcarousel('items').css('width' , $(window).width());
+                    });
+                    //} , 0 );
                 }).jcarousel({
-                    wrap: 'circular'
+                    wrap: 'circular',
+                    center: true
                 });
 
                 dPre.jcarouselControl({

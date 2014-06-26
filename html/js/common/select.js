@@ -340,6 +340,7 @@ define([
         var dHome = $('.index #home-selectbox'),
             dStarshop = $('.flagshipstore #store-selectbox'),
             dStorelocator = $('.storelocator #store-selectbox');
+            
 
         // home page, the city select is display none, we need it
         if (dHome.length) {

@@ -47,7 +47,7 @@ a:hover {opacity:0.8;}
 .language a{float:left;width:40px;height:17px;background:url('../images/hdicon.png') no-repeat 10px 0;}
 .language .lang_cn{background-position:-30px 0}
 
-#nav li.item {float:left;text-transform: uppercase;width:200px;}
+#nav li.item {float:left;text-transform: uppercase;width:200px;cursor:pointer;}
 #nav li.item:hover {}
 #nav li.item h2 {padding:25px 0 25px 30px;}
 #nav li ol {display: none;list-style: none;margin:0;padding:0;padding:0 0 20px 30px;}
@@ -152,26 +152,35 @@ a:hover {opacity:0.8;}
 
 /* LOOKBOOK/STREETSHOT Used
 ================================================================================================= */
-.streetshot .limit,
+.streetsnap .limit,
 .page_lookbook .limit{margin:5% auto;}
-.streetshot .limit.list,
+.streetsnap .limit.list,
 .page_lookbook .limit.list{text-align:center;}
-.streetshot .limit.list img,
-.page_lookbook .limit.list img{max-width:29%;height:auto;vertical-align:top;margin:0 2%;}
-.streetshot .limit .middle,
+.streetsnap .limit.list img,
+.page_lookbook .limit.list img{max-width:28%;height:auto;vertical-align:top;}
+.streetsnap .limit .middle,
 .page_lookbook .limit .middle{margin-top:30%;}
-.streetshot .limit .lb_tit,
+.streetsnap .limit .lb_tit,
 .page_lookbook .limit .lb_tit{width:340px;border:#000 solid 4px;text-align:center;line-height:80px;font-weight:bold;}
-.streetshot .limit .lb_tit h2,
+.streetsnap .limit .lb_tit h2,
 .page_lookbook .limit .lb_tit h2{line-height:54px;font-size:56px;padding:60px 30px 10px 30px}
 .page_lookbook .limit .lb_tit .fw {line-height:20px;margin-bottom:60px;}
-.streetshot .limit .lb_modtit,
+.streetsnap .limit .lb_modtit,
 .page_lookbook .limit .lb_modtit{width:340px;border:#000 solid 4px;text-align:center;line-height:80px;font-weight:bold;margin:5% auto;}
-.lookbook_right,.streetshot_right {margin:0 0 0 360px;}
-.lookbook_left,.streetshot_left {margin:0 360px 0 0;}
+
 .lookbook_left img,.lookbook_right img,.streetshot_right img {width:100%;height:auto;}
 .streetshot .limit .lb_tit h2 {margin-top:50px;font-size:50px;line-height:50px;}
 .streetshot .limit .lb_tit .fw {margin:50px 0;}
+
+
+.ss_row1 .left {float:left;width:40%;}
+.ss_row1 .streetshot_right {float:right;width:60%;margin-right:-6%;}
+.ss_group_top .ss_row1 .left {margin:30px 0 0 30px;}
+.ss_group_top .ss_row1 .streetshot_right {margin-top:60px;}
+.ss_row2 .ss_list {width:100%;text-align:right;float:right;margin-right:-6%;}
+.ss_row2 .ss_list img {margin-left:4%;}
+.ss_row3 .left {float:left;width:40%;margin-left:-6%;}
+
 /* campaign Used
 ================================================================================================= */
 .cp_tit{border:#000 solid 4px;width:350px;height:430px;text-transform:uppercase;text-align:center;font-size:16px;overflow:hidden;margin:0 0 40px;}
@@ -342,7 +351,7 @@ body.history,body.history .page,body.history .header{background-color:#fff1f4;}
 body.events,body.events .page,body.events .header{background-color:#ddebf3;}
 body.campaign,body.campaign .page,body.campaign .header{background-color:#f1fffc;}
 body.lookbook,body.lookbook .page,body.lookbook .header{background-color:#fafaec;}
-body.streetshot,body.streetshot .page,body.streetshot .header{background-color:#fafaec;}
+body.streetsnap,body.streetsnap .page,body.streetsnap .header{background-color:#fafaec;}
 body.flagshipstore,body.flagshipstore .page,body.flagshipstore .header{background-color:#ddebf3;}
 body.storelocator,body.storelocator .page,body.storelocator .header{background-color:#ddebf3;}
 body.vip,body.vip .page,body.vip .header{background-color:#f3dedd;}
