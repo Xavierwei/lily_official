@@ -1,4 +1,4 @@
 <?php
-define( "WB_AKEY" , '2056250808' );
-define( "WB_SKEY" , '03a9c1cb0aa9666eaba0d4b7f2d44bad' );
-define( "WB_CALLBACK_URL" , 'http://114.215.173.191/lily/admin/sns/weibo');
+define( "WB_AKEY" , '1910934872' );
+define( "WB_SKEY" , '56d5e1706993cb29ad250feb05ed7362' );
+define( "WB_CALLBACK_URL" , 'http://lily.local/admin/sns/weibo');

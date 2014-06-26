@@ -46,12 +46,13 @@
             <div class='limit cs-clear'>
                 <div class="left">
                     <!--  -->
+                    <?php $timeline = loadWeibo();?>
                     <div class="weibo">
                         <div class="weibo_wbbg"></div>
                         <div class="weibo_wbbox">
                             <div class="weibo_wblogo"></div>
-                            <div class="weibo_wbtime">Monday 23 may</div>
-                            <div class="weibo_wbcom">年轻OL的商务着装，可能太严肃，可能太时髦，或者像Lily这样正合适 作为年轻OL商务时装的开创者，</div>
+                            <div class="weibo_wbtime"><?php echo date("l d M", strtotime($timeline["created_at"]))?></div>
+                            <div class="weibo_wbcom"><?php echo $timeline["text"]?>，</div>
                             <div class="weibo_wb_btn">
                                 <a href="http://weibo.com/lilyofficial" target="_blank" class="btnlink"><span><?php echo Yii::t("strings", "Follow")?></span><span><?php echo Yii::t("strings", "Follow")?></span></a>
                             </div>
