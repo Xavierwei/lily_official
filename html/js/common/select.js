@@ -273,7 +273,8 @@ define([
                     success:function(aData){
                         var str = Handlebars.compile(storelocatorTpl)({
                             title : aData.shopes[0].city,
-                            data : aData.shopes
+                            data : aData.shopes,
+							_eView: _e("view")
                         });
                         dStores.html(str);
                         if(findNear && aData.min_distance_shop) {
