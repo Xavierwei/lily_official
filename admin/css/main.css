@@ -177,3 +177,16 @@ table.dataTable thead {
   left: 50%;
   margin-left: -110px;
 }
+
+.index-panel-item {
+  height: 200px;
+  background: #fff;
+  font-size: 2em;
+  text-align: center;
+  line-height: 200px;
+  margin-bottom: 2.127659574468085%;
+}
+
+.row-fluid [class*="span"]:last-child {
+  margin-left: 0px;
+}
