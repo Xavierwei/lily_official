@@ -19,7 +19,7 @@
 				        </div>
 			        </div>
 			        <div class="streetshot_right">
-				        <img class="btn album" data-album="5" src="<?php echo array_shift($images)?>" />
+				        <img class="btn album" data-album="5" src="<?php echo thumbnail(array_shift($images), array(850, 850))?>" />
 			        </div>
 		        </div>
 		        <?php $third_images = array_splice($images, 0, 3)?>

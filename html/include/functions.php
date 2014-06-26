@@ -169,14 +169,23 @@ function searchNews() {
 }
 
 function loadWeibo() {
+  $cache = Yii::app()->cache->get("weibo_statues");
+  if ($cache) {
+    return $cache;
+  }
   $api = Yii::app()->weibo->getApi();
   if (!$api) {
-    $this->responseError("weibo not login", ErrorAR::ERROR_UNKNOWN);
+    return FALSE;
   }
 
   $token = Yii::app()->cache->get("token");
 
   $timeline = $api->user_timeline_by_id($token["uid"]);
-  
-  return $timeline;
+  if ($timeline) {
+    $statues = $timeline["statuses"];
+    $first = array_shift($statues);
+    Yii::app()->cache->set("weibo_statues", $first);
+    return $first;
+  }
+  return FALSE;
 }
