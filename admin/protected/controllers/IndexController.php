@@ -37,7 +37,11 @@ class IndexController extends Controller
 	{
     $error = Yii::app()->errorHandler->error;
     header("Content-Type: text/html; charset=utf-8");
-    print_r($error);
-		//$this->render("error");
+    if (Yii::app()->params["close_error"]) {
+      $this->redirect("/error");
+    }
+    else {
+      print_r($error);
+    }
 	}
 }
