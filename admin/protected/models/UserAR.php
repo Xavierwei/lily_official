@@ -12,5 +12,9 @@ class UserAR extends CActiveRecord {
   public static  function isLogin() {
     return !!Yii::app()->session["login"];
   }
+  
+  public static function logout() {
+    unset(Yii::app()->session["login"]);
+  }
 }
 

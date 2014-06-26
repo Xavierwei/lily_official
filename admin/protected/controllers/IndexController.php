@@ -27,6 +27,7 @@ class IndexController extends Controller
         //TODO::
       }
     }
+    $this->layout = "//layouts/login";
     $this->render("login");
   }
 
@@ -44,4 +45,10 @@ class IndexController extends Controller
       print_r($error);
     }
 	}
+  
+  public function actionLogout() {
+    UserAR::logout();
+    
+    return $this->redirect("index/login");
+  }
 }

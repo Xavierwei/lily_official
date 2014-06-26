@@ -163,8 +163,17 @@ table.dataTable thead {
 }
 
 .upload-image-item a {
-position: absolute;
-bottom: 0.5em;
-right: 0.5em;
-color: #444;
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  color: #444;
+}
+
+.login {
+  width: 220px;
+  position: absolute;
+  top: 50%;
+  margin-top: -78px;
+  left: 50%;
+  margin-left: -110px;
 }

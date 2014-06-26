@@ -52,6 +52,7 @@
       <li class="nav-header"><em class="glyphicon glyphicon-book"></em><?php echo Yii::t("strings", "News Management")?></li>
       <li><a class="<?php echo $this->getActiveClass("page/news")?>" href="<?php echo Yii::app()->createUrl("page/news")?>">News</a></li>
       <li><a class="<?php echo $this->getActiveClass("page/addnews")?>" href="<?php echo Yii::app()->createUrl("page/addnews")?>">Add News</a></li>
+      <li><a href="<?php echo Yii::app()->createUrl("index/logout")?>"><?php echo Yii::t("strings", "Logout")?></a></li>
     </ul>
   </div>
   

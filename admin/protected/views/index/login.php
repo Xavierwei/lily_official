@@ -1,4 +1,4 @@
-<form action="<?php echo Yii::app()->baseUrl?>/index/login" method="POST" enctype="multipart/form-data">
+<form class="login" action="<?php echo Yii::app()->baseUrl?>/index/login" method="POST" enctype="multipart/form-data">
   <div class="field-group">
     <label for="">UserName: </label>
     <input type="text" name="user" placeholder="please input login name"/>
