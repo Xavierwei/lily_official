@@ -48,5 +48,20 @@ class StreehotController extends Controller {
       $this->responseJSON($list, "success");
     }
   }
+  
+  public function actionIngroup() {
+      $streehot = new StreehotAR();
+      $list = $streehot->getList();
+      $ret = array();
+      foreach ($list as $streehot){
+        foreach ($streehot->streehot_image as $image) {
+          $ret[] = array(
+              "title" => $streehot->title,
+              "url" => $image
+          );
+        }
+      }
+      $this->responseJSON($ret, "success");
+  }
 }
 
