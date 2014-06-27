@@ -619,24 +619,8 @@
   });
   
   // 多语言切换
-  angular.element("a[lang]").click(function (event) {
-    function setCookie (name, value, expire, path, domain, s){
-        if ( document.cookie === undefined ){
-            return false;
-        }
-        if (expire < 0){
-            value = '';
-        }
-        var dt = new Date();
-        dt.setTime(dt.getTime() + 1000 * expire);
-
-        document.cookie = name + "=" + encodeURIComponent(value) +
-            ((expire) ? "; expires=" + dt.toGMTString() : "") +
-            ((s) ? "; secure" : "");
-
-        return true;
-    }
-    setCookie('lang' , $(this).attr('lang') , 60 * 60 * 24 * 30, "/");
+  angular.element("a[lang]").click(function () {
+    jQuery.cookie('lang' , $(this).attr('lang') , { expires: 7, path: '/' });
     window.location.reload();
   });
   
