@@ -5,6 +5,8 @@
  
 <?php 
   $lookbookes = loadLookbook();
+  $title = $lookbookes[0];
+  $lookbookes = $lookbookes[1];
 ?>
 
 <body class='lookbook'>

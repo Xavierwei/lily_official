@@ -1,6 +1,6 @@
 <?php
 
-class LookbookGalleryController extends Controller {
+class LookbookgalleryController extends Controller {
   
   public function actionAdd() {
     $request = Yii::app()->getRequest();

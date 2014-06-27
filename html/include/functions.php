@@ -118,7 +118,7 @@ function loadLookbook() {
   $gallery_list = $lookbook->getList();
   if (count($gallery_list)) {
     $gallery = array_shift($gallery_list);
-    return $gallery->loadLookbookItem();
+    return array($gallery->season, $gallery->loadLookbookItem());
   }
 }
 
