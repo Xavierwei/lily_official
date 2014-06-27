@@ -47,6 +47,30 @@ class LookbookController extends Controller {
       $list = $lookbookAr->getList();
       $this->responseJSON($list, "success");
     }
-  } 
+  }
+  
+  public function actionIngroup() {
+  $lookbook = new LookbookGalleryAR();
+  $gallery_list = $lookbook->getList();
+  if (count($gallery_list)) {
+    $gallery = array_shift($gallery_list);
+    $lookbookItems = $gallery->loadLookbookItem();
+    
+    $ret = array();
+    foreach ($lookbookItems as $lookbookItem) {
+      foreach ($lookbookItem->look_book_image as $image) {
+        $ret[] = array(
+            "title" => $lookbookItem->title,
+            "url" => $image
+        );
+      }
+    }
+    $this->responseJSON($ret, "success");
+    
+  }
+  else {
+    $this->responseJSON(array(), "success");
+  }
+  }
 }
 
