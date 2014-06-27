@@ -189,3 +189,7 @@ function loadWeibo() {
   }
   return FALSE;
 }
+
+function substring_utf8($str, $start, $length) {
+  return mb_substr($str, $start, $length, "utf-8");
+}

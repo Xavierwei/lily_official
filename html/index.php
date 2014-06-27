@@ -52,7 +52,7 @@
                         <div class="weibo_wbbox">
                             <div class="weibo_wblogo"></div>
                             <div class="weibo_wbtime"><?php echo date("l d M", strtotime($timeline["created_at"]))?></div>
-                            <div class="weibo_wbcom"><?php echo $timeline["text"]?>，</div>
+                            <div class="weibo_wbcom"><?php echo substring_utf8($timeline["text"], 0, 70)?>，</div>
                             <div class="weibo_wb_btn">
                                 <a href="http://weibo.com/lilyofficial" target="_blank" class="btnlink"><span><?php echo Yii::t("strings", "Follow")?></span><span><?php echo Yii::t("strings", "Follow")?></span></a>
                             </div>

@@ -8,7 +8,7 @@ class JobController extends Controller {
     $job = new JobAR();
     
     if ($request->isPostRequest) {
-      $cid = $_POST["cid"];
+      $cid = isset($_POST["cid"]) ? $_POST["cid"]: 0;
       if ($cid > 0) {
         $job = JobAR::model()->findByPk($cid);
         $job->setAttributes($_POST);
@@ -28,7 +28,7 @@ class JobController extends Controller {
   public function actionIndex() {
     $request = Yii::app()->getRequest();
     $id = $request->getParam("id", FALSE);
-    if ($id) {
+    if ($id !== FALSE) {
       $job = JobAR::model()->findByPk($id);
       $this->responseJSON($job, "success");
     }
