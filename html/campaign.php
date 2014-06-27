@@ -9,9 +9,6 @@
         <!--  -->
         <div class="page page_campaign">
             <div class='limit cp-top cs-clear'>
-	            <div class="left">
-		            <img class='btn album' data-album="4" src="pic/campaign/1.jpg" />
-	            </div>
                 <div class="cp_box right">
                     <div class="cp_tit">
                         <h2><?php echo Yii::t("strings", "CAM-<br />PAIGN")?></h2>
@@ -31,6 +28,9 @@
 		                <div class="cp_season btn fadeout video">Lily 2014 S/S 大片制作录</div>
 	                <?php endif;?>
                 </div>
+	            <div class="left">
+		            <img class='btn album' data-album="4" src="pic/campaign/1.jpg" />
+	            </div>
             </div>
 
             <div class="cs-clear limit">

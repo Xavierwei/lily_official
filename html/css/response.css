@@ -56,13 +56,15 @@
     .footer .ft_touch{display:block;text-align:center;margin:3% auto;float:none;}
     .menu{background-image:url('../images/mobilemenu.png');background-size:contain;}
     /* milestone page */
-    .page_heritage .limit{width:600px;}
-    .page_heritage .ha_modtxt h2{font-size:40px;padding-bottom:0;}
+    .page_heritage .limit{width:auto;}
+    .page_heritage .ha_modtxt {width:auto;padding:0 20px;margin:0 0 30px 0;}
+    .page_heritage .ha_modtxt h2{font-size:40px;padding-bottom:0;margin:0 0 20px 0;}
     .page_heritage .ha_modtxt h3{font-size:18px;padding:0 0 10px;}
     .page_heritage .ha_modR{margin:0;}
     /* news page */
     .page_event .event_list{width:auto;}
     .page_event .event_look{width:auto;text-align:center;}
+    #wrap .page .limit.event_list {width:auto;}
     /* campaign page */
     .page_campaign{margin-top:12%;}
     .page_campaign .limit{text-align:center;}
@@ -70,6 +72,15 @@
     .page_campaign .cp_season,
     .page_campaign .cp_tit{width:auto;}
     .page_campaign .wrap img{width:100%;}
+    .page_campaign .cp-top .right {float:none;width:auto;margin:0;}
+    .page_campaign .cp-top .left {float:none;width:auto;margin:0;}
+    .page_campaign .cp-ground .left {float:none;width:auto;margin:0;text-align: left;}
+    .page_campaign .cp-ground .right {float:none;width:auto;margin:0;}
+    .page_campaign .cp-model .left {float:none;width:100%;margin:0;}
+    .page_campaign .cp-model .right {float:none;width:auto;margin:0;text-align: left;}
+    .page_campaign .cp-top .cp_tit, .page_campaign .cp-top .cp_season {font-size:24px;}
+    .cp_img_size1 {width:37%;}
+    .page_campaign .cp-mo1 .row3 .cp_img {margin-right:37%;}
     /* lookbook / streetshot */
     .streetshot .limit,
     .page_lookbook .limit{text-align:center;}
@@ -81,6 +92,13 @@
     .page_lookbook .limit img{width:100%;}
     .streetshot .limit.list img,
     .page_lookbook .limit.list img{max-width:100%;margin:5% auto;}
+    .ss_group_top .ss_row1 .left {margin:30px 30px 0;float:none;width:auto;}
+    .streetsnap .limit .lb_tit, .page_lookbook .limit .lb_tit {width:auto;}
+    .ss_row1 .streetshot_right {float:none;margin:0;width:auto;}
+    .ss_row2 .ss_list {margin:0;}
+    .streetsnap .limit.list img, .page_lookbook .limit.list img {max-width: 30%;margin-left:1%;}
+    .ss_row3 .left {width:auto;margin:0;float:none;}
+    .ss_row3 .left img {width:100%;}
     /* page storelocator */
     .page_storelocator{margin-top:60px;}
     .page_storelocator .store_additem{float:none;width:auto;}
@@ -88,14 +106,17 @@
     .page_starshop{margin-top:60px;}
     .page_starshop .limit .desc{float:none;width:100%;}
     .page_starshop .limit img{float:none;width:100%;}
+    /* job */
+    #wrap .page .limit.job_list {width:auto;}
     /* privacy */
-    .page_privacy{padding:80px 0;}
-    .page_privacy .privacy_tit{display:none;}
+    .page_privacy{padding:80px 10%;}
     .page_privacy .privacy_tit.mobile{display:block;font-size:40px;line-height:1em;}
     .page_privacy .privacy_tit.mobile h2{margin:5% auto;font-size:20px;}
     .page_privacy .privacy_com{width:auto;}
     .ft_com{width:auto;}
     .ft_links{float:none;width:auto;text-align:center;margin:0;}
+    .search_popup {width:600px;margin-left:-300px;}
+    .search_popup .search_input {width:350px;}
     .footer {line-height: 20px;}
 }
 /* mobile menu part */
