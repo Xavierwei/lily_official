@@ -20,10 +20,6 @@
                             statment
                         </h2>
                     </div>
-                    <div class="privacy_tit mobile">
-                        <h1>隐私申明</h1>
-                        <h2>privacy statment</h2>
-                    </div>
                     <div class="privacy_com cs-clear">
                         <p>
                             Lily (Shanghai Silk Group Ltd.) reserves all the rights to the content and format of this website (including related social media). Aside from browsing, all parts and content of the websites are not to be copied, reproduced, republished, uploaded, posted, delivered or distributed without formal consent from Lily.

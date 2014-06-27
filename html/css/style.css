@@ -167,6 +167,7 @@ a:hover {opacity:0.8;}
 .page_lookbook .limit .lb_tit .fw {line-height:20px;margin-bottom:60px;}
 .streetsnap .limit .lb_modtit,
 .page_lookbook .limit .lb_modtit{width:340px;border:#000 solid 4px;text-align:center;line-height:80px;font-weight:bold;margin:5% auto;}
+.page_lookbook .limit .lb_modtit {margin:5% 0;}
 
 .lookbook_left img,.lookbook_right img,.streetshot_right img {width:100%;height:auto;}
 .streetshot .limit .lb_tit h2 {margin-top:50px;font-size:50px;line-height:50px;}
@@ -180,6 +181,9 @@ a:hover {opacity:0.8;}
 .ss_row2 .ss_list {width:100%;text-align:right;float:right;margin-right:-6%;}
 .ss_row2 .ss_list img {margin-left:4%;}
 .ss_row3 .left {float:left;width:40%;margin-left:-6%;}
+
+
+.ss_row1 .lookbook_right {float:right;width:60%;margin-right:-6%;}
 
 /* campaign Used
 ================================================================================================= */
@@ -211,7 +215,7 @@ a:hover {opacity:0.8;}
 .page_campaign .wrap{position:relative;margin:5% 7%;}
 .page_campaign .cp-top img{width:100%;}
 .page_campaign .cp-top .left {float:left;width:60%;margin-left:-9%;}
-.page_campaign .cp-top .right {float:left;width:40%;margin-left:6%;}
+.page_campaign .cp-top .right {float:right;width:40%;margin-left:6%;}
 .page_campaign .cp-top .cp_tit,.page_campaign .cp-top .cp_season {margin-left:auto;margin-right:auto;}
 .page_campaign .cp-ground img{width:100%;}
 .page_campaign .cp-ground .left {float:left;width:40%;margin-left:1%;}
@@ -330,7 +334,7 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .job_item{display:inline-block;width:360px;text-align:center;margin:10px 30px 40px 30px;}
 .job_itemtit{font-size:36px;line-height:55px;height:125px;text-align:left;margin-left:10%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .job_itemtit strong{display:block;font-family:arial;font-size:48px}
-.job_itemtxt{font-size:12px;line-height:16px;text-align:left;margin-left:10%;height:100px;overflow:hidden;}
+.job_itemtxt{font-size:12px;line-height:16px;text-align:left;margin-left:10%;height:97px;margin:0 0 20px 0;overflow:hidden;}
 .job_itembtn{background:#000;color:#fff;font-size:16px;font-family:arial;display:inline-block;width:80%;height:48px;line-height:48px;text-align:center;}
 
 #wrap .page .limit.job_list {width:1693px;margin:0 auto;}
