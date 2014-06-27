@@ -77,8 +77,7 @@
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/jquery.form.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/jquery_ui/js/jquery-ui-1.10.4.min.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/ckeditor/ckeditor.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/angular.js"></script>
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=ZuVRDtLTr1PXxz7g028BUPYL"></script>  
+<script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/angular.js"></script> 
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/script.js"></script>
 </body>
 </html>

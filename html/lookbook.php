@@ -59,21 +59,21 @@
 						</div>
 
 			            <div class="lookbook_right">
-				            <img class="btn album" data-album="5" src="<?php echo array_shift($look_images)?>" />
+				            <img class="btn album" data-album="1" src="<?php echo array_shift($look_images)?>" />
 			            </div>
 		            </div>
 		            <?php $last_image = array_pop($look_images);?>
 		            <div class="list limit cs-clear  ss_row2">
 			            <div class="ss_list">
 				            <?php foreach ($look_images as $look_image):?>
-					            <img class="btn album" data-album="<?php echo $index + 2?>" src="<?php echo $look_image?>" />
+					            <img class="btn album" data-album="1" src="<?php echo $look_image?>" />
 				            <?php endforeach;?>
 			            </div>
 		            </div>
 
 		            <div class="limit cs-clear ss_row3">
 			            <div class="left">
-				            <img class="btn album" data-album="<?php echo $index + 2?>" src="<?php echo $last_image?>" />
+				            <img class="btn album" data-album="1" src="<?php echo $last_image?>" />
 			            </div>
 		            </div>
 	            </div>

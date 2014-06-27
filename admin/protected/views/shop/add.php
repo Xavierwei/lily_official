@@ -112,3 +112,5 @@
       </div>
     </form>
   </div></div>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=ZuVRDtLTr1PXxz7g028BUPYL"></script> 

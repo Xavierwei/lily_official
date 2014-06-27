@@ -441,16 +441,33 @@ define([
         ]
 
         if(oConfig.data.id==5) {
-            oConfig.success(streetshot);
+            //oConfig.success(streetshot);
+          requset({
+              path : 'admin/api/streehot/ingroup',
+              method : 'get',
+              success : function (data) {
+                if (data["status"] == 0 ) {
+                  oConfig.success(data["data"]);
+                }
+              },
+              failure : function (err) {
+                  oConfig.failure(err);
+              }
+          });
         }
         if(oConfig.data.id==1) {
-            oConfig.success(lookbook1);
-        }
-        if(oConfig.data.id==2) {
-            oConfig.success(lookbook2);
-        }
-        if(oConfig.data.id==3) {
-            oConfig.success(lookbook3);
+          requset({
+              path : 'admin/api/lookbook/ingroup',
+              method : 'get',
+              success : function (data) {
+                if (data["status"] == 0 ) {
+                  oConfig.success(data["data"]);
+                }
+              },
+              failure : function (err) {
+                  oConfig.failure(err);
+              }
+          });
         }
         if(oConfig.data.id==4) {
             oConfig.success(campaign);
