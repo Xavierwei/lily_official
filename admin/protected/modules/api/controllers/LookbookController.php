@@ -9,7 +9,7 @@ class LookbookController extends Controller {
       $data = $_POST;
       if (isset($data["cid"])) {
         // 更新
-        $lookbookAr = LookBookAR::model()->findByPk($data["cid"]);
+        $lookbookAr = LookbookAR::model()->findByPk($data["cid"]);
         if ($lookbookAr) {
           $lookbookAr->setAttributes($data);
           $lookbookAr->update();
@@ -21,7 +21,7 @@ class LookbookController extends Controller {
       }
       // 添加
       else {
-        $lookbookAr = new LookBookAR();
+        $lookbookAr = new LookbookAR();
         $lookbookAr->setAttributes($data);
         
         if ($lookbookAr->save()) {

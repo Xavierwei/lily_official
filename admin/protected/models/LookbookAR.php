@@ -1,6 +1,6 @@
 <?php
 
-class LookBookAR extends ContentAR {
+class LookbookAR extends ContentAR {
   public $type = "lookbook";
   
   public $look_book_image;
