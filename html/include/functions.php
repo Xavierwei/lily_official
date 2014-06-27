@@ -91,7 +91,7 @@ function loadJob($type = FALSE) {
   $query->addCondition("status=:status");
   $query->params[":status"] = JobAR::STATUS_ENABLE;
   $query->addCondition("type=:type");
-  $query->params[":type"] = NewsAR::model()->type;
+  $query->params[":type"] = JobAR::model()->type;
     //多语言
   $query->addCondition("language=:language");
   $query->params[":language"] = $language;

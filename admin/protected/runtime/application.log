@@ -4604,3 +4604,15 @@ Stack trace:
 #7 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
 #8 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
 REQUEST_URI=/lily_official/html/admin/upload/d234e70f2863e2688cc92ea9e6030cc9_360_266_jpg
+2014/06/27 05:34:21 [error] [php] getimagesize(): Filename cannot be empty (/Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php:96)
+Stack trace:
+#0 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/drivers/Image.php(53): Image_GD->__construct()
+#1 /Applications/MAMP/htdocs/lily_official/admin/protected/extensions/easyimage/EasyImage.php(71): factory()
+#2 /Applications/MAMP/htdocs/lily_official/admin/protected/models/MediaAR.php(163): EasyImage->__construct()
+#3 /Applications/MAMP/htdocs/lily_official/admin/protected/controllers/UploadController.php(25): MediaAR->makeImageThumbnail()
+#4 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CController.php(270): UploadController->missingAction()
+#5 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(282): UploadController->run()
+#6 /Applications/MAMP/htdocs/lily_official/admin/yii/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/lily_official/admin/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/lily_official/admin/index.php(12): CWebApplication->run()
+REQUEST_URI=/lily_official/html/admin/upload/d234e70f2863e2688cc92ea9e6030cc9_360_266_jpg

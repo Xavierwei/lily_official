@@ -139,4 +139,4 @@ body.mobile.open .header{left:200px;right:0;}
 body.mobile.open .header .language,
 body.mobile.open .header .search{display:none;}
 body.mobile .mbmenu{display:block;}
-body.mobile .mbmenu.open{left:0px;}
+body.mobile.open .mbmenu{left:0px;}
