@@ -39,7 +39,7 @@ class LookbookController extends Controller {
     $request = Yii::app()->getRequest();
     $id = $request->getParam("id", FALSE);
     if ($id) {
-      $lookbook = LookBookAR::model()->findByPk($id);
+      $lookbook = LookbookAR::model()->findByPk($id);
       $this->responseJSON($lookbook, "success");
     }
     else {
