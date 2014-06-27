@@ -20,17 +20,17 @@
                 <?php $school_jobes = loadJob();?>
                 <div class="job_list limit cs-clear">
                     <!--  -->
-                    <?php foreach ($school_jobes as $school_job): ?>
+                    <?php foreach ($school_jobes as $index=>$school_job): ?>
                     <div class="job_item">
-                        <div class="job_itemtit"> <strong>01</strong>
+                        <div class="job_itemtit"> <strong><?php echo $index+1;?></strong>
                             <?php echo $school_job->title?> / <?php echo $school_job->job_people_number == 0 ? Yii::t("strings", "Limited"): $school_job->job_people_number?>
                         </div>
                         <div class="job_itemtxt">
-                            <?php echo Yii::t("strings", "Requirements")?>：
+                            <?php echo Yii::t("strings", "Job Requirements")?>:
                             <br />
                             <?php echo $school_job->body?>
                         </div>
-                        <a href="javascript:;" class="job_itembtn">APPLY</a>
+                        <a href="javascript:;" class="job_itembtn"><?php echo Yii::t("strings", "APPLY")?></a>
                     </div>
                     <?php endforeach;?>
                     <!--  --> </div>

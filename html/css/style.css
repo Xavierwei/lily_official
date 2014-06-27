@@ -334,7 +334,7 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .job_item{display:inline-block;width:360px;text-align:center;margin:10px 30px 40px 30px;}
 .job_itemtit{font-size:36px;line-height:55px;height:125px;text-align:left;margin-left:10%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .job_itemtit strong{display:block;font-family:arial;font-size:48px}
-.job_itemtxt{font-size:12px;line-height:16px;text-align:left;margin-left:10%;height:97px;margin:0 0 20px 0;overflow:hidden;}
+.job_itemtxt{font-size:12px;line-height:16px;text-align:left;height:97px;margin:0 0 20px 10%;overflow:hidden;}
 .job_itembtn{background:#000;color:#fff;font-size:16px;font-family:arial;display:inline-block;width:80%;height:48px;line-height:48px;text-align:center;}
 
 #wrap .page .limit.job_list {width:1693px;margin:0 auto;}

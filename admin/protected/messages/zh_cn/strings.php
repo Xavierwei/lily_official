@@ -50,6 +50,8 @@ return array(
 	"MAKING OF SPRING" => "春季幕后花絮",
 	"MAKING OF SUMMER" => "夏季幕后花絮",
 	"lets stay in touch" => "联系我们",
-	"OFFICIAL WEBSITE" => "官方网站"
+	"OFFICIAL WEBSITE" => "官方网站",
+	"Job Requirements" => "职位要求",
+	"APPLY" => "申请"
 
 );
