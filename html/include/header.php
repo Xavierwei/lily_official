@@ -16,5 +16,6 @@
     
     <script type="text/javascript">
       window.lang = "<?php global $language; echo $language;?>";
+      window.title = "<?php echo set_page_title()?>";
     </script>
 </head>
