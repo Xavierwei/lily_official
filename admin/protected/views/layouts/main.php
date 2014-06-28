@@ -24,8 +24,8 @@
 		<div id="logo"><?php echo Yii::t("strings", "Lily Office Admin Office")?></div>
 
     <div class="lang-bar">
-        <a href="javascript:void(0)" lang="en_us" class="lang_en">English</a>
-        <a href="javascript:void(0)" lang="zh_cn" class="lang_cn">中文</a>
+        <?php if (Yii::app()->language == "zh_cn"): ?><a href="javascript:void(0)" lang="en_us" class="lang_en">English</a><?php endif;?>
+        <?php if (Yii::app()->language == "en_us"): ?><a href="javascript:void(0)" lang="zh_cn" class="lang_cn">中文</a><?php endif;?>
     </div>
 	</div>
   
