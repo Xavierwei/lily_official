@@ -42,7 +42,9 @@
                     </div>
                 </div>
             </div>
-
+            
+            <?php global $language;?>
+            <?php if ($language == "cn"): ?>
             <div class='stores'>
                 <div class="limit cs-clear" id="ss_1">
                     <div class="desc left">
@@ -70,6 +72,35 @@
                     <div class="clear"></div>
                 </div>
             </div>
+            <?php else: ?>
+            <div class='stores'>
+                <div class="limit cs-clear" id="ss_1">
+                    <div class="desc left">
+                        <h2>Shanghai Nanjing Road</h2>
+                        <p>opposite to Century Square, No. 588, East Nanjing Rd., Huangpu Dist., Shanghai</p>
+                        <p>021-5302 8596</p>
+                        <a href="javascript:;" class="store_view fadeout" data-lat="121.485919" data-lng="31.241687"><?php echo Yii::t("strings", "View Map")?></a>
+                    </div>
+                    <div class="starshop_map starshop_img_right">
+                        <img alt="" src="images/starshop1.jpg">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="limit cs-clear" id="ss_2">
+                    <div class="desc right">
+                        <h2>Grandview Mall</h2>
+                        <p>LILY Store, No. 1A032L.1A032M, 1/F, Zhengjia Plaza, No. 228, Tianhe Road, Tianhe District, Guangzhou</p>
+                        <p>020-3835 0621</p>
+                        <a href="javascript:;" class="store_view fadeout" data-lat="113.333869" data-lng="23.138652"><?php echo Yii::t("strings", "View Map")?></a>
+                    </div>
+                    <div class="starshop_map starshop_img_left">
+                        <img alt="" src="images/starshop2.jpg">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>          
+            <?php endif;?>
         </div>
         <div id="map"></div>
 

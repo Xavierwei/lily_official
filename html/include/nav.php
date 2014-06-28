@@ -1,6 +1,6 @@
 <div class="header">
     <ul id='nav'>
-        <li class='item'>
+        <li class='item' style="display:none">
             <h2><span class="club"><?php echo Yii::t("strings", "VIP CLUB")?></span></h2>
             <ol>
                 <li><a href='./club_memberinfo.html' index='9'><?php echo Yii::t("strings", "LILY CLUB")?></a></li>
