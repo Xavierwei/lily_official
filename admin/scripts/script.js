@@ -36,6 +36,22 @@
       angular.element("input[name='shop_star_image']").val("");
     };
     
+    // 国家选择处理事件
+    $scope.countryChange = function () {
+      var country = $scope.shop.country;
+      if (country) {
+        var city = $scope.city[country];
+        $scope.country_city = city;
+      }
+    };
+    
+    $scope.cityChange = function () {
+      var city = $scope.shop.city;
+      if (city) {
+        $scope.city_distinct = $scope.distinct[city];
+      }
+    };
+    
     // 初始化
     $scope.init = function () {
       var shop_id = angular.element("input[name='shop_id']").val();
@@ -52,8 +68,22 @@
           }
         });
       }
-      
+        
       // 添加城市选项
+      $http({
+        url: window.baseurl + "/api/shop/location",
+        method: "GET"
+      }).success(function (data) {
+        var location = data["data"];
+        $scope.city = location["city"];
+        $scope.country = location["country"];
+        $scope.distinct = location["distinct"];
+        
+        $scope.country_city = [];
+        $scope.city_distinct = [];
+      }).error(function (data) {
+        //TODO::
+      });
     };
     
     // 事件绑定

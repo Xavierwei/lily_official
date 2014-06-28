@@ -7,14 +7,14 @@
         <div class="control-group">
           <label class="control-label" for=""><?php echo Yii::t("strings", "Location") ?></label>
           <div class="controls">
-            <select name="country" id="" ng-model="shop.country" required>
-              <option value="cn">China</option>
+            <select name="country" ng-change="countryChange()" id="" ng-model="shop.country" required ng-options="c for c in country">
+              <option value="">--<?php echo Yii::t("strings", "Choose Country")?>--</option>
             </select>
-            <select name="city" id="" ng-model="shop.city" required>
-              <option value="shanghai">Shanghai</option>
+            <select name="city" id="" ng-change="cityChange()" ng-model="shop.city" required ng-options="c for c in country_city">
+              <option value="">--<?php echo Yii::t("strings", "Choose City")?>--</option>
             </select>
-            <select name="distinct" id="" ng-model="shop.distinct" required>
-              <option value="jingan"><?php echo Yii::t("strings", "Jing An Distinct") ?></option>
+            <select name="distinct" id="" ng-model="shop.distinct" required ng-options="c for c in city_distinct">
+              <option value="">--<?php echo Yii::t("strings", "Choose District")?>--</option>
             </select>
             <p class="text-error" ng-show="shopform.distinct.$error.required || shopform.city.$error.required || shopform.country.$error.required ">This field is required</p>
           </div>
