@@ -15,29 +15,29 @@
                 <div class="store_selbox" id='store-selectbox'>
                     <div class="store_select cs-clear" id='country'>
                         <a class="store_selectbg cs-clear" >
-                            <span class="store_sl_txt">中国</span>
+                            <span class="store_sl_txt"><?php echo Yii::t("strings", "China")?></span>
                             <span class="store_sl_icon"></span>
                         </a>
                         <select class="store_sl">
-                            <option value="中国">中国</option>
+                            <option value="CN"><?php echo Yii::t("strings", "China")?></option>
                         </select>
                     </div>
                     <div class="store_select cs-clear" id='province'>
                         <a class="store_selectbg cs-clear" >
-                            <span class="store_sl_txt">Province</span>
+                            <span class="store_sl_txt"><?php echo Yii::t("strings", "Province")?></span>
                             <span class="store_sl_icon"></span>
                         </a>
                         <select class="store_sl"></select>
                     </div>
                     <div class="store_select cs-clear" id='city'>
                         <a class="store_selectbg cs-clear" >
-                            <span class="store_sl_txt">City</span>
+                            <span class="store_sl_txt"><?php echo Yii::t("strings", "City")?></span>
                             <span class="store_sl_icon"></span>
                         </a>
                         <select class="store_sl">
                             <option value="" data-hash="ss_1"></option>
-                            <option value="ss_1" data-hash="ss_1">上海</option>
-                            <option value="ss_2" data-hash="ss_2">广州</option>
+                            <option value="ss_1" data-hash="ss_1"><?php echo Yii::t("strings", "Shanghai")?></option>
+                            <option value="ss_2" data-hash="ss_2"><?php echo Yii::t("strings", "Guangzhou")?></option>
                         </select>
                     </div>
                 </div>

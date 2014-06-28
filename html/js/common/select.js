@@ -70,15 +70,15 @@ define([
                     updateText(true);
                 },2000);
             }
-        })
+        });
 
         dProvinceSelect.change(function () {
             updateText(false);
-        })
+        });
 
         dCitySelect.change(function () {
             updateText(false);
-        })
+        });
 
         dDistrictSelect.change(function () {
             updateText(false);
