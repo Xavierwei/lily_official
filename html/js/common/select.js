@@ -286,7 +286,7 @@ define([
                         }
                     }
                 });
-            }
+            };
 
         oHandler = dStorelocator.ChinaCitySelect({
             //'prov' : dProvinceSelect,
@@ -300,7 +300,7 @@ define([
                     searchShop(true);
                 },2000);
             }
-        })
+        });
 
         dProvinceSelect.change(function () {
             updateText();

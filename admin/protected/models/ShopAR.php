@@ -148,6 +148,10 @@ class ShopAR extends CActiveRecord {
       $query->params[":star"] = $search["star"];
     }
     
+    global $language;
+    $query->addCondition("language=:language");
+    $query->params[":language"] = $language;
+    
     $rows = $this->findAll($query);
     
     // 允许其他方法修改查询结果

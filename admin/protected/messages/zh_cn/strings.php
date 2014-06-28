@@ -52,6 +52,10 @@ return array(
 	"lets stay in touch" => "联系我们",
 	"OFFICIAL WEBSITE" => "官方网站",
 	"Job Requirements" => "职位要求",
-	"APPLY" => "申请"
-
+	"APPLY" => "申请",
+    "China" =>"中国",
+    "Province" => "省份",
+    "City" => "城市",
+    "District" => "区",
+    "Shanghai" => "上海市",
 );
