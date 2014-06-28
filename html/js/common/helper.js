@@ -105,7 +105,8 @@ define([
     var enableList = function() {
         // album list
         dBody.delegate('.album', 'click', function() {
-            var imgIndex = $('.album').index( this );
+            var imgIndex = $(this).attr('src').match(/(\d+)\.\w+$/)[1];
+            imgIndex = imgIndex - 1;
             var bFunc = function(aData) {
                     var jcarousel = $('.fancybox-inner .jcarousel'),
                         dPre = $('.jcarousel-control-prev'),
