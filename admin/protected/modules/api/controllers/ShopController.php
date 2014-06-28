@@ -64,8 +64,9 @@ class ShopController extends Controller {
     //  [CN, SHANGHAI, NANJING, TIANJIN, ]
     // [CN => [] , US => [], SHANGHAI => [JingAn, Pudong], ]
     $ret = array();
-    $sql = "SELECT group_concat(country) as country_str FROM (SELECT country FROM shop GROUP BY country) AS country_table ";
-    $country_str = Yii::app()->db->createCommand($sql)->query()->read();
+    global $language;
+    $sql = "SELECT group_concat(country) as country_str FROM (SELECT country FROM shop WHERE language=:language GROUP BY country) AS country_table ";
+    $country_str = Yii::app()->db->createCommand($sql)->query(array(":language" => $language))->read();
     $countries = explode(",", $country_str["country_str"]);
     $ret["country"] = $countries;
     
@@ -73,8 +74,8 @@ class ShopController extends Controller {
     $ret_cities = array();
     $cities_group = array();
     foreach ($countries as $country) {
-      $sql = "SELECT group_concat(city) as city_str FROM (SELECT city FROM shop WHERE country = :country GROUP BY city) as city_table";
-      $city_str = Yii::app()->db->createCommand($sql)->query(array(":country" => $country))->read();
+      $sql = "SELECT group_concat(city) as city_str FROM (SELECT city FROM shop WHERE language=:language AND country = :country GROUP BY city) as city_table";
+      $city_str = Yii::app()->db->createCommand($sql)->query(array(":country" => $country, ":language" => $language))->read();
       $cities = explode(",", $city_str["city_str"]);
       $cities_group = array_merge($cities, $cities_group);
       $ret_cities[$country] = $cities;
@@ -84,6 +85,8 @@ class ShopController extends Controller {
     // 区域
     $ret_distinct = array();
     $query = new CDbCriteria();
+    $query->addCondition("language=:language");
+    $query->params[":language"] = $language;
     $query->addCondition("`distinct` is not null");
     $all_shopes = ShopAR::model()->findAll($query);
     foreach ($all_shopes as $key => $shop) {

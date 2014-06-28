@@ -58,7 +58,7 @@ a:hover {opacity:0.8;}
 ================================================================================================= */
 .footer{position:fixed;bottom:0;width:100%;background:#c7deeb;line-height:30px;font-size:16px;text-transform:uppercase;color:#77858d}
 .ft_logo{background:url('../images/ft_logo.png') no-repeat center;width:132px;height:86px;margin:0 auto;padding:5%;}
-.ft_com{margin:0 auto;width:947px;font-size:14px;}
+.ft_com{margin:0 auto;width:700px;;font-size:14px;}
 .ft_list{display:inline-block;vertical-align:top;margin:0 50px;width:130px;}
 .ft_list h2{font-size:20px;}
 .ft_list a{display:block;color:#77858d}

@@ -26,7 +26,7 @@
 					    <li><a href='./storelocator'><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>
 				    </ol>
 			    </div>
-			    <div class="ft_list">
+			    <div class="ft_list" style="display:none;">
 				    <h2><?php echo Yii::t("strings", "CLUB")?></h2>
 				    <ol>
 					    <li><a href='./club_memberinfo.html' index='9'><?php echo Yii::t("strings", "LILY CLUB")?></a></li>
@@ -35,6 +35,7 @@
 					    <li><a href='./club_gifthis.html' index='12'><?php echo Yii::t("strings", "REDEMPTION")?></a></li>
 				    </ol>
 			    </div>
+			    <div class="cs-clear"></div>
 			    <div class="ft_links">
 				    <ol>
 					    <li><a class='fadeout' href="./job"><?php echo Yii::t("strings", "JOB")?></a></li>

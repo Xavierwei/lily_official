@@ -67,6 +67,8 @@ define([
                     dCityText.html(aData.user_city);
                     dCityText.data('val', aData.user_city);
                     dCitySelect.val(aData.user_city);
+                    console.log(aData.user_city);
+                    console.log(aData);
                     updateText(true);
                 },2000);
             }
