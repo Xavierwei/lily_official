@@ -18,7 +18,7 @@
 	                        <p>featuring<br />Tilda Lindstam</p>
 	                    <?php else:?>
 		                    <p>14秋冬</p>
-		                    <p>蒂尔达·林斯丹姆</p>
+		                    <p>Lily 2014 年春季广告大片</p>
 	                    <?php endif;?>
                     </div>
 	                <?php if(Yii::app()->language == 'en_us'):?>
@@ -26,7 +26,7 @@
 	                    <div class="cp_season btn fadeout video">Lily 2014 SS KV making off</div>
 	                <?php else:?>
 		                <div class="cp_season btn go_play_ground">格子间的奇幻乐园</div>
-		                <div class="cp_season btn fadeout video">Lily 2014 S/S 大片制作录</div>
+		                <div class="cp_season btn fadeout video">Lily 2014 年春季广告大片</div>
 	                <?php endif;?>
                 </div>
 	            <div class="left">

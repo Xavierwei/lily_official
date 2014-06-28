@@ -10,7 +10,7 @@
         <!--  -->
         <div class="page page_starshop">
             <div class="limit">
-                <h2><?php echo Yii::t("strings", "FLAGSHIP STORE")?></h2>
+                <h2><?php echo Yii::t("strings", "STAR STORE")?></h2>
                 <div class="store_txt"><?php echo Yii::t("strings", "NEAR YOU")?></div>
                 <div class="store_selbox" id='store-selectbox'>
                     <div class="store_select cs-clear" id='country'>

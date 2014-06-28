@@ -31,7 +31,7 @@
         <li class='item'>
             <h2><?php echo Yii::t("strings", "STORE")?></h2>
             <ol>
-                <li><a href='./flagshipstore' title="flagshipstore" index='7'><?php echo Yii::t("strings", "FLAGSHIP STORE")?></a></li>
+                <li><a href='./flagshipstore' title="flagshipstore" index='7'><?php echo Yii::t("strings", "Star STORE")?></a></li>
                 <li><a href='./storelocator' title="storelocator" index='8'><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>
             </ol>
         </li>

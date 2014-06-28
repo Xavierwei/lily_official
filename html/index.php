@@ -65,26 +65,27 @@
 		                    <p>featuring<br />Tilda Lindstam</p>
 	                    <?php else:?>
 		                    <p>14秋冬</p>
-		                    <p>蒂尔达·林斯丹姆</p>
+		                    <p>Lily 2014 年春季广告大片</p>
 	                    <?php endif;?>
                     </a>
                 </div>
                 <!--  -->
                 <div class="right">
                     <div class="home_lookbook">
+                        <?php 
+                          $lookbookes = loadLookbook();
+                          $title = $lookbookes[0];
+                          $lookbookes = $lookbookes[1];
+                        ?>
                         <a href="#lookbook" class="home_lb_item border">
                             <h2><?php echo Yii::t("strings", "LOOK<br />BOOK")?></h2>
-                            <p>FW/14</p>
+                            <p><?php echo $title?></p>
                         </a>
+                        <?php foreach ($lookbookes as $index => $lookbook):?>
                         <div class="home_lb_item">
-                            <a href="#lookbook" class='border'><?php echo Yii::t("strings", "GARDEN")?></a>
+                            <a href="#lookbook<?php echo $index > 0 ? "?hash=s".($index+ 1): ""; ?>" class='border'><?php echo $lookbook->title?></a>
                         </div>
-                        <div class="home_lb_item">
-                            <a href="#lookbook?hash=s2" class='border'><?php echo Yii::t("strings", "MODERN ART")?></a>
-                        </div>
-                        <div class="home_lb_item">
-                            <a href="#lookbook?hash=s3" class='border'><?php echo Yii::t("strings", "OCEAN")?></a>
-                        </div>
+                        <?php endforeach;?>
                         <div class='videowrap'>
                             <img class='video fadeout' src="images/home_img4.jpg" />
                         </div>
