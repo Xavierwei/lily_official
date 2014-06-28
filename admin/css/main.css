@@ -121,6 +121,7 @@ legend {
 #body {
   margin-left: 250px;
   margin-top: 150px;
+  width: auto;
 }
 
 .nav-list > li > a {

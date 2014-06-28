@@ -193,3 +193,12 @@ function loadWeibo() {
 function substring_utf8($str, $start, $length) {
   return mb_substr($str, $start, $length, "utf-8");
 }
+
+function set_page_title ($title = FALSE) {
+  static $static_title;
+  if ($title) {
+    $static_title = $title;
+  }
+  
+  return $static_title;
+}

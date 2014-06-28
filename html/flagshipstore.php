@@ -1,4 +1,5 @@
 <?php require_once 'include/functions.php';?>
+<?php set_page_title("Lily Close Office Site")?>
 <!DOCTYPE html>
 <html>
 <?php include_once 'include/header.php';?>
@@ -40,7 +41,6 @@
                         </select>
                     </div>
                 </div>
-
             </div>
 
             <div class='stores'>
