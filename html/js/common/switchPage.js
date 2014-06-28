@@ -234,7 +234,7 @@ define([
         var inAnimate = false,
             dMenu = $('.header .menu'),
             dNav = $('#nav'),
-            dMbmenu = $('#nav'),
+            dMbmenu = $('.mbmenu'),
             autoClick = false,
             showLinksModal = function () {
                 var href = location.href;
@@ -301,8 +301,8 @@ define([
                     dCurLink = dMbmenu.find('a[href$="' + sCur + '"]');
 
                 // shrik or expand the list
-                dMbmenu.delegate('.item h2', 'click', function () {
-                    var dList = $(this).next();
+                dMbmenu.delegate('.item', 'touchend', function () {
+                    var dList = $(this).find('ol');
 
                     if (inAnimate) return;
 
