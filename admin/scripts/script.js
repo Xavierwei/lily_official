@@ -115,7 +115,7 @@
   AdminModule.controller("ShopTable", ["$scope", "$http", function ($scope, $http) {
       angular.element(".shop-table .table").DataTable({
         info: false,
-        pageLength: 5,
+        pageLength: 10,
         lengthChange: false
       });
   }]);
@@ -229,7 +229,7 @@
       $scope.init = function () {
         angular.element(".table-content .table").DataTable({
           info: false,
-          pageLength: 5,
+          pageLength: 10,
           lengthChange: false
         });
       };
@@ -330,7 +330,7 @@
       $scope.init = function () {
         angular.element(".table-content .table").DataTable({
           info: false,
-          pageLength: 5,
+          pageLength: 10,
           lengthChange: false
         });
       };
@@ -339,7 +339,7 @@
   AdminModule.controller("MilestoneTable", ["$scope", "$http", function ($scope, $http) {
         angular.element(".table-content .table").DataTable({
           info: false,
-          pageLength: 5,
+          pageLength: 10,
           lengthChange: false
         });
   }]);
@@ -390,7 +390,7 @@
   AdminModule.controller("NewsTable", [function () {
       angular.element(".table-content .table").DataTable({
         info: false,
-        pageLength: 5,
+        pageLength: 10,
         lengthChange: false
       });
   }]);
@@ -482,7 +482,7 @@
   AdminModule.controller("CententTable", ["$scope", "$http", function ($scope, $http) {
       angular.element(".table-content .table").DataTable({
         info: false,
-        pageLength: 5,
+        pageLength: 10,
         lengthChange: false
       });
   }]);
@@ -532,7 +532,7 @@
   AdminModule.controller("JobTable", function () {
       angular.element(".table-content .table").DataTable({
         info: false,
-        pageLength: 5,
+        pageLength: 10,
         lengthChange: false
       });
   });
