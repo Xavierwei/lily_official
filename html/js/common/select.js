@@ -65,7 +65,8 @@ define([
             'success' : function(aData){
                 setTimeout(function(){
                     dCityText.html(aData.user_city);
-                    dCityText.data('val',aData.user_city);
+                    dCityText.data('val', aData.user_city);
+                    dCitySelect.val(aData.user_city);
                     updateText(true);
                 },2000);
             }
@@ -304,20 +305,20 @@ define([
 
         dProvinceSelect.change(function () {
             updateText();
-        })
+        });
 
         dCitySelect.change(function () {
             updateText();
-        })
+        });
 
         dDistrictSelect.change(function () {
             updateText();
-        })
+        });
 
         // when click the search button, should update the map center and markers
         dBtn.bind('click', function () {
             searchShop(false);
-        })
+        });
 
         // view map feature
         dStores.delegate('.store_additem .store_view', 'click', function () {
