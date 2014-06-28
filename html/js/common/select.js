@@ -191,7 +191,7 @@ define([
                     }
                 }
             })
-        })
+        });
 
 
         // view map feature
@@ -334,7 +334,7 @@ define([
             var height = $('#map').position().top;
             $('html,body').animate({scrollTop:height});
         })
-    }
+    };
 
     // enable the select
     var init = function () {

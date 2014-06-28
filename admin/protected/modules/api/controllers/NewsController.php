@@ -35,7 +35,7 @@ class NewsController extends Controller {
       $this->responseJSON(NewsAR::model()->findByPk($news_id), "success");
     }
     else {
-      $news = NewsAR::model()->findAll();
+      $news = NewsAR::model()->getList();
       $this->responseJSON($news, "success");
     }
   }

@@ -1,5 +1,5 @@
 <?php require_once 'include/functions.php';?>
-<?php set_page_title("Lily Close Office Site")?>
+<?php set_page_title("Events");?>
 <!DOCTYPE html>
 <html>
 <?php include_once 'include/header.php';?>

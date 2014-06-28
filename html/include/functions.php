@@ -52,7 +52,6 @@ else {
  * 载入新闻
  */
 function loadNews() {
-  global $language;
   $news = NewsAR::model()->getList();
   return $news;
 }

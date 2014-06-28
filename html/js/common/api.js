@@ -14,7 +14,7 @@ define([
                 oConfig.failure(err);
             }
         })
-    }
+    };
 
     // data format: { latitude : xxxx, longitude : xxxxx }
     var getStorelocator = function (oConfig) {
@@ -538,7 +538,7 @@ define([
              success : function (data) {
                  var news_data = data.data;
                  var date = news_data.cdate.split(' ');
-                 news_data.image = 'images/event_img.jpg';
+                 news_data.image = news_data["thumbnail"];
                  news_data.cdate = date[0];
                  oConfig.success(news_data);
              },
