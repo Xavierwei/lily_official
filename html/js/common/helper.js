@@ -185,6 +185,22 @@ define([
                         updateDesc()
                     })
 
+
+                    // if is mobile , init hammer event
+                    jcarousel.hammer()
+                        .on("dragleft dragright swipeleft swiperight", function(ev) {
+                            switch( ev.type ){
+                                case 'dragleft':
+                                case 'swipeleft':
+                                    dNext.trigger('click');
+                                    break;
+                                case 'dragright':
+                                case 'swiperight':
+                                    dPre.trigger('click');
+                                    break;
+                            }
+                        });
+
                 };
 
             var albumId = $(this).data('album');
