@@ -110,12 +110,23 @@ define([
         imgLoad.on('always', function(instance) {
             dTop.queue(function() {
                 dTop.dequeue();
-                // var dHeight = $(window).height() - 70*2;
-                // dRight.css('height', dHeight);
-                // dBottom.css('width', '90%');
-                // dLeft.css('height', dHeight);
 
-                dTop.animate({
+                var dHeight = $(window).height() - 70*2;
+                dRight.animate({
+                    height: dHeight
+                } , 200);
+                dBottom
+                    .delay(200)
+                    .animate({
+                        'width':'90%'
+                    } , 200);
+                    
+                dLeft.delay(400)
+                    .animate({
+                        'height':dHeight
+                    } , 200);
+
+                dTop.delay(600).animate({
                     'width': '90%'
                 }, nTime, function() {
                     // show the page content
@@ -144,53 +155,52 @@ define([
             dRight.css('height', dHeight);
             dLeft.css('height', dHeight);
         });
-        var dHeight = $(window).height() - 70*2;
-        imgLoad.on('progress', function(instance, image) {
-            nLoad += 1;
-            var nVal = parseInt((nLoad / nTotal) * 100);
-            if (0 < nVal && nVal < 25) {
-                dRight.css({
-                    'height': dHeight * nVal / 25
-                });
-                return;
-            }
-            if (25 < nVal && nVal < 50 ) {
+        // imgLoad.on('progress', function(instance, image) {
+        //     nLoad += 1;
+        //     var nVal = parseInt((nLoad / nTotal) * 100);
+        //     if (0 < nVal && nVal < 25) {
+        //         dRight.css({
+        //             'height': dHeight * nVal / 25
+        //         });
+        //         return;
+        //     }
+        //     if (25 < nVal && nVal < 50 ) {
 
-                dRight.css({
-                    'height': dHeight
-                });
+        //         dRight.css({
+        //             'height': dHeight
+        //         });
 
-                dBottom.css({
-                    'width': parseInt((nVal / 50) * 100) + '%'
-                }); 
+        //         dBottom.css({
+        //             'width': parseInt((nVal / 50) * 100) + '%'
+        //         }); 
 
-                return;
-            }
+        //         return;
+        //     }
 
-            if (50 < nVal && nVal < 75) {
-                dBottom.css({
-                    'width': '90%'
-                })
+        //     if (50 < nVal && nVal < 75) {
+        //         dBottom.css({
+        //             'width': '90%'
+        //         })
 
-                dLeft.css({
-                    'height': parseInt((nVal / 75) * 100) + '%'
-                })
+        //         dLeft.css({
+        //             'height': parseInt((nVal / 75) * 100) + '%'
+        //         })
 
-                return;
-            }
+        //         return;
+        //     }
 
-            if (75 < nVal && nVal < 100) {
-                dLeft.css({
-                    'height': '75%'
-                })
+        //     if (75 < nVal && nVal < 100) {
+        //         dLeft.css({
+        //             'height': '75%'
+        //         })
 
-                dTop.animate({
-                    'width': parseInt((nVal / 100) * 100) + '%'
-                }, nTime)
+        //         dTop.animate({
+        //             'width': parseInt((nVal / 100) * 100) + '%'
+        //         }, nTime)
 
-                return;
-            }
-        })
+        //         return;
+        //     }
+        // })
     }
 
     return {
