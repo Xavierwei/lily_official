@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/images/mobilemenu.png" afterPath="$PROJECT_DIR$/html/images/mobilemenu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/response.css" afterPath="$PROJECT_DIR$/html/css/response.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/switchPage.js" afterPath="$PROJECT_DIR$/html/js/common/switchPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403946331327" ignored="false" />
-    <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155165058" ignored="false" />
+    <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404023802616" ignored="false" />
+    <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027098329" ignored="false" />
     <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403841337142" ignored="false" />
     <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403355376335" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/countdown.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401352610756" ignored="false" />
@@ -68,7 +67,7 @@
     <file path="$PROJECT_DIR$/../ave_1000/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401490627058" ignored="false" />
     <file path="/*.regexp" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403759063648" ignored="false" />
     <file path="/milestone.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402283386255" ignored="false" />
-    <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403952587957" ignored="false" />
+    <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404031115802" ignored="false" />
     <file path="/campaign.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402363349987" ignored="false" />
     <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403328066083" ignored="false" />
     <file path="/lookbook.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155937361" ignored="false" />
@@ -190,6 +189,19 @@
     <file path="/properties-zh_cn.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403767245393" ignored="false" />
     <file path="/search.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403788382411" ignored="false" />
     <file path="$PROJECT_DIR$/admin/css/main.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403830227626" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027164045" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/css/global.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027290688" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/js/global.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027116525" ignored="false" />
+    <file path="/global.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027289992" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/js/detail.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404023672878" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/detail.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027225157" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/index_en.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027152918" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/detail_en.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027251616" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/js/global_en.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404024405123" ignored="false" />
+    <file path="/global.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404025444108" ignored="false" />
+    <file path="/index_en.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027135128" ignored="false" />
+    <file path="/detail.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027221853" ignored="false" />
+    <file path="/detail_en.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027248667" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,87 +221,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="response.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/css/response.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="75" selection-start="6188" selection-end="6188" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/common/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="15" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/common/api.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="20" selection-start="2305" selection-end="2305" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="select.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="243" column="12" selection-start="9148" selection-end="9148" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="switchPage.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="332" column="50" selection-start="10469" selection-end="10474" vertical-scroll-proportion="0.0">
+            <state line="252" column="21" selection-start="7455" selection-end="7455" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/include/header.php">
+      <file leaf-file-name="response.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/css/response.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="132" column="82" selection-start="6195" selection-end="6195" vertical-scroll-proportion="0.54559046">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/include/nav.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="9" selection-start="48" selection-end="48" vertical-scroll-proportion="-1.3571428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/include/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="13" selection-start="4911" selection-end="4911" vertical-scroll-proportion="0.32605305">
-              <folding>
-                <marker date="1403953293000" expanded="true" signature="6786:6887" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/common/map.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="10" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1403934184000" expanded="false" signature="2921:2953" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -324,10 +269,10 @@
         <option value="$PROJECT_DIR$/html/css/style.css" />
         <option value="$PROJECT_DIR$/html/job.php" />
         <option value="$PROJECT_DIR$/html/admin/protected/messages/zh_cn/strings.php" />
-        <option value="$PROJECT_DIR$/html/css/response.css" />
-        <option value="$PROJECT_DIR$/html/js/common/switchPage.js" />
         <option value="$PROJECT_DIR$/html/include/nav.php" />
         <option value="$PROJECT_DIR$/html/include/footer.php" />
+        <option value="$PROJECT_DIR$/html/js/common/switchPage.js" />
+        <option value="$PROJECT_DIR$/html/css/response.css" />
       </list>
     </option>
   </component>
@@ -706,47 +651,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/response.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="75" selection-start="6188" selection-end="6188" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="243" column="12" selection-start="9148" selection-end="9148" vertical-scroll-proportion="0.0">
+        <state line="244" column="12" selection-start="9206" selection-end="9206" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="20" selection-start="2305" selection-end="2305" vertical-scroll-proportion="0.0">
+        <state line="75" column="5" selection-start="2190" selection-end="2190" vertical-scroll-proportion="0.19880418">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="15" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+        <state line="12" column="15" selection-start="306" selection-end="306" vertical-scroll-proportion="0.3313783">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="332" column="50" selection-start="10469" selection-end="10474" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1403934184000" expanded="false" signature="2921:2953" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,17 +681,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/include/nav.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="9" selection-start="48" selection-end="48" vertical-scroll-proportion="-1.3571428">
+        <state line="3" column="9" selection-start="95" selection-end="95" vertical-scroll-proportion="0.05928237">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/include/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="13" selection-start="4911" selection-end="4911" vertical-scroll-proportion="0.32605305">
+        <state line="93" column="13" selection-start="4301" selection-end="4301" vertical-scroll-proportion="0.32605305">
           <folding>
-            <marker date="1403953293000" expanded="true" signature="6786:6887" placeholder="..." />
+            <marker date="1404027990000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1404027990000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1404027990000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="10" selection-start="287" selection-end="287" vertical-scroll-proportion="0.3621701">
+          <folding>
+            <marker date="1404027990000" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="252" column="21" selection-start="7455" selection-end="7455" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/css/response.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="82" selection-start="6195" selection-end="6195" vertical-scroll-proportion="0.54559046">
+          <folding />
         </state>
       </provider>
     </entry>

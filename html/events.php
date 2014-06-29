@@ -1,5 +1,5 @@
 <?php require_once 'include/functions.php';?>
-<?php set_page_title("Events");?>
+<?php set_page_title("Lily Official Site");?>
 <!DOCTYPE html>
 <html>
 <?php include_once 'include/header.php';?>
@@ -24,14 +24,14 @@
                     <div class="event_item" data-nid="<?php echo $news->cid;?>">
                         <div class="event_img">
                             <p></p>
-	                        <a href="javascript:;" class="event_open"><img src="<?php echo thumbnail($news->thumbnail, array('360', '266'));?>" /></a>
+	                        <a href="javascript:;" data-title="<?php echo $news->title;?>" class="event_open"><img src="<?php echo thumbnail($news->thumbnail, array('360', '266'));?>" /></a>
                         </div>
                         <div class="event_com">
                             <h3><a href="javascript:;" class="event_open"><?php echo $news->title;?></a></h3>
                             <div class="news_body">
                                 <?php echo $news->body;?>
                             </div>
-                            <a href="javascript:;" class="event_open event_look"><?php echo Yii::t("strings", "LOOK")?></a>
+                            <a href="javascript:;" data-title="<?php echo $news->title;?>" class="event_open event_look"><?php echo Yii::t("strings", "LOOK")?></a>
                         </div>
                     </div>
                     <?php endforeach;?>

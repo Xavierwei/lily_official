@@ -4,35 +4,35 @@
 
 		    <div class="ft_com">
 			    <div class="ft_list">
-				    <h2><?php echo Yii::t("strings", "BRAND")?></h2>
+				    <h2 data-title="BRAND"><?php echo Yii::t("strings", "BRAND")?></h2>
 				    <ol>
-					    <li><a href='./index?hash=brand_story'><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
-					    <li><a href='./history'><?php echo Yii::t("strings", "HISTORY")?></a></li>
-					    <li><a href='./events'><?php echo Yii::t("strings", "EVENTS")?></a></li>
+					    <li><a data-title="BRAND-STORY" href='./index?hash=brand_story'><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
+					    <li><a data-title="HISTORY" href='./history'><?php echo Yii::t("strings", "HISTORY")?></a></li>
+					    <li><a data-title="EVENTS" href='./events'><?php echo Yii::t("strings", "EVENTS")?></a></li>
 				    </ol>
 			    </div>
 			    <div class="ft_list">
-				    <h2><?php echo Yii::t("strings", "PRODUCT")?></h2>
+				    <h2 data-title="PRODUCT"><?php echo Yii::t("strings", "PRODUCT")?></h2>
 				    <ol>
-					    <li><a href='./campaign'><?php echo Yii::t("strings", "CAMPAIGN")?></a></li>
-					    <li><a href='./lookbook'><?php echo Yii::t("strings", "LOOK BOOK")?></a></li>
-					    <li><a href='./streetsnap'><?php echo Yii::t("strings", "STREET SNAP")?></a></li>
+					    <li><a data-title="CAMPAIGN" href='./campaign'><?php echo Yii::t("strings", "CAMPAIGN")?></a></li>
+					    <li><a data-title="LOOK-BOOK" href='./lookbook'><?php echo Yii::t("strings", "LOOK BOOK")?></a></li>
+					    <li><a data-title="STREET-SNAP" href='./streetsnap'><?php echo Yii::t("strings", "STREET SNAP")?></a></li>
 				    </ol>
 			    </div>
 			    <div class="ft_list">
-				    <h2><?php echo Yii::t("strings", "STORE")?></h2>
+				    <h2 data-title="STORE"><?php echo Yii::t("strings", "STORE")?></h2>
 				    <ol>
-					    <li><a href='./flagshipstore'><?php echo Yii::t("strings", "FLAGSHIP STORE")?></a></li>
-					    <li><a href='./storelocator'><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>
+					    <li data-title="STAR-STORE"><a href='./flagshipstore'><?php echo Yii::t("strings", "STAR STORE")?></a></li>
+					    <li data-title="STORE-LOCATOR"><a href='./storelocator'><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>
 				    </ol>
 			    </div>
 			    <div class="ft_list" style="display:none;">
-				    <h2><?php echo Yii::t("strings", "CLUB")?></h2>
+				    <h2 data-title="CLUB" ><?php echo Yii::t("strings", "CLUB")?></h2>
 				    <ol>
-					    <li><a href='./club_memberinfo.html' index='9'><?php echo Yii::t("strings", "LILY CLUB")?></a></li>
-					    <li><a href='./club_memberrules.html' index='10'><?php echo Yii::t("strings", "TERMS")?></a></li>
-					    <li><a href='./club_pointinfo.html' index='11'><?php echo Yii::t("strings", "POINT CHECKING")?></a></li>
-					    <li><a href='./club_gifthis.html' index='12'><?php echo Yii::t("strings", "REDEMPTION")?></a></li>
+					    <li><a data-title="LILY-CLUB" href='./club_memberinfo.html' index='9'><?php echo Yii::t("strings", "LILY CLUB")?></a></li>
+					    <li><a data-title="TERMS" href='./club_memberrules.html' index='10'><?php echo Yii::t("strings", "TERMS")?></a></li>
+					    <li><a data-title="POINT-CHECKING" href='./club_pointinfo.html' index='11'><?php echo Yii::t("strings", "POINT CHECKING")?></a></li>
+					    <li><a data-title="REDEMPTION" href='./club_gifthis.html' index='12'><?php echo Yii::t("strings", "REDEMPTION")?></a></li>
 				    </ol>
 			    </div>
 			    <div class="cs-clear cs-height-footer"></div>
@@ -92,35 +92,35 @@
     <div class='mbmenu'>
         <ul>
             <li class='item'>
-                <h2><?php echo Yii::t("strings", "BRAND")?></h2>
+                <h2 data-title="BRAND"><?php echo Yii::t("strings", "BRAND")?></h2>
                 <ol>
-                    <li><a href='./index?hash=brand_story'><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
-                    <li><a href='./history'><?php echo Yii::t("strings", "HISTORY")?></a></li>
-                    <li><a href='./events'><?php echo Yii::t("strings", "EVENTS")?></a></li>
+                    <li><a href='./index?hash=brand_story' data-title="BRAND STORY"><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
+                    <li><a href='./history' data-title="HISTORY"><?php echo Yii::t("strings", "HISTORY")?></a></li>
+                    <li><a href='./events' data-title="EVENTS"><?php echo Yii::t("strings", "EVENTS")?></a></li>
                 </ol>
             </li>
             <li class='item'>
-                <h2><?php echo Yii::t("strings", "PRODUCT")?></h2>
+                <h2 data-title="PRODUCT"><?php echo Yii::t("strings", "PRODUCT")?></h2>
                 <ol>
-                    <li><a href='./campaign'><?php echo Yii::t("strings", "CAMPAIGN")?></a></li>
-                    <li><a href='./lookbook'><?php echo Yii::t("strings", "LOOK BOOK")?></a></li>
-                    <li><a href='./streetsnap'><?php echo Yii::t("strings", "STREET SNAP")?></a></li>
+                    <li><a href='./campaign' data-title="CAMPAIGN"><?php echo Yii::t("strings", "CAMPAIGN")?></a></li>
+                    <li><a href='./lookbook' data-title="LOOKBOOK"><?php echo Yii::t("strings", "LOOK BOOK")?></a></li>
+                    <li><a href='./streetsnap' data-title="STREET-SNAP"><?php echo Yii::t("strings", "STREET SNAP")?></a></li>
                 </ol>
             </li>
             <li class='item'>
-                <h2><?php echo Yii::t("strings", "STORE")?></h2>
+                <h2 data-title="STORE"><?php echo Yii::t("strings", "STORE")?></h2>
                 <ol>
-                    <li><a href='./flagshipstore'><?php echo Yii::t("strings", "FLAGSHIP STORE")?></a></li>
-                    <li><a href='./storelocator'><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>
+                    <li><a href='./flagshipstore' data-title="STAR-STORE"><?php echo Yii::t("strings", "STAR STORE")?></a></li>
+                    <li><a href='./storelocator' data-title="STORE-LOCATOR"><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>
                 </ol>
             </li>
-            <li class='item'>
-                <h2><?php echo Yii::t("strings", "CLUB")?></h2>
+            <li class='item' style="display: none;">
+                <h2 data-title="CLUB"><?php echo Yii::t("strings", "CLUB")?></h2>
                 <ol>
-	                <li><a href='./club_memberinfo.html' index='9'><?php echo Yii::t("strings", "LILY CLUB")?></a></li>
-	                <li><a href='./club_memberrules.html' index='10'><?php echo Yii::t("strings", "TERMS")?></a></li>
-	                <li><a href='./club_pointinfo.html' index='11'><?php echo Yii::t("strings", "POINT CHECKING")?></a></li>
-	                <li><a href='./club_gifthis.html' index='12'><?php echo Yii::t("strings", "REDEMPTION")?></a></li>
+	                <li><a href='./club_memberinfo.html' index='9' data-title="LILY-CLUB"><?php echo Yii::t("strings", "LILY CLUB")?></a></li>
+	                <li><a href='./club_memberrules.html' index='10' data-title="TERMS"><?php echo Yii::t("strings", "TERMS")?></a></li>
+	                <li><a href='./club_pointinfo.html' index='11' data-title="POINT-CHECKING"><?php echo Yii::t("strings", "POINT CHECKING")?></a></li>
+	                <li><a href='./club_gifthis.html' index='12' data-title="REDEMPTION"><?php echo Yii::t("strings", "REDEMPTION")?></a></li>
                 </ol>
             </li>
         </ul>
@@ -150,6 +150,7 @@
       ga('send', 'pageview');
      
     </script>
+    <script type="text/javascript" src="js/track.js"></script>
 
     <!--  -->
     <!--IE6透明判断-->
