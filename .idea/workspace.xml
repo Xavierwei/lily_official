@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/flagshipstore.php" afterPath="$PROJECT_DIR$/html/starstore.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/footer.php" afterPath="$PROJECT_DIR$/html/include/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/jquery.fancybox.css" afterPath="$PROJECT_DIR$/html/css/jquery.fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/nav.php" afterPath="$PROJECT_DIR$/html/include/nav.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/response.css" afterPath="$PROJECT_DIR$/html/css/response.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" afterPath="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/select.js" afterPath="$PROJECT_DIR$/html/js/common/select.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -16,7 +12,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404031219283" ignored="false" />
     <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027098329" ignored="false" />
-    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404043655360" ignored="false" />
+    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404047919444" ignored="false" />
     <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403355376335" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/countdown.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401352610756" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402703079365" ignored="false" />
@@ -73,7 +69,7 @@
     <file path="$PROJECT_DIR$/../ave_1000/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401490627058" ignored="false" />
     <file path="/*.regexp" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403759063648" ignored="false" />
     <file path="/milestone.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402283386255" ignored="false" />
-    <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404043361767" ignored="false" />
+    <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404046935376" ignored="false" />
     <file path="/campaign.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402363349987" ignored="false" />
     <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403328066083" ignored="false" />
     <file path="/lookbook.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155937361" ignored="false" />
@@ -154,7 +150,7 @@
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/stand_p2.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402669693512" ignored="false" />
     <file path="$PROJECT_DIR$/../malibu/protected/views/activities/winner.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403170275324" ignored="false" />
     <file path="/jquery.ChinaCitySelect.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403101145767" ignored="false" />
-    <file path="/select.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403772421761" ignored="false" />
+    <file path="/select.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404047188855" ignored="false" />
     <file path="/storelocator.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403767685939" ignored="false" />
     <file path="/winner.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403170265217" ignored="false" />
     <file path="/news.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403404709421" ignored="false" />
@@ -228,10 +224,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="40" selection-start="1879" selection-end="1879" vertical-scroll-proportion="-22.653847">
+            <state line="516" column="1" selection-start="25566" selection-end="25566" vertical-scroll-proportion="0.38656718">
               <folding />
             </state>
           </provider>
@@ -240,7 +236,7 @@
       <file leaf-file-name="response.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/response.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="32" selection-start="5437" selection-end="5437" vertical-scroll-proportion="0.0">
+            <state line="139" column="26" selection-start="6445" selection-end="6445" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -266,10 +262,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="switchPage.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="switchPage.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="291" column="36" selection-start="9088" selection-end="9088" vertical-scroll-proportion="0.9149254">
+            <state line="291" column="36" selection-start="9088" selection-end="9088" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -282,6 +278,15 @@
               <folding>
                 <marker date="1404043259000" expanded="false" signature="2933:2965" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="110" column="23" selection-start="4154" selection-end="4154" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -304,7 +309,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/html/streetsnap.php" />
         <option value="$PROJECT_DIR$/html/lookbook.php" />
         <option value="$PROJECT_DIR$/html/campaign.php" />
         <option value="$PROJECT_DIR$/html/privacy.php" />
@@ -312,14 +316,15 @@
         <option value="$PROJECT_DIR$/html/include/functions.php" />
         <option value="$PROJECT_DIR$/html/job.php" />
         <option value="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" />
-        <option value="$PROJECT_DIR$/html/css/response.css" />
         <option value="$PROJECT_DIR$/html/admin/protected/messages/zh_cn/strings.php" />
         <option value="$PROJECT_DIR$/html/include/nav.php" />
         <option value="$PROJECT_DIR$/html/starstore.php" />
         <option value="$PROJECT_DIR$/html/include/footer.php" />
         <option value="$PROJECT_DIR$/html/css/jquery.fancybox.css" />
-        <option value="$PROJECT_DIR$/html/css/style.css" />
         <option value="$PROJECT_DIR$/html/js/common/switchPage.js" />
+        <option value="$PROJECT_DIR$/html/css/response.css" />
+        <option value="$PROJECT_DIR$/html/js/common/select.js" />
+        <option value="$PROJECT_DIR$/html/css/style.css" />
       </list>
     </option>
   </component>
@@ -403,6 +408,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -663,13 +690,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="244" column="12" selection-start="9206" selection-end="9206" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/api.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="5" selection-start="2190" selection-end="2190" vertical-scroll-proportion="0.19880418" />
@@ -740,6 +760,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/css/jquery.fancybox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="38" selection-start="5912" selection-end="5912" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="291" column="36" selection-start="9088" selection-end="9088" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/css/response.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="26" selection-start="6445" selection-end="6445" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="10" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0">
@@ -749,30 +790,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/response.css">
+    <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="32" selection-start="5437" selection-end="5437" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/jquery.fancybox.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="38" selection-start="5912" selection-end="5912" vertical-scroll-proportion="0.0">
+        <state line="110" column="23" selection-start="4154" selection-end="4154" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="40" selection-start="1879" selection-end="1879" vertical-scroll-proportion="-22.653847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="291" column="36" selection-start="9088" selection-end="9088" vertical-scroll-proportion="0.9149254">
+        <state line="516" column="1" selection-start="25566" selection-end="25566" vertical-scroll-proportion="0.38656718">
           <folding />
         </state>
       </provider>

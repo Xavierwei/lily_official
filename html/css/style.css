@@ -246,7 +246,7 @@ a:hover {opacity:0.8;}
 
 /* heritage Used
 ================================================================================================= */
-.page_heritage {padding-top:100px;padding-bottom:100px;}
+.page_heritage {padding-top:140px;padding-bottom:100px;}
 .page_heritage .ha_modtxt{font-size:14px;line-height:150%;width:45%;}
 #wrap .page_heritage .limit{margin:0 11% 0 11%;}
 #wrap .page_heritage .ha_modR{}
@@ -282,7 +282,7 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .event_tit{font-size:14px;line-height:30px;font-family:arial;text-transform:uppercase;text-align:center;height:220px;}
 .event_tit h2{font-size:80px;line-height:80px;}
 .event_tit p{font-size:20px;}
-.event_item{display:inline-block;width:378px;margin:0 30px;margin-bottom:80px;text-align:center;}
+.event_item{display:inline-block;width:378px;margin:0 30px;padding-bottom:15px;margin-bottom:80px;text-align:center;}
 .event_img{display:inline-block;width:360px;height:280px;position:relative;margin:0 10px;}
 .event_img img{position:absolute;height:266px;left:-12px;right:0;max-width:100%;}
 .event_img p{position:absolute;background:#cee1eb;top:8px;left:0;right:0;height:272px;}
@@ -515,7 +515,7 @@ a, .btn {-webkit-transition:   all 0.2s ease-out;-moz-transition:  all 0.2s ease
 
 .jspDrag
 {
-  background: #606060;
+  background: #eee;
   width: 11px;
   position: relative;
   top: 0;
