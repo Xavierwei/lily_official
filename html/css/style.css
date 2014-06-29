@@ -77,7 +77,7 @@ a:hover {opacity:0.8;}
 .ft_share2{background-position:-41px 0}
 .ft_share3{background-position:-88px 0}
 .ft_share4{background-position:-131px 0}
-.ft_copy{text-align:center;padding:3% 0;}
+.ft_copy{text-align:center;padding: 36px 0;font-size: 0.9em;}
 /* PAGE Used
 ================================================================================================= */
 .page {position: relative;z-index:2;margin-bottom: 1100px;padding-top:80px;}
