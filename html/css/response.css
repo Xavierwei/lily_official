@@ -38,6 +38,7 @@
     .language {right:80px;}
     .job_item{display:block;margin:0 auto;}
     .event_item{display:block;margin:0 auto;}
+    .page {margin-bottom: 0px;}
     .page .left,
     .page .right{float:none;}
     .home_lookbook{margin-top:5%;}
@@ -118,6 +119,7 @@
     .search_popup {width:600px;margin-left:-300px;}
     .search_popup .search_input {width:350px;}
     .footer {line-height: 20px;position: relative;}
+    .cs-height-footer {height:0;}
 }
 /* mobile menu part */
 body.mobile,
