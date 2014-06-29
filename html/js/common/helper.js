@@ -54,8 +54,24 @@ define([
         });
     }
 
-    var overlay = function (sHthml, func) {
-        if (canAnimate()) {
+    // window event for esc keydown
+    $(window).keydown(function( ev ){
+        switch( ev.which ){
+            case 27:
+                $.fancybox.close( true );
+                break;
+            case 39:
+                $('.jcarousel-control-next').trigger('click');
+                break;
+            case 37:
+                $('.jcarousel-control-prev').trigger('click');
+                break;
+        }
+    });
+
+    var overlay = function (sHthml, func , onBeforeShow) {
+        //sHthml = '<div style="color:red;height:100px;width:100px;">asdasd</div>';
+        if (canAnimate() ) {
             $.fancybox({
                 openSpeed : 1000,
                 closeSpeed : 1000,
@@ -70,6 +86,7 @@ define([
                     }
                 },
                 beforeShow: function () {
+                    onBeforeShow && onBeforeShow();
                     // custom close function
                     dBody.delegate('.close', 'click', function() {
                         $.fancybox.close(true);
