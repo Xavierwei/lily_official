@@ -35,26 +35,37 @@
 					    <li><a href='./club_gifthis.html' index='12'><?php echo Yii::t("strings", "REDEMPTION")?></a></li>
 				    </ol>
 			    </div>
-			    <div class="cs-clear"></div>
-			    <div class="ft_links">
+			    <div class="cs-clear cs-height-footer"></div>
+<!--			    <div class="ft_links">
 				    <ol>
 					    <li><a class='fadeout' href="./job"><?php echo Yii::t("strings", "JOB")?></a></li>
 					    <li><a class='fadeout' href="./contact"><?php echo Yii::t("strings", "CONTACT")?></a></li>
 					    <li><a class='fadeout' href="./privacy"><?php echo Yii::t("strings", "PRIVACY")?></a></li>
 				    </ol>
-			    </div>
-			    <div class="ft_touch">
-				    <p><?php echo Yii::t("strings", "lets stay in touch")?></p>
-				    <br />
+			    </div>-->
+          <div class="ft_list">
+            <h2><?php echo Yii::t("strings", "JOB")?></h2>
+            <ol>
+              <li><a href="./job"><?php $job = loadFirstJob(); echo $job->title?></a></li>
+            </ol>
+          </div>
+          <div class="ft_list">
+            <h2><?php echo Yii::t("strings", "CONTACT")?></h2>
+            <ol>
+              <li><a href="./contact"><?php echo Yii::t("strings", "COME TO SAY HELLO")?></a></li>
+            </ol>
+          </div>
+          <div class="ft_list">
+            <h2><?php echo Yii::t("strings", "PRIVACY")?></h2>
+            <ol>
+              <li><a href="./privacy"><?php echo Yii::t("strings", "HOTLINE")?> <br /> 134-654-987 </a></li>
+            </ol>
+          </div>
+			    <div class="ft_list">
 				    <div class="ft_share cs-clear">
 					    <a href="http://weibo.com/lilyofficial" target='_blank' class="ft_shareitem ft_share1"></a>
 					    <a href="javascript:;" class="ft_shareitem ft_share3"></a>
 				    </div>
-				    <p>
-					    <?php echo Yii::t("strings", "HOTLINE")?>
-					    <br />
-					    134-654-987
-				    </p>
 			    </div>
 			    <div class="cs-clear"></div>
 		    </div>

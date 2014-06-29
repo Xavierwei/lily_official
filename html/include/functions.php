@@ -108,6 +108,12 @@ function loadJob($type = FALSE) {
   return JobAR::model()->findAll($query);
 }
 
+function loadFirstJob() {
+  $jobAr = new JobAR();
+  $list = JobAR::model()->getList();
+  return array_shift($list);
+}
+
 /**
  * 
  * @return typeLookbook 列表
