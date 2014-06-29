@@ -35,14 +35,15 @@ define([
                         var sNews = Handlebars.compile(newsTpl)(oData);
 
                         helper.overlay(sNews, function(){
-                            
+
                         } , function(){
                             var dOverlay = $.fancybox.wrap.parent();
                             // for custom style
                             dOverlay.attr('id', 'news');
                             dOverlay.find('.newswrap-inner')
                                 .height( $(window).height() * 0.9 * 0.8)
-                                .jScrollPane({autoReinitialise:true});
+                                .jScrollPane({autoReinitialise:true})
+                                .css('overflow' , 'visible');
 
                             dOverlay.find('.fancybox-skin').click(function( e ){
                                     var tar = e.target || e.srcElement;

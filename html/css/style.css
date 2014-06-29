@@ -470,7 +470,6 @@ a, .btn {-webkit-transition:   all 0.2s ease-out;-moz-transition:  all 0.2s ease
 
 .jspContainer
 {
-  overflow: hidden;
   position: relative;
 }
 
@@ -484,7 +483,7 @@ a, .btn {-webkit-transition:   all 0.2s ease-out;-moz-transition:  all 0.2s ease
 {
   position: absolute;
   top: 10px;
-  right: 0px;
+  right: -10px;
   width: 6px;
   height: 100%;
 }
@@ -516,7 +515,7 @@ a, .btn {-webkit-transition:   all 0.2s ease-out;-moz-transition:  all 0.2s ease
 .jspDrag
 {
   background: #eee;
-  width: 11px;
+  width: 6px;
   position: relative;
   top: 0;
   left: 0;
