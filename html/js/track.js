@@ -13,11 +13,32 @@ window.startTrack = function ($) {
     return title;
   }
   
+  function callGa(data) {
+    ga('send', 'event', 'lily_official', data, data);
+  }
+  
   function debug_console(obj) {
     if (typeof console != "undefined") {
       console.log(obj);
     }
   }
+  
+  // Header nav menu
+  $("#nav h2").click(function () {
+    var title = $(this).attr("data-title");
+    if (title) {
+      callGa(lang + "_" + title);
+      debug_console(lang + "_" + title);
+    }
+  });
+  
+  $("#nav a").click(function () {
+    var title = $(this).attr("data-title");
+    if (title) {
+      callGa(lang + "_" + title);
+      debug_console(lang + "_" + title);
+    }
+  });
   
   // Footer menu
   $("body .ft_com > .ft_list a").click(function () {
