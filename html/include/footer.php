@@ -22,7 +22,7 @@
 			    <div class="ft_list">
 				    <h2 data-title="STORE"><?php echo Yii::t("strings", "STORE")?></h2>
 				    <ol>
-					    <li data-title="STAR-STORE"><a href='./flagshipstore'><?php echo Yii::t("strings", "STAR STORE")?></a></li>
+					    <li data-title="STAR-STORE"><a href='./starstore'><?php echo Yii::t("strings", "STAR STORE")?></a></li>
 					    <li data-title="STORE-LOCATOR"><a href='./storelocator'><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>
 				    </ol>
 			    </div>
@@ -110,7 +110,7 @@
             <li class='item'>
                 <h2 data-title="STORE"><?php echo Yii::t("strings", "STORE")?></h2>
                 <ol>
-                    <li><a href='./flagshipstore' data-title="STAR-STORE"><?php echo Yii::t("strings", "STAR STORE")?></a></li>
+                    <li><a href='./starstore' data-title="STAR-STORE"><?php echo Yii::t("strings", "STAR STORE")?></a></li>
                     <li><a href='./storelocator' data-title="STORE-LOCATOR"><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>
                 </ol>
             </li>

@@ -4,7 +4,7 @@
 <html>
 <?php include_once 'include/header.php';?>
 
-<body class='flagshipstore'>
+<body class='starstore'>
 <?php include_once "include/nav.php";?>
 	<div id='wrap'>
         <!--  -->

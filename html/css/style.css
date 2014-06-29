@@ -47,7 +47,7 @@ a:hover {opacity:0.8;}
 .language .lang_cn{background-position:-30px 0}
 
 #nav .logo{height: 100%;}
-#nav .logo img{height: 75%;margin-top: 10%;width:auto;}
+#nav .logo img{height: 75%;margin-top: 6%;width:auto;}
 
 #nav{height: 100%; line-height: 50px;}
 #nav li.item {float:left;text-transform: uppercase;width:200px;cursor:pointer;}
@@ -360,7 +360,7 @@ body.events,body.events .page,body.events .header{background-color:#ddebf3;}
 body.campaign,body.campaign .page,body.campaign .header{background-color:#f1fffc;}
 body.lookbook,body.lookbook .page,body.lookbook .header{background-color:#fafaec;}
 body.streetsnap,body.streetsnap .page,body.streetsnap .header{background-color:#fafaec;}
-body.flagshipstore,body.flagshipstore .page,body.flagshipstore .header{background-color:#ddebf3;}
+body.starstore,body.starstore .page,body.starstore .header{background-color:#ddebf3;}
 body.storelocator,body.storelocator .page,body.storelocator .header{background-color:#ddebf3;}
 body.vip,body.vip .page,body.vip .header{background-color:#f3dedd;}
 body.job,body.job .page,body.job .header{background-color:#ded5ca;}
