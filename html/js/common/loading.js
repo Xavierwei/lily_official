@@ -81,8 +81,6 @@ define([
         // enable news page overlay
         newsInit();
 
-        // try to init the map
-        map.init();
 
         // if using mobile or ugly ie, stop the animation
         if (!helper.canAnimate()) {
@@ -118,6 +116,9 @@ define([
         imgLoad.on('always', function(instance) {
             dTop.queue(function() {
                 dTop.dequeue();
+
+                // try to init the map
+                map.init();
 
                 var dHeight = $(window).height() - 70*2;
                 dRight.animate({
