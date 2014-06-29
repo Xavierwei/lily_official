@@ -409,7 +409,7 @@ body.club,body.club .page,body.club .header{background-color:#fff1f4;}
 .search_popup {width:700px;height:260px;margin:-130px 0 0 -350px}
 .search_popup .search_form {margin:140px 0 0 30px;}
 .search_popup .search_input {float:left;border:1px solid #000;width:450px;height:48px;line-height:48px;padding:0 20px;font-size:16px;}
-.search_popup .search_btn {float:left;width:145px;height:50px;line-height:50px;text-align:center;font-size:16px;background:#000;color:#fff;border:none;}
+.search_popup .search_btn {float:left;width:145px;height:50px;line-height:50px;text-align:center;font-size:16px;background:#000;color:#fff;border:none;margin-left: 1em;}
 
 /* link animation */
 @keyframes fadeout{

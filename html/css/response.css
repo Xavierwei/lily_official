@@ -151,6 +151,7 @@ top: 42px;}
     .search_popup .search_input {width:350px;}
     .footer {line-height: 20px;position: relative;}
     .cs-height-footer {height:0;display: none;}
+    .event_item{width:100%}
 }
 /* mobile menu part */
 body.mobile,
