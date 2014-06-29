@@ -80,7 +80,6 @@ define([
             var hashtag = getQueryString('hash');
             if($('#'+hashtag).length > 0) {
                 var top = $('#'+hashtag).offset().top - 100;
-                console.log(top);
                 setTimeout(function(){
                     $('html,body').animate({scrollTop:top});
                 },10);

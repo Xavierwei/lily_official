@@ -8,9 +8,9 @@ define([
             longitude : 121.473701
         },
         oAddress = {
-            province : '上海市',
-            city : '上海市',
-            district : '徐汇区'
+            province : _e('上海市'),
+            city : _e('上海市'),
+            district : _e('徐汇区')
         },
         oGeocoder = null,
         oMap = null,
@@ -98,7 +98,6 @@ define([
                 "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>"+obj.title+"</h4>" +
                 "<p>"+_e("Add")+":"+obj.address+"</p>" +
                 "<p>"+_e("Tel")+":"+obj.phone+"</p>";
-                console.log(sContent);
             var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
             marker.addEventListener("click", function(){
                 this.openInfoWindow(infoWindow);

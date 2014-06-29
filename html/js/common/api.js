@@ -47,10 +47,10 @@ define([
 
         var fakeData = [
             {
-                city : '南京',
-                title : '上海南京路店',
-                name : '南京路店',
-                address : 'xxxxxxxxxxxxxxxxx',
+                city : _e('南京'),
+                title : _e('上海南京路店'),
+                name : _e('南京路店'),
+                address : _e('xxxxxxxxxxxxxxxxx'),
                 phone : '187 567 987',
                 image : 'images/wlmq_bj_star.jpg',
                 geo : {
@@ -59,10 +59,10 @@ define([
                 }
             },
             {
-                city : '南京',
-                title : 'SHANGHAI',
-                name : '南京路店',
-                address : 'xxxxxxxx',
+                city : _e('南京'),
+                title : _e('SHANGHAI'),
+                name : _e('南京路店'),
+                address : _e('xxxxxxxx'),
                 phone : '187 567 987',
                 image : 'images/sh_njl_star.jpg',
                 geo : {
@@ -92,351 +92,351 @@ define([
         var lookbook1 = [
             {
                 url : 'pic/lookbook/garden/850_850/1.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/2.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/3.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/4.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/5.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/6.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/7.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/8.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/16.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/18.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/19.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/20.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/21.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/22.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/23.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/35.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/36.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/37.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/38.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/39.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/41.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             },
             {
                 url : 'pic/lookbook/garden/850_850/42.jpg',
-                title : 'Garden'
+                title : _e('Garden')
             }
         ]
 
         var lookbook2 = [
             {
                 url : 'pic/lookbook/modernart/850_850/28.jpg',
-                title : 'Modernart'
+                title : _e('Modernart')
             },
             {
                 url : 'pic/lookbook/modernart/850_850/29.jpg',
-                title : 'Modernart'
+                title : _e('Modernart')
             },
             {
                 url : 'pic/lookbook/modernart/850_850/30.jpg',
-                title : 'Modernart'
+                title : _e('Modernart')
             },
             {
                 url : 'pic/lookbook/modernart/850_850/31.jpg',
-                title : 'Modernart'
+                title : _e('Modernart')
             },
             {
                 url : 'pic/lookbook/modernart/850_850/32.jpg',
-                title : 'Modernart'
+                title : _e('Modernart')
             },
             {
                 url : 'pic/lookbook/modernart/850_850/33.jpg',
-                title : 'Modernart'
+                title : _e('Modernart')
             },
             {
                 url : 'pic/lookbook/modernart/850_850/34.jpg',
-                title : 'Modernart'
+                title : _e('Modernart')
             },
             {
                 url : 'pic/lookbook/modernart/850_850/40.jpg',
-                title : 'Modernart'
+                title : _e('Modernart')
             }
         ]
 
         var lookbook3 = [
             {
                 url : 'pic/lookbook/ocean/850_850/9.jpg',
-                title : 'Ocean'
+                title : _e('Ocean')
             },
             {
                 url : 'pic/lookbook/ocean/850_850/10.jpg',
-                title : 'Ocean'
+                title : _e('Ocean')
             },
             {
                 url : 'pic/lookbook/ocean/850_850/11.jpg',
-                title : 'Ocean'
+                title : _e('Ocean')
             },
             {
                 url : 'pic/lookbook/ocean/850_850/12.jpg',
-                title : 'Ocean'
+                title : _e('Ocean')
             },
             {
                 url : 'pic/lookbook/ocean/850_850/13.jpg',
-                title : 'Ocean'
+                title : _e('Ocean')
             },
             {
                 url : 'pic/lookbook/ocean/850_850/14.jpg',
-                title : 'Ocean'
+                title : _e('Ocean')
             },
             {
                 url : 'pic/lookbook/ocean/850_850/15.jpg',
-                title : 'Ocean'
+                title : _e('Ocean')
             },
             {
                 url : 'pic/lookbook/ocean/850_850/24.jpg',
-                title : 'Ocean'
+                title : _e('Ocean')
             },
             {
                 url : 'pic/lookbook/ocean/850_850/25.jpg',
-                title : 'Ocean'
+                title : _e('Ocean')
             },
             {
                 url : 'pic/lookbook/ocean/850_850/26.jpg',
-                title : 'Ocean'
+                title : _e('Ocean')
             },
             {
                 url : 'pic/lookbook/ocean/850_850/27.jpg',
-                title : 'Ocean'
+                title : _e('Ocean')
             }
         ]
 
         var streetshot = [
             {
                 url : 'pic/streetshot/850_850/1.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/2.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/3.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/4.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/5.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/6.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/7.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/8.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/9.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/10.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/11.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/12.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/13.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/6.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/7.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/8.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/9.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/10.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/11.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/12.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             },
             {
                 url : 'pic/streetshot/850_850/13.jpg',
-                title : 'Streetshot'
+                title : _e('Streetshot')
             }
         ]
 
         var campaign = [
             {
                 url : 'pic/campaign/1.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/2.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/3.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/4.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/5.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/6.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/7.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/8.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/9.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/10.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/11.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/13.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/14.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/15.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/16.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
             {
                 url : 'pic/campaign/17.jpg',
-                title : 'Campaign'
+                title : _e('Campaign')
             },
 			{
 				url : 'pic/campaign/18.jpg',
-				title : 'Campaign'
+				title : _e('Campaign')
 			},
 			{
 				url : 'pic/campaign/19.jpg',
-				title : 'Campaign'
+				title : _e('Campaign')
 			},
 			{
 				url : 'pic/campaign/20.jpg',
-				title : 'Campaign'
+				title : _e('Campaign')
 			},
 			{
 				url : 'pic/campaign/21.jpg',
-				title : 'Campaign'
+				title : _e('Campaign')
 			},
 			{
 				url : 'pic/campaign/22.jpg',
-				title : 'Campaign'
+				title : _e('Campaign')
 			},
 			{
 				url : 'pic/campaign/23.jpg',
-				title : 'Campaign'
+				title : _e('Campaign')
 			}
         ]
 
@@ -495,14 +495,14 @@ define([
                 webm : 'media/demo.webm',
                 ogv : 'media/demo.ogv',
                 poster : 'media/demo.jpg',
-                title : 'video1'
+                title : _e('video1')
             },
             {
                 mp4 : 'media/demo.mp4',
                 webm : 'media/demo.webm',
                 ogv : 'media/demo.ogv',
                 poster : 'media/demo.jpg',
-                title : 'video2'
+                title : _e('video2')
             }
         ]
 
@@ -522,8 +522,8 @@ define([
         // })
 
         var fakeData = {
-            date : 'Monday 23 may',
-            content : '年轻OL的商务着装，可能太严肃，可能太时髦，或者像Lily这样正合适 作为年轻OL商务时装的开创者'
+            date : _e('Monday 23 may'),
+            content : _e('年轻OL的商务着装，可能太严肃，可能太时髦，或者像Lily这样正合适 作为年轻OL商务时装的开创者')
         }
 
         oConfig.success(fakeData);

@@ -21,8 +21,22 @@ require([
     'jQuery',
     'Handlebars',
     'imagesLoaded',
-    'skrollr'
-], function(require, $, Handlebars, imagesLoaded, skrollr) {
+    'skrollr',
+    'common/api',
+    'common/properties-' + ( window.lang || 'en' )
+], function(require, $, Handlebars, imagesLoaded, skrollr , api, lang) {
+
+    // fix lang
+    window._e = function( text ){
+        return lang[ text ] || text;
+    };
+
+    $('a[data-lang]').click(function(){
+        api.setCookie('lang' , $(this).data('lang') , 60 * 60 * 24 * 30);
+    });
+
+
+
     $('document').ready(function () {
         require(['common/app'], function(app) {
             app();

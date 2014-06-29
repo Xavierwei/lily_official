@@ -7,18 +7,8 @@ define([
     'common/loading',
     'common/helper',
     'common/map',
-    'common/api',
-    'common/properties-' + ( window.lang || 'en' )
-], function($, skrollr, switchPage, loading, helper, map , api , lang ) {
-    // fix lang
-    window._e = function( text ){
-        return lang[ text ] || text;
-    };
-
-    $('a[data-lang]').click(function(){
-        api.setCookie('lang' , $(this).data('lang') , 60 * 60 * 24 * 30);
-    });
-
+    'common/api'
+], function($, skrollr, switchPage, loading, helper, map , api ) {
 
     var initialize = function() {
         // get current location
