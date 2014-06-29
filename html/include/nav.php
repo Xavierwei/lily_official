@@ -1,5 +1,5 @@
-<div class="header">
-    <ul id='nav'>
+<div class="header" data-0="height:100px;" data-100="height:70px;">
+    <ul id='nav' data-0="line-height:50px;" data-100="line-height:24px;">
         <li class='item logo' >
             <img src="./images/logo.png">
         </li>
@@ -41,9 +41,9 @@
     </ul>
 
     <a class='menu'></a>
-	<div class="language">
+	<div class="language" data-0="top:43px;" data-100="top:30px;">
 		<a href="" data-lang="en_us" class="lang_en"></a>
 		<a href="" data-lang="zh_cn" class="lang_cn"></a>
 	</div>
-    <div class="search"></div>
+    <div class="search" data-0="top:43px;" data-100="top:30px;"></div>
 </div>

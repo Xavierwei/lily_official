@@ -217,7 +217,28 @@ define([
                 var marker = new BMap.Marker(point, {title:data[0].title});
                 bMap.centerAndZoom(point, 15);
                 bMap.addOverlay(marker);
-                bMap.setMapStyle({style: $(document.body).hasClass('index') ? 'pink' : 'light'});
+                if( $(document.body).hasClass('index') ){
+                    var styleJson = [
+                         {
+                                   "featureType": "all",
+                                   "elementType": "geometry",
+                                   "stylers": {
+                                             "hue": "#fff1f4",
+                                             "saturation": 50
+                                   }
+                         },
+                         {
+                                   "featureType": "water",
+                                   "elementType": "all",
+                                   "stylers": {
+                                             "color": "#ffffff"
+                                   }
+                         }
+                     ]
+                    oMap.setMapStyle({styleJson:styleJson});
+                } else {
+                    oMap.setMapStyle({style: 'light'});
+                }
                 
 
                 $(this).html('View Shop')

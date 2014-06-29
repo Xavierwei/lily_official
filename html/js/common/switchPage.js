@@ -259,12 +259,13 @@ define([
                     updatePage();
                 });
 
-                // $('.footer').delegate('a:not([href^=http]):not([href^=javascript])', 'click', function(e) {
-                //     dMbmenu.find('.item a[href="' + $(this).attr('href') + '"]').trigger('click');
-                //     return false;
-                // });
+                $('.footer').delegate('a:not([href^=http]):not([href^=javascript])', 'click', function(e) {
+                    var $a = $('#nav').find('.item a[href="' + $(this).attr('href') + '"]').trigger('click');
+                    if( $a.length )
+                        return false;
+                });
                 // for special method
-                dMbmenu.delegate('.item a', 'click', function(e) {
+                $('#nav').delegate('.item a', 'click', function(e) {
                     var dTarget = $(this),
                         dCur = dMbmenu.find('a.on'),
                         sTitle = dTarget.attr('title'),
@@ -391,29 +392,6 @@ define([
 
         // update catch targets
         linkCatch();
-
-
-        // window scroll
-        $(window).bind('scroll.orn' , function(){
-            var time = 500;
-            $('.header').animate({
-                height: 70
-            } , time , function(){
-                $(this).find('.logo img').height('auto');
-            });
-            $('#nav').animate({
-                'line-height': '24px'
-            } , time);
-
-            $('.language , .search').animate({
-                top: 30
-            } , time);
-
-            $('.loading.top').animate({
-                top: 70
-            } , time);
-            $(window).unbind('scroll.orn');
-        });
 
     }
 

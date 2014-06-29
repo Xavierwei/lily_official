@@ -83,7 +83,7 @@
         <div class="showyitem showyitem5" data-0='bottom: -20%;' data-1300-end="bottom:5%;" data-900-end="bottom:20%;" data-500-end="bottom:35%;"></div>
     </div>
 
-    <span class='loading top'></span>
+    <span class='loading top' data-0="top:100px;" data-100="top:70px;"></span>
     <span class='loading left'></span>
     <span class='loading bottom'></span>
     <span class='loading right'></span>
