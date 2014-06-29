@@ -235,9 +235,9 @@ define([
                                    }
                          }
                      ]
-                    oMap.setMapStyle({styleJson:styleJson});
+                    bMap.setMapStyle({styleJson:styleJson});
                 } else {
-                    oMap.setMapStyle({style: 'light'});
+                    bMap.setMapStyle({style: 'light'});
                 }
                 
 
@@ -363,7 +363,7 @@ define([
     // enable the select
     var init = function () {
         var dHome = $('.index #home-selectbox'),
-            dStarshop = $('.flagshipstore #store-selectbox'),
+            dStarshop = $('.starstore #store-selectbox'),
             dStorelocator = $('.storelocator #store-selectbox');
             
 
