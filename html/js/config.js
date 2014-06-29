@@ -35,14 +35,14 @@ require([
         api.setCookie('lang' , $(this).data('lang') , 60 * 60 * 24 * 30);
     });
 
-
-
     $('document').ready(function () {
         require(['common/app'], function(app) {
             app();
-        })
-    })
-})
+        });
+    });
+    
+    window.startTrack($);
+});
 
 // google map need those functions under global
 var googleReady = function () {
