@@ -152,6 +152,7 @@ top: 42px;}
     .footer {line-height: 20px;position: relative;}
     .cs-height-footer {height:0;display: none;}
     .event_item{width:100%}
+    .event_com {font-size: 1.3em;}
 }
 /* mobile menu part */
 body.mobile,
