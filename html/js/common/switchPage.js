@@ -399,7 +399,7 @@ define([
             $('.header').animate({
                 height: 70
             } , time , function(){
-                $(this).find('.logo img').height('auto');
+                //$(this).find('.logo img').height('auto');
             });
             $('#nav').animate({
                 'line-height': '24px'
