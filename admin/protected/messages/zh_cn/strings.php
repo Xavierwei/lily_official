@@ -60,4 +60,5 @@ return array(
   "District" => "区",
   "Shanghai" => "上海市",
   "Guangzhou" => "广州市",
+    "COME TO SAY HELLO" => "欢迎来公司洽谈",
 );
