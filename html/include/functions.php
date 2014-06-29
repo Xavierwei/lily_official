@@ -180,7 +180,7 @@ function loadWeibo() {
   $token = Yii::app()->cache->get("token");
 
   $timeline = $api->user_timeline_by_id($token["uid"]);
-  if ($timeline) {
+  if ($timeline && isset($timeline["statuses"])) {
     $statues = $timeline["statuses"];
     $first = array_shift($statues);
     Yii::app()->cache->set("weibo_statues", $first);
