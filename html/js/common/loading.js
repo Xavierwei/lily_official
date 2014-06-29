@@ -4,13 +4,15 @@ define([
     'skrollr',
     'imagesLoaded',
     'Handlebars',
+    'scrollpanel',
+    'lib/jquery/jquery.mousewheel',
     // apps
     'common/api',
     'common/helper',
     'common/map',
     'common/select',
     'lib/text!templates/news.html'
-], function($, skrollr, imagesLoaded, Handlebars, api, helper, map, select, newsTpl) {
+], function($, skrollr, imagesLoaded, Handlebars, panel , mousewheel , api, helper, map, select, newsTpl) {
     var oRoll,
         oSkrollr = null,
         dWrap = $('#wrap'),
@@ -38,6 +40,15 @@ define([
 
                                 // for custom style
                                 dOverlay.attr('id', 'news');
+
+                                $('<img/>').load(function(){
+                                    var ht = $(window).height();
+                                    ht = ht * 0.9 * 0.8 - 60 - dOverlay.find('img').height();
+                                    // init js scroll
+                                    dOverlay.find('.newscontent').height(ht)
+                                        .jScrollPane({autoReinitialise:true});
+                                })
+                                .attr('src' , dOverlay.find('.newswrap img').attr('src'));
                             }, 0)
                         })
                     }

@@ -39,14 +39,18 @@ a:hover {opacity:0.8;}
 .btn:hover {opacity:0.7;}
 /* header Used
 ================================================================================================= */
-.header{position:fixed;height:70px;top:0;left:0;right:0;padding-left:7%;z-index:100;}
+.header{position:fixed;height:100px;top:0;left:0;right:0;padding-left:7%;z-index:100;}
 .menu{display:none;cursor:pointer;position:absolute;top:10px;left:-4%;background:url('../images/menu.png') no-repeat;width:48px;height:48px;}
 .menu.active{background:url('../images/menclose.png') no-repeat;}
-.search{cursor:pointer;background:url('../images/hdicon.png') no-repeat -84px 0;width:25px;height:25px;position:absolute;right:90px;top:30px;}
-.language{position:absolute;top:30px;right:130px}
+.search{cursor:pointer;background:url('../images/hdicon.png') no-repeat -84px 0;width:25px;height:25px;position:absolute;right:90px;top:42px;}
+.language{position:absolute;top:42px;right:130px}
 .language a{float:left;width:40px;height:17px;background:url('../images/hdicon.png') no-repeat 10px 0;}
 .language .lang_cn{background-position:-30px 0}
 
+#nav .logo{height: 100%;}
+#nav .logo img{height: 75%;margin-top: 10%;}
+
+#nav{height: 100%; line-height: 50px;}
 #nav li.item {float:left;text-transform: uppercase;width:200px;cursor:pointer;}
 #nav li.item:hover {}
 #nav li.item h2 {padding:25px 0 25px 30px;}
@@ -372,7 +376,7 @@ body.club,body.club .page,body.club .header{background-color:#fff1f4;}
 .loading.bottom{height:10px;max-width:90%;}
 .loading.left,
 .loading.right{width:10px;}
-.loading.top{top:70px;left:5%;}
+.loading.top{top:100px;left:5%;}
 .loading.bottom{right:5%;bottom:70px;}
 .loading.right{right:5%;top:70px;}
 .loading.left{bottom:70px;left:5%;}
@@ -456,3 +460,121 @@ a, .btn {-webkit-transition:   all 0.2s ease-out;-moz-transition:  all 0.2s ease
     0%   {-o-transform:translateY(0)}
     100% {-o-transform:translateY(-46px)}
 }
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane
+{
+  position: absolute;
+
+}
+.jspPane-empty {height:100%;}
+.jspVerticalBar
+{
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 11px;
+  height: 100%;
+}
+
+.jspHorizontalBar
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+}
+
+.jspCap
+{
+  display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+  float: left;
+}
+
+.jspTrack
+{
+  position: relative;
+}
+
+.jspDrag
+{
+  background: #606060;
+  width: 11px;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+  float: left;
+  height: 100%;
+}
+
+.jspArrow
+{
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.jspArrow.jspDisabled
+{
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+  height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+  width: 16px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+  outline: none;
+}
+
+.jspCorner
+{
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+  margin: 0 -3px 0 0;
+}
+
+
+

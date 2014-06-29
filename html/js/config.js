@@ -6,7 +6,8 @@ require.config({
         imagesLoaded : 'lib/imagesLoaded/imagesLoaded.min',
         skrollr : 'lib/skrollr/skrollr.min',
         History: 'lib/history.require',
-        templates:  '../js/templates'
+        templates:  '../js/templates',
+        scrollpanel: 'lib/jquery/jquery.jscrollpane',
     },
     priority: [
         'jQuery',

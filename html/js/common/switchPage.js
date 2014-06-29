@@ -259,10 +259,10 @@ define([
                     updatePage();
                 });
 
-                $('.footer').delegate('a:not([href^=http]):not([href^=javascript])', 'click', function(e) {
-                    dMbmenu.find('.item a[href="' + $(this).attr('href') + '"]').trigger('click');
-                    return false;
-                });
+                // $('.footer').delegate('a:not([href^=http]):not([href^=javascript])', 'click', function(e) {
+                //     dMbmenu.find('.item a[href="' + $(this).attr('href') + '"]').trigger('click');
+                //     return false;
+                // });
                 // for special method
                 dMbmenu.delegate('.item a', 'click', function(e) {
                     var dTarget = $(this),
@@ -301,7 +301,7 @@ define([
                     dCurLink = dMbmenu.find('a[href$="' + sCur + '"]');
 
                 // shrik or expand the list
-                dMbmenu.delegate('.item', 'touchend', function () {
+                dMbmenu.delegate('.item', 'click', function () {
                     var dList = $(this).find('ol');
 
                     if (inAnimate) return;
@@ -391,6 +391,29 @@ define([
 
         // update catch targets
         linkCatch();
+
+
+        // window scroll
+        $(window).bind('scroll.orn' , function(){
+            var time = 500;
+            $('.header').animate({
+                height: 70
+            } , time , function(){
+                $(this).find('.logo img').height('auto');
+            });
+            $('#nav').animate({
+                'line-height': '24px'
+            } , time);
+
+            $('.language , .search').animate({
+                top: 30
+            } , time);
+
+            $('.loading.top').animate({
+                top: 70
+            } , time);
+            $(window).unbind('scroll.orn');
+        });
 
     }
 
