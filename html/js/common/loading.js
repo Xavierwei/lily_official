@@ -40,15 +40,23 @@ define([
 
                                 // for custom style
                                 dOverlay.attr('id', 'news');
+                                dOverlay.find('.newswrap-inner')
+                                    .height( $(window).height() * 0.9 * 0.8)
+                                    .jScrollPane({autoReinitialise:true});
 
-                                $('<img/>').load(function(){
-                                    var ht = $(window).height();
-                                    ht = ht * 0.9 * 0.8 - 60 - dOverlay.find('img').height();
-                                    // init js scroll
-                                    dOverlay.find('.newscontent').height(ht)
-                                        .jScrollPane({autoReinitialise:true});
-                                })
-                                .attr('src' , dOverlay.find('.newswrap img').attr('src'));
+                                dOverlay.find('.fancybox-skin').click(function( e ){
+                                    var tar = e.target || e.srcElement;
+                                    if( $(tar).hasClass('fancybox-skin') )
+                                        $.fancybox.close();
+                                });
+                                // $('<img/>').load(function(){
+                                //     var ht = $(window).height();
+                                //     ht = ht * 0.9 * 0.8 - 60 - dOverlay.find('img').height();
+                                //     // init js scroll
+                                //     dOverlay.find('.newscontent').height(ht)
+                                //         .jScrollPane({autoReinitialise:true});
+                                // })
+                                // .attr('src' , dOverlay.find('.newswrap img').attr('src'));
                             }, 0)
                         })
                     }

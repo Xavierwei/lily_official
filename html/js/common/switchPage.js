@@ -327,7 +327,7 @@ define([
                     })
 
                     dCurList = dList;
-                })
+                });
 
                 // links
                 dMbmenu.delegate('.item a', 'click', function () {

@@ -103,6 +103,7 @@ define([
     }
 
     var enableList = function() {
+        var data = null;
         // album list
         dBody.delegate('.album', 'click', function() {
             var imgIndex = $(this).attr('src').match(/(\d+)\.\w+$/)[1];
@@ -171,6 +172,8 @@ define([
 
             var albumId = $(this).data('album');
             if(albumId == undefined) albumId = 1;
+
+
             api.getAlbumList({
                 data : { id : albumId },
                 success : function (aData) {
