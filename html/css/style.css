@@ -50,7 +50,7 @@ a:hover {opacity:0.8;}
 #nav li.item {float:left;text-transform: uppercase;width:200px;cursor:pointer;}
 #nav li.item:hover {}
 #nav li.item h2 {padding:25px 0 25px 30px;}
-#nav li ol {display: none;list-style: none;margin:0;padding:0;padding:0 0 20px 30px;}
+#nav li ol {display: none;list-style: none;margin:0;padding:0;padding:0 0 20px 30px; background: url(about:blank) \9;}
 #nav li ol li {margin:0 0 10px 0;}
 #nav li ol li a:hover {text-decoration: underline;}
 #nav .club {background: #000;color:#fff;padding:3px 10px;}
@@ -426,7 +426,7 @@ body.club,body.club .page,body.club .header{background-color:#fff1f4;}
     from{opacity:1;}
     to{opacity:0.5;}
 }
-.fadeout:hover{opacity:0.5;filter:alpha(opacity=0.5);animation:fadeout 0.4s;-moz-animation:fadeout 0.4s; /* Firefox */
+.fadeout:hover{opacity:0.5;filter:alpha(opacity=50);animation:fadeout 0.4s;-moz-animation:fadeout 0.4s; /* Firefox */
     -webkit-animation:fadeout 0.4s; /* Safari and Chrome */
 -o-animation:fadeout 0.4s; /* Opera */}
 

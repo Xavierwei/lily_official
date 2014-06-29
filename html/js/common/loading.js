@@ -126,7 +126,6 @@ define([
             dRight.css('height', dHeight);
             dLeft.css('height', dHeight);
         });
-
         imgLoad.on('progress', function(instance, image) {
             nLoad += 1;
 

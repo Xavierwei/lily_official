@@ -217,7 +217,7 @@ define([
                 var marker = new BMap.Marker(point, {title:data[0].title});
                 bMap.centerAndZoom(point, 15);
                 bMap.addOverlay(marker);
-                bMap.setMapStyle({style:'light'});
+                bMap.setMapStyle({style: $(document.body).hasClass('index') ? 'pink' : 'light'});
                 
 
                 $(this).html('View Shop')
@@ -309,6 +309,9 @@ define([
 
         dCitySelect.change(function () {
             updateText();
+             setTimeout(function(){
+                searchShop(true);
+            } , 200);
         });
 
         dDistrictSelect.change(function () {
