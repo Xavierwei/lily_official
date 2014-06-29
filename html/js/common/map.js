@@ -96,8 +96,9 @@ define([
             oMap.addOverlay(marker);
             var sContent =
                 "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>"+obj.title+"</h4>" +
-                "<p>地址:"+obj.address+"</p>" +
-                "<p>电话:"+obj.phone+"</p>";
+                "<p>"+_e("Add")+":"+obj.address+"</p>" +
+                "<p>"+_e("Tel")+":"+obj.phone+"</p>";
+                console.log(sContent);
             var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
             marker.addEventListener("click", function(){
                 this.openInfoWindow(infoWindow);
