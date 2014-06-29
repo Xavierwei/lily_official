@@ -42,8 +42,24 @@ define([
                             dOverlay.attr('id', 'news');
                             dOverlay.find('.newswrap-inner')
                                 .height( $(window).height() * 0.9 * 0.8)
-                                .jScrollPane({autoReinitialise:true})
                                 .css('overflow' , 'visible');
+                                //.jScrollPane({autoReinitialise:true})
+                                
+                                // .find('img')
+                                // .css('opacity' , 0);
+
+                            setTimeout(function(){
+                                dOverlay.find('.newswrap-inner')
+                                    .jScrollPane({autoReinitialise:true})
+                                    .css('overflow' , 'visible');
+                            } , 100);
+
+                            // setTimeout(function(){
+                            //     dOverlay.find('.newswrap-inner img')
+                            //         .animate({
+                            //             opacity: 1
+                            //         } , 200);
+                            // } , 200);
 
                             dOverlay.find('.fancybox-skin').click(function( e ){
                                     var tar = e.target || e.srcElement;
