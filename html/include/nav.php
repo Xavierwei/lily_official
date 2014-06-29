@@ -45,5 +45,5 @@
 		<a href="" data-lang="en_us" class="lang_en"></a>
 		<a href="" data-lang="zh_cn" class="lang_cn"></a>
 	</div>
-    <div class="search btn" data-0="top:43px;" data-100="top:30px;"></div>
+    <a href="javascript:void(0);" class="search btn" data-0="top:43px;" data-100="top:30px;"></a>
 </div>

@@ -25,6 +25,12 @@ define([
 
             return str;
         })();
+        
+    if( isMobile ){
+        $(window).load(function(){
+            setTimeout(window.scrollTo(0,0) , 0);
+        });
+    }
 
     var isPC = function () {
         if (isMobile) {
