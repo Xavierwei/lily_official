@@ -35,7 +35,7 @@ return array(
     "NEAR YOU" => "您的附近",
 	"City" => "城市",
 	"LOOK" => "查看",
-	"BUILDING EVERY DAY HISTORY" => "BUILDING EVERY DAY HISTORY",
+	"BUILDING EVERY DAY HISTORY" => "Lily每天都在进步",
 	"Search" => "搜索",
 	"Please Enter Keyword" => "请输入信息",
 	"HOTLINE" => "客服热线",

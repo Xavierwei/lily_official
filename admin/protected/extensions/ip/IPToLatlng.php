@@ -66,7 +66,7 @@ class IPToLatlng extends CApplicationComponent {
     $parse = $this->parseIP($ip);
     if ($parse && $parse["status"] == 0) {
       $city = $parse["content"]["address_detail"]["city"];
-      return Yii::t("strings", $parse["content"]["address_detail"]["city"]);
+      return Yii::t("strings", $city);
     }
     // 默认是上海市
     else {

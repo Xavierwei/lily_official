@@ -82,7 +82,7 @@ define([
 
         dDistrictSelect.change(function () {
             updateText(false);
-        })
+        });
 
     }
 
