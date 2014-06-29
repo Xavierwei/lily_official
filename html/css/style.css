@@ -476,6 +476,7 @@ a, .btn {-webkit-transition:   all 0.2s ease-out;-moz-transition:  all 0.2s ease
 .jspPane
 {
   position: absolute;
+  width: 100% !important;
 
 }
 .jspPane-empty {height:100%;}
