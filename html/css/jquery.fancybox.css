@@ -103,3 +103,5 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 #weixin .weixinwrap img{margin:5% auto;}
 #weixin .weixinwrap p{font-weight:bolder;line-height:2em;}
 #weixin .weixinwrap p span{padding-left:14px;}
+
+#news .newswrap h3 {line-height: 120%;}
