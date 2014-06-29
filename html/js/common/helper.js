@@ -26,6 +26,7 @@ define([
             return str;
         })();
 
+
     var isPC = function () {
         if (isMobile) {
             return false;

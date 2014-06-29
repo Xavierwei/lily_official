@@ -36,7 +36,12 @@
     .menu {display:block;width:102px;height:102px;}
     .search {right:30px;}
     .language {right:78px;}
-    .search{background:url('../images/hdicon_m.png') no-repeat -156px 0;width:41px;height:41px;position:absolute;right:25px;top:42px;}
+    .search{background: url('../images/hdicon_m.png') no-repeat -146px 0;
+width: 70px;
+height: 50px;
+position: absolute;
+right: 0px;
+top: 42px;}
     .language a{background:url('../images/hdicon_m.png') no-repeat 0 0;height:35px;width:59px;}
     .language .lang_cn{background-position:-64px 0;}
     .job_item{display:block;margin:0 auto;}

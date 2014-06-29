@@ -579,4 +579,5 @@ a, .btn {-webkit-transition:   all 0.2s ease-out;-moz-transition:  all 0.2s ease
 .mobile .newswrap-inner img{width: 100%;}
 .mobile .mejs-poster,html.video .mejs-poster{display: none;}
 .mobile .ft_copy{font-size: 10px;}
+.mobile { -webkit-overflow-scrolling:touch;}
 
