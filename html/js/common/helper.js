@@ -106,8 +106,8 @@ define([
         var data = null;
         // album list
         dBody.delegate('.album', 'click', function() {
-            var imgIndex = $(this).attr('src').match(/(\d+)\.\w+$/)[1];
-            imgIndex = imgIndex - 1;
+            var imgIndex =  $(this).data('index');//$('.album').index( this ); //$(this).attr('src').match(/(\d+)\.\w+$/)[1];
+            //imgIndex = imgIndex - 1;
             var bFunc = function(aData) {
                     var jcarousel = $('.fancybox-inner .jcarousel'),
                         dPre = $('.jcarousel-control-prev'),

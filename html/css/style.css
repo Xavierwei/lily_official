@@ -53,6 +53,7 @@ a:hover {opacity:0.8;}
 #nav li.item {float:left;text-transform: uppercase;width:200px;cursor:pointer;}
 #nav li.item:hover {}
 #nav li.item h2 {padding:25px 0 25px 30px;}
+#nav li.item ol{line-height: 24px;}
 #nav li ol {display: none;list-style: none;margin:0;padding:0;padding:0 0 20px 30px; background: url(about:blank) \9;}
 #nav li ol li {margin:0 0 10px 0;}
 #nav li ol li a:hover {text-decoration: underline;}
