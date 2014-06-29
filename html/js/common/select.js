@@ -241,7 +241,7 @@ define([
                 }
                 
 
-                $(this).html('View Shop')
+                $(this).html(_e('view_shop'))
             } else {
                 mapWrap.find('.map').toggle();
                 if( mapWrap.find('.map').is(':visible') ){
@@ -298,6 +298,7 @@ define([
                             data : aData.shopes,
 							_eView: _e("view_map")
                         });
+
                         dStores.html(str);
                         if(findNear && aData.min_distance_shop) {
                             map.updateMarkers(aData.shopes, false);

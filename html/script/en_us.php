@@ -19,6 +19,6 @@
   '徐汇区' => '',
   'Add' => '',
   'Tel' => '',
-  'view_shop' => '',
-  'view_map' => '',
+  'view_shop' => 'View Shop',
+  'view_map' => 'View Map',
 );
