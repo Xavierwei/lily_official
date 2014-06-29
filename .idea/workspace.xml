@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/images/hdicon_m.png" afterPath="$PROJECT_DIR$/html/images/hdicon_m.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/nav.php" afterPath="$PROJECT_DIR$/html/include/nav.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/response.css" afterPath="$PROJECT_DIR$/html/css/response.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -67,7 +68,7 @@
     <file path="$PROJECT_DIR$/../ave_1000/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401490627058" ignored="false" />
     <file path="/*.regexp" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403759063648" ignored="false" />
     <file path="/milestone.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402283386255" ignored="false" />
-    <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404052377687" ignored="false" />
+    <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404054100324" ignored="false" />
     <file path="/campaign.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402363349987" ignored="false" />
     <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403328066083" ignored="false" />
     <file path="/lookbook.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155937361" ignored="false" />
@@ -156,7 +157,7 @@
     <file path="/news.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403441025917" ignored="false" />
     <file path="/lookbook.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403837030576" ignored="false" />
     <file path="/functions.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403404529841" ignored="false" />
-    <file path="/nav.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404043649728" ignored="false" />
+    <file path="/nav.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404053262993" ignored="false" />
     <file path="/history.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403439726382" ignored="false" />
     <file path="/events.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403443078394" ignored="false" />
     <file path="/club_giftcard.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403443914760" ignored="false" />
@@ -225,7 +226,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1764" selection-end="1811" vertical-scroll-proportion="0.0">
+            <state line="47" column="0" selection-start="1764" selection-end="1811" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -234,7 +235,25 @@
       <file leaf-file-name="response.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/css/response.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="63" selection-start="1383" selection-end="1383" vertical-scroll-proportion="0.7089552">
+            <state line="69" column="46" selection-start="3001" selection-end="3001" vertical-scroll-proportion="0.26268658">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/include/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/include/nav.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="26" selection-start="3060" selection-end="3060" vertical-scroll-proportion="-19.178572">
               <folding />
             </state>
           </provider>
@@ -315,13 +334,13 @@
         <option value="$PROJECT_DIR$/html/job.php" />
         <option value="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" />
         <option value="$PROJECT_DIR$/html/admin/protected/messages/zh_cn/strings.php" />
-        <option value="$PROJECT_DIR$/html/include/nav.php" />
         <option value="$PROJECT_DIR$/html/starstore.php" />
         <option value="$PROJECT_DIR$/html/include/footer.php" />
         <option value="$PROJECT_DIR$/html/css/jquery.fancybox.css" />
         <option value="$PROJECT_DIR$/html/js/common/switchPage.js" />
         <option value="$PROJECT_DIR$/html/js/common/select.js" />
         <option value="$PROJECT_DIR$/html/css/style.css" />
+        <option value="$PROJECT_DIR$/html/include/nav.php" />
         <option value="$PROJECT_DIR$/html/css/response.css" />
       </list>
     </option>
@@ -728,20 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/include/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/include/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="77" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.46728972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/starstore.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="17" selection-start="175" selection-end="175" vertical-scroll-proportion="0.17757009">
@@ -788,16 +793,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/include/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/include/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="26" selection-start="3060" selection-end="3060" vertical-scroll-proportion="-19.178572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1764" selection-end="1811" vertical-scroll-proportion="0.0">
+        <state line="47" column="0" selection-start="1764" selection-end="1811" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/css/response.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="63" selection-start="1383" selection-end="1383" vertical-scroll-proportion="0.7089552">
+        <state line="69" column="46" selection-start="3001" selection-end="3001" vertical-scroll-proportion="0.26268658">
           <folding />
         </state>
       </provider>

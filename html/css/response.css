@@ -36,7 +36,7 @@
     .menu {display:block;width:102px;height:102px;}
     .search {right:30px;}
     .language {right:78px;}
-    .search{background:url('../images/hdicon_m.png') no-repeat -159px 0;width:37px;height:37px;position:absolute;right:25px;top:42px;}
+    .search{background:url('../images/hdicon_m.png') no-repeat -156px 0;width:41px;height:41px;position:absolute;right:25px;top:42px;}
     .language a{background:url('../images/hdicon_m.png') no-repeat 0 0;height:35px;width:59px;}
     .language .lang_cn{background-position:-64px 0;}
     .job_item{display:block;margin:0 auto;}
@@ -58,16 +58,16 @@
     #wrap .page .limit{margin-left:auto;margin-right:auto;padding-left:7%;padding-right:7%;}
     .home_new_cn{background-size:contain;}
     .home_brand_txt {font-size:20px;}
-    .weibo_wbbox{width:100%;height:500px;position: relative;font-size:20px;}
+    .weibo_wbbox{width:100%;height:400px;position: relative;font-size:20px;}
     .weibo_wbbg{display: none;}
     .weibo_wb_btn{margin:0 auto;text-align:center;}
     .videowrap{text-align:center;}
     .videowrap img{max-width:100%;}
     .footer .ft_list,
-    .footer .ft_touch{display:block;text-align:center;margin:3% auto;float:none;}
+    .footer .ft_touch{display:block;text-align:center;margin:8% auto;float:none;}
     .menu{background-image:url('../images/mobilemenu.png');background-size:contain;}
     /* milestone page */
-    .page_heritage .limit{width:auto;}
+    .page_heritage .limit{width:auto;margin:14px 0;}
     .page_heritage .ha_modtxt {width:auto;padding:0 20px;margin:0 0 30px 0;}
     .page_heritage .ha_modtxt h2{font-size:40px;padding-bottom:0;margin:0 0 20px 0;}
     .page_heritage .ha_modtxt h3{font-size:18px;padding:0 0 10px;}
@@ -138,14 +138,14 @@
     .page_privacy .privacy_tit.mobile{display:block;font-size:40px;line-height:1em;}
     .page_privacy .privacy_tit.mobile h2{margin:5% auto;font-size:20px;}
     .page_privacy .privacy_com{width:auto;}
-    .ft_com{width:auto;font-size:18px;}
+    .ft_com{width:auto;font-size:14px;}
     .ft_list {width:auto;line-height: 160%;}
-    .ft_list h2 {font-size:29px;}
+    .ft_list h2 {font-size:27px;margin:0 0 10px 0;}
     .ft_links{float:none;width:auto;text-align:center;margin:0;}
     .search_popup {width:600px;margin-left:-300px;}
     .search_popup .search_input {width:350px;}
     .footer {line-height: 20px;position: relative;}
-    .cs-height-footer {height:0;}
+    .cs-height-footer {height:0;display: none;}
 }
 /* mobile menu part */
 body.mobile,
