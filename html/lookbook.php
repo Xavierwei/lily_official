@@ -22,7 +22,7 @@
 			        <div class="left">
 				        <div class="lb_tit">
 					        <h2><?php echo Yii::t("strings", "LOOK<br />BOOK")?></h2>
-					        <div class="fw">FW/14</div>
+					        <div class="fw"><?php echo $title?></div>
 				        </div>
 				        <?php foreach ($lookbookes as $index => $lookbook):?>
 					        <div class="gohash lb_modtit fadeout" data-hash="s<?php echo $index?>"><?php echo $lookbook->title?></div>
