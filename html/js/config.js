@@ -41,6 +41,16 @@ require([
             app();
         });
     });
+
+    var isIphone = navigator.userAgent.toLowerCase().indexOf('iphone') > 0,
+        isIpad = navigator.userAgent.toLowerCase().indexOf('ipad') > 0,
+        isAndroid = navigator.userAgent.indexOf('Android') >= 0,
+        isMobile = isIphone || isIpad || isAndroid;
+    if( isMobile ){
+        $(window).load(function(){
+            setTimeout(window.scrollTo(0,0) , 0);
+        });
+    }
     
     window.startTrack($);
 });
