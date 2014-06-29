@@ -68,7 +68,7 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 .fancybox-inner .actions li span{width:0;height:100%;display:inline-block;vertical-align:middle;}
 .fancybox-inner .actions li a{cursor:pointer;}
 .fancybox-inner .actions li a:hover{color:#000;}
-.fancybox-inner .actions li .desc{width:auto;height:auto;padding:0 20px;font-size:20px;color:#999;}
+.fancybox-inner .actions li .desc{width:auto;height:auto;padding:0 20px;font-size:1.2em;color:#999;}
 /* for links modal */
 #links{background:rgba(255,255,255,0.8);}
 #links .fancybox-skin{background:none;}
@@ -86,7 +86,7 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 #weixin .fancybox-skin{background:none;}
 #news .fancybox-close,
 #weixin .fancybox-close{display:none;}
-}
+
 #news .newswrap img{width:100%;max-width:100%;display:inline-block;}
 #news .newswrap h3{font-size:25px;font-weight:bolder;}
 #news .newswrap h5{font-weight:bolder;}
