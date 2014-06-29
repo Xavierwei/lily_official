@@ -582,3 +582,17 @@ a, .btn {-webkit-transition:   all 0.2s ease-out;-moz-transition:  all 0.2s ease
 .mobile .ft_copy{font-size: 10px;}
 .mobile { -webkit-overflow-scrolling:touch;}
 
+div:focus {
+  border: none;
+  outline:0px solid transparent;
+}
+div:focused {
+  border:none;
+  outline:0px solid transparent;
+}
+
+div:selected {
+  border:none;
+  outline:0px solid transparent;
+}
+
