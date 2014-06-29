@@ -110,10 +110,10 @@ define([
         imgLoad.on('always', function(instance) {
             dTop.queue(function() {
                 dTop.dequeue();
-                var dHeight = $(window).height() - 70*2;
-                dRight.css('height', dHeight);
-                dBottom.css('width', '90%');
-                dLeft.css('height', dHeight);
+                // var dHeight = $(window).height() - 70*2;
+                // dRight.css('height', dHeight);
+                // dBottom.css('width', '90%');
+                // dLeft.css('height', dHeight);
 
                 dTop.animate({
                     'width': '90%'
@@ -144,27 +144,25 @@ define([
             dRight.css('height', dHeight);
             dLeft.css('height', dHeight);
         });
+        var dHeight = $(window).height() - 70*2;
         imgLoad.on('progress', function(instance, image) {
             nLoad += 1;
-
             var nVal = parseInt((nLoad / nTotal) * 100);
-
             if (0 < nVal && nVal < 25) {
                 dRight.css({
-                    'height': parseInt((nVal / 25) * 100) + '%'
-                })
-
+                    'height': dHeight * nVal / 25
+                });
                 return;
             }
+            if (25 < nVal && nVal < 50 ) {
 
-            if (25 < nVal && nVal < 50) {
                 dRight.css({
-                    'height': '75%'
-                })
+                    'height': dHeight
+                });
 
                 dBottom.css({
                     'width': parseInt((nVal / 50) * 100) + '%'
-                })
+                }); 
 
                 return;
             }
