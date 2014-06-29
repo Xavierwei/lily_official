@@ -8,6 +8,7 @@
   $lookbookes = loadLookbook();
   $title = $lookbookes[0];
   $lookbookes = $lookbookes[1];
+  $next_index = -1;
 ?>
 
 <body class='lookbook'>
@@ -30,7 +31,7 @@
 			        <?php $first_lookbook = array_shift($lookbookes); ?>
 			        <?php if ($first_lookbook):?>
 				        <div class="lookbook_right">
-					        <img class="btn album" data-album="1" src="<?php echo array_shift($first_lookbook->look_book_image)?>" />
+					        <img class="btn album" data-album="1" data-index="<?php $next_index += 1; echo $next_index;?>" src="<?php echo array_shift($first_lookbook->look_book_image)?>" />
 				        </div>
 			        <?php endif;?>
 		        </div>
@@ -39,14 +40,14 @@
 		        <div class="list limit cs-clear  ss_row2">
 			        <div class="ss_list">
 				        <?php foreach ($first_lookbook->look_book_image as $index => $look_image):?>
-					        <img class="btn album" data-album="1" src="<?php echo $look_image?>" />
+                <img class="btn album" data-album="1" data-index="<?php $next_index += 1; echo $next_index;?>" src="<?php echo $look_image?>" />
 				        <?php endforeach;?>
 			        </div>
 		        </div>
 
 		        <div class="limit cs-clear ss_row3">
 			        <div class="left">
-				        <img class="btn album" data-album="1" src="<?php echo $last_image?>" />
+				        <img class="btn album" data-album="1" data-index="<?php $next_index += 1; echo $next_index;?>" src="<?php echo $last_image?>" />
 			        </div>
 		        </div>
 	        </div>
@@ -60,21 +61,21 @@
 						</div>
 
 			            <div class="lookbook_right">
-				            <img class="btn album" data-album="1" src="<?php echo array_shift($look_images)?>" />
+				            <img class="btn album" data-album="1" data-index='<?php $next_index += 1; echo $next_index;?>' src="<?php echo array_shift($look_images)?>" />
 			            </div>
 		            </div>
 		            <?php $last_image = array_pop($look_images);?>
 		            <div class="list limit cs-clear  ss_row2">
 			            <div class="ss_list">
 				            <?php foreach ($look_images as $look_image):?>
-					            <img class="btn album" data-album="1" src="<?php echo $look_image?>" />
+					            <img class="btn album" data-album="1" data-index='<?php $next_index += 1; echo $next_index;?>' src="<?php echo $look_image?>" />
 				            <?php endforeach;?>
 			            </div>
 		            </div>
 
 		            <div class="limit cs-clear ss_row3">
 			            <div class="left">
-				            <img class="btn album" data-album="1" src="<?php echo $last_image?>" />
+				            <img class="btn album" data-album="1" data-index='<?php $next_index += 1; echo $next_index;?>' src="<?php echo $last_image?>" />
 			            </div>
 		            </div>
 	            </div>

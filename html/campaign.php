@@ -1,5 +1,6 @@
 <?php require_once 'include/functions.php';?>
 <?php set_page_title("Lily Official Site")?>
+<?php $next_index = -1;?>
 <!DOCTYPE html>
 <html>
 <?php include_once 'include/header.php';?>
@@ -30,15 +31,15 @@
 	                <?php endif;?>
                 </div>
 	            <div class="left">
-		            <img class='btn album' data-album="4" src="pic/campaign/1.jpg" />
+		            <img class='btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/1.jpg" />
 	            </div>
             </div>
 
             <div class="cs-clear limit">
                 <div class="list">
-                    <img class='right btn album' data-album="4" src="pic/campaign/4.jpg" />
-                    <img class='right btn album' data-album="4" src="pic/campaign/3.jpg" />
-                    <img class='right btn album' data-album="4" src="pic/campaign/2.jpg" />
+                    <img class='right btn album' data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/4.jpg" />
+                    <img class='right btn album' data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/3.jpg" />
+                    <img class='right btn album' data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/2.jpg" />
                 </div>
             </div>
 
@@ -57,12 +58,12 @@
 	                <?php endif;?>
                 </div>
 	            <div class="right">
-		            <img class='btn album' data-album="4" src="pic/campaign/5.jpg" />
+		            <img class='btn album' data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/5.jpg" />
 		        </div>
             </div>
 
             <div class="cs-clear limit cp-full">
-                <img class='full btn album' data-album="4" src="pic/campaign/6.jpg" />
+                <img class='full btn album' data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/6.jpg" />
             </div>
 
             <div class="cs-clear limit cp-model">
@@ -75,29 +76,29 @@
 		                <p>非常值得一提的是，在这次的模特选角上，为了更好地体现LILY女孩大方、轻松的灵动气质，创意团队将聚光灯投放在全球新一代超模Barbara Palvin身上，这位来自匈牙利的年轻女孩凭借镜头最青眯的天使面孔，以及与生俱来的模特素质，已迅速取得如维多利亚的秘密（更成为2012维密天使）等多个国际级大牌的友好合作。Barbara Palvin在LILY的拍摄现场更是展现出一身的跳动活力，在简洁的妆容与精致的造型配合下，时刻绽放着LILY女孩特有的开朗、活力、积极气息。</p>
 	                <?php endif;?>
                 </div>
-                <img class='left btn album' data-album="4" src="pic/campaign/7.jpg" />
+                <img class='left btn album' data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/7.jpg" />
             </div>
 
             <div class="limit cs-clear cp-full cp-mo1">
 	            <div class="row1">
 		            <div class="cp_blacktit"><?php echo Yii::t("strings", "MAKING OF")?></div>
 		            <div class="cp_img cp_img_size1">
-			            <img class="btn album" data-album="4" src="pic/campaign/8.jpg" />
+			            <img class="btn album" data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/8.jpg" />
 		            </div>
 	            </div>
 				<div class="cs-clear"></div>
 	            <div class="row2">
 		            <div class="cp_img cp_img_size1">
-			            <img class="btn album" data-album="4" src="pic/campaign/9.jpg" />
+			            <img class="btn album" data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/9.jpg" />
 		            </div>
 		            <div class="cp_img cp_img_size2">
-			            <img class="btn album" data-album="4" src="pic/campaign/10.jpg" />
+			            <img class="btn album" data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/10.jpg" />
 		            </div>
 	            </div>
 	            <div class="cs-clear"></div>
 	            <div class="row3">
 		            <div class="cp_img cp_img_size3">
-			            <img class="btn album" data-album="4" src="pic/campaign/11.jpg" />
+			            <img class="btn album" data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/11.jpg" />
 		            </div>
 	            </div>
             </div>
@@ -109,34 +110,34 @@
 
 	        <div class='limit cp-top cs-clear'>
 		        <div class="left">
-			        <img class='btn album' data-album="4" src="pic/campaign/13.jpg" />
+			        <img class='btn album' data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/13.jpg" />
 		        </div>
 	        </div>
 
 
             <div class="cs-clear limit">
                 <div class="list">
-                    <img class='right btn album' data-album="4" src="pic/campaign/16.jpg" />
-                    <img class='right btn album' data-album="4" src="pic/campaign/15.jpg" />
-                    <img class='right btn album' data-album="4" src="pic/campaign/14.jpg" />
+                    <img class='right btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/16.jpg" />
+                    <img class='right btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/15.jpg" />
+                    <img class='right btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/14.jpg" />
                 </div>
             </div>
 
 
 	        <div class="cs-clear limit cp-ground">
 		        <div class="right">
-			        <img class='btn album' data-album="4" src="pic/campaign/17.jpg" />
+			        <img class='btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/17.jpg" />
 		        </div>
 	        </div>
 
             <div class="cs-clear limit cp-full">
-                <img class='full btn album' data-album="4" src="pic/campaign/18.jpg" />
+                <img class='full btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/18.jpg" />
             </div>
 
 
 	        <div class='limit cp-top cs-clear'>
 		        <div class="left">
-			        <img class='btn album' data-album="4" src="pic/campaign/19.jpg" />
+			        <img class='btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/19.jpg" />
 		        </div>
 	        </div>
 
@@ -146,25 +147,25 @@
 		        <div class="row1">
 			        <div class="cp_blacktit"><?php echo Yii::t("strings", "MAKING OF")?></div>
 			        <div class="cp_img cp_img_size2">
-				        <img class="btn album" data-album="4" src="pic/campaign/20.jpg" />
+				        <img class="btn album" data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/20.jpg" />
 			        </div>
 		        </div>
 		        <div class="cs-clear"></div>
 		        <div class="row2">
 			        <div class="cp_img cp_img_size3">
-				        <img class="btn album" data-album="4" src="pic/campaign/21.jpg" />
+				        <img class="btn album" data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/21.jpg" />
 			        </div>
 		        </div>
 		        <div class="cs-clear"></div>
 		        <div class="row3">
 			        <div class="cp_img cp_img_size1">
-				        <img class="btn album" data-album="4" src="pic/campaign/22.jpg" />
+				        <img class="btn album" data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/22.jpg" />
 			        </div>
 		        </div>
 		        <div class="cs-clear"></div>
 		        <div class="row4">
 			        <div class="cp_img cp_img_size1">
-				        <img class="btn album" data-album="4" src="pic/campaign/23.jpg" />
+				        <img class="btn album" data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/23.jpg" />
 			        </div>
 		        </div>
 	        </div>

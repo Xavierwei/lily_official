@@ -8,6 +8,7 @@
     <?php include_once "include/nav.php";?>
     <?php $streetsnap = loadStreehot();?>
     <?php $images = $streetsnap->streehot_image;?>
+    <?php $next_index = -1;?>
     <div id='wrap'>
         <!--  -->
         <div class="page page_streetsnap">
@@ -20,21 +21,21 @@
 				        </div>
 			        </div>
 			        <div class="streetshot_right">
-				        <img class="btn album" data-album="5" src="<?php echo thumbnail(array_shift($images), array(850, 850))?>" />
+				        <img class="btn album" data-album="5" data-index='<?php $next_index += 1; echo $next_index;?>'  src="<?php echo thumbnail(array_shift($images), array(850, 850))?>" />
 			        </div>
 		        </div>
 		        <?php $third_images = array_splice($images, 0, 3)?>
 		        <div class="list limit cs-clear  ss_row2">
 			        <div class="ss_list">
 				        <?php foreach ($third_images as $image):?>
-					        <img class="btn album" data-album="5" src="<?php echo $image?>" />
+					        <img class="btn album" data-index='<?php $next_index += 1; echo $next_index;?>' data-album="5" src="<?php echo $image?>" />
 				        <?php endforeach;?>
 			        </div>
 		        </div>
 
 		        <div class="limit cs-clear ss_row3">
 			        <div class="left">
-			            <img class="btn album" data-album="5" src="<?php echo array_shift($images)?>" />
+			            <img class="btn album" data-index='<?php $next_index += 1; echo $next_index;?>' data-album="5" src="<?php echo array_shift($images)?>" />
 			        </div>
 		        </div>
 		    </div>
@@ -43,21 +44,21 @@
 	        <div class="ss_group">
 		        <div class='limit cs-clear ss_row1'>
 			        <div class="streetshot_right">
-				        <img class="btn album" data-album="5" src="<?php echo array_shift($images)?>" />
+				        <img class="btn album" data-index='<?php $next_index += 1; echo $next_index;?>' data-album="5" src="<?php echo array_shift($images)?>" />
 			        </div>
 		        </div>
 		        <?php $third_images = array_splice($images, 0, 3)?>
 		        <div class="list limit cs-clear  ss_row2">
 			        <div class="ss_list">
 				        <?php foreach ($third_images as $image):?>
-					        <img class="btn album" data-album="5" src="<?php echo $image?>" />
+					        <img class="btn album" data-index='<?php $next_index += 1; echo $next_index;?>' data-album="5" src="<?php echo $image?>" />
 				        <?php endforeach;?>
 			        </div>
 		        </div>
 
 		        <div class="limit cs-clear ss_row3">
 			        <div class="left">
-				        <img class="btn album" data-album="5" src="<?php echo array_shift($images)?>" />
+				        <img class="btn album" data-index='<?php $next_index += 1; echo $next_index;?>' data-album="5" src="<?php echo array_shift($images)?>" />
 			        </div>
 		        </div>
 		    </div>
@@ -65,21 +66,21 @@
 	        <div class="ss_group">
 		        <div class='limit cs-clear ss_row1'>
 			        <div class="streetshot_right">
-				        <img class="btn album" data-album="5" src="<?php echo array_shift($images)?>" />
+				        <img class="btn album" data-index='<?php $next_index += 1; echo $next_index;?>' data-album="5" src="<?php echo array_shift($images)?>" />
 			        </div>
 		        </div>
 		        <?php $third_images = array_splice($images, 0, 3)?>
 		        <div class="list limit cs-clear  ss_row2">
 			        <div class="ss_list">
 				        <?php foreach ($third_images as $image):?>
-					        <img class="btn album" data-album="5" src="<?php echo $image?>" />
+					        <img class="btn album" data-index='<?php $next_index += 1; echo $next_index;?>' data-album="5" src="<?php echo $image?>" />
 				        <?php endforeach;?>
 			        </div>
 		        </div>
 
 		        <div class="limit cs-clear ss_row3">
 			        <div class="left">
-				        <img class="btn album" data-album="5" src="<?php echo array_shift($images)?>" />
+				        <img class="btn album" data-index='<?php $next_index += 1; echo $next_index;?>' data-album="5" src="<?php echo array_shift($images)?>" />
 			        </div>
 		        </div>
 	        </div>
