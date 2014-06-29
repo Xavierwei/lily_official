@@ -1,7 +1,7 @@
 <div class="header" data-0="height:100px;" data-100="height:70px;">
     <ul id='nav' data-0="line-height:50px;" data-100="line-height:24px;">
         <li class='item logo' >
-            <img src="./images/logo.png">
+            <img src="./images/ft_logo.png">
         </li>
         <li class='item' style="display:none">
             <h2 data-title="LILY-CLUB"><span class="club"><?php echo Yii::t("strings", "VIP CLUB")?></span></h2>

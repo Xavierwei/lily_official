@@ -46,7 +46,7 @@
           <div class="ft_list">
             <h2><?php echo Yii::t("strings", "JOB")?></h2>
             <ol>
-              <li><a href="./job"><?php $job = loadFirstJob(); echo $job->title?></a></li>
+              <li><a href="./job"><?php echo Yii::t("strings", "HAPPY MONDAY")?></a></li>
             </ol>
           </div>
           <div class="ft_list">
