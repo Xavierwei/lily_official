@@ -50,7 +50,7 @@
     .home_img3 {margin:5%;}
     .home_img3 img {margin:0;max-width:100%;width:100%;}
     .home_brand .left {max-width:none;float:none;padding:0 30px;}
-    .weibo {display: block;}
+    .weibo {display: block;padding-top:0;margin-top:-20px;}
     #links #nav li.item{display:block;text-align:center;margin:5% auto;height:auto;}
     #wrap .page .limit{margin-left:auto;margin-right:auto;padding-left:7%;padding-right:7%;}
     .home_new_cn{background-size:contain;}
@@ -73,6 +73,8 @@
     .page_event .event_list{width:auto;}
     .page_event .event_look{width:auto;text-align:center;}
     #wrap .page .limit.event_list {width:auto;}
+    .event_img img {left:0;}
+    .event_img p {display: none;}
     /* campaign page */
     .page_campaign{margin-top:12%;}
     .page_campaign .limit{text-align:center;}
@@ -121,6 +123,7 @@
     /* page storelocator */
     .page_storelocator{margin-top:60px;}
     .page_storelocator .store_additem{float:none;width:auto;}
+    .stores p {font-size:20px;}
     /* page starshop */
     .page_starshop{margin-top:60px;}
     .page_starshop .limit .desc{float:none;width:100%;}
@@ -137,7 +140,6 @@
     .search_popup {width:600px;margin-left:-300px;}
     .search_popup .search_input {width:350px;}
     .footer {line-height: 20px;position: relative;}
-    .ft_copy {font-size:10px;}
     .cs-height-footer {height:0;}
 }
 /* mobile menu part */
@@ -148,7 +150,7 @@ body.mobile.open .header{-webkit-transition:all 0.3s ease;-moz-transition:all 0.
 body.mobile .header{left:10px;}
 body.mobile .header .menu{left:5px;}
 body .mbmenu{color:#000;background:#fff;left:-250px;width:250px;height:100%;top:0;z-index:1000;position:fixed;display:none;-webkit-box-shadow:inset -12px 0px 12px -14px rgba(0,0,0,0.38);-moz-box-shadow:inset -12px 0px 12px -14px rgba(0,0,0,0.38);box-shadow:inset -12px 0px 12px -14px rgba(0,0,0,0.38);}
-body .mbmenu h2{font-size:36px;font-weight:200;margin:26px 20px;cursor:pointer;}
+body .mbmenu h2{font-size:30px;font-weight:bold;margin:26px 20px;cursor:pointer;}
 body .mbmenu ol{list-style:none;height:0px;padding:0;overflow:hidden;}
 body .mbmenu ol.active{height:auto;}
 body .mbmenu ol a{display:block;padding:13px 0px 13px 20px;color:#777;font-size:25px;}
