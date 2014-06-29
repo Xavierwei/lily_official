@@ -117,7 +117,7 @@
     .ft_links{float:none;width:auto;text-align:center;margin:0;}
     .search_popup {width:600px;margin-left:-300px;}
     .search_popup .search_input {width:350px;}
-    .footer {line-height: 20px;}
+    .footer {line-height: 20px;position: relative;}
 }
 /* mobile menu part */
 body.mobile,
