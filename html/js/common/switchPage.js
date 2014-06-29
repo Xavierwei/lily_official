@@ -216,14 +216,15 @@ define([
 
     var updatePage = function () {
         $.ajax({
-            url : sCur + '.php',
+            url : sCur ,
             method:'get',
             beforeSend: function () {
                 pageSwitchAnimate();
             },
             success: function(str) {
                 var dHtml = $('<div>' + str + '</div>');
-
+                // update title
+                document.title = dHtml.find('title').html();
                 setContent(dHtml.find('#wrap').html())
             }
         })
@@ -240,7 +241,7 @@ define([
                 var href = location.href;
                 var match = href.match( /\/(\w+)(\?[.*])?$/ );
                 var page = match ? match[1] : 'index';
-                History.replaceState( { url: page } , 'page' , href  );
+                History.replaceState( { url: page } , undefined , href  );
                 // Bind to StateChange Event
                 History.Adapter.bind(window,'statechange',function(){ // Note: We are using statechange instead of popstate
                     var State = History.getState(); // Note: We are using History.getState() instead of event.state
@@ -286,10 +287,13 @@ define([
                         // update animation judge params
                         isNext = nTarget > nCur;
                         autoClick = true;
+
+
+                        console.log(sTitle);
                         History.pushState({
                             isNext: isNext,
                             url: sCur
-                        }, sTitle , "./" + sCur);
+                        },  undefined , "./" + sCur);
                         return false;
                     }
                 })
