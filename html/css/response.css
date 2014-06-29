@@ -35,7 +35,10 @@
     #nav {display: none;}
     .menu {display:block;width:102px;height:102px;}
     .search {right:30px;}
-    .language {right:80px;}
+    .language {right:70px;}
+    .search{background:url('../images/hdicon_m.png') no-repeat -191px 0;width:37px;height:37px;position:absolute;right:25px;top:42px;}
+    .language a{background:url('../images/hdicon_m.png') no-repeat 0 0;height:35px;width:75px;}
+    .language .lang_cn{background-position:-78px 0;}
     .job_item{display:block;margin:0 auto;}
     .event_item{display:block;margin:0 auto;}
     .page {margin-bottom: 0px;}
