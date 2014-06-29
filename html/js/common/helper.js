@@ -103,7 +103,7 @@ define([
     }
 
     var enableList = function() {
-        var data = null;
+        var imageData = null;
         // album list
         dBody.delegate('.album', 'click', function() {
             var imgIndex =  $(this).data('index');//$('.album').index( this ); //$(this).attr('src').match(/(\d+)\.\w+$/)[1];
@@ -173,17 +173,25 @@ define([
             var albumId = $(this).data('album');
             if(albumId == undefined) albumId = 1;
 
+            if( imageData ){
+                var sAlbum = Handlebars.compile(albumTpl)({ data : imageData });
 
-            api.getAlbumList({
-                data : { id : albumId },
-                success : function (aData) {
-                    var sAlbum = Handlebars.compile(albumTpl)({ data : aData });
+                overlay(sAlbum, function () {
+                    bFunc(imageData);
+                });
+            } else {
+                api.getAlbumList({
+                    data : { id : albumId },
+                    success : function (aData) {
+                        imageData = aData;
+                        var sAlbum = Handlebars.compile(albumTpl)({ data : aData });
 
-                    overlay(sAlbum, function () {
-                        bFunc(aData);
-                    });
-                }
-            })
+                        overlay(sAlbum, function () {
+                            bFunc(aData);
+                        });
+                    }
+                });
+            }
         })
 
         // video list
