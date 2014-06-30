@@ -5,7 +5,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-	<meta name="viewport" content="width=640, minimum-scale=0.5, maximum-scale=1, target-densityDpi=290,user-scalable = no" />
+    <meta name="viewport" content="width=640, minimum-scale=0.5, maximum-scale=1, target-densityDpi=290,user-scalable = no,minimal-ui" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta content="telephone=no" name="format-detection" />
     <title><?php echo set_page_title();?></title>
