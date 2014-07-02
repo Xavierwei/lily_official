@@ -205,9 +205,10 @@ define([
                 };
 
             var albumId = $(this).data('album');
+            
             if(albumId == undefined) albumId = 1;
-
-            if( imageData ){
+            
+            if( imageData && false) {
                 var sAlbum = Handlebars.compile(albumTpl)({ data : imageData });
 
                 overlay(sAlbum, function () {
@@ -226,7 +227,7 @@ define([
                     }
                 });
             }
-        })
+        });
 
         // video list
         dBody.delegate('.video', 'click', function() {
@@ -377,7 +378,7 @@ define([
             var top = $('#play_ground').position().top - 140;
             $('html, body').animate({scrollTop : top});
         });
-    }
+    };
 
     var mapEvent = function() {
         dBody.delegate('.starshop .store_view', 'click', function() {
