@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/nav.php" afterPath="$PROJECT_DIR$/html/include/nav.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/footer.php" afterPath="$PROJECT_DIR$/html/include/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/response.css" afterPath="$PROJECT_DIR$/html/css/response.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/select.js" afterPath="$PROJECT_DIR$/html/js/common/select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
@@ -253,19 +250,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="27" selection-start="6605" selection-end="6605" vertical-scroll-proportion="0.42600897">
+            <state line="142" column="27" selection-start="6605" selection-end="6605" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="response.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="response.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/css/response.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="74" selection-start="8163" selection-end="8163" vertical-scroll-proportion="0.0">
+            <state line="28" column="28" selection-start="972" selection-end="972" vertical-scroll-proportion="-0.85201794">
               <folding />
             </state>
           </provider>
@@ -274,7 +271,7 @@
       <file leaf-file-name="helper.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/js/common/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="9" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
+            <state line="43" column="5" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -310,11 +307,11 @@
       <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/include/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="20" selection-start="4991" selection-end="4991" vertical-scroll-proportion="-7.964286">
+            <state line="26" column="25" selection-start="1437" selection-end="1437" vertical-scroll-proportion="10.857142">
               <folding>
                 <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#4;n#ul#0;n#div#2;n#!!top" expanded="true" />
-                <marker date="1404314784000" expanded="true" signature="8550:8651" placeholder="..." />
+                <marker date="1404318260000" expanded="true" signature="8549:8650" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -376,11 +373,11 @@
         <option value="$PROJECT_DIR$/html/js/common/loading.js" />
         <option value="$PROJECT_DIR$/html/css/jquery.fancybox.css" />
         <option value="$PROJECT_DIR$/html/js/common/switchPage.js" />
-        <option value="$PROJECT_DIR$/html/include/footer.php" />
-        <option value="$PROJECT_DIR$/html/css/response.css" />
         <option value="$PROJECT_DIR$/html/js/common/select.js" />
         <option value="$PROJECT_DIR$/html/include/nav.php" />
         <option value="$PROJECT_DIR$/html/css/style.css" />
+        <option value="$PROJECT_DIR$/html/include/footer.php" />
+        <option value="$PROJECT_DIR$/html/css/response.css" />
       </list>
     </option>
   </component>
@@ -725,25 +722,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="9" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/include/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="20" selection-start="4991" selection-end="4991" vertical-scroll-proportion="-7.964286">
-          <folding>
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#4;n#ul#0;n#div#2;n#!!top" expanded="true" />
-            <marker date="1404314784000" expanded="true" signature="8550:8651" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/response.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="74" selection-start="8163" selection-end="8163" vertical-scroll-proportion="0.0">
+        <state line="43" column="5" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -771,7 +750,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="27" selection-start="6605" selection-end="6605" vertical-scroll-proportion="0.42600897">
+        <state line="142" column="27" selection-start="6605" selection-end="6605" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/include/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="25" selection-start="1437" selection-end="1437" vertical-scroll-proportion="10.857142">
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#2;n#!!top" expanded="true" />
+            <marker date="1404318260000" expanded="true" signature="8549:8650" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/css/response.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="28" selection-start="972" selection-end="972" vertical-scroll-proportion="-0.85201794">
           <folding />
         </state>
       </provider>
