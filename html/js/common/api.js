@@ -29,7 +29,7 @@ define([
                  oConfig.failure(err);
              }
         })
-    }
+    };
 
     // data format: { province : sProvince, city : sCity }, may need country name
     var getStarshop = function (oConfig) {
