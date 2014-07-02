@@ -87,11 +87,12 @@ define([
 
     var starshopSelect = function (dStarshop) {
         var oAddress = map.getAddress(),
+            dContainer = $(".page_starshop"),
             dBtn = $('.page_starshop .searchbtn'),
             dStores = $('.page_starshop .stores'),
-            dCountry = $('#country'),
-            dProvince = $('#province'),
-            dCity = $('#city'),
+            dCountry = $('#country', dContainer),
+            dProvince = $('#province', dContainer),
+            dCity = $('#city', dContainer),
             dCountrySelect = dCountry.find('select'),
             dProvinceSelect = dProvince.find('select'),
             dCitySelect = dCity.find('select'),
@@ -246,7 +247,7 @@ define([
                     dProvinceText.data('val',sProvince);
                     dCityText.data('val',sCity);
                     dDistrictText.data('val',sDistrict);
-                }, 100)
+                }, 100);
             },
             searchShop = function (findNear) {
                 var data = {country:'CN', city:dCityText.data('val'), distinct:dDistrictText.data('val'), star:0};
@@ -256,7 +257,7 @@ define([
                         var str = Handlebars.compile(storelocatorTpl)({
                             title : aData.shopes[0].city,
                             data : aData.shopes,
-							_eView: _e("view_map")
+                            _eView: _e("view_map")
                         });
 
                         dStores.html(str);
