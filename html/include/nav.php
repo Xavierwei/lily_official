@@ -1,6 +1,6 @@
 <div class="header" data-0="height:100px;" data-100="height:70px;">
-    <ul id='nav' data-0="line-height:50px;" data-100="line-height:24px;">
-        <li class='item logo' >
+    <ul id='nav' >
+        <li class='item logo' data-0="line-height:50px;" data-100="line-height:24px;">
             <img src="./images/ft_logo.png">
         </li>
         <li class='item' style="display:none">
@@ -13,10 +13,10 @@
             </ol>
         </li>
         <li class='item <?php echo active_class("home")?>'>
-          <h2><a class="" data-title="Home" href='./index' title='index' index='1'><?php echo Yii::t("strings", "Home")?></a></h2>
+          <h2 data-0="padding-top:25px;" data-100="padding-top:10px;"><a class="" data-title="Home" href='./index' title='index' index='1'><?php echo Yii::t("strings", "Home")?></a></h2>
         </li>
         <li class='item <?php echo active_class("brand")?>'>
-            <h2  data-title="BRAND"><?php echo Yii::t("strings", "BRAND")?></h2>
+            <h2 data-0="padding-top:25px;" data-100="padding-top:10px;" data-title="BRAND"><?php echo Yii::t("strings", "BRAND")?></h2>
             <ol>
                 <li><a data-title="BRAND-STORY" href='./index?hash=brand_story' class="on" title='index' index='1'><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
                 <li><a data-title="HISTORY" href='./history' title='history' index='2'><?php echo Yii::t("strings", "HISTORY")?></a></li>
@@ -24,7 +24,7 @@
             </ol>
         </li>
         <li class='item <?php echo active_class("product")?>'>
-            <h2 data-title="PRODUCT"><?php echo Yii::t("strings", "PRODUCT")?></h2>
+            <h2 data-0="padding-top:25px;" data-100="padding-top:10px;" data-title="PRODUCT"><?php echo Yii::t("strings", "PRODUCT")?></h2>
             <ol>
                 <li><a data-title="CAMPAIGN" href='./campaign' title='campaign' index='4'><?php echo Yii::t("strings", "CAMPAIGN")?></a></li>
                 <li><a data-title="LOOKBOOK" href='./lookbook' title="lookbook" index='5'><?php echo Yii::t("strings", "LOOK BOOK")?></a></li>
@@ -32,7 +32,7 @@
             </ol>
         </li>
         <li class='item <?php echo active_class("store")?>'>
-            <h2 data-title="STORE"><?php echo Yii::t("strings", "STORE")?></h2>
+            <h2 data-0="padding-top:25px;" data-100="padding-top:10px;" data-title="STORE"><?php echo Yii::t("strings", "STORE")?></h2>
             <ol>
                 <li><a data-title="STAR-STORE" href='./starstore' title="starstore" index='7'><?php echo Yii::t("strings", "STAR STORE")?></a></li>
                 <li><a data-title="STORE-LOCATOR" href='./storelocator' title="storelocator" index='8'><?php echo Yii::t("strings", "STORE LOCATOR")?></a></li>

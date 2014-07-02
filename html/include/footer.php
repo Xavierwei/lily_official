@@ -44,21 +44,21 @@
 				    </ol>
 			    </div>-->
           <div class="ft_list">
-            <h2><?php echo Yii::t("strings", "JOB")?></h2>
+            <h2><a href="./job"><?php echo Yii::t("strings", "JOB")?></a></h2>
             <ol>
-              <li><a href="./job"><?php echo Yii::t("strings", "HAPPY MONDAY")?></a></li>
+              <li><?php echo Yii::t("strings", "HAPPY MONDAY")?></li>
             </ol>
           </div>
           <div class="ft_list">
-            <h2><?php echo Yii::t("strings", "CONTACT")?></h2>
+            <h2><a href="./contact"><?php echo Yii::t("strings", "CONTACT")?></a></h2>
             <ol>
-              <li><a href="./contact"><?php echo Yii::t("strings", "COME TO SAY HELLO")?></a></li>
+              <li><?php echo Yii::t("strings", "COME TO SAY HELLO")?></li>
             </ol>
           </div>
           <div class="ft_list">
-            <h2><?php echo Yii::t("strings", "PRIVACY")?></h2>
+            <h2><a href="./privacy"><?php echo Yii::t("strings", "PRIVACY")?></a></h2>
             <ol>
-              <li><a href="./privacy"><?php echo Yii::t("strings", "HOTLINE")?> <br /> 134-654-987 </a></li>
+              <li><?php echo Yii::t("strings", "HOTLINE")?> <br /> 134-654-987</li>
             </ol>
           </div>
 			    <div class="ft_list">
