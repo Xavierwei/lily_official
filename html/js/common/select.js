@@ -83,16 +83,16 @@ define([
         dDistrictSelect.change(function () {
             updateText(false);
         });
-
-    }
+    };
 
     var starshopSelect = function (dStarshop) {
         var oAddress = map.getAddress(),
+            dContainer = $(".page_starshop"),
             dBtn = $('.page_starshop .searchbtn'),
             dStores = $('.page_starshop .stores'),
-            dCountry = $('#country'),
-            dProvince = $('#province'),
-            dCity = $('#city'),
+            dCountry = $('#country', dContainer),
+            dProvince = $('#province', dContainer),
+            dCity = $('#city', dContainer),
             dCountrySelect = dCountry.find('select'),
             dProvinceSelect = dProvince.find('select'),
             dCitySelect = dCity.find('select'),
@@ -108,7 +108,7 @@ define([
 
                     //dProvinceText.html(sProvince);
                     dCityText.html(sCity);
-                }, 100)
+                }, 100);
             };
 
         dCitySelect.change(function () {
@@ -210,17 +210,18 @@ define([
                     $(this).html(_e('view_map'));
                 }
             }
-        })
-    }
+        });
+    };
 
     var storelocatorSelect = function (dStorelocator) {
         var oAddress = map.getAddress(),
+            dContainer = $(".page_storelocator"),
             dMap = $('#map'),
             dStores = $('.page_storelocator .stores'),
-            dCountry = $('#country'),
-            dProvince = $('#province'),
-            dCity = $('#city'),
-            dDistrict = $('#district'),
+            dCountry = $('#country',dContainer),
+            dProvince = $('#province', dContainer),
+            dCity = $('#city', dContainer),
+            dDistrict = $('#district', dContainer),
             dCountrySelect = dCountry.find('select'),
             dCountryText = dCountry.find('.store_sl_txt'),
             dProvinceSelect = dProvince.find('select'),
@@ -246,7 +247,7 @@ define([
                     dProvinceText.data('val',sProvince);
                     dCityText.data('val',sCity);
                     dDistrictText.data('val',sDistrict);
-                }, 100)
+                }, 100);
             },
             searchShop = function (findNear) {
                 var data = {country:'CN', city:dCityText.data('val'), distinct:dDistrictText.data('val'), star:0};
@@ -256,7 +257,7 @@ define([
                         var str = Handlebars.compile(storelocatorTpl)({
                             title : aData.shopes[0].city,
                             data : aData.shopes,
-							_eView: _e("view_map")
+                            _eView: _e("view_map")
                         });
 
                         dStores.html(str);
@@ -318,7 +319,7 @@ define([
             map.zoomMap(18);
             var height = $('#map').position().top;
             $('html,body').animate({scrollTop:height});
-        })
+        });
     };
 
     // enable the select
@@ -342,7 +343,7 @@ define([
         if (dStorelocator.length) {
             storelocatorSelect(dStorelocator);
         }
-    }
+    };
 
     return {
         init : init
