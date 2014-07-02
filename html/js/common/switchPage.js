@@ -128,7 +128,7 @@ define([
                 // local hash
                    setTimeout(function(){
                        localHash();
-                   },1000);
+                   },2000);
 
             };
 
@@ -219,13 +219,13 @@ define([
             url : sCur ,
             method:'get',
             beforeSend: function () {
-                pageSwitchAnimate();
             },
             success: function(str) {
                 var dHtml = $('<div>' + str + '</div>');
                 // update title
                 document.title = dHtml.find('title').html();
-                setContent(dHtml.find('#wrap').html())
+                setContent(dHtml.find('#wrap').html());
+                pageSwitchAnimate();
             }
         })
     }
@@ -369,6 +369,9 @@ define([
 
         // mobile menu need
         if (!helper.isPC()) {
+            setTimeout(function(){
+                localHash();
+            },1000);
             dBody.addClass('mobile');
         }
         else
