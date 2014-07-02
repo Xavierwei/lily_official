@@ -53,8 +53,9 @@ a:hover {opacity:0.8;}
 #nav{height: 100%; line-height: 50px;}
 #nav li.item {float:left;text-transform: uppercase;width:200px;cursor:pointer;}
 #nav li.item:hover {}
-#nav li.item h2 {padding:25px 0 25px 30px;}
+#nav li.item h2 {padding:25px 0 0 0;margin:0 0 0 30px;display:inline-block;}
 #nav li.item h2 a {-webkit-transition: none;-moz-transition: none;-o-transition: none;-ms-transition: none;transition: none;}
+#nav li.active h2 {border-bottom:2px solid #000;}
 #nav li ol {display: none;list-style: none;margin:0;padding:0;padding:0 0 20px 30px; background: url(about:blank) \9;line-height:24px;}
 #nav li ol li {margin:0 0 10px 0;}
 #nav li ol li a:hover {text-decoration: underline;}
@@ -337,9 +338,9 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .job_socialbtn{background:#000 url('../images/job_cn3.png') center no-repeat;width:308px;height:48px;margin:0 auto 170px;display:block;}
 .job_campus{background:url('../images/job_cn2.png') center no-repeat;margin:0 0 80px;height:30px}
 .job_item{display:inline-block;width:360px;text-align:center;margin:10px 30px 40px 30px;}
-.job_itemtit{font-size:36px;line-height:55px;height:125px;text-align:left;margin-left:10%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.job_itemtit{font-family:arial;font-size:20px;line-height:45px;height:99px;font-weight:bold;text-align:left;margin-left:10%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .job_itemtit strong{display:block;font-family:arial;font-size:48px}
-.job_itemtxt{font-size:12px;line-height:16px;text-align:left;height:97px;margin:0 0 20px 10%;overflow:hidden;}
+.job_itemtxt{font-size:15px;text-align:left;height:97px;margin:0 0 20px 10%;overflow:hidden;}
 .job_itembtn{background:#000;color:#fff;font-size:16px;font-family:arial;display:inline-block;width:80%;height:48px;line-height:48px;text-align:center;}
 
 #wrap .page .limit.job_list {width:1693px;margin:0 auto;}

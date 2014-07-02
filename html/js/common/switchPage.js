@@ -6,9 +6,10 @@ define([
     // apps
     'common/loading',
     'common/helper',
+    'common/select',
     'lib/text!templates/links.html',
     'lib/text!templates/weixin.html'
-], function($, Handlebars, History , loading, helper, linksTpl, weixinTpl) {
+], function($, Handlebars, History , loading, helper, select, linksTpl, weixinTpl) {
     var sPath = location.pathname,
         sCur = sPath.replace(sPath.match(/^.*\php\//), ''),
         isNext,
@@ -130,6 +131,8 @@ define([
                        localHash();
                    },2000);
 
+                select.init();
+
             };
 
         // prevent duplicate animate
@@ -222,6 +225,8 @@ define([
             },
             success: function(str) {
                 var dHtml = $('<div>' + str + '</div>');
+                var activedNav = dHtml.find('#nav li.item').index(dHtml.find('#nav li.active'));
+                $('#nav li.item').removeClass('active').eq(activedNav).addClass('active');
                 // update title
                 document.title = dHtml.find('title').html();
                 setContent(dHtml.find('#wrap').html());
