@@ -120,7 +120,7 @@ define([
                 // try to init the map
                 map.init();
 
-                var dHeight = $(window).height() - 70*2;
+                var dHeight = $(window).height() - 90*2;
                 dRight.animate({
                     height: dHeight
                 } , 200);
@@ -144,7 +144,9 @@ define([
                     // show tapes
                     dTape.fadeIn();
 
-                    localHash();
+//                    setTimeout(function(){
+//                        localHash();
+//                    },1000);
 
                     if (oSkrollr) {
                         oSkrollr.refresh();
@@ -160,7 +162,7 @@ define([
         })
 
         $(window).resize(function(){
-            var dHeight = $(window).height() - 70*2;
+            var dHeight = $(window).height() - 90*2;
             dRight.css('height', dHeight);
             dLeft.css('height', dHeight);
         });
