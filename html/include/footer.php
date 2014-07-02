@@ -3,7 +3,7 @@
 		    <div class="ft_logo"></div>
 
 		    <div class="ft_com">
-			    <div class="ft_list <?php echo active_class("brand")?>">
+			    <div class="ft_list">
 				    <h2 data-title="BRAND"><?php echo Yii::t("strings", "BRAND")?></h2>
 				    <ol>
 					    <li><a data-title="BRAND-STORY" href='./index?hash=brand_story'><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
@@ -11,7 +11,7 @@
 					    <li><a data-title="EVENTS" href='./events'><?php echo Yii::t("strings", "EVENTS")?></a></li>
 				    </ol>
 			    </div>
-			    <div class="ft_list <?php echo active_class("product")?>">
+			    <div class="ft_list">
 				    <h2 data-title="PRODUCT"><?php echo Yii::t("strings", "PRODUCT")?></h2>
 				    <ol>
 					    <li><a data-title="CAMPAIGN" href='./campaign'><?php echo Yii::t("strings", "CAMPAIGN")?></a></li>
@@ -19,7 +19,7 @@
 					    <li><a data-title="STREET-SNAP" href='./streetsnap'><?php echo Yii::t("strings", "STREET SNAP")?></a></li>
 				    </ol>
 			    </div>
-			    <div class="ft_list <?php echo active_class("store")?>">
+			    <div class="ft_list">
 				    <h2 data-title="STORE"><?php echo Yii::t("strings", "STORE")?></h2>
 				    <ol>
 					    <li data-title="STAR-STORE"><a href='./starstore'><?php echo Yii::t("strings", "STAR STORE")?></a></li>
@@ -44,18 +44,18 @@
 				    </ol>
 			    </div>-->
           <div class="ft_list">
-            <h2 <?php echo active_class("job")?>><?php echo Yii::t("strings", "JOB")?></h2>
+            <h2><?php echo Yii::t("strings", "JOB")?></h2>
             <ol>
               <li><a href="./job"><?php echo Yii::t("strings", "HAPPY MONDAY")?></a></li>
             </ol>
           </div>
-          <div class="ft_list <?php echo active_class("contact")?>">
+          <div class="ft_list">
             <h2><?php echo Yii::t("strings", "CONTACT")?></h2>
             <ol>
               <li><a href="./contact"><?php echo Yii::t("strings", "COME TO SAY HELLO")?></a></li>
             </ol>
           </div>
-          <div class="ft_list <?php echo active_class("privacy")?>">
+          <div class="ft_list">
             <h2><?php echo Yii::t("strings", "PRIVACY")?></h2>
             <ol>
               <li><a href="./privacy"><?php echo Yii::t("strings", "HOTLINE")?> <br /> 134-654-987 </a></li>
@@ -91,11 +91,11 @@
         <!-- mobile menu -->
     <div class='mbmenu'>
         <ul>
-            <li class='item'>
+            <li class='item <?php echo active_class("home")?>'>
                 <h2><a data-title="Home" href='./index' title='index' index='1'><?php echo Yii::t("strings", "Home")?></a></h2>
                 <ol></ol>
             </li>
-            <li class='item'>
+            <li class='item <?php echo active_class("brand")?>'>
                 <h2 data-title="BRAND"><?php echo Yii::t("strings", "BRAND")?></h2>
                 <ol>
                     <li><a href='./index?hash=brand_story' data-title="BRAND STORY"><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
@@ -103,7 +103,7 @@
                     <li><a href='./events' data-title="EVENTS"><?php echo Yii::t("strings", "EVENTS")?></a></li>
                 </ol>
             </li>
-            <li class='item'>
+            <li class='item <?php echo active_class("product")?>'>
                 <h2 data-title="PRODUCT"><?php echo Yii::t("strings", "PRODUCT")?></h2>
                 <ol>
                     <li><a href='./campaign' data-title="CAMPAIGN"><?php echo Yii::t("strings", "CAMPAIGN")?></a></li>
@@ -111,7 +111,7 @@
                     <li><a href='./streetsnap' data-title="STREET-SNAP"><?php echo Yii::t("strings", "STREET SNAP")?></a></li>
                 </ol>
             </li>
-            <li class='item'>
+            <li class='item <?php echo active_class("store")?>'>
                 <h2 data-title="STORE"><?php echo Yii::t("strings", "STORE")?></h2>
                 <ol>
                     <li><a href='./starstore' data-title="STAR-STORE"><?php echo Yii::t("strings", "STAR STORE")?></a></li>
