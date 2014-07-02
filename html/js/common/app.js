@@ -35,6 +35,8 @@ define([
                 });
         }
 
+        map.init();
+
         // start catch album and videos , weibo events
         helper.init();
 
