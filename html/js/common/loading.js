@@ -331,27 +331,22 @@ define([
                 return;
             }
 
-            if ( 75 < nVal && nVal <= 100 && !_finished['top'] ) {
+            if ( 75 < nVal && nVal < 100 ) {
                 dTop.stop(true , true)
                     .animate({
                         'width': (nVal - 75) / 25 * 90 + '%'
-                    } , nTime , '' , function(){
-                        if( nVal == 100 ){
-                            _finished['top'] = 1;
-                            clearInterval( _timer );
-                        }
-                    });
+                    } , nTime  );
                 return;
             }
-            // if( !_finished['top'] ){
-            //     dTop.animate({
-            //         width: 900
-            //     } , nTime / 2 , '' , function(){
-            //         _finished['top'] = 1;
-            //     });
-            //     clearInterval( _timer );
-            //     return;
-            // }
+            if( !_finished['top'] ){
+                dTop.animate({
+                    width: 900
+                } , nTime / 2 , '' , function(){
+                    _finished['top'] = 1;
+                });
+                clearInterval( _timer );
+                return;
+            }
         } , nTime / 2 );
         imgLoad.on('progress', function(instance, image) {
             nLoad += 1;
