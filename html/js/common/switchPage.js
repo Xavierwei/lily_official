@@ -108,6 +108,7 @@ define([
 
         // if using mobile or ugly ie, stop the animation
         if (!helper.canAnimate()) {
+            setContent( html );
             return updateBodyClass();
         }
 
