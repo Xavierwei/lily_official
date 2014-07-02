@@ -173,7 +173,8 @@ body.mobile.open .header{-webkit-transition:all 0.3s ease;-moz-transition:all 0.
 body.mobile .header{left:10px;}
 body.mobile .header .menu{left:5px;}
 body .mbmenu{color:#000;background:#fff;left:-250px;width:250px;height:100%;top:0;z-index:1000;position:fixed;display:none;-webkit-box-shadow:inset -12px 0px 12px -14px rgba(0,0,0,0.38);-moz-box-shadow:inset -12px 0px 12px -14px rgba(0,0,0,0.38);box-shadow:inset -12px 0px 12px -14px rgba(0,0,0,0.38);}
-body .mbmenu h2{font-size:30px;font-weight:bold;margin:26px 20px;cursor:pointer;}
+body .mbmenu h2{font-size:30px;font-weight:bold;margin:26px 20px 10px 20px;padding-bottom:15px;cursor:pointer;display: inline-block;}
+body .mbmenu li.active h2 {border-bottom:2px solid #000;}
 body .mbmenu ol{list-style:none;height:0px;padding:0;overflow:hidden;}
 body .mbmenu ol.active{height:auto;}
 body .mbmenu ol a{display:block;padding:13px 0px 13px 20px;color:#777;font-size:25px;}

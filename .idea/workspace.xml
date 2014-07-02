@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/footer.php" afterPath="$PROJECT_DIR$/html/include/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/job.php" afterPath="$PROJECT_DIR$/html/job.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lookbook.php" afterPath="$PROJECT_DIR$/html/lookbook.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/privacy.php" afterPath="$PROJECT_DIR$/html/privacy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/nav.php" afterPath="$PROJECT_DIR$/html/include/nav.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/response.css" afterPath="$PROJECT_DIR$/html/css/response.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/select.js" afterPath="$PROJECT_DIR$/html/js/common/select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404311421966" ignored="false" />
     <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404217762041" ignored="false" />
-    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404314240498" ignored="false" />
+    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404317979813" ignored="false" />
     <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404306320943" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/countdown.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401352610756" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402703079365" ignored="false" />
@@ -69,7 +70,7 @@
     <file path="$PROJECT_DIR$/../ave_1000/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401490627058" ignored="false" />
     <file path="/*.regexp" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403759063648" ignored="false" />
     <file path="/milestone.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402283386255" ignored="false" />
-    <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404306046954" ignored="false" />
+    <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404314974387" ignored="false" />
     <file path="/campaign.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402363349987" ignored="false" />
     <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403328066083" ignored="false" />
     <file path="/lookbook.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155937361" ignored="false" />
@@ -158,7 +159,7 @@
     <file path="/news.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404294681259" ignored="false" />
     <file path="/lookbook.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403837030576" ignored="false" />
     <file path="/functions.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403404529841" ignored="false" />
-    <file path="/nav.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404301526046" ignored="false" />
+    <file path="/nav.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404317140796" ignored="false" />
     <file path="/history.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403439726382" ignored="false" />
     <file path="/events.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403443078394" ignored="false" />
     <file path="/club_giftcard.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403443914760" ignored="false" />
@@ -252,10 +253,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="340" column="31" selection-start="19371" selection-end="19371" vertical-scroll-proportion="0.0">
+            <state line="142" column="27" selection-start="6605" selection-end="6605" vertical-scroll-proportion="0.42600897">
               <folding />
             </state>
           </provider>
@@ -264,7 +265,7 @@
       <file leaf-file-name="response.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/response.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="6" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0">
+            <state line="175" column="74" selection-start="8163" selection-end="8163" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -300,20 +301,20 @@
       <file leaf-file-name="nav.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/include/nav.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="17" selection-start="2956" selection-end="2956" vertical-scroll-proportion="-25.785715">
+            <state line="34" column="71" selection-start="2772" selection-end="2772" vertical-scroll-proportion="-21.035715">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/include/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="31" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.09223301">
+            <state line="99" column="20" selection-start="4991" selection-end="4991" vertical-scroll-proportion="-7.964286">
               <folding>
                 <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#4;n#ul#0;n#div#2;n#!!top" expanded="true" />
-                <marker date="1404314377000" expanded="true" signature="8675:8776" placeholder="..." />
+                <marker date="1404314784000" expanded="true" signature="8550:8651" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -322,7 +323,7 @@
       <file leaf-file-name="switchPage.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="228" column="55" selection-start="6493" selection-end="6493" vertical-scroll-proportion="0.0">
+            <state line="222" column="25" selection-start="6193" selection-end="6193" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -331,7 +332,7 @@
       <file leaf-file-name="select.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="369" column="0" selection-start="14110" selection-end="14110" vertical-scroll-proportion="0.0">
+            <state line="94" column="15" selection-start="3451" selection-end="3451" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -372,14 +373,14 @@
         <option value="$PROJECT_DIR$/html/starstore.php" />
         <option value="$PROJECT_DIR$/html/include/header.php" />
         <option value="$PROJECT_DIR$/html/js/templates/news.html" />
-        <option value="$PROJECT_DIR$/html/include/nav.php" />
         <option value="$PROJECT_DIR$/html/js/common/loading.js" />
         <option value="$PROJECT_DIR$/html/css/jquery.fancybox.css" />
-        <option value="$PROJECT_DIR$/html/js/common/select.js" />
         <option value="$PROJECT_DIR$/html/js/common/switchPage.js" />
-        <option value="$PROJECT_DIR$/html/css/response.css" />
-        <option value="$PROJECT_DIR$/html/css/style.css" />
         <option value="$PROJECT_DIR$/html/include/footer.php" />
+        <option value="$PROJECT_DIR$/html/css/response.css" />
+        <option value="$PROJECT_DIR$/html/js/common/select.js" />
+        <option value="$PROJECT_DIR$/html/include/nav.php" />
+        <option value="$PROJECT_DIR$/html/css/style.css" />
       </list>
     </option>
   </component>
@@ -589,7 +590,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16068867" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09756097" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -715,23 +716,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="369" column="0" selection-start="14110" selection-end="14110" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/loading.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="104" column="49" selection-start="3645" selection-end="3645" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="55" selection-start="6493" selection-end="6493" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -743,35 +730,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/include/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="20" selection-start="4991" selection-end="4991" vertical-scroll-proportion="-7.964286">
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#2;n#!!top" expanded="true" />
+            <marker date="1404314784000" expanded="true" signature="8550:8651" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/css/response.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="6" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0">
+        <state line="175" column="74" selection-start="8163" selection-end="8163" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="222" column="25" selection-start="6193" selection-end="6193" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="15" selection-start="3451" selection-end="3451" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/include/nav.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="17" selection-start="2956" selection-end="2956" vertical-scroll-proportion="-25.785715">
+        <state line="34" column="71" selection-start="2772" selection-end="2772" vertical-scroll-proportion="-21.035715">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="340" column="31" selection-start="19371" selection-end="19371" vertical-scroll-proportion="0.0">
+        <state line="142" column="27" selection-start="6605" selection-end="6605" vertical-scroll-proportion="0.42600897">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/include/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="31" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.09223301">
-          <folding>
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#4;n#ul#0;n#div#2;n#!!top" expanded="true" />
-            <marker date="1404314377000" expanded="true" signature="8675:8776" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
