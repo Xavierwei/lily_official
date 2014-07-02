@@ -282,14 +282,15 @@ define([
 
             var nVal = parseInt((nLoad / nTotal) * 100);
             if (0 < nVal && nVal < 25) {
-                dRight.stop( true , true )
+                dRight.show().stop( true , true )
                     .animate({
                         'height': _dHeight * nVal / 25
                     } , nTime );
                 return;
             }
-            if( !_finished['right'] ){
-                dRight.animate({
+            if( _finished['right'] === undefined  ){
+                _finished['right'] = 0;
+                dRight.show().animate({
                     height: _dHeight
                 } , nTime / 2 , '' , function(){
                     _finished['right'] = 1;
@@ -298,14 +299,15 @@ define([
             }
 
             if (25 < nVal && nVal < 50 ) {
-                dBottom.stop( true , true )
+                dBottom.show().stop( true , true )
                     .animate({
                         'width': (nVal - 25) / 25 * 90 + '%'
                     } , nTime); 
                 return;
             }
-            if( !_finished['bottom'] ){
-                dBottom.animate({
+            if( _finished['bottom'] === undefined  ){
+                _finished['bottom'] = 0;
+                dBottom.show().animate({
                     width: '90%'
                 } , nTime / 2 , '' , function(){
                     _finished['bottom'] = 1;
@@ -315,15 +317,16 @@ define([
 
             if (50 < nVal && nVal < 75) {
 
-                dLeft.stop(true , true)
+                dLeft.show().stop(true , true)
                     .animate({
                         'height': (nVal - 50)/ 25 * _dHeight
                     } , nTime);
 
                 return;
             }
-            if( !_finished['left'] ){
-                dLeft.animate({
+            if( _finished['left'] === undefined  ){
+                _finished['left'] = 0;
+                dLeft.show().animate({
                     height: _dHeight
                 } , nTime / 2 , '' , function(){
                     _finished['left'] = 1;
@@ -332,14 +335,15 @@ define([
             }
 
             if ( 75 < nVal && nVal < 100 ) {
-                dTop.stop(true , true)
+                dTop.show().stop(true , true)
                     .animate({
                         'width': (nVal - 75) / 25 * 90 + '%'
                     } , nTime  );
                 return;
             }
-            if( !_finished['top'] ){
-                dTop.animate({
+            if( _finished['top'] === undefined  ){
+                _finished['top'] = 0;
+                dTop.show().animate({
                     width: 900
                 } , nTime / 2 , '' , function(){
                     _finished['top'] = 1;

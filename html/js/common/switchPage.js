@@ -104,8 +104,8 @@ define([
             },10);
         }
     }
-    var pageSwitchAnimate = function () {
-        
+    var pageSwitchAnimate = function ( html ) {
+
         // if using mobile or ugly ie, stop the animation
         if (!helper.canAnimate()) {
             return updateBodyClass();
@@ -125,6 +125,9 @@ define([
 
                 // update background animation
                 //updateBgColor();
+
+                // update html
+                setContent( html );
 
                 // local hash
                    setTimeout(function(){
@@ -229,8 +232,8 @@ define([
                 $('#nav li.item').removeClass('active').eq(activedNav).addClass('active');
                 // update title
                 document.title = dHtml.find('title').html();
-                setContent(dHtml.find('#wrap').html());
-                pageSwitchAnimate();
+                // setContent(dHtml.find('#wrap').html());
+                pageSwitchAnimate( dHtml.find('#wrap').html() );
             }
         })
     }
