@@ -3,7 +3,7 @@
 		    <div class="ft_logo"></div>
 
 		    <div class="ft_com">
-			    <div class="ft_list">
+			    <div class="ft_list <?php echo active_class("brand")?>">
 				    <h2 data-title="BRAND"><?php echo Yii::t("strings", "BRAND")?></h2>
 				    <ol>
 					    <li><a data-title="BRAND-STORY" href='./index?hash=brand_story'><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
@@ -11,7 +11,7 @@
 					    <li><a data-title="EVENTS" href='./events'><?php echo Yii::t("strings", "EVENTS")?></a></li>
 				    </ol>
 			    </div>
-			    <div class="ft_list">
+			    <div class="ft_list <?php echo active_class("product")?>">
 				    <h2 data-title="PRODUCT"><?php echo Yii::t("strings", "PRODUCT")?></h2>
 				    <ol>
 					    <li><a data-title="CAMPAIGN" href='./campaign'><?php echo Yii::t("strings", "CAMPAIGN")?></a></li>
@@ -19,7 +19,7 @@
 					    <li><a data-title="STREET-SNAP" href='./streetsnap'><?php echo Yii::t("strings", "STREET SNAP")?></a></li>
 				    </ol>
 			    </div>
-			    <div class="ft_list">
+			    <div class="ft_list <?php echo active_class("store")?>">
 				    <h2 data-title="STORE"><?php echo Yii::t("strings", "STORE")?></h2>
 				    <ol>
 					    <li data-title="STAR-STORE"><a href='./starstore'><?php echo Yii::t("strings", "STAR STORE")?></a></li>
@@ -44,18 +44,18 @@
 				    </ol>
 			    </div>-->
           <div class="ft_list">
-            <h2><a href="./job"><?php echo Yii::t("strings", "JOB")?></a></h2>
+            <h2 <?php echo active_class("job")?>><a href="./job"><?php echo Yii::t("strings", "JOB")?></a></h2>
             <ol>
               <li><?php echo Yii::t("strings", "HAPPY MONDAY")?></li>
             </ol>
           </div>
-          <div class="ft_list">
+          <div class="ft_list <?php echo active_class("contact")?>">
             <h2><a href="./contact"><?php echo Yii::t("strings", "CONTACT")?></a></h2>
             <ol>
               <li><?php echo Yii::t("strings", "COME TO SAY HELLO")?></li>
             </ol>
           </div>
-          <div class="ft_list">
+          <div class="ft_list <?php echo active_class("privacy")?>">
             <h2><a href="./privacy"><?php echo Yii::t("strings", "PRIVACY")?></a></h2>
             <ol>
               <li><?php echo Yii::t("strings", "HOTLINE")?> <br /> 134-654-987</li>

@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/footer.php" afterPath="$PROJECT_DIR$/html/include/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/response.css" afterPath="$PROJECT_DIR$/html/css/response.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/select.js" afterPath="$PROJECT_DIR$/html/js/common/select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/switchPage.js" afterPath="$PROJECT_DIR$/html/js/common/switchPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/job.php" afterPath="$PROJECT_DIR$/html/job.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lookbook.php" afterPath="$PROJECT_DIR$/html/lookbook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/privacy.php" afterPath="$PROJECT_DIR$/html/privacy.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
@@ -254,10 +252,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="340" column="31" selection-start="19371" selection-end="19371" vertical-scroll-proportion="0.35913312">
+            <state line="340" column="31" selection-start="19371" selection-end="19371" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -308,12 +306,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="footer.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/include/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="30" selection-start="4794" selection-end="4794" vertical-scroll-proportion="-8.142858">
+            <state line="45" column="31" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.09223301">
               <folding>
-                <marker date="1404313960000" expanded="true" signature="8461:8562" placeholder="..." />
+                <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#4;n#ul#0;n#div#2;n#!!top" expanded="true" />
+                <marker date="1404314377000" expanded="true" signature="8675:8776" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -378,8 +378,8 @@
         <option value="$PROJECT_DIR$/html/js/common/select.js" />
         <option value="$PROJECT_DIR$/html/js/common/switchPage.js" />
         <option value="$PROJECT_DIR$/html/css/response.css" />
-        <option value="$PROJECT_DIR$/html/include/footer.php" />
         <option value="$PROJECT_DIR$/html/css/style.css" />
+        <option value="$PROJECT_DIR$/html/include/footer.php" />
       </list>
     </option>
   </component>
@@ -757,19 +757,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/include/footer.php">
+    <entry file="file://$PROJECT_DIR$/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="30" selection-start="4794" selection-end="4794" vertical-scroll-proportion="-8.142858">
-          <folding>
-            <marker date="1404313960000" expanded="true" signature="8461:8562" placeholder="..." />
-          </folding>
+        <state line="340" column="31" selection-start="19371" selection-end="19371" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/style.css">
+    <entry file="file://$PROJECT_DIR$/html/include/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="340" column="31" selection-start="19371" selection-end="19371" vertical-scroll-proportion="0.35913312">
-          <folding />
+        <state line="45" column="31" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.09223301">
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#2;n#!!top" expanded="true" />
+            <marker date="1404314377000" expanded="true" signature="8675:8776" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
