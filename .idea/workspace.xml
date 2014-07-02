@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/footer.php" afterPath="$PROJECT_DIR$/html/include/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/jquery.fancybox.css" afterPath="$PROJECT_DIR$/html/css/jquery.fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/loading.js" afterPath="$PROJECT_DIR$/html/js/common/loading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/nav.php" afterPath="$PROJECT_DIR$/html/include/nav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/templates/news.html" afterPath="$PROJECT_DIR$/html/js/templates/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/response.css" afterPath="$PROJECT_DIR$/html/css/response.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/switchPage.js" afterPath="$PROJECT_DIR$/html/js/common/switchPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/job.php" afterPath="$PROJECT_DIR$/html/job.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lookbook.php" afterPath="$PROJECT_DIR$/html/lookbook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/privacy.php" afterPath="$PROJECT_DIR$/html/privacy.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404198558101" ignored="false" />
+    <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404311421966" ignored="false" />
     <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404217762041" ignored="false" />
-    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404302188458" ignored="false" />
+    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404314240498" ignored="false" />
     <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404306320943" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/countdown.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401352610756" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402703079365" ignored="false" />
@@ -81,7 +76,7 @@
     <file path="/starshop.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403171852680" ignored="false" />
     <file path="/streetshot.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402299298439" ignored="false" />
     <file path="/contact.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402289144979" ignored="false" />
-    <file path="/switchPage.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404306825618" ignored="false" />
+    <file path="/switchPage.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404312818821" ignored="false" />
     <file path="/jquery.fancybox.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404294868962" ignored="false" />
     <file path="/api.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403355803685" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/modules/api/controllers/SnsController.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402321170998" ignored="false" />
@@ -119,7 +114,7 @@
     <file path="$PROJECT_DIR$/../lemans_p1/protected/views/index/index.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402478791080" ignored="false" />
     <file path="$PROJECT_DIR$/../lemans_p1/protected/views/index/countdown.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402479289373" ignored="false" />
     <file path="$PROJECT_DIR$/../malibu/style/fontend/js/main.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404303314658" ignored="false" />
-    <file path="/footer.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404305912326" ignored="false" />
+    <file path="/footer.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404313960045" ignored="false" />
     <file path="$PROJECT_DIR$/../lemans_p1/protected/messages/zh_cn/lemans.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402491395181" ignored="false" />
     <file path="/lemans.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402491379182" ignored="false" />
     <file path="$PROJECT_DIR$/../ave_1000/yii/protected/views/record/myinfo.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404280240856" ignored="false" />
@@ -155,7 +150,7 @@
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/stand_p2.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402669693512" ignored="false" />
     <file path="$PROJECT_DIR$/../malibu/protected/views/activities/winner.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404303515254" ignored="false" />
     <file path="/jquery.ChinaCitySelect.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403101145767" ignored="false" />
-    <file path="/select.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404047188855" ignored="false" />
+    <file path="/select.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404311623824" ignored="false" />
     <file path="/storelocator.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403767685939" ignored="false" />
     <file path="/winner.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404303428807" ignored="false" />
     <file path="/news.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403404709421" ignored="false" />
@@ -260,16 +255,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="355" column="13" selection-start="20439" selection-end="20439" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.fancybox.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/css/jquery.fancybox.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="33" selection-start="6300" selection-end="6300" vertical-scroll-proportion="0.5294118">
+            <state line="340" column="31" selection-start="19371" selection-end="19371" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -278,7 +264,7 @@
       <file leaf-file-name="response.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/response.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="4.3846154">
+            <state line="40" column="6" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -293,48 +279,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="41" selection-start="8082" selection-end="8082" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="switchPage.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="373" column="20" selection-start="11702" selection-end="11702" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/include/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="22" selection-start="4564" selection-end="4570" vertical-scroll-proportion="-6.107143">
-              <folding>
-                <marker date="1404305936000" expanded="true" signature="8409:8510" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/include/nav.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="12" selection-start="1040" selection-end="1151" vertical-scroll-proportion="-10.178572">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/include/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="21" selection-start="944" selection-end="985" vertical-scroll-proportion="-11.535714">
+            <state line="17" column="21" selection-start="944" selection-end="985" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -343,7 +291,56 @@
       <file leaf-file-name="loading.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/js/common/loading.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="49" selection-start="3645" selection-end="3645" vertical-scroll-proportion="-7.923077">
+            <state line="104" column="49" selection-start="3645" selection-end="3645" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/include/nav.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="17" selection-start="2956" selection-end="2956" vertical-scroll-proportion="-25.785715">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/include/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="31" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.09223301">
+              <folding>
+                <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#4;n#ul#0;n#div#2;n#!!top" expanded="true" />
+                <marker date="1404314377000" expanded="true" signature="8675:8776" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="switchPage.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="228" column="55" selection-start="6493" selection-end="6493" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="369" column="0" selection-start="14110" selection-end="14110" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.fancybox.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/css/jquery.fancybox.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="99" column="33" selection-start="6300" selection-end="6300" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -373,16 +370,16 @@
         <option value="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" />
         <option value="$PROJECT_DIR$/html/admin/protected/messages/zh_cn/strings.php" />
         <option value="$PROJECT_DIR$/html/starstore.php" />
-        <option value="$PROJECT_DIR$/html/js/common/select.js" />
         <option value="$PROJECT_DIR$/html/include/header.php" />
         <option value="$PROJECT_DIR$/html/js/templates/news.html" />
-        <option value="$PROJECT_DIR$/html/css/style.css" />
         <option value="$PROJECT_DIR$/html/include/nav.php" />
-        <option value="$PROJECT_DIR$/html/include/footer.php" />
         <option value="$PROJECT_DIR$/html/js/common/loading.js" />
+        <option value="$PROJECT_DIR$/html/css/jquery.fancybox.css" />
+        <option value="$PROJECT_DIR$/html/js/common/select.js" />
         <option value="$PROJECT_DIR$/html/js/common/switchPage.js" />
         <option value="$PROJECT_DIR$/html/css/response.css" />
-        <option value="$PROJECT_DIR$/html/css/jquery.fancybox.css" />
+        <option value="$PROJECT_DIR$/html/css/style.css" />
+        <option value="$PROJECT_DIR$/html/include/footer.php" />
       </list>
     </option>
   </component>
@@ -586,14 +583,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="830" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22955523" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16068867" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -602,6 +598,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -681,9 +678,7 @@
     <entry file="file://$PROJECT_DIR$/html/js/common/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="10" selection-start="781" selection-end="781" vertical-scroll-proportion="0.027859237">
-          <folding>
-            <marker date="1404043259000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -696,9 +691,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/app.js">
@@ -710,30 +703,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/include/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="944" selection-end="985" vertical-scroll-proportion="-11.535714">
+        <state line="17" column="21" selection-start="944" selection-end="985" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/include/nav.php">
+    <entry file="file://$PROJECT_DIR$/html/css/jquery.fancybox.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="1040" selection-end="1151" vertical-scroll-proportion="-10.178572">
+        <state line="99" column="33" selection-start="6300" selection-end="6300" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/include/footer.php">
+    <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="22" selection-start="4564" selection-end="4570" vertical-scroll-proportion="-6.107143">
-          <folding>
-            <marker date="1404305936000" expanded="true" signature="8409:8510" placeholder="..." />
-          </folding>
+        <state line="369" column="0" selection-start="14110" selection-end="14110" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/loading.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="49" selection-start="3645" selection-end="3645" vertical-scroll-proportion="-7.923077">
+        <state line="104" column="49" selection-start="3645" selection-end="3645" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="228" column="55" selection-start="6493" selection-end="6493" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -745,38 +743,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="41" selection-start="8082" selection-end="8082" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/switchPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="373" column="20" selection-start="11702" selection-end="11702" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/css/response.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="4.3846154">
+        <state line="40" column="6" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/include/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="17" selection-start="2956" selection-end="2956" vertical-scroll-proportion="-25.785715">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="355" column="13" selection-start="20439" selection-end="20439" vertical-scroll-proportion="0.0">
+        <state line="340" column="31" selection-start="19371" selection-end="19371" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/jquery.fancybox.css">
+    <entry file="file://$PROJECT_DIR$/html/include/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="33" selection-start="6300" selection-end="6300" vertical-scroll-proportion="0.5294118">
-          <folding />
+        <state line="45" column="31" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.09223301">
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#2;n#!!top" expanded="true" />
+            <marker date="1404314377000" expanded="true" signature="8675:8776" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
