@@ -114,7 +114,7 @@ define([
         }
 
         var _finisherTimer = setInterval(function(){
-            if( !_finished['top'] ) return
+            if( !_finished['top'] ) return;
 
             clearInterval( _finisherTimer );
             // dTop.dequeue();
@@ -251,7 +251,9 @@ define([
         var _animate = {};
         var _finished = {};
         var _dHeight = $(window).height() - 90*2;
+        var _dWidth = $(window).width();
         var _timer = setInterval(function(){
+
             if( !nTotal ){
                 clearInterval( _timer );
                 dRight.animate({
@@ -281,7 +283,8 @@ define([
 
 
             var nVal = parseInt((nLoad / nTotal) * 100);
-            if (0 < nVal && nVal < 25) {
+
+            if (0 <= nVal && nVal <= 25) {
                 dRight.show().stop( true , true )
                     .animate({
                         'height': _dHeight * nVal / 25
@@ -298,11 +301,11 @@ define([
                 return;
             }
 
-            if (25 < nVal && nVal < 50 ) {
+            if (25 < nVal && nVal <= 50 ) {
                 dBottom.show().stop( true , true )
                     .animate({
-                        'width': (nVal - 25) / 25 * 90 + '%'
-                    } , nTime); 
+                        'width': (nVal - 25) / 25 * _dWidth
+                    } , nTime ); 
                 return;
             }
             if( _finished['bottom'] === undefined  ){
@@ -315,7 +318,7 @@ define([
                 return;
             }
 
-            if (50 < nVal && nVal < 75) {
+            if (50 < nVal && nVal <= 75) {
 
                 dLeft.show().stop(true , true)
                     .animate({
@@ -337,23 +340,25 @@ define([
             if ( 75 < nVal && nVal < 100 ) {
                 dTop.show().stop(true , true)
                     .animate({
-                        'width': (nVal - 75) / 25 * 90 + '%'
+                        'width': (nVal - 75) / 25 * _dWidth
                     } , nTime  );
                 return;
             }
             if( _finished['top'] === undefined  ){
                 _finished['top'] = 0;
                 dTop.show().animate({
-                    width: 900
+                    width: '90%'
                 } , nTime / 2 , '' , function(){
                     _finished['top'] = 1;
                 });
                 clearInterval( _timer );
                 return;
             }
-        } , nTime / 2 );
+        } , nTime / 2  );
+    
         imgLoad.on('progress', function(instance, image) {
             nLoad += 1;
+            
             // var dHeight = $(window).height() - 90*2;
             // var nVal = parseInt((nLoad / nTotal) * 100);
 
