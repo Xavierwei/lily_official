@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/response.css" afterPath="$PROJECT_DIR$/html/css/response.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,7 +65,7 @@
     <file path="$PROJECT_DIR$/../ave_1000/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401490627058" ignored="false" />
     <file path="/*.regexp" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403759063648" ignored="false" />
     <file path="/milestone.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402283386255" ignored="false" />
-    <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404314974387" ignored="false" />
+    <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404319355992" ignored="false" />
     <file path="/campaign.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402363349987" ignored="false" />
     <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403328066083" ignored="false" />
     <file path="/lookbook.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155937361" ignored="false" />
@@ -261,7 +260,7 @@
       <file leaf-file-name="response.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/css/response.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="29" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.85201794">
+            <state line="62" column="42" selection-start="2183" selection-end="2183" vertical-scroll-proportion="0.88041854">
               <folding />
             </state>
           </provider>
@@ -767,7 +766,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/css/response.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="29" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.85201794">
+        <state line="62" column="42" selection-start="2183" selection-end="2183" vertical-scroll-proportion="0.88041854">
           <folding />
         </state>
       </provider>
