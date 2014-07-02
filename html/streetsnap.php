@@ -1,5 +1,6 @@
 <?php include_once "include/functions.php"?>
 <?php set_page_title("Lily Official Site")?>
+<?php set_page_name("product");?>
 <!DOCTYPE html>
 <html>
 <?php include_once 'include/header.php';?>

@@ -207,3 +207,22 @@ function set_page_title ($title = FALSE) {
   
   return $static_title;
 }
+
+function set_page_name($t = FALSE) {
+  static $name;
+  if (!$t) {
+    return $name;
+  }
+  else {
+    $name = $t;
+  }
+  
+  return $name;
+}
+
+function active_class($name) {
+  $t = set_page_name();
+  if ($name == $t) {
+    return "active";
+  }
+}

@@ -1,5 +1,6 @@
 <?php require_once 'include/functions.php';?>
 <?php set_page_title("Lily Official Site")?>
+<?php set_page_name("product");?>
 <?php $next_index = -1;?>
 <!DOCTYPE html>
 <html>
