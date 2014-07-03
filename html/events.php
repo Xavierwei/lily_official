@@ -32,7 +32,7 @@
                             <div class="news_body">
                                 <?php echo $news->body;?>
                             </div>
-                            <a href="javascript:;" data-title="<?php echo $news->title;?>" class="event_open event_look"><?php echo Yii::t("strings", "LOOK")?></a>
+                            <a href="javascript:;" data-title="<?php echo $news->title;?>" class="event_open event_look btnlink"><span><?php echo Yii::t("strings", "LOOK")?></span><span><?php echo Yii::t("strings", "LOOK")?></span></a>
                         </div>
                     </div>
                     <?php endforeach;?>

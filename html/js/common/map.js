@@ -124,28 +124,29 @@ define([
                 oMap.addControl(new BMap.NavigationControl());
                 var point = new BMap.Point(121.478988,31.227919);
                 oMap.centerAndZoom(point, 15);
-                if( $(document.body).hasClass('index') ){
-                    var styleJson = [
-                         {
-                                   "featureType": "all",
-                                   "elementType": "geometry",
-                                   "stylers": {
-                                             "hue": "#fff1f4",
-                                             "saturation": 50
-                                   }
-                         },
-                         {
-                                   "featureType": "water",
-                                   "elementType": "all",
-                                   "stylers": {
-                                             "color": "#ffffff"
-                                   }
-                         }
-                     ]
-                    oMap.setMapStyle({styleJson:styleJson});
-                } else {
-                    oMap.setMapStyle({style: 'light'});
-                }
+                oMap.setMapStyle({style: 'light'});
+//                if( $(document.body).hasClass('index') ){
+//                    var styleJson = [
+//                         {
+//                                   "featureType": "all",
+//                                   "elementType": "geometry",
+//                                   "stylers": {
+//                                             "hue": "#fff1f4",
+//                                             "saturation": 50
+//                                   }
+//                         },
+//                         {
+//                                   "featureType": "water",
+//                                   "elementType": "all",
+//                                   "stylers": {
+//                                             "color": "#ffffff"
+//                                   }
+//                         }
+//                     ]
+//                    oMap.setMapStyle({styleJson:styleJson});
+//                } else {
+//                    oMap.setMapStyle({style: 'light'});
+//                }
 
             }, 1000);
         }

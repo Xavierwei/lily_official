@@ -58,7 +58,7 @@
 	            <div class="ss_group" id="s<?php echo $index+1;?>">
 		            <div class='limit cs-clear ss_row1'>
 						<div class="left">
-							<div class="middle lb_modtit fadeout"><?php echo $lookbook->title?></div>
+							<div class="middle lb_modtit2"><?php echo $lookbook->title?></div>
 						</div>
 
 			            <div class="lookbook_right">

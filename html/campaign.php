@@ -106,7 +106,7 @@
 
             <div class="wrap cp-mo2">
                 <img src="pic/campaign/12.jpg" />
-                <a href="javascript:;" class="video fadeout cp_blacklink"><?php echo Yii::t("strings", "MAKING OF SPRING")?></a>
+                <a href="javascript:;" class="video fadeout cp_blacklink btnlink"><span><?php echo Yii::t("strings", "MAKING OF SPRING")?></span><span><?php echo Yii::t("strings", "MAKING OF SPRING")?></span></a>
             </div>
 
 	        <div class='limit cp-top cs-clear'>
@@ -175,7 +175,7 @@
 
             <div class="wrap cp-mo2">
                 <img src="pic/campaign/24.jpg" />
-                <a href="javascript:;" class="video fadeout cp_blacklink"><?php echo Yii::t("strings", "MAKING OF SUMMER")?></a>
+                <a href="javascript:;" class="video fadeout cp_blacklink btnlink"><span><?php echo Yii::t("strings", "MAKING OF SUMMER")?></span><span><?php echo Yii::t("strings", "MAKING OF SUMMER")?></span></a>
             </div>
         </div>
 

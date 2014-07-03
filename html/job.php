@@ -32,7 +32,7 @@
                             <br />
                             <?php echo $school_job->body?>
                         </div>
-                        <a href="javascript:;" class="job_itembtn"><?php echo Yii::t("strings", "APPLY")?></a>
+                        <a href="javascript:;" class="job_itembtn btnlink"><span><?php echo Yii::t("strings", "APPLY")?></span><span><?php echo Yii::t("strings", "APPLY")?></span></a>
                     </div>
                     <?php endforeach;?>
                     <!--  --> </div>

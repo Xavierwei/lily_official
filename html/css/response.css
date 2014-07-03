@@ -26,7 +26,7 @@
     #wrap .page .limit.event_list {width:840px;}
     #nav li.item {width:130px;font-size:12px;}
     #nav li.item h2 {padding:25px 0 0 0;margin:0 0 0 20px;display:inline-block;}
-    #nav li ol {padding:10px 0 20px 20px;}
+    #nav li ol {padding:56px 0 20px 20px;}
     .language a {font-size:12px;}
     .job_item {margin:10px 43px 40px 43px;}
     #wrap .page .limit.event_list {width:840px;}
@@ -36,7 +36,7 @@
 @media only screen and (max-width:900px){
     #nav li.item {width:130px;font-size:12px;}
     #nav li.item h2 {padding:25px 0 0 0;margin:0 0 0 15px;}
-    #nav li ol {padding:10px 0 20px 15px;}
+    #nav li ol {padding:56px 0 20px 15px;}
     .language a {font-size:12px;}
     .job_item {margin:10px 43px 40px 43px;}
     #wrap .page .limit.event_list {width:924px;}
