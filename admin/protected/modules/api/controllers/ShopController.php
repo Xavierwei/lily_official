@@ -175,21 +175,20 @@ class ShopController extends Controller {
   }
   
   /**
-   * 根据IP 地址查询所再省份店铺 
-   * TODO:: 并且标出离自己最近的店铺
+   * 根据IP 地址查询所再省份店铺
    */
   public function actionAround() {
     $request = Yii::app()->getRequest();
     
     // 测试IP
-    $city = Yii::app()->ip->toCity("180.173.143.62");
+    $city = Yii::app()->ip->toCity();
     // city 要转换下， 比如 上海市 也可能是上海
     // 包含了市 则不需要处理，如果没有则需要加上市
     if (strpos($city, "市") === FALSE) {
       $city .= "市";
     }
     // 测试IP
-    $latlng = Yii::app()->ip->toLatlng("180.173.143.62");
+    $latlng = Yii::app()->ip->toLatlng();
     $lat = $latlng["x"];
     $lng = $latlng["y"];
     
