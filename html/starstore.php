@@ -36,7 +36,6 @@
                             <span class="store_sl_icon"></span>
                         </a>
                         <select class="store_sl">
-                            <option value="" data-hash="ss_1"></option>
                             <option value="ss_1" data-hash="ss_1"><?php echo Yii::t("strings", "Shanghai")?></option>
                             <option value="ss_2" data-hash="ss_2"><?php echo Yii::t("strings", "Guangzhou")?></option>
                         </select>

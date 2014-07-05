@@ -140,7 +140,7 @@ var ChinaCitySelect = function(node,opts) {
                 return;
             };
 
-            $("<option value=''></option>").appendTo(dist_obj);
+            $("<option value=''>-</option>").appendTo(dist_obj);
             $.each(city_json['distinct'][curr_city_arr],function(i,dist){
                 $("<option value='"+dist+"'>"+dist+"</option>").appendTo(dist_obj);
             });

@@ -135,7 +135,7 @@ define([
                        localHash();
                    },2000);
 
-                select.init();
+                //select.init();
 
             };
 

@@ -46,7 +46,6 @@
                     </div>
                 </div>
 
-                <button class='searchbtn'><?php echo Yii::t("strings", "Search")?></button>
             </div>
 
             <div id='map'></div>
