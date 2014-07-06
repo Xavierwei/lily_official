@@ -72,8 +72,11 @@ input.ng-invalid,select.ng-invalid {
   max-width: 200px;
 }
 
+.form-horizontal {margin:0 80px 0 0;}
 legend {
   cursor: pointer;
+    background: #f3d0d7;
+    font-size:18px;padding:0 0 0 30px;margin:0 20px 10px 0;border:none;
 }
 
 .nav-list .nav-header {

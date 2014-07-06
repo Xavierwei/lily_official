@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/views/index/login.php" afterPath="$PROJECT_DIR$/admin/protected/views/index/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/main.css" afterPath="$PROJECT_DIR$/admin/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404648606906" ignored="false" />
+    <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404653122357" ignored="false" />
     <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404217762041" ignored="false" />
     <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404548735781" ignored="false" />
     <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404306320943" ignored="false" />
@@ -62,10 +62,10 @@
     <file path="/mobile.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401450519806" ignored="false" />
     <file path="$PROJECT_DIR$/../rf/css/main.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402568146420" ignored="false" />
     <file path="$PROJECT_DIR$/../rf/flash/player/web/player6.htm" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401452914811" ignored="false" />
-    <file path="/main.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404650098009" ignored="false" />
+    <file path="/main.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404654086636" ignored="false" />
     <file path="$PROJECT_DIR$/../ave_1000/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401490627058" ignored="false" />
     <file path="$PROJECT_DIR$/../ave_1000/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401490627058" ignored="false" />
-    <file path="/*.regexp" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404649835415" ignored="false" />
+    <file path="/*.regexp" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404652531437" ignored="false" />
     <file path="/milestone.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402283386255" ignored="false" />
     <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404548997106" ignored="false" />
     <file path="/campaign.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402363349987" ignored="false" />
@@ -104,7 +104,7 @@
     <file path="$PROJECT_DIR$/../lemans_p1/protected/views/layouts/default.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402655966961" ignored="false" />
     <file path="$PROJECT_DIR$/../malibu/protected/views/media/index.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402466456853" ignored="false" />
     <file path="$PROJECT_DIR$/../lemans_p1/js/lp.base.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402498381628" ignored="false" />
-    <file path="$PROJECT_DIR$/../ave_1000/yii/js/index.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404293994461" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_1000/yii/js/index.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404652722584" ignored="false" />
     <file path="$PROJECT_DIR$/../../conf/apache/extra/httpd-vhosts.conf" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402474403374" ignored="false" />
     <file path="$PROJECT_DIR$/../malibu/protected/views/layouts/footer.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402553270803" ignored="false" />
     <file path="$PROJECT_DIR$/../malibu/protected/views/layouts/header.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402576852952" ignored="false" />
@@ -229,10 +229,15 @@
     <file path="$PROJECT_DIR$/../ave_1000/yii/protected/models/LoginForm.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404280373275" ignored="false" />
     <file path="/SiteController.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404218733647" ignored="false" />
     <file path="$PROJECT_DIR$/../ave_1000/yii/protected/extensions/sinaWeibo/config.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404283254002" ignored="false" />
-    <file path="$PROJECT_DIR$/../ave_1000/yii/protected/vendor/oUpload.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404437603747" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_1000/yii/protected/vendor/oUpload.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404652722584" ignored="false" />
     <file path="/oUpload.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404398771012" ignored="false" />
     <file path="/config.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404449671890" ignored="false" />
     <file path="/selectordie.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404453819480" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_1000/yii/protected/models/Record.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404652722584" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_1000/yii/protected/modules/admin/views/record/list.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404653773497" ignored="false" />
+    <file path="/list.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404652754119" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_1000/yii/protected/modules/admin/views/layouts/admin.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404653119646" ignored="false" />
+    <file path="/admin.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404652897536" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,70 +260,25 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="49" selection-start="6945" selection-end="6945" vertical-scroll-proportion="0.0">
+            <state line="152" column="16" selection-start="7153" selection-end="7153" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/include/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/search.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="18" selection-start="1967" selection-end="1967" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="select.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="287" column="56" selection-start="11358" selection-end="11358" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.ChinaCitySelect.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/lib/jquery/jquery.ChinaCitySelect.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="62" selection-start="1870" selection-end="1870" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="34" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/protected/views/index/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="7" selection-start="484" selection-end="484" vertical-scroll-proportion="0.31912145">
+            <state line="3" column="19" selection-start="203" selection-end="203" vertical-scroll-proportion="-2.0357144">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="response.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/css/response.css">
+      <file leaf-file-name="nav.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/include/nav.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="42" selection-start="1481" selection-end="1481" vertical-scroll-proportion="0.0">
+            <state line="18" column="38" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -333,10 +293,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/include/nav.php">
+      <file leaf-file-name="response.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/css/response.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="38" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
+            <state line="42" column="42" selection-start="1481" selection-end="1481" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="71" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.41025642">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.ChinaCitySelect.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/lib/jquery/jquery.ChinaCitySelect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="62" selection-start="1870" selection-end="1870" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="287" column="56" selection-start="11358" selection-end="11358" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="18" selection-start="1967" selection-end="1967" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/include/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -674,10 +679,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32902184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22579186" sideWeight="0.6709782" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2280543" sideWeight="0.6709782" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -686,6 +690,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32902184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -781,9 +786,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="21" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/search.php">
@@ -835,23 +838,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/protected/views/index/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="19" selection-start="203" selection-end="203" vertical-scroll-proportion="-2.0357144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="49" selection-start="6945" selection-end="6945" vertical-scroll-proportion="0.0">
+        <state line="152" column="16" selection-start="7153" selection-end="7153" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/protected/views/index/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7" selection-start="484" selection-end="484" vertical-scroll-proportion="0.31912145">
+        <state line="78" column="71" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.41025642">
           <folding />
         </state>
       </provider>
