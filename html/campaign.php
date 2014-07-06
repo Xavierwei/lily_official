@@ -136,7 +136,7 @@
             </div>
 
 
-	        <div class='limit cp-top cs-clear'>
+	        <div class='limit cp-top cp-top2 cs-clear'>
 		        <div class="left">
 			        <img class='btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/19.jpg" />
 		        </div>

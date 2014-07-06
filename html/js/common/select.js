@@ -57,6 +57,7 @@ define([
                 });
             };
 
+
         oHandler = dHome.ChinaCitySelect({
             //'prov' : dProvinceSelect,
             'city' : dCitySelect,
@@ -68,6 +69,9 @@ define([
                     dCityText.data('val', aData.user_city);
                     dCitySelect.val(aData.user_city);
                     updateText(true);
+                    $(".store_sl").selectOrDie({
+                        size: 5
+                    });
                 },2000);
             }
         });
@@ -108,6 +112,7 @@ define([
 
                     //dProvinceText.html(sProvince);
                     dCityText.html(sCity);
+
                 }, 100);
             };
 
@@ -117,6 +122,7 @@ define([
             var top = $('#'+hash).position().top - 100;
             $('html, body').animate({scrollTop : top});
         });
+
 
         // when click the search button, should the tpl
         dBtn.bind('click', function () {
@@ -211,6 +217,9 @@ define([
                 }
             }
         });
+
+        $(".store_sl").selectOrDie({
+        });
     };
 
     var storelocatorSelect = function (dStorelocator) {
@@ -282,6 +291,10 @@ define([
                     dCityText.html(aData.user_city);
                     dCityText.data('val',aData.user_city);
                     searchShop(true);
+
+                    $(".store_sl").selectOrDie({
+                        size: 5
+                    });
                 },2000);
             }
         });
@@ -343,6 +356,9 @@ define([
         if (dStorelocator.length) {
             storelocatorSelect(dStorelocator);
         }
+
+
+
     };
 
     return {

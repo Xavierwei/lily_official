@@ -41,8 +41,8 @@ a:hover {opacity:0.8;}
 .header{position:fixed;height:100px;top:0;left:0;right:0;padding-left:7%;z-index:100;}
 .menu{display:none;cursor:pointer;position:absolute;top:10px;left:-4%;background:url('../images/menu.png') no-repeat;width:48px;height:48px;}
 .menu.active{background:url('../images/menclose.png') no-repeat;}
-.search{cursor:pointer;background:url('../images/hdicon.png') no-repeat -84px 0;width:25px;height:25px;position:absolute;right:90px;top:42px;}
-.language{position:absolute;top:42px;right:130px}
+.search{cursor:pointer;background:url('../images/hdicon.png') no-repeat -84px 0;width:25px;height:25px;position:absolute;right:90px;top:43px;}
+.language{position:absolute;top:38px;right:130px}
 .language a{float:left;width:40px;height:17px;}
 .lang-en .lang_en {font-weight: bold;}
 .lang-cn .lang_cn {font-weight: bold;}
@@ -50,10 +50,10 @@ a:hover {opacity:0.8;}
 #nav .logo{height: 100%;}
 #nav .logo img{height: 75%;margin-top: 6%;width:auto;}
 
-#nav{height: 100%; line-height: 29px;}
+#nav{height: 100%; line-height: 23px;}
 #nav li.item {float:left;text-transform: uppercase;width:200px;cursor:pointer;}
 #nav li.item:hover {}
-#nav li.item h2 {padding:25px 0 0 0;margin:0 0 0 30px;display:inline-block;}
+#nav li.item h2 {padding:41px 0 0 0;margin:0 0 0 30px;display:inline-block;}
 #nav li.item h2 a {-webkit-transition: none;-moz-transition: none;-o-transition: none;-ms-transition: none;transition: none;}
 #nav li.active h2 {border-bottom:2px solid #000;}
 #nav li ol {display: none;list-style: none;margin:0;padding:0;padding:56px 0 20px 30px; background: url(about:blank) \9;line-height:24px;}
@@ -122,8 +122,9 @@ a:hover {opacity:0.8;}
 .home_brand_link{text-align:center;}
 .home_img2 img,
 .home_img3 img{max-width:60%;}
-.home_img2{text-align:right;margin:5% -12% 5% 0;}
-.home_img3{text-align:left;margin-left:5%;margin-bottom:5%;}
+.home_img3 img{max-width:69%;}
+.home_img2{text-align:right;margin:5% -23% 74px 0;}
+.home_img3{text-align:left;margin-left:-13%;margin-bottom:5%;}
 /* */
 .weibo{position:relative;display:block;padding:20px 20px 50px}
 .weibo_wbbg{background:#f9e1e4;width:113%;height:444px}
@@ -139,14 +140,16 @@ a:hover {opacity:0.8;}
 /* */
 .page .left{float:left;}
 .page .right{float:right;}
-.page_home .left {width:45%;}
-.page_home .right {width:45%;}
+.page_home #brand_story .right {width:55%;}
+.page_home .left {width:35%;}
+.page_home .right {width:35%;}
 .home_cpbox{display:block;border:#000 solid 4px;text-transform:uppercase;text-align:center;font-size:16px;overflow:hidden;}
 .home_cpbox h2{line-height:60px;font-size:66px;padding:80px 0 60px;}
 .home_cpbox p{padding:0 0 40px;font-weight:bold;}
 .home_lookbook .border{border:#000 solid 4px;}
-.home_lb_item{margin:5% auto;text-align:center;line-height:80px;font-weight:bold;}
+.home_lb_item{margin:5% auto;text-align:center;line-height:80px;}
 .home_lookbook a {display:block;}
+.home_lookbook .videowrap img {width:100%;}
 .home_lb_item h2{line-height:60px;font-size:66px;padding:60px 0 30px}
 /* */
 .home_store{text-align:center;margin-top:10%;}
@@ -208,7 +211,13 @@ a:hover {opacity:0.8;}
 .cp_img_size1 {width:20%;}
 .cp_img_size2 {width:50%;}
 .cp_img_size3 {width:30%;}
-.page_campaign .limit{margin:5% auto;}
+.page_campaign .limit{margin:0 auto;}
+.page_campaign .cp-top{margin:60px 0 0;}
+.page_campaign .cp-top2{margin:18px 0 0;}
+.page_campaign .cp-ground{margin:16px 0 0;}
+.page_campaign .cp-full img {display: block;}
+.page_campaign .cp-model {margin-top:18px;}
+.page_campaign .cp-mo1 {padding-top:50px;}
 .page_campaign .list img{margin:0 6px;width:26%;max-height:90%;}
 .page_campaign .cp_modtxt{width:410px;font-size:12pt;line-height:23px;}
 .page_campaign .limit img.full{width:100%;max-width:100%;}
@@ -223,7 +232,7 @@ a:hover {opacity:0.8;}
 .page_campaign .limit.sp3 .right{width:60%;margin-top:5%;}
 .page_campaign .limit.sp3 .right .cp_blankimg{margin:5% auto;}
 .page_campaign .wrap{position:relative;margin:5% 7%;}
-.page_campaign .list {margin-right:-13.5%;}
+.page_campaign .list {margin-right:-13.5%;margin-top:12px;}
 .page_campaign .cp-top img{width:100%;}
 .page_campaign .cp-top .left {float:left;width:60%;margin-left:-13%;}
 .page_campaign .cp-top .right {float:right;width:40%;margin-left:6%;}
@@ -231,12 +240,13 @@ a:hover {opacity:0.8;}
 .page_campaign .cp-ground img{width:100%;}
 .page_campaign .cp-ground .left {float:left;width:40%;margin-left:1%;}
 .page_campaign .cp-ground .right {float:right;width:60%;margin-right:-13%;}
-#wrap .page_campaign .limit.cp-full {margin:0;}
+.page_campaign .cp-ground .right img {display:block;}
+#wrap .page_campaign .limit.cp-full {margin:18px 0 0;}
 .page_campaign .cp-model img{width:100%;}
-.page_campaign .cp-model .left {float:left;width:60%;margin-left:-9%;}
+.page_campaign .cp-model .left {float:left;width:60%;margin-left:-13%;}
 .page_campaign .cp-model .right  {float:right;width:35%;margin-right:4%;}
 .page_campaign .cp-mo1 img {width:100%;}
-.page_campaign .cp-mo1 .row1 .cp_blacktit {float:left;}
+.page_campaign .cp-mo1 .row1 .cp_blacktit {float:left;margin-top:30px;}
 .page_campaign .cp-mo1 .row1 .cp_img {float:right;}
 .page_campaign .cp-mo1 .row2 {margin-top:15px;}
 .page_campaign .cp-mo1 .row2 .cp_img {float:right;}
@@ -279,7 +289,7 @@ a:hover {opacity:0.8;}
 button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;cursor:pointer;outline:none;}
 .store_select{position:relative;width:auto;margin:0 auto 20px;display:inline-block;}
 #home-selectbox #province.store_select{display:none;}
-.store_selectbg{border:#000 solid 1px;display:block;height:46px;width:auto;font-size:16px;line-height:46px;}
+.store_selectbg{border:#000 solid 1px;display:none;height:46px;width:auto;font-size:16px;line-height:46px;}
 .store_sl_txt{float:left;width:auto;min-width:130px;padding:0 14px;font-family:"Microsoft Yahei",arial,SimHei,sans-serif;}
 .store_sl_icon{float:right;width:0;height:0;overflow:hidden;border:transparent solid 5px;border-top:#000 solid 5px;margin:20px 10px 0 0}
 .store_sl{position:absolute;height:46px;line-height:46px;left:1px;top:1px;width:162px;font-size:16px;border:0;background:none;cursor:pointer;opacity:0;filter:alpha(opacity=0);}
@@ -605,3 +615,176 @@ div:selected {
   outline:0px solid transparent;
 }
 
+
+
+
+
+.sod_select,
+.sod_select *
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* The SoD - Please keep this first three lines intact, otherwise all hell will break looooooose */
+.sod_select,.sod_select:focus
+{
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+
+    width: 200px;
+    padding: 15px 10px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+
+/* Up/Down arrows */
+.sod_select:after
+{
+    content: ".";
+    position: absolute;
+    right: 0px;
+    top: 1px;
+    font-size: 7px;
+}
+
+/* Down arrow */
+.sod_select:after
+{
+    float:right;width:0;height:0;overflow:hidden;border:transparent solid 5px;border-top:#000 solid 5px;margin:20px 10px 0 0
+}
+
+/* When the entire SoD is disabled, go crazy! */
+.sod_select.disabled
+{
+    border-color: #828282;
+    color: #b2b2b2;
+    cursor: not-allowed;
+}
+
+/* The "label", or whatever we should call it. Keep the first three lines for truncating. */
+.sod_select .sod_label
+{
+}
+
+.sod_select .sod_prefix { /* Use this if you're using a prefix and want to style it */ }
+.sod_select .sod_placeholder { /* Use this if you're using a placeholder and want to style it */ }
+
+
+
+/* Options list wrapper */
+.sod_select .sod_list
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    height: auto;
+    width: 200px;
+    margin: 0 0 0 -1px;
+    border: 1px solid #000000;
+    border-top: none;
+    z-index: 1;
+}
+
+.index .sod_select .sod_list {background: #fff1f4;}
+.storelocator .sod_select .sod_list {background: #ddebf3;}
+
+/* Shows the option list (don't edit) */
+.sod_select.open .sod_list { display: block;  }
+
+/* Don't display the options when  */
+.sod_select.disabled.open .sod_list { display: none;  }
+
+/* When the option list is displayed above the SoD */
+.sod_select.above .sod_list
+{
+    top: auto;
+    bottom: 100%;
+    border-top: 3px solid #000000;
+    border-bottom: none;
+}
+
+/* Options list container */
+.sod_select .sod_list ul
+{
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/* All the options. Keep the first three lines for truncating... */
+.sod_select .sod_list li
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 10px;
+    list-style-type: none;
+}
+
+/* Optgroups */
+.sod_select .sod_list .optgroup,
+.sod_select .sod_list .optgroup.disabled
+{
+    background: inherit;
+    color: #939393;
+    font-size: 10px;
+    font-style: italic;
+}
+
+/* Children of an optgroup */
+.sod_select .sod_list .groupchild { padding-left: 20px; }
+
+/* Disabled option */
+.sod_select .sod_list .li
+{
+   cursor: pointer;
+}
+
+
+
+/*Make room for the check mark */
+.sod_select .sod_list .selected
+{
+    font-weight: 700;
+}
+
+
+
+/* Add a .no_highlight class to you SoD to hide the check mark and don't bold the option */
+.sod_select.no_highlight .sod_list .selected { font-weight: 300; }
+.sod_select.no_highlight .sod_list .selected:before { display: none; }
+
+.sod_select .sod_list .link { /* If data-link is set on a specific option */ }
+.sod_select .sod_list .linkexternal { /* If data-link-external is set on a specific option */ }
+
+
+
+/* Hide native select */
+.sod_select select { display: none !important; }
+
+/* The native select in touch mode. Keep this first line. Sorry, keep everything. */
+.sod_select.touch select
+{
+    -webkit-appearance: menulist-button;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block !important;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+}
