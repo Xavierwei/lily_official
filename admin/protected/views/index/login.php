@@ -9,6 +9,6 @@
   </div>
   
   <div class="field-group">
-    <input type="submit" value="Login" />
+    <input class="btn" type="submit" value="Login" />
   </div>
 </form>
