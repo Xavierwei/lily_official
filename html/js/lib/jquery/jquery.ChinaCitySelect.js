@@ -31,6 +31,7 @@ var ChinaCitySelect = function(node,opts) {
     var prov_obj = '';
     var city_obj = '';
     var dist_obj = '';
+	var current_city = '';
 
     function __init__(){
         if(typeof(opts.url)=="string"){
@@ -116,8 +117,13 @@ var ChinaCitySelect = function(node,opts) {
 //        });
 
         $.each(city_json.city.CN,function(i,prov){
-            //$("<option value='"+prov+"'>"+prov+"</option>").appendTo(prov_obj);
-            $("<option value='"+prov+"'>"+prov+"</option>").appendTo(city_obj);
+			if(city_json.user_city == prov) {
+				$("<option selected value='"+prov+"'>"+prov+"</option>").appendTo(city_obj);
+			}
+			else {
+				$("<option value='"+prov+"'>"+prov+"</option>").appendTo(city_obj);
+			}
+
         });
         initDist();
     }
@@ -170,7 +176,8 @@ $.fn.ChinaCitySelect = function(conf) {
         prov:'',
         city:'',
         dist:'',
-        url:''
+        url:'',
+		current:''
     };
 
     $.extend(opts, conf);
