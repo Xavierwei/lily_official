@@ -55,14 +55,13 @@
       <li><a href="<?php echo Yii::app()->createUrl("index/logout")?>"><?php echo Yii::t("strings", "Logout")?></a></li>
     </ul>
   </div>
-  
 
   <?php if (UserAR::isLogin()) :?>
   <div id="body" class="row-fluid">
-    <div id="content" class="span9"><?php echo $content; ?></div>
+    <div id="content" class="span12"><?php echo $content; ?></div>
   </div>
   <?php else: ?>
-    <div id="content" class="span9 offset3"><?php echo $content; ?></div>
+    <div id="content" class="span12 offset3"><?php echo $content; ?></div>
   <?php endif;?>
 
 	<div class="clear"></div>
@@ -72,6 +71,7 @@
 </div>
 
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/dropzone.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/jquery.cookie.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/jquery.dataTables.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/scripts/jquery.form.js"></script>

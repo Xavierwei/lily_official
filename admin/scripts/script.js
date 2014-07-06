@@ -1,6 +1,30 @@
 (function ($) {
   var AdminModule = angular.module("adminModule", []);
   
+  AdminModule.factory("DragDropFile", function () {
+    var mydropZone;
+    return {
+      init: function (id, cb) {
+        cb || (cb = function () {});
+        mydropZone = new Dropzone("div#file_dropzone", {
+          paramName: "media", 
+          acceptedFiles: "image/*",
+          accept: function (file, done) {
+            console.log("accept");
+            if (file.type == "image/png" || file.type == "image/jif" || file.type == "image/jpeg" || file.type == "image/jpg") {
+              done();
+            }
+            else {
+              done("file is not allowed");
+            }
+          },
+          url: window.baseurl + "/api/media/temp"});
+          // 返回
+          return mydropZone;
+      }
+    };
+  });
+  
   // Shop controller 
   AdminModule.controller("ShopForm", ["$scope", "$http", "$location", function ($scope, $http, $location) {
     $scope.image = {};
@@ -154,7 +178,7 @@
 
 
   // Lookbook 控制器
-  AdminModule.controller("LookbookForm", ["$scope", "$http", "$location", function ($scope, $http, $location) {
+  AdminModule.controller("LookbookForm", ["$scope", "$http", "$location","DragDropFile" ,function ($scope, $http, $location, DragDropFile) {
       $scope.media = {};
       $scope.media.look_book_image = [];
       
@@ -188,6 +212,17 @@
             }
             else {
               alert("未知错误");
+            }
+          });
+          
+          // DropDragFile
+          var dropzone = DragDropFile.init("div#file_dropzone");
+          dropzone.on("success", function (file, response) {
+            if (typeof response.data["uri"] != "undefined") {
+              var uri = response.data["uri"];
+              $scope.lookbook.look_book_image.push(uri);
+              $scope.media.look_book_image.push(window.baseurl + "/" + uri);
+              $scope.$digest();
             }
           });
         }

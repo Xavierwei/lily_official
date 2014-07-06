@@ -8,9 +8,11 @@
       </div>
     </div>
     <div class="control-group">
-      <div class="control-label">Media</div>
+      <div class="control-label"></div>
       <div class="controls">
-        <input type="file" name="media" accept="image/*" />
+        <div id="file_dropzone">
+          <span><?php echo Yii::t("strings", "drag image here")?></span>
+        </div>
         <ul class="list clearfix">
           <li class="upload-image-item"   ng-repeat="media in media.look_book_image">
             <img src="{{media}}" alt="" />
