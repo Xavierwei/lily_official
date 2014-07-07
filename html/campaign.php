@@ -24,11 +24,11 @@
 	                    <?php endif;?>
                     </div>
 	                <?php if(Yii::app()->language == 'en_us'):?>
-	                    <div class="cp_season btn go_play_ground">Wonderland of Plaid Shirts</div>
-	                    <div class="cp_season btn fadeout video">Lily 2014 SS KV making off</div>
+	                    <div class="cp_season btn btnlink btnlink2 go_play_ground"><span>Wonderland of Plaid Shirts</span><span>Wonderland of Plaid Shirts</span></div>
+	                    <div class="cp_season btn btnlink btnlink2 fadeout video"><span>Lily 2014 SS KV making off</span><span>Lily 2014 SS KV making off</span></div>
 	                <?php else:?>
-		                <div class="cp_season btn go_play_ground">格子间的奇幻乐园</div>
-		                <div class="cp_season btn fadeout video">Lily 2014 年春季广告大片</div>
+		                <div class="cp_season btn btnlink btnlink2 go_play_ground"><span>格子间的奇幻乐园</span><span>格子间的奇幻乐园</span></div>
+		                <div class="cp_season btn btnlink btnlink2 fadeout video"><span>Lily 2014 年春季广告大片</span><span>Lily 2014 年春季广告大片</span></div>
 	                <?php endif;?>
                 </div>
 	            <div class="left">

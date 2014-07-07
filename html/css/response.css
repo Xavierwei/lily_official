@@ -21,6 +21,7 @@
 }
 
 @media only screen and (max-width:1220px){
+    .page_campaign .cp-model .right  {margin-top:100px;}
     .weibo_wblogo {margin:0;}
     .weibo_wbcom {padding:20px 30px}
 }

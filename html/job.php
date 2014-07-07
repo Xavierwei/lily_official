@@ -16,7 +16,7 @@
                     <h2>JOB</h2>
                     <p>happy monday</p>
                     <h3 class="job_social"></h3>
-                    <a href="javascript:;" class="job_socialbtn"></a>
+                    <a href="http://lily.zhiye.com/Social" target="_blank" class="job_socialbtn"></a>
                     <h3 class="job_campus"></h3>
                 </div>
                 <?php $school_jobes = loadJob();?>
@@ -32,7 +32,7 @@
                             <br />
                             <?php echo $school_job->body?>
                         </div>
-                        <a href="javascript:;" class="job_itembtn btnlink"><span><?php echo Yii::t("strings", "APPLY")?></span><span><?php echo Yii::t("strings", "APPLY")?></span></a>
+                        <a href="http://lily.zhiye.com/Campus" target="_blank" class="job_itembtn btnlink"><span><?php echo Yii::t("strings", "APPLY")?></span><span><?php echo Yii::t("strings", "APPLY")?></span></a>
                     </div>
                     <?php endforeach;?>
                     <!--  --> </div>

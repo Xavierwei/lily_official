@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/main.css" afterPath="$PROJECT_DIR$/admin/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/campaign.php" afterPath="$PROJECT_DIR$/html/campaign.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/job.php" afterPath="$PROJECT_DIR$/html/job.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/response.css" afterPath="$PROJECT_DIR$/html/css/response.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lily_official.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404653122357" ignored="false" />
     <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404217762041" ignored="false" />
-    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404548735781" ignored="false" />
+    <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404732484668" ignored="false" />
     <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404306320943" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/countdown.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401352610756" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/css/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402703079365" ignored="false" />
@@ -163,10 +165,10 @@
     <file path="/club_memberinfo.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403444107180" ignored="false" />
     <file path="/club_pointex.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403444137116" ignored="false" />
     <file path="/club_pointexdetail.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403444172711" ignored="false" />
-    <file path="/job.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404394355013" ignored="false" />
+    <file path="/job.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404722848054" ignored="false" />
     <file path="/flagshipstore.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403448696356" ignored="false" />
     <file path="/storelocator.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403448797950" ignored="false" />
-    <file path="/campaign.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404448036283" ignored="false" />
+    <file path="/campaign.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404722923158" ignored="false" />
     <file path="/streetsnap.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403795136532" ignored="false" />
     <file path="/contact.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403449718608" ignored="false" />
     <file path="/club_memberrules.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403450605020" ignored="false" />
@@ -257,10 +259,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="16" selection-start="7153" selection-end="7153" vertical-scroll-proportion="0.0">
+            <state line="119" column="46" selection-start="5633" selection-end="5633" vertical-scroll-proportion="0.3478261">
               <folding />
             </state>
           </provider>
@@ -296,25 +298,34 @@
       <file leaf-file-name="response.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/response.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="42" selection-start="1481" selection-end="1481" vertical-scroll-proportion="0.0">
+            <state line="8" column="32" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="71" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.41025642">
+            <state line="63" column="1" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.ChinaCitySelect.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/lib/jquery/jquery.ChinaCitySelect.js">
+      <file leaf-file-name="job.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/job.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="62" selection-start="1870" selection-end="1870" vertical-scroll-proportion="0.0">
+            <state line="34" column="105" selection-start="1611" selection-end="1618" vertical-scroll-proportion="-23.071428">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="campaign.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/campaign.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="42" selection-start="448" selection-end="448" vertical-scroll-proportion="-9.5">
               <folding />
             </state>
           </provider>
@@ -324,15 +335,6 @@
         <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="287" column="56" selection-start="11358" selection-end="11358" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/search.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="18" selection-start="1967" selection-end="1967" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -365,8 +367,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/html/js/common/map.js" />
-        <option value="$PROJECT_DIR$/html/campaign.php" />
         <option value="$PROJECT_DIR$/html/js/config.js" />
         <option value="$PROJECT_DIR$/html/js/lib/jquery/jquery.js" />
         <option value="$PROJECT_DIR$/html/js/lib/jquery/selectordie.js" />
@@ -375,12 +375,14 @@
         <option value="$PROJECT_DIR$/html/index.php" />
         <option value="$PROJECT_DIR$/html/storelocator.php" />
         <option value="$PROJECT_DIR$/html/include/nav.php" />
-        <option value="$PROJECT_DIR$/html/css/style.css" />
-        <option value="$PROJECT_DIR$/html/css/response.css" />
         <option value="$PROJECT_DIR$/html/js/common/select.js" />
         <option value="$PROJECT_DIR$/html/js/lib/jquery/jquery.ChinaCitySelect.js" />
         <option value="$PROJECT_DIR$/admin/protected/views/index/login.php" />
         <option value="$PROJECT_DIR$/admin/css/main.css" />
+        <option value="$PROJECT_DIR$/html/job.php" />
+        <option value="$PROJECT_DIR$/html/campaign.php" />
+        <option value="$PROJECT_DIR$/html/css/response.css" />
+        <option value="$PROJECT_DIR$/html/css/style.css" />
       </list>
     </option>
   </component>
@@ -432,6 +434,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily_official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -757,18 +791,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/js/lib/jquery/jquery.ChinaCitySelect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="31" selection-start="4564" selection-end="4564" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/js/lib/jquery/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="41" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" />
@@ -817,13 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/response.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="42" selection-start="1481" selection-end="1481" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/js/common/select.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="287" column="56" selection-start="11358" selection-end="11358" vertical-scroll-proportion="0.0">
@@ -845,16 +860,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/style.css">
+    <entry file="file://$PROJECT_DIR$/html/job.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="16" selection-start="7153" selection-end="7153" vertical-scroll-proportion="0.0">
+        <state line="34" column="105" selection-start="1611" selection-end="1618" vertical-scroll-proportion="-23.071428">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="71" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.41025642">
+        <state line="63" column="1" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/campaign.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="42" selection-start="448" selection-end="448" vertical-scroll-proportion="-9.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/css/response.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="32" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="46" selection-start="5633" selection-end="5633" vertical-scroll-proportion="0.3478261">
           <folding />
         </state>
       </provider>

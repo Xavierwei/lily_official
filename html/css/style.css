@@ -96,6 +96,13 @@ a:hover {opacity:0.8;}
     -webkit-animation: playTop 0.2s linear 0s 1 normal;
     /* Opera: */
     -o-animation: playTop 0.2s linear 0s 1 normal;}
+.btnlink2:hover span {animation: playTop2 0.4s linear 0s 1 normal;
+    /* Firefox: */
+    -moz-animation: playTop2 0.4s linear 0s 1 normal;
+    /* Safari and Chrome: */
+    -webkit-animation: playTop2 0.4s linear 0s 1 normal;
+    /* Opera: */
+    -o-animation: playTop2 0.4s linear 0s 1 normal;}
 /* */
 .showy{display:none;}
 .showyitem{background:url('../images/showy.png');width:50px;height:50px;position:fixed;z-index:20;}
@@ -110,7 +117,8 @@ a:hover {opacity:0.8;}
 .page_home h2{font-size:42px;line-height:100px;font-family:arial;}
 .home_new{text-align:right;margin:70px 7%;}
 .tit_time{font-size:18px;font-weight:bold}
-.home_new_cn{font-size:30px;line-height:130%;padding:6% 0;margin:2% 0;min-height:140px;}
+.home_new {margin-bottom:20px;margin-top:50px;}
+.home_new_cn{font-size:30px;line-height:130%;min-height:140px;}
 
 /* */
 .home_img1{margin:50px 7% 64px;}
@@ -203,7 +211,7 @@ a:hover {opacity:0.8;}
 .cp_tit{border:#000 solid 4px;width:350px;height:430px;text-transform:uppercase;text-align:center;font-size:16px;overflow:hidden;margin:0 0 40px;}
 .cp_tit h2{line-height:60px;font-size:66px;padding:80px 0 60px;}
 .cp_tit p{padding:0 0 40px;font-weight:bold;}
-.cp_season{font-size:14px;height:80px;line-height:80px;text-align:center;width:350px;font-weight:bold;border:#000 solid 4px;margin:0 0 14px;text-transform: uppercase;}
+.cp_season{font-size:14px;height:80px;display:block;line-height:80px;text-align:center;width:350px;font-weight:bold;border:#000 solid 4px;margin:0 0 14px;text-transform: uppercase;}
 .cp_modtxt h2{font-size:32px;text-transform:uppercase;line-height:36px;font-family:arial;padding:0 0 40px}
 .cp_modtxt p {margin:0 0 10px 0;}
 .cp_blacklink{text-align:center;position:absolute;padding:10px 20px;width:auto;top:50%;left:50%;margin-left:-80px;margin-top:-26px;border-color:#fff;color:#fff;}
@@ -238,13 +246,13 @@ a:hover {opacity:0.8;}
 .page_campaign .cp-top .right {float:right;width:40%;margin-left:6%;}
 .page_campaign .cp-top .cp_tit,.page_campaign .cp-top .cp_season {margin-left:auto;margin-right:auto;}
 .page_campaign .cp-ground img{width:100%;}
-.page_campaign .cp-ground .left {float:left;width:40%;margin-left:1%;}
+.page_campaign .cp-ground .left {float:left;width:40%;margin:40px;}
 .page_campaign .cp-ground .right {float:right;width:60%;margin-right:-13%;}
 .page_campaign .cp-ground .right img {display:block;}
 #wrap .page_campaign .limit.cp-full {margin:18px 0 0;}
 .page_campaign .cp-model img{width:100%;}
 .page_campaign .cp-model .left {float:left;width:60%;margin-left:-13%;}
-.page_campaign .cp-model .right  {float:right;width:35%;margin-right:4%;}
+.page_campaign .cp-model .right  {float:right;width:35%;margin-right:9%;margin-top:150px;}
 .page_campaign .cp-mo1 img {width:100%;}
 .page_campaign .cp-mo1 .row1 .cp_blacktit {float:left;margin-top:30px;}
 .page_campaign .cp-mo1 .row1 .cp_img {float:right;}
@@ -477,8 +485,34 @@ a, .btn {-webkit-transition:   all 0.2s ease-out;-moz-transition:  all 0.2s ease
 @-o-keyframes playTop /* Opera */
 {
     0%   {-o-transform:translateY(0)}
-    100% {-o-transform:translateY(-46px)}
+    100% {-o-transform:translateY(-86px)}
 }
+
+@keyframes playTop2
+{
+    0%   {transform:translateY(0)}
+    100% {transform:translateY(-86px)}
+}
+
+@-moz-keyframes playTop2 /* Firefox */
+{
+    0%   {-moz-transform:translateY(0)}
+    100% {-moz-transform:translateY(-86px)}
+}
+
+@-webkit-keyframes playTop2 /* Safari and Chrome */
+{
+    0%   {-webkit-transform:translateY(0)}
+    100% {-webkit-transform:translateY(-86px)}
+}
+
+@-o-keyframes playTop2 /* Opera */
+{
+    0%   {-o-transform:translateY(0)}
+    100% {-o-transform:translateY(-86px)}
+}
+
+
 
 /*
  * CSS Styles that are needed by jScrollPane for it to operate correctly.
