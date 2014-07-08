@@ -302,8 +302,8 @@
           var orderedImages = [];
           angular.element("#imagesUpload .position img").each(function () {
              orderedImages.push(angular.element(this).attr("src"));
-             $scope.lookbook.look_book_image = orderedImages;
           });
+          $scope.lookbook.look_book_image = orderedImages;
           
           $http({
             method: "POST",
@@ -335,7 +335,7 @@
 
   }]);
 
-  AdminModule.controller("StreehotForm", ["$scope", "$http", function ($scope, $http) {
+  AdminModule.controller("StreehotForm", ["$scope", "$http", "DragDropFile" , "AjaxLoader",  function ($scope, $http, DragDropFile, AjaxLoader) {
       $scope.media = {};
       $scope.media.image = [];
       $scope.streehot = {};
@@ -355,7 +355,7 @@
               var data = res["data"];
               $scope.streehot = data;
               $.each( $scope.streehot.streehot_image, function (i, val) {
-                $scope.media.image.push(val);
+                
               });
             }
             else {
@@ -363,6 +363,29 @@
             }
           });
         }
+        
+          // DropDragFile
+          var dropzone = DragDropFile.init("div#file_dropzone");
+          dropzone.on("sending", function () {
+            AjaxLoader.open();
+          });
+          dropzone.on("success", function (file, response) {
+            if (typeof response.data["uri"] != "undefined") {
+              var uri = response.data["uri"];
+              $scope.streehot.streehot_image.push(uri);
+              $scope.$digest();
+              AjaxLoader.close();
+            }
+          });
+          
+          // Sort image
+          angular.element("#imagesUpload").sortable({
+            placeholder: "portlet-placeholder ui-corner-all upload-image-item ng-scope",
+            update: function (event, ui) {
+              // TODO::
+            }
+          });
+          angular.element("#imagesUpload").disableSelection();
       };
       
       $scope.removeSelectedMedia = function (index) {
@@ -408,6 +431,14 @@
       // 提交表单
       $scope.submitStreehot = function (event) {
         if ($scope.streehotform.$valid) {
+          AjaxLoader.open();
+          // 获取排序后的图片
+          var orderedImages = [];
+          angular.element("#imagesUpload img").each(function () {
+             orderedImages.push(angular.element(this).attr("src"));
+          });
+          $scope.streehot.streehot_image = orderedImages;
+          
           $http({
             method: "POST",
             url: window.baseurl + "/api/streehot/add",
@@ -415,6 +446,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
+            AjaxLoader.close();
             window.location.href = window.baseurl + "/page/streehot";
           });
         }

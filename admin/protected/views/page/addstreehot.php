@@ -19,16 +19,15 @@
       </div>
     </div>
     <div class="control-group">
-      <div class="control-label">
-        <label for=""><?php echo Yii::t("strings", "Media")?></label>
-      </div>
       <div class="conroles">
-        <input type="file" name="media" accept="image/*"/>
-        <ul class="list clearfix">
-         <li class="upload-image-item" ng-repeat="image in media.image">
+        <div id="file_dropzone" class="dz-clickable">
+          <span><?php echo Yii::t("strings", "drag image here")?></span>
+        </div>
+        <ul class="list clearfix" id="imagesUpload">
+         <li class="upload-image-item" ng-repeat="image in streehot.streehot_image">
            <img src="{{image}}" alt="" />         
            <a href="javascript:void(0)" ng-click="removeSelectedMedia($index)"><em class="glyphicon glyphicon-remove"></em><?php echo Yii::t("strings" ,"cancel")?></a>
-         </li>        
+         </li>
         </ul>
         <div ng-repeat="media in streehot.streehot_image">
           <input type="hidden" name="streehot_image[]" value="{{media}}" ng-model="streehot.streehot_image"/>
