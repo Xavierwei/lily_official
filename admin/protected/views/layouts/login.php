@@ -18,7 +18,7 @@
 
 <body>
 
-<div class="container-fluid" id="page">
+<div class="container-fluid no-login" id="page">
 
 	<div id="header">
 		<div id="logo"><?php echo Yii::t("strings", "Lily Office Admin Office")?></div>
