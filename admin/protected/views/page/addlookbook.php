@@ -13,10 +13,12 @@
         <div id="file_dropzone">
           <span><?php echo Yii::t("strings", "drag image here")?></span>
         </div>
-        <ul class="list clearfix">
-          <li class="upload-image-item"   ng-repeat="media in media.look_book_image">
-            <img src="{{media}}" alt="" />
-            <a href="javascript:void(0)" ng-click="removeSelectedMedia($index)"><em class="glyphicon glyphicon-remove"></em><?php echo Yii::t("strings" ,"cancel")?></a>
+        <ul class="list clearfix" id="imagesUpload">
+          <li class="upload-image-item" ng-repeat="media in lookbook.look_book_image">
+            <div class="position" data-index="{{$index}}">
+              <img src="{{media}}" alt="" />
+              <a href="javascript:void(0)" ng-click="removeSelectedMedia($index)"><em class="glyphicon glyphicon-remove"></em><?php echo Yii::t("strings" ,"cancel")?></a>
+            </div>
           </li>
         </ul>
         

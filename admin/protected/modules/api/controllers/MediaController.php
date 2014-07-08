@@ -14,6 +14,7 @@ class MediaController extends Controller {
       if (MediaAR::isAllowed($mediaFile)) {
         $uri = MediaAR::saveTo($mediaFile);
         if ($uri) {
+          $uri = Yii::app()->getBaseUrl(TRUE). $uri;
           return $this->responseJSON(array("uri" => $uri), "success");
         }
         else {

@@ -10,7 +10,6 @@
           paramName: "media", 
           acceptedFiles: "image/*",
           accept: function (file, done) {
-            console.log("accept");
             if (file.type == "image/png" || file.type == "image/jif" || file.type == "image/jpeg" || file.type == "image/jpg") {
               done();
             }
@@ -21,6 +20,17 @@
           url: window.baseurl + "/api/media/temp"});
           // 返回
           return mydropZone;
+      }
+    };
+  });
+  
+  AdminModule.factory("AjaxLoader", function () {
+    return {
+      open: function () {
+        angular.element(".loader").removeClass("hideme");
+      },
+      close: function () {
+        angular.element(".loader").addClass("hideme");
       }
     };
   });
@@ -178,7 +188,7 @@
 
 
   // Lookbook 控制器
-  AdminModule.controller("LookbookForm", ["$scope", "$http", "$location","DragDropFile" ,function ($scope, $http, $location, DragDropFile) {
+  AdminModule.controller("LookbookForm", ["$scope", "$http", "$location","DragDropFile" , "AjaxLoader" ,function ($scope, $http, $location, DragDropFile, AjaxLoader) {
       $scope.media = {};
       $scope.media.look_book_image = [];
       
@@ -217,14 +227,26 @@
           
           // DropDragFile
           var dropzone = DragDropFile.init("div#file_dropzone");
+          dropzone.on("sending", function () {
+            AjaxLoader.open();
+          });
           dropzone.on("success", function (file, response) {
             if (typeof response.data["uri"] != "undefined") {
               var uri = response.data["uri"];
               $scope.lookbook.look_book_image.push(uri);
-              $scope.media.look_book_image.push(window.baseurl + "/" + uri);
               $scope.$digest();
+              AjaxLoader.close();
             }
           });
+          
+          // Sort image
+          angular.element("#imagesUpload").sortable({
+            placeholder: "portlet-placeholder ui-corner-all upload-image-item ng-scope",
+            update: function (event, ui) {
+              // TODO::
+            }
+          });
+          angular.element("#imagesUpload").disableSelection();
         }
 
         var lookbook_gallery = angular.element("input[name='lookbook_gallery']").val();
@@ -275,6 +297,14 @@
       // 提交按钮
       $scope.submitLookbook = function (event) {
         if ($scope.lookbookform.$valid) {
+          AjaxLoader.open();
+          // 先对 lookbook.look_book_image 排序
+          var orderedImages = [];
+          angular.element("#imagesUpload .position img").each(function () {
+             orderedImages.push(angular.element(this).attr("src"));
+             $scope.lookbook.look_book_image = orderedImages;
+          });
+          
           $http({
             method: "POST",
             url: window.baseurl + "/api/lookbook/add",
@@ -282,6 +312,7 @@
             headers: {"Content-Type": "application/x-www-form-urlencoded"}
           })
           .success(function (data) {
+            AjaxLoader.close();
             window.location.href = window.baseurl + "/page/lookbook?gallery=" + $scope.lookbook.lookbook_gallery;
           });
         }

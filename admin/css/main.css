@@ -127,6 +127,7 @@ legend {
   margin-left: 250px;
   margin-top: 150px;
   width: auto;
+  position: relative;
 }
 
 .nav-list > li > a {
@@ -215,8 +216,25 @@ table.dataTable thead {
   border: 0.5em dashed;
 }
 
-
 .dz-preview {
   display: none;
 }
 
+.portlet-placeholder {
+    border: 0.5em dashed black;
+    margin: 0 1em 1em 0;
+    height: 20em;
+    min-width: 200px;
+}
+
+.loader {
+width: 115%;
+height: 100%;
+background-color: rgba(0,0,0,.5);
+z-index: 5;
+position: absolute;
+background-image: url(../images/loader.gif);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center center;
+}

@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
 <div class="container-fluid" id="page">
 
 	<div id="header">
@@ -58,6 +57,7 @@
 
   <?php if (UserAR::isLogin()) :?>
   <div id="body" class="row-fluid">
+    <div class="loader hideme"></div>
     <div id="content" class="span12"><?php echo $content; ?></div>
   </div>
   <?php else: ?>
