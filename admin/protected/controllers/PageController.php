@@ -12,11 +12,15 @@ class PageController extends Controller {
    * 
    */
   public function actionLookbook() {
+    global $language;
     $request = Yii::app()->getRequest();
     $lookbookAr = new LookbookAR();
     $list = $lookbookAr->getList();
 
     $gallery = LookbookGalleryAR::model()->findByPk($request->getParam("gallery"));
+    if ($gallery->language != $language) {
+      return $this->redirect("lookbookgallery");
+    }
     $list = $gallery->loadLookbookItem();
     if (!$gallery) {
       return $this->redirect(Yii::app()->getBaseUrl()."/page/lookbookgallery");
