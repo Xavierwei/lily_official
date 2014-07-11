@@ -27,6 +27,11 @@ require([
     'common/properties-' + ( window.lang || 'en' )
 ], function(require, $, Handlebars, imagesLoaded, skrollr , api, lang) {
 
+    
+    if( $.browser.mozilla ){
+        $('html').addClass('firefox');
+    }
+    
     // fix lang
     window._e = function( text ){
         return lang[ text ] || text;

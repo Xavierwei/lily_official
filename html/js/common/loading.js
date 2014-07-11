@@ -22,6 +22,8 @@ define([
         dTop = $('.loading.top'),
         dTape = $('.showy');
 
+    
+
     // new overlay init
     var newsInit = function () {
         var dEvent = $('.event_list');
