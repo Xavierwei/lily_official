@@ -25,9 +25,6 @@
 					        <h2><?php echo Yii::t("strings", "LOOK<br />BOOK")?></h2>
 					        <div class="fw"><?php echo $title?></div>
 				        </div>
-				        <?php foreach ($lookbookes as $index => $lookbook):?>
-					        <div class="gohash lb_modtit fadeout" data-hash="s<?php echo $index?>"><?php echo $lookbook->title?></div>
-				        <?php endforeach;?>
 			        </div>
 			        <?php $first_lookbook = array_shift($lookbookes); ?>
 			        <?php if ($first_lookbook):?>
@@ -57,9 +54,6 @@
             <?php $look_images = $lookbook->look_book_image;?>
 	            <div class="ss_group" id="s<?php echo $index+1;?>">
 		            <div class='limit cs-clear ss_row1'>
-						<div class="left">
-							<div class="middle lb_modtit2"><?php echo $lookbook->title?></div>
-						</div>
 
 			            <div class="lookbook_right">
 				            <img class="btn album" data-album="1" data-index='<?php $next_index += 1; echo $next_index;?>' src="<?php echo array_shift($look_images)?>" />

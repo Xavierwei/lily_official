@@ -57,11 +57,11 @@
                     <a href="#campaign" class="home_cpbox">
                         <h2><?php echo Yii::t("strings", "CAM-<br />PAIGN")?></h2>
 	                    <?php if(Yii::app()->language == 'en_us'):?>
-		                    <p>FW/14</p>
+		                    <p>FALL/14</p>
 		                    <p>featuring<br />Tilda Lindstam</p>
 	                    <?php else:?>
-		                    <p>14秋冬</p>
-		                    <p>Lily 2014 年春季广告大片</p>
+		                    <p>14秋季</p>
+		                    <p>Lily 2014 年秋季广告大片</p>
 	                    <?php endif;?>
                     </a>
                 </div>
@@ -73,17 +73,16 @@
                           $title = $lookbookes[0];
                           $lookbookes = $lookbookes[1];
                         ?>
-                        <a href="#lookbook" class="home_lb_item border">
+                        <a href="lookbook" class="home_lb_item border">
                             <h2><?php echo Yii::t("strings", "LOOK<br />BOOK")?></h2>
                             <p><?php echo $title?></p>
                         </a>
-                        <?php foreach ($lookbookes as $index => $lookbook):?>
-                        <div class="home_lb_item">
-                            <a href="#lookbook<?php echo $index > 0 ? "?hash=s".($index+ 1): ""; ?>" class='border'><?php echo $lookbook->title?></a>
-                        </div>
-                        <?php endforeach;?>
                         <div class='videowrap'>
-                            <img class='video fadeout' src="images/home_img4.jpg" />
+	                        <?php if(Yii::app()->language == 'en_us'):?>
+	                            <a href="lookbook"><img class='fadeout' src="images/home_img4.jpg" /></a>
+	                        <?php else:?>
+		                        <a href="lookbook"><img class='fadeout' src="images/home_img4_cn.jpg" /></a>
+	                        <?php endif;?>
                         </div>
                     </div>
                 </div>

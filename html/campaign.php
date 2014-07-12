@@ -16,11 +16,11 @@
                     <div class="cp_tit">
                         <h2><?php echo Yii::t("strings", "CAM-<br />PAIGN")?></h2>
 	                    <?php if(Yii::app()->language == 'en_us'):?>
-	                        <p>FW/14</p>
+	                        <p>FALL/14</p>
 	                        <p>featuring<br />Tilda Lindstam</p>
 	                    <?php else:?>
-		                    <p>14秋冬</p>
-		                    <p>Lily 2014 年春季广告大片</p>
+		                    <p>14秋季</p>
+		                    <p>Lily 2014 年秋季广告大片</p>
 	                    <?php endif;?>
                     </div>
 	                <?php if(Yii::app()->language == 'en_us'):?>
@@ -28,7 +28,7 @@
 	                    <div class="cp_season btn btnlink btnlink2 fadeout video"><span>Lily 2014 SS KV making off</span><span>Lily 2014 SS KV making off</span></div>
 	                <?php else:?>
 		                <div class="cp_season btn btnlink btnlink2 go_play_ground"><span>格子间的奇幻乐园</span><span>格子间的奇幻乐园</span></div>
-		                <div class="cp_season btn btnlink btnlink2 fadeout video"><span>Lily 2014 年春季广告大片</span><span>Lily 2014 年春季广告大片</span></div>
+		                <div class="cp_season btn btnlink btnlink2 fadeout video"><span>Lily 2014 年秋季广告大片</span><span>Lily 2014 年秋季广告大片</span></div>
 	                <?php endif;?>
                 </div>
 	            <div class="left">
@@ -55,7 +55,7 @@
 		                <p>For the season 2014 Spring/Summer campaign, we decide to collaborate with the world top 20 model Barbara Palvin and photographer John Wright.</p>
 	                <?php else:?>
 		                <h2>格子间的奇幻乐园</h2>
-		                <p>LILY(Lily)2014春夏季的拍摄，仍然以“办公室是我的游乐园”作为主题概念不仅延续了超现实的办公空间感，而且融入了具有春夏季节性的超大版植物，粉的绿的交织变幻着，为办公室增添不少朝气蓬勃的轻松气息。为了让春季和夏季之间的风格更加鲜明，创意团队分别选用了不同的艺术元素呈现。对春季的拍摄更侧重于春日舒展的枝叶做为视觉称托，一片绿意盎然的活力基调将LILY春季新品烘托得更加焕然出彩。夏日盛开的繁花则顺理成章地成为了夏季的最标志性元素，新鲜活脱的自然色彩，千姿百态的花瓣弧度，无一不为LILY的夏装阐释着盛夏的热情力度。</p>
+		                <p>LILY2014秋季的拍摄，仍然以“办公室是我的游乐园”作为主题概念不仅延续了超现实的办公空间感，而且融入了具有春夏季节性的超大版植物，粉的绿的交织变幻着，为办公室增添不少朝气蓬勃的轻松气息。为了让春季和夏季之间的风格更加鲜明，创意团队分别选用了不同的艺术元素呈现。对春季的拍摄更侧重于春日舒展的枝叶做为视觉称托，一片绿意盎然的活力基调将LILY春季新品烘托得更加焕然出彩。夏日盛开的繁花则顺理成章地成为了夏季的最标志性元素，新鲜活脱的自然色彩，千姿百态的花瓣弧度，无一不为LILY的夏装阐释着盛夏的热情力度。</p>
 	                <?php endif;?>
                 </div>
 	            <div class="right">
@@ -70,11 +70,11 @@
             <div class="cs-clear limit cp-model">
                 <div class="cp_modtxt right">
 	                <?php if(Yii::app()->language == 'en_us'):?>
-	                    <h2>Barbara Palvin</h2>
+	                    <h2>Tilda Lindstam</h2>
 	                    <p>It is worth to mention that the design team fixes their eyes on Barbara Palvin, the new supermodel from Hungarian, to better show the grace and intelligence of LILY girls.  Through her beautiful face and inborn model nature, this young Hungarian girl has won friendly cooperation with many big international brands like Victoria’s Secret (even become the 2012 Victoria Secret Angel).  Barbara Palvin shows her jumping energy at Lily’s shooting scene. Wearing simple makeup and exquisite hairstyle, she exhibits the happy, lively and positive nature of LILY girls.</p>
 	                <?php else:?>
-		                <h2>Barbara Palvin</h2>
-		                <p>非常值得一提的是，在这次的模特选角上，为了更好地体现LILY女孩大方、轻松的灵动气质，创意团队将聚光灯投放在全球新一代超模Barbara Palvin身上，这位来自匈牙利的年轻女孩凭借镜头最青眯的天使面孔，以及与生俱来的模特素质，已迅速取得如维多利亚的秘密（更成为2012维密天使）等多个国际级大牌的友好合作。Barbara Palvin在LILY的拍摄现场更是展现出一身的跳动活力，在简洁的妆容与精致的造型配合下，时刻绽放着LILY女孩特有的开朗、活力、积极气息。</p>
+		                <h2>Tilda Lindstam</h2>
+		                <p>Lily女孩向来都有着自信独立、积极开朗的气质。本次秋季大片拍摄，Lily创意团队将挑剔的选角目光，投向了瑞典新晋超模Tilda Lindstam。年轻的Tilda拥有一张鹅卵石般的圆润脸庞，眼睛温柔剔透，亲和中透露着些许中性气魄。独具风格的她，可谓是2013春夏时装周的秀霸，共计走秀68场，包括Chloe， Miu Miu， Valentino， Calvin Klein等国际一线品牌。2014年，更荣升全球50强模特权威榜单第28位。在与Lily的合作中，Tilda尽展超模实力，配合纯净妆容与完美造型，将Lily女孩的魅力演绎得淋漓尽致。</p>
 	                <?php endif;?>
                 </div>
                 <img class='left btn album' data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/7.jpg" />
@@ -106,77 +106,10 @@
 
             <div class="wrap cp-mo2">
                 <img src="pic/campaign/12.jpg" />
-                <a href="javascript:;" class="video fadeout cp_blacklink btnlink"><span><?php echo Yii::t("strings", "MAKING OF SPRING")?></span><span><?php echo Yii::t("strings", "MAKING OF SPRING")?></span></a>
-            </div>
-
-	        <div class='limit cp-top cs-clear'>
-		        <div class="left">
-			        <img class='btn album' data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/13.jpg" />
-		        </div>
-	        </div>
-
-
-            <div class="cs-clear limit">
-                <div class="list">
-                    <img class='right btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/16.jpg" />
-                    <img class='right btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/15.jpg" />
-                    <img class='right btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/14.jpg" />
-                </div>
+                <a href="javascript:;" class="video fadeout cp_blacklink btnlink"><span><?php echo Yii::t("strings", "MAKING OF FALL")?></span><span><?php echo Yii::t("strings", "MAKING OF FALL")?></span></a>
             </div>
 
 
-	        <div class="cs-clear limit cp-ground">
-		        <div class="right">
-			        <img class='btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/17.jpg" />
-		        </div>
-	        </div>
-
-            <div class="cs-clear limit cp-full">
-                <img class='full btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/18.jpg" />
-            </div>
-
-
-	        <div class='limit cp-top cp-top2 cs-clear'>
-		        <div class="left">
-			        <img class='btn album' data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/19.jpg" />
-		        </div>
-	        </div>
-
-
-
-	        <div class="limit cs-clear cp-full cp-mo3">
-		        <div class="row1">
-			        <div class="cp_blacktit"><?php echo Yii::t("strings", "MAKING OF")?></div>
-			        <div class="cp_img cp_img_size2">
-				        <img class="btn album" data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/20.jpg" />
-			        </div>
-		        </div>
-		        <div class="cs-clear"></div>
-		        <div class="row2">
-			        <div class="cp_img cp_img_size3">
-				        <img class="btn album" data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/21.jpg" />
-			        </div>
-		        </div>
-		        <div class="cs-clear"></div>
-		        <div class="row3">
-			        <div class="cp_img cp_img_size1">
-				        <img class="btn album" data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/22.jpg" />
-			        </div>
-		        </div>
-		        <div class="cs-clear"></div>
-		        <div class="row4">
-			        <div class="cp_img cp_img_size1">
-				        <img class="btn album" data-album="4" data-index="<?php $next_index += 1; echo $next_index;?>" src="pic/campaign/23.jpg" />
-			        </div>
-		        </div>
-	        </div>
-
-
-
-            <div class="wrap cp-mo2">
-                <img src="pic/campaign/24.jpg" />
-                <a href="javascript:;" class="video fadeout cp_blacklink btnlink"><span><?php echo Yii::t("strings", "MAKING OF SUMMER")?></span><span><?php echo Yii::t("strings", "MAKING OF SUMMER")?></span></a>
-            </div>
         </div>
 
 	    <?php include_once "include/footer.php";?>

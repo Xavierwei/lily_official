@@ -393,51 +393,7 @@ define([
             {
                 url : 'pic/campaign/11.jpg',
                 title : _e('Campaign')
-            },
-            {
-                url : 'pic/campaign/13.jpg',
-                title : _e('Campaign')
-            },
-            {
-                url : 'pic/campaign/14.jpg',
-                title : _e('Campaign')
-            },
-            {
-                url : 'pic/campaign/15.jpg',
-                title : _e('Campaign')
-            },
-            {
-                url : 'pic/campaign/16.jpg',
-                title : _e('Campaign')
-            },
-            {
-                url : 'pic/campaign/17.jpg',
-                title : _e('Campaign')
-            },
-			{
-				url : 'pic/campaign/18.jpg',
-				title : _e('Campaign')
-			},
-			{
-				url : 'pic/campaign/19.jpg',
-				title : _e('Campaign')
-			},
-			{
-				url : 'pic/campaign/20.jpg',
-				title : _e('Campaign')
-			},
-			{
-				url : 'pic/campaign/21.jpg',
-				title : _e('Campaign')
-			},
-			{
-				url : 'pic/campaign/22.jpg',
-				title : _e('Campaign')
-			},
-			{
-				url : 'pic/campaign/23.jpg',
-				title : _e('Campaign')
-			}
+            }
         ]
 
         if(oConfig.data.id==5) {
@@ -495,14 +451,7 @@ define([
                 webm : 'media/demo.webm',
                 ogv : 'media/demo.ogv',
                 poster : 'media/demo.jpg',
-                title : _e('video1')
-            },
-            {
-                mp4 : 'media/demo.mp4',
-                webm : 'media/demo.webm',
-                ogv : 'media/demo.ogv',
-                poster : 'media/demo.jpg',
-                title : _e('video2')
+                title : _e('Making of fall')
             }
         ]
 

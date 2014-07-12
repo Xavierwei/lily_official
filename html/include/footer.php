@@ -6,7 +6,6 @@
 			    <div class="ft_list">
 				    <h2 data-title="BRAND"><?php echo Yii::t("strings", "BRAND")?></h2>
 				    <ol>
-					    <li><a data-title="BRAND-STORY" href='./index?hash=brand_story'><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
 					    <li><a data-title="HISTORY" href='./history'><?php echo Yii::t("strings", "HISTORY")?></a></li>
 					    <li><a data-title="EVENTS" href='./events'><?php echo Yii::t("strings", "EVENTS")?></a></li>
 				    </ol>
@@ -77,7 +76,6 @@
     <!-- showy -->
     <div class="showy">
         <div class="showyitem showyitem1" data-0='bottom: 20%;' data-1200="bottom:120%;"></div>
-        <div class="showyitem showyitem2" data-0='bottom: -20%;' data-3200="bottom:120%;"></div>
         <div class="showyitem showyitem3" data-0='bottom: -20%;' data-5000="bottom:120%;"></div>
         <div class="showyitem showyitem4" data-0='bottom: -20%;' data-900-end="bottom:60%;"></div>
         <div class="showyitem showyitem5" data-0='bottom: -20%;' data-1300-end="bottom:5%;" data-900-end="bottom:20%;" data-500-end="bottom:35%;"></div>

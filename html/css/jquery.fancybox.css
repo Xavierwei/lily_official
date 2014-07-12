@@ -60,7 +60,7 @@ background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;bo
 .jcarousel{position:absolute;top:0;bottom:20%;left:0;right:0;overflow:hidden;}
 .jcarousel ul{position:relative;width:20000em;height:100%;}
 .jcarousel li{position:relative;float:left;height:100%;text-align:center;}
-.jcarousel img{height:100%;}
+.jcarousel img{height:100%;display: block;}
 /* * Carousel Controls * */
 .fancybox-inner .actions{position:absolute;top:80%;bottom:0;left:0;right:0;overflow:hidden;text-align:center;}
 .fancybox-inner .actions li{display:inline-block;height:100%;}
