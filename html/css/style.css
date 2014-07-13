@@ -820,7 +820,6 @@ div:selected {
     opacity: 0;
     z-index: 1;
 }
-.firefox .jcarousel li {float: none !important;font-size: 0;display: inline;}
 
 
 

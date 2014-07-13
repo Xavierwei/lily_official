@@ -2,50 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62b977a8-c738-477d-aca5-b05cd5ee96e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/campaign.bak.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/index.bak.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/lookbook.bak.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pic/campaign/1.jpg" afterPath="$PROJECT_DIR$/html/pic/campaign/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pic/campaign/10.jpg" afterPath="$PROJECT_DIR$/html/pic/campaign/10.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/upload/f6b487ac27746526770e7b91581f96ac.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pic/campaign/11.jpg" afterPath="$PROJECT_DIR$/html/pic/campaign/11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pic/campaign/12.jpg" afterPath="$PROJECT_DIR$/html/pic/campaign/12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pic/campaign/2.jpg" afterPath="$PROJECT_DIR$/html/pic/campaign/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pic/campaign/3.jpg" afterPath="$PROJECT_DIR$/html/pic/campaign/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pic/campaign/4.jpg" afterPath="$PROJECT_DIR$/html/pic/campaign/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pic/campaign/5.jpg" afterPath="$PROJECT_DIR$/html/pic/campaign/5.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pic/campaign/6.jpg" afterPath="$PROJECT_DIR$/html/pic/campaign/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pic/campaign/7.jpg" afterPath="$PROJECT_DIR$/html/pic/campaign/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pic/campaign/8.jpg" afterPath="$PROJECT_DIR$/html/pic/campaign/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pic/campaign/9.jpg" afterPath="$PROJECT_DIR$/html/pic/campaign/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/media/demo.jpg" afterPath="$PROJECT_DIR$/html/media/demo.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/media/demo.mp4" afterPath="$PROJECT_DIR$/html/media/demo.mp4" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/images/home_img1.jpg" afterPath="$PROJECT_DIR$/html/images/home_img1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/images/home_img2.jpg" afterPath="$PROJECT_DIR$/html/images/home_img2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/images/home_img3.jpg" afterPath="$PROJECT_DIR$/html/images/home_img3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/images/home_img4.jpg" afterPath="$PROJECT_DIR$/html/images/home_img4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/api.js" afterPath="$PROJECT_DIR$/html/js/common/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/runtime/application.log" afterPath="$PROJECT_DIR$/admin/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/campaign.php" afterPath="$PROJECT_DIR$/html/campaign.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/contact.php" afterPath="$PROJECT_DIR$/html/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/script/en_us.php" afterPath="$PROJECT_DIR$/html/script/en_us.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/footer.php" afterPath="$PROJECT_DIR$/html/include/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.php" afterPath="$PROJECT_DIR$/html/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/jquery.fancybox.css" afterPath="$PROJECT_DIR$/html/css/jquery.fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lookbook.php" afterPath="$PROJECT_DIR$/html/lookbook.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/include/nav.php" afterPath="$PROJECT_DIR$/html/include/nav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/properties-cn.js" afterPath="$PROJECT_DIR$/html/js/common/properties-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/properties-en.js" afterPath="$PROJECT_DIR$/html/js/common/properties-en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/response.css" afterPath="$PROJECT_DIR$/html/css/response.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/templates/storelocator.html" afterPath="$PROJECT_DIR$/html/js/templates/storelocator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" afterPath="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/.htaccess" afterPath="$PROJECT_DIR$/html/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/common/helper.js" afterPath="$PROJECT_DIR$/html/js/common/helper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/script/zh_cn.php" afterPath="$PROJECT_DIR$/html/script/zh_cn.php" />
     </list>
     <ignored path="lily_official.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405070820199" ignored="false" />
-    <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404893094876" ignored="false" />
+    <file path="/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405154424917" ignored="false" />
     <file path="/style.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405074409115" ignored="false" />
     <file path="/loading.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404306320943" ignored="false" />
     <file path="$PROJECT_DIR$/../porsche_lemans/web/api/protected/views/index/countdown.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1401352610756" ignored="false" />
@@ -104,7 +73,7 @@
     <file path="/milestone.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402283386255" ignored="false" />
     <file path="/response.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405077413248" ignored="false" />
     <file path="/campaign.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402363349987" ignored="false" />
-    <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403328066083" ignored="false" />
+    <file path="/helper.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405149758049" ignored="false" />
     <file path="/lookbook.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403155937361" ignored="false" />
     <file path="/starshop.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403171852680" ignored="false" />
     <file path="/streetshot.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1402299298439" ignored="false" />
@@ -187,7 +156,7 @@
     <file path="/storelocator.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404877357788" ignored="false" />
     <file path="/winner.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404303428807" ignored="false" />
     <file path="/news.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403404709421" ignored="false" />
-    <file path="/.htaccess" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403353966032" ignored="false" />
+    <file path="/.htaccess" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405148291266" ignored="false" />
     <file path="/news.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404294681259" ignored="false" />
     <file path="/lookbook.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403837030576" ignored="false" />
     <file path="/functions.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403404529841" ignored="false" />
@@ -223,17 +192,17 @@
     <file path="/properties-en_us.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403767890200" ignored="false" />
     <file path="/properties-zh_cn.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403767245393" ignored="false" />
     <file path="/search.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1403788382411" ignored="false" />
-    <file path="$PROJECT_DIR$/../upstudios/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404217763516" ignored="false" />
-    <file path="$PROJECT_DIR$/../upstudios/css/global.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404120506083" ignored="false" />
-    <file path="$PROJECT_DIR$/../upstudios/js/global.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404199353782" ignored="false" />
-    <file path="/global.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404120505630" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/index.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405154451177" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/css/global.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405154367590" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/js/global.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405153648668" ignored="false" />
+    <file path="/global.css" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405154366846" ignored="false" />
     <file path="$PROJECT_DIR$/../upstudios/js/detail.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404119589297" ignored="false" />
     <file path="$PROJECT_DIR$/../upstudios/detail.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404118356616" ignored="false" />
-    <file path="$PROJECT_DIR$/../upstudios/index_en.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404199367324" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/index_en.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405154395984" ignored="false" />
     <file path="$PROJECT_DIR$/../upstudios/detail_en.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404199387437" ignored="false" />
     <file path="$PROJECT_DIR$/../upstudios/js/global_en.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404024405123" ignored="false" />
-    <file path="/global.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404199329782" ignored="false" />
-    <file path="/index_en.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404199243643" ignored="false" />
+    <file path="/global.js" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405153639633" ignored="false" />
+    <file path="/index_en.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1405154226973" ignored="false" />
     <file path="/detail.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404118355774" ignored="false" />
     <file path="/detail_en.html" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404027248667" ignored="false" />
     <file path="/starstore.php" changelist="62b977a8-c738-477d-aca5-b05cd5ee96e5" time="1404043767860" ignored="false" />
@@ -298,48 +267,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/index.php">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/common/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="96" selection-start="3839" selection-end="3839" vertical-scroll-proportion="-21.035715">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="campaign.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/campaign.php">
+      <file leaf-file-name="helper.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/js/common/helper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="50" selection-start="2491" selection-end="2491" vertical-scroll-proportion="-17.285715">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/include/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="16" selection-start="2924" selection-end="2924" vertical-scroll-proportion="-2.0357144">
-              <folding>
-                <marker date="1405043318000" expanded="true" signature="8494:8595" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/protected/messages/en_us/strings.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="23" selection-start="1446" selection-end="1446" vertical-scroll-proportion="-6.107143">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="26" selection-start="1663" selection-end="1663" vertical-scroll-proportion="-29.5">
+            <state line="165" column="78" selection-start="5581" selection-end="5581" vertical-scroll-proportion="-1.7821429">
               <folding />
             </state>
           </provider>
@@ -348,43 +288,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="186" column="53" selection-start="9102" selection-end="9102" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.fancybox.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/css/jquery.fancybox.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="33" selection-start="4285" selection-end="4285" vertical-scroll-proportion="0.3482143">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="response.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/css/response.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="properties-cn.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/js/common/properties-cn.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zh_cn.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/script/zh_cn.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="374" selection-end="374" vertical-scroll-proportion="-11.535714">
+            <state line="821" column="1" selection-start="32003" selection-end="32003" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -408,8 +312,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/html/js/templates/storelocator.html" />
-        <option value="$USER_HOME$/Project/ff/avene/edm/0708/production/index.html" />
         <option value="$USER_HOME$/Project/yplus/2014master/en.html" />
         <option value="$USER_HOME$/Project/yplus/2014master/index.html" />
         <option value="$PROJECT_DIR$/html/include/nav.php" />
@@ -421,9 +323,11 @@
         <option value="$PROJECT_DIR$/html/index.php" />
         <option value="$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php" />
         <option value="$PROJECT_DIR$/html/campaign.php" />
-        <option value="$PROJECT_DIR$/html/css/style.css" />
         <option value="$PROJECT_DIR$/html/css/response.css" />
         <option value="$PROJECT_DIR$/html/css/jquery.fancybox.css" />
+        <option value="$PROJECT_DIR$/html/.htaccess" />
+        <option value="$PROJECT_DIR$/html/css/style.css" />
+        <option value="$PROJECT_DIR$/html/js/common/helper.js" />
       </list>
     </option>
   </component>
@@ -799,7 +703,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="22" width="2347" height="1281" extended-state="0" />
+    <frame x="66" y="22" width="2347" height="1281" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -882,27 +786,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/include/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/include/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="108" selection-start="3165" selection-end="3165" vertical-scroll-proportion="-28.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/common/properties-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="70" selection-start="491" selection-end="491" vertical-scroll-proportion="-10.178572">
@@ -931,60 +814,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/script/zh_cn.php">
+    <entry file="file://$PROJECT_DIR$/html/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="374" selection-end="374" vertical-scroll-proportion="-11.535714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/include/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="16" selection-start="2924" selection-end="2924" vertical-scroll-proportion="-2.0357144">
-          <folding>
-            <marker date="1405043318000" expanded="true" signature="8494:8595" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="96" selection-start="3839" selection-end="3839" vertical-scroll-proportion="-21.035715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/protected/messages/en_us/strings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="1446" selection-end="1446" vertical-scroll-proportion="-6.107143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="26" selection-start="1663" selection-end="1663" vertical-scroll-proportion="-29.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/campaign.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="50" selection-start="2491" selection-end="2491" vertical-scroll-proportion="-17.285715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/response.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="186" column="53" selection-start="9102" selection-end="9102" vertical-scroll-proportion="0.0">
+        <state line="16" column="32" selection-start="427" selection-end="427" vertical-scroll-proportion="0.2683142">
           <folding />
         </state>
       </provider>
@@ -992,6 +824,78 @@
     <entry file="file://$PROJECT_DIR$/html/css/jquery.fancybox.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="33" selection-start="4285" selection-end="4285" vertical-scroll-proportion="0.3482143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/protected/messages/zh_cn/strings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="26" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.75641024">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/protected/messages/en_us/strings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="23" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.15659341">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/include/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="16" selection-start="2924" selection-end="2924" vertical-scroll-proportion="0.05158371">
+          <folding>
+            <marker date="1405143794000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/campaign.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="50" selection-start="2491" selection-end="2491" vertical-scroll-proportion="0.44322345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="96" selection-start="3839" selection-end="3839" vertical-scroll-proportion="0.5393773">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/css/response.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="0.20357142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/script/zh_cn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="14" selection-start="374" selection-end="374" vertical-scroll-proportion="0.2923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="821" column="1" selection-start="32003" selection-end="32003" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="78" selection-start="5581" selection-end="5581" vertical-scroll-proportion="-1.7821429">
           <folding />
         </state>
       </provider>

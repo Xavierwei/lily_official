@@ -158,8 +158,12 @@ define([
                             jcarousel.jcarousel('items')
                                 .find('img')
                                 .css('width', 'auto');
-
-                            jcarousel.jcarousel('scroll',  imgIndex , false );
+							tImgs = jcarousel.find('img');
+							tImgs.each(function(index, obj){
+								var width = $(obj).width();
+								$(obj).parent().css('width',width);
+							})
+							jcarousel.jcarousel('scroll',  imgIndex , false );
 
                         } , 0 );
                     }).jcarousel({
