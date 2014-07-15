@@ -1,4 +1,9 @@
 /* Mobile */
+@media only screen and (max-height:660px)
+{
+    .home_img1 img {max-width:53%;}
+}
+
 @media only screen and (max-width:3000px){
 }
 @media only screen and (max-width:1920px){
@@ -10,6 +15,7 @@
     #wrap .page .limit.event_list {width:1233px;}
     .job_item {margin:0 15px;}
     #wrap .page .limit.job_list {width:1233px;}
+    .ss_row3 .left {margin-left:-14%;}
 }
 
 @media only screen and (max-width:1350px){
@@ -18,12 +24,20 @@
     #nav li.item {width:150px;}
     .job_item {margin:10px 80px 40px 80px;}
     #wrap .page .limit.job_list {width:1084px;margin:0 auto;}
+    .page_campaign .cp-model .right  {margin-top:100px;}
+    .ss_row3 .left {margin-left:-14.5%;}
 }
 
 @media only screen and (max-width:1220px){
-    .page_campaign .cp-model .right  {margin-top:100px;}
     .weibo_wblogo {margin:0;}
     .weibo_wbcom {padding:20px 30px}
+}
+
+
+@media only screen and (max-width:1150px){
+    .ss_row1 .streetshot_right,.ss_row1 .lookbook_right {margin-right:-13.5%;}
+    .page_campaign .cp-model .right  {margin-top:50px;}
+    .ss_row3 .left {margin-left:-15%;}
 }
 
 @media only screen and (max-width:1050px){
@@ -31,14 +45,18 @@
     #wrap .page .limit.event_list {width:840px;}
     #nav li.item {width:130px;font-size:12px;}
     #nav li.item h2 {padding:25px 0 0 0;margin:0 0 0 20px;display:inline-block;}
+    .ipad #nav li.item h2 {padding-top:45px;}
     #nav li ol {padding:56px 0 20px 20px;}
+    .ipad #nav li ol {padding-top:6px;}
     .language a {font-size:12px;}
     .job_item {margin:10px 43px 40px 43px;}
     #wrap .page .limit.event_list {width:840px;}
     #wrap .page .limit.job_list {width:910px;margin:0 auto;}
+    .ss_row3 .left {margin-left:-15.5%;}
 }
 
 @media only screen and (max-width:900px){
+    .ss_row1 .streetshot_right,.ss_row1 .lookbook_right {margin-right:-13%;}
     #nav li.item {width:130px;font-size:12px;}
     #nav li.item h2 {padding:25px 0 0 0;margin:0 0 0 15px;}
     #nav li ol {padding:56px 0 20px 15px;}
@@ -46,6 +64,7 @@
     .job_item {margin:10px 43px 40px 43px;}
     #wrap .page .limit.event_list {width:924px;}
     #wrap .page .limit.job_list {width:910px;margin:0 auto;}
+    .ss_row3 .left {margin-left:-16%;}
 }
 
 @media screen and (max-width:640px){

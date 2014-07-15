@@ -21,4 +21,5 @@
   'Tel' => '',
   'view_shop' => 'View Shop',
   'view_map' => 'View Map',
+  'Making of fall' => '',
 );

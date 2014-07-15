@@ -35,7 +35,14 @@ define([
                 });
         }
 
-        map.init();
+		var sUserAgent = navigator.userAgent.toLowerCase();
+		var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+		if(bIsIpad) {
+			$('meta[name="viewport"]').attr('content','width=1024, minimum-scale=0.5, maximum-scale=1, target-densityDpi=290,user-scalable = no,minimal-ui');
+			$('html').addClass('ipad');
+		}
+
+		map.init();
 
         // start catch album and videos , weibo events
         helper.init();

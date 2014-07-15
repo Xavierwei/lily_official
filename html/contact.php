@@ -14,7 +14,6 @@
                 <!--  -->
                 <div class="contact_tit">
                     <h2><?php echo Yii::t("strings", "CONTACT")?></h2>
-                    <p><?php echo Yii::t("strings", "COME TO SAY HELLO")?></p>
                 </div>
                 <!--  -->
                 <div class="contact_con">

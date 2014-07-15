@@ -312,6 +312,9 @@ define([
 
         dDistrictSelect.change(function () {
             updateText();
+             setTimeout(function(){
+                searchShop(true);
+            } , 200);
         });
 
         // when click the search button, should update the map center and markers

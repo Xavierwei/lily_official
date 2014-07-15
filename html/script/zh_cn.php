@@ -21,4 +21,5 @@
   'Tel' => '电话',
   'view_shop' => '查看门店',
   'view_map' => '查看地图',
+  'Making of fall' => '秋季幕后花絮',
 );

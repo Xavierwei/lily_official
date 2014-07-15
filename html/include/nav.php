@@ -40,7 +40,7 @@
     </ul>
 
     <a class='menu'></a>
-	<div class="language lang-<?php global $language; echo $language;?>" data-0="top:38px;" data-100="top:28px;">
+	<div class="language lang-<?php global $language; echo $language;?>" data-0="top:42px;" data-100="top:28px;">
 		<a href="" data-lang="en_us" class="lang_en">EN</a>
 		<a href="" data-lang="zh_cn" class="lang_cn">中文</a>
 	</div>
