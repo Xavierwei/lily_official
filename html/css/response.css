@@ -45,7 +45,9 @@
     #wrap .page .limit.event_list {width:840px;}
     #nav li.item {width:130px;font-size:12px;}
     #nav li.item h2 {padding:25px 0 0 0;margin:0 0 0 20px;display:inline-block;}
+    .ipad #nav li.item h2 {padding-top:45px;}
     #nav li ol {padding:56px 0 20px 20px;}
+    .ipad #nav li ol {padding-top:6px;}
     .language a {font-size:12px;}
     .job_item {margin:10px 43px 40px 43px;}
     #wrap .page .limit.event_list {width:840px;}

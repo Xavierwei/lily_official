@@ -64,6 +64,7 @@ a:hover {opacity:0.8;}
 /* footer Used
 ================================================================================================= */
 .footer{position:fixed;bottom:0;width:100%;background:#c7deeb;line-height:30px;font-size:16px;text-transform:uppercase;color:#77858d}
+.ipad .footer {position: relative;}
 .ft_logo{background:url('../images/ft_logo.png') no-repeat center;width:132px;height:86px;margin:0 auto;padding:5%;}
 .ft_com{margin:0 auto;width:950px;;font-size:12px;}
 .ft_list{display:inline-block;vertical-align:top;margin:0 50px;width:130px;}
@@ -84,6 +85,7 @@ a:hover {opacity:0.8;}
 /* PAGE Used
 ================================================================================================= */
 .page {position: relative;z-index:2;margin-bottom: 542px;padding-top:80px;}
+.ipad .page {margin-bottom:50px;}
 .page_event{padding:170px 0}
 .page_contact{background:url('../images/contact_bg.jpg') no-repeat center top;padding:290px 0}
 .page_vip{padding:250px 0;}
