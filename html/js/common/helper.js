@@ -4,10 +4,11 @@ define([
     'Handlebars',
     'common/map',
     'common/api',
+    'lib/video-js',
     'lib/text!templates/album.html',
     'lib/text!templates/video.html',
     'lib/text!templates/weibo.html'
-], function($, Handlebars, map, api, albumTpl, videoTpl, weiboTpl) {
+], function($, Handlebars, map, api, videojs , albumTpl, videoTpl, weiboTpl) {
     var dBody = $('body'),
         isUglyIe = $.browser.msie && $.browser.version <= 8,
         isIphone = navigator.userAgent.toLowerCase().indexOf('iphone') > 0,
@@ -228,6 +229,26 @@ define([
                 });
             }
         });
+    
+    function renderVideo ( $wrap , movie , poster , config , cb ){
+        var id = 'video-js-' + ( $.guid++ );
+        $wrap.append( '<div class="video-wrap-inner" style="position:absolute;width:100%;height:100%;"><video id="' + id + '" style="width: 100%;height: 100%;" class="video-js vjs-default-skin"\
+            preload="auto"\
+              poster="' + poster + '">\
+             <source src="' + movie + '.mp4" type="video/mp4" />\
+             <source src="' + movie + '.webm" type="video/webm" />\
+             <source src="' + movie + '.ogv" type="video/ogg" />\
+        </video></div>');
+
+        config = $.extend( { "controls": false, "autoplay": false, "preload": "auto","loop": true, "children": {"loadingSpinner": false} } , config || {} );
+        videojs.options.flash.swf = "./js/lib/video-js/video-js.swf";
+        var myVideo = videojs( id , config , function(){
+            var v = this;
+            $wrap.find('.video-wrap').fadeIn();
+            $wrap.data('video-object' , v);
+            cb && cb.call( v );
+        } );
+    }
 
         // video list
         dBody.delegate('.video', 'click', function() {
@@ -238,17 +259,16 @@ define([
                     dNext = $('.jcarousel-control-next'),
                     dDesc = $('.actions .desc'),
                     nLength = $('.jcarousel .content li').length,
-                    nIndex = 1,
+                    nIndex = imgIndex,
                     updateDesc = function () {
 
+                        if (nIndex <= 0 ) {
+                            nIndex = nLength;
+                        }
 
-                        // if (nIndex <= 0 ) {
-                        //     nIndex = nLength;
-                        // }
-
-                        // if (nIndex >= nLength){
-                        //     nIndex = 1;
-                        // }
+                        if (nIndex >= nLength){
+                            nIndex = 1;
+                        }
 
                         // dDesc.html(aData[nIndex - 1].title);
                     }
@@ -269,11 +289,36 @@ define([
                     //         .find('img')
                     //         .css('width', 'auto');
                     jcarousel.jcarousel('items').css('width' , $(window).width());
-                        jcarousel.jcarousel('scroll',  imgIndex , false );
+                    jcarousel.jcarousel('scroll',  imgIndex , false );
                     $(window).resize(function(){
                         jcarousel.jcarousel('items').css('width' , $(window).width());
                     });
                     //} , 0 );
+                })
+                .on('jcarousel:animate', function(event, carousel) {
+                    if( $.browser.msie && $.browser.version <= 8 ){
+                        var $target = $(this).jcarousel('target');
+                        var $wrap = $target.find('.video-wrap');
+                        $wrap.data('video-object') && $wrap.data('video-object').dispose();
+                        $wrap.find('.video-player-btn').remove();
+                        // reinit
+                        renderVideo( $wrap , $wrap.data('video').replace(/\.\w+$/ , '') , $wrap.data('poster') , {} , function(){
+                            var videoObject = this;
+                            $wrap.find('.vjs-poster').show();
+                            var $btn = $('<div class="video-player-btn"></div>').appendTo( $wrap )
+                                .click(function(){
+                                    videoObject.play();
+                                });
+                            videos.push( videoObject );
+                            videoObject.on('play' , function(){
+                                $btn.hide();
+                            });
+
+                            videoObject.on('pause' , function(){
+                                $btn.show();
+                            });
+                        } );
+                    }
                 }).jcarousel({
                     wrap: 'circular',
                     center: true
@@ -290,18 +335,42 @@ define([
                 // video stuff
                 var dVideo = jcarousel.find('video'),
                     stopPlay = function() {
-                        var dLoading = jcarousel.find('.mejs-overlay-loading').parent();
-
-                        // stop loading
-                        dLoading.hide();
-
-                        // stop play
-                        dVideo.each(function() {
-                            $(this)[0].player.pause();
-                        })
+                        $.each( videos , function( i , v ){
+                            v.pause();
+                        });
                     }
 
-                dVideo.mediaelementplayer()
+
+                var videos = [];
+                window.videos = videos;
+                jcarousel.find('li').each(function(){
+                    var $wrap = $(this).find('.video-wrap');
+                    renderVideo( $wrap , $wrap.data('video').replace(/\.\w+$/ , '') , $wrap.data('poster') , {} , function(){
+                        var videoObject = this;
+                        videos.push( videoObject );
+                        $wrap.find('.vjs-poster').show();
+                        var $btn = $('<div class="video-player-btn"></div>').appendTo( $wrap )
+                            .click(function(){
+                                videoObject.play();
+                            });
+                        videoObject.on('play' , function(){
+                            $btn.hide();
+                        });
+
+                        videoObject.on('pause' , function(){
+                            $btn.show();
+                        });
+                    } );
+                });
+                // var myVideo = videojs( dVideo , config , function(){
+                //     // setTimeout(function(){
+                //     //     $wrap.find('.video-wrap').fadeIn();
+                //     //     if( config.autoplay )
+                //     //         myVideo.play();
+                //     // } , 20);
+                //     //$wrap.data('video-object' , v);
+                // } );
+                // dVideo.mediaelementplayer()
 
                 // for dynamic title
                 dPre.bind('click', function () {

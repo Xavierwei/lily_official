@@ -11,7 +11,7 @@
     <title><?php echo set_page_title();?></title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" type="text/css" href="css/mediaelementplayer.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/video-js/video-js.css">
     <link rel="stylesheet" type="text/css" href="css/response.css">
     
     <script type="text/javascript">

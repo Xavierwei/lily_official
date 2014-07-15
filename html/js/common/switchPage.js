@@ -250,28 +250,34 @@ define([
                 var href = location.href;
                 var match = href.match( /\/(\w+)(\?[.*])?$/ );
                 var page = match ? match[1] : 'index';
-                History.replaceState( { url: page } , undefined , href  );
+                
 
                 setTimeout(function(){
                    localHash();
-               },1000);
+                },1000);
                 // Bind to StateChange Event
-                History.Adapter.bind(window,'statechange',function(){ // Note: We are using statechange instead of popstate
-                    var State = History.getState(); // Note: We are using History.getState() instead of event.state
+                if( !$.browser.msie || $.browser.version >= 9 ){
+                    History.replaceState( { url: page } , document.title , href  );
+                    History.Adapter.bind(window,'statechange',function(){ // Note: We are using statechange instead of popstate
 
-                    if( autoClick ){
-                        isNext = State.data.isNext;
-                    } else {
-                        isNext = !State.data.isNext;
-                        sCur = State.data.url;
-                    }
+                        console.log( location.href );
 
-                    autoClick = false;
-                    // remove
-                    $.fancybox.close(true);
-                    // page update
-                    updatePage();
-                });
+                        var State = History.getState(); // Note: We are using History.getState() instead of event.state
+
+                        if( autoClick ){
+                            isNext = State.data.isNext;
+                        } else {
+                            isNext = !State.data.isNext;
+                            sCur = State.data.url;
+                        }
+
+                        autoClick = false;
+                        // remove
+                        $.fancybox.close(true);
+                        // page update
+                        updatePage();
+                    });
+                }
 
                 $('.footer').delegate('a:not([href^=http]):not([href^=javascript])', 'click', function(e) {
                     var $a = $('#nav').find('.item a[href="' + $(this).attr('href') + '"]').trigger('click');
@@ -300,12 +306,15 @@ define([
                         // update animation judge params
                         isNext = nTarget > nCur;
                         autoClick = true;
-
-                        History.pushState({
-                            isNext: isNext,
-                            url: sCur
-                        },  undefined , "./" + sCur);
-                        return false;
+                        if( $.browser.msie && $.browser.version < 9 ){
+                            return true;
+                        } else {
+                            History.pushState({
+                                isNext: isNext,
+                                url: sCur
+                            },  document.title , "./" + sCur);
+                            return false;
+                        }
                     }
                 })
 
