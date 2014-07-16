@@ -237,7 +237,7 @@ define([
             dCitySelect = dCity.find('select'),
             dDistrictSelect = dDistrict.find('select'),
             dProvinceText = dProvince.find('.store_sl_txt'),
-            dCityText = dCity.find('.store_sl_txt'),
+            dCityText = dCity.find('.sod_label'),
             dDistrictText = dDistrict.find('.store_sl_txt'),
             dBtn = $('.page_storelocator .searchbtn'),
             sProvince,
@@ -288,13 +288,13 @@ define([
             'url' : 'admin/index.php/api/shop/location',
             'success' : function(aData){
                 setTimeout(function(){
-                    dCityText.html(aData.user_city);
-                    dCityText.data('val',aData.user_city);
-                    searchShop(true);
 
                     $(".store_sl").selectOrDie({
                         size: 5
                     });
+                    dCityText.html(aData.user_city);
+                    dCityText.data('val',aData.user_city);
+                    searchShop(true);
                 },2000);
             }
         });
