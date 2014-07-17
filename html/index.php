@@ -79,9 +79,9 @@
                         </a>
                         <div class='videowrap'>
 	                        <?php if(Yii::app()->language == 'en_us'):?>
-	                            <a href="lookbook"><img class='fadeout' src="images/home_img4.jpg" /></a>
+	                            <a href="streetsnap"><img class='fadeout' src="images/home_img4.jpg" /></a>
 	                        <?php else:?>
-		                        <a href="lookbook"><img class='fadeout' src="images/home_img4_cn.jpg" /></a>
+		                        <a href="streetsnap"><img class='fadeout' src="images/home_img4_cn.jpg" /></a>
 	                        <?php endif;?>
                         </div>
                     </div>
