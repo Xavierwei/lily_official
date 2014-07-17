@@ -189,7 +189,7 @@ function loadWeibo() {
   if ($timeline && isset($timeline["statuses"])) {
     $statues = $timeline["statuses"];
     $first = array_shift($statues);
-    Yii::app()->cache->set("weibo_statues", $first);
+    Yii::app()->cache->set("weibo_statues", $first, 3600 * 12);
     return $first;
   }
   return FALSE;
