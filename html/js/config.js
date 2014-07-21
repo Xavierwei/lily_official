@@ -7,7 +7,7 @@ require.config({
         skrollr : 'lib/skrollr/skrollr.min',
         History: 'lib/history.require',
         templates:  '../js/templates',
-        scrollpanel: 'lib/jquery/jquery.jscrollpane',
+        scrollpanel: 'lib/jquery/jquery.jscrollpane'
     },
     priority: [
         'jQuery',

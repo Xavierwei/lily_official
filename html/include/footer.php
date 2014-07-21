@@ -131,6 +131,7 @@
 
     <!--  -->
     <script type="text/javascript" src="js/lib/modernizr.min.js"></script>
+    <script type="text/javascript" src="js/track.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=AwxxvHue9bTdFietVWM4PLtk"></script>
     <script data-main="js/config" src="js/lib/require.js"></script>
 
@@ -144,7 +145,6 @@
       ga('send', 'pageview');
      
     </script>
-    <script type="text/javascript" src="js/track.js"></script>
 
     <!--  -->
     <!--IE6透明判断-->
