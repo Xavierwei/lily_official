@@ -277,13 +277,14 @@ define([
                         // page update
                         updatePage();
                     });
+                    $('.footer').delegate('a:not([href^=http]):not([href^=javascript])', 'click', function(e) {
+                        var $a = $('#nav').find('.item a[href="' + $(this).attr('href') + '"]').trigger('click');
+                        if( $a.length )
+                            return false;
+                    });
                 }
 
-                $('.footer').delegate('a:not([href^=http]):not([href^=javascript])', 'click', function(e) {
-                    var $a = $('#nav').find('.item a[href="' + $(this).attr('href') + '"]').trigger('click');
-                    if( $a.length )
-                        return false;
-                });
+
                 // for special method
                 $('#nav').delegate('.item a', 'click', function(e) {
                     var dTarget = $(this),

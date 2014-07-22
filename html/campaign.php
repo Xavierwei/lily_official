@@ -6,7 +6,7 @@
 <html>
 <?php include_once 'include/header.php';?>
 
-<body class='campaign'>
+<body class='campaign lang_<?php global $language; echo $language;?>'>
 <?php include_once "include/nav.php";?>
 	<div id='wrap'>
         <!--  -->
@@ -24,11 +24,11 @@
 	                    <?php endif;?>
                     </div>
 	                <?php if(Yii::app()->language == 'en_us'):?>
-	                    <div class="cp_season btn btnlink btnlink2 go_play_ground"><span>Wonderland of Plaid Shirts</span><span>Wonderland of Plaid Shirts</span></div>
-	                    <div class="cp_season btn btnlink btnlink2 fadeout video"><span>Lily 2014 SS KV making off</span><span>Lily 2014 SS KV making off</span></div>
+	                    <div class="cp_season btn btnlink btnlink2 go_play_ground"><span>PERFECT BALANCE<br/>BETWEEN SERIOUSNESS AND JOY</span><span>PERFECT BALANCE<br/>BETWEEN SERIOUSNESS AND JOY</span></div>
+	                    <div class="cp_season btn btnlink btnlink2 fadeout video"><span>2014 FALL FASHION LOOK VIDEO</span><span>2014 FALL FASHION LOOK VIDEO</span></div>
 	                <?php else:?>
-		                <div class="cp_season btn btnlink btnlink2 go_play_ground"><span>格子间的奇幻乐园</span><span>格子间的奇幻乐园</span></div>
-		                <div class="cp_season btn btnlink btnlink2 fadeout video"><span>Lily 2014 年秋季广告大片</span><span>Lily 2014 年秋季广告大片</span></div>
+		                <div class="cp_season btn btnlink btnlink2 go_play_ground"><span>商务与时尚的完美平衡</span><span>商务与时尚的完美平衡</span></div>
+		                <div class="cp_season btn btnlink btnlink2 fadeout video"><span>Lily 2014 秋季时尚大片</span><span>Lily 2014 秋季时尚大片</span></div>
 	                <?php endif;?>
                 </div>
 	            <div class="left">
@@ -47,15 +47,11 @@
             <div class="cs-clear limit cp-ground">
                 <div class="cp_modtxt left" id="play_ground">
 	                <?php if(Yii::app()->language == 'en_us'):?>
-		                <h2>Office is my play ground</h2>
-		                <p>Lily is a perfect fusion of serious and playful, Lily is the touch of colour in the grey, cold office daily life.</p>
-		                <p>The 2014 SS season collection, is about a mix of playful and serious: flashy colours; floral printings; surrealistic printings with classic/ formal shapes...</p>
-		                <p>We want to translate this serious /playful attitude by visuals, to show the attitude a young working girl could have in a serious working environment.</p>
-		                <p>Our concept is "Office is my playground". To illustrate this concept, we enlarged daily office objects : clock, pen, typewriter, with a palette of rich spring/summer colours, to build a colourful surreal world. The Lily t girl, sitting or standing - playing easily with oversized fauna which represent the vivacity of the spring/summer.</p>
-		                <p>For the season 2014 Spring/Summer campaign, we decide to collaborate with the world top 20 model Barbara Palvin and photographer John Wright.</p>
+		                <h2>PERFECT BALANCE BETWEEN SERIOUSNESS AND JOY</h2>
+		                <p>Lily brand is perfectly well balanced between seriousness and joy. In this new campaign for the 2014 FW season collection, we are still exploring the “not too fashion, not too business” concept. To illustrate this concept, we depicted a beautiful software atmosphere made by power-point-style charts with a feminine and delightful color palette. A very stylish woman will evolve with elegance and enjoyment in this universe by entering meeting room, exposing a presentation, hosting interviews... The charts-pie will clearly identify her look trough this work moment as just right, always perfectly balanced. We enjoy a campaign very graphical & thoughtful at the same time. It brings the viewer on another perplexing exploration into the Lily brand, this time with the help of the ‘ it ' model Tilda Lindstam and shot by the very talented Julia Noni. </p>
 	                <?php else:?>
-		                <h2>格子间的奇幻乐园</h2>
-		                <p>LILY2014秋季的拍摄，仍然以“办公室是我的游乐园”作为主题概念不仅延续了超现实的办公空间感，而且融入了具有春夏季节性的超大版植物，粉的绿的交织变幻着，为办公室增添不少朝气蓬勃的轻松气息。为了让春季和夏季之间的风格更加鲜明，创意团队分别选用了不同的艺术元素呈现。对春季的拍摄更侧重于春日舒展的枝叶做为视觉称托，一片绿意盎然的活力基调将LILY春季新品烘托得更加焕然出彩。夏日盛开的繁花则顺理成章地成为了夏季的最标志性元素，新鲜活脱的自然色彩，千姿百态的花瓣弧度，无一不为LILY的夏装阐释着盛夏的热情力度。</p>
+		                <h2>商务与时尚的完美平衡</h2>
+		                <p>在2014秋冬新一季广告中，Lily再次针对“正合适”的品牌理念，进行了别有趣致的深入探索。为阐明理念，我们运用了商务女性常用办公软件中、堪称标志性的表格元素，再加以跳跃明快的色彩，营造出极具艺术风格的摩登现代商务场合气氛。继而安排一位身着Lily商务时装的年轻女性，在这些充满抽象商务感的场景中自信穿梭，仿佛置身提案演讲、面试会谈等多个关键商务场合。在办公软件趣味风格的印衬下，她以时尚感与职业性兼具的商务着装，和大方得体、轻松自如的洒脱表现，清晰定义了Lily“正合适”的着装态度。本次视频拍摄，由极富才华的Julia Noni执导，新晋超模Tilda Lindstam加盟演绎。从视觉与创意角度，明确勾勒并精妙诠释了Lily的独特品牌气质。</p>
 	                <?php endif;?>
                 </div>
 	            <div class="right">
@@ -71,13 +67,18 @@
                 <div class="cp_modtxt right">
 	                <?php if(Yii::app()->language == 'en_us'):?>
 	                    <h2>Tilda Lindstam</h2>
-	                    <p>It is worth to mention that the design team fixes their eyes on Barbara Palvin, the new supermodel from Hungarian, to better show the grace and intelligence of LILY girls.  Through her beautiful face and inborn model nature, this young Hungarian girl has won friendly cooperation with many big international brands like Victoria’s Secret (even become the 2012 Victoria Secret Angel).  Barbara Palvin shows her jumping energy at Lily’s shooting scene. Wearing simple makeup and exquisite hairstyle, she exhibits the happy, lively and positive nature of LILY girls.</p>
+	                    <p>Lily girl has always been independent, confident, positive, and out-going. For this fall campaign, Lily creative team, with its fastidious taste, picked super model—Tilda Lindstam. Young Tilda has an oval visage and a pair of soft and gentle eyes. Within her affinity, there reveals a sense of androgynous. With unique style, she was considered the queen of the 2013 spring and summer Fashion Week. She has walked 68 shows, including Chloe, Miu Miu, Valentino, Calvin Klein, and other first well-known international brands. In her cooperation with Lily, Tilda thoroughly demonstrated her modeling ability with her clean make up and wonderfully played out the Lily girl charisma.</p>
 	                <?php else:?>
-		                <h2>Tilda Lindstam</h2>
+		                <h2>模特介绍</h2>
 		                <p>Lily女孩向来都有着自信独立、积极开朗的气质。本次秋季大片拍摄，Lily创意团队将挑剔的选角目光，投向了瑞典新晋超模Tilda Lindstam。年轻的Tilda拥有一张鹅卵石般的圆润脸庞，眼睛温柔剔透，亲和中透露着些许中性气魄。独具风格的她，可谓是2013春夏时装周的秀霸，共计走秀68场，包括Chloe， Miu Miu， Valentino， Calvin Klein等国际一线品牌。2014年，更荣升全球50强模特权威榜单第28位。在与Lily的合作中，Tilda尽展超模实力，配合纯净妆容与完美造型，将Lily女孩的魅力演绎得淋漓尽致。</p>
 	                <?php endif;?>
                 </div>
                 <img class='left btn album' data-index="<?php $next_index += 1; echo $next_index;?>" data-album="4" src="pic/campaign/7.jpg" />
+            </div>
+
+            <div class="wrap cp-mo2">
+                <img src="pic/campaign/25.jpg" />
+                <a href="javascript:;" class="video fadeout cp_blacklink btnlink" data-video="video1"><span><?php echo Yii::t("strings", "FALL FASHION LOOK VIDEO")?></span><span><?php echo Yii::t("strings", "FALL FASHION LOOK VIDEO")?></span></a>
             </div>
 
             <div class="limit cs-clear cp-full cp-mo1">
@@ -106,7 +107,7 @@
 
             <div class="wrap cp-mo2">
                 <img src="pic/campaign/12.jpg" />
-                <a href="javascript:;" class="video fadeout cp_blacklink btnlink"><span><?php echo Yii::t("strings", "MAKING OF FALL")?></span><span><?php echo Yii::t("strings", "MAKING OF FALL")?></span></a>
+                <a href="javascript:;" class="video fadeout cp_blacklink btnlink" data-video="video2"><span><?php echo Yii::t("strings", "MAKING OF FALL")?></span><span><?php echo Yii::t("strings", "MAKING OF FALL")?></span></a>
             </div>
 
 

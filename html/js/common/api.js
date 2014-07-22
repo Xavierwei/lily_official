@@ -445,12 +445,13 @@ define([
         //     }
         // })
 
+        var videoName = oConfig.data.id;
+
         var fakeData = [
             {
-                mp4 : 'media/demo.mp4',
-                webm : 'media/demo.webm',
-                ogv : 'media/demo.ogv',
-                poster : 'media/demo.jpg',
+                mp4 : 'media/'+videoName+'.mp4',
+                webm : 'media/'+videoName+'.webm',
+                poster : 'media/'+videoName+'.jpg',
                 title : _e('Making of fall')
             }
         ]

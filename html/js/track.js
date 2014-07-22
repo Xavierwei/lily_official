@@ -1,7 +1,13 @@
 
 //Require JS will call me
 window.startTrack = function ($) {
-  var lang = window.lang != "en" ? "ZH_PC": "EN_PC";
+  if($('html').hasClass('touch')) {
+      var lang = window.lang != "en" ? "ZH_M": "EN_M";
+  }
+  else
+  {
+      var lang = window.lang != "en" ? "ZH_PC": "EN_PC";
+  }
   
   function cleanTitle(title) {
     // " " => "-"

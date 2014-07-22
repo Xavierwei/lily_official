@@ -13,8 +13,8 @@
         <td><?php echo $lookbookGallery->season?></td>
         <td><?php echo $lookbookGallery->cdate?></td>
         <td>
-          <a href="<?php echo Yii::app()->baseUrl."/page/addlookbookgallery?id=". $lookbookGallery->cid?>">Edit</a>
-          <a href="<?php echo Yii::app()->baseUrl."/page/lookbook?gallery=". $lookbookGallery->cid?>">Book Item</a>
+          <a href="<?php echo Yii::app()->baseUrl."/page/addlookbookgallery?id=". $lookbookGallery->cid?>">Edit</a> |
+          <a href="<?php echo Yii::app()->baseUrl."/page/lookbook?gallery=". $lookbookGallery->cid?>">Book Item</a> |
           <a href="javascript:void(0)" data-cid="<?php echo $lookbookGallery->cid?>" >Delete</a>
         </td>
       </tr>

@@ -68,6 +68,8 @@
 }
 
 @media screen and (max-width:640px){
+    * {-webkit-text-size-adjust: none;max-height: 5000em;}
+    body {width:640px;}
     #nav {display: none;}
     #wrap {display: block;}
     .menu {display:block;width:102px;height:102px;}
@@ -204,6 +206,7 @@
     .page_privacy .privacy_tit.mobile h2{margin:5% auto;font-size:20px;}
     .page_privacy .privacy_com{width:auto;}
     .contact_con {font-size:20px;width:auto;}
+    .contact_con h2 {height:auto;margin-bottom: 25px;}
     .contact_fi p {width:300px;}
     .ft_com{width:auto;font-size:14px;}
     .ft_list {width:auto;line-height: 160%;}

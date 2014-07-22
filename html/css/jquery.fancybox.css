@@ -14,7 +14,7 @@
 .fancybox-opened{z-index:8030;}
 .fancybox-outer,
 .fancybox-inner{position:relative;}
-.fancybox-inner{overflow:hidden;}
+.fancybox-inner{overflow:hidden!important;}
 .fancybox-type-iframe .fancybox-inner{-webkit-overflow-scrolling:touch;}
 .fancybox-error{color:#444;font:14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;padding:15px;white-space:nowrap;}
 .fancybox-image,

@@ -110,6 +110,7 @@ define([
                     }
                 },
                 beforeShow: function () {
+                    onBeforeShow && onBeforeShow();
                     // custom close function
                     dBody.delegate('.close', 'click', function() {
                         $.fancybox.close(true);
@@ -396,7 +397,7 @@ define([
             };
 
             api.getVideoList({
-                data : { id : '1231313' },
+                data : { id : $(this).data('video') },
                 success : function (aData) {
                     var sVideo = Handlebars.compile(videoTpl)({ data : aData });
 

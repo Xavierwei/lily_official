@@ -5,7 +5,8 @@
 /* Reset
 ================================================================================================= */
 html{}
-body{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;color:#000;font-size:14px;line-height:1.666em;background:#fff;overflow-x:hidden;}
+body{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;font-size:100%;color:#000;background:#fff;overflow-x:hidden;-webkit-text-size-adjust:none;-webkit-text-size:none;}
+p,span {-webkit-text-size-adjust: none;-webkit-text-size:none;}
 h1,
 h2,
 h3{font-size:100%;}
@@ -214,6 +215,7 @@ a:hover {opacity:0.8;}
 .cp_tit h2{line-height:60px;font-size:66px;padding:80px 0 60px;}
 .cp_tit p{padding:0 0 40px;font-weight:bold;}
 .cp_season{font-size:14px;height:80px;display:block;line-height:80px;text-align:center;width:350px;font-weight:bold;border:#000 solid 4px;margin:0 0 14px;text-transform: uppercase;}
+.lang_en .go_play_ground {line-height:32px;padding:10px 0;height:60px;}
 .cp_modtxt h2{font-size:32px;text-transform:uppercase;line-height:36px;font-family:arial;padding:0 0 40px}
 .cp_modtxt p {margin:0 0 10px 0;}
 .cp_blacklink{text-align:center;position:absolute;padding:10px 20px;width:auto;top:50%;left:50%;margin-left:-80px;margin-top:-26px;border-color:#fff;color:#fff;}
@@ -317,7 +319,7 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .event_com{padding:15px;text-align:left;}
 .event_com h3{font-size:20px;font-family:arial;padding:26px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .event_com p{height:90px;overflow:hidden;}
-.event_com .news_body {font-size:14px;line-height:30px;}
+.event_com .news_body {font-size:14px;line-height:30px;height:90px;overflow:hidden;}
 .event_look{width:132px;height:48px;font-size:14px;line-height:48px;padding:0px;display:block;margin:35px 0 0}
 .newscontent{margin:20px 0 0;}
 #wrap .page .limit.event_list {width:1774px;margin:0 auto;}
@@ -329,7 +331,6 @@ button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;curs
 .contact_tit h2{font-size:80px;line-height:80px;}
 .contact_con{font-size:15px;line-height:30px;width:700px;margin:0 auto;padding:100px;}
 .contact_con h2{height:40px;padding-left:110px;}
-.contact_fi{}
 .contact_fi span{float:left;width:110px;}
 .contact_fi p{float:left}
 .contact_tips{padding:125px 0 0 70px;}

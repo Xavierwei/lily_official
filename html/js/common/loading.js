@@ -30,6 +30,7 @@ define([
 
         if (dEvent.length) {
             dEvent.delegate('a.event_open', 'click', function() {
+
                 var news_id = $(this).parents('.event_item').data('nid');
                 api.getNews({
                     data : { news_id : news_id },
@@ -39,14 +40,14 @@ define([
                         helper.overlay(sNews, function(){
 
                         } , function(){
-                            var dOverlay = $.fancybox.wrap.parent();
+                            var dOverlay = $('.fancybox-overlay');
                             // for custom style
                             dOverlay.attr('id', 'news');
                             dOverlay.find('.newswrap-inner')
                                 .height( $(window).height() * 0.9 * 0.8)
                                 .css('overflow' , 'visible');
                                 //.jScrollPane({autoReinitialise:true})
-                                
+
                                 // .find('img')
                                 // .css('opacity' , 0);
 

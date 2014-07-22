@@ -88,7 +88,6 @@
             <li class='item <?php echo active_class("brand")?>'>
                 <h2 data-title="BRAND"><?php echo Yii::t("strings", "BRAND")?></h2>
                 <ol>
-                    <li><a href='./index?hash=brand_story' data-title="BRAND STORY"><?php echo Yii::t("strings", "BRAND STORY")?></a></li>
                     <li><a href='./history' data-title="HISTORY"><?php echo Yii::t("strings", "HISTORY")?></a></li>
                     <li><a href='./events' data-title="EVENTS"><?php echo Yii::t("strings", "EVENTS")?></a></li>
                 </ol>
