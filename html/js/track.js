@@ -30,7 +30,7 @@ window.startTrack = function ($) {
   }
   
   // Header nav menu
-  $("#nav h2").click(function () {
+  $("#nav h2,.mbmenu h2").click(function () {
     var title = $(this).attr("data-title");
     if (title) {
       callGa(lang + "_" + title);
@@ -38,7 +38,7 @@ window.startTrack = function ($) {
     }
   });
   
-  $("#nav a").click(function () {
+  $("#nav a,.mbmenu a").click(function () {
     var title = $(this).attr("data-title");
     if (title) {
       callGa(lang + "_" + title);

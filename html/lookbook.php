@@ -1,5 +1,5 @@
 <?php require_once 'include/functions.php';?>
-<?php set_page_title("Lily Official Site")?>
+<?php set_page_title("Lily 商务时装")?>
 <?php set_page_name("product");?>
 <!DOCTYPE html>
 <html>
@@ -12,7 +12,7 @@
   $next_index = -1;
 ?>
 
-<body class='lookbook'>
+<body class='lookbook lang_<?php global $language; echo $language;?>'>
 <?php include_once "include/nav.php";?>
 	<div id='wrap'>
         <!--  -->

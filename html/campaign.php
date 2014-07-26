@@ -1,16 +1,16 @@
 <?php require_once 'include/functions.php';?>
-<?php set_page_title("Lily Official Site")?>
+<?php set_page_title("Lily 商务时装")?>
 <?php set_page_name("product");?>
 <?php $next_index = -1;?>
 <!DOCTYPE html>
 <html>
 <?php include_once 'include/header.php';?>
 
-<body class='campaign lang_<?php global $language; echo $language;?>'>
+<body class='campaign'>
 <?php include_once "include/nav.php";?>
 	<div id='wrap'>
         <!--  -->
-        <div class="page page_campaign">
+        <div class="page page_campaign lang_<?php global $language; echo $language;?>">
             <div class='limit cp-top cs-clear'>
                 <div class="cp_box right">
                     <div class="cp_tit">

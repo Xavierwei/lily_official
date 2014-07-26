@@ -1,5 +1,5 @@
 <?php include_once 'include/functions.php';?>
-<?php set_page_title("Lily Official Site")?>
+<?php set_page_title("Lily 商务时装")?>
 <?php set_page_name("home");?>
 <!DOCTYPE html>
 <html>
@@ -13,7 +13,6 @@
         <div class="page page_home">
             <!--  -->
             <div class="limit home_new">
-                <h2><?php echo Yii::t("strings", "BRAND")?></h2>
                 <div class="home_new_cn">
 	                <?php echo Yii::t("strings", "news_text")?>
                 </div>
@@ -58,7 +57,7 @@
                         <h2><?php echo Yii::t("strings", "CAM-<br />PAIGN")?></h2>
 	                    <?php if(Yii::app()->language == 'en_us'):?>
 		                    <p>FALL/14</p>
-		                    <p>featuring<br />Tilda Lindstam</p>
+		                    <p>FEATURING<br />TILADA LINDASTAM</p>
 	                    <?php else:?>
 		                    <p>14秋季</p>
 		                    <p>Lily 2014 年秋季广告大片</p>

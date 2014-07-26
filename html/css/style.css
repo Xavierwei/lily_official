@@ -38,6 +38,7 @@ a:hover {opacity:0.8;}
 #wrap {margin-top:0px;min-height:1000px;}
 .btn {cursor: pointer}
 .btn:hover {opacity:0.7;}
+.super {vertical-align:super;}
 /* header Used
 ================================================================================================= */
 .header{position:fixed;height:100px;top:0;left:0;right:0;padding-left:7%;z-index:100;}
@@ -64,7 +65,7 @@ a:hover {opacity:0.8;}
 #nav .club {background: #000;color:#fff;padding:3px 10px;}
 /* footer Used
 ================================================================================================= */
-.footer{position:fixed;bottom:0;width:100%;background:#c7deeb;line-height:30px;font-size:16px;text-transform:uppercase;color:#77858d}
+.footer{position:fixed;bottom:0;width:100%;background:#c7deeb;line-height:30px;font-size:16px;color:#77858d}
 .ipad .footer {position: relative;}
 .ft_logo{background:url('../images/ft_logo.png') no-repeat center;width:132px;height:86px;margin:0 auto;padding:5%;}
 .ft_com{margin:0 auto;width:950px;;font-size:12px;}
@@ -155,7 +156,7 @@ a:hover {opacity:0.8;}
 .page_home #brand_story .right {width:55%;}
 .page_home .left {width:35%;}
 .page_home .right {width:35%;}
-.home_cpbox{display:block;border:#000 solid 4px;text-transform:uppercase;text-align:center;font-size:16px;overflow:hidden;}
+.home_cpbox{display:block;border:#000 solid 4px;text-align:center;font-size:16px;overflow:hidden;}
 .home_cpbox h2{line-height:60px;font-size:66px;padding:80px 0 60px;}
 .home_cpbox p{padding:0 0 40px;font-weight:bold;}
 .home_lookbook .border{border:#000 solid 4px;}
@@ -212,9 +213,11 @@ a:hover {opacity:0.8;}
 /* campaign Used
 ================================================================================================= */
 .cp_tit{border:#000 solid 4px;width:350px;height:430px;text-transform:uppercase;text-align:center;font-size:16px;overflow:hidden;margin:0 0 40px;}
+.lang_cn .cp_tit {text-transform: none;}
 .cp_tit h2{line-height:60px;font-size:66px;padding:80px 0 60px;}
 .cp_tit p{padding:0 0 40px;font-weight:bold;}
 .cp_season{font-size:14px;height:80px;display:block;line-height:80px;text-align:center;width:350px;font-weight:bold;border:#000 solid 4px;margin:0 0 14px;text-transform: uppercase;}
+.lang_cn .cp_season {text-transform: none;}
 .lang_en .go_play_ground {line-height:32px;padding:10px 0;height:60px;}
 .cp_modtxt h2{font-size:32px;text-transform:uppercase;line-height:36px;font-family:arial;padding:0 0 40px}
 .cp_modtxt p {margin:0 0 10px 0;}
@@ -295,8 +298,8 @@ a:hover {opacity:0.8;}
 .stores{text-align:left;}
 .stores h1{line-height:80px;font-size:42px;padding-left:10%;}
 .stores p{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;line-height:30px}
-.store_txt{font-size:16px;font-weight:bold;}
-.store_selbox{margin:60px auto 0}
+.store_txt{font-size:16px;margin-top:30px;font-weight:bold;}
+.store_selbox{margin:30px auto 0}
 .store_selbox #province {display: none;}
 button.searchbtn{padding:16px 90px;color:#fff;background:#000;border:0 none;cursor:pointer;outline:none;}
 .store_select{position:relative;width:auto;margin:0 auto 20px;display:inline-block;}

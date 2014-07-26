@@ -7,7 +7,7 @@ class NewsController extends Controller {
     $news = new NewsAR();
     
     if ($request->isPostRequest) {
-      $cid = $_POST["cid"];
+      $cid = $request->getPost("cid", 0);
       if ($cid > 0) {
         $news = NewsAR::model()->findByPk($cid);
         $news->setAttributes($_POST);

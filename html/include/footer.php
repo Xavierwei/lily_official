@@ -60,7 +60,7 @@
 			    <div class="cs-clear"></div>
 		    </div>
 
-		    <div class="ft_copy">© 2013 LILY <?php echo Yii::t("strings", "OFFICIAL WEBSITE")?> 沪ICP备10202509号-2</div>
+		    <div class="ft_copy">© 2013 Lily <?php echo Yii::t("strings", "OFFICIAL WEBSITE")?> 沪ICP备05036513号-1</div>
 	    </div>
     </div>
 
@@ -134,16 +134,6 @@
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=AwxxvHue9bTdFietVWM4PLtk"></script>
     <script data-main="js/config" src="js/lib/require.js"></script>
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-     
-      ga('create', 'UA-52215158-1', 'lily-collection.com');
-      ga('send', 'pageview');
-     
-    </script>
 
     <!--  -->
     <!--IE6透明判断-->

@@ -256,6 +256,9 @@ define([
                     dProvinceText.data('val',sProvince);
                     dCityText.data('val',sCity);
                     dDistrictText.data('val',sDistrict);
+                    if(sDistrict == '-') {
+                        dDistrictText.data('val','');
+                    }
                 }, 100);
             },
             searchShop = function (findNear) {
@@ -288,12 +291,24 @@ define([
             'url' : 'admin/index.php/api/shop/location',
             'success' : function(aData){
                 setTimeout(function(){
-
                     $(".store_sl").selectOrDie({
                         size: 5
                     });
-                    dCityText.html(aData.user_city);
-                    dCityText.data('val',aData.user_city);
+                    dCityText = dCity.find('.sod_label');
+                    if(aData.user_city) {
+                        dCityText.html(aData.user_city);
+                        dCityText.data('val',aData.user_city);
+                    }
+                    else {
+                        if(window.lang = 'cn') {
+                            dCityText.html(aData.city.CN[0]);
+                            dCityText.data('val',aData.city.CN[0]);
+                        }
+                        else {
+                            dCityText.html(aData.city.CN[115]);
+                            dCityText.data('val',aData.city.CN[115]);
+                        }
+                    }
                     searchShop(true);
                 },2000);
             }

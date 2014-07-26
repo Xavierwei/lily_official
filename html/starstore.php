@@ -1,11 +1,11 @@
 <?php require_once 'include/functions.php';?>
-<?php set_page_title("Lily Official Site")?>
+<?php set_page_title("Lily 商务时装")?>
 <?php set_page_name("store");?>
 <!DOCTYPE html>
 <html>
 <?php include_once 'include/header.php';?>
 
-<body class='starstore'>
+<body class='starstore lang_<?php global $language; echo $language;?>'>
 <?php include_once "include/nav.php";?>
 	<div id='wrap'>
         <!--  -->
@@ -37,7 +37,6 @@
                         </a>
                         <select class="store_sl">
                             <option value="ss_1" data-hash="ss_1"><?php echo Yii::t("strings", "Shanghai")?></option>
-                            <option value="ss_2" data-hash="ss_2"><?php echo Yii::t("strings", "Guangzhou")?></option>
                         </select>
                     </div>
                 </div>
@@ -61,13 +60,26 @@
 
                 <div class="limit cs-clear" id="ss_2">
                     <div class="desc right">
-                        <h2>广州正佳</h2>
-                        <p>广州市天河区天河路228号正佳广场1F-1A032L.1A032M号LILY专卖店</p>
-                        <p>020-3835 0621</p>
-                        <a href="javascript:;" class="store_view fadeout" data-lat="113.333869" data-lng="23.138652"><?php echo Yii::t("strings", "View Map")?></a>
+                        <h2>上海来福士店</h2>
+                        <p>上海市黄浦区西藏中路268号来福士广场04-13</p>
+                        <p>021-6313 092</p>
+                        <a href="javascript:;" class="store_view fadeout" data-lat="121.483097" data-lng="31.237674"><?php echo Yii::t("strings", "View Map")?></a>
                     </div>
                     <div class="starshop_map starshop_img_left">
-                        <img alt="" src="images/starshop2.jpg">
+                        <img alt="" src="images/starshop4.jpg">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="limit cs-clear" id="ss_2">
+                    <div class="desc left">
+                        <h2>上海正大广场店</h2>
+                        <p>浦东新区陆家嘴西路168号5-17</p>
+                        <p>021-6890 6095</p>
+                        <a href="javascript:;" class="store_view fadeout" data-lat="121.506095" data-lng="31.242718"><?php echo Yii::t("strings", "View Map")?></a>
+                    </div>
+                    <div class="starshop_map starshop_img_right">
+                        <img alt="" src="images/satrshop5.jpg">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -89,13 +101,26 @@
 
                 <div class="limit cs-clear" id="ss_2">
                     <div class="desc right">
-                        <h2>Grandview Mall</h2>
-                        <p>LILY Store, No. 1A032L.1A032M, 1/F, Zhengjia Plaza, No. 228, Tianhe Road, Tianhe District, Guangzhou</p>
-                        <p>020-3835 0621</p>
-                        <a href="javascript:;" class="store_view fadeout" data-lat="113.333869" data-lng="23.138652"><?php echo Yii::t("strings", "View Map")?></a>
+                        <h2>Shanghai Raffles City shop</h2>
+                        <p>04-13, No.268 Xi Zang Zhong Road, Shanghai, P.R. China</p>
+                        <p>021-6313 092</p>
+                        <a href="javascript:;" class="store_view fadeout" data-lat="121.483097" data-lng="31.237674"><?php echo Yii::t("strings", "View Map")?></a>
                     </div>
                     <div class="starshop_map starshop_img_left">
-                        <img alt="" src="images/starshop2.jpg">
+                        <img alt="" src="images/starshop4.jpg">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="limit cs-clear" id="ss_2">
+                    <div class="desc left">
+                        <h2>Shanghai Super Brand Mall</h2>
+                        <p>5-17, No.168 Lu Jia Zui Road, Shanghai, P.R. China</p>
+                        <p>021-6890 6095</p>
+                        <a href="javascript:;" class="store_view fadeout" data-lat="121.506095" data-lng="31.242718"><?php echo Yii::t("strings", "View Map")?></a>
+                    </div>
+                    <div class="starshop_map starshop_img_right">
+                        <img alt="" src="images/satrshop5.jpg">
                     </div>
                     <div class="clear"></div>
                 </div>

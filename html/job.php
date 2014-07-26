@@ -1,5 +1,5 @@
 <?php require_once 'include/functions.php';?>
-<?php set_page_title("Lily Official Site")?>
+<?php set_page_title("Lily 商务时装")?>
 <?php set_page_name("job");?>
 <!DOCTYPE html>
 <html>
